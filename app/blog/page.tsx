@@ -1,28 +1,26 @@
+import Link from "next/link"
+import { posts } from "./posts"
+
 export default function BlogPage() {
   return (
-    <main className="min-h-screen bg-neutral-950 text-neutral-100">
-      <section className="max-w-5xl mx-auto px-6 py-24">
-        <h1 className="text-4xl font-bold mb-6">
-          Blog de Innovación Textil
-        </h1>
+    <main className="max-w-4xl mx-auto px-6 py-20">
+      <h1 className="text-3xl font-semibold mb-10">Blog</h1>
 
-        <p className="text-neutral-400 text-lg mb-16">
-          Análisis sobre telas inteligentes, procesos productivos,
-          sostenibilidad y tecnología aplicada a la confección de uniformes.
-        </p>
-
-        <div className="space-y-8">
-          <div className="p-6 border border-neutral-800 rounded-lg">
-            <h2 className="text-2xl font-semibold">
-              Próximamente
+      <ul className="space-y-8">
+        {posts.map((post) => (
+          <li key={post.slug}>
+            <h2 className="text-xl font-semibold text-blue-800">
+              <Link href={`/blog/${post.slug}`}>
+                {post.title}
+              </Link>
             </h2>
-            <p className="text-neutral-400 mt-2">
-              Estamos preparando contenido especializado para empresas e
-              industrias.
+
+            <p className="text-gray-600 mt-2">
+              {post.excerpt}
             </p>
-          </div>
-        </div>
-      </section>
+          </li>
+        ))}
+      </ul>
     </main>
-  );
+  )
 }
