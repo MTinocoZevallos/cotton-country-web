@@ -9,15 +9,16 @@ export default function BlogPage() {
       <ul className="space-y-8">
         {posts.map((post) => (
           <li key={post.slug}>
-            <h2 className="text-xl font-semibold text-blue-800">
-              <Link href={`/blog/${post.slug}`}>
+            <h2 className="text-xl font-semibold">
+              <Link
+                href={`/blog/${post.slug}`}
+                className="text-blue-700 hover:underline"
+              >
                 {post.title}
               </Link>
             </h2>
 
-            <p className="text-gray-600 mt-2">
-              {post.excerpt}
-            </p>
+            <p className="text-gray-600 mt-2">{post.excerpt}</p>
           </li>
         ))}
       </ul>

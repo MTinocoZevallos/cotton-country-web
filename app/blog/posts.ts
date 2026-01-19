@@ -1,12 +1,22 @@
-export const posts = [
-  {
-    slug: "ejemplo-post",
-    title: "Ejemplo de post",
-    excerpt: "Este es un post de prueba para el blog de Cotton Country.",
-    content: `
-Este es el contenido del post de ejemplo.
+export type Post = {
+  slug: string
+  title: string
+  excerpt: string
+  content: string
+}
 
-Aquí luego irán los artículos reales del blog.
+export const posts: Post[] = [
+  {
+    slug: "el-algodon-se-caso-con-el-poliester-en-oxford",
+    title: "El algodón se casó con el poliéster en Oxford",
+    excerpt:
+      "Una mirada técnica y práctica a una de las mezclas textiles más usadas en uniformes corporativos.",
+    content: `
+El tejido Oxford mezcla algodón y poliéster para lograr
+resistencia, buena caída y fácil mantenimiento.
+
+En uniformes corporativos, esta combinación es clave
+para lograr durabilidad sin perder presencia.
 `,
   },
 ]
