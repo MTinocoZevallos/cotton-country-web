@@ -16,11 +16,13 @@ export default function BlogPostPage({ params }: Props) {
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-20">
-      <h1 className="text-3xl font-semibold mb-6">{post.title}</h1>
+      <h1 className="text-3xl font-semibold mb-6">
+        {post.title}
+      </h1>
 
-      <article className="prose prose-gray max-w-none">
-        {post.content.split("\n").map((line, i) => (
-          <p key={i}>{line}</p>
+      <article className="prose prose-lg max-w-none">
+        {post.content.split("\n").map((line, index) => (
+          <p key={index}>{line}</p>
         ))}
       </article>
     </main>
