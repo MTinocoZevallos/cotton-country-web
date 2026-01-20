@@ -1,13 +1,15 @@
 import { posts } from "../posts"
 
-export default function PostPage({
-  params,
-}: {
-  params: { slug: string }
-}) {
-  const post = posts.find(
-    (p) => p.slug === params.slug
-  )
+type PageProps = {
+  params: {
+    slug: string
+  }
+}
+
+export default function PostPage({ params }: PageProps) {
+  const slug = decodeURIComponent(params.slug)
+
+  const post = posts.find((p) => p.slug === slug)
 
   if (!post) {
     return (
@@ -15,6 +17,9 @@ export default function PostPage({
         <h1 className="text-2xl font-semibold">
           Post no encontrado
         </h1>
+        <p className="mt-4 text-gray-600">
+          Slug recibido: {slug}
+        </p>
       </main>
     )
   }
