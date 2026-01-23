@@ -7,12 +7,14 @@ export default async function PostPage({
 }) {
   const { slug } = await params
 
-  const post = posts.find(p => p.slug === slug)
+  const post = posts.find((p) => p.slug === slug)
 
   if (!post) {
     return (
       <main className="max-w-3xl mx-auto px-6 py-20">
-        <h1 className="text-2xl font-semibold">Post no encontrado</h1>
+        <h1 className="text-2xl font-semibold">
+          Post no encontrado
+        </h1>
         <p>Slug recibido: {slug}</p>
       </main>
     )
