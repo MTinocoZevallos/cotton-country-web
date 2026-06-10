@@ -3,6 +3,9 @@ export type Post = {
   title: string
   excerpt: string
   content: string
+  publishedAt?: string
+  updatedAt?: string
+  canonicalPath?: `/${string}`
 }
 
 export const posts: Post[] = [
