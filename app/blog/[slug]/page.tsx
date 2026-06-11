@@ -30,6 +30,9 @@ export async function generateMetadata(
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: {
+      canonical: post.canonicalPath ?? `/${post.slug}`,
+    },
   }
 }
 
@@ -49,7 +52,7 @@ export default async function PostPage(
       <h1 className="text-3xl font-semibold mb-6">
         {post.title}
       </h1>
-      
+
       <article className="prose">
         {post.content}
       </article>
