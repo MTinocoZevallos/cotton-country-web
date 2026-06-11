@@ -5,12 +5,8 @@ import { Facebook, Linkedin, Phone, Mail } from "lucide-react"
 export default function Footer() {
   return (
     <footer className="w-full">
-
-      {/* FOOTER PRINCIPAL */}
       <div className="bg-[#04045E] text-white px-6 py-12">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-
-          {/* LOGO + DESCRIPCIÓN */}
           <div>
             <Image
               src="/logo-cotton-blanco.png"
@@ -26,7 +22,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* LEGALES */}
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm text-gray-200">
@@ -48,26 +43,30 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* DIRECCIONES */}
           <div>
             <h4 className="font-semibold mb-4">Direcciones</h4>
 
             <p className="text-sm text-gray-200 mb-3">
-              <strong>Dirección Fiscal</strong><br />
-              Av. Los Mochicas 179<br />
-              Urbanización Salamanca de Monterrico – Ate<br />
+              <strong>Dirección Fiscal</strong>
+              <br />
+              Av. Los Mochicas 179
+              <br />
+              Urbanización Salamanca de Monterrico – Ate
+              <br />
               Lima, Perú
             </p>
 
             <p className="text-sm text-gray-200">
-              <strong>Dirección Comercial</strong><br />
-              Av. Circunvalación El Golf Los Incas 206<br />
-              Oficina 602 – Torre B<br />
+              <strong>Dirección Comercial</strong>
+              <br />
+              Av. Circunvalación El Golf Los Incas 206
+              <br />
+              Oficina 602 – Torre B
+              <br />
               Santiago de Surco, Lima – Perú
             </p>
           </div>
 
-          {/* CONTACTO + MAPA + REDES */}
           <div>
             <h4 className="font-semibold mb-4">Contacto</h4>
 
@@ -99,16 +98,30 @@ export default function Footer() {
             </a>
 
             <div className="flex gap-4 items-center">
-              <a href="#" aria-label="Facebook">
+              <a
+                href="https://www.facebook.com/profile.php?id=100063500373684"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
                 <Facebook className="w-5 h-5 hover:opacity-80" />
               </a>
 
-              <a href="#" aria-label="LinkedIn">
+              <a
+                href="https://www.linkedin.com/company/cotton-country/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
                 <Linkedin className="w-5 h-5 hover:opacity-80" />
               </a>
 
-              {/* PINTEREST */}
-              <a href="#" aria-label="Pinterest">
+              <a
+                href="https://www.pinterest.com/cottoncount2364/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Pinterest"
+              >
                 <svg
                   className="w-5 h-5 fill-white hover:opacity-80"
                   viewBox="0 0 24 24"
@@ -118,17 +131,14 @@ export default function Footer() {
               </a>
             </div>
           </div>
-
         </div>
       </div>
 
-      {/* BARRA INFERIOR */}
       <div className="bg-[#393535] text-gray-200 text-xs py-3">
         <div className="max-w-7xl mx-auto text-center">
           Cotton Country® 2026 — Todos los derechos reservados
         </div>
       </div>
-
     </footer>
   )
 }
