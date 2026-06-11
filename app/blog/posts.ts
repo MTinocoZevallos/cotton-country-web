@@ -1231,5 +1231,449 @@ Lo ideal es que nos sintamos cómodos con la prenda e incluso, de preferencia, q
 Después de todo, no debemos acomplejarnos por la talla que nos “corresponda”, ya que en vista de que no existe en el país una estandarización para crear una tabla de tallas basada en medidas peruanas, las que existen actualmente son subjetivas y, por lo tanto, no son necesariamente tu talla real.
 `,
 },
+{
+  slug: "el-problema-de-las-tallas",
+  title: "El problema de las tallas",
+  excerpt:
+    "Las tallas son relativas y dependen de los estándares de cada marca. Conozca cómo impactan en la confección de uniformes corporativos.",
+  canonicalPath: "/el-problema-de-las-tallas",
+  content: `
+Si algunas vez, al ir a comprar ropa te preguntaron ¿qué talla eres?, seguramente tu respuesta fue: “Soy talla S, M, etc.”, pero ¿esta es realmente tu talla? Lo cierto es que esta, como tantas otras verdades, es una verdad relativa y aquí te contamos por qué.
+
+Cuando uno asume una talla como propia en realidad asume la talla de la marca de su preferencia (y que nos queda bien), pero las tallas en sí están determinadas por las tablas de medida que cada marca escoge de acuerdo a su público objetivo.
+
+Esta realidad se hizo evidente con la llegada de las fast fashion (H&M, Forever21, Zara). Y es que, por ejemplo, cuando una persona quería comprar una talla M en Zara (la talla que siempre había comprado en otra marca), simplemente no le quedaba. Pero ¿a qué se debía esto? A que los biotipos varían de acuerdo a las nacionalidades.
+
+Entonces, como los productos de estas tiendas no concordaban con las medidas peruanas, lanzaron una estrategia a través de la cual las personas llevaban prendas usadas a sus tiendas para canjearlas por vales de consumo. ¿Sabes para qué fue? Para comprender el biotipo peruano y ofrecerle tallas que se adecuaran más a sus medidas.
+
+En el caso de los uniformes para empresas este proceso de tallaje (ó también llamado en otros países fitting) es un proceso clave pues impacta en el nivel de satisfacción de los usuarios y en la calificación del área de compras sobre su gestión del gasto.
+
+## Nuestra experiencia
+
+Cuando iniciamos el negocio, la poca experiencia de entonces nos hizo aprender con la práctica la importancia de ofrecer uniformes por talla y no a la medida, como lo hicimos entonces.
+
+Pero ¿por qué fue un error ofrecer prendas a medida?
+
+Porque descubrimos que existen indicadores que para nosotros son relevantes y que lamentablemente, por ahora, son contrarios a lo que se entiende en el enfoque comercial de “a la medida” para uniformes.
+
+Los indicadores siguientes:
+
+### Productividad
+
+Los procesos de confección industriales y los procesos industriales en sí están regidos por el tiempo; es decir, cuanto más prendas se puedan producir en un tiempo determinado dará como resultado que tu negocio sea más productivo.
+
+Lo anterior tiene relación directa con la rentabilidad y la eficiencia, pues si produces más ganas más, ya que tus tiempos de entrega son más cortos y esto influye también sobre el ciclo del efectivo.
+
+### Calidad
+
+Este indicador en sí es medido por la cantidad de reclamos por usuarios a quienes no les quedó la prenda.
+
+También por el hallazgo de defectos de fabricación.
+
+En el caso de la ropa a la medida los reclamos no solo se elevaron en número (30%) sino en costo debido a los arreglos post entrega y es que el proceso es complejo en algunas empresas debido también a la cultura.
+
+### Tendencias
+
+Desde el año 2014, aproximadamente, hemos visto marcas y empresas ofreciendo camisas y ropa a medida para el mercado B2C.
+
+Éstas han tenido buena acogida por el diseño y detalle en las costuras, pero a su vez limitadas en tiempo y distancia para la toma de medidas de sus clientes.
+
+En el mercado de uniformes B2B el uso de uniformes a la medida es más común en el sector público o instituciones que requieren de uniformes más formales como sacos, ternos, sastres de dama, etc.
+
+Sin embargo, los ya conocidos efectos de COVID-19 (como el distanciamiento social y home office) han reducido considerablemente su uso, perjudicando a los proveedores, así como a los productores de estos tejidos para vestimentas de trabajo formales.
+
+Hoy en día existen aplicativos capaces de tomar medidas y recomendar tallas con tan solo un clic de la cámara de un smartphone, pero su costo aún es elevado para ser implementado de forma masiva en un mercado atomizado como lo es el de las confecciones.
+
+No dudamos en que esta tendencia se consolidará más pronto de lo que pensamos pues la transformación digital está cada vez más presente en muchas industrias y la industria textil confecciones no será la excepción.
+
+Frente a todo lo dicho, queda abierta una pregunta ¿estás preparado para el gran cambio?
+`,
+},
+{
+  slug: "ntp-para-la-designacion-de-tallas",
+  title: "NTP para la designación de tallas",
+  excerpt:
+    "La NTP-ISO 8559-2:2020 busca normalizar la designación de tallas en prendas de vestir usando medidas corporales bajo un estándar internacional.",
+  canonicalPath: "/ntp-para-la-designacion-de-tallas",
+  content: `
+En noviembre pasado el Instituto Nacional de la Calidad (INACAL) publicó otra norma técnica la NTP-ISO 8559-2 2020 la cual busca normalizar la adecuada designación de tallas para las marcas y los confeccionistas.
+
+El Inacal tomó referencia a ISO quien elabora un procedimiento estándar y técnicamente validado para que los interesados en la industria guarden armonía al momento de elaborar tablas de medida corporales, las cuales son insumos de las tallas en prendas de vestir.
+
+Lo que ha hecho el Inacal es un importante aporte que contó con la participación de diversos entendidos en la materia del mundo académico, empresarial y gremios.
+
+El principal beneficio de esta norma técnica peruana es que el documento elaborado sirve de referencia para designar, bajo un estándar internacional, las tallas en prendas de vestir para cualquier interesado en ingresar en mercados extranjeros o nuevos mercados, ya sea que se trate de diseñadores, confeccionistas o sastres.
+
+Como lo mencionamos anteriormente en nuestro blog el tema de las tallas es toda una problemática nacional y, hasta donde podemos ver, también regional; en este contexto, la norma técnica peruana servirá de guía para la correcta medición corporal expresando rangos mínimos y máximos y separando las mediciones entre niños y adultos, hombres y mujeres.
+
+Cabe resaltar que la norma técnica está elaborada basada en medidas corporales, mas no en medidas de prendas terminadas.
+
+## El efecto de la norma
+
+Esperamos que el efecto de la norma se vea reflejado en el bienestar de los usuarios, quienes somos los que determinamos la calidad de los productos y servicios.
+
+Lo ideal es que se dé también una adecuada difusión de las normas para que todo aquel interesado en brindar calidad pueda revisarla o adquirirla a través de la web del INACAL.
+
+Sin duda este es un gran aporte para la normalización de la industria textil-confecciones del país.
+
+Actualmente, como empresa de confección textil, estamos estudiando la NT para poder aplicarla en nuestros uniformes.
+`,
+},
+{
+  slug: "la-talla-peruana",
+  title: "La talla peruana",
+  excerpt:
+    "La diversidad de biotipos en el Perú hace complejo estandarizar las tallas y desarrollar tablas de medidas representativas para toda la población.",
+  canonicalPath: "/la-talla-peruana",
+  content: `
+¿Los peruanos somos altos o somos bajos? Pues eso depende de contra quién nos comparamos, pero como compararnos con otros no es lo ideal, entonces es preciso saber cuál es la talla peruana.
+
+El promedio de estatura de los hombres es 1,65 cm; mientras que, en el caso de las mujeres 1,53 cm. No obstante, esta medida se refiere solo a la altura, mas no al peso y he aquí el otro problema que existe para definir la talla peruana, pues para determinar las tallas de las prendas influyen los largos, pero también el volumen.
+
+No hace mucho el INACAL acaba de elaborar y publicar la NTP-ISO 8559-2 2020. Esta norma técnica es un logro y un avance en la difícil tarea de estandarizar las tallas o elaborar tablas de medidas referenciales y en este punto hacemos un hincapié en algo sumamente importante, y es que el Perú es un caso especial, pues los biotipos son diversos, producto de las migraciones, la mezcla genética entre los nativos peruanos con españoles y de éstos con italianos, chinos, japoneses, africanos y otros en menor grado.
+
+Esto es una muestra de lo complejo de nuestra cultura, y esa complejidad también se ve reflejada en el vestir y en el tallaje, sobre el cual las marcas nacionales han sabido leer y traducir en tablas de medidas y éstas en tallas acorde a su público objetivo.
+
+Las tallas es un tema amplio en el cual se debe incluir a aquellos que escapan de los promedios como las “plus size” y los “petit” que en otros países inclusive (por ley las marcas y comercializadores) están obligados a producir para evitar las “discriminaciones”.
+
+Desde nuestro punto de vista esto no se soluciona con una ley, sino más bien desde la visión de algún emprendedor hábil para diseñar y desarrollar marcas para estos segmentos específicos del mercado.
+
+Actualmente, hay países como Colombia, Argentina y España que tienen estudios de tallas y proponen tablas de medidas para su población lo cual facilita el trabajo y estandarización de los procesos textiles y en especial el de confecciones, pero también aportan información valiosa para estudios de morbilidad, así como de ergonomía en los puestos de trabajo.
+
+Por nuestro lado, en Cotton Country trabajamos para brindar soluciones que mejoren el proceso de elección de tallas de los colaboradores y que esto se traduzca en una mejor percepción de la calidad de nuestros productos, así como la de la empresa y sus colaboradores.
+`,
+},
+{
+  slug: "medalla-de-oro-en-uniformes",
+  title: "Medalla de oro en uniformes",
+  excerpt:
+    "Los uniformes olímpicos muestran cómo la identidad, el diseño, la tecnología y el marketing pueden converger en una sola prenda.",
+  canonicalPath: "/medalla-de-oro-en-uniformes",
+  content: `
+Hace algunos años pudimos apreciar en las olimpiadas de Río una tendencia a transmitir identidad; así como a potenciar la imagen de los deportistas a través de los uniformes. Y es que este es tanto una herramienta de identidad como de marketing.
+
+Desde cristales de Swarovski hasta marcas como Emporio Armani y Ralph Lauren han sido y son protagonistas una vez más en uno de los eventos más importantes del deporte mundial: las olimpiadas.
+
+El equipo olímpico americano causó sensación en las olimpiadas pasadas sobre todo por los leotardos de las gimnastas, los cuales llevaban piedras de swarovski valorizadas en más de $1,200.00 y, este año vuelven a hacerlo con un sistema patentado de termorregulación para mayor comodidad de los deportistas.
+
+Este tipo de eventos atrae muchas visitas y miradas en distintas plataformas y esto es preciso para las marcas y para los diseñadores, quienes buscan darse a conocer o reafirmar su liderazgo y creatividad.
+
+Tenemos desde una Kim Kardashan y su marca de ropa interior deportiva, hasta Telfar Clemens quien, según Vogue, ha realizado los uniformes más geniales: los de Liberia.
+
+## Un poco de historia
+
+De las muchas disciplinas que nos atraen de este evento deportivo, sin duda, las que más resaltan son las de natación, velocidad y gimnasia.
+
+Esta vez queremos detenernos en una de las prendas más icónicas de las olimpiadas: el leotardo; y es que hace mucho tiempo los uniformes de los deportistas eran muy ajustados, no tenían mangas y cubrían todo el cuerpo, hasta que un célebre acróbata francés diseñó su propia prenda en un acto puro de innovación la cual después llevaría en homenaje a él su nombre: Jules Leotard!
+
+Mucho después, con la llegada de las fibras sintéticas es que esta prenda originalmente deportiva pasa a ser, ya por los años 80, una prenda de uso común, volviéndose algo así como el padre o madre de los ahora conocidos leggins.
+
+## No todos ganan siempre
+
+La polémica y las sanciones nunca faltan, y aquí se hicieron presentes también, pues los uniformes de la delegación rusa de nado sincronizado fueron descalificados por llevar la imagen de un oso en sus prendas.
+
+Los grandes perdedores fueron los equipos olímpicos de Inglaterra, Italia y Francia, países donde paradójicamente la moda es parte de la identidad.
+
+Lo que sí causó mucha indignación en los mexicanos fue lo que encontró el personal de limpieza en los basureros de hoteles y camerinos: uniformes del equipo de softball de México.
+
+El incidente fue publicado en las redes sociales de otra deportista de dicho país y causó una gran desazón; así como una serie de discusiones que salen del contexto deportivo, pero que son muy normales aunque difíciles de entender.
+
+Esto nos lleva a plantearnos las siguientes reflexiones:
+
+No se necesita un uniforme para sentirse identificados con un país o empresa, pero un buen uniforme ayuda a potenciar una identidad muy bien definida.
+
+Por encima de lo visual siempre será lo funcional en prendas de vestir y más aún si de un uniforme se trata. ¡Hacia allí va la tendencia!
+
+La tecnología está cada vez más presente en lo textil y el deporte es un claro ejemplo de ello.
+
+El diseño es una oportunidad aún no muy explorada por los equipos de marketing, pero esto está cambiando.
+`,
+},
+{
+  slug: "los-uniformes-un-problema-olimpico",
+  title: "Los uniformes, un problema olímpico...",
+  excerpt:
+    "La funcionalidad, la comodidad y el desempeño vuelven a poner a los uniformes en el centro del debate durante los Juegos Olímpicos.",
+  canonicalPath: "/los-uniformes-un-problema-olimpico",
+  content: `
+Los uniformes cumplen una función, por ello deben ser funcionales en su diseño para que la estética no sea privilegiada sobre la comodidad, lo cual influye directamente sobre el desempeño del colaborador o el rendimiento de un deportista.
+
+Esto lo entiende muy bien el equipo alemán de gimnasia, pues en esta edición decidieron dejar de lado los uniformes con corte de bikini por otros que cubren totalmente las piernas de las deportistas, esto ha sido tomado como un tema de sexualización e incluso interpretado como una protesta contra este concepto, lo que a nuestro parecer es meramente interpretativo.
+
+Lo real es el desempeño mejorado y la comodidad declarada por las deportistas quienes son las que eligen cómo vestir para sentirse más cómodas y esto en sí es una tendencia más fuerte y presente, no solo en la ropa deportiva, sino en la ropa en general y los uniformes no son la excepción.
+
+## Compras de uniformes
+
+Además del incidente con los uniformes de México que tratamos en nuestro post anterior cabe subrayar que esto no es un caso extraño en este país, ya que siempre tienen problemas con sus uniformes y en especial con la entrega a tiempo de estos.
+
+Esto último es muy común en la industria y se justifica en estos puntos:
+
+La elección de un proveedor que no se alinee a los requerimientos o necesidades del negocio o institución, valorando únicamente el precio, patrocinamiento o afinidad.
+
+El desconocimiento de los procesos textiles y de confecciones; los cuales tienen sus propios tiempos y los que no siempre se ajustan a las necesidades del cliente.
+
+Sin duda dos orígenes totalmente identificables, pero con soluciones que no dependen de aspectos numéricos, sino netamente humanos.
+
+## Los dioses del Olimpo y su influencia
+
+Al igual que el equipo alemán de gimnasia, las integrantes del equipo olímpico de handball de noruega fueron multados por no usar el uniforme reglamentario, el cual es, a su parecer incómodo en comparación al de sus compañeros varones, el cual consta de shorts en cambio en el de mujeres es obligatorio el bikini y, a decir verdad, esto guarda mucha lógica desde la función que desempeña el uniforme según la labor que se tenga que realizar con él.
+
+Para los que no están muy familiarizados con la industria esto parecerá normal, pero nosotros entendemos bien los patrones y este mismo patrón se repite en los uniformes de voley playa, bádminton, atletismo, tenis y otros más.
+
+Las marcas auspiciadoras y los medios necesitan presencia e interacción en televisión y redes sociales para lo cual generan mucho contenido y este contenido en su mayoría es visual por lo que el apreciar los cuerpos de los atletas se vuelve algo muy importante para ellos, pero en realidad lo único importante es la comodidad de vestir con prendas funcionales más que estéticas.
+
+## Ganar ganar
+
+En un mundo cada vez más polarizado esta idea puede resultar romántica y hasta utópica, pero no es así y lo hemos visto ahora en las olimpiadas en donde por primera vez en una historia de más de un siglo, dos deportistas de salto alto comparten la medalla de oro.
+
+Esta historia en particular nos llena de emoción, ya que rompe con los viejos paradigmas de que para ganar uno el otro debe perder, este ejemplo debe ser replicado y llevado desde el mundo del deporte al mundo empresarial, al familiar y a toda la sociedad, ¡Lo necesitamos!
+`,
+},
+{
+  slug: "disenador-a-sus-disenos",
+  title: "Diseñador a sus diseños",
+  excerpt:
+    "El diseño de uniformes requiere conocimiento textil, fichas técnicas y experiencia en procesos para convertir una idea creativa en una prenda viable.",
+  canonicalPath: "/disenador-a-sus-disenos",
+  content: `
+Allá por el 2014, cuando iniciamos este proyecto, pudimos observar una tendencia entre las empresas; la cual consistía en salir de lo cotidiano al momento de elegir los diseños de sus uniformes.
+
+Así, se buscaba ir más allá de la clásica camisa oxford con logo bordado para pasar a conceptos más creativos, en donde el uniforme fuera capaz de reflejar la identidad de la marca a través del color, los detalles de la costura, el corte, etc.
+
+Las fichas técnicas de uniformes empezaban a aparecer, sobre todo en las compras estatales; sin embargo, en el sector privado eran muy escasas.
+
+Acaso, una que otra gran empresa solicitaba algún documento que sirviera de guía y donde fuera posible estandarizar los requerimientos del área de compras.
+
+Y es que, dependiendo del tamaño de la empresa, giro de negocio o estructura organizacional, el responsable de la compra de uniformes (o material textil publicitario) podía ser un asistente o jefe de logística, marketing, rrhh o el dueño de una pequeña empresa.
+
+Independientemente del puesto, empresa o giro de negocio, los responsables del proceso deberían comprender que el diseño en sí es una profesión muy amplia y que, en el caso de la industria textil, intervienen varias ramas, como el diseño gráfico, diseño textil y diseño de modas.
+
+Y, de todos estos, este último es el más relevante, ya que se encarga de la elaboración de las fichas técnicas de diseño, de costura, flats o logos para bordados y/o estampados/sublimados.
+
+Pero, ¿qué sucede cuando se prescinde de los servicios de este último?
+
+Pues si de uniformes se trata, estamos hablando de tejidos, texturas, composiciones, costuras, patrones, procesos, avios, acabados, colores y cortes que son conocimientos que, muchas veces, se pasan por alto al momento de elaborar: fichas técnicas, diseños de material textil publicitario y prendas para uniformes.
+
+El resultado de no contar con los servicios de un diseñador de modas para los uniformes es casi siempre el mismo: diseños imposibles de realizar por su complejidad, costo o el tiempo que tomaría elaborarlos (el cual casi siempre es ajustado tanto para los confeccionistas como para los compradores) y esto es más frecuente, sobre todo, cuando se trata de material textil publicitario como gorros, polos, buzos, bolsos y casacas.
+
+Entonces, ahora que hemos develado una de las razones por las cuales los proveedores no cumplen con el tiempo, por qué las prendas no quedan igual a las imágenes, o la causa de que el costo del desarrollo se eleve, debemos repetir lo que dice el dicho: “Zapatero a tus zapatos” o, en nuestro caso, “diseñador a su diseño”.
+
+Y es que por lo general, se suele recurrir al diseñador gráfico para idear estas prendas, lo cual es un error pues, en su mayoría, los diseñadores gráficos desconocen los procesos textiles, el comportamiento de los materiales, las texturas, costuras y los costos.
+
+Por lo que en vez de ofrecer una solución, pueden sumar un gran problema.
+
+Sin embargo, cuando la tarea es encargada a un diseñador de modas, o a un diseñador con experiencia en textiles, no solo nos encontramos con propuestas más creativas sino también posibles de materializar, y con mayor impacto para la campaña, punto de venta, evento o uniformes para empresas.
+
+El diseño es aún, en el Perú, y podría decirse que en la mayor parte de Latinoamérica, una profesión cuya función aún no se entiende muy bien, además, su valor no es percibido como un factor diferencial, sino como un costo operativo, porque muchos encargados, jefes o dueños de negocios, entienden el diseño como un acto de la imaginación y que por lo tanto, a alguien con mucha imaginación se le ocurren cosas creativas, y esto no es así.
+
+El diseño es el resultado de un proceso que se convierte en una herramienta poderosa para los negocios, porque genera experiencias que desencadenan emociones, con las cuales, si sabemos asociarlas de manera efectiva hacia nuestra marca, lograremos maximizar nuestros esfuerzos de marketing.
+
+Recuerda: “En la naturaleza muchas especies utilizan el diseño y el color para atraer a sus presas”
+`,
+},
+{
+  slug: "3-consejos-para-compradores-de-textiles-b2b",
+  title: "3 consejos para compradores textiles B2B",
+  excerpt:
+    "Planificación, criterios de selección y relaciones de largo plazo son claves para mejorar las compras de uniformes y textiles corporativos.",
+  canonicalPath: "/3-consejos-para-compradores-de-textiles-b2b",
+  content: `
+El área de compras y el procurement son claves en toda empresa, puesto que gestionan el presupuesto de las adquisiciones y, los uniformes son, en muchos casos considerados compras clave para las organizaciones.
+
+Los compradores de uniformes y textiles publicitarios no siempre cuentan con las herramientas necesarias para hacer que su proceso sea eficiente y rentable; en general, la mala elección de un proveedor no pasa solamente por un tema de confianza, sino de conocimiento y de las herramientas de decisión que esperamos poder aportarles para que la compra de sus uniformes sea un éxito.
+
+A lo largo de nuestros años en el mercado hemos recogido y documentado algunas experiencias negativas, lo cual nos permite elaborar una serie de recomendaciones para los compradores de uniformes para empresas:
+
+## 1. Estructura tu compra
+
+Asesórate y determina si necesitas o no un diseño personalizado de uniformes, un dress code o fichas técnicas de estas prendas, y elabora un cuadro de requerimientos con tu cliente interno o el área responsable.
+
+Procura detallarlos para hacer más fluida la comunicación con tu proveedor, por ejemplo, especifica la cantidad, el tejido, color, tallas, medidas, detalles de bordados o estampados, etc.
+
+De este modo podrás recibir una cotización homogénea y comparable, rápida y acorde con tus necesidades.
+
+## 2. Define criterios de elección
+
+La clave para una buena elección de un proveedor textil es compleja, pero simple a la vez.
+
+Compleja, puesto que al desconocer los procesos textiles y las materias primas se dificulta la capacidad de poder distinguir entre un buen proveedor y un buen vendedor, pero esto se soluciona en el paso previo: la planificación guiada por un profesional de la moda puede materializar las necesidades de las empresas en temas textiles.
+
+El profesional de la moda evaluará las necesidades de tu negocio y, juntos, determinarán los criterios de elección que pueden ser: rapidez, capacidad productiva, reputación, o relación calidad-precio.
+
+## 3. Integra a tu proveedor
+
+Esto más que una recomendación es una reflexión, ya que consideramos importante construir relaciones de largo plazo basadas en la confianza y la claridad con los proveedores clave, y con todos los proveedores en sí, ya que de este modo se evitan conflictos que se traducen en tiempos improductivos; por el contrario, se generan sinergias y se rentabiliza la cadena de abastecimiento en las empresas.
+
+La política de compras en las organizaciones es tan diversa que depende de muchos factores internos y externos, así como las técnicas y metodologías de subastas y/o licitaciones, que son útiles siempre y cuando se considere todos los aspectos del proceso y se comprenda la realidad del negocio, o industria de la cual obtendremos nuestro requerimiento, pues podemos asumir u obviar realidades que pueden ser determinantes al momento de elegir con quién abastecernos.
+
+En el Perú no solo existe un mercado para la compra y venta de uniformes y prendas de vestir, sino toda una industria que va desde el agro hasta el comercio electrónico y es en esta última en donde se generará mayor oportunidad para productores y compradores siempre y cuando el orden, el conocimiento y las buenas prácticas sean las que potencian la confianza, que es lo que mueve el mundo de los negocios.
+`,
+},
+{
+  slug: "el-futuro-de-la-industria-textil-y-de-confecciones",
+  title: "El futuro de la industria textil y de confecciones",
+  excerpt:
+    "Datos, tecnología, clima, transporte, cultura y trabajo marcarán el futuro de la industria textil-confecciones.",
+  canonicalPath: "/el-futuro-de-la-industria-textil-y-de-confecciones",
+  content: `
+A diferencia de lo que muchos creen, el futuro sí es previsible, y hoy en día lo es aún más, ya que todo, o mejor dicho casi todo dato, es registrado y analizado. Datos de navegación en plataformas, datos de transacciones, datos de cámaras y micrófonos, datos de movimiento, ¡datos… datos… datos!
+
+La ciencia de datos es una estrategia muy utilizada por corporaciones y empresas tecnológicas de cara a sus procesos de innovación, logísticos y comerciales. La implementación de software y el desarrollo de aplicaciones está aún concentrada en las grandes empresas, pero no se percibe crecimiento en la mediana, y mucho menos en las microempresas del rubro.
+
+En el mercado hay distintos servicios informáticos disponibles para la industria textil, que van desde las plataformas para crear y gestionar páginas web o ecommerce así como los ERP, CRM y PLM.
+
+Entonces, hasta ahora hemos mencionado a los datos como el insumo del futuro y el software como una herramienta indispensable, pero ¿qué es lo que se viene?
+
+## El clima
+
+Más allá de la sostenibilidad, todo el activismo y negocios generados son producto del cambio climático, que a nuestro entender es irreversible e incontrolable. Además, es muy probable que los cambios se incrementen a nivel mundial y de manera drástica en algunas zonas del planeta; lo cual no solo causará migración interna y externa, sino también cambios en el consumo de prendas de vestir y ropa de trabajo; afectando al agro y a los cultivos como el algodón y demás fibras naturales como primer eslabón de la cadena textil-confecciones.
+
+## La Tecnología
+
+A diferencia de lo que años atrás vimos, los cambios tecnológicos, y sobre todo informáticos, se encuentran ante un nuevo desafío, producto de la demanda por el análisis de datos, que es la capacidad de almacenamiento (hardware) y es aquí donde creemos que será el próximo salto en el mundo de las TI y en la energía empleada para ello.
+
+El blockchain es hasta hoy la tecnología más disruptiva conocida, aunque su desarrollo está concentrado su potencial solo en el dinero electrónico; ya que su uso podría ampliarse para la trazabilidad y el comercio en sí, como vemos ahora con los NFT para obras de arte o diseños.
+
+Los desarrollos tecnológicos que influirán en las industrias productivas serán la energía y el procesamiento de datos, la robótica y la biotecnología (ésta última contrasta con la tendencia orgánica y sostenible que se vende hoy en día en casi todos los segmentos).
+
+Las empresas, para seguir siendo competitivas, deben orientar sus estrategias hacia estas dos vertientes, las cuales no necesariamente tienen que ser contrarias, pues se volverá un verdadero arte el poder integrarlas.
+
+## El transporte
+
+La logística es hoy crítica y lo seguirá siendo mientras no se resuelva el transporte marítimo, que es donde se moviliza el mayor volumen de mercancías a nivel mundial; en todo caso, la alternativa para el futuro será vía aérea y no precisamente aviones.
+
+El transporte va directamente relacionado con la energía y el consumo de combustibles fósiles y es un factor clave.
+
+Una tendencia importante es la que vemos a nivel automotriz, pero ésta se extenderá a nivel industrial aunque para ello falta mucho todavía.
+
+## La cultura
+
+El ser humano está modificando su pensamiento.
+
+El covid-19 ha alterado muchos aspectos sociales, mentales y económicos, sin dejar de lado su impacto en la salud, pero más allá de eso, ha acelerado cambios previstos para una década, forzando la adaptación a entornos complejos para hacer negocios, y ha traído también polarización a nivel mundial en toda la sociedad, sea desarrollada o no.
+
+Las personas cada vez se están cuestionando más las cosas y están interpretando la realidad de otra manera, prueba de ello es el cambio en los hábitos de consumo.
+
+En el negocio de la moda creemos que el principal cambio producto de estos fenómenos será el de vestir para lo funcional y no para lo social, así como la adopción de técnicas y herramientas para desarrollar la imagen profesional lejos de estereotipos, priorizando la identidad personal, propia de cada persona, a través de su vestir.
+
+Esto último no es tan lejano, puesto que ya se comienzan a apreciar cambios en el uso, por ejemplo, de los clasicos zapatos de color negro para combinarlos con cualquier tipo de pantalon; y, en el caso de los varones, los tatuajes, las barbas, los peinados y las marcas independientes, urbanas, con enfoque en nichos como el de los emo o las plus size.
+
+## El trabajo
+
+Estudios al respecto mencionan cambios drásticos a nivel mundial, producto de la avalancha de desarrollos tecnológicos como la robótica, la IA y el IOT que, en combinación con el relegado nivel educativo en materia digital que existe hoy en Latinoamérica, producirá un impacto negativo en la PEA de mucho países que no tienen una lectura clara de lo que necesitan para ser competitivos.
+
+La cuarta revolución industrial está ya en camino y será una revolución en todo el sentido de la palabra, donde muchas industrias se verán afectadas y la industria textil-confecciones no será la excepción.
+
+Muchos de estos aspectos planteados en nuestra visión de lo que será el futuro de la industria son para nosotros ya una realidad, la cuestión será identificar en qué medida y combinación afectarán más o menos cada unos de estos a las distintas categorías de prendas de vestir en la que se encuentren los negocios.
+
+Los cambios geopolíticos son ya una realidad y esto afecta a los mercados, generando oportunidades para la industria nacional y en Latinoamérica en sí.
+
+En el caso peruano se necesita rapidez y eficiencia y seremos rápidos en la medida que adoptemos tecnologías y mejoremos procesos, no solo empresariales, sino también mentales.
+
+Así, seremos competitivos por calidad y por tiempo, pero sobre todo, por la capacidad de integrar a toda la cadena de valor nuevos enfoques de negocio y mindset productivos rescatando nuestras fortalezas milenarias.
+
+Recuerda: “La mejor forma de predecir el futuro es creándolo”
+`,
+},
+{
+  slug: "logistica-y-abastecimiento-textil-2022",
+  title: "Logística y abastecimiento Textil 2022",
+  excerpt:
+    "Los problemas logísticos globales, el abastecimiento de materias primas y el aumento de costos marcarán las compras textiles durante el 2022.",
+  canonicalPath: "/logistica-y-abastecimiento-textil-2022",
+  content: `
+Si eres un comprador de uniformes, material textil publicitario o ropa de trabajo tienes que leer esto de cara a las dificultades en tus compras textiles en el 2022.
+
+La industria textil mundial enfrenta muchos retos y uno de ellos es el aprovisionamiento de materias primas como el algodón; otro es la dependencia de las importaciones del Asia a lo largo de toda la cadena y, por último, el incremento de los fletes y el combustible, el cual ya se empieza a reflejar en los precios.
+
+Las grandes marcas como H&M, Zara (Inditex), Nike y Adidas vienen ajustando sus previsiones de crecimiento para el 2022 pues los tiempos de entrega, debido a los problemas logísticos, como la escasez de containers y el alza de precios del transporte marítimo, son un verdadero problema para las compañías que, a la vez, han incrementado su volumen de pedidos, pero temen el incumplimiento o están extendiendo sus plazos de entrega debido a esta realidad, producto del covid-19.
+
+## El panorama local y el mercado de uniformes
+
+Si bien a raíz de la pandemia, y por problemas geopolíticos, mucha de la demanda americana de confecciones se ha desviado de Asia a Latinoamérica y El Caribe, lo cual ha incrementado las exportaciones de prendas de vestir y tejidos durante el 2021, esta tendencia podría verse afectada en el 2022 debido a un tema de dependencia de materias primas y avíos textiles del Asia.
+
+Y es que, en realidad, más del 80% del algodón que se teje (hilo para tejidos) y de coser es de procedencia extranjera, por ejemplo de India, EEUU, China, Brasil, etc. Como se ve, lejos y por mucho, quedó aquella sensación de que el algodón peruano es de producción y abastecimiento propio.
+
+El tejido de punto como el jersey y el piqué, en sus títulos más reconocidos como 30/1 y 24/1, que son utilizados para polos t-shirt o publicitarios; así como en polos box respectivamente, son tejidos por empresas nacionales que importan hilo para producir de estos países y realizan aquí los procesos de teñido, acabado y venta.
+
+A lo largo del 2021 hemos visto ya que el tipo de cambio obligó a muchos proveedores a renegociar inclusive órdenes de compra colocadas, ya que desde el día que se cotizó hasta el día en que se colocó la OC, el tipo de cambio hizo que el precio por kg de tejido se incremente en 1, 2 y hasta 5 soles por kilo en menos de 6 meses.
+
+Para los proveedores de tejido, ya sea importado o que importen el insumo (algodón), están recibiendo cotizaciones con fecha de entrega a partir de julio del 2022 y muchos importadores propiamente dichos comentan que el precio de los insumos o tejidos se está confirmando inclusive recién una vez que la mercadería está en el barco.
+
+Ante el aumento de demanda por insumos, producto de la dependencia del Asia para la industria textil confecciones, el 2022 será un año retador para los confeccionistas, ya que mucho de lo que puedan producir dependerá exclusivamente del tejido en la construcción, gramaje, color y/o acabado disponible en stock de los proveedores o distribuidores, por lo que no habrá mucho margen a la personalización sobre todo para los pedidos pequeños.
+
+Las telas que se usan en uniformes, sobre todo en tejido de punto (polos, t-shirt, polos box) son aprovechadas, en realidad, de las producciones que los fabricantes realizan de cara a su proyección de ventas por tendencias del mercado de la moda y, esta es la razón por la cual hoy en día es mucho más difícil aún conseguir un color específico acorde al branding de cada empresa, pues las cantidades mínimas para fabricar o desarrollar un color han subido también.
+
+## Recomendaciones
+
+Sabemos lo importante que es el uniforme para las empresas y sus marcas; sabemos del impacto que causa un adecuado vestir en el punto de venta; y que el efecto visual genera experiencias positivas en las ventas, por lo cual consideramos que los compradores deberían cambiar sus estrategias de compras para no verse perjudicados o mermados en su imagen planificando sus compras con anticipación y con visión de largo plazo.
+
+### Asesoría
+
+Busca proveedores con la capacidad de desarrollar propuestas adaptadas a la realidad del mercado y de la industria. Proveedores con buenas relaciones a su vez con fabricantes para encontrar soluciones en conjunto y que puedan garantizar el abastecimiento en el tiempo requerido.
+
+### Integración
+
+Hoy en día es muy importante integrar proveedores a su cadena de suministro mediante contratos, lo cual aumenta el valor a lo largo de la cadena, pues permite planificar la compra y negociar a su vez mejores tiempos y costos.
+
+### Innovación
+
+Es momento de replantear nuestras estrategias recurriendo a la innovación en materiales, procesos, prendas o modelos de abastecimiento que se adapten a la realidad que el mundo está viviendo, una realidad en donde todo es cada vez más caro y en donde la rapidez solo puede ser garantizada en las industrias productivas si se tiene una idea de la demanda.
+
+Esperamos que todo esto te haya servido para que puedas planificar tus adquisiciones y no sufras desabastecimiento en este nuevo año pues, los problemas logísticos son globales y, en el caso de textiles, la demanda se concentra localmente, pero para exportar pues es donde los confeccionistas tienen mayor margen y volumen, lo que garantiza su operatividad en el tiempo.
+`,
+},
+{
+  slug: "que-significa-tallas-completas-en-ropa",
+  title: "¿Qué significa tallas completas en ropa?",
+  excerpt:
+    "Las tallas completas buscan adaptarse a una mayor diversidad de biotipos y son ampliamente utilizadas en la confección de uniformes corporativos.",
+  canonicalPath: "/que-significa-tallas-completas-en-ropa",
+  content: `
+El término es conocido sobre todo en el segmento de uniformes, cuando los compradores buscan uniformes no muy ceñidos o que abarquen la mayor cantidad de biotipos, lo cual es muy común en los trabajos; sin embargo, las definiciones sobre las tallas completas son variadas y no muy precisas por lo que decidimos consultar a un experto en lo que se llama patronaje (que es la técnica para elaborar los moldes de las prendas en función a medidas corporales o a tablas de medidas).
+
+En este caso, recurrimos a Ricardo Gonzalez, patronista egresado del SENATI con 14 años de experiencia, quien nos respondió algunas preguntas sobre el tema:
+
+## ¿A qué llamamos tallas completas?
+
+En el mundo de la confección se suele decir que se utilizan 2 tipos de tallaje, las tallas que provienen de las marcas de moda y las tallas completas que son usadas por lo general para uniformes.
+
+Y es que los proveedores de uniformes para empresas en la búsqueda de la satisfacción del cliente recurren a tallajes que se amolden a la gran mayoría de biotipos de los colaboradores como alternativa más productiva y rentable para ambas partes.
+
+Así nacieron las tallas completas que no guardan un fit específico en su tabla de medidas de cara a un público objetivo en particular o biotipo que sí es considerado por las marcas de modas que enfocan a públicos más homogéneos lo cual no es particularmente propio de los ambientes laborales donde las tallas son más variadas.
+
+## ¿Por qué es importante las tablas de medidas?
+
+Las tablas de medidas son importantes para estandarizar el proceso de confección, es parte intangible del proceso de calidad en confecciones, las marcas lo toman muy en serio para guardar cuidado de las tallas escogidas de cara a su público objetivo y de no hacerlo pueden haber complicaciones productivas que signifiquen pérdidas, es bueno llegar a un acuerdo con los clientes en esto para evitar complicaciones.
+
+En uniformes son pocas las empresas que se exigen contar con esta herramienta sumamente útil para hablar de calidad y cumplimiento, pues el tallaje escogido suele variar en la toma y en la producción en la ausencia de control o simplemente no los tienen.
+
+## ¿Cómo se elabora una tabla de medidas?
+
+Las tablas de medidas se elaboran con información acorde al mercado donde se van a vender las prendas, es por ello que se necesita saber el biotipo de tu público objetivo para elaborar una medida estándar por talla para luego proceder con el escalado de tallas y para eso se necesitan ciertas medidas corporales para usar como referencia y así elaborar los moldes de las prendas a fabricar.
+
+Unas de las medidas más comunes tomar en cuenta son por ejemplo: el ancho de espalda, el ancho de pecho, el largo de la manga, la circunferencia del cuello y entre otras si se van a realizar prendas de camisa, camisas o polos y si se desea hacer un pantalón o un short o buzo se necesitaría la medida de la cintura, cadera, largo de tiro delantero y espalda, además del largo de la entrepierna.
+
+Contar con buenos patrones así como profesionales que brinden soluciones en desarrollo del producto para las muestras pre producción son el punto de partida de un proceso de confección exitoso.
+
+Esperemos haya sido útil este post el cual lo puedes compartir con amigos o colegas pues la información es clave para tomar buenas decisiones.
+
+## ¿Qué hace bueno a un patronista?
+
+Creo que lo que hace bueno a un patronista es la meticulosidad del trabajo y sobre todo la paciencia, además claro de la experiencia que te da el tiempo.
+
+## ¿Es mejor patrones en cartón o en software?
+
+Eso va a depender mucho de los ojos como lo veas, ya que ambos tienes sus pro y contra.
+
+En el mercado existen varios softwares para hacer moldes por computadora, entre los más conocidos son MODARIS-DIAMINO (lectra), OPTITEX, GERBER y AUDACES.
+
+Todos ellos son buenos, y agilizan el trabajo en un 30% a 60% el tiempo de elaborar y modificar un molde, pero tienen un costo alto, es por ello que es un poco difícil conseguir el programa a las empresas pequeñas.
+
+Por lo general son las empresas grandes son las que usan dichos softwares.
+
+Es por eso, que es más conveniente a las empresas chicas elaborar sus moldes de manera manual.
+`,
+},
 
 ]
