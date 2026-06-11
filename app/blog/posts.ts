@@ -464,4 +464,772 @@ A continuación, enumeramos características que deben tener los textiles usados
 - En industrias con exposición a salpicaduras de líquidos dañinos para la piel, se deben preferir telas antifluidos.
 `,
   },
+    {
+    slug: "el-uniforme-de-farmacia",
+    title: "El uniforme de farmacia",
+    excerpt:
+      "El uniforme de farmacia ayuda a identificar al personal sanitario, reforzar la imagen de marca y transmitir confianza al cliente.",
+    canonicalPath: "/el-uniforme-de-farmacia",
+    content: `
+Cuando se acude a una farmacia, estamos acostumbrados a que nos reciba un profesional uniformado con su clásica bata blanca.
+
+No obstante, ¿es la bata blanca parte del uniforme de farmacia oficial?
+
+En esta publicación hablaremos acerca de este tipo de ropa sanitaria, sus características y los beneficios que ofrece a su marca que sus farmacéuticos porten uniformes.
+
+## Características del uniforme de farmacia
+
+Actualmente no existe una ley que regule las características específicas de los uniformes para farmacia, al menos en Perú.
+
+No obstante, sí hay ciertas normas que aplican, por ejemplo:
+
+- Que solo sea usado por el personal de farmacia.
+- Que sea reemplazado periódicamente, al menos una vez al año.
+- Que los uniformes sean de la talla de los empleados.
+- Que el vestuario siga las pautas de seguridad e higiene que amerita el trabajo de un farmacéutico.
+- Que cuente con la identificación del personal, nombre y puesto que desempeña.
+
+Esta identificación puede llevarse en un carné que cuelgue del cuello del farmacéutico, o también en el mismo uniforme, ya sea mediante un bordado, estampado o una etiqueta fijada térmicamente.
+
+Respecto al diseño, este va a depender más de la marca que de una regla específica.
+
+En ese sentido, se pueden usar en los uniformes los mismos colores que representan a la marca para la que trabaja el personal.
+
+Incluso existen farmacias que, como parte de un diseño innovador, pese a usar los mismos colores para todos sus empleados, agregan detalles personalizados a la ropa de cada uno, por ejemplo frases motivadoras bordadas en la espalda.
+
+En cuanto al color de las prendas para farmacia, aunque se puede elegir cualquiera, lo ideal es que el tono transmita emociones positivas como calma, confianza y tranquilidad.
+
+El blanco es el preferido porque transmite pureza, pero también se confeccionan uniformes de farmacia verdes, color asociado con la salud, morados, asociados al lujo y la protección, entre otros.
+
+## Beneficios de comprar uniformes de farmacia
+
+El uniforme de farmacia actual, que no necesariamente porta la bata blanca de antaño, es necesario para que sus trabajadores se sientan cómodos al momento de brindar atención a sus clientes.
+
+Pero esta no es la única razón por la que debería dotarlos de esta indumentaria.
+
+Algunos beneficios son:
+
+- Permite que su personal de farmacia sea identificado como personal sanitario.
+- Genera mayor confianza en los consumidores que compran en su establecimiento.
+- Favorece la retención de la imagen de marca gracias al uso de colores y logos distintivos.
+- Ayuda a que los pacientes vean a sus trabajadores como verdaderos profesionales.
+- Contribuye a crear sensación de unidad en la empresa.
+- Ayuda a que sus farmacéuticos se sientan identificados con la marca.
+- Favorece la fidelización y el desempeño del personal.
+- Puede incluir bolsillos que faciliten el almacenamiento de materiales necesarios durante la atención de clientes.
+`,
+  },
+    {
+    slug: "por-que-usar-mascarillas-reutilizables-lavables",
+    title: "Por qué usar mascarillas reutilizables lavables",
+    excerpt:
+      "Las mascarillas reutilizables ayudan a reducir residuos, evitar el desabastecimiento de mascarillas médicas y generar ahorro a largo plazo.",
+    canonicalPath: "/por-que-usar-mascarillas-reutilizables-lavables",
+    content: `
+A causa de la pandemia ocasionada por el coronavirus, en todo el mundo ya no podemos salir de casa sin el uso de una mascarilla.
+
+Al inicio de la pandemia las farmacias y boticas agotaron rápidamente su stock de mascarillas quirúrgicas desechables y con el tiempo surgió la necesidad de contar con un nuevo tipo de cubrebocas: las mascarillas reutilizables lavables.
+
+Un producto que pudiera ser lavado luego de ser utilizado y que ofreciera un adecuado nivel de protección para el uso cotidiano.
+
+Aunque todavía hay personas que siguen buscando mascarillas quirúrgicas para el uso diario, es preferible elegir mascarillas reutilizables lavables, ya que ofrecen beneficios adicionales.
+
+## No escasearán las mascarillas quirúrgicas
+
+Al comprar mascarillas reutilizables de tela evitamos que las mascarillas quirúrgicas, tan necesarias entre los profesionales de la salud, escaseen.
+
+De esta manera médicos, enfermeras y personal de primera línea podrán disponer de los implementos necesarios para el desempeño de sus funciones.
+
+## Ayudan al medioambiente
+
+Con la gran ola de consumo de mascarillas desechables también llegó un aumento importante de residuos.
+
+Muchas de estas mascarillas terminaron en playas, mares, campos y espacios públicos, incrementando la contaminación ambiental.
+
+Si no sabemos cómo desechar correctamente mascarillas descartables, es preferible utilizar productos reutilizables confeccionados con tela y fabricados bajo las disposiciones aprobadas por el MINSA.
+
+Una ventaja de las mascarillas de tela es que pueden reutilizarse muchas veces.
+
+Además:
+
+- Se lavan fácilmente en casa.
+- Tienen secado rápido.
+- Pueden utilizarse nuevamente en pocas horas.
+- Generan menos residuos.
+
+Debido a que muchas están confeccionadas con fibras textiles orgánicas, su impacto ambiental suele ser menor.
+
+## Ahorrarás dinero
+
+Un tercer motivo para preferir mascarillas reutilizables lavables es el ahorro económico.
+
+Estas pueden costar menos que una mascarilla KN95 o un precio similar, pero tienen una vida útil mucho más prolongada.
+
+Por lo tanto, el costo por uso resulta considerablemente menor.
+
+La elaboración de mascarillas reutilizables de tela fue aprobada por el MINSA, entidad que publicó lineamientos sobre materiales, modelos, etiquetado y presentación del producto.
+
+En Cotton Country confeccionamos mascarillas de tela personalizables para hogares y empresas como parte de sus medidas de bioseguridad.
+
+Contamos con diferentes modelos según cada necesidad.
+`,
+  },
+    {
+    slug: "cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+    title:
+      "¿Cuáles son las características que deben tener las mascarillas de tela?",
+    excerpt:
+      "Conoce las especificaciones técnicas establecidas por el MINSA para la fabricación, etiquetado y comercialización de mascarillas de tela reutilizables.",
+    canonicalPath:
+      "/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+    content: `
+Debido a la escasez de mascarillas quirúrgicas y a la falta de conocimiento de la población para la correcta eliminación de este tipo de residuos, el MINSA emitió una resolución ministerial en la que establece cuáles son las especificaciones técnicas que deben tener las mascarillas de tela.
+
+## Los modelos aprobados por el MINSA
+
+La resolución ministerial del Ministerio de Salud establece dos modelos comercializables de mascarillas de tela.
+
+### Mascarilla de dos piezas o barbijo
+
+Cuenta con un corte en la parte inferior correspondiente a la zona de la barbilla, además de una pinza en el área que comprende el tabique nasal.
+
+Este modelo cuenta con tirillas de amarre.
+
+### Mascarilla de tela con pliegues
+
+Es una prenda rectangular que cubre tanto la nariz como la boca.
+
+Presenta pliegues en la parte superior e inferior y utiliza tiras de amarre.
+
+Aunque existen características básicas que deben cumplir ambos modelos, el diseño puede variar en aspectos como color, estampado u otros elementos visuales que no afecten la funcionalidad del producto.
+
+## Materiales con los que deben fabricarse
+
+El MINSA establece que las mascarillas reutilizables lavables estén confeccionadas con tejido de punto o tejido plano.
+
+### Tejido de punto
+
+Puede fabricarse con:
+
+- Poliéster.
+- Nylon.
+- Algodón.
+- Fibras regeneradas de celulosa.
+- Mezclas de los materiales anteriores.
+
+Estas telas pueden contener componentes elastómeros.
+
+Se recomienda evitar la confección con fibras animales.
+
+### Especificaciones técnicas para tejido de punto
+
+- Densidad entre 140 y 230 gramos por metro cuadrado.
+- Factor de cobertura entre 13 y 18.
+- Encogimiento máximo de 7% después de la tercera lavada.
+- Resistencia al pilling mínima de 3-4.
+
+### Tejido plano
+
+Puede fabricarse con:
+
+- Poliéster.
+- Algodón.
+- Mezclas de algodón y poliéster.
+
+Las especificaciones técnicas incluyen:
+
+- Peso mínimo de 155 g/m².
+- Encogimiento máximo de 6% a la tercera lavada.
+- Resistencia al pilling mínima de 3-4.
+
+## Etiquetado y embolsado de mascarillas de tela
+
+La resolución ministerial indica que el etiquetado debe realizarse conforme a la norma NTP 231.400.
+
+Además, las mascarillas deben entregarse embolsadas para evitar contaminación externa durante el almacenamiento y transporte.
+
+En Cotton Country contamos con mascarillas de tela desarrolladas siguiendo las indicaciones de la resolución ministerial del MINSA para la elección del tejido, piezas de corte, costuras, puntadas, etiquetado y embolsado, con el objetivo de ofrecer un producto seguro y eficiente.
+`,
+  },
+    {
+    slug: "venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+    title:
+      "Venta de mascarillas en Lima: ¿Cómo saber que mi mascarilla me protege?",
+    excerpt:
+      "Aprende a verificar si una mascarilla reutilizable cumple con los requisitos técnicos y ofrece protección efectiva para el uso diario.",
+    canonicalPath:
+      "/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+    content: `
+La venta de mascarillas en Lima se ha incrementado debido a las diferentes olas de contagio de coronavirus.
+
+Hoy no solo es posible encontrar mascarillas KN95 en distintos establecimientos, sino también mascarillas de tela reutilizables.
+
+Estas últimas surgieron como una alternativa para reducir la contaminación generada por los productos descartables y ofrecer protección adecuada para el uso cotidiano.
+
+Sin embargo, con el aumento de la oferta surge una pregunta frecuente: ¿cómo saber si una mascarilla reutilizable realmente protege?
+
+## Debe cumplir las especificaciones técnicas del MINSA
+
+El Ministerio de Salud emitió una resolución ministerial donde se detallan las especificaciones técnicas que deben cumplir las mascarillas de tela fabricadas en Perú.
+
+Una primera forma de reconocer si una mascarilla ofrece protección es verificar que cumpla con estos requisitos.
+
+Entre los principales criterios se encuentran:
+
+- Deben comercializarse etiquetadas y embolsadas.
+- Pueden elaborarse en tejido de punto o tejido plano.
+- Se recomienda evitar tejidos fabricados con fibras animales.
+- Se pueden utilizar materiales como poliéster, nylon, algodón y fibras regeneradas de celulosa.
+- Deben contar con acabados antibacteriales permanentes.
+
+## Pruebe estos trucos para evaluar su mascarilla
+
+Si aún tiene dudas respecto a la efectividad de una mascarilla de tela, puede realizar algunas pruebas simples.
+
+### Prueba de la vela
+
+Colóquese frente a una vela encendida utilizando la mascarilla.
+
+Intente apagar la llama soplando a través de ella.
+
+Mientras más difícil resulte apagar la vela, mayor será la resistencia al paso del aire y potencialmente mejor el desempeño del producto.
+
+### Prueba del rocío
+
+Pida a otra persona que sostenga la mascarilla.
+
+Luego rocíe agua con un pulverizador sobre uno de sus lados.
+
+Si el líquido atraviesa fácilmente la tela, la mascarilla podría no estar ofreciendo la protección esperada.
+
+## Una elección informada
+
+Elegir mascarillas fabricadas bajo especificaciones técnicas verificables ayuda a garantizar un mejor desempeño y mayor seguridad para el usuario.
+
+En Cotton Country contamos con mascarillas reutilizables de tela desarrolladas siguiendo las especificaciones técnicas establecidas por el MINSA para brindar protección en las actividades diarias.
+`,
+  },
+    {
+    slug: "escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo",
+    title: "Escudos faciales o mascarillas de tela: ¿Cuál es más efectivo?",
+    excerpt:
+      "Los escudos faciales pueden complementar la protección, pero no reemplazan el uso de mascarillas como medida principal de bioseguridad.",
+    canonicalPath:
+      "/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo",
+    content: `
+La pandemia ocasionada por el coronavirus nos obligó a adoptar nuevas medidas de protección para nuestras actividades diarias.
+
+Entre ellas se encuentran las mascarillas de tela y los escudos faciales, implementos que muchas personas utilizan de forma individual o combinada.
+
+Pero surge una pregunta frecuente: ¿cuál de estos productos es más efectivo?
+
+## Escudos faciales sin mascarilla
+
+Ni siquiera en los centros de atención médica el uso de escudos faciales es exclusivo.
+
+Las pantallas faciales protegen frente a la exposición directa, pero por sí solas no evitan completamente el contagio.
+
+Dependiendo del diseño del escudo o de la posición de la persona frente a una fuente de exposición, partículas potencialmente contaminantes pueden ingresar por los laterales o la parte inferior.
+
+Además, muchos de los escudos faciales comercializados para el público general no cuentan con procesos de homologación específicos.
+
+Otro aspecto importante es que el usuario debe conocer la forma correcta de retirarlo, evitando tocar la superficie frontal para reducir riesgos de contaminación.
+
+## Mascarillas de tela versus escudos faciales
+
+De acuerdo con las recomendaciones de organismos internacionales de salud, las mascarillas continúan siendo la principal medida de protección para la población general.
+
+En el caso del personal médico que atiende pacientes, las pantallas faciales pueden utilizarse como complemento, pero no sustituyen el uso de mascarillas.
+
+Incluso cuando se utilizan escudos faciales en entornos sanitarios, estos se emplean junto con otros equipos de protección personal.
+
+## Uso combinado para mejorar la protección
+
+En ningún caso se recomienda utilizar únicamente el escudo facial como medida de protección.
+
+Cuando se emplea este tipo de implemento, lo ideal es combinarlo con una mascarilla adecuada para incrementar la cobertura y reducir riesgos.
+
+Durante determinados periodos de la pandemia, la normativa peruana exigió el uso conjunto de mascarilla y protector facial en algunos medios de transporte público.
+
+Más allá de las exigencias normativas, algunas personas optan por utilizar ambos elementos como una medida adicional de protección en situaciones específicas.
+
+En Cotton Country contamos con mascarillas de tela diseñadas para el uso cotidiano y desarrolladas siguiendo criterios técnicos de confección y seguridad.
+`,
+  },
+    {
+    slug: "como-cuidar-tu-mascarilla-de-tela-certificada",
+    title: "¿Cómo cuidar tu mascarilla de tela certificada?",
+    excerpt:
+      "El correcto lavado, secado y almacenamiento de una mascarilla reutilizable es fundamental para mantener su desempeño y prolongar su vida útil.",
+    canonicalPath: "/como-cuidar-tu-mascarilla-de-tela-certificada",
+    content: `
+Con el tiempo nos hemos dado cuenta de que para protegernos y no dañar el entorno en el que vivimos debemos dejar el uso de mascarillas desechables principalmente para profesionales de la salud y optar por mascarillas de tela reutilizables certificadas.
+
+El MINSA emitió una resolución ministerial que permitió estandarizar la confección de estos productos para que puedan ofrecer la protección necesaria en el uso cotidiano.
+
+Sin embargo, no basta con comprar una mascarilla certificada. También es importante saber cómo cuidarla adecuadamente.
+
+## Tenga en cuenta el tiempo de vida de su mascarilla
+
+Las mascarillas de tela reutilizables tienen una vida útil limitada.
+
+Con el tiempo y los lavados, el material puede deteriorarse y perder parte de sus propiedades.
+
+Esta información debe ser proporcionada por el fabricante en el etiquetado del producto, requisito contemplado dentro de los lineamientos establecidos por el MINSA.
+
+## Lave su mascarilla después de usarla
+
+Al estar confeccionadas con materiales reutilizables, las mascarillas de tela pueden lavarse después de cada uso.
+
+Si el fabricante no especifica un procedimiento particular, se puede utilizar:
+
+- Detergente común.
+- Agua caliente entre 60 °C y 90 °C.
+
+Sin embargo, siempre es recomendable revisar las instrucciones del etiquetado.
+
+Algunas mascarillas no son resistentes al cloro y un lavado incorrecto podría deteriorarlas prematuramente.
+
+## Secado adecuado
+
+Para el secado pueden utilizarse:
+
+- Secadoras de ropa.
+- Secadoras de cabello.
+- Secado natural al sol.
+
+Lo importante es asegurarse de que la mascarilla quede completamente seca antes de volver a utilizarla o almacenarla.
+
+## Guarde su mascarilla en un lugar libre de gérmenes
+
+El cuidado de una mascarilla certificada no termina después del lavado.
+
+También es importante almacenarla correctamente.
+
+Se recomienda guardarla en un lugar:
+
+- Limpio.
+- Seco.
+- Libre de salpicaduras.
+- Alejado de fuentes de contaminación.
+
+Las mascarillas deben almacenarse únicamente después de haber sido lavadas y secadas completamente.
+
+Nunca deben guardarse húmedas, ya que esto puede favorecer la aparición de hongos o bacterias.
+
+Una forma práctica de conservarlas es almacenarlas en bolsas de papel limpias que ayuden a evitar la acumulación de humedad.
+`,
+  },
+    {
+    slug: "mascarillas-y-covid-19-segunda-ola",
+    title: "Mascarillas y COVID-19",
+    excerpt:
+      "La segunda ola incrementó la demanda de productos de bioseguridad y reforzó la necesidad de estándares de calidad en mascarillas reutilizables.",
+    canonicalPath: "/mascarillas-y-covid-19-segunda-ola",
+    content: `
+La llegada de la segunda ola generó problemas en los mercados y elevó los costos de abastecimiento en múltiples industrias.
+
+La industria textil-confecciones no fue la excepción y esto debe ser tomado en cuenta por las empresas que requieren abastecimiento constante para grandes cantidades de colaboradores operativos.
+
+## El rol de las mascarillas comunitarias
+
+Las mascarillas comunitarias tuvieron un papel importante cuando la escasez y el sobreprecio de productos descartables importados obligaron a buscar alternativas viables.
+
+La industria textil-confecciones asumió la producción de estas prendas con el objetivo de contribuir a la salud, la seguridad y la protección de los sectores más vulnerables.
+
+Durante este periodo aparecieron numerosas marcas y diseños que alcanzaron buenos niveles de aceptación en el mercado.
+
+## La importancia de las normas técnicas
+
+Junto con el crecimiento de la oferta también se evidenció la ausencia de normas técnicas y buenas prácticas de producción en muchos productos comercializados.
+
+Estas normas eran y continúan siendo necesarias tanto para la fabricación como para la comercialización de mascarillas reutilizables.
+
+Además de cumplir requisitos técnicos, los procesos de producción deben incorporar medidas de bioseguridad y limpieza acordes a la situación sanitaria.
+
+## Tomar decisiones informadas
+
+La lucha contra el coronavirus requiere decisiones bien informadas que permitan garantizar niveles mínimos de desempeño en los productos de protección personal.
+
+La salud debe mantenerse como prioridad, junto con el uso correcto de las prendas de bioseguridad.
+
+## El papel del empaque y la manufactura
+
+A raíz del COVID-19 el empaque adquirió una relevancia mucho mayor dentro de la cadena de valor.
+
+Entre los aspectos más valorados por especialistas del sector destacan:
+
+- Empaques sellados al vacío.
+- Materiales biodegradables.
+- Buenas prácticas de manufactura.
+- Procesos de limpieza y control más rigurosos.
+
+Todos estos elementos contribuyen a mejorar la percepción de seguridad y la calidad final del producto.
+
+En nuestras próximas publicaciones abordaremos con mayor detalle temas relacionados con empaques, procesos y buenas prácticas dentro de la industria textil.
+`,
+  },
+    {
+    slug: "empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+    title: "Empaques sostenibles y bioseguridad en el transporte de prendas",
+    excerpt:
+      "La bioseguridad en el transporte de prendas exige empaques higiénicos, sostenibles y alineados con una economía circular.",
+    canonicalPath:
+      "/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+    content: `
+En medio de la crisis por el coronavirus, el empaquetado de los productos cobró un papel relevante.
+
+Después de todo, la asepsia del empaque es esencial para prevenir la propagación del virus.
+
+Pero no se trata solo de fabricar un empaque antibacterial o antimicrobiano, sino de que también forme parte de la economía circular, es decir, que pueda ser reciclado y reutilizado.
+
+La búsqueda del empaque ideal ha afectado a muchos sectores.
+
+Aunque se hable principalmente de la industria alimentaria, lo cierto es que un empaque que garantice niveles óptimos de asepsia y que sea sostenible también es de interés para la industria textil.
+
+Esto cobra especial importancia si tenemos en cuenta que las mascarillas reutilizables fueron una de las prendas más vendidas durante la cuarentena.
+
+Hace unas semanas apareció en las noticias en Perú el caso de un vendedor ambulante de mascarillas que soplaba la bolsa donde luego introducía estos productos de bioseguridad.
+
+Este método de empaquetado no es permisible en la industria, mucho menos en un contexto donde todos buscamos reducir la propagación del COVID-19.
+
+No solo la forma de empaquetar debe cambiar, sino también los empaques que se utilicen.
+
+En este contexto, en la industria textil surgen dos alternativas:
+
+- Empaques antihongos y antibacteriales.
+- Empaques biodegradables.
+
+## Empaques antihongos y antibacterial D2P
+
+Uno de los tipos de empaque que el gremio textil priorizará para el empaquetado y distribución de sus productos son aquellos que garanticen niveles óptimos de asepsia.
+
+Este es el caso de los llamados empaques D2P o empaques antihongos y antibacterial.
+
+Este tipo de empaques posee ingredientes activos de liberación controlada que inhiben el crecimiento celular, por lo que se asegura la protección del producto empaquetado a largo plazo.
+
+Al respecto, se proyecta que el uso de envases plásticos se intensifique, ya que han demostrado valor para prevenir la expansión de infecciones debido a sus características higiénicas y de protección.
+
+Pese a ello, existe un desafío clave para este tipo de empaquetado: que también sea biodegradable.
+
+## Empaques biodegradables D2W
+
+Los empaques nuevos no solo deberían cumplir condiciones de bioseguridad, sino también contribuir a una economía circular.
+
+Por lo mismo, el reto para diseñadores y fabricantes es que estos productos sean sostenibles.
+
+En ese sentido, los empaques plásticos deberían ser:
+
+- Más sustentables.
+- Reciclables.
+- Compostables.
+- Reutilizables cuando sea posible.
+
+Además, es importante que en su fabricación se utilice la menor cantidad posible de recursos vírgenes.
+
+Este objetivo no parece lejano.
+
+En algunos países ya se están impulsando metas para aumentar el uso de plástico reciclado en empaques y lograr que estos sean reutilizables, reciclables o compostables en los próximos años.
+`,
+  },
+    {
+    slug: "ntp-aplicada-en-mascarillas-reutilizables",
+    title: "NTP aplicada en mascarillas reutilizables",
+    excerpt:
+      "Las normas técnicas establecen requisitos de diseño, tejido, etiquetado y desempeño para las mascarillas reutilizables comunitarias.",
+    canonicalPath: "/ntp-aplicada-en-mascarillas-reutilizables",
+    content: `
+En medio de la pandemia ocasionada por el coronavirus en Perú, el INACAL aceleró el desarrollo de normas técnicas que permitieran la fabricación de mascarillas reutilizables en territorio nacional.
+
+Antes de continuar, es importante definir qué es una norma técnica.
+
+Se trata de documentos elaborados por grupos de expertos encargados de establecer requisitos para productos, procesos y sistemas con el objetivo de garantizar estándares mínimos de calidad y desempeño.
+
+Estas son algunas de las principales disposiciones aplicadas a las mascarillas reutilizables comunitarias.
+
+## Sobre el diseño de las mascarillas reutilizables
+
+Las mascarillas aprobadas para uso y comercialización deben contar con mecanismos que permitan ajustarse correctamente a:
+
+- Nariz.
+- Boca.
+- Barbilla.
+
+Además, deben incluir sistemas de amarre o sujeción adecuados.
+
+No existe un diseño único obligatorio siempre que se cumplan los requisitos funcionales establecidos.
+
+Por ejemplo, pueden incluir o no:
+
+- Puente nasal.
+- Función antiempañante.
+- Diferentes formas de confección.
+
+## Respecto al tejido
+
+Las mascarillas pueden confeccionarse utilizando:
+
+### Tejido de punto
+
+- Poliéster.
+- Nylon.
+- Algodón.
+- Viscosa.
+- Modal.
+- Mezclas de los materiales anteriores.
+
+### Tejido plano
+
+- Poliéster.
+- Algodón.
+- Mezclas de algodón y poliéster.
+
+## Estructura del tejido recomendada
+
+Se recomiendan estructuras textiles que ofrezcan una mayor cobertura.
+
+Entre ellas:
+
+### Tejido de punto
+
+- Interlock.
+- Jersey double face.
+- Milano.
+- Jersin.
+
+### Tejido plano
+
+- Ligamento sarga 3/1.
+- Ligamento tafetán.
+
+Con títulos de hilado que cumplan los parámetros técnicos establecidos por la norma.
+
+## Especificaciones técnicas del tejido
+
+Cuando se utiliza tejido de punto, deben respetarse criterios como:
+
+- Densidad entre 140 g/m² y 230 g/m².
+- Factor de cobertura entre 13 y 18.
+- Encogimiento máximo de 7% a la tercera lavada.
+- Resistencia adecuada al pilling.
+
+## Etiquetado y embolsado de mascarillas comunitarias
+
+El etiquetado y embolsado deben realizarse conforme a la Norma Técnica Peruana NTP 231.400.
+
+La información mínima debe incluir:
+
+- Composición de fibras.
+- País de origen.
+- Talla.
+- Instrucciones de cuidado y conservación.
+- Razón social del fabricante o importador.
+- Número de RUC.
+
+## Verifique que su mascarilla cumpla la norma
+
+Para identificar una mascarilla alineada con los requisitos técnicos, verifique que:
+
+1. No se desintegre, rasgue o rompa durante el uso.
+2. Se ajuste correctamente a nariz, boca, barbilla y laterales del rostro.
+3. Mantenga su funcionalidad independientemente de su diseño específico.
+
+Ahora que conoce más sobre las normas técnicas aplicadas a mascarillas reutilizables comunitarias, podrá evaluar con mayor criterio los productos disponibles en el mercado y seleccionar proveedores que trabajen conforme a estos estándares.
+`,
+  },
+    {
+    slug: "procesos-de-confeccion-seguros",
+    title: "Procesos de confección seguros",
+    excerpt:
+      "Los procesos de confección deben incorporar protocolos de bioseguridad, control de insumos y medidas de prevención para proteger a los trabajadores.",
+    canonicalPath: "/procesos-de-confeccion-seguros",
+    content: `
+La segunda ola llegó y reforzó la necesidad de mantener protocolos de bioseguridad en todos los sectores productivos.
+
+La industria textil no es una excepción.
+
+Por ello resulta importante revisar los lineamientos para implementar procesos de confección seguros que permitan proteger a los trabajadores y mantener la continuidad operativa.
+
+## Sobre los módulos de producción
+
+Los módulos de trabajo deben garantizar un distanciamiento físico mínimo de un metro entre trabajadores.
+
+Además, los colaboradores deben utilizar los elementos de bioseguridad definidos para sus funciones.
+
+Entre las medidas recomendadas se encuentran:
+
+- Mantener separación física entre puestos de trabajo.
+- Utilizar mascarillas durante la jornada laboral.
+- Asignar herramientas e instrumentos de uso individual.
+- Evitar compartir equipos entre trabajadores.
+
+Al finalizar cada jornada, los equipos y herramientas deben ser limpiados y desinfectados.
+
+También se recomienda reducir la presencia de materiales innecesarios en cada módulo de trabajo.
+
+Los sobrantes y mermas deben retirarse continuamente para mantener el orden y facilitar la limpieza.
+
+## Manipulación de insumos y productos
+
+El ingreso y salida de insumos debe realizarse en zonas específicas de carga y descarga.
+
+Los productos embalados que se reciban deben pasar por procesos de desinfección antes de ingresar al almacén o a las áreas de producción.
+
+Posteriormente deben ser organizados por personal responsable, quien debe realizar procedimientos de higiene de manos antes y después de la manipulación.
+
+Las áreas de almacenamiento deben mantenerse:
+
+- Debidamente ventiladas.
+- Limpias.
+- Ordenadas.
+- En condiciones higiénicas adecuadas.
+
+## Distribución de productos terminados
+
+Antes de distribuir prendas terminadas es recomendable desinfectar las superficies de contacto frecuente de los vehículos utilizados para el transporte.
+
+Asimismo, durante las entregas deben aplicarse medidas preventivas para reducir riesgos de exposición y contaminación.
+
+Entre ellas:
+
+- Desinfección de productos.
+- Higiene de manos.
+- Protocolos de entrega seguros.
+
+## Medidas ante un caso de COVID-19
+
+A pesar de los protocolos implementados, siempre existe la posibilidad de que se presente un caso positivo dentro de la organización.
+
+En estos escenarios se recomienda:
+
+- Aislar inmediatamente a la persona con síntomas compatibles.
+- Aplicar los periodos de cuarentena establecidos por las autoridades sanitarias.
+- Informar al personal potencialmente expuesto.
+- Comunicar el caso a las autoridades correspondientes.
+- Ejecutar procesos de limpieza y desinfección en las áreas involucradas.
+
+## Plan de vigilancia y control
+
+Es indispensable que las empresas cuenten con un plan para la vigilancia, prevención y control del COVID-19.
+
+Este documento permite definir procedimientos de actuación ante posibles contagios, proteger al personal y mantener la continuidad de las operaciones bajo condiciones seguras.
+`,
+  },
+    {
+    slug: "delivery-aliado-de-la-industria-textil-confecciones",
+    title: "Delivery aliado de la industria textil-confecciones",
+    excerpt:
+      "El delivery se convirtió en una herramienta clave para que las empresas textiles mantuvieran sus operaciones y entregas durante la pandemia.",
+    canonicalPath: "/delivery-aliado-de-la-industria-textil-confecciones",
+    content: `
+La pandemia del COVID-19 obligó a muchos sectores a reinventarse total o parcialmente.
+
+En la industria textil-confecciones, numerosos locales tuvieron que cerrar temporalmente debido a las restricciones sanitarias.
+
+En este contexto surgió una necesidad urgente: encontrar nuevas formas de vender productos y hacerlos llegar a clientes corporativos y consumidores finales.
+
+El delivery se convirtió en una de las principales soluciones.
+
+## El delivery como aliado estratégico
+
+Desde su habilitación durante el 2020, el servicio de delivery permitió que empresas dedicadas a la fabricación y comercialización de prendas continuaran operando.
+
+Esto incluyó productos como:
+
+- Uniformes corporativos.
+- Mascarillas reutilizables.
+- Prendas promocionales.
+- Ropa de trabajo.
+
+Gracias al delivery fue posible mantener la continuidad de las entregas y cumplir compromisos comerciales aun durante periodos de restricciones.
+
+## Nuevas aplicaciones de delivery
+
+La popularidad de las aplicaciones de delivery creció considerablemente durante la pandemia.
+
+Muchos servicios ampliaron sus zonas de cobertura y agregaron nuevas funcionalidades.
+
+Aunque inicialmente fueron asociadas principalmente al reparto de alimentos, también comenzaron a ofrecer:
+
+- Recojo de productos.
+- Envíos punto a punto.
+- Entregas empresariales.
+
+Esto permitió que las empresas textiles evitaran inversiones adicionales en flotas propias y personal dedicado exclusivamente al transporte.
+
+## Desafíos del delivery para el sector textil
+
+A pesar de sus ventajas, el delivery también plantea retos importantes.
+
+Por ejemplo:
+
+- Garantizar que repartidores cuenten con equipos de bioseguridad adecuados.
+- Asegurar condiciones apropiadas para jornadas prolongadas bajo distintas condiciones climáticas.
+- Mantener protocolos de higiene durante el transporte y entrega.
+
+Asimismo, las empresas contratantes deben evaluar cuidadosamente a sus operadores logísticos.
+
+No solo se enfrentan a costos de envío y limitaciones de cobertura, sino también a la necesidad de proteger la reputación de su marca mediante entregas seguras y profesionales.
+
+## Protocolos para la distribución de productos
+
+Las recomendaciones compartidas por entidades del sector productivo incluyen medidas orientadas a reducir riesgos durante el transporte.
+
+Entre ellas:
+
+- Limpieza y desinfección de vehículos.
+- Higiene de superficies de contacto frecuente.
+- Aplicación de protocolos de recepción y entrega.
+- Manipulación adecuada de los productos terminados.
+
+Estas prácticas contribuyen a proteger tanto a los trabajadores como a los clientes finales durante todo el proceso logístico.
+`,
+  },
+    {
+  slug: "que-talla-eres-en-peru",
+  title: "¿Qué talla eres?",
+  excerpt:
+    "Las tallas estándar no siempre significan lo mismo entre marcas. Descubra por qué ocurre y cómo elegir correctamente el uniforme ideal.",
+  canonicalPath: "/que-talla-eres-en-peru",
+  content: `
+Hasta hace algunos años, cuando se mandaba hacer uniformes de colegio o se quería vestir a todo el personal de una empresa, la costurera o el sastre venían a las oficinas o a la escuela y les tomaban medidas a todos.
+
+Lo mismo sucedía si queríamos comprar ropa para una ocasión especial, como podía ser un matrimonio, un bautizo o un cumpleaños.
+
+No obstante, en los últimos años, la ropa a medida cada vez se ha vuelto más sinónimo de exclusividad y ahora compramos la ropa que necesitamos o queremos en tiendas por departamentos o entre proveedores que, lejos de medir a cada empleado o alumno, ofrecen lo que se ha llamado “tallas completas”.
+
+Pero si hablamos de tallas estándar, ¿existe realmente una medida fija para las tallas básicas para adultos?
+
+Por ejemplo, ¿es la talla S de la tienda por departamentos la misma talla S que se vende en Gamarra?
+
+Si le hacemos esta pregunta a cualquier persona de a pie nos dirá que no. Incluso se quejará de que, pese a que es talla S en cierta marca, las prendas de esta talla en una tienda por departamentos le quedan muy grandes o muy chicas.
+
+## Entonces, ¿a qué se debe todo lo anterior?
+
+Con el paso del tiempo, y con lo exclusivo que es tener ropa a medida hoy en día, ya no es la ropa la que se adapta a nosotros, sino nosotros a la ropa que compramos.
+
+Esto se debe a la estandarización de las tallas, es decir, a que cada marca o fábrica tiene sus propias medidas estándar.
+
+Lo anterior nos lleva a afirmar que realmente las tallas no existen.
+
+Es decir, que no debes sentirte mal porque una talla S que le queda bien a una extremadamente delgada modelo de revista no te siente igual.
+
+No significa que no tengas el peso ideal, sino que la marca en cuestión tiene otras medidas estándar, muchas de las cuales ni siquiera se ajustan a la realidad de nuestro país.
+
+Basta ver, por ejemplo, el largo de las bastas de algunos pantalones o el de las mangas largas de camisas y chompas para comprobarlo.
+
+## ¿Cómo saber qué talla soy para comprarme el uniforme ideal?
+
+Si seguimos el hilo anterior, es importante que antes de comprarnos una prenda de ropa, sobre todo por delivery, o mandemos a hacer nuestros uniformes con un proveedor de la industria textil confecciones, nos aseguremos de conocer su tallaje y confirmar que las medidas de una talla S, M o L coinciden con las nuestras.
+
+De ahí que muchos proveedores ofrezcan tablas de medidas para prendas superiores e inferiores en sus portales.
+
+Otra solución son los llamados SizeSet, los cuales se usan para tallar de manera remota, por lo que son una excelente alternativa para conocer el tallaje sin contacto.
+
+Lo ideal es que nos sintamos cómodos con la prenda e incluso, de preferencia, que nos quede algo suelta.
+
+Después de todo, no debemos acomplejarnos por la talla que nos “corresponda”, ya que en vista de que no existe en el país una estandarización para crear una tabla de tallas basada en medidas peruanas, las que existen actualmente son subjetivas y, por lo tanto, no son necesariamente tu talla real.
+`,
+},
+
 ]
