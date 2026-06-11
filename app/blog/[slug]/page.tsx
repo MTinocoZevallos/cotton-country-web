@@ -49,11 +49,7 @@ export default async function PostPage(
       <h1 className="text-3xl font-semibold mb-6">
         {post.title}
       </h1>
-
-      <p className="text-gray-600 mb-10">
-        {post.excerpt}
-      </p>
-
+      
       <article className="prose">
         {post.content}
       </article>
