@@ -17,7 +17,7 @@ const categories = [
   {
     title: "Pantalones",
     href: "/uniformes/pantalones",
-    image: "/uniformes/pantalón-corte-chino-caballero.png",
+    image: "/uniformes/pantalon-corte-chino-caballero.png",
     text: "Pantalones corporativos y casuales desarrollados para comodidad, durabilidad y presentación.",
   },
   {
@@ -38,7 +38,6 @@ export default function UniformesPage() {
   return (
     <main className="pt-20 bg-white">
       <section className="max-w-7xl mx-auto px-6 py-20">
-
         <div className="max-w-3xl mb-14">
           <p className="text-sm font-medium text-[#01018B] mb-3">
             Uniformes Corporativos
@@ -88,7 +87,6 @@ export default function UniformesPage() {
             </Link>
           ))}
         </div>
-
       </section>
     </main>
   )

@@ -4,22 +4,22 @@ import Link from "next/link"
 const items = [
   {
     title: "Pantalón Corte Chino Caballero",
-    image: "/uniformes/pantalón-corte-chino-caballero.png",
+    image: "/uniformes/pantalon-corte-chino-caballero.png",
     text: "Pantalón corporativo de corte clásico que combina comodidad y presentación profesional. Puede confeccionarse en drill, algodón o tejidos con stretch para adaptarse a diferentes niveles de exigencia operativa.",
   },
   {
     title: "Pantalón Corte Chino Dama",
-    image: "/uniformes/pantalón-corte-chino-dama.png",
+    image: "/uniformes/pantalon-corte-chino-dama.png",
     text: "Pantalón femenino diseñado para complementar uniformes corporativos de oficina y atención al cliente. Disponible en diversas composiciones textiles para maximizar confort, movilidad y durabilidad.",
   },
   {
     title: "Pantalón Corte Jean Caballero",
-    image: "/uniformes/pantalón-corte-jean-caballero.png",
+    image: "/uniformes/pantalon-corte-jean-caballero.png",
     text: "Opción casual para empresas que requieren una imagen moderna y funcional. Ideal para ventas, operaciones, logística y actividades que demandan movilidad constante.",
   },
   {
     title: "Pantalón Corte Jean Dama",
-    image: "/uniformes/pantalón-corte-jean-dama.png",
+    image: "/uniformes/pantalon-corte-jean-dama.png",
     text: "Pantalón de estilo casual diseñado para actividades de campo, ventas y trabajo operativo. Combina comodidad, resistencia y una apariencia profesional adaptable a múltiples sectores.",
   },
 ]
