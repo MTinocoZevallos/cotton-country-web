@@ -1,6 +1,6 @@
 export default function PoliticaPrivacidad() {
   return (
-    <section className="max-w-4xl mx-auto px-6 py-16">
+    <section className="max-w-4xl mx-auto px-6 pt-32 pb-16">
       <article className="prose prose-slate max-w-none">
 
         <h1>EXPOSICIÓN DE LA POLÍTICA</h1>

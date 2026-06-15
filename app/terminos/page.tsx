@@ -1,6 +1,6 @@
 export default function TerminosYCondiciones() {
   return (
-    <section className="max-w-4xl mx-auto px-6 py-16">
+    <section className="max-w-4xl mx-auto px-6 pt-32 pb-16">
       <h1 className="text-3xl font-bold mb-8">Términos y condiciones</h1>
 
       <pre className="whitespace-pre-wrap text-sm leading-relaxed text-gray-800 font-sans">
