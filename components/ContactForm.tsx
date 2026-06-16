@@ -60,6 +60,8 @@ export default function ContactForm() {
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
 
+    const form = event.currentTarget
+
     setStatus("loading")
     setMessage("")
 
@@ -69,40 +71,47 @@ export default function ContactForm() {
       return
     }
 
-    const formData = new FormData(event.currentTarget)
+    try {
+      const formData = new FormData(form)
 
-    const payload = {
-      name: formData.get("name"),
-      phone: formData.get("phone"),
-      email: formData.get("email"),
-      ruc: formData.get("ruc"),
-      message: formData.get("message"),
-      turnstileToken,
-    }
+      const payload = {
+        name: formData.get("name"),
+        phone: formData.get("phone"),
+        email: formData.get("email"),
+        ruc: formData.get("ruc"),
+        message: formData.get("message"),
+        turnstileToken,
+      }
 
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
-    })
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      })
 
-    const data = await response.json()
+      const data = await response.json()
 
-    if (!response.ok) {
-      setStatus("error")
-      setMessage(data.error ?? "No se pudo enviar la solicitud.")
+      if (!response.ok) {
+        setStatus("error")
+        setMessage(data.error ?? "No se pudo enviar la solicitud.")
+        window.turnstile?.reset(widgetIdRef.current ?? undefined)
+        setTurnstileToken("")
+        return
+      }
+
+      form.reset()
       window.turnstile?.reset(widgetIdRef.current ?? undefined)
       setTurnstileToken("")
-      return
+      setStatus("success")
+      setMessage("Solicitud enviada correctamente. Te contactaremos pronto.")
+    } catch {
+      setStatus("error")
+      setMessage("No se pudo enviar la solicitud. Inténtalo nuevamente.")
+      window.turnstile?.reset(widgetIdRef.current ?? undefined)
+      setTurnstileToken("")
     }
-
-    event.currentTarget.reset()
-    window.turnstile?.reset(widgetIdRef.current ?? undefined)
-    setTurnstileToken("")
-    setStatus("success")
-    setMessage("Solicitud enviada correctamente. Te contactaremos pronto.")
   }
 
   return (
