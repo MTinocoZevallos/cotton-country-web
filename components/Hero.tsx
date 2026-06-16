@@ -8,7 +8,7 @@ export default function Hero() {
         <img
           src="/hero-bg.png"
           alt="Uniformes Corporativos Cotton Country"
-          className="w-full h-full object-cover object-[75%_35%]"
+          className="w-full h-full object-contain object-right"
         />
 
         {/* Overlay */}
