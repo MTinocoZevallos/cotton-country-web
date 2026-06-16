@@ -1,95 +1,232 @@
+"use client"
+
+import Script from "next/script"
+import { useRef, useState } from "react"
+
+declare global {
+  interface Window {
+    turnstile?: {
+      render: (
+        container: HTMLElement,
+        options: {
+          sitekey: string
+          callback: (token: string) => void
+          "expired-callback": () => void
+          "error-callback": () => void
+        }
+      ) => string
+      reset: (widgetId?: string) => void
+    }
+  }
+}
+
 export default function ContactForm() {
+  const turnstileRef = useRef<HTMLDivElement | null>(null)
+  const widgetIdRef = useRef<string | null>(null)
+
+  const [turnstileToken, setTurnstileToken] = useState("")
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+  const [message, setMessage] = useState("")
+
+  function renderTurnstile() {
+    if (!turnstileRef.current || !window.turnstile || widgetIdRef.current) {
+      return
+    }
+
+    const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
+
+    if (!siteKey) {
+      setStatus("error")
+      setMessage("El captcha no está configurado correctamente.")
+      return
+    }
+
+    widgetIdRef.current = window.turnstile.render(turnstileRef.current, {
+      sitekey: siteKey,
+      callback: (token: string) => {
+        setTurnstileToken(token)
+      },
+      "expired-callback": () => {
+        setTurnstileToken("")
+      },
+      "error-callback": () => {
+        setTurnstileToken("")
+        setStatus("error")
+        setMessage("No se pudo validar el captcha. Inténtalo nuevamente.")
+      },
+    })
+  }
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+
+    setStatus("loading")
+    setMessage("")
+
+    if (!turnstileToken) {
+      setStatus("error")
+      setMessage("Por favor completa la validación de seguridad.")
+      return
+    }
+
+    const formData = new FormData(event.currentTarget)
+
+    const payload = {
+      name: formData.get("name"),
+      phone: formData.get("phone"),
+      email: formData.get("email"),
+      ruc: formData.get("ruc"),
+      message: formData.get("message"),
+      turnstileToken,
+    }
+
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    })
+
+    const data = await response.json()
+
+    if (!response.ok) {
+      setStatus("error")
+      setMessage(data.error ?? "No se pudo enviar la solicitud.")
+      window.turnstile?.reset(widgetIdRef.current ?? undefined)
+      setTurnstileToken("")
+      return
+    }
+
+    event.currentTarget.reset()
+    window.turnstile?.reset(widgetIdRef.current ?? undefined)
+    setTurnstileToken("")
+    setStatus("success")
+    setMessage("Solicitud enviada correctamente. Te contactaremos pronto.")
+  }
+
   return (
-    <section id="contacto" className="w-full bg-white py-24">
-      <div className="max-w-5xl mx-auto px-6">
+    <>
+      <Script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        strategy="afterInteractive"
+        onLoad={renderTurnstile}
+      />
 
-        {/* Texto de invitación */}
-        <div className="max-w-3xl mb-14">
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
-            Solicita una propuesta personalizada
-          </h2>
-          <p className="mt-4 text-gray-600 text-base md:text-lg leading-relaxed">
-            Cuéntanos sobre tu empresa y el tipo de uniformes que necesitas.
-            Nuestro equipo te contactará en menos de 24 horas para coordinar
-            una propuesta adaptada a tus requerimientos técnicos y de imagen.
-          </p>
+      <section id="contacto" className="w-full bg-white py-24">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="max-w-3xl mb-14">
+            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
+              Solicita una propuesta personalizada
+            </h2>
+            <p className="mt-4 text-gray-600 text-base md:text-lg leading-relaxed">
+              Cuéntanos sobre tu empresa y el tipo de uniformes que necesitas.
+              Nuestro equipo te contactará para coordinar una propuesta adaptada
+              a tus requerimientos técnicos y de imagen.
+            </p>
+          </div>
+
+          <form
+            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+            onSubmit={handleSubmit}
+          >
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                Nombre y Apellido
+              </label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#01018B]"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                Teléfono
+              </label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                required
+                className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#01018B]"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                Correo corporativo
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                placeholder="nombre@empresa.com"
+                className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#01018B]"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="ruc" className="block text-sm font-medium text-gray-700 mb-1">
+                RUC
+              </label>
+              <input
+                id="ruc"
+                name="ruc"
+                type="text"
+                required
+                className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#01018B]"
+              />
+            </div>
+
+            <div className="md:col-span-2">
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                Cuéntanos qué tipo de uniformes necesitas
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows={5}
+                required
+                placeholder="Ejemplo: camisas corporativas para equipo administrativo, cantidades aproximadas, fecha requerida, colores, etc."
+                className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#01018B]"
+              />
+            </div>
+
+            <div className="md:col-span-2">
+              <div ref={turnstileRef} />
+            </div>
+
+            {message && (
+              <div className="md:col-span-2">
+                <p
+                  className={
+                    status === "success"
+                      ? "text-sm text-green-700"
+                      : "text-sm text-red-700"
+                  }
+                >
+                  {message}
+                </p>
+              </div>
+            )}
+
+            <div className="md:col-span-2 mt-4">
+              <button
+                type="submit"
+                disabled={status === "loading"}
+                className="inline-flex items-center justify-center rounded-lg bg-[#01018B] px-8 py-4 text-white text-sm font-medium hover:bg-[#0202a8] transition disabled:opacity-60"
+              >
+                {status === "loading" ? "Enviando..." : "Solicitar propuesta"}
+              </button>
+            </div>
+          </form>
         </div>
-
-        {/* Formulario */}
-        <form
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
-          action="#"
-          method="post"
-        >
-          {/* Nombre */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Nombre y Apellido
-            </label>
-            <input
-              type="text"
-              required
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#01018B]"
-            />
-          </div>
-
-          {/* RUC */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              RUC
-            </label>
-            <input
-              type="text"
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#01018B]"
-            />
-          </div>
-
-          {/* Correo */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Correo de empresa
-            </label>
-            <input
-              type="email"
-              required
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#01018B]"
-            />
-          </div>
-
-          {/* Teléfono */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Teléfono
-            </label>
-            <input
-              type="tel"
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#01018B]"
-            />
-          </div>
-
-          {/* Mensaje libre */}
-          <div className="md:col-span-2">
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Cuéntanos qué tipo de uniformes necesitas
-            </label>
-            <textarea
-              rows={5}
-              placeholder="Ejemplo: camisas corporativas para equipo administrativo, cantidades aproximadas, fecha requerida, colores, etc."
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#01018B]"
-            />
-          </div>
-
-          {/* Botón */}
-          <div className="md:col-span-2 mt-4">
-            <button
-              type="submit"
-              className="inline-flex items-center justify-center rounded-lg bg-[#01018B] px-8 py-4 text-white text-sm font-medium hover:bg-[#0202a8] transition"
-            >
-              Solicitar propuesta
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }
