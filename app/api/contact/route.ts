@@ -93,7 +93,7 @@ export async function POST(request: Request) {
     }
 
     await resend.emails.send({
-      from: "Cotton Country <onboarding@resend.dev>",
+      from: "Cotton Country <web@cottoncountry.com.pe>",
       to: ["info@cottoncountry.com.pe"],
       replyTo: email,
       subject: "Nueva solicitud de propuesta desde la web",
