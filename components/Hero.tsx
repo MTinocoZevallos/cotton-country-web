@@ -3,19 +3,16 @@ import Link from "next/link"
 export default function Hero() {
   return (
     <section className="relative w-full min-h-[90vh] flex items-center">
-      {/* Imagen de fondo */}
       <div className="absolute inset-0 -z-10">
         <img
           src="/hero-bg.png"
           alt="Uniformes Corporativos Cotton Country"
-          className="w-full h-full object-cover object-[70%_35%] md:object-[82%_35%]"
+          className="w-full h-full object-cover object-[68%_35%] md:object-[85%_35%]"
         />
 
-        {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#01018B]/80 via-[#01018B]/25 to-transparent"></div>
       </div>
 
-      {/* Contenido */}
       <div className="max-w-7xl mx-auto px-6 pt-24 w-full">
         <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight max-w-3xl">
           El uniforme, la mejor herramienta de marketing
