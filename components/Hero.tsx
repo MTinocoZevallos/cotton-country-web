@@ -2,35 +2,37 @@ import Link from "next/link"
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[90vh] flex items-center">
+    <section className="relative w-full min-h-[88vh] md:min-h-[90vh] flex items-center overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <img
           src="/hero-bg.png"
           alt="Uniformes Corporativos Cotton Country"
-          className="w-full h-full object-cover object-[68%_35%] md:object-[85%_35%]"
+          className="w-full h-full object-cover object-[62%_35%] md:object-[95%_35%] lg:object-[100%_35%]"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-[#01018B]/80 via-[#01018B]/25 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#01018B]/90 via-[#01018B]/40 md:via-[#01018B]/20 to-transparent"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 pt-24 w-full">
-        <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight max-w-3xl">
-          El uniforme, la mejor herramienta de marketing
-        </h1>
+        <div className="max-w-2xl">
+          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
+            El uniforme, la mejor herramienta de marketing
+          </h1>
 
-        <p className="mt-6 text-white/90 text-lg md:text-xl max-w-2xl">
-          Estudios comprueban que el uniforme influye tanto en la percepción del
-          cliente como en la motivación del colaborador. En Cotton Country
-          convertimos tu marca en una potente herramienta de comunicación.
-        </p>
+          <p className="mt-6 text-white/90 text-lg md:text-xl max-w-xl">
+            Estudios comprueban que el uniforme influye tanto en la percepción del
+            cliente como en la motivación del colaborador. En Cotton Country
+            convertimos tu marca en una potente herramienta de comunicación.
+          </p>
 
-        <div className="mt-10">
-          <Link
-            href="/#contacto"
-            className="inline-flex items-center justify-center bg-white text-[#01018B] px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition"
-          >
-            Solicitar propuesta
-          </Link>
+          <div className="mt-10">
+            <Link
+              href="/#contacto"
+              className="inline-flex items-center justify-center bg-white text-[#01018B] px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition"
+            >
+              Solicitar propuesta
+            </Link>
+          </div>
         </div>
       </div>
     </section>
