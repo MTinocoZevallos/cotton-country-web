@@ -21,12 +21,14 @@ declare global {
 }
 
 export default function ContactForm() {
+  const formRef = useRef<HTMLFormElement | null>(null)
   const turnstileRef = useRef<HTMLDivElement | null>(null)
   const widgetIdRef = useRef<string | null>(null)
 
   const [turnstileToken, setTurnstileToken] = useState("")
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
-  const [message, setMessage] = useState("")
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [formMessage, setFormMessage] = useState("")
+  const [isSuccess, setIsSuccess] = useState(false)
 
   function renderTurnstile() {
     if (!turnstileRef.current || !window.turnstile || widgetIdRef.current) {
@@ -36,8 +38,8 @@ export default function ContactForm() {
     const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
 
     if (!siteKey) {
-      setStatus("error")
-      setMessage("El captcha no está configurado correctamente.")
+      setIsSuccess(false)
+      setFormMessage("El captcha no está configurado correctamente.")
       return
     }
 
@@ -51,8 +53,8 @@ export default function ContactForm() {
       },
       "error-callback": () => {
         setTurnstileToken("")
-        setStatus("error")
-        setMessage("No se pudo validar el captcha. Inténtalo nuevamente.")
+        setIsSuccess(false)
+        setFormMessage("No se pudo validar el captcha. Inténtalo nuevamente.")
       },
     })
   }
@@ -60,19 +62,22 @@ export default function ContactForm() {
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
 
-    const form = event.currentTarget
+    if (isSubmitting) {
+      return
+    }
 
-    setStatus("loading")
-    setMessage("")
+    setIsSubmitting(true)
+    setIsSuccess(false)
+    setFormMessage("")
 
     if (!turnstileToken) {
-      setStatus("error")
-      setMessage("Por favor completa la validación de seguridad.")
+      setIsSubmitting(false)
+      setFormMessage("Por favor completa la validación de seguridad.")
       return
     }
 
     try {
-      const formData = new FormData(form)
+      const formData = new FormData(event.currentTarget)
 
       const payload = {
         name: formData.get("name"),
@@ -91,26 +96,31 @@ export default function ContactForm() {
         body: JSON.stringify(payload),
       })
 
-      const data = await response.json()
+      let data: { error?: string; message?: string } = {}
+
+      try {
+        data = await response.json()
+      } catch {
+        data = {}
+      }
 
       if (!response.ok) {
-        setStatus("error")
-        setMessage(data.error ?? "No se pudo enviar la solicitud.")
-        window.turnstile?.reset(widgetIdRef.current ?? undefined)
-        setTurnstileToken("")
+        setIsSuccess(false)
+        setFormMessage(data.error ?? "No se pudo enviar la solicitud.")
         return
       }
 
-      form.reset()
-      window.turnstile?.reset(widgetIdRef.current ?? undefined)
+      formRef.current?.reset()
       setTurnstileToken("")
-      setStatus("success")
-      setMessage("Solicitud enviada correctamente. Te contactaremos pronto.")
+      window.turnstile?.reset(widgetIdRef.current ?? undefined)
+
+      setIsSuccess(true)
+      setFormMessage("Solicitud enviada correctamente. Te contactaremos pronto.")
     } catch {
-      setStatus("error")
-      setMessage("No se pudo enviar la solicitud. Inténtalo nuevamente.")
-      window.turnstile?.reset(widgetIdRef.current ?? undefined)
-      setTurnstileToken("")
+      setIsSuccess(false)
+      setFormMessage("No se pudo enviar la solicitud. Inténtalo nuevamente.")
+    } finally {
+      setIsSubmitting(false)
     }
   }
 
@@ -136,6 +146,7 @@ export default function ContactForm() {
           </div>
 
           <form
+            ref={formRef}
             className="grid grid-cols-1 md:grid-cols-2 gap-6"
             onSubmit={handleSubmit}
           >
@@ -210,16 +221,10 @@ export default function ContactForm() {
               <div ref={turnstileRef} />
             </div>
 
-            {message && (
+            {formMessage && (
               <div className="md:col-span-2">
-                <p
-                  className={
-                    status === "success"
-                      ? "text-sm text-green-700"
-                      : "text-sm text-red-700"
-                  }
-                >
-                  {message}
+                <p className={isSuccess ? "text-sm text-green-700" : "text-sm text-red-700"}>
+                  {formMessage}
                 </p>
               </div>
             )}
@@ -227,10 +232,10 @@ export default function ContactForm() {
             <div className="md:col-span-2 mt-4">
               <button
                 type="submit"
-                disabled={status === "loading"}
+                disabled={isSubmitting}
                 className="inline-flex items-center justify-center rounded-lg bg-[#01018B] px-8 py-4 text-white text-sm font-medium hover:bg-[#0202a8] transition disabled:opacity-60"
               >
-                {status === "loading" ? "Enviando..." : "Solicitar propuesta"}
+                {isSubmitting ? "Enviando..." : "Solicitar propuesta"}
               </button>
             </div>
           </form>
