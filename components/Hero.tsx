@@ -13,7 +13,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#01018B]/80 via-[#01018B]/25 to-transparent"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 pt-24 w-full">
+      <div className="max-w-7xl mx-auto px-6 pt-16 md:pt-20 w-full">
         <div className="max-w-2xl">
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
             El uniforme, la mejor herramienta de marketing
@@ -25,10 +25,10 @@ export default function Hero() {
             convertimos tu marca en una potente herramienta de comunicación.
           </p>
 
-          <div className="mt-10">
+          <div className="mt-8">
             <Link
               href="/#contacto"
-              className="inline-flex items-center justify-center bg-white text-[#01018B] px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition"
+              className="inline-flex items-center justify-center bg-white text-[#01018B] px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition mb-8"
             >
               Solicitar propuesta
             </Link>
