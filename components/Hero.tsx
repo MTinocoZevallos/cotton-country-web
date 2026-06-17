@@ -7,10 +7,10 @@ export default function Hero() {
         <img
           src="/hero-bg.png"
           alt="Uniformes Corporativos Cotton Country"
-          className="w-full h-full object-cover object-[62%_35%] md:object-[95%_35%] lg:object-[100%_35%]"
+          className="w-full h-full object-cover object-[58%_42%] md:object-[100%_42%]"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-[#01018B]/90 via-[#01018B]/40 md:via-[#01018B]/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#01018B]/80 via-[#01018B]/25 to-transparent"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 pt-24 w-full">
