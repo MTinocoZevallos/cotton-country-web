@@ -24,6 +24,22 @@ export const metadata: Metadata = {
     siteName: "Cotton Country",
     locale: "es_PE",
     type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Cotton Country Uniformes Corporativos",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Cotton Country | Uniformes Corporativos",
+    description:
+      "Uniformes corporativos, institucionales e industriales diseñados y producidos en Perú.",
+    images: ["/og-image.jpg"],
   },
 }
 
