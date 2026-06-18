@@ -7,6 +7,10 @@ import Footer from "@/components/Footer"
 export const metadata: Metadata = {
   metadataBase: new URL("https://cottoncountry.com.pe"),
 
+  alternates: {
+    canonical: "https://cottoncountry.com.pe",
+  },
+
   title: "Cotton Country | Uniformes Corporativos",
 
   description:
