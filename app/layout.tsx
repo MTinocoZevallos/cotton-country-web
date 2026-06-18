@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.png",
-        width: 1200,
+        url: "/og-image.jpg",
+        width: 1498,
         height: 630,
         alt: "Cotton Country Uniformes Corporativos",
       },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Cotton Country | Uniformes Corporativos",
     description:
       "Uniformes corporativos, institucionales e industriales diseñados y producidos en Perú.",
-    images: ["/og-image.png"],
+    images: ["/og-image.jpg"],
   },
 }
 
