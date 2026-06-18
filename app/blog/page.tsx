@@ -16,7 +16,7 @@ function getPostImage(slug: string) {
 
 export default function BlogPage() {
   return (
-    <main className="max-w-7xl mx-auto px-6 py-20">
+    <main className="max-w-7xl mx-auto px-5 py-12 md:px-6 md:py-20">
       <h1 className="text-3xl font-semibold mb-10">Blog</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -36,7 +36,7 @@ export default function BlogPage() {
             </Link>
 
             <div className="p-6">
-              <h2 className="text-xl font-semibold mb-3">
+              <h2 className="text-lg md:text-xl font-semibold mb-3 leading-snug text-gray-900">
                 <Link
                   href={`/blog/${post.slug}`}
                   className="hover:text-[#01018B]"
@@ -45,7 +45,7 @@ export default function BlogPage() {
                 </Link>
               </h2>
 
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-700 text-sm leading-relaxed">
                 {post.excerpt}
               </p>
 
