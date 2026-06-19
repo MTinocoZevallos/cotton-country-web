@@ -31,33 +31,33 @@ export default function ContactForm() {
   const [isSuccess, setIsSuccess] = useState(false)
 
   function renderTurnstile() {
-    if (!turnstileRef.current || !window.turnstile || widgetIdRef.current) {
-      return
-    }
+  if (!turnstileRef.current || !window.turnstile || widgetIdRef.current) {
+    return
+  }
 
-    const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
+  const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
 
     if (!siteKey) {
-      setIsSuccess(false)
-      setFormMessage("El captcha no está configurado correctamente.")
-      return
-    }
-
-    widgetIdRef.current = window.turnstile.render(turnstileRef.current, {
-      sitekey: siteKey,
-      callback: (token: string) => {
-        setTurnstileToken(token)
-      },
-      "expired-callback": () => {
-        setTurnstileToken("")
-      },
-      "error-callback": () => {
-        setTurnstileToken("")
-        setIsSuccess(false)
-        setFormMessage("No se pudo validar el captcha. Inténtalo nuevamente.")
-      },
-    })
+    setIsSuccess(false)
+    setFormMessage("El captcha no está configurado correctamente.")
+    return
   }
+
+  widgetIdRef.current = window.turnstile.render(turnstileRef.current, {
+    sitekey: siteKey,
+    callback: (token: string) => {
+      setTurnstileToken(token)
+    },
+    "expired-callback": () => {
+      setTurnstileToken("")
+    },
+    "error-callback": () => {
+      setTurnstileToken("")
+      setIsSuccess(false)
+      setFormMessage("No se pudo validar el captcha. Inténtalo nuevamente.")
+    },
+  })
+}
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -127,10 +127,10 @@ export default function ContactForm() {
   return (
     <>
       <Script
-        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
-        strategy="afterInteractive"
-        onLoad={renderTurnstile}
-      />
+  src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+  strategy="afterInteractive"
+  onReady={renderTurnstile}
+/>
 
       <section id="contacto" className="w-full bg-white py-24">
         <div className="max-w-5xl mx-auto px-6">
