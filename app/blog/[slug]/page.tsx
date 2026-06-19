@@ -76,7 +76,7 @@ export default async function PostPage(props: PageProps) {
   const paragraphs = formatContent(post.content)
 
   return (
-    <main className="max-w-3xl mx-auto px-5 py-12 md:px-6 md:py-20">
+    <main className="max-w-3xl mx-auto px-5 py-12 md:px-6 md:py-20 bg-white text-gray-900">
       <div className="mb-8 overflow-hidden rounded-xl bg-gray-100">
         <Image
           src={image}
@@ -96,7 +96,7 @@ export default async function PostPage(props: PageProps) {
         {post.title}
       </h1>
 
-      <article className="space-y-5 text-base md:text-lg leading-relaxed text-gray-800">
+      <article className="space-y-5 text-base md:text-lg leading-relaxed text-gray-900">
   {paragraphs.map((paragraph, index) => {
     const isHeading =
       /^\d+\./.test(paragraph) ||
