@@ -780,13 +780,13 @@ En el mundo de la confección se suele decir que se utilizan 2 tipos de tallaje,
 
 Así nacieron las tallas completas que no guardan un fit específico en su tabla de medidas de cara a un público objetivo en particular o biotipo que sí es considerado por las marcas de modas que enfocan a públicos más homogéneos lo cual no es particularmente propio de los ambientes laborales donde las tallas son más variadas.
 <p>
-También analizamos este tema desde una perspectiva práctica en nuestro artículo sobre <a href="/tallas-completas-en-peru">tallas completas en Perú</a>.
+La aplicación de este tipo de tallaje en empresas y organizaciones presenta características particulares que analizamos en nuestro artículo sobre <a href="/tallas-completas-en-peru">tallas completas en Perú</a>.
 </p>
 
 ¿Por qué es importante las tablas de medidas?
 Las tablas de medidas son importantes para estandarizar el proceso de confección, es parte intangible del proceso de calidad en confecciones, las marcas lo toman muy en serio para guardar cuidado de las tallas escogidas de cara a su público objetivo y de no hacerlo pueden haber complicaciones productivas que signifiquen pérdidas, es bueno llegar a un acuerdo con los clientes en esto para evitar complicaciones. 
 <p>
-Si deseas conocer cómo se construyen las referencias de tallaje en nuestro mercado, puedes revisar nuestro artículo sobre <a href="/la-talla-peruana">la talla peruana</a>.
+Estas diferencias tienen relación con lo que conocemos como la <a href="/la-talla-peruana">talla peruana</a>, un concepto importante para entender cómo se desarrollan las prendas destinadas al mercado local.
 </p>
 
 En uniformes son pocas las empresas que se exigen contar con esta herramienta sumamente útil para hablar de calidad y cumplimiento, pues el tallaje escogido suele variar en la toma y en la producción en la ausencia de control o simplemente no los tienen.
@@ -795,7 +795,7 @@ En uniformes son pocas las empresas que se exigen contar con esta herramienta su
 Las tablas de medidas se elaboran con información acorde al mercado donde se van a vender las prendas, es por ello que se necesita saber el biotipo de tu público objetivo para elaborar una medida estándar por talla para luego proceder con el escalado de tallas y para eso se necesitan ciertas medidas corporales para usar como referencia y así elaborar los moldes de las prendas a fabricar. Unas de las medidas más comunes tomar en cuenta son por ejemplo: el ancho de espalda, el ancho de pecho, el largo de la manga, la circunferencia del cuello y entre otras si se van a realizar prendas de camisa, camisas o polos y si se desea hacer un pantalón o un short o buzo se necesitaría la medida de la cintura, cadera, largo de tiro delantero y espalda, además del largo de la entrepierna.
 Contar con buenos patrones así como profesionales que brinden soluciones en desarrollo del producto para las muestras pre producción son el punto de partida de un proceso de confección exitoso.
 <p>
-Si deseas profundizar en las dificultades que enfrentan empresas y trabajadores al elegir tallas para uniformes, te recomendamos leer <a href="/el-problema-de-las-tallas">El problema de las tallas</a>.
+La falta de criterios uniformes para definir tallajes es una de las causas de lo que denominamos <a href="/el-problema-de-las-tallas">el problema de las tallas</a> dentro de los procesos de compra de uniformes.
 </p>
 Esperemos haya sido útil este post el cual lo puedes compartir con amigos o colegas pues la información es clave para tomar buenas decisiones.
 ¿Qué hace bueno a un patronista?
