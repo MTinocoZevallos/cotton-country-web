@@ -106,11 +106,13 @@ export default async function PostPage(props: PageProps) {
       <h2
         key={index}
         className="pt-4 text-2xl font-semibold leading-snug text-gray-950"
-      >
-        {paragraph}
-      </h2>
+        dangerouslySetInnerHTML={{ __html: paragraph }}
+      />
     ) : (
-      <p key={index}>{paragraph}</p>
+      <p
+        key={index}
+        dangerouslySetInnerHTML={{ __html: paragraph }}
+      />
     )
   })}
 </article>
