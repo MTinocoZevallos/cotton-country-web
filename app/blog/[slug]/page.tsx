@@ -96,7 +96,7 @@ export default async function PostPage(props: PageProps) {
         {post.title}
       </h1>
 
-      <article className="space-y-5 text-base md:text-lg leading-relaxed text-gray-900">
+      <article className="space-y-5 text-base md:text-lg leading-relaxed text-gray-900 [&_a]:text-[#01018B] [&_a]:font-semibold [&_a]:underline">
   {paragraphs.map((paragraph, index) => {
     const isHeading =
       /^\d+\./.test(paragraph) ||
