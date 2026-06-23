@@ -5,6 +5,7 @@ import { useRef, useState } from "react"
 
 declare global {
   interface Window {
+    dataLayer?: Record<string, unknown>[]
     turnstile?: {
       render: (
         container: HTMLElement,
@@ -116,6 +117,11 @@ export default function ContactForm() {
 
       setIsSuccess(true)
       setFormMessage("Solicitud enviada correctamente. Te contactaremos pronto.")
+      window.dataLayer = window.dataLayer || []
+      window.dataLayer.push({
+        event: "formulario_enviado",
+        form_name: "contacto_cotton_country",
+      })
     } catch {
       setIsSuccess(false)
       setFormMessage("No se pudo enviar la solicitud. Inténtalo nuevamente.")
