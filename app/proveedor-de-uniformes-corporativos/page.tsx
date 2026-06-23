@@ -9,45 +9,48 @@ export const metadata = {
 export default function CorporateUniformsPage() {
   return (
     <main className="bg-white text-gray-900">
-      <section className="max-w-6xl mx-auto px-6 pt-24 pb-16 md:pt-28 md:pb-20 grid items-start gap-12 md:grid-cols-2">
-        <div>
-          <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-[#01018B]">
-            Fabricación de uniformes corporativos en Perú
-          </p>
+      ```tsx
+<section className="max-w-6xl mx-auto px-6 pt-24 pb-16 md:pt-28 md:pb-20 grid items-start gap-12 md:grid-cols-2">
+  <div className="max-w-xl">
+    <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-[#01018B]">
+      UNIFORMES CORPORATIVOS
+    </p>
 
-          <h1 className="max-w-xl text-4xl font-bold leading-tight text-gray-950 md:text-6xl">
-            Proveedor de uniformes para empresas
-          </h1>
+    <h1 className="text-5xl font-bold leading-tight text-gray-950 md:text-6xl">
+      ¿PROBLEMAS CON SUS UNIFORMES?
+    </h1>
 
-          <p className="mt-6 text-lg leading-relaxed text-gray-700">
-            Desarrollamos camisas, blusas, polos, pantalones, casacas y prendas
-            corporativas con criterios técnicos de tallaje, calidad y continuidad.
-          </p>
+    <p className="mt-8 text-lg leading-relaxed text-gray-700">
+      La fabricación de prendas de vestir es un proceso complejo que debe
+      adaptarse a las diferentes necesidades de las empresas y sus
+      colaboradores.
+    </p>
 
-          <p className="mt-4 text-base leading-relaxed text-gray-600">
-            Nuestro enfoque combina muestras, pruebas de tallaje, fichas técnicas
-            y reposiciones para reducir incidencias y mantener una imagen
-            profesional en el tiempo.
-          </p>
+    <p className="mt-5 text-base leading-relaxed text-gray-600">
+      Nuestro enfoque combina muestras, pruebas de tallaje (Sizeset),
+      fichas técnicas y reposiciones para reducir incidencias y mantener
+      una imagen profesional y segura en el lugar de trabajo.
+    </p>
 
-          <div className="mt-8">
-            <a
-              href="#contacto"
-              className="inline-flex items-center justify-center rounded-lg bg-[#01018B] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[#0202a8]"
-            >
-              Solicitar propuesta
-            </a>
-          </div>
-        </div>
+    <div className="mt-10">
+      <a
+        href="#contacto"
+        className="inline-flex items-center justify-center rounded-lg bg-[#01018B] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[#0202a8]"
+      >
+        Solicitar propuesta
+      </a>
+    </div>
+  </div>
 
-        <div className="overflow-hidden rounded-2xl bg-gray-100 shadow-sm">
-          <img
-            src="/landing-corporativo-hero.jpg"
-            alt="Uniformes corporativos para empresas"
-            className="w-full rounded-2xl object-cover"
-          />
-        </div>
-      </section>
+  <div className="overflow-hidden rounded-2xl bg-gray-100 shadow-sm md:-mr-8">
+    <img
+      src="/landing-corporativo-hero.jpg"
+      alt="Uniformes corporativos para empresas"
+      className="h-[420px] md:h-[520px] w-full object-cover rounded-2xl"
+    />
+  </div>
+</section>
+
 
       <section className="bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 py-16">
