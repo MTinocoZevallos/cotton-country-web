@@ -9,13 +9,13 @@ export const metadata = {
 export default function CorporateUniformsPage() {
   return (
     <main className="bg-white text-gray-900">
-      <section className="max-w-6xl mx-auto px-6 py-16 md:py-20 grid items-start gap-12 md:grid-cols-2">
+      <section className="max-w-6xl mx-auto px-6 pt-24 pb-16 md:pt-28 md:pb-20 grid items-start gap-12 md:grid-cols-2">
         <div>
           <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-[#01018B]">
             Fabricación de uniformes corporativos en Perú
           </p>
 
-          <h1 className="text-4xl font-bold leading-tight text-gray-950 md:text-5xl">
+          <h1 className="max-w-xl text-4xl font-bold leading-tight text-gray-950 md:text-6xl">
             Proveedor de uniformes para empresas
           </h1>
 
@@ -44,7 +44,7 @@ export default function CorporateUniformsPage() {
           <img
             src="/landing-corporativo-hero.jpg"
             alt="Uniformes corporativos para empresas"
-            className="h-full w-full object-cover"
+            className="w-full rounded-2xl object-cover"
           />
         </div>
       </section>
