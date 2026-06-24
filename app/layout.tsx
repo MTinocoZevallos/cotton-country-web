@@ -6,20 +6,15 @@ import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cottoncountry.com.pe"),
-
   alternates: {
     canonical: "https://cottoncountry.com.pe",
   },
-
   title: "Cotton Country | Uniformes Corporativos",
-
   description:
     "Uniformes corporativos, institucionales e industriales diseñados y producidos en Perú.",
-
   verification: {
     google: "zpHF0Zr6rY5sswtDJjqndC4cUnDXGsfkldktUVcTv2g",
   },
-
   openGraph: {
     title: "Cotton Country | Uniformes Corporativos",
     description:
@@ -37,7 +32,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
     title: "Cotton Country | Uniformes Corporativos",
@@ -55,6 +49,25 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className="flex flex-col min-h-screen">
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-K9LCWTCT"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-K9LCWTCT');
+          `}
+        </Script>
+
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-7VEMKX1RHX"
           strategy="afterInteractive"
