@@ -1349,6 +1349,11 @@ Depende, sobre todo, de que la empresa defina correctamente lo que necesita y cu
 Una buena planificación permite comparar propuestas de manera objetiva, reducir riesgos y aumentar las posibilidades de que el proyecto se desarrolle sin contratiempos.
 
 En el siguiente artículo abordaremos uno de los problemas más frecuentes en las empresas: ¿Por qué las empresas siguen teniendo problemas con las tallas?
+Continúa leyendo
+
+<a href="/blog/por-que-las-empresas-tienen-problemas-con-las-tallas">¿Por qué las empresas siguen teniendo problemas con las tallas?</a>
+
+<a href="/blog/de-que-depende-el-tiempo-de-entrega-de-uniformes">¿De qué depende el tiempo de entrega de un proyecto de uniformes?</a>
  `,
   },
    {
@@ -1459,10 +1464,14 @@ Porque un buen tallaje no significa adivinar una talla.
 
 Significa entregar la prenda correcta a la persona correcta, desde la primera vez.
 
-En el siguiente capítulo de esta guía responderemos otra pregunta frecuente:
+En los siguientes capítulos de esta guía responderemos otras preguntas frecuentes:
 
-¿Cuánto tiempo debería tomar fabricar uniformes para una empresa?
- `,
+Continúa leyendo
+
+<a href="/blog/como-definir-un-proyecto-de-uniformes-corporativos">¿Cómo definir correctamente un proyecto de uniformes corporativos?</a>
+
+<a href="/blog/de-que-depende-el-tiempo-de-entrega-de-uniformes">¿De qué depende el tiempo de entrega de un proyecto de uniformes?</a>
+`,
   },
    {
     slug: "de-que-depende-el-tiempo-de-entrega-de-uniformes",
@@ -1654,10 +1663,9 @@ Pero una fecha técnicamente viable es la que realmente protege la operación de
 
 ## Continúa leyendo
 
-Antes de evaluar un plazo de entrega, conviene tener bien resueltas las etapas anteriores del proyecto:
+<a href="/blog/como-definir-un-proyecto-de-uniformes-corporativos">¿Cómo definir correctamente un proyecto de uniformes corporativos?</a>
 
-* **¿Cómo definir correctamente un proyecto de uniformes corporativos?**
-* **¿Por qué las empresas siguen teniendo problemas con las tallas?**
+<a href="/blog/por-que-las-empresas-tienen-problemas-con-las-tallas">¿Por qué las empresas siguen teniendo problemas con las tallas?</a>
  `,
   },
 ]
