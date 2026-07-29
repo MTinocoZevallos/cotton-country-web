@@ -15,6 +15,9 @@ const specialImageExtensions: Record<string, string> = {
   "perumin-2023": "webp",
   "un-tejido-llamado-gaza": "webp",
   "uniformes-de-guerra": "webp",
+  "como-definir-un-proyecto-de-uniformes-corporativos": "png",
+  "por-que-las-empresas-tienen-problemas-con-las-tallas": "png",
+  "de-que-depende-el-tiempo-de-entrega-de-uniformes": "png",
 }
 
 function getPostImage(slug: string) {
@@ -97,34 +100,36 @@ export default async function PostPage(props: PageProps) {
       </h1>
 
       <article className="space-y-5 text-base md:text-lg leading-relaxed text-gray-900 [&_a]:text-[#01018B] [&_a]:font-semibold [&_a]:underline">
-  {paragraphs.map((paragraph, index) => {
-    const isHeading =
-      /^\d+\./.test(paragraph) ||
-      paragraph.toLowerCase().startsWith("conclusión")
+        {paragraphs.map((paragraph, index) => {
+          const isHeading =
+            /^\d+\./.test(paragraph) ||
+            paragraph.toLowerCase().startsWith("conclusión")
 
-    return isHeading ? (
-      <h2
-        key={index}
-        className="pt-4 text-2xl font-semibold leading-snug text-gray-950"
-        dangerouslySetInnerHTML={{ __html: paragraph }}
-      />
-    ) : (
-      <p
-        key={index}
-        dangerouslySetInnerHTML={{ __html: paragraph }}
-      />
-    )
-  })}
-</article>
+          return isHeading ? (
+            <h2
+              key={index}
+              className="pt-4 text-2xl font-semibold leading-snug text-gray-950"
+              dangerouslySetInnerHTML={{ __html: paragraph }}
+            />
+          ) : (
+            <p
+              key={index}
+              dangerouslySetInnerHTML={{ __html: paragraph }}
+            />
+          )
+        })}
+      </article>
 
       <div className="mt-14 rounded-2xl bg-[#01018B] px-6 py-8 text-white">
         <h2 className="text-2xl font-semibold mb-3">
           ¿Necesitas uniformes corporativos para tu empresa?
         </h2>
+
         <p className="text-white/85 mb-6">
           En Cotton Country desarrollamos uniformes corporativos, institucionales
           e industriales para empresas que buscan calidad, imagen y cumplimiento.
         </p>
+
         <Link
           href="/#contacto"
           className="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-sm font-medium text-[#01018B] hover:bg-gray-100 transition"

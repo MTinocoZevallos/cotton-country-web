@@ -7,6 +7,11 @@ const specialImageExtensions: Record<string, string> = {
   "perumin-2023": "webp",
   "un-tejido-llamado-gaza": "webp",
   "uniformes-de-guerra": "webp",
+
+  // Nuevos artículos
+  "como-definir-un-proyecto-de-uniformes-corporativos": "png",
+  "por-que-las-empresas-tienen-problemas-con-las-tallas": "png",
+  "de-que-depende-el-tiempo-de-entrega-de-uniformes": "png",
 }
 
 function getPostImage(slug: string) {
@@ -37,17 +42,17 @@ export default function BlogPage() {
 
             <div className="p-6">
               <h2 className="text-lg md:text-xl font-semibold mb-3 leading-snug text-gray-900">
-  <Link
-    href={`/blog/${post.slug}`}
-    className="hover:text-[#01018B]"
-  >
-    {post.title}
-  </Link>
-</h2>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="hover:text-[#01018B]"
+                >
+                  {post.title}
+                </Link>
+              </h2>
 
-<p className="text-xs uppercase tracking-wide text-gray-500 mb-3">
-  Cotton Country
-</p>
+              <p className="text-xs uppercase tracking-wide text-gray-500 mb-3">
+                Cotton Country
+              </p>
 
               <p className="text-gray-700 text-sm leading-relaxed">
                 {post.excerpt}
