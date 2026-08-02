@@ -102,8 +102,9 @@ export default async function PostPage(props: PageProps) {
       <article className="space-y-5 text-base md:text-lg leading-relaxed text-gray-900 [&_a]:text-[#01018B] [&_a]:font-semibold [&_a]:underline">
         {paragraphs.map((paragraph, index) => {
           const isHeading =
-            /^\d+\./.test(paragraph) ||
-            paragraph.toLowerCase().startsWith("conclusión")
+  /^\d+\./.test(paragraph) ||
+  paragraph.toLowerCase().startsWith("conclusión") ||
+  paragraph.toLowerCase().startsWith("continúa leyendo")
 
           return isHeading ? (
             <h2
