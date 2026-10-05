@@ -15,9 +15,9 @@ const specialImageExtensions: Record<string, string> = {
   "perumin-2023": "webp",
   "un-tejido-llamado-gaza": "webp",
   "uniformes-de-guerra": "webp",
-  "como-definir-un-proyecto-de-uniformes-corporativos": "png",
-  "por-que-las-empresas-tienen-problemas-con-las-tallas": "png",
-  "de-que-depende-el-tiempo-de-entrega-de-uniformes": "png",
+  "como-definir-un-proyecto-de-uniformes-corporativos": "webp",
+  "por-que-las-empresas-tienen-problemas-con-las-tallas": "webp",
+  "de-que-depende-el-tiempo-de-entrega-de-uniformes": "webp",
 }
 
 function getPostImage(slug: string) {

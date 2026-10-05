@@ -9,9 +9,9 @@ const specialImageExtensions: Record<string, string> = {
   "uniformes-de-guerra": "webp",
 
   // Nuevos artículos
-  "como-definir-un-proyecto-de-uniformes-corporativos": "png",
-  "por-que-las-empresas-tienen-problemas-con-las-tallas": "png",
-  "de-que-depende-el-tiempo-de-entrega-de-uniformes": "png",
+  "como-definir-un-proyecto-de-uniformes-corporativos": "webp",
+  "por-que-las-empresas-tienen-problemas-con-las-tallas": "webp",
+  "de-que-depende-el-tiempo-de-entrega-de-uniformes": "webp",
 }
 
 function getPostImage(slug: string) {
