@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="relative w-full min-h-[88vh] md:min-h-[90vh] flex items-center overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <img
-          src="/hero-bg.png"
+          src="/hero-bg.webp"
           alt="Uniformes Corporativos Cotton Country"
           className="w-full h-full object-cover object-[58%_42%] md:object-[100%_42%]"
         />
