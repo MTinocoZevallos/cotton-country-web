@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 
 declare global {
   interface Window {
@@ -28,9 +29,11 @@ export default function Header() {
     <header className="fixed top-0 w-full h-20 bg-[#01018B] flex items-center justify-between px-8 z-50 shadow-md">
       <div className="flex items-center">
         <Link href="/">
-          <img
+          <Image
             src="/logo-cotton-blanco.png"
             alt="Cotton Country"
+            width={166}
+            height={70}
             className="h-10 w-auto"
           />
         </Link>
