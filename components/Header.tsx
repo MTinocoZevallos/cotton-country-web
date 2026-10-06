@@ -1,22 +1,28 @@
-"use client";
-import Link from "next/link";
+"use client"
+
+import Link from "next/link"
+
 declare global {
   interface Window {
-    gtag?: (...args: any[]) => void;
+    dataLayer?: Record<string, unknown>[]
   }
 }
 
 export default function Header() {
-
   const handleEmailClick = () => {
-  if (typeof window !== "undefined" && window.gtag) {
-    window.gtag("event", "email_click", {
+    if (typeof window === "undefined") {
+      return
+    }
+
+    window.dataLayer = window.dataLayer || []
+
+    window.dataLayer.push({
+      event: "email_click",
       event_category: "Contacto",
       event_label: "Header",
       value: 1,
-    });
+    })
   }
-};
 
   return (
     <header className="fixed top-0 w-full h-20 bg-[#01018B] flex items-center justify-between px-8 z-50 shadow-md">
@@ -47,7 +53,7 @@ export default function Header() {
 
         <a
           href="mailto:info@cottoncountry.com.pe"
-            onClick={handleEmailClick}
+          onClick={handleEmailClick}
           className="bg-white text-[#01018B] p-2 rounded flex items-center justify-center hover:bg-gray-200"
           aria-label="Enviar correo"
         >
@@ -63,5 +69,5 @@ export default function Header() {
         </a>
       </nav>
     </header>
-  );
+  )
 }
