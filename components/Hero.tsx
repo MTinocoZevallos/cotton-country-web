@@ -7,7 +7,7 @@ export default function Hero() {
         <img
           src="/hero-bg.webp"
           alt="Uniformes Corporativos Cotton Country"
-          className="w-full h-full object-cover object-[88%_42%] md:object-[100%_30%]"
+          className="w-full h-full object-cover object-[88%_42%] md:object-[100%_25%]"
         />
 
         <div className="absolute inset-0 bg-gradient-to-r from-[#01018B]/80 via-[#01018B]/25 to-transparent"></div>
