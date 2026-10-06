@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Facebook, Linkedin, Phone, Mail } from "lucide-react"
+import { Facebook, Linkedin, Youtube, Phone, Mail } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -114,6 +114,15 @@ export default function Footer() {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5 hover:opacity-80" />
+              </a>
+
+              <a
+                href="https://www.youtube.com/@cottoncountrytv1663"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <Youtube className="w-5 h-5 hover:opacity-80" />
               </a>
 
               <a
