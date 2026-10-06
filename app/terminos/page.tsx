@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function TerminosYCondiciones() {
   return (
-    <section className="max-w-5xl mx-auto px-6 pt-32 pb-20">
+    <section className="w-full bg-white text-gray-900 px-6 pt-32 pb-20">
       <div className="max-w-4xl mx-auto">
         <header className="mb-12">
           <p className="text-sm font-medium uppercase tracking-[0.18em] text-[#01018B]">

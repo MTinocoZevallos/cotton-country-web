@@ -2,8 +2,9 @@ import PrivacyRequestForm from "@/components/PrivacyRequestForm"
 
 export default function DerechosARCO() {
   return (
-    <section className="max-w-4xl mx-auto px-6 pt-32 pb-16">
-      <article className="prose prose-slate max-w-none">
+    <section className="w-full bg-white text-gray-900 px-6 pt-32 pb-16">
+      <div className="max-w-4xl mx-auto">
+        <article className="prose prose-slate max-w-none">
         <h1>Gestiona tus datos personales</h1>
 
         <p>
@@ -47,6 +48,7 @@ export default function DerechosARCO() {
           </a>.
         </p>
       </article>
+     </div>
     </section>
   )
 }
