@@ -1,204 +1,200 @@
+import Link from "next/link"
+
 export default function PoliticaPrivacidad() {
   return (
     <section className="max-w-4xl mx-auto px-6 pt-32 pb-16">
       <article className="prose prose-slate max-w-none">
-
-        <h1>EXPOSICIÓN DE LA POLÍTICA</h1>
+        <h1>Política de Privacidad</h1>
 
         <p>
-          La presente Política de Privacidad (en adelante la “Política”) tiene por finalidad
-          informarle la manera como SANTELA S.A.C. (en adelante “Cotton Country”), con
-          domicilio en Av. Los Mochicas 179 Urbanización Salamanca de Monterrico, ATE, Lima,
-          Perú y RUC Nº 20611504951, trata su información personal a través del sitio web
-          https://cottoncountry.com.pe/ (en adelante la “Plataforma”).
+          SANTELA S.A.C., identificada con RUC N.º 20611504951 y titular de la
+          marca Cotton Country, con domicilio en Av. Los Mochicas 179,
+          Urbanización Salamanca de Monterrico, Ate, Lima, Perú, informa mediante
+          esta Política de Privacidad cómo trata los datos personales que recibe
+          a través del sitio web https://cottoncountry.com.pe/.
         </p>
 
         <p>
-          La Política describe toda la tipología de información personal que se recaba de sus
-          Usuarios, y todos los tratamientos que se realizan con dicha información. El Usuario
-          declara haber leído y aceptado de manera previa y expresa la Política sujetándose a
-          sus disposiciones.
+          Esta política se aplica principalmente a los datos personales de
+          representantes, colaboradores y personas de contacto de empresas que
+          solicitan información, propuestas comerciales o mantienen una relación
+          con Cotton Country.
         </p>
 
-        <p>
-          Para efectos de esta Política toda referencia a “nos”, “nosotros”, o “nuestra”, se
-          refiere a Cotton Country.
-        </p>
-
-        <h2>1. ¿Qué información recolectamos?</h2>
+        <h2>1. ¿Qué datos podemos recopilar?</h2>
 
         <p>
-          Para navegar y hacer uso de la Plataforma, un Usuario no requiere facilitar
-          información personal. Sin embargo, la Plataforma incorpora un formulario de registro
-          voluntario que solicita al Usuario datos personales que permiten identificarlo,
-          contactarlo y localizarlo, la información solicitada es la siguiente:
+          A través de nuestros formularios y canales de contacto podemos recibir:
         </p>
 
         <ul>
-          <li>Nombres y apellidos completos</li>
-          <li>Tipo y número de documento de identidad</li>
-          <li>Correo electrónico</li>
-          <li>Dirección actual</li>
-          <li>Teléfono celular</li>
-          <li>Teléfono fijo</li>
-          <li>Nombre de su empresa empleadora</li>
-          <li>Posición laboral</li>
+          <li>Nombres y apellidos.</li>
+          <li>Correo electrónico corporativo.</li>
+          <li>Teléfono de contacto.</li>
+          <li>
+            Información de la empresa que representa, como razón social o RUC.
+          </li>
+          <li>El contenido de la consulta o solicitud enviada.</li>
         </ul>
 
         <p>
-          Asimismo, Cotton Country requiere almacenar información relativa al comportamiento
-          del Usuario dentro de la Plataforma, entre la que se incluye:
+          Asimismo, el sitio puede recopilar información técnica relacionada con
+          la navegación, como dirección IP, navegador, dispositivo, páginas
+          visitadas y otros datos técnicos necesarios para seguridad, medición y
+          funcionamiento del sitio web.
         </p>
+
+        <h2>2. ¿Para qué utilizamos los datos?</h2>
+
+        <p>Los datos podrán utilizarse para las siguientes finalidades:</p>
 
         <ul>
-          <li>La URL de la que proviene el Usuario (incluyendo las externas a la Plataforma)</li>
-          <li>URLs más visitadas por el Usuario (incluyendo las externas a la Plataforma)</li>
-          <li>Direcciones IP</li>
-          <li>Navegador que utiliza el Usuario</li>
-          <li>Todas las actividades realizadas dentro de la Plataforma</li>
+          <li>Atender consultas y solicitudes enviadas desde el sitio web.</li>
+          <li>Preparar y gestionar propuestas comerciales.</li>
           <li>
-            Información sobre la operativa de la Plataforma, tráfico, promociones, campañas
-            de venta, estadísticas de navegación, entre otros
+            Mantener comunicaciones relacionadas con una relación comercial o
+            potencial relación comercial.
+          </li>
+          <li>Brindar atención y seguimiento a clientes empresariales.</li>
+          <li>
+            Mejorar el funcionamiento, seguridad y experiencia de navegación del
+            sitio web.
+          </li>
+          <li>
+            Enviar comunicaciones comerciales cuando exista una base legal que
+            lo permita y respetando el derecho del titular a oponerse o retirar
+            su consentimiento cuando corresponda.
           </li>
         </ul>
 
-        <p>
-          Finalmente, Cotton Country podrá requerir al Usuario el llenado de cuestionarios en
-          línea con la finalidad de evaluar y determinar su perfil. Los Usuarios declaran que
-          la información ingresada en dichos cuestionarios es verdadera; y, otorgan a Cotton
-          Country la facultad de hacer tratamiento de toda la información ingresada a través
-          de dichos cuestionarios.
-        </p>
-
-        <h2>2. Sobre la veracidad de la Información que recolectamos</h2>
+        <h2>3. Base legal del tratamiento</h2>
 
         <p>
-          El Usuario, al registrarse y utilizar la Plataforma, declara que toda la información
-          proporcionada es verdadera, completa y exacta. Cada Usuario es responsable por la
-          veracidad, exactitud, vigencia y autenticidad de la información suministrada, y se
-          compromete a mantenerla debidamente actualizada.
+          El tratamiento de los datos personales se realiza conforme a la Ley
+          N.º 29733, Ley de Protección de Datos Personales, y su Reglamento
+          aprobado mediante Decreto Supremo N.º 016-2024-JUS.
         </p>
 
         <p>
-          Sin perjuicio de lo anterior, el Usuario autoriza a Cotton Country a verificar la
-          veracidad de los datos personales facilitados por el Usuario a través de información
-          obtenida de fuentes de acceso público o entidades especializadas en la provisión de
-          dicha información.
+          Dependiendo de la finalidad, el tratamiento puede sustentarse en el
+          consentimiento del titular, en la atención de una solicitud realizada
+          por este o en las demás bases legales previstas por la normativa
+          aplicable.
+        </p>
+
+        <h2>4. ¿Durante cuánto tiempo conservamos los datos?</h2>
+
+        <p>
+          Los datos personales se conservarán únicamente durante el tiempo
+          necesario para cumplir las finalidades para las cuales fueron
+          recopilados, atender la relación comercial correspondiente y cumplir
+          las obligaciones legales aplicables.
         </p>
 
         <p>
-          Cotton Country no se hace responsable de la veracidad de la información que no sea
-          de elaboración propia, por lo que tampoco asume responsabilidad alguna por posibles
-          daños o perjuicios que pudieran originarse como resultado del incumplimiento de tal
-          deber.
+          Cuando los datos ya no sean necesarios y no exista obligación legal de
+          conservarlos, podrán ser eliminados o anonimizados.
         </p>
 
-        <h2>3. ¿Cómo conservamos su información personal?</h2>
+        <h2>5. Proveedores y encargados de tratamiento</h2>
 
         <p>
-          De acuerdo a lo establecido en la Ley N° 29733, Ley de Protección de Datos Personales,
-          y el Decreto Supremo N° 003-2013-JUS, por el que se aprueba el Reglamento de la Ley de
-          Protección de Datos Personales, Cotton Country informa a los Usuarios de la
-          Plataforma que todos los datos de carácter personal que nos faciliten serán
-          incorporados a un banco de datos, debidamente inscrito en la Dirección de Registro
-          Nacional de Protección de Datos Personales, titularidad de Cotton Country.
+          Cotton Country puede utilizar proveedores tecnológicos para operar el
+          sitio web, gestionar formularios, comunicaciones, alojamiento,
+          seguridad, analítica u otros servicios relacionados.
         </p>
 
         <p>
-          A través de la presente Política de Privacidad el Usuario da su consentimiento
-          expreso para la inclusión de sus datos personales en el mencionado banco de datos.
+          Estos proveedores podrán tratar datos únicamente en la medida
+          necesaria para prestar dichos servicios y conforme a las obligaciones
+          aplicables en materia de protección de datos personales.
+        </p>
+
+        <h2>6. Transferencias y alojamiento de información</h2>
+
+        <p>
+          Algunos proveedores tecnológicos utilizados por Cotton Country pueden
+          almacenar o procesar información mediante infraestructura ubicada fuera
+          del Perú.
         </p>
 
         <p>
-          Asimismo, Cotton Country informa a los Usuarios que su información personal puede
-          estar incluida en bancos de datos que se encuentran alojados en el extranjero en
-          virtud de contratos de servicios de almacenamiento de información que Cotton
-          Country tiene suscritos con terceros proveedores de dichos servicios. El Usuario,
-          al registrarse en la presente plataforma manifiesta que está informado sobre la
-          ubicación de dichos bancos de datos y autoriza el flujo transfronterizo de su
-          información personal de ser el caso.
+          Cuando corresponda, estas operaciones se realizarán de conformidad con
+          las disposiciones aplicables sobre flujo transfronterizo de datos
+          personales.
         </p>
 
-        <h2>4. Plazo durante el cual se conservarán los datos personales</h2>
+        <h2>7. Seguridad</h2>
 
         <p>
-          Los datos personales proporcionados se conservarán durante un plazo de (5) años.
+          Cotton Country adopta medidas técnicas y organizativas razonables para
+          proteger los datos personales frente a pérdida, acceso no autorizado,
+          alteración, divulgación o tratamiento indebido.
         </p>
 
-        <h2>5. ¿Para qué utilizamos su información personal?</h2>
-
-        <ul>
-          <li>
-            Para comunicarnos con los Usuarios acerca de nuestros productos y servicios,
-            cambios a esta política de privacidad, cambios en los términos y condiciones del
-            servicio, o avisos importantes
-          </li>
-          <li>
-            Para mantenerlos informados acerca de nuevos productos y servicios, próximos
-            eventos, ofertas, promociones y otro tipo de información que creemos será de su
-            interés
-          </li>
-          <li>
-            Para invitarles a participar en encuestas o para solicitar sus comentarios acerca
-            de nuestros productos y servicios
-          </li>
-          <li>
-            Para configurar y mantener sus cuentas, y hacer todo lo que sea necesario para
-            prestar nuestros servicios
-          </li>
-          <li>
-            Para comprender la forma en la que los Usuarios utilizan nuestros productos y
-            servicios
-          </li>
-          <li>
-            Para proporcionar asistencia al cliente y mejorar nuestra interacción con los
-            clientes
-          </li>
-          <li>
-            Para detectar y prevenir transacciones fraudulentas y otras actividades ilegales
-          </li>
-          <li>
-            Para analizar tendencias, administrar la Plataforma y supervisar las navegaciones
-            de los Usuarios
-          </li>
-        </ul>
-
-        <h2>6. ¿Cómo resguardamos su información personal?</h2>
+        <h2>8. Cookies y herramientas de medición</h2>
 
         <p>
-          Cotton Country adopta las medidas técnicas y organizativas necesarias para garantizar
-          la protección de los datos de carácter personal conforme a la normativa vigente.
+          El sitio web puede utilizar cookies y tecnologías similares para
+          funcionamiento, seguridad, medición de tráfico y análisis del uso del
+          sitio.
         </p>
-
-        <h2>7. ¿Con quiénes compartimos la información?</h2>
 
         <p>
-          Cotton Country podrá compartir información únicamente en los casos permitidos por
-          la ley y conforme a las finalidades descritas en la presente Política.
+          Algunas de estas tecnologías pueden ser proporcionadas por terceros,
+          como herramientas de analítica o servicios utilizados para medir el
+          rendimiento del sitio.
         </p>
 
-        <h2>8. Cookies</h2>
+        <h2>9. Derechos sobre sus datos personales</h2>
 
         <p>
-          La utilización de la Plataforma implica la aceptación del uso de cookies conforme a
-          lo descrito en la presente Política.
+          El titular de los datos personales puede ejercer los derechos
+          reconocidos por la legislación peruana, incluyendo los derechos de
+          acceso, rectificación, cancelación y oposición.
         </p>
-
-        <h2>9. ¿Cuáles son sus derechos como titular de sus datos personales?</h2>
 
         <p>
-          El Usuario podrá ejercer sus derechos de acceso, rectificación, cancelación y
-          oposición conforme a la normativa vigente escribiendo a
-          info@cottoncountry.com.pe.
+          Asimismo, cuando el tratamiento se base en el consentimiento, el
+          titular puede retirarlo conforme a la normativa aplicable. El nuevo
+          Reglamento reconoce expresamente el derecho de negarse, oponerse o
+          revocar el consentimiento en determinados tratamientos de publicidad
+          y prospección comercial. 
         </p>
 
-        <h2>10. Modificaciones a la Política de Privacidad</h2>
+        <div className="not-prose my-10 rounded-2xl border border-gray-200 bg-gray-50 p-6">
+          <h2 className="text-2xl font-semibold text-gray-950">
+            ¿Quieres gestionar tus datos personales?
+          </h2>
+
+          <p className="mt-3 text-gray-700">
+            Puedes solicitar acceso, rectificación, cancelación u oposición, o
+            pedir que dejemos de enviarte comunicaciones comerciales.
+          </p>
+
+          <Link
+            href="/derechos-arco"
+            className="mt-5 inline-flex items-center justify-center rounded-md bg-[#01018B] px-6 py-3 text-sm font-medium text-white hover:opacity-90 transition"
+          >
+            Gestionar mis datos
+          </Link>
+        </div>
+
+        <h2>10. Contacto</h2>
 
         <p>
-          Cotton Country se reserva expresamente el derecho a modificar, actualizar o
-          completar en cualquier momento la presente Política de Privacidad.
+          Para consultas relacionadas con protección de datos personales puedes
+          escribir a info@cottoncountry.com.pe o utilizar el formulario
+          disponible en la sección de derechos sobre datos personales.
         </p>
 
+        <h2>11. Modificaciones de esta Política</h2>
+
+        <p>
+          Cotton Country podrá actualizar esta Política de Privacidad cuando sea
+          necesario para reflejar cambios legales, tecnológicos o en sus
+          procesos. La versión vigente estará disponible en este sitio web.
+        </p>
       </article>
     </section>
   )
