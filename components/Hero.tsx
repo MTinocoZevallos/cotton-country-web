@@ -7,6 +7,7 @@ export default function Hero() {
         <img
           src="/hero-bg.webp"
           alt="Uniformes Corporativos Cotton Country"
+          fetchPriority="high"
           className="w-full h-full object-cover object-[88%_32%] md:object-[100%_25%]"
         />
 
