@@ -6,38 +6,11 @@ import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cottoncountry.com.pe"),
-  alternates: {
-    canonical: "https://cottoncountry.com.pe",
-  },
   title: "Cotton Country | Uniformes Corporativos",
   description:
     "Uniformes corporativos, institucionales e industriales diseñados y producidos en Perú.",
   verification: {
     google: "zpHF0Zr6rY5sswtDJjqndC4cUnDXGsfkldktUVcTv2g",
-  },
-  openGraph: {
-    title: "Cotton Country | Uniformes Corporativos",
-    description:
-      "Uniformes corporativos, institucionales e industriales diseñados y producidos en Perú.",
-    url: "https://cottoncountry.com.pe",
-    siteName: "Cotton Country",
-    locale: "es_PE",
-    type: "website",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1498,
-        height: 630,
-        alt: "Cotton Country Uniformes Corporativos",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Cotton Country | Uniformes Corporativos",
-    description:
-      "Uniformes corporativos, institucionales e industriales diseñados y producidos en Perú.",
-    images: ["/og-image.jpg"],
   },
 }
 

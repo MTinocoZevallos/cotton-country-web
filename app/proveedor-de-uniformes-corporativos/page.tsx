@@ -4,6 +4,34 @@ export const metadata = {
   title: "Proveedor de Uniformes para Empresas | Cotton Country",
   description:
     "Fabricamos uniformes corporativos para empresas en Perú con criterios técnicos de tallaje, muestras, fichas técnicas y continuidad en reposiciones.",
+  alternates: {
+    canonical:
+      "https://cottoncountry.com.pe/proveedor-de-uniformes-corporativos",
+  },
+  openGraph: {
+    title: "Proveedor de Uniformes para Empresas | Cotton Country",
+    description:
+      "Fabricamos uniformes corporativos para empresas en Perú con criterios técnicos de tallaje, muestras, fichas técnicas y continuidad en reposiciones.",
+    url: "https://cottoncountry.com.pe/proveedor-de-uniformes-corporativos",
+    siteName: "Cotton Country",
+    locale: "es_PE",
+    type: "website",
+    images: [
+      {
+        url: "/og-landing-corporativos.webp",
+        width: 1200,
+        height: 630,
+        alt: "Proveedor de uniformes corporativos para empresas",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Proveedor de Uniformes para Empresas | Cotton Country",
+    description:
+      "Fabricamos uniformes corporativos para empresas en Perú con criterios técnicos de tallaje, muestras, fichas técnicas y continuidad en reposiciones.",
+    images: ["/og-landing-corporativos.webp"],
+  },
 }
 
 export default function CorporateUniformsPage() {
