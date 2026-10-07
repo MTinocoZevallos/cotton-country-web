@@ -36,6 +36,10 @@ function formatContent(content: string) {
     .filter(Boolean)
 }
 
+function formatInline(text: string) {
+  return text.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+}
+
 export async function generateStaticParams() {
   return posts.map((post) => ({
     slug: post.slug,
@@ -104,24 +108,54 @@ export default async function PostPage(props: PageProps) {
 
       <article className="space-y-5 text-base md:text-lg leading-relaxed text-gray-900 [&_a]:text-[#01018B] [&_a]:font-semibold [&_a]:underline">
         {paragraphs.map((paragraph, index) => {
-          const isHeading =
-  /^\d+\./.test(paragraph) ||
-  paragraph.toLowerCase().startsWith("conclusión") ||
-  paragraph.toLowerCase().startsWith("continúa leyendo")
+  const isMarkdownHeading = paragraph.startsWith("## ")
+  const isListItem = paragraph.startsWith("* ")
+  const isDivider = paragraph === "---"
 
-          return isHeading ? (
-            <h2
-              key={index}
-              className="pt-4 text-2xl font-semibold leading-snug text-gray-950"
-              dangerouslySetInnerHTML={{ __html: paragraph }}
-            />
-          ) : (
-            <p
-              key={index}
-              dangerouslySetInnerHTML={{ __html: paragraph }}
-            />
-          )
-        })}
+  const isHeading =
+    isMarkdownHeading ||
+    /^\d+\./.test(paragraph) ||
+    paragraph.toLowerCase().startsWith("conclusión") ||
+    paragraph.toLowerCase().startsWith("continúa leyendo")
+
+  const cleanText = isMarkdownHeading
+    ? paragraph.replace(/^##\s+/, "")
+    : isListItem
+      ? paragraph.replace(/^\*\s+/, "")
+      : paragraph
+
+  const html = formatInline(cleanText)
+
+  if (isDivider) {
+    return <hr key={index} className="my-8 border-gray-200" />
+  }
+
+  if (isHeading) {
+    return (
+      <h2
+        key={index}
+        className="pt-5 text-2xl font-semibold leading-snug text-gray-950"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
+    )
+  }
+
+  if (isListItem) {
+    return (
+      <div key={index} className="flex gap-3 pl-2">
+        <span className="font-semibold text-[#01018B]">•</span>
+        <p dangerouslySetInnerHTML={{ __html: html }} />
+      </div>
+    )
+  }
+
+  return (
+    <p
+      key={index}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
+  )
+})}
       </article>
 
       <div className="mt-14 rounded-2xl bg-[#01018B] px-6 py-8 text-white">
