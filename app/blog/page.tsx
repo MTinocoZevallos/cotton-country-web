@@ -12,6 +12,9 @@ const specialImageExtensions: Record<string, string> = {
   "como-definir-un-proyecto-de-uniformes-corporativos": "webp",
   "por-que-las-empresas-tienen-problemas-con-las-tallas": "webp",
   "de-que-depende-el-tiempo-de-entrega-de-uniformes": "webp",
+  "dia-mundial-del-algodon-2026": "webp",
+  "el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil": "webp",
+  "sector-textil-peruano-emergencia-productividad-2026": "webp",
 }
 
 function getPostImage(slug: string) {
