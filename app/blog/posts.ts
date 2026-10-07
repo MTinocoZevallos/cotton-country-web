@@ -1668,4 +1668,474 @@ Pero una fecha técnicamente viable es la que realmente protege la operación de
 <a href="/blog/por-que-las-empresas-tienen-problemas-con-las-tallas">¿Por qué las empresas siguen teniendo problemas con las tallas?</a>
  `,
   },
+  {
+  slug: "dia-mundial-del-algodon-2026",
+  title:
+    "Día Mundial del Algodón 2026: una fibra que sigue siendo estratégica para la industria textil",
+  excerpt:
+    "Este 7 de octubre analizamos la situación del algodón en 2026, su importancia para la industria textil, la producción peruana y los desafíos futuros.",
+  canonicalPath: "/dia-mundial-del-algodon-2026",
+  content: `
+Cada 7 de octubre se celebra el **Día Mundial del Algodón**, una fecha que busca reconocer la importancia económica y social de una fibra que ha acompañado a la humanidad durante miles de años y que continúa siendo fundamental para la industria textil.
+
+En 2026 la celebración llega, además, en un momento particularmente interesante. El algodón enfrenta la competencia creciente de las fibras sintéticas, los efectos del cambio climático, mayores exigencias de sostenibilidad y un escenario internacional marcado por cambios en el comercio y las cadenas de suministro.
+
+A pesar de ello, sigue siendo la **segunda fibra más utilizada en el mundo después del poliéster** y representa aproximadamente una quinta parte de la demanda mundial de fibras. Cerca del 80 % del algodón producido se destina a prendas de vestir.
+
+## ¿Por qué se celebra el Día Mundial del Algodón?
+
+El Día Mundial del Algodón nació para poner en valor no solamente la fibra, sino toda la actividad económica que existe detrás de ella.
+
+Actualmente, alrededor de **24 millones de agricultores cultivan algodón en el mundo** y se estima que más de 100 millones de familias dependen directa o indirectamente de su cadena de valor.
+
+China, India, Brasil, Estados Unidos y Pakistán se encuentran entre los principales países productores.
+
+Hablar de algodón significa hablar también de agricultura, industria, empleo, comercio internacional y desarrollo.
+
+## Una fibra natural frente al crecimiento de los sintéticos
+
+El protagonismo del algodón ha cambiado significativamente durante las últimas décadas.
+
+El crecimiento del poliéster y de otras fibras sintéticas transformó la composición del mercado textil mundial. Actualmente el algodón ocupa el segundo lugar entre las fibras más utilizadas globalmente.
+
+Sin embargo, ambas familias de fibras tienen propiedades y aplicaciones diferentes.
+
+En prendas de vestir, características como el tacto, la absorción de humedad, la transpirabilidad y el comportamiento durante el uso hacen que la selección de una fibra no deba reducirse únicamente al precio.
+
+Esto resulta especialmente importante en prendas de trabajo y **uniformes corporativos**, donde una tela debe evaluarse considerando simultáneamente apariencia, comodidad, resistencia, mantenimiento y frecuencia de uso.
+
+Por ello, algodón, poliéster y sus diferentes mezclas continúan coexistiendo en el mercado.
+
+## ¿Qué está ocurriendo con el algodón en 2026?
+
+Las proyecciones internacionales muestran un cambio interesante en el equilibrio mundial entre producción y consumo.
+
+Para la campaña 2026/27, la producción mundial de algodón se proyecta ligeramente por debajo del consumo.
+
+Esto no implica necesariamente una escasez, porque existen inventarios globales y múltiples factores intervienen en la formación de precios.
+
+Sin embargo, sí muestra por qué la evolución de las materias primas debe observarse como parte de una cadena internacional.
+
+Para fabricantes textiles y empresas confeccionistas, estas variables pueden terminar influyendo en disponibilidad, costos y decisiones de abastecimiento.
+
+## El algodón en el Perú
+
+Hablar de algodón tiene una relevancia particular para el Perú.
+
+Nuestro país posee una extensa tradición algodonera y variedades históricamente reconocidas como **Pima y Tangüis** forman parte del desarrollo de la industria textil peruana.
+
+Pero esa tradición convive hoy con una realidad diferente: la producción nacional de algodón se ha reducido considerablemente.
+
+Las estadísticas oficiales muestran que la producción de algodón rama pasó de más de 200 mil toneladas anuales a mediados de la década del 2000 a poco más de 20 mil toneladas en 2025.
+
+Después de una recuperación parcial en 2022, la producción volvió a disminuir durante los años siguientes.
+
+Estos datos muestran que el reconocimiento histórico del algodón peruano no debe confundirse con la realidad actual de su producción.
+
+Y plantean preguntas importantes para el futuro: productividad, disponibilidad de tierras, competitividad frente a otros cultivos, tecnología, trazabilidad y capacidad de generar mayor valor dentro de la cadena textil.
+
+![Muestras de algodón en diferentes tonalidades exhibidas en el Museo Amano, Lima](/blog/dia-mundial-del-algodon-2026.webp)
+
+*Muestras de algodón en diferentes tonalidades exhibidas en el Museo Amano, Lima. Fotografía: Cotton Country.*
+
+## El clima también forma parte de la cadena textil
+
+Existe además una variable que muchas veces parece distante de una empresa que compra una camisa o un uniforme terminado: **el clima**.
+
+Antes de convertirse en hilo y posteriormente en tejido, el algodón es un producto agrícola.
+
+Por ello, alteraciones en las lluvias, temperaturas extremas, disponibilidad de agua, plagas y otros fenómenos pueden modificar las condiciones de producción.
+
+En el Perú esta relación resulta especialmente interesante por nuestra exposición a eventos climáticos como **El Niño**.
+
+Su impacto no termina necesariamente en el campo. Una alteración importante puede propagarse progresivamente por diferentes eslabones:
+
+**cultivo → fibra → hilandería → tejido → confección → abastecimiento.**
+
+El efecto tampoco es automático ni igual en todas las regiones o campañas. Depende de la intensidad del fenómeno, su localización, el momento del ciclo agrícola y numerosos factores adicionales.
+
+Por ello dedicaremos un próximo artículo a analizar específicamente **cómo El Niño puede afectar a la industria textil y a sus cadenas de suministro**.
+
+## ¿Por qué el algodón continúa siendo relevante para los uniformes?
+
+En uniformes corporativos no existe una fibra universalmente superior.
+
+La elección depende del trabajo que realizará la persona, las condiciones ambientales, la imagen que la organización desea proyectar y la frecuencia con que se utilizará y lavará la prenda.
+
+Una camisa administrativa, un polo utilizado en exteriores y una prenda industrial pueden necesitar composiciones completamente distintas.
+
+En determinados usos, el algodón aporta características especialmente valoradas relacionadas con comodidad, absorción y sensación al contacto con la piel.
+
+En otros casos, una mezcla con fibras sintéticas puede ofrecer un equilibrio más conveniente entre confort, estabilidad dimensional, resistencia y facilidad de mantenimiento.
+
+Por eso, **la composición de una tela debería ser una decisión técnica y no solamente comercial**.
+
+El nombre de una fibra por sí solo tampoco determina la calidad final de una prenda. La calidad depende también del hilo, construcción del tejido, densidad, procesos de acabado, confección y especificaciones establecidas para el producto.
+
+## Una fibra histórica que también mira hacia el futuro
+
+El Día Mundial del Algodón no debería ser solamente una celebración de su historia.
+
+El verdadero desafío está en cómo producir, transformar y utilizar esta fibra durante las próximas décadas en un mercado donde compite con materiales sintéticos, enfrenta presiones climáticas y ambientales y forma parte de cadenas de suministro cada vez más globalizadas.
+
+Para el Perú, el desafío es todavía mayor. Tenemos una tradición textil estrechamente relacionada con el algodón, pero una producción nacional considerablemente menor que la registrada hace dos décadas.
+
+Entender esa realidad es más útil que limitarse a celebrar el prestigio histórico de nuestra fibra.
+
+Porque detrás de cada tela existe una cadena que comienza mucho antes de llegar a una fábrica de confecciones.
+
+Y precisamente por eso, **el algodón continúa siendo relevante para comprender el presente y el futuro de la industria textil.**
+
+---
+
+## Continúa leyendo
+
+<a href="/blog/una-breve-historia-del-algodon">Una breve historia del algodón</a>
+
+<a href="/blog/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil">El Fenómeno de El Niño y su impacto en la industria textil</a>
+  `,
+},
+{
+  slug: "el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
+  title:
+    "El Niño 2026-2027: ¿cómo puede afectar a la industria textil peruana?",
+  excerpt:
+    "El Niño 2026-2027 puede afectar mucho más que el clima: analizamos sus posibles efectos sobre la demanda de ropa, energía, logística, materias primas y producción textil en el Perú.",
+  canonicalPath:
+    "/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
+  content: `
+El Fenómeno de El Niño suele asociarse inmediatamente con lluvias, inundaciones y huaicos.
+
+Para la industria textil, sin embargo, sus efectos pueden ser mucho más amplios.
+
+La temperatura modifica la demanda de determinadas prendas. Las lluvias pueden interrumpir carreteras y distribución. Las condiciones hidrológicas pueden afectar al sistema energético. La agricultura puede sufrir alteraciones y, con ella, determinadas materias primas.
+
+Por eso, para una empresa textil, El Niño no es solamente un fenómeno meteorológico.
+
+También puede convertirse en una variable de producción, abastecimiento, costos y demanda.
+
+En 2026 esta discusión cobra especial importancia. El Perú se encuentra bajo Alerta de El Niño Costero y las proyecciones oficiales anticipan que el evento continuará durante 2027.
+
+## Un evento que todavía debemos seguir observando
+
+Una de las características importantes de El Niño es que no puede evaluarse solamente observando la temperatura superficial del mar en un determinado momento.
+
+La evolución del calor acumulado en el océano, su distribución, la interacción entre océano y atmósfera y el momento en que se desarrolla el fenómeno ayudan a determinar posteriormente su comportamiento.
+
+El ENFEN mantiene actualmente la **Alerta de El Niño Costero** y proyecta que el evento continúe durante 2027.
+
+Para el periodo comprendido entre septiembre de 2026 y enero de 2027, las proyecciones han mostrado una elevada probabilidad de una magnitud extraordinaria en la región Niño 1+2.
+
+Esto no significa que todas las regiones del Perú recibirán el mismo impacto.
+
+Precisamente una de las lecciones de los grandes eventos anteriores es que **dos fenómenos de gran magnitud pueden producir consecuencias muy diferentes dependiendo del lugar y del momento**.
+
+## 1983 y 1998: dos antecedentes que el Perú recuerda
+
+Los eventos de 1982-1983 y 1997-1998 permanecen entre las principales referencias históricas cuando se habla de El Niño en el Perú.
+
+Ambos fueron extraordinarios, pero sus impactos no fueron idénticos.
+
+Las lluvias, sequías, daños a infraestructura, alteraciones pesqueras y efectos sobre diferentes actividades económicas tuvieron distribuciones distintas.
+
+Esto es importante porque comparar la magnitud de un nuevo evento con uno anterior no significa que necesariamente repetirá exactamente sus consecuencias.
+
+El territorio también cambia.
+
+Las ciudades crecen, aparecen nuevas carreteras, aumenta la infraestructura, cambian las actividades económicas y también cambia nuestra vulnerabilidad.
+
+Por eso, para las empresas, el objetivo no debería ser adivinar si 2027 será exactamente como 1983 o 1998.
+
+La pregunta más útil es otra:
+
+**¿Qué partes de nuestra operación podrían verse afectadas si algunos de esos riesgos vuelven a presentarse?**
+
+## Cuando el invierno no llega, también cambia el negocio textil
+
+Existe un efecto mucho menos comentado de El Niño: **la temperatura puede cambiar el comportamiento del consumidor**.
+
+Lo viví personalmente durante el evento de 1997-1998.
+
+En 1997 cursaba quinto de secundaria y se acercaba la fotografía de promoción. Mi madre quería comprarme una chompa nueva para que saliera bien vestido en la foto.
+
+Yo le decía que no gastara.
+
+Finalmente la compramos.
+
+Prácticamente la utilicé para aquella fotografía, porque ese año el frío habitual de Lima nunca llegó como esperábamos.
+
+Es solamente una experiencia personal, pero sirve para explicar un problema comercial bastante concreto.
+
+¿Qué ocurre con una empresa que meses antes compró miles de chompas, casacas u otras prendas de invierno esperando una temporada fría que finalmente resulta mucho más cálida?
+
+La meteorología puede convertirse rápidamente en inventario.
+
+## El clima también determina qué prendas se venden
+
+La industria de la moda conoce bien el concepto de estacionalidad.
+
+Parte de la producción y de las compras se planifica anticipando determinados patrones climáticos:
+
+* Verano.
+* Invierno.
+* Temporada de lluvias.
+* Campañas escolares.
+* Cambios de estación.
+
+Cuando esos patrones se alteran, también puede cambiar la demanda.
+
+Un invierno excepcionalmente cálido puede reducir la necesidad de prendas pesadas. Una temporada de calor más prolongada puede aumentar el uso de prendas ligeras y modificar decisiones sobre fibras, gramajes y diseños.
+
+En uniformes corporativos ocurre algo similar.
+
+Una empresa que normalmente entrega casacas en determinada fecha podría reconsiderar el momento de distribución. Otra podría revisar el gramaje de una tela o incluso la composición de determinadas prendas destinadas a trabajadores expuestos al calor.
+
+Por eso, el clima no solamente afecta cómo se fabrica una prenda.
+
+**También puede afectar qué prenda necesita realmente el usuario.**
+
+## El segundo impacto: materias primas
+
+El algodón nos recuerda que parte de la industria textil comienza mucho antes de una hilandería o una fábrica de confecciones.
+
+Comienza en el campo.
+
+El algodón es un cultivo y, como cualquier actividad agrícola, depende de temperatura, disponibilidad de agua, condiciones del suelo, lluvias y comportamiento de plagas, entre otras variables.
+
+El impacto de El Niño sobre la agricultura tampoco es uniforme.
+
+Mientras determinadas regiones pueden enfrentar exceso de precipitaciones, otras pueden registrar condiciones más secas.
+
+Esto significa que no sería correcto afirmar simplemente que El Niño necesariamente reducirá la producción de algodón.
+
+Pero sí introduce una variable adicional de riesgo para la agricultura y, posteriormente, para las cadenas que dependen de ella.
+
+En nuestro artículo sobre el <a href="/blog/dia-mundial-del-algodon-2026">Día Mundial del Algodón 2026</a> analizamos precisamente cómo una fibra agrícola termina formando parte de una cadena industrial global.
+
+## Energía: un riesgo menos visible para la confección
+
+Existe otra conexión que normalmente pasa inadvertida.
+
+Una fábrica textil utiliza electricidad.
+
+También la utilizan hilanderías, tejedurías, tintorerías, lavanderías, plantas de acabados, talleres de bordado y fábricas de confecciones.
+
+En el Perú, una parte importante de la electricidad proviene de generación hidroeléctrica.
+
+Por ello, cambios relevantes en las condiciones hidrológicas pueden modificar las condiciones bajo las cuales opera el sistema eléctrico.
+
+Las perspectivas climáticas muestran precisamente un escenario heterogéneo: determinadas zonas podrían recibir lluvias superiores a lo normal mientras otras presentarían condiciones normales o deficitarias.
+
+Esto merece seguimiento.
+
+No significa que El Niño necesariamente provocará un aumento de las tarifas eléctricas.
+
+El precio de la energía depende de muchas variables: disponibilidad de generación, hidrología, generación térmica, combustibles, demanda, contratos, transmisión y funcionamiento general del sistema.
+
+Pero si las condiciones hidrológicas reducen la disponibilidad de determinada generación hidroeléctrica, el sistema puede necesitar una combinación diferente de fuentes de generación.
+
+Y eso convierte al clima en una variable que también puede terminar influyendo indirectamente sobre los costos industriales.
+
+Para una prenda puede parecer insignificante.
+
+Para millones de minutos de costura, tejido, tintorería, lavandería y acabado, deja de serlo.
+
+## Logística: producir no sirve si no podemos mover
+
+El Niño también puede afectar algo mucho más visible: las carreteras.
+
+Lluvias intensas, inundaciones, deslizamientos y huaicos pueden interrumpir temporalmente rutas de transporte.
+
+Para la industria textil esto puede afectar diferentes movimientos:
+
+**materia prima → fábrica**
+
+**tela → taller**
+
+**prenda → centro de distribución**
+
+**centro de distribución → sede o colaborador**
+
+El impacto tampoco se limita a empresas ubicadas directamente en una zona afectada.
+
+Una fábrica en Lima puede depender de un proveedor, cliente, transportista o ruta ubicada a cientos de kilómetros.
+
+Los eventos anteriores demostraron que el daño a infraestructura puede convertirse rápidamente en un problema logístico.
+
+Por eso, evaluar proveedores únicamente por su ubicación física puede ser insuficiente.
+
+También importa entender **cómo llegan y cómo salen sus materiales**.
+
+## El impacto sobre los tiempos de entrega
+
+Todo esto termina convergiendo en una variable especialmente importante para los compradores corporativos: el plazo.
+
+En condiciones normales, un proyecto de uniformes ya depende de telas, avíos, muestras, tallaje, corte, confección, servicios externos, control de calidad y distribución.
+
+Un evento climático puede agregar nuevas incertidumbres.
+
+Un proveedor puede tener capacidad de confección disponible y, sin embargo, recibir tarde una tela.
+
+La prenda puede estar terminada, pero una carretera puede impedir su distribución.
+
+Un servicio externo puede reducir temporalmente su capacidad.
+
+Una empresa cliente puede incluso tener que modificar las fechas de entrega porque sus propias instalaciones han sido afectadas.
+
+Por ello, durante periodos de mayor riesgo climático, los cronogramas necesitan algo que normalmente se intenta eliminar para conseguir el plazo comercial más corto:
+
+**holgura.**
+
+## ¿Qué deberían revisar las empresas que compran uniformes?
+
+No se trata de detener compras ni asumir que necesariamente ocurrirá un escenario extremo.
+
+Se trata de incorporar el riesgo a la planificación.
+
+Algunas preguntas pueden resultar útiles:
+
+* ¿Las prendas previstas para 2027 corresponden realmente a las condiciones térmicas esperadas?
+* ¿Existen materiales críticos con tiempos largos de reposición?
+* ¿La producción depende de un único proveedor o servicio externo?
+* ¿Existen rutas logísticas especialmente vulnerables?
+* ¿Hay suficiente tiempo entre producción y fecha obligatoria de entrega?
+* ¿Las entregas podrían dividirse por sedes o prioridades?
+* ¿Existen alternativas de materiales previamente aprobadas?
+* ¿Qué ocurriría si una etapa del proyecto se retrasa una o dos semanas?
+
+La finalidad no es predecir exactamente qué ocurrirá.
+
+Es evitar que una alteración previsible se convierta automáticamente en una emergencia operativa.
+
+## Planificar frente a la incertidumbre
+
+El Fenómeno de El Niño 2026-2027 todavía continuará evolucionando y sus consecuencias exactas no pueden conocerse con meses de anticipación.
+
+Los pronósticos también se actualizan conforme aparece nueva información.
+
+Pero la incertidumbre no significa que las empresas deban ignorar el riesgo hasta que aparezca el problema.
+
+Para la industria textil, El Niño puede actuar simultáneamente sobre la demanda, las materias primas, la energía, la producción y la logística.
+
+Y esa es probablemente la principal lección.
+
+Una prenda puede comenzar en un cultivo, pasar por una hilandería, convertirse en tela, atravesar diferentes procesos industriales, ser confeccionada en un taller y viajar cientos de kilómetros antes de llegar finalmente a una persona.
+
+Cuando observamos toda esa cadena, resulta más sencillo comprender por qué un fenómeno que comienza en el océano puede terminar afectando incluso **qué uniforme utilizamos, cuánto cuesta producirlo y cuándo puede ser entregado**.
+
+---
+
+## Continúa leyendo
+
+<a href="/blog/dia-mundial-del-algodon-2026">Día Mundial del Algodón 2026: una fibra que sigue siendo estratégica para la industria textil</a>
+
+<a href="/blog/de-que-depende-el-tiempo-de-entrega-de-uniformes">¿De qué depende el tiempo de entrega de un proyecto de uniformes?</a>
+  `,
+},
+{
+  slug: "sector-textil-peruano-emergencia-productividad-2026",
+  title:
+    "Sector textil peruano en emergencia: el reto de producir mejor en 2026",
+  excerpt:
+    "El sector textil y confecciones fue declarado en emergencia en 2026. Productividad, competitividad y mejores decisiones de compra serán claves para enfrentar un problema que es estructural.",
+  canonicalPath:
+    "/sector-textil-peruano-emergencia-productividad-2026",
+  content: `
+El sector textil y confecciones peruano atraviesa nuevamente un momento complejo.
+
+En octubre de 2026, el Gobierno declaró en emergencia al sector por 120 días mediante el Decreto Supremo N.º 014-2026-PRODUCE, planteando medidas orientadas a su reactivación, productividad y competitividad.
+
+La medida responde a un problema que no es nuevo ni puede explicarse por una sola causa.
+
+Competencia internacional, costos de producción, informalidad, acceso al financiamiento, tecnología, productividad, importaciones y cambios en la demanda forman parte de una realidad mucho más amplia.
+
+Por eso, probablemente la discusión más importante no sea cómo proteger temporalmente a la industria.
+
+Es **cómo conseguir que vuelva a ser competitiva**.
+
+## Precio bajo no es lo mismo que productividad
+
+Una empresa productiva utiliza mejor sus recursos.
+
+Reduce desperdicios, errores, tiempos improductivos y reprocesos. Planifica mejor, desarrolla procesos más eficientes e incorpora tecnología cuando genera valor.
+
+Eso puede permitirle ofrecer mejores precios.
+
+Pero existe una diferencia importante entre reducir un precio porque somos más productivos y reducirlo sacrificando calidad, especificaciones, servicio o capacidad de inversión.
+
+Competir exclusivamente por precio puede funcionar en el corto plazo.
+
+Difícilmente constituye una estrategia sostenible para toda una industria.
+
+## Los productores también tenemos una responsabilidad
+
+La declaratoria de emergencia no debería impedir una necesaria autocrítica.
+
+Las empresas textiles peruanas también necesitamos mejorar.
+
+Digitalizar procesos, reducir desperdicios, capacitar personas, controlar mejor la calidad, desarrollar productos, mejorar la planificación y entender las necesidades reales de nuestros clientes son parte del desafío.
+
+La competitividad no puede depender solamente de factores externos.
+
+Tampoco podemos esperar que un comprador elija un producto nacional únicamente porque fue fabricado en el Perú.
+
+Tenemos que ofrecer razones para que lo haga.
+
+## Pero los compradores también forman parte de la cadena
+
+En una compra B2B el precio es importante y siempre lo será.
+
+El problema aparece cuando se convierte en prácticamente el único criterio de decisión.
+
+En uniformes corporativos esto resulta especialmente visible.
+
+Una prenda más barata puede generar posteriormente cambios de talla, reposiciones prematuras, reclamos, entregas adicionales, horas administrativas o simplemente colaboradores que no quieren utilizarla.
+
+En ese momento aparece una diferencia fundamental:
+
+**precio de compra y costo real no necesariamente son lo mismo.**
+
+Compras puede conseguir un menor precio unitario y, sin embargo, la organización terminar utilizando más recursos para administrar el proyecto.
+
+## Comprar mejor también es productividad
+
+La productividad no termina en la fábrica.
+
+También existe en la forma en que las empresas compran.
+
+Definir correctamente una necesidad, especificar materiales adecuados, planificar cantidades, establecer plazos realistas, evaluar calidad y reducir errores durante un proceso de tallaje puede evitar costos que muchas veces no aparecen en una cotización.
+
+Esto no significa comprar siempre la alternativa más cara.
+
+Significa evaluar **precio, calidad, servicio, riesgo y costo total** antes de decidir.
+
+En compras corporativas, una buena decisión debería generar valor para toda la organización y no solamente mostrar un precio unitario menor.
+
+## Una industria más competitiva necesita a ambos lados
+
+Cotton Country es solamente una empresa dentro de una industria enorme y evidentemente no puede solucionar sus problemas estructurales.
+
+Pero productores y compradores sí podemos contribuir a cambiar la forma en que competimos.
+
+Los productores necesitamos ser más eficientes, innovadores y productivos.
+
+Los compradores necesitan exigirnos precisamente eso, pero también aprender a reconocer cuándo una propuesta genera mayor valor para su organización.
+
+La declaratoria de emergencia puede ayudar a enfrentar una coyuntura difícil.
+
+El desafío de fondo será mucho más largo.
+
+Porque una industria textil sostenible no puede depender permanentemente de protección ni puede construir su futuro compitiendo únicamente por quién fabrica más barato.
+
+Necesita **producir mejor y comprar mejor**.
+
+---
+
+## Continúa leyendo
+
+<a href="/blog/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil">El Niño 2026-2027: ¿cómo puede afectar a la industria textil peruana?</a>
+
+<a href="/blog/dia-mundial-del-algodon-2026">Día Mundial del Algodón 2026: una fibra que sigue siendo estratégica para la industria textil</a>
+  `,
+},
 ]
