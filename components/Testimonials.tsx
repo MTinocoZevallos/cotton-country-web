@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { ArrowLeft, ArrowRight } from "lucide-react"
+import { ArrowLeft, ArrowRight, Pause, Play } from "lucide-react"
 import { useEffect, useRef, useState, type KeyboardEvent, type TouchEvent } from "react"
 import styles from "./home.module.css"
 
@@ -28,11 +28,42 @@ const testimonials = [
 
 export default function Testimonials() {
   const [active, setActive] = useState(0)
+  const stage = useRef<HTMLDivElement>(null)
+  const rotationIntent = useRef<boolean | null>(null)
+  const [userPaused, setUserPaused] = useState(false)
+  const [hovered, setHovered] = useState(false)
+  const [visible, setVisible] = useState(false)
+  const [pageVisible, setPageVisible] = useState(true)
+  const [reducedMotion, setReducedMotion] = useState(true)
   const tabs = useRef<(HTMLButtonElement | null)[]>([])
   const touch = useRef<{ x: number; y: number } | null>(null)
   const panels = useRef<(HTMLDivElement | null)[]>([])
   const [slideHeight, setSlideHeight] = useState<number>()
   const count = testimonials.length
+
+  useEffect(() => {
+    const preference = window.matchMedia("(prefers-reduced-motion: reduce)")
+    const updateMotion = () => setReducedMotion(preference.matches)
+    const updateVisibility = () => setPageVisible(!document.hidden)
+    updateMotion()
+    updateVisibility()
+    preference.addEventListener("change", updateMotion)
+    document.addEventListener("visibilitychange", updateVisibility)
+    const observer = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting && entry.intersectionRatio >= .25), { threshold: .25 })
+    if (stage.current) observer.observe(stage.current)
+    return () => {
+      preference.removeEventListener("change", updateMotion)
+      document.removeEventListener("visibilitychange", updateVisibility)
+      observer.disconnect()
+    }
+  }, [])
+
+  const autoRunning = !userPaused && !hovered && visible && pageVisible && !reducedMotion
+  useEffect(() => {
+    if (!autoRunning) return
+    const timer = window.setTimeout(() => setActive(current => (current + 1) % count), 7000)
+    return () => window.clearTimeout(timer)
+  }, [active, autoRunning, count])
 
   useEffect(() => {
     const panel = panels.current[active]
@@ -47,7 +78,10 @@ export default function Testimonials() {
     observer.observe(panel)
     return () => observer.disconnect()
   }, [active])
-  const move = (direction: number) => setActive(current => (current + direction + count) % count)
+  const move = (direction: number) => {
+    setUserPaused(true)
+    setActive(current => (current + direction + count) % count)
+  }
   const handleKeys = (event: KeyboardEvent<HTMLButtonElement>, index: number) => {
     let next = index
     if (event.key === "ArrowRight") next = (index + 1) % count
@@ -56,6 +90,7 @@ export default function Testimonials() {
     else if (event.key === "End") next = count - 1
     else return
     event.preventDefault()
+    setUserPaused(true)
     setActive(next)
     tabs.current[next]?.focus()
   }
@@ -73,10 +108,15 @@ export default function Testimonials() {
       <div className={styles.casesHeading} data-reveal>
         <h2 id="cases-title">Nuestros clientes opinan</h2>
       </div>
-      <div className={styles.caseStage} data-reveal role="region" aria-roledescription="carrusel" aria-label="Nuestros clientes opinan">
+      <div ref={stage} className={styles.caseStage} data-reveal
+        onPointerEnter={event => { if (event.pointerType === "mouse") setHovered(true) }}
+        onPointerLeave={event => { if (event.pointerType === "mouse") setHovered(false) }}
+        onFocusCapture={() => setUserPaused(true)}
+        onTouchStartCapture={() => setUserPaused(true)}
+        role="region" aria-roledescription="carrusel" aria-label="Nuestros clientes opinan">
         <div className={styles.caseTabs} role="tablist" aria-label="Seleccionar testimonio">
           {testimonials.map((item, index) => (
-            <button key={item.company} role="tab" id={`case-tab-${index}`} aria-controls={`case-panel-${index}`} aria-selected={active === index} tabIndex={active === index ? 0 : -1} ref={element => { tabs.current[index] = element }} onClick={() => setActive(index)} onKeyDown={event => handleKeys(event, index)}>
+            <button key={item.company} role="tab" id={`case-tab-${index}`} aria-controls={`case-panel-${index}`} aria-selected={active === index} tabIndex={active === index ? 0 : -1} ref={element => { tabs.current[index] = element }} onClick={() => { setUserPaused(true); setActive(index) }} onKeyDown={event => handleKeys(event, index)}>
               {item.company}
             </button>
           ))}
@@ -106,7 +146,21 @@ export default function Testimonials() {
           </div>
         </div>
         <div className={styles.caseControls}>
-          <span aria-live="polite" aria-atomic="true">{String(active + 1).padStart(2, "0")} / {String(count).padStart(2, "0")}</span>
+          <span aria-live={userPaused || reducedMotion ? "polite" : "off"} aria-atomic="true">{String(active + 1).padStart(2, "0")} / {String(count).padStart(2, "0")}</span>
+          <button type="button" className={styles.caseRotation} disabled={reducedMotion}
+            aria-label={reducedMotion ? "Avance automático desactivado por movimiento reducido" : userPaused ? "Reanudar avance automático" : "Pausar avance automático"}
+            title={reducedMotion ? "Se respeta tu preferencia de movimiento reducido" : undefined}
+            onPointerDown={() => { rotationIntent.current = !userPaused }}
+            onPointerCancel={() => { rotationIntent.current = null }}
+            onBlur={() => { rotationIntent.current = null }}
+            onKeyDown={() => { rotationIntent.current = null }}
+            onClick={() => {
+              setUserPaused(rotationIntent.current ?? !userPaused)
+              rotationIntent.current = null
+            }}>
+            {userPaused || reducedMotion ? <Play aria-hidden="true" size={16} /> : <Pause aria-hidden="true" size={16} />}
+            <span>{reducedMotion ? "Automático desactivado" : userPaused ? "Reanudar" : "Pausar"}</span>
+          </button>
           <div>
             <button type="button" aria-label="Testimonio anterior" onClick={() => move(-1)}><ArrowLeft aria-hidden="true" size={18} /><span>Anterior</span></button>
             <button type="button" aria-label="Testimonio siguiente" onClick={() => move(1)}><span>Siguiente</span><ArrowRight aria-hidden="true" size={18} /></button>

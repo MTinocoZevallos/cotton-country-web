@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { usePathname } from "next/navigation"
 import { useRef, useState } from "react"
 import styles from "./chrome.module.css"
@@ -11,21 +11,11 @@ declare global {
   interface Window { dataLayer?: Record<string, unknown>[] }
 }
 
-const families = [
-  { label: "Todos los uniformes", href: "/uniformes" },
-  { label: "Camisas", href: "/uniformes/camisas" },
-  { label: "Blusas", href: "/uniformes/blusas" },
-  { label: "Polos", href: "/uniformes/polos" },
-  { label: "Pantalones", href: "/uniformes/pantalones" },
-  { label: "Scrubs", href: "/uniformes/scrubs" },
-]
-
 export default function Header() {
   const isHome = usePathname() === "/"
   const [open, setOpen] = useState(false)
   const toggle = useRef<HTMLButtonElement>(null)
-  const dropdown = useRef<HTMLDetailsElement>(null)
-  const close = () => { setOpen(false); dropdown.current?.removeAttribute("open") }
+  const close = () => setOpen(false)
   const handleEmailClick = () => {
     if (typeof window === "undefined") {
       return
@@ -58,12 +48,7 @@ export default function Header() {
         }} onBlur={event => {
           if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget) && !toggle.current?.contains(event.relatedTarget)) close()
         }}>
-          <details ref={dropdown} className={styles.navDropdown}>
-            <summary>Uniformes <ChevronDown size={15} aria-hidden="true" /></summary>
-            <div className={styles.navDropdownLinks}>
-              {families.map(item => <Link key={item.href} href={item.href}>{item.label}</Link>)}
-            </div>
-          </details>
+          <Link href="/uniformes" className={styles.navLink}>Uniformes</Link>
           <a href="https://sizeset.com" className={styles.navLink} target="_blank" rel="noopener noreferrer">SizeSet</a>
           <Link href="/blog" className={styles.navLink}>Blog</Link>
           <Link href="/#contacto" className={styles.navLink}>Contacto</Link>
