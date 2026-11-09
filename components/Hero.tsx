@@ -61,7 +61,10 @@ export default function Hero() {
         <noscript><style>{`[data-reserved-text]{visibility:visible!important}[data-hero-subtitle],[data-hero-cta]{opacity:1!important;transform:none!important}`}</style></noscript>
         <div className={styles.heroBottom}>
           <div className={styles.heroCopy}>
-            <p className={styles.heroSubtitle} data-hero-subtitle>Te invitamos a descubrir el poder del uniforme.</p>
+            <div className={styles.heroSubtitle} data-hero-subtitle>
+              <p>Al igual que las personas, las marcas también visten para expresar quiénes son, lo que representan y los valores que las distinguen.</p>
+              <p>Te invitamos a descubrir el poder del uniforme.</p>
+            </div>
             <Link href="/uniformes" className={styles.primaryLink} data-hero-cta>
               Descubre nuestros uniformes
             </Link>

@@ -33,7 +33,6 @@
 @media (max-width: 767px) {
   .headerInner, .footerBody, .footerBottom > div { width: calc(100% - 40px); }
   .headerInner { gap: 12px; }
-  .headerLogo { width: auto; height: 36px; }
   .navigation { gap: 16px; }
   .navLink { font-size: 14px; }
   .emailLink { width: 36px; height: 36px; }
@@ -44,7 +43,6 @@
   .footerGrid h2 { margin-bottom: 16px; }
 }
 @media (max-width: 359px) {
-  .headerLogo { width: auto; height: 34px; }
   .navigation { gap: 10px; }
 }
 
