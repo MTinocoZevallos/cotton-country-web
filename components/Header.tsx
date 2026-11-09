@@ -64,7 +64,7 @@ export default function Header() {
               {families.map(item => <Link key={item.href} href={item.href}>{item.label}</Link>)}
             </div>
           </details>
-          <Link href="/proveedor-de-uniformes-corporativos" className={styles.navLink}>Soluciones corporativas</Link>
+          <a href="https://sizeset.com" className={styles.navLink} target="_blank" rel="noopener noreferrer">SizeSet</a>
           <Link href="/blog" className={styles.navLink}>Blog</Link>
           <Link href="/#contacto" className={styles.navLink}>Contacto</Link>
           <a href="mailto:info@cottoncountry.com.pe" onClick={handleEmailClick} className={styles.emailLink} aria-label="Enviar correo"><Mail size={20} aria-hidden="true" /></a>

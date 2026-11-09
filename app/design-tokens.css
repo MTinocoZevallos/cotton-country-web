@@ -2,7 +2,7 @@
   /* Cotton Country: approved brand palette. Derived tones use only these colors. */
   --cc-blue: #01018B;
   --cc-ivory: #F6F5F2;
-  --cc-lime: #ABDF00;
+  --cc-lime: #D7FF00;
   --cc-charcoal: #393535;
   --cc-deep-blue: #04045E;
   --cc-white: #FFFFFF;
@@ -20,5 +20,5 @@
   --cc-label: clamp(.6875rem, .92vw, .8125rem);
   --cc-radius-control: 14px;
   --cc-heading-tracking: -.045em;
-  --cc-section-space: clamp(4.5rem, 7.8vw, 7rem);
+  --cc-section-space: clamp(4rem, 6.67vw, 6rem);
 }

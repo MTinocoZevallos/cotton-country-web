@@ -20,8 +20,8 @@ export default function Basics() {
         </div>
         <div className={styles.productGrid}>
           {families.map((family, index) => (
-            <Link key={family.name} href={family.href} className={styles.product} data-reveal data-product-order={index}>
-              <div className={styles.productVisual} data-parallax data-parallax-speed={.75 + index * .12}>
+            <Link key={family.name} href={family.href} className={styles.product} data-reveal data-product-order={index} data-parallax data-parallax-speed={.65 + index * .1}>
+              <div className={styles.productVisual}>
                 <Image src={family.image} alt={family.alt} fill sizes={index === 0 || index === 3 ? "(max-width: 767px) 100vw, 58vw" : "(max-width: 767px) 80vw, 36vw"} className={styles.productImage} />
                 <span className={styles.productExplore} aria-hidden="true"><ArrowUpRight size={28} /></span>
               </div>

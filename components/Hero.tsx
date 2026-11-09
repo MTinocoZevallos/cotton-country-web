@@ -3,7 +3,7 @@
 import Image from "next/image"
 import { useEffect, useRef } from "react"
 import Link from "next/link"
-import { ArrowDown, ArrowUpRight } from "lucide-react"
+import { ArrowDown } from "lucide-react"
 import styles from "./home.module.css"
 
 const lines = ["¿De qué viste", "tu marca?"]
@@ -63,7 +63,7 @@ export default function Hero() {
           <div className={styles.heroCopy}>
             <p className={styles.heroSubtitle} data-hero-subtitle>Te invitamos a descubrir el poder del uniforme.</p>
             <Link href="/uniformes" className={styles.primaryLink} data-hero-cta>
-              Descubre nuestros uniformes <ArrowUpRight aria-hidden="true" size={20} />
+              Descubre nuestros uniformes
             </Link>
           </div>
           <a href="#metodo" className={styles.scrollLink} aria-label="Explorar cómo trabajamos">

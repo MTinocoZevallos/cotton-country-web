@@ -19,10 +19,6 @@ export default function ThreeReasons() {
         </p>
       </div>
       <div className={styles.pillars} role="group" aria-label="El cumplimiento es consecuencia de la asesoría y el método" data-reveal>
-        {/* Exact viewport of the original four-piece symbol in the brand PNG. No redraw. */}
-        <svg className={styles.brandSymbol} viewBox="1850 -8 630 594" aria-hidden="true" focusable="false">
-          <image href="/logo-cotton-country.png" width="3004" height="1268" />
-        </svg>
         <ol className={styles.pillarList}>
           {approach.map(item => (
             <li key={item.title} className={styles.pillar}>

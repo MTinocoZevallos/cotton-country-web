@@ -55,10 +55,10 @@ export default function Testimonials() {
   return (
     <section className={styles.cases} aria-labelledby="cases-title">
       <div className={styles.casesHeading} data-reveal>
-        <h2 id="cases-title">Casos <span>destacados</span></h2>
+        <h2 id="cases-title">Nuestros clientes opinan</h2>
       </div>
-      <div className={styles.caseStage} data-reveal role="region" aria-roledescription="carrusel" aria-label="Casos reales de clientes">
-        <div className={styles.caseTabs} role="tablist" aria-label="Casos destacados">
+      <div className={styles.caseStage} data-reveal role="region" aria-roledescription="carrusel" aria-label="Nuestros clientes opinan">
+        <div className={styles.caseTabs} role="tablist" aria-label="Seleccionar testimonio">
           {testimonials.map((item, index) => (
             <button key={item.company} role="tab" id={`case-tab-${index}`} aria-controls={`case-panel-${index}`} aria-selected={active === index} tabIndex={active === index ? 0 : -1} ref={element => { tabs.current[index] = element }} onClick={() => setActive(index)} onKeyDown={event => handleKeys(event, index)}>
               {item.company}
@@ -67,31 +67,34 @@ export default function Testimonials() {
         </div>
         <div className={styles.caseSlides} onTouchStart={event => {
           const point = event.touches[0]
-          if (point) touch.current = { x: point.clientX, y: point.clientY }
+          if (point && event.touches.length === 1) touch.current = { x: point.clientX, y: point.clientY }
+          else touch.current = null
         }} onTouchEnd={endTouch} onTouchCancel={() => { touch.current = null }}>
-          {testimonials.map((item, index) => (
-            <div key={item.company} role="tabpanel" id={`case-panel-${index}`} aria-labelledby={`case-tab-${index}`} hidden={active !== index} aria-hidden={active !== index} inert={active !== index} className={styles.casePanel} tabIndex={0}>
-              <article className={styles.case}>
-                <div className={styles.caseIdentity}>
-                  <div className={styles.caseLogo}>
-                    <Image src={item.logo} alt={`Logo de ${item.company}`} fill sizes="180px" className="object-contain" />
+          <div className={styles.caseTrack} style={{ transform: `translate3d(-${active * 100}%, 0, 0)` }}>
+            {testimonials.map((item, index) => (
+              <div key={item.company} role="tabpanel" id={`case-panel-${index}`} aria-labelledby={`case-tab-${index}`} aria-hidden={active !== index} inert={active !== index} className={styles.casePanel} tabIndex={0}>
+                <article className={styles.case}>
+                  <div className={styles.caseIdentity}>
+                    <div className={styles.caseLogo}>
+                      <Image src={item.logo} alt={`Logo de ${item.company}`} fill sizes="180px" className="object-contain" />
+                    </div>
+                    <h3>{item.company}</h3>
+                    <p className={styles.caseFocus}>{item.focus}</p>
                   </div>
-                  <h3>{item.company}</h3>
-                  <p className={styles.caseFocus}>{item.focus}</p>
-                </div>
-                <div className={styles.caseContent}>
-                  <p className={styles.quoteLabel}>Declaración del cliente</p>
-                  <blockquote className={styles.caseQuote}><p>{item.text}</p></blockquote>
-                </div>
-              </article>
-            </div>
-          ))}
+                  <div className={styles.caseContent}>
+                    <p className={styles.quoteLabel}>Opinión del cliente</p>
+                    <blockquote className={styles.caseQuote}><p>{item.text}</p></blockquote>
+                  </div>
+                </article>
+              </div>
+            ))}
+          </div>
         </div>
         <div className={styles.caseControls}>
           <span aria-live="polite" aria-atomic="true">{String(active + 1).padStart(2, "0")} / {String(count).padStart(2, "0")}</span>
           <div>
-            <button type="button" aria-label="Caso anterior" onClick={() => move(-1)}><ArrowLeft aria-hidden="true" size={22} /></button>
-            <button type="button" aria-label="Caso siguiente" onClick={() => move(1)}><ArrowRight aria-hidden="true" size={22} /></button>
+            <button type="button" aria-label="Testimonio anterior" onClick={() => move(-1)}><ArrowLeft aria-hidden="true" size={18} /><span>Anterior</span></button>
+            <button type="button" aria-label="Testimonio siguiente" onClick={() => move(1)}><span>Siguiente</span><ArrowRight aria-hidden="true" size={18} /></button>
           </div>
         </div>
       </div>

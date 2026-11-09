@@ -225,7 +225,7 @@ export default function ContactForm({ home = false }: { home?: boolean }) {
               />
             </div>
 
-            <div className="md:col-span-2">
+            <div className={home ? styles.captchaRow : "md:col-span-2"}>
               <div ref={turnstileRef} />
             </div>
 
@@ -237,7 +237,7 @@ export default function ContactForm({ home = false }: { home?: boolean }) {
               </div>
             )}
 
-            <div className="md:col-span-2 mt-4">
+            <div className={home ? styles.submitRow : "md:col-span-2 mt-4"}>
               <button
                 type="submit"
                 disabled={isSubmitting}
