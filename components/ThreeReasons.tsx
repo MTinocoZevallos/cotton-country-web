@@ -22,8 +22,14 @@ export default function ThreeReasons() {
         <ol className={styles.pillarList}>
           {approach.map(item => (
             <li key={item.title} className={styles.pillar}>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
+              <svg className={styles.pillarShape} viewBox="1850 0 630 594" aria-hidden="true" focusable="false">
+                {/* Original four-piece isotype, isolated without redrawing its geometry. */}
+                <image href="/logo-cotton-country.png" width="3004" height="1268" />
+              </svg>
+              <div className={styles.pillarText}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
             </li>
           ))}
         </ol>
