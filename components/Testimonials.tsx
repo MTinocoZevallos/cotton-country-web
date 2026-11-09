@@ -28,13 +28,14 @@ const testimonials = [
 
 export default function Testimonials() {
   const [active, setActive] = useState(0)
-  const stage = useRef<HTMLDivElement>(null)
-  const rotationIntent = useRef<boolean | null>(null)
+  const section = useRef<HTMLElement>(null)
   const [userPaused, setUserPaused] = useState(false)
   const [hovered, setHovered] = useState(false)
   const [visible, setVisible] = useState(false)
   const [pageVisible, setPageVisible] = useState(true)
-  const [reducedMotion, setReducedMotion] = useState(true)
+  const [reducedMotion, setReducedMotion] = useState(false)
+  const [touching, setTouching] = useState(false)
+  const [rotationReset, setRotationReset] = useState(0)
   const tabs = useRef<(HTMLButtonElement | null)[]>([])
   const touch = useRef<{ x: number; y: number } | null>(null)
   const panels = useRef<(HTMLDivElement | null)[]>([])
@@ -49,21 +50,28 @@ export default function Testimonials() {
     updateVisibility()
     preference.addEventListener("change", updateMotion)
     document.addEventListener("visibilitychange", updateVisibility)
-    const observer = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting && entry.intersectionRatio >= .25), { threshold: .25 })
-    if (stage.current) observer.observe(stage.current)
+    let observer: IntersectionObserver | undefined
+    let disposed = false
+    if (typeof IntersectionObserver !== "undefined") {
+      observer = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting), { threshold: 0 })
+      if (section.current) observer.observe(section.current)
+    } else {
+      queueMicrotask(() => { if (!disposed) setVisible(true) })
+    }
     return () => {
+      disposed = true
       preference.removeEventListener("change", updateMotion)
       document.removeEventListener("visibilitychange", updateVisibility)
-      observer.disconnect()
+      observer?.disconnect()
     }
   }, [])
 
-  const autoRunning = !userPaused && !hovered && visible && pageVisible && !reducedMotion
+  const autoRunning = !userPaused && !hovered && !touching && visible && pageVisible && !reducedMotion
   useEffect(() => {
     if (!autoRunning) return
     const timer = window.setTimeout(() => setActive(current => (current + 1) % count), 7000)
     return () => window.clearTimeout(timer)
-  }, [active, autoRunning, count])
+  }, [active, autoRunning, count, rotationReset])
 
   useEffect(() => {
     const panel = panels.current[active]
@@ -78,8 +86,13 @@ export default function Testimonials() {
     observer.observe(panel)
     return () => observer.disconnect()
   }, [active])
+  const restartInterval = () => setRotationReset(current => current + 1)
+  const releaseTouch = () => {
+    setTouching(false)
+    restartInterval()
+  }
   const move = (direction: number) => {
-    setUserPaused(true)
+    restartInterval()
     setActive(current => (current + direction + count) % count)
   }
   const handleKeys = (event: KeyboardEvent<HTMLButtonElement>, index: number) => {
@@ -90,7 +103,7 @@ export default function Testimonials() {
     else if (event.key === "End") next = count - 1
     else return
     event.preventDefault()
-    setUserPaused(true)
+    restartInterval()
     setActive(next)
     tabs.current[next]?.focus()
   }
@@ -104,19 +117,21 @@ export default function Testimonials() {
   }
 
   return (
-    <section className={styles.cases} aria-labelledby="cases-title">
+    <section ref={section} className={styles.cases} aria-labelledby="cases-title">
       <div className={styles.casesHeading} data-reveal>
         <h2 id="cases-title">Nuestros clientes opinan</h2>
       </div>
-      <div ref={stage} className={styles.caseStage} data-reveal
+      <div className={styles.caseStage} data-reveal
+        data-autoplay-state={JSON.stringify({ active: active + 1, userPaused, hovered, touching, visible, pageVisible, reducedMotion, autoRunning })}
         onPointerEnter={event => { if (event.pointerType === "mouse") setHovered(true) }}
         onPointerLeave={event => { if (event.pointerType === "mouse") setHovered(false) }}
-        onFocusCapture={() => setUserPaused(true)}
-        onTouchStartCapture={() => setUserPaused(true)}
+        onTouchStartCapture={() => setTouching(true)}
+        onTouchEndCapture={releaseTouch}
+        onTouchCancelCapture={releaseTouch}
         role="region" aria-roledescription="carrusel" aria-label="Nuestros clientes opinan">
         <div className={styles.caseTabs} role="tablist" aria-label="Seleccionar testimonio">
           {testimonials.map((item, index) => (
-            <button key={item.company} role="tab" id={`case-tab-${index}`} aria-controls={`case-panel-${index}`} aria-selected={active === index} tabIndex={active === index ? 0 : -1} ref={element => { tabs.current[index] = element }} onClick={() => { setUserPaused(true); setActive(index) }} onKeyDown={event => handleKeys(event, index)}>
+            <button key={item.company} role="tab" id={`case-tab-${index}`} aria-controls={`case-panel-${index}`} aria-selected={active === index} tabIndex={active === index ? 0 : -1} ref={element => { tabs.current[index] = element }} onClick={() => { restartInterval(); setActive(index) }} onKeyDown={event => handleKeys(event, index)}>
               {item.company}
             </button>
           ))}
@@ -150,13 +165,9 @@ export default function Testimonials() {
           <button type="button" className={styles.caseRotation} disabled={reducedMotion}
             aria-label={reducedMotion ? "Avance automático desactivado por movimiento reducido" : userPaused ? "Reanudar avance automático" : "Pausar avance automático"}
             title={reducedMotion ? "Se respeta tu preferencia de movimiento reducido" : undefined}
-            onPointerDown={() => { rotationIntent.current = !userPaused }}
-            onPointerCancel={() => { rotationIntent.current = null }}
-            onBlur={() => { rotationIntent.current = null }}
-            onKeyDown={() => { rotationIntent.current = null }}
             onClick={() => {
-              setUserPaused(rotationIntent.current ?? !userPaused)
-              rotationIntent.current = null
+              setUserPaused(current => !current)
+              restartInterval()
             }}>
             {userPaused || reducedMotion ? <Play aria-hidden="true" size={16} /> : <Pause aria-hidden="true" size={16} />}
             <span>{reducedMotion ? "Automático desactivado" : userPaused ? "Reanudar" : "Pausar"}</span>
