@@ -25,7 +25,7 @@
 .heroBackdrop, .heroShade { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
 .heroBackdrop { top: 80px; animation: photoEnter 1.2s ease both; }
 .heroImage { object-fit: cover; object-position: 70% 0%; }
-.heroShade { background: linear-gradient(90deg, color-mix(in srgb, var(--cc-blue) 68%, transparent), color-mix(in srgb, var(--cc-deep-blue) 35%, transparent) 42%, transparent 74%), linear-gradient(0deg, color-mix(in srgb, var(--cc-deep-blue) 35%, transparent), transparent 60%); }
+.heroShade { background: linear-gradient(90deg, color-mix(in srgb, var(--cc-deep-blue) 22%, transparent), color-mix(in srgb, var(--cc-deep-blue) 8%, transparent) 52%, transparent 85%), linear-gradient(0deg, color-mix(in srgb, var(--cc-deep-blue) 16%, transparent), transparent 60%); }
 .heroContent { position: relative; width: calc(100% - 112px); max-width: 1600px; margin-inline: auto; padding-block: 132px 48px; height: 100%; display: flex; flex-direction: column; justify-content: center; }
 .home .heroTitle { margin-top: 0; max-width: 850px; position: relative; color: var(--cc-white); font-family: var(--font-hero-serif), Georgia, serif; font-size: clamp(52px, 5.6vw, 80px); font-weight: 400; letter-spacing: -.025em; line-height: 1.05; }
 .heroLine { display: block; white-space: nowrap; position: relative; }
@@ -175,7 +175,7 @@
   .heroContent { padding-block: 420px 72px; min-height: inherit; height: auto; justify-content: flex-start; }
   .home .heroTitle { font-size: clamp(36px, 10.8vw, 54px); }
   .heroBackdrop { height: 580px; bottom: auto; }
-  .heroShade { background: linear-gradient(180deg, color-mix(in srgb, var(--cc-blue) 15%, transparent), transparent 28%, color-mix(in srgb, var(--cc-deep-blue) 92%, transparent) 62%, var(--cc-deep-blue) 80%), linear-gradient(90deg, color-mix(in srgb, var(--cc-blue) 25%, transparent), transparent); }
+  .heroShade { background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--cc-deep-blue) 8%, transparent) 280px, color-mix(in srgb, var(--cc-deep-blue) 40%, transparent) 440px, color-mix(in srgb, var(--cc-deep-blue) 72%, transparent) 560px, var(--cc-deep-blue) 660px), linear-gradient(90deg, color-mix(in srgb, var(--cc-deep-blue) 12%, transparent), transparent); }
   .heroImage { object-position: 80% 0%; }
   .heroBottom { display: block; }
   .heroCopy { max-width: 480px; }

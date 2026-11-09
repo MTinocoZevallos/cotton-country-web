@@ -3,10 +3,10 @@
 .header[data-home="true"] { background: color-mix(in srgb, var(--cc-deep-blue) 80%, transparent); backdrop-filter: blur(18px); }
 .headerInner { width: min(100% - 96px, 1248px); height: 100%; margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .headerLogo { width: auto; height: 40px; }
-.navigation { display: flex; align-items: center; gap: 24px; }
+.navigation { display: flex; align-items: center; gap: 24px; margin-left: auto; }
 .navLink { font-size: 16px; font-weight: 500; padding-block: 12px; }
 .navLink:hover { text-decoration: underline; text-underline-offset: 6px; }
-.emailLink { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border: 1px solid var(--cc-line-on-dark); }
+.emailLink { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; min-height: 44px; padding: 10px 20px; border: 1px solid var(--cc-white); border-radius: 999px; background: transparent; color: var(--cc-white); font-size: 15px; line-height: 1.4; font-weight: 500; white-space: nowrap; transition: background .25s; }
 .emailLink:hover { background: color-mix(in srgb, var(--cc-white) 12%, transparent); }
 .header :is(a, button):focus-visible, .footer :is(a, summary):focus-visible { outline: 2px solid var(--cc-lime); outline-offset: 5px; }
 .skipLink { position: absolute; left: 20px; top: -100px; background: var(--cc-white); color: var(--cc-blue); padding: 12px 20px; z-index: 1; }
@@ -35,7 +35,7 @@
   .headerInner { gap: 12px; }
   .navigation { gap: 16px; }
   .navLink { font-size: 14px; }
-  .emailLink { width: 36px; height: 36px; }
+  .emailLink { padding-inline: 12px; font-size: 13px; }
   .footerBody { padding-block: 48px 40px; }
   .footerGrid { grid-template-columns: 1fr; gap: 36px; }
   .footerGrid > div:first-child { max-width: 460px; }
@@ -56,10 +56,10 @@
 .navDropdownLinks a:hover { background: var(--cc-blue); }
 @media (max-width: 1100px) { .navigation { gap: 24px; } }
 @media (max-width: 900px) {
-  .menuToggle { display: flex; justify-content: center; align-items: center; width: 44px; height: 44px; border: 1px solid var(--cc-line-on-dark); border-radius: 10px; cursor: pointer; }
-  .navigation { position: absolute; top: 80px; left: 0; right: 0; display: none; background: var(--cc-deep-blue); border-bottom: 1px solid var(--cc-line-on-dark); padding: 24px; max-height: calc(100svh - 80px); overflow-y: auto; }
+  .menuToggle { margin-left: auto; flex-shrink: 0; display: flex; justify-content: center; align-items: center; width: 44px; height: 44px; border: 1px solid var(--cc-line-on-dark); border-radius: 10px; cursor: pointer; }
+  .navigation { margin-left: 0; position: absolute; top: 80px; left: 0; right: 0; display: none; background: var(--cc-deep-blue); border-bottom: 1px solid var(--cc-line-on-dark); padding: 24px; max-height: calc(100svh - 80px); overflow-y: auto; }
   .navigation[data-open="true"] { display: flex; flex-direction: column; align-items: stretch; gap: 12px; }
   .navLink, .navDropdown > summary { min-height: 44px; padding: 10px 0; font-size: 16px; }
   .navDropdownLinks { position: static; margin-top: 10px; box-shadow: none; min-width: 0; background: transparent; }
-  .emailLink { width: 44px; height: 44px; }
+
 }
