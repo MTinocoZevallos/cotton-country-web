@@ -2,6 +2,7 @@
 
 import Script from "next/script"
 import { useRef, useState } from "react"
+import styles from "./home.module.css"
 
 declare global {
   interface Window {
@@ -21,7 +22,7 @@ declare global {
   }
 }
 
-export default function ContactForm() {
+export default function ContactForm({ home = false }: { home?: boolean }) {
   const formRef = useRef<HTMLFormElement | null>(null)
   const turnstileRef = useRef<HTMLDivElement | null>(null)
   const widgetIdRef = useRef<string | null>(null)
@@ -138,10 +139,11 @@ export default function ContactForm() {
   onReady={renderTurnstile}
 />
 
-      <section id="contacto" className="w-full bg-white py-24">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="max-w-3xl mb-14">
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
+      <section id="contacto" data-reveal={home ? "" : undefined} aria-labelledby="contact-title" className={home ? styles.contact : "w-full bg-white py-24"}>
+        <div className={home ? styles.contactGrid : "max-w-5xl mx-auto px-6"}>
+          <div className={home ? styles.contactIntro : "max-w-3xl mb-14"}>
+            {home && <p className={styles.eyebrow}>Contacto</p>}
+            <h2 id="contact-title" className="text-3xl md:text-4xl font-semibold text-gray-900">
               Solicita una propuesta personalizada
             </h2>
             <p className="mt-4 text-gray-600 text-base md:text-lg leading-relaxed">

@@ -2,14 +2,30 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import { Menu, X, ChevronDown, Mail } from "lucide-react"
+import { usePathname } from "next/navigation"
+import { useRef, useState } from "react"
+import styles from "./chrome.module.css"
 
 declare global {
-  interface Window {
-    dataLayer?: Record<string, unknown>[]
-  }
+  interface Window { dataLayer?: Record<string, unknown>[] }
 }
 
+const families = [
+  { label: "Todos los uniformes", href: "/uniformes" },
+  { label: "Camisas", href: "/uniformes/camisas" },
+  { label: "Blusas", href: "/uniformes/blusas" },
+  { label: "Polos", href: "/uniformes/polos" },
+  { label: "Pantalones", href: "/uniformes/pantalones" },
+  { label: "Scrubs", href: "/uniformes/scrubs" },
+]
+
 export default function Header() {
+  const isHome = usePathname() === "/"
+  const [open, setOpen] = useState(false)
+  const toggle = useRef<HTMLButtonElement>(null)
+  const dropdown = useRef<HTMLDetailsElement>(null)
+  const close = () => { setOpen(false); dropdown.current?.removeAttribute("open") }
   const handleEmailClick = () => {
     if (typeof window === "undefined") {
       return
@@ -26,51 +42,34 @@ export default function Header() {
   }
 
   return (
-    <header className="fixed top-0 w-full h-20 bg-[#01018B] flex items-center justify-between px-8 z-50 shadow-md">
-      <div className="flex items-center">
-        <Link href="/">
-          <Image
-            src="/logo-cotton-blanco.png"
-            alt="Cotton Country"
-            width={166}
-            height={70}
-            className="h-10 w-auto"
-          />
+    <header className={styles.header} data-home={isHome || undefined} onKeyDown={event => {
+      if (event.key === "Escape") { close(); toggle.current?.focus() }
+    }}>
+      <a href="#contenido" className={styles.skipLink}>Saltar al contenido</a>
+      <div className={styles.headerInner}>
+        <Link href="/" aria-label="Cotton Country — Inicio" onClick={close}>
+          <Image src="/logo-cotton-blanco.png" alt="Cotton Country" width={166} height={70} className={styles.headerLogo} />
         </Link>
+        <button ref={toggle} type="button" className={styles.menuToggle} aria-label={open ? "Cerrar menú" : "Abrir menú"} aria-expanded={open} aria-controls="primary-navigation" onClick={() => setOpen(!open)}>
+          {open ? <X aria-hidden="true" size={24} /> : <Menu aria-hidden="true" size={24} />}
+        </button>
+        <nav id="primary-navigation" aria-label="Navegación principal" className={styles.navigation} data-open={open} onClick={event => {
+          if ((event.target as HTMLElement).closest("a")) close()
+        }} onBlur={event => {
+          if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget) && !toggle.current?.contains(event.relatedTarget)) close()
+        }}>
+          <details ref={dropdown} className={styles.navDropdown}>
+            <summary>Uniformes <ChevronDown size={15} aria-hidden="true" /></summary>
+            <div className={styles.navDropdownLinks}>
+              {families.map(item => <Link key={item.href} href={item.href}>{item.label}</Link>)}
+            </div>
+          </details>
+          <Link href="/proveedor-de-uniformes-corporativos" className={styles.navLink}>Soluciones corporativas</Link>
+          <Link href="/blog" className={styles.navLink}>Blog</Link>
+          <Link href="/#contacto" className={styles.navLink}>Contacto</Link>
+          <a href="mailto:info@cottoncountry.com.pe" onClick={handleEmailClick} className={styles.emailLink} aria-label="Enviar correo"><Mail size={20} aria-hidden="true" /></a>
+        </nav>
       </div>
-
-      <nav className="flex items-center space-x-6">
-        <Link
-          href="/uniformes"
-          className="text-white font-medium hover:underline"
-        >
-          Uniformes
-        </Link>
-
-        <Link
-          href="/blog"
-          className="text-white font-medium hover:underline"
-        >
-          Blog
-        </Link>
-
-        <a
-          href="mailto:info@cottoncountry.com.pe"
-          onClick={handleEmailClick}
-          className="bg-white text-[#01018B] p-2 rounded flex items-center justify-center hover:bg-gray-200"
-          aria-label="Enviar correo"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path d="M2.94 6.44A2 2 0 014 6h12a2 2 0 011.06.44l-7.06 4.7-7.06-4.7z" />
-            <path d="M18 8.6l-7.06 4.7a1 1 0 01-1.88 0L2 8.6V14a2 2 0 002 2h12a2 2 0 002-2V8.6z" />
-          </svg>
-        </a>
-      </nav>
     </header>
   )
 }

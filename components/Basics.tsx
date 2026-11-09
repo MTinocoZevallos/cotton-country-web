@@ -1,71 +1,43 @@
 import Image from "next/image"
+import Link from "next/link"
+import { ArrowUpRight } from "lucide-react"
+import styles from "./home.module.css"
 
-const items = [
-  {
-    title: "Camisas corporativas",
-    text: "Camisas diseñadas para una imagen profesional y consistente en entornos corporativos.",
-    image: "/prendas/camisa-ca.png",
-  },
-  {
-    title: "Blusas corporativas",
-    text: "Blusas elegantes y funcionales alineadas a la identidad de tu empresa.",
-    image: "/prendas/blusa-cp.png",
-  },
-  {
-    title: "Pantalón dama",
-    text: "Prendas cómodas y formales pensadas para el uso diario en oficina.",
-    image: "/prendas/pantalon-dama.png",
-  },
-  {
-    title: "Polo box",
-    text: "Polos corporativos ideales para equipos comerciales, activaciones y uso operativo.",
-    image: "/prendas/polobox-hombre.png",
-  },
+const families = [
+  { name: "Camisas", href: "/uniformes/camisas", image: "/uniformes/camisa-cuello-italiano.png", alt: "Camisa blanca de manga larga en un entorno corporativo", detail: "La presencia está en los detalles." },
+  { name: "Blusas", href: "/uniformes/blusas", image: "/uniformes/blusa-corte-pinzas.png", alt: "Blusa de manga larga en un entorno profesional", detail: "Una expresión de tu identidad." },
+  { name: "Polos", href: "/uniformes/polos", image: "/uniformes/polo-box-caballero.png", alt: "Polo de cuello y manga corta en un entorno de atención al público", detail: "Tu marca, en movimiento." },
+  { name: "Pantalones", href: "/uniformes/pantalones", image: "/uniformes/pantalon-corte-chino-caballero.png", alt: "Pantalón azul de corte chino con camisa corporativa", detail: "Cada pieza cuenta." },
 ]
 
-export default function PrendasCorporativas() {
+export default function Basics() {
   return (
-    <section className="w-full bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
-
-        {/* Título */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
-            Prendas corporativas
-          </h2>
-          <p className="mt-4 text-gray-600 text-base md:text-lg">
-            Diseñadas para representar la identidad de tu empresa en cada entorno de trabajo.
-          </p>
+    <section className={styles.products} aria-labelledby="products-title">
+      <div className={styles.productsInner}>
+        <div className={styles.sectionHeading} data-reveal>
+          <p className={styles.eyebrow}>Nuestros uniformes</p>
+          <h2 id="products-title">Prendas <span>destacadas</span></h2>
         </div>
-
-        {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {items.map((item, index) => (
-            <div
-              key={index}
-              className="group overflow-hidden rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow"
-            >
-              <div className="relative w-full h-[420px]">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+        <div className={styles.productGrid}>
+          {families.map((family, index) => (
+            <Link key={family.name} href={family.href} className={styles.product} data-reveal data-product-order={index}>
+              <div className={styles.productVisual} data-parallax data-parallax-speed={.75 + index * .12}>
+                <Image src={family.image} alt={family.alt} fill sizes={index === 0 || index === 3 ? "(max-width: 767px) 100vw, 58vw" : "(max-width: 767px) 80vw, 36vw"} className={styles.productImage} />
+                <span className={styles.productExplore} aria-hidden="true"><ArrowUpRight size={28} /></span>
               </div>
-
-              <div className="p-6">
-                <h3 className="text-base font-semibold text-gray-900">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-sm text-gray-600">
-                  {item.text}
-                </p>
+              <div className={styles.productTitle}>
+                <h3>{family.name}</h3><ArrowUpRight aria-hidden="true" size={28} />
               </div>
-            </div>
+              <p className={styles.productDetail}>{family.detail}</p>
+            </Link>
           ))}
         </div>
-
+        <div className={styles.productsClosing} data-reveal>
+          <p>Esto es solo una muestra. Hay mucho más por descubrir.</p>
+          <Link href="/uniformes" className={styles.textLink}>
+            Descubre nuestros uniformes <ArrowUpRight aria-hidden="true" size={22} />
+          </Link>
+        </div>
       </div>
     </section>
   )

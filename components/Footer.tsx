@@ -1,12 +1,13 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Facebook, Linkedin, Youtube, Phone, Mail } from "lucide-react"
+import styles from "./chrome.module.css"
 
 export default function Footer() {
   return (
-    <footer className="w-full">
-      <div className="bg-[#04045E] text-white px-6 py-12">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className={styles.footer}>
+      <div className={styles.footerBody}>
+        <div className={styles.footerGrid}>
           <div>
             <Image
               src="/logo-cotton-blanco.png"
@@ -23,7 +24,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
+            <h2 className="font-semibold mb-4">Legal</h2>
             <ul className="space-y-2 text-sm text-gray-200">
               <li>
                 <Link href="/privacidad" className="hover:underline">
@@ -44,7 +45,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Direcciones</h4>
+            <h2 className="font-semibold mb-4">Direcciones</h2>
 
             <p className="text-sm text-gray-200 mb-3">
               <strong>Dirección Fiscal</strong>
@@ -68,7 +69,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Contacto</h4>
+            <h2 className="font-semibold mb-4">Contacto</h2>
 
             <div className="space-y-2 text-sm text-gray-200 mb-4">
               <p className="flex items-center gap-2">
@@ -81,12 +82,16 @@ export default function Footer() {
               </p>
             </div>
 
-            <iframe
+            <details className={styles.footerMap}>
+              <summary>Mapa de la oficina comercial</summary>
+              <iframe
               className="w-full h-32 rounded-md border-0 mb-3"
+              title="Ubicación de la oficina comercial de Cotton Country"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps?q=Av.%20Circunvalaci%C3%B3n%20El%20Golf%20Los%20Incas%20206%20Surco%20Lima&output=embed"
-            />
+              />
+            </details>
 
             <a
               href="https://www.google.com/maps?q=Av.+Circunvalación+El+Golf+Los+Incas+206+Surco+Lima"
@@ -143,8 +148,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-[#393535] text-gray-200 text-xs py-3">
-        <div className="max-w-7xl mx-auto text-center">
+      <div className={styles.footerBottom}>
+        <div>
           Cotton Country® 2026 — Todos los derechos reservados
         </div>
       </div>

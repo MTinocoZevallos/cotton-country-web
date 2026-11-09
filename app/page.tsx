@@ -3,6 +3,7 @@ import ThreeReasons from '@/components/ThreeReasons'
 import Basics from '@/components/Basics'
 import Testimonials from '@/components/Testimonials'
 import ContactForm from '@/components/ContactForm'
+import HomeExperience from '@/components/HomeExperience'
 
 export const metadata = {
   title: "Cotton Country | Uniformes Corporativos",
@@ -39,12 +40,12 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="pt-20">
+    <HomeExperience>
       <Hero />
       <ThreeReasons />
       <Basics />
       <Testimonials />
-      <ContactForm />
-    </main>
+      <ContactForm home />
+    </HomeExperience>
   )
 }

@@ -1,39 +1,74 @@
+"use client"
+
+import Image from "next/image"
+import { useEffect, useRef } from "react"
 import Link from "next/link"
+import { ArrowDown, ArrowUpRight } from "lucide-react"
+import styles from "./home.module.css"
+
+const lines = ["¿De qué viste", "tu marca?"]
 
 export default function Hero() {
+  const hero = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const element = hero.current
+    if (!element) return
+    const values = element.querySelectorAll<HTMLElement>("[data-typed-value]")
+    const preference = window.matchMedia("(prefers-reduced-motion: reduce)")
+    const timers: ReturnType<typeof setTimeout>[] = []
+    let alive = true
+    const clear = () => { timers.forEach(clearTimeout); timers.length = 0 }
+    const finish = () => {
+      clear()
+      values.forEach((value, index) => { value.textContent = lines[index] })
+      element.dataset.heroPhase = "complete"
+    }
+    const changePreference = () => { if (preference.matches) finish() }
+    const schedule = (action: () => void, delay: number) => timers.push(setTimeout(action, delay))
+    preference.addEventListener("change", changePreference)
+    if (preference.matches) finish()
+    else void document.fonts.ready.then(() => {
+      if (!alive || preference.matches || element.dataset.heroPhase === "complete") return
+      lines.forEach((line, lineIndex) => {
+        Array.from(line).forEach((_, index) => schedule(() => {
+          values[lineIndex].textContent = line.slice(0, index + 1)
+        }, (lineIndex === 0 ? 220 : 1350) + index * 72))
+      })
+      schedule(() => { element.dataset.heroPhase = "subtitle" }, 2150)
+      schedule(() => { element.dataset.heroPhase = "cta" }, 2650)
+      schedule(finish, 3350)
+    })
+    return () => { alive = false; clear(); preference.removeEventListener("change", changePreference) }
+  }, [])
+
   return (
-    <section className="relative w-full min-h-[88vh] md:min-h-[90vh] flex items-center overflow-hidden">
-      <div className="absolute inset-0 -z-10">
-        <img
-          src="/hero-bg.webp"
-          alt="Uniformes Corporativos Cotton Country"
-          fetchPriority="high"
-          className="w-full h-full object-cover object-[88%_32%] md:object-[100%_25%]"
-        />
-
-        <div className="absolute inset-0 bg-gradient-to-r from-[#01018B]/80 via-[#01018B]/25 to-transparent"></div>
+    <section ref={hero} className={styles.hero} aria-labelledby="hero-title" data-hero-phase="typing">
+      <div className={styles.heroBackdrop}>
+        <Image src="/hero-bg.webp" alt="Uniforme corporativo en un entorno profesional" fill sizes="(max-width: 767px) 1600px, 100vw" preload className={styles.heroImage} />
       </div>
-
-      <div className="max-w-7xl mx-auto px-6 pt-16 md:pt-20 w-full">
-        <div className="max-w-2xl">
-          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
-            El uniforme, la mejor herramienta de marketing
-          </h1>
-
-          <p className="mt-6 text-white/90 text-lg md:text-xl max-w-xl">
-            Estudios comprueban que el uniforme influye tanto en la percepción del
-            cliente como en la motivación del colaborador. En Cotton Country
-            convertimos tu marca en una potente herramienta de comunicación.
-          </p>
-
-          <div className="mt-8">
-            <Link
-              href="/#contacto"
-              className="inline-flex items-center justify-center bg-white text-[#01018B] px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition mb-8"
-            >
-              Solicitar propuesta
+      <div className={styles.heroShade} />
+      <div className={styles.heroContent}>
+        {/* The invisible complete lines reserve geometry; the overlay receives actual typed text. */}
+        <h1 id="hero-title" className={styles.heroTitle} aria-label="¿De qué viste tu marca?">
+          {lines.map((line, lineIndex) => (
+            <span key={line} className={styles.heroLine} aria-hidden="true" data-typing-line={lineIndex}>
+              <span className={styles.reservedLine} data-reserved-text>{line}</span>
+              <span className={styles.typedValue} data-typed-value />
+            </span>
+          ))}
+        </h1>
+        <noscript><style>{`[data-reserved-text]{visibility:visible!important}[data-hero-subtitle],[data-hero-cta]{opacity:1!important;transform:none!important}`}</style></noscript>
+        <div className={styles.heroBottom}>
+          <div className={styles.heroCopy}>
+            <p className={styles.heroSubtitle} data-hero-subtitle>Te invitamos a descubrir el poder del uniforme.</p>
+            <Link href="/uniformes" className={styles.primaryLink} data-hero-cta>
+              Descubre nuestros uniformes <ArrowUpRight aria-hidden="true" size={20} />
             </Link>
           </div>
+          <a href="#metodo" className={styles.scrollLink} aria-label="Explorar cómo trabajamos">
+            <span>Explora</span><ArrowDown aria-hidden="true" size={20} />
+          </a>
         </div>
       </div>
     </section>

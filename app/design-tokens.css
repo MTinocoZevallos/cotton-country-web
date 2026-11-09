@@ -1,0 +1,24 @@
+:root {
+  /* Cotton Country: approved brand palette. Derived tones use only these colors. */
+  --cc-blue: #01018B;
+  --cc-ivory: #F6F5F2;
+  --cc-lime: #ABDF00;
+  --cc-charcoal: #393535;
+  --cc-deep-blue: #04045E;
+  --cc-white: #FFFFFF;
+  --cc-text-secondary: color-mix(in srgb, var(--cc-charcoal) 82%, var(--cc-ivory));
+  --cc-text-on-dark: color-mix(in srgb, var(--cc-white) 84%, transparent);
+  --cc-line: color-mix(in srgb, var(--cc-charcoal) 28%, transparent);
+  --cc-line-on-dark: color-mix(in srgb, var(--cc-white) 28%, transparent);
+  --cc-font-heading: var(--font-manrope), Arial, sans-serif;
+  --cc-font-body: var(--font-inter), Arial, sans-serif;
+  --cc-h1: clamp(2.625rem, 6.67vw, 6rem);
+  --cc-h2: clamp(2rem, 4.45vw, 4rem);
+  --cc-h3: clamp(1.4375rem, 2.5vw, 2.25rem);
+  --cc-body: clamp(1rem, 1.25vw, 1.125rem);
+  --cc-ui: clamp(.9375rem, 1.12vw, 1rem);
+  --cc-label: clamp(.6875rem, .92vw, .8125rem);
+  --cc-radius-control: 14px;
+  --cc-heading-tracking: -.045em;
+  --cc-section-space: clamp(4.5rem, 7.8vw, 7rem);
+}

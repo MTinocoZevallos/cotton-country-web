@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import Script from "next/script"
 import "./globals.css"
+import "./design-tokens.css"
+import { manrope, inter } from "./fonts"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 
@@ -20,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es">
+    <html lang="es" className={`${manrope.variable} ${inter.variable}`}>
       <body className="flex flex-col min-h-screen">
         <noscript>
           <iframe
@@ -42,7 +44,7 @@ export default function RootLayout({
         </Script>
 
         <Header />
-        <main className="flex-1">{children}</main>
+        <main id="contenido" tabIndex={-1} className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>
