@@ -1,10 +1,19 @@
 "use client"
 
 import Image from "next/image"
+import localFont from "next/font/local"
 import { useEffect, useRef } from "react"
 import Link from "next/link"
-import { ArrowDown } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import styles from "./home.module.css"
+
+const heroSerif = localFont({
+  src: "../app/fonts/dm-serif-display-regular.ttf",
+  variable: "--font-hero-serif",
+  weight: "400",
+  style: "normal",
+  display: "swap",
+})
 
 const lines = ["¿De qué viste", "tu marca?"]
 
@@ -43,9 +52,9 @@ export default function Hero() {
   }, [])
 
   return (
-    <section ref={hero} className={styles.hero} aria-labelledby="hero-title" data-hero-phase="typing">
+    <section ref={hero} className={`${styles.hero} ${heroSerif.variable}`} aria-labelledby="hero-title" data-hero-phase="typing">
       <div className={styles.heroBackdrop}>
-        <Image src="/hero-bg.webp" alt="Uniforme corporativo en un entorno profesional" fill sizes="(max-width: 767px) 1600px, 100vw" preload className={styles.heroImage} />
+        <Image src="/hero-airport-reference.webp" alt="Uniforme corporativo en un entorno profesional" fill sizes="(max-width: 767px) 1600px, 100vw" preload className={styles.heroImage} />
       </div>
       <div className={styles.heroShade} />
       <div className={styles.heroContent}>
@@ -66,12 +75,9 @@ export default function Hero() {
               <p>Te invitamos a descubrir el poder del uniforme.</p>
             </div>
             <Link href="/uniformes" className={styles.primaryLink} data-hero-cta>
-              Descubre nuestros uniformes
+              Descubre nuestros uniformes <ArrowRight aria-hidden="true" size={20} />
             </Link>
           </div>
-          <a href="#metodo" className={styles.scrollLink} aria-label="Explorar cómo trabajamos">
-            <span>Explora</span><ArrowDown aria-hidden="true" size={20} />
-          </a>
         </div>
       </div>
     </section>
