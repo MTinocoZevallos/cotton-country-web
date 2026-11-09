@@ -157,6 +157,16 @@ export default function Testimonials() {
             ))}
           </div>
         </div>
+        <div className={styles.caseIndicators} role="group" aria-label="Seleccionar opinión">
+          {testimonials.map((item, index) => (
+            <button key={item.company} type="button"
+              aria-label={`Ver opinión ${index + 1}: ${item.company}`}
+              aria-controls={`case-panel-${index}`} aria-current={active === index ? "true" : undefined}
+              onClick={() => { restartInterval(); setActive(index) }}>
+              <span aria-hidden="true" />
+            </button>
+          ))}
+        </div>
       </div>
     </section>
   )

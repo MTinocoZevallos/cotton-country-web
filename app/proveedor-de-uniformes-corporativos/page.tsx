@@ -1,3 +1,4 @@
+import Image from "next/image"
 import ContactForm from "@/components/ContactForm"
 
 export const metadata = {
@@ -71,8 +72,11 @@ export default function CorporateUniformsPage() {
   </div>
 
   <div className="overflow-hidden rounded-2xl bg-gray-100 shadow-sm md:-mr-8">
-    <img
+    <Image
       src="/landing-corporativo-hero.jpg"
+      width={2752} height={1568}
+      sizes="(min-width: 1152px) 576px, (min-width: 768px) 50vw, 100vw"
+      preload
       alt="Uniformes corporativos para empresas"
       className="h-[420px] md:h-[520px] w-full object-cover rounded-2xl"
     />
@@ -152,8 +156,10 @@ export default function CorporateUniformsPage() {
 
         <div className="grid gap-8 md:grid-cols-2">
           <article className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
-            <img
+            <Image
               src="/proyecto-avinka.png"
+              width={864} height={1184}
+              sizes="(min-width: 1152px) 540px, (min-width: 768px) 50vw, 100vw"
               alt="Uniformes para retail Avinka"
               className="h-72 w-full object-cover"
             />
@@ -170,8 +176,10 @@ export default function CorporateUniformsPage() {
           </article>
 
           <article className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
-            <img
+            <Image
               src="/proyecto-vilaseca.png"
+              width={864} height={1184}
+              sizes="(min-width: 1152px) 540px, (min-width: 768px) 50vw, 100vw"
               alt="Uniformes industriales Grupo Vilaseca"
               className="h-72 w-full object-cover"
             />
@@ -188,8 +196,10 @@ export default function CorporateUniformsPage() {
           </article>
 
           <article className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
-            <img
+            <Image
               src="/proyecto-florerias-unidas.png"
+              width={960} height={1088}
+              sizes="(min-width: 1152px) 540px, (min-width: 768px) 50vw, 100vw"
               alt="Uniformes Florerías Unidas"
               className="h-72 w-full object-cover"
             />
@@ -206,8 +216,10 @@ export default function CorporateUniformsPage() {
           </article>
 
           <article className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
-            <img
+            <Image
               src="/proyecto-liqui-moly.png"
+              width={864} height={1184}
+              sizes="(min-width: 1152px) 540px, (min-width: 768px) 50vw, 100vw"
               alt="Uniformes Liqui Moly canal tradicional"
               className="h-72 w-full object-cover"
             />
