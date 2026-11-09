@@ -1,8 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { ArrowLeft, ArrowRight, Pause, Play } from "lucide-react"
-import { useEffect, useRef, useState, type KeyboardEvent, type TouchEvent } from "react"
+import { useEffect, useRef, useState, type TouchEvent } from "react"
 import styles from "./home.module.css"
 
 const testimonials = [
@@ -36,7 +35,6 @@ export default function Testimonials() {
   const [reducedMotion, setReducedMotion] = useState(false)
   const [touching, setTouching] = useState(false)
   const [rotationReset, setRotationReset] = useState(0)
-  const tabs = useRef<(HTMLButtonElement | null)[]>([])
   const touch = useRef<{ x: number; y: number } | null>(null)
   const panels = useRef<(HTMLDivElement | null)[]>([])
   const [slideHeight, setSlideHeight] = useState<number>()
@@ -95,18 +93,6 @@ export default function Testimonials() {
     restartInterval()
     setActive(current => (current + direction + count) % count)
   }
-  const handleKeys = (event: KeyboardEvent<HTMLButtonElement>, index: number) => {
-    let next = index
-    if (event.key === "ArrowRight") next = (index + 1) % count
-    else if (event.key === "ArrowLeft") next = (index + count - 1) % count
-    else if (event.key === "Home") next = 0
-    else if (event.key === "End") next = count - 1
-    else return
-    event.preventDefault()
-    restartInterval()
-    setActive(next)
-    tabs.current[next]?.focus()
-  }
   const endTouch = (event: TouchEvent<HTMLDivElement>) => {
     const start = touch.current
     const end = event.changedTouches[0]
@@ -129,21 +115,32 @@ export default function Testimonials() {
         onTouchEndCapture={releaseTouch}
         onTouchCancelCapture={releaseTouch}
         role="region" aria-roledescription="carrusel" aria-label="Nuestros clientes opinan">
-        <div className={styles.caseTabs} role="tablist" aria-label="Seleccionar testimonio">
-          {testimonials.map((item, index) => (
-            <button key={item.company} role="tab" id={`case-tab-${index}`} aria-controls={`case-panel-${index}`} aria-selected={active === index} tabIndex={active === index ? 0 : -1} ref={element => { tabs.current[index] = element }} onClick={() => { restartInterval(); setActive(index) }} onKeyDown={event => handleKeys(event, index)}>
-              {item.company}
-            </button>
-          ))}
-        </div>
-        <div className={styles.caseSlides} style={{ height: slideHeight }} onTouchStart={event => {
+        <button type="button" className={styles.caseAccessibilityControl} disabled={reducedMotion}
+          aria-label={userPaused ? "Reanudar avance automático de testimonios" : "Pausar avance automático de testimonios"}
+          onClick={() => { setUserPaused(current => !current); restartInterval() }}>
+          {userPaused ? "Reanudar testimonios" : "Pausar testimonios"}
+        </button>
+        <div className={styles.caseSlides} style={{ height: slideHeight }}
+          aria-keyshortcuts="ArrowLeft ArrowRight Home End"
+          onKeyDown={event => {
+            let next = active
+            if (event.key === "ArrowLeft") next = (active + count - 1) % count
+            else if (event.key === "ArrowRight") next = (active + 1) % count
+            else if (event.key === "Home") next = 0
+            else if (event.key === "End") next = count - 1
+            else return
+            event.preventDefault()
+            restartInterval()
+            setActive(next)
+            requestAnimationFrame(() => panels.current[next]?.focus())
+          }} onTouchStart={event => {
           const point = event.touches[0]
           if (point && event.touches.length === 1) touch.current = { x: point.clientX, y: point.clientY }
           else touch.current = null
         }} onTouchEnd={endTouch} onTouchCancel={() => { touch.current = null }}>
           <div className={styles.caseTrack} style={{ transform: `translate3d(-${active * 100}%, 0, 0)` }}>
             {testimonials.map((item, index) => (
-              <div key={item.company} role="tabpanel" id={`case-panel-${index}`} aria-labelledby={`case-tab-${index}`} aria-hidden={active !== index} inert={active !== index} className={styles.casePanel} ref={element => { panels.current[index] = element }} tabIndex={0}>
+              <div key={item.company} role="group" aria-roledescription="diapositiva" id={`case-panel-${index}`} aria-label={`${index + 1} de ${count}: ${item.company}`} aria-hidden={active !== index} inert={active !== index} className={styles.casePanel} ref={element => { panels.current[index] = element }} tabIndex={0}>
                 <article className={styles.case}>
                   <div className={styles.caseContent}>
                     <blockquote className={styles.caseQuote}><p>{item.text}</p></blockquote>
@@ -158,23 +155,6 @@ export default function Testimonials() {
                 </article>
               </div>
             ))}
-          </div>
-        </div>
-        <div className={styles.caseControls}>
-          <span aria-live={userPaused || reducedMotion ? "polite" : "off"} aria-atomic="true">{String(active + 1).padStart(2, "0")} / {String(count).padStart(2, "0")}</span>
-          <button type="button" className={styles.caseRotation} disabled={reducedMotion}
-            aria-label={reducedMotion ? "Avance automático desactivado por movimiento reducido" : userPaused ? "Reanudar avance automático" : "Pausar avance automático"}
-            title={reducedMotion ? "Se respeta tu preferencia de movimiento reducido" : undefined}
-            onClick={() => {
-              setUserPaused(current => !current)
-              restartInterval()
-            }}>
-            {userPaused || reducedMotion ? <Play aria-hidden="true" size={16} /> : <Pause aria-hidden="true" size={16} />}
-            <span>{reducedMotion ? "Automático desactivado" : userPaused ? "Reanudar" : "Pausar"}</span>
-          </button>
-          <div>
-            <button type="button" aria-label="Testimonio anterior" onClick={() => move(-1)}><ArrowLeft aria-hidden="true" size={18} /><span>Anterior</span></button>
-            <button type="button" aria-label="Testimonio siguiente" onClick={() => move(1)}><span>Siguiente</span><ArrowRight aria-hidden="true" size={18} /></button>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@
 .hero { position: relative; isolation: isolate; color: var(--cc-white); background: var(--cc-deep-blue); min-height: 620px; height: 90svh; max-height: 820px; }
 .heroBackdrop, .heroShade { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
 .heroBackdrop { top: 80px; animation: photoEnter 1.2s ease both; }
-.heroImage { object-fit: cover; object-position: 70% 0%; }
+.heroImage { object-fit: cover; object-position: 70% 40%; }
 .heroShade { background: linear-gradient(90deg, color-mix(in srgb, var(--cc-charcoal) 74%, transparent), color-mix(in srgb, var(--cc-charcoal) 48%, transparent) 40%, color-mix(in srgb, var(--cc-charcoal) 12%, transparent) 62%, transparent 78%); }
 .heroContent { position: relative; width: calc(100% - 112px); max-width: 1600px; margin-inline: auto; padding-block: 132px 48px; height: 100%; display: flex; flex-direction: column; justify-content: center; }
 .home .heroTitle { margin-top: 0; max-width: 850px; position: relative; color: var(--cc-white); font-family: var(--font-editorial-serif), Georgia, serif; font-size: clamp(52px, 5.6vw, 80px); font-weight: 400; letter-spacing: -.025em; line-height: 1.05; }
@@ -68,30 +68,22 @@
   .product:hover .productLink svg { transform: translate(2px, -2px); }
 }
 .cases { padding: 104px max(56px, calc((100vw - 1280px) / 2)); width: 100%; background: var(--cc-ivory); }
-.casesHeading { margin-bottom: 28px; }
-.caseStage { min-width: 0; display: flex; flex-direction: column; }
+.casesHeading { margin-bottom: 40px; }
+.caseStage { position: relative; min-width: 0; display: flex; flex-direction: column; }
 .caseSlides { order: 1; overflow: hidden; touch-action: pan-y pinch-zoom; transition: height .45s ease; }
 .caseTrack { display: flex; align-items: flex-start; transition: transform .55s cubic-bezier(.25,.7,.25,1); }
-.casePanel { flex: 0 0 100%; min-width: 0; opacity: .35; transition: opacity .45s ease; }
+.casePanel { flex: 0 0 100%; min-width: 0; padding-block: 12px; opacity: .35; transition: opacity .45s ease; }
 .casePanel[aria-hidden="false"] { opacity: 1; }
 .casePanel[aria-hidden="true"] { pointer-events: none; }
-.case { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; min-width: 0; }
+.case { display: flex; flex-direction: column; align-items: flex-start; gap: 32px; min-width: 0; }
 .caseContent { min-width: 0; width: 100%; }
-.caseQuote { font-family: var(--font-editorial-serif), Georgia, serif; font-weight: 400; font-size: clamp(23px, 2vw, 29px); line-height: 1.55; letter-spacing: -.015em; margin: 0; max-width: 960px; }
-.caseIdentity { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 4px 24px; align-items: center; max-width: 100%; }
-.caseLogo { position: relative; width: 72px; height: 60px; grid-row: 1 / 3; }
-.caseIdentity h3 { font-family: var(--cc-font-heading); font-weight: 600; font-size: 17px; line-height: 1.35; letter-spacing: -.025em; }
-.caseFocus { font-size: 13px; line-height: 1.6; color: var(--cc-text-secondary); }
-.caseTabs { order: 2; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 28px; }
-.caseTabs button { text-align: left; padding: 16px 0; border-top: 1px solid var(--cc-line); color: var(--cc-text-secondary); font-size: 13px; font-weight: 500; line-height: 1.5; cursor: pointer; }
-.caseTabs button[aria-selected="true"] { color: var(--cc-blue); border-top: 3px solid var(--cc-blue); padding-top: 14px; font-weight: 600; }
-.caseControls { order: 3; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 16px; }
-.caseControls > span { font-size: 12px; font-variant-numeric: tabular-nums; letter-spacing: .08em; color: var(--cc-text-secondary); }
-.caseControls > div { display: flex; gap: 12px; }
-.caseControls button { border: 1px solid var(--cc-line); border-radius: 999px; min-height: 40px; padding: 10px 16px; display: inline-flex; gap: 8px; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; cursor: pointer; transition: background .25s, color .25s; }
-.caseControls .caseRotation { margin-left: auto; min-width: 112px; }
-.caseControls .caseRotation:disabled { color: var(--cc-text-secondary); cursor: default; }
-.caseControls button:hover:not(:disabled) { background: var(--cc-blue); color: var(--cc-white); }
+.caseQuote { font-family: var(--font-editorial-serif), Georgia, serif; font-weight: 400; font-size: 20px; line-height: 1.7; letter-spacing: -.015em; margin: 0; max-width: 720px; }
+.caseIdentity { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 4px 20px; align-items: center; max-width: 100%; }
+.caseLogo { position: relative; width: 56px; height: 48px; grid-row: 1 / 3; }
+.caseIdentity h3 { font-family: var(--cc-font-heading); font-weight: 600; font-size: 16px; line-height: 1.35; letter-spacing: -.025em; }
+.caseFocus { font-size: 12px; line-height: 1.6; color: var(--cc-text-secondary); }
+.caseAccessibilityControl { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.caseAccessibilityControl:focus-visible { top: -48px; right: 0; width: auto; height: auto; padding: 8px 16px; margin: 0; overflow: visible; clip-path: none; border: 1px solid var(--cc-blue); border-radius: 999px; background: var(--cc-white); color: var(--cc-blue); font-size: 13px; z-index: 1; }
 .contact { background: var(--cc-white); color: var(--cc-charcoal); padding-block: 104px; scroll-margin-top: 80px; border-bottom: 1px solid var(--cc-line); }
 .contactGrid { width: min(100% - 112px, 1280px); margin-inline: auto; display: grid; grid-template-columns: .9fr 1.1fr; align-items: start; gap: 112px; }
 .contactIntro { min-width: 0; }
@@ -133,7 +125,7 @@
   .heroContent { padding-block: 420px 72px; min-height: inherit; height: auto; justify-content: flex-start; }
   .home .heroTitle { font-size: clamp(36px, 10.8vw, 54px); }
   .heroBackdrop { height: auto; bottom: 0; background: url('/hero-airport-natural.webp') no-repeat 78% bottom / auto 1100px; }
-  .heroImage { height: 580px !important; object-position: 80% 0%; mask-image: linear-gradient(180deg, #000 72%, transparent); }
+  .heroImage { height: 520px !important; object-position: 80% 0%; mask-image: linear-gradient(180deg, #000 72%, transparent); }
   .heroShade { background: linear-gradient(180deg, transparent 27%, color-mix(in srgb, var(--cc-charcoal) 22%, transparent) 40%, color-mix(in srgb, var(--cc-charcoal) 70%, transparent) 65%, color-mix(in srgb, var(--cc-deep-blue) 68%, transparent)); }
   .heroBottom { display: block; }
   .heroCopy { max-width: 480px; }
@@ -152,18 +144,13 @@
   .productsClosing > p { font-size: 24px; }
   .textLink { white-space: normal; }
   .cases { padding: 72px 20px; }
-  .casesHeading { margin-bottom: 24px; }
-  .caseQuote { font-size: 23px; line-height: 1.55; }
-  .case { gap: 24px; }
-  .caseIdentity { grid-template-columns: 56px minmax(0, 1fr); gap: 4px 18px; }
-  .caseLogo { width: 56px; height: 52px; }
-  .caseIdentity h3 { font-size: 16px; }
+  .casesHeading { margin-bottom: 32px; }
+  .caseQuote { font-size: 18px; line-height: 1.7; }
+  .case { gap: 32px; }
+  .caseIdentity { grid-template-columns: 48px minmax(0, 1fr); gap: 4px 18px; }
+  .caseLogo { width: 48px; height: 44px; }
+  .caseIdentity h3 { font-size: 15px; }
   .caseFocus { font-size: 12px; }
-  .caseTabs { gap: 12px; margin-top: 24px; }
-  .caseTabs button { font-size: 12px; }
-  .caseControls { display: grid; grid-template-columns: 1fr auto; gap: 12px; }
-  .caseControls > div { grid-column: 1 / -1; justify-self: end; }
-  .caseControls button { padding: 10px 12px; gap: 6px; }
   .contact { padding-block: 72px; }
   .contact form { gap: 20px; }
   .captchaRow:has(> div:empty) { margin-block: -10px; }
