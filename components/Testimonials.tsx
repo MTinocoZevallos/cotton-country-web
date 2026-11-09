@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { ArrowLeft, ArrowRight } from "lucide-react"
-import { useRef, useState, type KeyboardEvent, type TouchEvent } from "react"
+import { useEffect, useRef, useState, type KeyboardEvent, type TouchEvent } from "react"
 import styles from "./home.module.css"
 
 const testimonials = [
@@ -30,7 +30,23 @@ export default function Testimonials() {
   const [active, setActive] = useState(0)
   const tabs = useRef<(HTMLButtonElement | null)[]>([])
   const touch = useRef<{ x: number; y: number } | null>(null)
+  const panels = useRef<(HTMLDivElement | null)[]>([])
+  const [slideHeight, setSlideHeight] = useState<number>()
   const count = testimonials.length
+
+  useEffect(() => {
+    const panel = panels.current[active]
+    if (!panel) return
+    const measure = () => setSlideHeight(Math.ceil(panel.getBoundingClientRect().height))
+    measure()
+    if (typeof ResizeObserver === "undefined") {
+      window.addEventListener("resize", measure)
+      return () => window.removeEventListener("resize", measure)
+    }
+    const observer = new ResizeObserver(measure)
+    observer.observe(panel)
+    return () => observer.disconnect()
+  }, [active])
   const move = (direction: number) => setActive(current => (current + direction + count) % count)
   const handleKeys = (event: KeyboardEvent<HTMLButtonElement>, index: number) => {
     let next = index
@@ -65,25 +81,24 @@ export default function Testimonials() {
             </button>
           ))}
         </div>
-        <div className={styles.caseSlides} onTouchStart={event => {
+        <div className={styles.caseSlides} style={{ height: slideHeight }} onTouchStart={event => {
           const point = event.touches[0]
           if (point && event.touches.length === 1) touch.current = { x: point.clientX, y: point.clientY }
           else touch.current = null
         }} onTouchEnd={endTouch} onTouchCancel={() => { touch.current = null }}>
           <div className={styles.caseTrack} style={{ transform: `translate3d(-${active * 100}%, 0, 0)` }}>
             {testimonials.map((item, index) => (
-              <div key={item.company} role="tabpanel" id={`case-panel-${index}`} aria-labelledby={`case-tab-${index}`} aria-hidden={active !== index} inert={active !== index} className={styles.casePanel} tabIndex={0}>
+              <div key={item.company} role="tabpanel" id={`case-panel-${index}`} aria-labelledby={`case-tab-${index}`} aria-hidden={active !== index} inert={active !== index} className={styles.casePanel} ref={element => { panels.current[index] = element }} tabIndex={0}>
                 <article className={styles.case}>
+                  <div className={styles.caseContent}>
+                    <blockquote className={styles.caseQuote}><p>{item.text}</p></blockquote>
+                  </div>
                   <div className={styles.caseIdentity}>
                     <div className={styles.caseLogo}>
-                      <Image src={item.logo} alt={`Logo de ${item.company}`} fill sizes="180px" className="object-contain" />
+                      <Image src={item.logo} alt={`Logo de ${item.company}`} fill sizes="72px" className="object-contain" />
                     </div>
                     <h3>{item.company}</h3>
                     <p className={styles.caseFocus}>{item.focus}</p>
-                  </div>
-                  <div className={styles.caseContent}>
-                    <p className={styles.quoteLabel}>Opinión del cliente</p>
-                    <blockquote className={styles.caseQuote}><p>{item.text}</p></blockquote>
                   </div>
                 </article>
               </div>

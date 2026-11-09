@@ -1,19 +1,11 @@
 "use client"
 
 import Image from "next/image"
-import localFont from "next/font/local"
 import { useEffect, useRef } from "react"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import styles from "./home.module.css"
-
-const heroSerif = localFont({
-  src: "../app/fonts/dm-serif-display-regular.ttf",
-  variable: "--font-hero-serif",
-  weight: "400",
-  style: "normal",
-  display: "swap",
-})
+import { editorialSerif } from "./home-font"
 
 const lines = ["¿De qué viste", "tu marca?"]
 
@@ -52,9 +44,9 @@ export default function Hero() {
   }, [])
 
   return (
-    <section ref={hero} className={`${styles.hero} ${heroSerif.variable}`} aria-labelledby="hero-title" data-hero-phase="typing">
+    <section ref={hero} className={`${styles.hero} ${editorialSerif.variable}`} aria-labelledby="hero-title" data-hero-phase="typing">
       <div className={styles.heroBackdrop}>
-        <Image src="/hero-airport-reference.webp" alt="Uniforme corporativo en un entorno profesional" fill sizes="(max-width: 767px) 1600px, 100vw" preload className={styles.heroImage} />
+        <Image src="/hero-airport-natural.webp" alt="Uniforme corporativo en un entorno profesional" fill unoptimized sizes="(max-width: 767px) 1200px, 100vw" preload className={styles.heroImage} />
       </div>
       <div className={styles.heroShade} />
       <div className={styles.heroContent}>

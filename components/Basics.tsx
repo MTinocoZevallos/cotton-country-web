@@ -19,16 +19,16 @@ export default function Basics() {
           <h2 id="products-title">Prendas <span>destacadas</span></h2>
         </div>
         <div className={styles.productGrid}>
-          {families.map((family, index) => (
-            <Link key={family.name} href={family.href} className={styles.product} data-reveal data-product-order={index} data-parallax data-parallax-speed={.65 + index * .1}>
+          {families.map(family => (
+            <Link key={family.name} href={family.href} className={styles.product} data-reveal>
               <div className={styles.productVisual}>
-                <Image src={family.image} alt={family.alt} fill sizes={index === 0 || index === 3 ? "(max-width: 767px) 100vw, 58vw" : "(max-width: 767px) 80vw, 36vw"} className={styles.productImage} />
-                <span className={styles.productExplore} aria-hidden="true"><ArrowUpRight size={28} /></span>
+                <Image src={family.image} alt={family.alt} fill sizes="(max-width: 575px) 100vw, (max-width: 1023px) 50vw, 25vw" className={styles.productImage} />
               </div>
               <div className={styles.productTitle}>
-                <h3>{family.name}</h3><ArrowUpRight aria-hidden="true" size={28} />
+                <h3>{family.name}</h3>
               </div>
               <p className={styles.productDetail}>{family.detail}</p>
+              <span className={styles.productLink}>Ver {family.name.toLowerCase()} <ArrowUpRight aria-hidden="true" size={16} /></span>
             </Link>
           ))}
         </div>

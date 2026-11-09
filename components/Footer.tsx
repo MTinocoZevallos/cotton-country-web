@@ -10,10 +10,10 @@ export default function Footer() {
         <div className={styles.footerGrid}>
           <div>
             <Image
-              src="/logo-cotton-blanco.png"
+              src="/logo-cotton-country.png"
               alt="Cotton Country"
-              width={160}
-              height={60}
+              width={166}
+              height={70}
               className="mb-4"
             />
             <p className="text-sm text-gray-200 leading-relaxed">
