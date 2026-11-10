@@ -70,14 +70,18 @@ export default function Basics() {
   const autoRunning = positions > 1 && visible && pageVisible && !reducedMotion && !hovered && !focused && !touching && !paused
   useEffect(() => {
     if (!autoRunning) return
-    const timer = window.setTimeout(() => select((active + 1) % positions), 7000)
-    return () => window.clearTimeout(timer)
-  }, [active, positions, autoRunning, rotationReset, select])
+    const timer = window.setInterval(() => {
+      const element = track.current
+      if (!element) return
+      const step = (element.firstElementChild as HTMLElement).getBoundingClientRect().width + (parseFloat(getComputedStyle(element).columnGap) || 0)
+      const current = Math.round(element.scrollLeft / step)
+      select((current + 1) % positions)
+    }, 4000)
+    return () => window.clearInterval(timer)
+  }, [positions, autoRunning, rotationReset, select])
 
   return (
     <section ref={section} className={styles.products} aria-labelledby="products-title"
-      onPointerEnter={event => { if (event.pointerType === "mouse") setHovered(true) }}
-      onPointerLeave={event => { if (event.pointerType === "mouse") setHovered(false) }}
       onFocusCapture={event => setFocused(event.target.matches(":focus-visible"))}
       onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget)) setFocused(false) }}
       data-products-state={JSON.stringify({ active, positions, hovered, touching, focused, reducedMotion, visible, autoRunning })}>
@@ -86,7 +90,10 @@ export default function Basics() {
           <p className={styles.eyebrow}>Nuestros uniformes</p>
           <h2 id="products-title">Prendas <span>destacadas</span></h2>
         </div>
-        <div className={styles.productCarousel} role="region" aria-roledescription="carrusel" aria-label="Fotografías de prendas">
+        <div className={styles.productCarousel}
+          onPointerEnter={event => { if (event.pointerType === "mouse") setHovered(true) }}
+          onPointerLeave={event => { if (event.pointerType === "mouse") setHovered(false) }}
+          role="region" aria-roledescription="carrusel" aria-label="Fotografías de prendas">
           <button type="button" className={styles.productPause} disabled={reducedMotion}
             onClick={() => setPaused(current => !current)}>
             {paused ? "Reanudar avance automático de prendas" : "Pausar avance automático de prendas"}
@@ -99,7 +106,6 @@ export default function Basics() {
               const element = event.currentTarget
               const step = (element.firstElementChild as HTMLElement).offsetWidth + (parseFloat(getComputedStyle(element).columnGap) || 0)
               setActive(Math.min(positions - 1, Math.round(element.scrollLeft / step)))
-              setRotationReset(current => current + 1)
             }}>
             {families.map(family => (
               <Link key={family.image} href={family.href} className={styles.product}>

@@ -67,7 +67,7 @@ export default function Testimonials() {
   const autoRunning = !userPaused && !hovered && !touching && visible && pageVisible && !reducedMotion
   useEffect(() => {
     if (!autoRunning) return
-    const timer = window.setTimeout(() => setActive(current => (current + 1) % count), 7000)
+    const timer = window.setTimeout(() => setActive(current => (current + 1) % count), 4000)
     return () => window.clearTimeout(timer)
   }, [active, autoRunning, count, rotationReset])
 
