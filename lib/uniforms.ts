@@ -39,19 +39,22 @@ export type ProjectCase = {
 }
 const decorWinter: CasePhoto = { src: "/casos/decor-center/invierno-dama.webp", alt: "Uniforme de invierno de Decor Center: chaleco largo camel sin botones, blusa negra y pantalón negro", width: 1254, height: 1254, evidence: "Versión con postura y nitidez ajustadas, aprobada en la conversación; referencia: Uniforme Completo - DecorCenter Invierno.png" }
 const decorSummer: CasePhoto = { src: "/casos/decor-center/verano-dama.webp", alt: "Uniforme de verano de Decor Center: polo negro de cuello V y pantalón negro", width: 1071, height: 1468, evidence: "Versión con postura y nitidez ajustadas, aprobada en la conversación; referencia: Uniforme Completo - DecorCenter Verano.png" }
+const decorWinterMan: CasePhoto = { src: "/casos/decor-center/invierno-caballero.webp", alt: "Uniforme masculino de invierno de Decor Center: chompa camel de cuello V, camisa negra y pantalón negro", width: 768, height: 1024, evidence: "Fotografía definitiva proporcionada en Decor Center Hombres.zip: DecorCenter_Hombre_Invierno.png; optimización WebP sin pérdida" }
+const decorSummerMan: CasePhoto = { src: "/casos/decor-center/verano-caballero.webp", alt: "Uniforme masculino de verano de Decor Center: polo box negro con identificación corporativa y pantalón negro", width: 768, height: 1024, evidence: "Fotografía definitiva proporcionada en Decor Center Hombres.zip: DecorCenter_Hombre_Verano.png; optimización WebP sin pérdida" }
 export const projectCases: ProjectCase[] = [
   {
     id: "decor-center", client: "Decor Center", sector: "retail", status: "published",
     subtitle: "Uniformes que conectan identidad, estilo y personas.",
     concept: "La identidad corporativa no siempre necesita un logotipo. También puede expresarse mediante el diseño del uniforme.",
-    fullImages: [decorWinter, decorSummer], garmentIds: [], categories: ["chalecos", "blusas", "polos", "pantalones-dama"],
+    fullImages: [decorWinter, decorWinterMan, decorSummer, decorSummerMan], garmentIds: [], categories: ["chalecos", "blusas", "polos", "pantalones-dama", "pantalones-caballero"],
     seasons: [
       { id: "invierno", name: "Invierno", outfits: [
         { id: "invierno-dama", name: "Uniforme de dama", status: "published", fullImage: decorWinter, garmentIds: [] },
-        { id: "invierno-caballero", name: "Uniforme de caballero", status: "draft", garmentIds: [], confirmedDescription: "Chompa de cuello V camel/marrón, camisa negra y pantalón negro. Silueta estilizada y presentación contemporánea, sin logotipos, bordados ni estampados." },
+        { id: "invierno-caballero", name: "Uniforme de caballero", status: "published", fullImage: decorWinterMan, garmentIds: [], confirmedDescription: "Chompa de cuello V camel/marrón, camisa negra y pantalón negro. Silueta estilizada y presentación contemporánea, sin logotipos, bordados ni estampados." },
       ] },
       { id: "verano", name: "Verano", outfits: [
         { id: "verano-dama", name: "Uniforme de dama", status: "published", fullImage: decorSummer, garmentIds: [] },
+        { id: "verano-caballero", name: "Uniforme de caballero", status: "published", fullImage: decorSummerMan, garmentIds: [] },
       ] },
     ],
     story: {
@@ -59,7 +62,7 @@ export const projectCases: ProjectCase[] = [
       solution: "Diseñamos propuestas diferenciadas para invierno y verano. Incorporamos el camel, un color de tendencia en aquel momento, y prendas de cortes estilizados. El chaleco femenino y la chompa masculina aportaron una identidad visual reconocible, mientras que los conjuntos de verano ofrecieron una alternativa más ligera.",
       result: "La propuesta tuvo una recepción positiva entre los colaboradores, quienes valoraron que el vestuario considerara sus preferencias de estilo. El uniforme contribuyó a expresar la identidad de la empresa mediante sus propios colores, siluetas y acabados.",
     },
-    pending: ["Fotografía masculina de invierno", "Fotografías individuales de las prendas"],
+    pending: ["Fotografías individuales de las prendas"],
   },
   { id: "avinka", client: "Avinka", sector: "retail", status: "draft", fullImages: [{ src: "/proyecto-avinka.png", alt: "Uniforme Avinka con blusa y pantalón", evidence: "app/proveedor-de-uniformes-corporativos/page.tsx: proyecto Avinka identificado con este archivo" }], garmentIds: [], categories: ["blusas", "pantalones-dama"], story: { solution: "Blusa y pantalón para atención al cliente, presentación y comodidad en operación diaria." }, pending: ["Fotografías individuales verificadas", "Requerimiento, desafío y resultado documentados"] },
   { id: "isil", client: "ISIL", sector: "educacion", status: "draft", fullImages: [], garmentIds: [], categories: [], story: {}, pending: ["Fotografías verificadas", "Historia del proyecto"] },

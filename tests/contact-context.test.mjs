@@ -53,14 +53,18 @@ test('known paths derive context, forged fields and external URLs are discarded'
   assert.deepEqual(plain(h.browserContactContext('/', new URLSearchParams())), { source_path: '/' })
 })
 
-test('only the approved Decor Center case is public; pending photos stay hidden', () => {
+test('Decor Center publishes four approved outfits; individual photos remain pending', () => {
   const { data } = fixture()
   assert.equal(data.projectCases.length, 6)
   assert.equal(data.garmentCategories.length, 8)
   assert.deepEqual(plain(data.publishedCases.map(item => item.id)), ['decor-center'])
   const decor = data.publishedCases[0]
-  assert.equal(decor.seasons.flatMap(season => season.outfits).filter(outfit => outfit.status === "published" && outfit.fullImage).length, 2)
-  assert.equal(decor.seasons[0].outfits.find(outfit => outfit.id === "invierno-caballero").status, "draft")
+  assert.equal(decor.seasons.flatMap(season => season.outfits).filter(outfit => outfit.status === "published" && outfit.fullImage).length, 4)
+  for (const season of decor.seasons) {
+    assert.equal(season.outfits.length, 2)
+    assert(season.outfits.every(outfit => outfit.status === "published" && outfit.fullImage && outfit.garmentIds.length === 0))
+  }
+  assert.deepEqual(plain(decor.pending), ['Fotografías individuales de las prendas'])
   for (const photo of decor.fullImages) assert(fs.existsSync(path.join(root, "public", photo.src)))
   for (const item of data.projectCases.filter(item => item.id !== "decor-center")) assert.equal(data.isPublishedCase({ ...item, status: 'published' }), false)
   for (const item of data.garments) assert(fs.existsSync(path.join(root, 'public', item.image)))
