@@ -50,3 +50,17 @@
 .caseConcept { padding: 40px; background: #F6F5F2; }
 .caseConcept > p:last-child { max-width: 800px; font-family: var(--font-editorial-serif),Georgia,serif; font-size: clamp(25px,2.4vw,34px); line-height: 1.4; }
 @media(max-width:575px) { .season { padding-block: 40px; } .seasonOutfits, .seasonWithPieces { grid-template-columns: 1fr; } .seasonPhoto { border-radius: 20px; } .caseConcept { padding: 28px 20px; } }
+
+.editorialLead { display: grid; grid-template-columns: 1.15fr 1fr; align-items: start; gap: 72px; padding-bottom: 64px; }
+.editorialPhoto { margin: 0; }
+.editorialPhoto img { display: block; width: 100%; height: auto; border-radius: 24px; }
+.editorialPhoto figcaption { margin-top: 16px; font-size: 13px; color: #65615c; }
+.editorialDetails { padding-top: 16px; }
+.caseFeatures { margin-block: 32px 40px; }
+.caseFeatures > div { padding-block: 20px; border-bottom: 1px solid #dddcd6; }
+.caseFeatures dt { font-size: 14px; font-weight: 600; color: #01018B; }
+.caseFeatures dd { margin-top: 8px; line-height: 1.8; font-size: 16px; }
+.caseLinks { display: flex; flex-wrap: wrap; gap: 16px 32px; margin-top: 32px; }
+.editorialTeam { margin-bottom: 64px; }
+@media(max-width:900px) { .editorialLead { grid-template-columns: 1fr; gap: 32px; } }
+@media(max-width:575px) { .editorialPhoto img { border-radius: 20px; } .editorialLead { padding-bottom: 40px; } .editorialTeam { margin-bottom: 40px; } }

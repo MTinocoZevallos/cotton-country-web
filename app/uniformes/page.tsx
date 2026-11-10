@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { editorialSerif } from "@/components/home-font"
 import Catalog from "@/components/uniforms/Catalog"
-import { sectors } from "@/lib/uniforms"
+import { casePath, publishedCases, sectors } from "@/lib/uniforms"
 import { contactHref } from "@/lib/contact-context"
 import styles from "@/components/uniforms/uniforms.module.css"
 
@@ -23,6 +23,7 @@ export default function UniformesPage() {
       <p className={styles.eyebrow}>Una mirada por sector</p><h2 id="projects-title">Proyectos que hablan por sí mismos.</h2>
       <p className={styles.copy}>Las funciones del equipo y su entorno de trabajo orientan cada decisión. Explora los criterios de desarrollo por sector.</p>
       <div className={styles.sectors}>{sectors.filter(item => item.public).map(item => <article className={styles.sector} key={item.id}><h3>{item.name}</h3><p>{item.intro}</p><Link className={styles.link} href={`/uniformes/${item.id}`}>Explorar {item.name.toLowerCase()} →</Link></article>)}</div>
+      <nav className={styles.caseLinks} aria-label="Casos de éxito">{publishedCases.map(item => <Link className={styles.link} key={item.id} href={casePath(item)}>Ver {item.client} →</Link>)}</nav>
     </div></section>
     <Catalog />
     <div className={styles.ivory}><div className={`${styles.container} ${styles.cta}`}><div><h2>Conversemos sobre tu proyecto.</h2><p>Cuéntanos qué necesita tu organización.</p></div><Link className={styles.button} href={contactHref({ source_path: "/uniformes" })}>Solicitar una propuesta →</Link></div></div>

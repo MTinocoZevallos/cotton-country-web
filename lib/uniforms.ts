@@ -33,6 +33,10 @@ export type ProjectCase = {
   id: string; client: string; sector: SectorId; status: "draft" | "published"
   fullImages: CasePhoto[]
   subtitle?: string; concept?: string; seasons?: CaseSeason[]
+  title?: string; eyebrow?: string; presentation?: "editorial"
+  seo?: { title: string; description: string }
+  features?: { name: string; description: string }[]
+  futureCategories?: string[]
   garmentIds: string[]; categories: GarmentCategory[]
   story: { requirement?: string; challenge?: string; solution?: string; result?: string }
   pending: string[]
@@ -64,7 +68,29 @@ export const projectCases: ProjectCase[] = [
     },
     pending: ["Fotografías individuales de las prendas"],
   },
-  { id: "avinka", client: "Avinka", sector: "retail", status: "draft", fullImages: [{ src: "/proyecto-avinka.png", alt: "Uniforme Avinka con blusa y pantalón", evidence: "app/proveedor-de-uniformes-corporativos/page.tsx: proyecto Avinka identificado con este archivo" }], garmentIds: [], categories: ["blusas", "pantalones-dama"], story: { solution: "Blusa y pantalón para atención al cliente, presentación y comodidad en operación diaria." }, pending: ["Fotografías individuales verificadas", "Requerimiento, desafío y resultado documentados"] },
+  {
+    id: "avinka", client: "Avinka Artisan", sector: "retail", status: "published", presentation: "editorial",
+    eyebrow: "AVINKA — ARTISAN", title: "Del concepto de marca a un uniforme con identidad propia.",
+    seo: { title: "Uniformes para Avinka Artisan | Caso de éxito Cotton Country", description: "Conoce cómo Cotton Country transformó el concepto de Avinka Artisan en uniformes para anfitrionas, combinando diseño, colores y acabados." },
+    fullImages: [
+      { src: "/casos/avinka/uniforme-artisan.jpg", alt: "Anfitriona de Avinka Artisan con gorra verde tipo Cristina, blusa amarillo maíz con cuello y puños verdes y pantalón verde", width: 1684, height: 2528, evidence: "Avinka Uniforme.jfif de Avinka.zip, archivo JPEG original copiado sin recomprimir ni retocar" },
+      { src: "/casos/avinka/equipo-artisan.jpg", alt: "Equipo de impulsadoras de Avinka Artisan con gorras verdes y blusas amarillo maíz durante el lanzamiento de pollos de crianza natural", width: 2752, height: 1536, evidence: "Artisan Team.jfif de Avinka.zip, archivo JPEG original copiado sin recomprimir ni retocar" },
+    ],
+    garmentIds: [], categories: ["blusas", "pantalones-dama"], futureCategories: ["gorras"],
+    features: [
+      { name: "Gorra", description: "Tipo Cristina, verde oliva." },
+      { name: "Blusa", description: "Corte con pinzas, popelina amarillo maíz, cuello y puños verdes." },
+      { name: "Pantalón", description: "Chino clásico con pretina ancha, verde." },
+      { name: "Bordado", description: "Gran formato, apariencia artesanal." },
+    ],
+    story: {
+      challenge: "Para el lanzamiento de Artisan, su línea de pollos de crianza natural, Avinka buscaba un uniforme para las anfitrionas encargadas de presentar el producto en supermercados.\n\nLa marca contaba con una propuesta gráfica inicial, pero necesitaba convertirla en prendas concretas que comunicaran naturalidad, cercanía y una presentación diferenciada en el punto de venta.\n\nEl desafío consistía en interpretar ese concepto, identificar las prendas adecuadas y encontrar los materiales, colores y acabados que permitieran hacerlo realidad.",
+      solution: "En Cotton Country transformamos la propuesta gráfica en un conjunto de prendas con características definidas.\n\nSeleccionamos una gorra tipo Cristina, una blusa de corte con pinzas y un pantalón chino clásico con pretina ancha.\n\nLa elección de colores fue determinante. El verde oliva debía transmitir la conexión con lo natural, mientras que el amarillo maíz requería encontrar una tonalidad específica de popelina que respetara la identidad de la nueva línea.\n\nCompletamos el conjunto con un bordado de gran formato y apariencia artesanal, pensado para reforzar el carácter del producto.\n\nCada decisión permitió trasladar el concepto original de Artisan a una presentación coherente y reconocible.",
+      result: "El uniforme tuvo una excelente recepción tanto en el área de marketing de Avinka como entre las impulsadoras que lo utilizaron.\n\nLa combinación de colores, cortes y bordados consiguió expresar la identidad de Artisan y ofrecer al equipo una presentación distintiva durante el lanzamiento.",
+    },
+    concept: "Un buen uniforme convierte una idea de marca en una experiencia visible.",
+    pending: ["Fotografías individuales de las prendas"],
+  },
   { id: "isil", client: "ISIL", sector: "educacion", status: "draft", fullImages: [], garmentIds: [], categories: [], story: {}, pending: ["Fotografías verificadas", "Historia del proyecto"] },
   { id: "columbia", client: "Columbia", sector: "educacion", status: "draft", fullImages: [], garmentIds: [], categories: [], story: {}, pending: ["Fotografías verificadas", "Historia del proyecto"] },
   { id: "molino-contreras", client: "Molino Contreras", sector: "agroindustria", status: "draft", fullImages: [], garmentIds: [], categories: [], story: {}, pending: ["Fotografías aprobadas a partir de muestras reales", "Historia del proyecto"] },
@@ -73,7 +99,9 @@ export const projectCases: ProjectCase[] = [
 export function isPublishedCase(item: ProjectCase) {
   return item.status === "published" && !!sectors.find(s => s.id === item.sector)?.public && item.fullImages.length > 0 &&
     item.garmentIds.every(id => garments.some(g => g.id === id && g.caseId === item.id)) &&
-    (item.seasons
+    (item.presentation === "editorial"
+      ? item.fullImages.length >= 2 && [item.story.challenge, item.story.solution, item.story.result].every(value => !!value?.trim())
+      : item.seasons
       ? item.seasons.some(season => season.outfits.some(outfit => outfit.status === "published" && !!outfit.fullImage)) && [item.story.challenge, item.story.solution, item.story.result].every(value => !!value?.trim())
       : item.garmentIds.length > 0 && Object.values(item.story).length === 4 && Object.values(item.story).every(value => !!value?.trim()))
 }

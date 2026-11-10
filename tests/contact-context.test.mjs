@@ -48,7 +48,7 @@ test('known paths derive context, forged fields and external URLs are discarded'
   assert.deepEqual(plain(h.sanitizeContactContext({ source_path: '/uniformes/retail', sector: 'forged', case_id: '<script>' })), { source_path: '/uniformes/retail', interest_type: 'sector', sector: 'retail' })
   assert.deepEqual(plain(h.browserContactContext('/contacto', new URLSearchParams('source_path=/uniformes/camisas'))), { source_path: '/uniformes/camisas', interest_type: 'prenda', garment_category: 'camisas' })
   assert.deepEqual(plain(h.sanitizeContactContext({ source_path: '/uniformes', garment_category: 'pantalones-dama' })), { source_path: '/uniformes', interest_type: 'prenda', garment_category: 'pantalones-dama' })
-  for (const source_path of ['https://evil.test', '//evil.test', '/uniformes/retail/avinka', '/uniformes\nInjected: yes', '/uniformes/../admin']) assert.deepEqual(plain(h.sanitizeContactContext({ source_path, sector: 'retail', case_id: 'decor-center' })), { source_path: '/contacto' })
+  for (const source_path of ['https://evil.test', '//evil.test', '/uniformes/educacion/isil', '/uniformes\nInjected: yes', '/uniformes/../admin']) assert.deepEqual(plain(h.sanitizeContactContext({ source_path, sector: 'retail', case_id: 'decor-center' })), { source_path: '/contacto' })
   assert.deepEqual(plain(h.browserContactContext('/contacto', new URLSearchParams())), { source_path: '/contacto' })
   assert.deepEqual(plain(h.browserContactContext('/', new URLSearchParams())), { source_path: '/' })
 })
@@ -57,7 +57,7 @@ test('Decor Center publishes four approved outfits; individual photos remain pen
   const { data } = fixture()
   assert.equal(data.projectCases.length, 6)
   assert.equal(data.garmentCategories.length, 8)
-  assert.deepEqual(plain(data.publishedCases.map(item => item.id)), ['decor-center'])
+  assert.deepEqual(plain(data.publishedCases.map(item => item.id)), ['decor-center', 'avinka'])
   const decor = data.publishedCases[0]
   assert.equal(decor.seasons.flatMap(season => season.outfits).filter(outfit => outfit.status === "published" && outfit.fullImage).length, 4)
   for (const season of decor.seasons) {
@@ -66,12 +66,12 @@ test('Decor Center publishes four approved outfits; individual photos remain pen
   }
   assert.deepEqual(plain(decor.pending), ['Fotografías individuales de las prendas'])
   for (const photo of decor.fullImages) assert(fs.existsSync(path.join(root, "public", photo.src)))
-  for (const item of data.projectCases.filter(item => item.id !== "decor-center")) assert.equal(data.isPublishedCase({ ...item, status: 'published' }), false)
+  for (const item of data.projectCases.filter(item => !["decor-center", "avinka"].includes(item.id))) assert.equal(data.isPublishedCase({ ...item, status: 'published' }), false)
   for (const item of data.garments) assert(fs.existsSync(path.join(root, 'public', item.image)))
 })
 
 test('the actual POST includes sanitized sector/category/direct context in the prepared Resend message', async () => {
-  for (const source of [{ source_path: '/uniformes/retail/decor-center' }, { source_path: '/uniformes/educacion' }, { source_path: '/uniformes/camisas' }, { source_path: '/uniformes', garment_category: 'pantalones-dama' }, { source_path: '/contacto' }]) {
+  for (const source of [{ source_path: '/uniformes/retail/avinka' }, { source_path: '/uniformes/retail/decor-center' }, { source_path: '/uniformes/educacion' }, { source_path: '/uniformes/camisas' }, { source_path: '/uniformes', garment_category: 'pantalones-dama' }, { source_path: '/contacto' }]) {
     const f = fixture()
     const response = await f.POST(request({ ...valid, ...source, case_id: 'forged', sector: 'wrong' }))
     assert.equal(response.status, 200)
@@ -85,6 +85,7 @@ test('the actual POST includes sanitized sector/category/direct context in the p
     assert(!email.text.includes('forged') && !email.text.includes('wrong'))
     if (source.garment_category) assert(email.text.includes(`garment_category: ${source.garment_category}`))
     if (source.source_path === '/uniformes/educacion') assert(email.text.includes('sector: educacion'))
+    if (source.source_path === '/uniformes/retail/avinka') { assert(email.text.includes('interest_type: caso')); assert(email.text.includes('case_id: avinka')); assert(email.text.includes('sector: retail')) }
     if (source.source_path === '/uniformes/retail/decor-center') { assert(email.text.includes('interest_type: caso')); assert(email.text.includes('case_id: decor-center')); assert(email.text.includes('sector: retail')) }
     if (source.source_path === '/contacto') assert(!email.text.includes('interest_type:'))
   }
