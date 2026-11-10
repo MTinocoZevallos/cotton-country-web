@@ -33,7 +33,10 @@ export type ProjectCase = {
   id: string; client: string; sector: SectorId; status: "draft" | "published"
   fullImages: CasePhoto[]
   subtitle?: string; concept?: string; seasons?: CaseSeason[]
-  title?: string; eyebrow?: string; presentation?: "editorial" | "variants"
+  title?: string; eyebrow?: string; presentation?: "editorial" | "variants" | "roles"
+  intro?: string
+  roleHeadings?: { challenge: string; result: string }
+  roles?: { id: string; title: string; description: string; photo: CasePhoto }[]
   seo?: { title: string; description: string }
   features?: { name: string; description: string }[]
   futureCategories?: string[]
@@ -45,6 +48,13 @@ const decorWinter: CasePhoto = { src: "/casos/decor-center/invierno-dama.webp", 
 const decorSummer: CasePhoto = { src: "/casos/decor-center/verano-dama.webp", alt: "Uniforme de verano de Decor Center: polo negro de cuello V y pantalón negro", width: 1071, height: 1468, evidence: "Versión con postura y nitidez ajustadas, aprobada en la conversación; referencia: Uniforme Completo - DecorCenter Verano.png" }
 const decorWinterMan: CasePhoto = { src: "/casos/decor-center/invierno-caballero.webp", alt: "Uniforme masculino de invierno de Decor Center: chompa camel de cuello V, camisa negra y pantalón negro", width: 768, height: 1024, evidence: "Fotografía definitiva proporcionada en Decor Center Hombres.zip: DecorCenter_Hombre_Invierno.png; optimización WebP sin pérdida" }
 const decorSummerMan: CasePhoto = { src: "/casos/decor-center/verano-caballero.webp", alt: "Uniforme masculino de verano de Decor Center: polo box negro con identificación corporativa y pantalón negro", width: 768, height: 1024, evidence: "Fotografía definitiva proporcionada en Decor Center Hombres.zip: DecorCenter_Hombre_Verano.png; optimización WebP sin pérdida" }
+const isilPhotos: CasePhoto[] = [
+  { src: "/casos/isil/01-supervisoras.webp", alt: "Supervisora de Servicios al Estudiante de ISIL con casaca acolchada negra, polo blanco y pantalón oscuro de drill", width: 1024, height: 1536, evidence: "01_Supervisoras.png de Isil.zip, optimización WebP sin pérdida" },
+  { src: "/casos/isil/02-asesores.webp", alt: "Asesor de ISIL con chaleco acolchado negro, polo negro institucional y jean", width: 1024, height: 1536, evidence: "02_Asesores.png de Isil.zip, optimización WebP sin pérdida" },
+  { src: "/casos/isil/03-recursos-tecnologicos.webp", alt: "Personal de Recursos Tecnológicos con casaca softshell gris, bordado ISIL y jean", width: 1024, height: 1536, evidence: "03_Recursos_Tecnologicos.png de Isil.zip, optimización WebP sin pérdida" },
+  { src: "/casos/isil/04-prospeccion.webp", alt: "Personal de Prospección con bomber azul oscuro de mangas beige, bordado ISIL y jean", width: 1024, height: 1536, evidence: "04_Prospeccion.png de Isil.zip, optimización WebP sin pérdida" },
+  { src: "/casos/isil/05-harson.webp", alt: "Uniforme Harson University con casaca verde, distintivo HU, parche de bandera estadounidense y pantalón oscuro de drill", width: 1024, height: 1536, evidence: "05_Harson.png de Isil.zip, optimización WebP sin pérdida" },
+]
 export const projectCases: ProjectCase[] = [
   {
     id: "decor-center", client: "Decor Center", sector: "retail", status: "published",
@@ -91,7 +101,27 @@ export const projectCases: ProjectCase[] = [
     concept: "Un buen uniforme convierte una idea de marca en una experiencia visible.",
     pending: ["Fotografías individuales de las prendas"],
   },
-  { id: "isil", client: "ISIL", sector: "educacion", status: "draft", fullImages: [], garmentIds: [], categories: [], story: {}, pending: ["Fotografías verificadas", "Historia del proyecto"] },
+  {
+    id: "isil", client: "ISIL", sector: "educacion", status: "published", presentation: "roles",
+    eyebrow: "ISIL", title: "ISIL: una identidad, distintas funciones",
+    intro: "En una institución educativa, no todos los equipos desempeñan las mismas funciones ni necesitan vestir de la misma manera.\n\nISIL buscaba desarrollar una propuesta de uniformes que respondiera a las particularidades de sus diferentes áreas, manteniendo una identidad institucional reconocible.\n\nEl proyecto comprendió cinco grupos de personal, cada uno con requerimientos específicos de presentación, comodidad y funcionalidad.",
+    seo: { title: "Uniformes para ISIL | Cotton Country", description: "Conoce el proyecto de uniformes para cinco equipos de ISIL: propuestas para distintas funciones con una identidad institucional reconocible." },
+    fullImages: isilPhotos, garmentIds: [], categories: ["casacas", "chalecos", "polos", "pantalones-dama", "pantalones-caballero"],
+    roleHeadings: { challenge: "Diferenciar funciones sin perder identidad", result: "La coherencia no exige uniformidad" },
+    roles: [
+      { id: "supervisoras", title: "01 — Supervisoras de Servicios al Estudiante", photo: isilPhotos[0], description: "Una propuesta de presentación profesional que combina prendas de líneas sobrias con alternativas de abrigo, manteniendo una imagen institucional adecuada para la atención y supervisión." },
+      { id: "asesores", title: "02 — Asesores", photo: isilPhotos[1], description: "Una combinación de polo institucional y prendas de abrigo que aporta comodidad y una imagen contemporánea para el trabajo diario y el contacto con estudiantes." },
+      { id: "recursos-tecnologicos", title: "03 — Recursos Tecnológicos", photo: isilPhotos[2], description: "Una propuesta funcional de tonos grises, con casaca softshell y detalles institucionales, pensada para acompañar las actividades del equipo tecnológico." },
+      { id: "prospeccion", title: "04 — Prospección", photo: isilPhotos[3], description: "Una interpretación más dinámica de la identidad institucional mediante una casaca bomber de inspiración universitaria, con combinaciones cromáticas y acabados diferenciados." },
+      { id: "harson", title: "05 — Harson University", photo: isilPhotos[4], description: "Una propuesta con identidad propia, desarrollada alrededor del verde institucional, los distintivos HU y los detalles característicos de su indumentaria universitaria." },
+    ],
+    story: {
+      challenge: "El reto consistía en interpretar las referencias y especificaciones de cada área para convertirlas en prendas concretas, coherentes con la identidad visual de ISIL y adecuadas al trabajo cotidiano.\n\nNo se trataba de aplicar un mismo uniforme a toda la organización, sino de resolver necesidades distintas mediante una propuesta coordinada.",
+      solution: "Cinco equipos, cinco propuestas",
+      result: "El resultado es un conjunto de propuestas que reconoce las diferencias entre equipos y funciones sin renunciar a una presentación institucional cuidada.\n\nCada prenda responde a un contexto específico, mientras los colores, materiales, acabados y detalles contribuyen a construir una identidad visual consistente.",
+    },
+    pending: [],
+  },
   {
     id: "columbia", client: "Instituto Columbia", sector: "educacion", status: "published", presentation: "variants",
     eyebrow: "INSTITUTO COLUMBIA", title: "De una idea de diseño a un uniforme para todas las estaciones.",
@@ -122,7 +152,9 @@ export const projectCases: ProjectCase[] = [
 export function isPublishedCase(item: ProjectCase) {
   return item.status === "published" && !!sectors.find(s => s.id === item.sector)?.public && item.fullImages.length > 0 &&
     item.garmentIds.every(id => garments.some(g => g.id === id && g.caseId === item.id)) &&
-    ((item.presentation === "editorial" || item.presentation === "variants")
+    (item.presentation === "roles"
+      ? !!item.roles?.length && item.roles.every(role => role.title.trim() && role.description.trim() && item.fullImages.some(photo => photo.src === role.photo.src)) && [item.story.challenge, item.story.solution, item.story.result].every(value => !!value?.trim())
+      : (item.presentation === "editorial" || item.presentation === "variants")
       ? item.fullImages.length >= 2 && [item.story.challenge, item.story.solution, item.story.result].every(value => !!value?.trim())
       : item.seasons
       ? item.seasons.some(season => season.outfits.some(outfit => outfit.status === "published" && !!outfit.fullImage)) && [item.story.challenge, item.story.solution, item.story.result].every(value => !!value?.trim())

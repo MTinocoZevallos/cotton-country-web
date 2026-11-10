@@ -5,6 +5,7 @@ import { notFound } from "next/navigation"
 import { casePath, garmentCategories, garments, publishedCases } from "@/lib/uniforms"
 import { contactHref } from "@/lib/contact-context"
 import { editorialSerif } from "@/components/home-font"
+import CaseRoles from "@/components/uniforms/CaseRoles"
 import CaseSeasons from "@/components/uniforms/CaseSeasons"
 import styles from "@/components/uniforms/uniforms.module.css"
 type Params = { sector: string; caseId: string }
@@ -20,8 +21,8 @@ export default async function CasePage({ params }: { params: Promise<Params> }) 
   const related = garments.filter(garment => item.garmentIds.includes(garment.id))
   const labels = { requirement: "El requerimiento", challenge: "El desafío", solution: "Nuestra solución", result: "El resultado" }
   return <div className={`${styles.page} ${editorialSerif.variable}`}><div className={styles.container}>
-    <section className={styles.intro}><Link className={styles.link} href={`/uniformes/${item.sector}`}>← Volver al sector</Link><p className={styles.eyebrow}>{item.eyebrow ?? "Proyecto de uniformes"}</p><h1>{item.title ?? item.client}</h1>{item.subtitle && <p className={styles.copy}>{item.subtitle}</p>}</section>
-    {item.presentation === "variants" ? <section aria-label="Un mismo uniforme para invierno y verano">
+    <section className={styles.intro}><Link className={styles.link} href={`/uniformes/${item.sector}`}>← Volver al sector</Link><p className={styles.eyebrow}>{item.eyebrow ?? "Proyecto de uniformes"}</p><h1>{item.title ?? item.client}</h1>{item.subtitle && <p className={styles.copy}>{item.subtitle}</p>}{item.intro && <div className={styles.copy}>{item.intro.split("\n\n").map(paragraph => <p key={paragraph}>{paragraph}</p>)}</div>}</section>
+    {item.presentation === "roles" ? <CaseRoles project={item} /> : item.presentation === "variants" ? <section aria-label="Un mismo uniforme para invierno y verano">
       <div className={styles.uniformVariants}>{item.fullImages.map(photo => <figure key={photo.src} className={styles.editorialPhoto}>
         <Image src={photo.src} alt={photo.alt} width={photo.width ?? 1024} height={photo.height ?? 1024} sizes="(max-width:575px) 100vw, 50vw" />
         <figcaption>{photo.caption}</figcaption>
@@ -56,7 +57,7 @@ export default async function CasePage({ params }: { params: Promise<Params> }) 
         <figcaption>Equipo de impulsadoras Artisan</figcaption>
       </figure>)}
     </section> : item.seasons ? <CaseSeasons project={item} /> : <div className={styles.caseLayout}><div>{item.fullImages.map(photo => <div key={photo.src} className={styles.caseMain}><Image src={photo.src} alt={photo.alt} fill sizes="(max-width:575px) 100vw, 60vw" /></div>)}</div><div className={styles.caseGarments}>{related.map(garment => <Link key={garment.id} href={garmentCategories.find(category => category.id === garment.category)!.href}><div className={styles.photo}><Image src={garment.image} alt={garment.alt} fill sizes="(max-width:575px) 100vw, 40vw" /></div><h3>{garment.name}</h3></Link>)}</div></div>}
-    <section className={`${styles.section} ${styles.story}`}>{Object.entries(labels).filter(([key]) => item.story[key as keyof typeof labels]).map(([key,label]) => <article key={key}><h2>{label}</h2>{item.story[key as keyof typeof labels]!.split("\n\n").map(paragraph => <p key={paragraph} className={styles.copy}>{paragraph}</p>)}</article>)}</section>
+    {item.presentation !== "roles" && <section className={`${styles.section} ${styles.story}`}>{Object.entries(labels).filter(([key]) => item.story[key as keyof typeof labels]).map(([key,label]) => <article key={key}><h2>{label}</h2>{item.story[key as keyof typeof labels]!.split("\n\n").map(paragraph => <p key={paragraph} className={styles.copy}>{paragraph}</p>)}</article>)}</section>}
     {item.concept && <div className={styles.caseConcept}><p className={styles.eyebrow}>Concepto central</p><p>{item.concept}</p></div>}
     <div className={styles.cta}><h2>Hablemos de tu proyecto.</h2><Link className={styles.button} href={contactHref({ source_path: casePath(item) })}>Solicitar una propuesta →</Link></div>
   </div></div>

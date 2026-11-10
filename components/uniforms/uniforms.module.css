@@ -67,3 +67,10 @@
 
 .uniformVariants { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 32px; margin-bottom: 64px; }
 @media(max-width:575px) { .uniformVariants { grid-template-columns: 1fr; gap: 40px; margin-bottom: 40px; } }
+
+.roleRow { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; padding-block: 64px; border-bottom: 1px solid #e2e1dc; }
+.roleRow .editorialPhoto { width: 100%; max-width: 520px; }
+.roleRow:nth-child(even) .editorialPhoto { order: 2; justify-self: end; }
+.roleSubtitle { margin-top: 24px; }
+@media(max-width:900px) { .roleRow { gap: 40px; } }
+@media(max-width:575px) { .roleRow { grid-template-columns: 1fr; gap: 28px; padding-block: 40px; } .roleRow:nth-child(even) .editorialPhoto { order: initial; justify-self: auto; } }
