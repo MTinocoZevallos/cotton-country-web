@@ -11,7 +11,7 @@
 .hero { position: relative; isolation: isolate; color: var(--cc-white); background: var(--cc-deep-blue); min-height: 620px; height: 90svh; max-height: 820px; }
 .heroBackdrop, .heroShade { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
 .heroBackdrop { top: 80px; animation: photoEnter 1.2s ease both; }
-.heroImage { object-fit: cover; object-position: 70% 40%; }
+.heroImage { object-fit: cover; object-position: 70% 0%; }
 .heroShade { background: linear-gradient(90deg, color-mix(in srgb, var(--cc-charcoal) 74%, transparent), color-mix(in srgb, var(--cc-charcoal) 48%, transparent) 40%, color-mix(in srgb, var(--cc-charcoal) 12%, transparent) 62%, transparent 78%); }
 .heroContent { position: relative; width: calc(100% - 112px); max-width: 1600px; margin-inline: auto; padding-block: 132px 48px; height: 100%; display: flex; flex-direction: column; justify-content: center; }
 .home .heroTitle { margin-top: 0; max-width: 850px; position: relative; color: var(--cc-white); font-family: var(--font-editorial-serif), Georgia, serif; font-size: clamp(52px, 5.6vw, 80px); font-weight: 400; letter-spacing: -.025em; line-height: 1.05; }
@@ -53,7 +53,9 @@
 .productGrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: stretch; gap: 32px; }
 .product { display: flex; flex-direction: column; min-width: 0; color: var(--cc-charcoal); }
 .productVisual { flex-shrink: 0; position: relative; aspect-ratio: 3 / 4; border-radius: 24px; overflow: hidden; background: var(--cc-white); }
-.productImage { object-fit: cover; object-position: 50% 0%; transform-origin: 50% 0%; transition: scale .5s ease; }
+.productImage { object-fit: contain; object-position: 50% 50%; transform-origin: 50% 0%; transition: scale .5s ease; }
+.productPair { position: absolute; inset: 0; display: flex; gap: 8px; }
+.productHalf { position: relative; flex: 1; min-width: 0; }
 .productTitle { padding-top: 20px; }
 .productTitle h3 { font-size: 29px; }
 .productDetail { margin-top: 8px; font-size: 15px; line-height: 1.7; color: var(--cc-text-secondary); }
@@ -129,7 +131,7 @@
   .hero { min-height: 860px; height: auto; max-height: none; }
   .heroContent { padding-block: 420px 72px; min-height: inherit; height: auto; justify-content: flex-start; }
   .home .heroTitle { font-size: clamp(36px, 10.8vw, 54px); }
-  .heroBackdrop { height: auto; bottom: 0; background: url('/hero-airport-natural.webp') no-repeat 78% bottom / auto 1100px; }
+  .heroBackdrop { height: auto; bottom: 0; background: url('/home-2027/hero.webp') no-repeat 78% bottom / auto 1100px; }
   .heroImage { height: 520px !important; object-position: 80% 0%; mask-image: linear-gradient(180deg, #000 72%, transparent); }
   .heroShade { background: linear-gradient(180deg, transparent 27%, color-mix(in srgb, var(--cc-charcoal) 22%, transparent) 40%, color-mix(in srgb, var(--cc-charcoal) 70%, transparent) 65%, color-mix(in srgb, var(--cc-deep-blue) 68%, transparent)); }
   .heroBottom { display: block; }

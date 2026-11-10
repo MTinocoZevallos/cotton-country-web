@@ -46,7 +46,7 @@ export default function Hero() {
   return (
     <section ref={hero} className={`${styles.hero} ${editorialSerif.variable}`} aria-labelledby="hero-title" data-hero-phase="typing">
       <div className={styles.heroBackdrop}>
-        <Image src="/hero-airport-natural.webp" alt="Uniforme corporativo en un entorno profesional" fill unoptimized sizes="(max-width: 767px) 1200px, 100vw" preload className={styles.heroImage} />
+        <Image src="/home-2027/hero.webp" alt="Uniforme corporativo en un entorno profesional" fill sizes="(max-width: 767px) 925px, 100vw" preload className={styles.heroImage} />
       </div>
       <div className={styles.heroShade} />
       <div className={styles.heroContent}>
