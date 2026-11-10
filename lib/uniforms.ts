@@ -24,15 +24,43 @@ export const garments: Garment[] = [
   { id: "pantalon-caballero", category: "pantalones-caballero", name: "Pantalón azul marino de caballero", image: "/home-2027/pantalon-hombre.webp", alt: "Pantalón azul marino de caballero, vista completa" },
   { id: "polo-marino", category: "polos", name: "Polo azul marino", image: "/home-2027/polos.webp", alt: "Modelo masculino con polo azul marino de manga corta" },
 ]
+export type CasePhoto = { src: string; alt: string; evidence: string; width?: number; height?: number }
+export type CaseSeason = {
+  id: string; name: string
+  outfits: { id: string; name: string; status: "draft" | "published"; fullImage?: CasePhoto; garmentIds: string[]; confirmedDescription?: string }[]
+}
 export type ProjectCase = {
   id: string; client: string; sector: SectorId; status: "draft" | "published"
-  fullImages: { src: string; alt: string; evidence: string }[]
+  fullImages: CasePhoto[]
+  subtitle?: string; concept?: string; seasons?: CaseSeason[]
   garmentIds: string[]; categories: GarmentCategory[]
   story: { requirement?: string; challenge?: string; solution?: string; result?: string }
   pending: string[]
 }
+const decorWinter: CasePhoto = { src: "/casos/decor-center/invierno-dama.webp", alt: "Uniforme de invierno de Decor Center: chaleco largo camel sin botones, blusa negra y pantalón negro", width: 1254, height: 1254, evidence: "Versión con postura y nitidez ajustadas, aprobada en la conversación; referencia: Uniforme Completo - DecorCenter Invierno.png" }
+const decorSummer: CasePhoto = { src: "/casos/decor-center/verano-dama.webp", alt: "Uniforme de verano de Decor Center: polo negro de cuello V y pantalón negro", width: 1071, height: 1468, evidence: "Versión con postura y nitidez ajustadas, aprobada en la conversación; referencia: Uniforme Completo - DecorCenter Verano.png" }
 export const projectCases: ProjectCase[] = [
-  { id: "decor-center", client: "Decor Center", sector: "retail", status: "draft", fullImages: [], garmentIds: [], categories: [], story: {}, pending: ["Fotografías del uniforme y de prendas individuales", "Historia del proyecto"] },
+  {
+    id: "decor-center", client: "Decor Center", sector: "retail", status: "published",
+    subtitle: "Uniformes que conectan identidad, estilo y personas.",
+    concept: "La identidad corporativa no siempre necesita un logotipo. También puede expresarse mediante el diseño del uniforme.",
+    fullImages: [decorWinter, decorSummer], garmentIds: [], categories: ["chalecos", "blusas", "polos", "pantalones-dama"],
+    seasons: [
+      { id: "invierno", name: "Invierno", outfits: [
+        { id: "invierno-dama", name: "Uniforme de dama", status: "published", fullImage: decorWinter, garmentIds: [] },
+        { id: "invierno-caballero", name: "Uniforme de caballero", status: "draft", garmentIds: [], confirmedDescription: "Chompa de cuello V camel/marrón, camisa negra y pantalón negro. Silueta estilizada y presentación contemporánea, sin logotipos, bordados ni estampados." },
+      ] },
+      { id: "verano", name: "Verano", outfits: [
+        { id: "verano-dama", name: "Uniforme de dama", status: "published", fullImage: decorSummer, garmentIds: [] },
+      ] },
+    ],
+    story: {
+      challenge: "Desarrollar uniformes acordes con la presentación que los clientes esperan en los espacios comerciales de Decor Center, considerando también las preferencias estéticas de sus colaboradores.",
+      solution: "Diseñamos propuestas diferenciadas para invierno y verano. Incorporamos el camel, un color de tendencia en aquel momento, y prendas de cortes estilizados. El chaleco femenino y la chompa masculina aportaron una identidad visual reconocible, mientras que los conjuntos de verano ofrecieron una alternativa más ligera.",
+      result: "La propuesta tuvo una recepción positiva entre los colaboradores, quienes valoraron que el vestuario considerara sus preferencias de estilo. El uniforme contribuyó a expresar la identidad de la empresa mediante sus propios colores, siluetas y acabados.",
+    },
+    pending: ["Fotografía masculina de invierno", "Fotografías individuales de las prendas"],
+  },
   { id: "avinka", client: "Avinka", sector: "retail", status: "draft", fullImages: [{ src: "/proyecto-avinka.png", alt: "Uniforme Avinka con blusa y pantalón", evidence: "app/proveedor-de-uniformes-corporativos/page.tsx: proyecto Avinka identificado con este archivo" }], garmentIds: [], categories: ["blusas", "pantalones-dama"], story: { solution: "Blusa y pantalón para atención al cliente, presentación y comodidad en operación diaria." }, pending: ["Fotografías individuales verificadas", "Requerimiento, desafío y resultado documentados"] },
   { id: "isil", client: "ISIL", sector: "educacion", status: "draft", fullImages: [], garmentIds: [], categories: [], story: {}, pending: ["Fotografías verificadas", "Historia del proyecto"] },
   { id: "columbia", client: "Columbia", sector: "educacion", status: "draft", fullImages: [], garmentIds: [], categories: [], story: {}, pending: ["Fotografías verificadas", "Historia del proyecto"] },
@@ -41,8 +69,10 @@ export const projectCases: ProjectCase[] = [
 ]
 export function isPublishedCase(item: ProjectCase) {
   return item.status === "published" && !!sectors.find(s => s.id === item.sector)?.public && item.fullImages.length > 0 &&
-    item.garmentIds.length > 0 && item.garmentIds.every(id => garments.some(g => g.id === id && g.caseId === item.id)) &&
-    Object.values(item.story).length === 4 && Object.values(item.story).every(value => !!value?.trim())
+    item.garmentIds.every(id => garments.some(g => g.id === id && g.caseId === item.id)) &&
+    (item.seasons
+      ? item.seasons.some(season => season.outfits.some(outfit => outfit.status === "published" && !!outfit.fullImage)) && [item.story.challenge, item.story.solution, item.story.result].every(value => !!value?.trim())
+      : item.garmentIds.length > 0 && Object.values(item.story).length === 4 && Object.values(item.story).every(value => !!value?.trim()))
 }
 export const publishedCases = projectCases.filter(isPublishedCase)
 export function casePath(item: ProjectCase) { return `/uniformes/${item.sector}/${item.id}` }
