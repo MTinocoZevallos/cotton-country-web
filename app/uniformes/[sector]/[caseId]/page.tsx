@@ -21,7 +21,21 @@ export default async function CasePage({ params }: { params: Promise<Params> }) 
   const labels = { requirement: "El requerimiento", challenge: "El desafío", solution: "Nuestra solución", result: "El resultado" }
   return <div className={`${styles.page} ${editorialSerif.variable}`}><div className={styles.container}>
     <section className={styles.intro}><Link className={styles.link} href={`/uniformes/${item.sector}`}>← Volver al sector</Link><p className={styles.eyebrow}>{item.eyebrow ?? "Proyecto de uniformes"}</p><h1>{item.title ?? item.client}</h1>{item.subtitle && <p className={styles.copy}>{item.subtitle}</p>}</section>
-    {item.presentation === "editorial" ? <section aria-label={`Uniformes de ${item.client}`}>
+    {item.presentation === "variants" ? <section aria-label="Un mismo uniforme para invierno y verano">
+      <div className={styles.uniformVariants}>{item.fullImages.map(photo => <figure key={photo.src} className={styles.editorialPhoto}>
+        <Image src={photo.src} alt={photo.alt} width={photo.width ?? 1024} height={photo.height ?? 1024} sizes="(max-width:575px) 100vw, 50vw" />
+        <figcaption>{photo.caption}</figcaption>
+      </figure>)}</div>
+      <div className={`${styles.section} ${styles.split}`}>
+        <div><h2>Un conjunto, prendas complementarias.</h2>
+          <nav className={styles.caseLinks} aria-label={`Categorías relacionadas con ${item.client}`}>{item.categories.map(id => {
+            const category = garmentCategories.find(category => category.id === id)!
+            return <Link key={id} className={styles.link} href={category.href}>{category.name} →</Link>
+          })}</nav>
+        </div>
+        <dl className={styles.caseFeatures}>{item.features?.map(feature => <div key={feature.name}><dt>{feature.name}</dt><dd>{feature.description}</dd></div>)}</dl>
+      </div>
+    </section> : item.presentation === "editorial" ? <section aria-label={`Uniformes de ${item.client}`}>
       <div className={styles.editorialLead}>
         <figure className={styles.editorialPhoto}>
           <Image src={item.fullImages[0].src} alt={item.fullImages[0].alt} width={item.fullImages[0].width ?? 1024} height={item.fullImages[0].height ?? 1024} sizes="(max-width:900px) 100vw, 55vw" />

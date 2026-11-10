@@ -64,3 +64,6 @@
 .editorialTeam { margin-bottom: 64px; }
 @media(max-width:900px) { .editorialLead { grid-template-columns: 1fr; gap: 32px; } }
 @media(max-width:575px) { .editorialPhoto img { border-radius: 20px; } .editorialLead { padding-bottom: 40px; } .editorialTeam { margin-bottom: 40px; } }
+
+.uniformVariants { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 32px; margin-bottom: 64px; }
+@media(max-width:575px) { .uniformVariants { grid-template-columns: 1fr; gap: 40px; margin-bottom: 40px; } }

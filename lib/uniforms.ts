@@ -24,7 +24,7 @@ export const garments: Garment[] = [
   { id: "pantalon-caballero", category: "pantalones-caballero", name: "Pantalón azul marino de caballero", image: "/home-2027/pantalon-hombre.webp", alt: "Pantalón azul marino de caballero, vista completa" },
   { id: "polo-marino", category: "polos", name: "Polo azul marino", image: "/home-2027/polos.webp", alt: "Modelo masculino con polo azul marino de manga corta" },
 ]
-export type CasePhoto = { src: string; alt: string; evidence: string; width?: number; height?: number }
+export type CasePhoto = { src: string; alt: string; evidence: string; width?: number; height?: number; caption?: string }
 export type CaseSeason = {
   id: string; name: string
   outfits: { id: string; name: string; status: "draft" | "published"; fullImage?: CasePhoto; garmentIds: string[]; confirmedDescription?: string }[]
@@ -33,7 +33,7 @@ export type ProjectCase = {
   id: string; client: string; sector: SectorId; status: "draft" | "published"
   fullImages: CasePhoto[]
   subtitle?: string; concept?: string; seasons?: CaseSeason[]
-  title?: string; eyebrow?: string; presentation?: "editorial"
+  title?: string; eyebrow?: string; presentation?: "editorial" | "variants"
   seo?: { title: string; description: string }
   features?: { name: string; description: string }[]
   futureCategories?: string[]
@@ -92,14 +92,37 @@ export const projectCases: ProjectCase[] = [
     pending: ["Fotografías individuales de las prendas"],
   },
   { id: "isil", client: "ISIL", sector: "educacion", status: "draft", fullImages: [], garmentIds: [], categories: [], story: {}, pending: ["Fotografías verificadas", "Historia del proyecto"] },
-  { id: "columbia", client: "Columbia", sector: "educacion", status: "draft", fullImages: [], garmentIds: [], categories: [], story: {}, pending: ["Fotografías verificadas", "Historia del proyecto"] },
+  {
+    id: "columbia", client: "Instituto Columbia", sector: "educacion", status: "published", presentation: "variants",
+    eyebrow: "INSTITUTO COLUMBIA", title: "De una idea de diseño a un uniforme para todas las estaciones.",
+    subtitle: "Un único uniforme adaptable a invierno y verano.",
+    seo: { title: "Uniformes para Instituto Columbia | Cotton Country", description: "Conoce cómo Cotton Country convirtió las ideas de diseño del Instituto Columbia en un uniforme institucional versátil para invierno y verano." },
+    fullImages: [
+      { src: "/casos/columbia/con-saco.jpg", alt: "Uniforme del Instituto Columbia con saco azul institucional, blusa blanca, pantalón azul y pañuelo azul y amarillo", width: 1536, height: 2752, caption: "Con saco — Invierno", evidence: "Instituto Columbia 2.jfif de Columbia.zip, archivo JPEG original sin recomprimir ni retocar" },
+      { src: "/casos/columbia/sin-saco.jpg", alt: "El mismo uniforme del Instituto Columbia sin saco: blusa blanca de manga corta con detalle de confección, pantalón azul institucional y pañuelo azul y amarillo", width: 1536, height: 2752, caption: "Sin saco — Verano", evidence: "Instituto Columbia.jfif de Columbia.zip, archivo JPEG original sin recomprimir ni retocar" },
+    ],
+    garmentIds: [], categories: ["sacos", "blusas", "pantalones-dama"],
+    features: [
+      { name: "Saco de dama", description: "Azul institucional, corte contemporáneo." },
+      { name: "Blusa", description: "Blanca, manga corta con detalle especial de confección." },
+      { name: "Pantalón de dama", description: "Azul institucional, corte definido para el conjunto." },
+      { name: "Pañuelo", description: "Azul y amarillo, complemento distintivo." },
+    ],
+    story: {
+      challenge: "El Instituto Columbia buscaba renovar los uniformes de su personal administrativo y de sus distintas sedes.\n\nLa institución había investigado referencias de diseño y tenía una idea clara de la imagen que deseaba proyectar. El reto consistía en determinar cómo trasladar esas referencias a prendas reales, conservando los detalles que consideraba importantes.\n\nColumbia buscaba una presentación profesional y contemporánea, con un carácter más juvenil y alejado de la estética tradicional de los uniformes institucionales.\n\nAdemás, el conjunto debía ofrecer una solución práctica para invierno y verano, sin necesidad de desarrollar dos uniformes completamente diferentes.",
+      solution: "En Cotton Country trabajamos a partir de las referencias proporcionadas por Columbia, traduciendo su propuesta visual a modelos concretos y detalles de confección.\n\nPrestamos especial atención al diseño de las mangas de la blusa, el corte del pantalón, la estructura del saco y el pañuelo como elemento distintivo del conjunto.\n\nLa elección del color también fue fundamental. En lugar del azul marino convencional, se seleccionó una tonalidad de azul que aportara frescura y personalidad, manteniendo la formalidad necesaria para el entorno educativo.\n\nEl conjunto se resolvió como un sistema de prendas complementarias: con saco para invierno y sin saco para verano, conservando los mismos elementos de identidad.\n\nDe esta manera, una sola propuesta de uniforme podía adaptarse a diferentes condiciones de uso.",
+      result: "El proyecto permitió convertir las referencias de diseño de Columbia en un uniforme real, coherente y versátil.\n\nLos cortes contemporáneos, los detalles de confección, el pañuelo y la tonalidad de azul construyeron una identidad institucional renovada.\n\nLa posibilidad de utilizar el mismo conjunto en invierno y verano aportó flexibilidad sin perder uniformidad visual.",
+    },
+    concept: "Un buen proyecto de uniformes no consiste únicamente en reproducir una imagen, sino en convertir una idea en prendas que funcionen en la realidad.",
+    pending: ["Fotografías individuales de las prendas"],
+  },
   { id: "molino-contreras", client: "Molino Contreras", sector: "agroindustria", status: "draft", fullImages: [], garmentIds: [], categories: [], story: {}, pending: ["Fotografías aprobadas a partir de muestras reales", "Historia del proyecto"] },
   { id: "premex", client: "Premex", sector: "agroindustria", status: "draft", fullImages: [], garmentIds: [], categories: [], story: {}, pending: ["Fotografías aprobadas a partir de muestras reales", "Historia del proyecto"] },
 ]
 export function isPublishedCase(item: ProjectCase) {
   return item.status === "published" && !!sectors.find(s => s.id === item.sector)?.public && item.fullImages.length > 0 &&
     item.garmentIds.every(id => garments.some(g => g.id === id && g.caseId === item.id)) &&
-    (item.presentation === "editorial"
+    ((item.presentation === "editorial" || item.presentation === "variants")
       ? item.fullImages.length >= 2 && [item.story.challenge, item.story.solution, item.story.result].every(value => !!value?.trim())
       : item.seasons
       ? item.seasons.some(season => season.outfits.some(outfit => outfit.status === "published" && !!outfit.fullImage)) && [item.story.challenge, item.story.solution, item.story.result].every(value => !!value?.trim())
