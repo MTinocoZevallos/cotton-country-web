@@ -7,7 +7,7 @@ import { contactHref } from "@/lib/contact-context"
 
 export const metadata: Metadata = {
   title: "Camisas corporativas | Cotton Country",
-  description: "Camisas de vestir, Oxford y funcionales. Desarrollamos cortes, cuellos, pecheras y acabados según las especificaciones de cada proyecto corporativo.",
+  description: "Camisas de vestir, Oxford y funcionales. Desarrollamos cortes, cuellos, pecheras y acabados según las necesidades de cada empresa.",
   alternates: { canonical: "/uniformes/camisas" },
 }
 
@@ -36,14 +36,14 @@ const models = [
   },
   {
     number: "03",
-    title: "Camisa Oxford azul, pechera con pespuntes",
+    title: "Camisa Oxford azul, pechera pespuntada",
     image: "03_camisa_oxford_azul",
     width: 1199,
     height: 1312,
-    alt: "Modelo con camisa Oxford azul, cuello americano con botones, bolsillo en el pecho y pechera de pieza adicional con pespuntes",
+    alt: "Modelo con camisa Oxford azul, cuello americano con botones, bolsillo en el pecho y pechera pespuntada de pieza adicional",
     application: "Identidad de equipo",
     description: "Una propuesta para equipos comerciales, oficinas y atención al cliente, con detalles de confección que acompañan la identidad de la empresa.",
-    details: ["Color azul y cuello americano con botones.", "Pechera de pieza adicional con pespuntes visibles.", "Bolsillo en el pecho."],
+    details: ["Color azul y cuello americano con botones.", "Pechera pespuntada de pieza adicional.", "Bolsillo en el pecho."],
   },
   {
     number: "04",
@@ -51,10 +51,10 @@ const models = [
     image: "04_camisa_tipo_columbia",
     width: 1312,
     height: 1199,
-    alt: "Modelo con camisa funcional beige de manga larga y dos bolsillos delanteros con tapa, sin cintas reflectivas",
+    alt: "Modelo con camisa funcional beige de manga larga y dos bolsillos delanteros con tapa",
     application: "Uso funcional",
     description: "Diseño funcional para operaciones de campo y equipos que necesitan una presentación profesional en sus actividades diarias.",
-    details: ["Color beige y manga larga.", "Dos bolsillos delanteros con tapa.", "Sin cintas reflectivas."],
+    details: ["Color beige y manga larga.", "Dos bolsillos delanteros con tapa."],
   },
   {
     number: "05",
@@ -62,10 +62,10 @@ const models = [
     image: "05_camisa_safari_blanca",
     width: 1312,
     height: 1199,
-    alt: "Modelo con camisa Safari blanca y detalles originales de bolsillos con pliegues y tapas, canesú posterior con malla y manga recogida",
+    alt: "Modelo con camisa Safari blanca, bolsillos con pliegues y tapas, canesú ventilado con malla y manga con sistema roll-up",
     application: "Confección funcional",
-    description: "Una propuesta de manga larga con sistema de recogido y detalles funcionales para el trabajo de campo.",
-    details: ["Color blanco, con detalles y cintas al tono.", "Bolsillos delanteros con pliegues y tapas.", "Canesú posterior aéreo con malla interior.", "Manga larga con sistema de recogido."],
+    description: "Camisa para el trabajo de campo, con canesú ventilado y mangas ajustables mediante sistema roll-up.",
+    details: ["Color blanco, con detalles y cintas al tono.", "Bolsillos delanteros con pliegues y tapas.", "Canesú posterior ventilado con malla interior.", "Manga larga con sistema roll-up."],
   },
 ]
 
@@ -81,7 +81,7 @@ export default function CamisasPage() {
           <h1>Camisas corporativas</h1>
           <div className={styles.copy}>
             <p>Camisas para empresas que necesitan proyectar orden, profesionalismo y coherencia visual en equipos administrativos, comerciales, operativos e institucionales.</p>
-            <p>Desarrollamos diferentes opciones de corte, cuello, pechera, bolsillos y acabados para aplicaciones formales, corporativas y funcionales. Los cortes regular y slim fit se definen según las especificaciones de cada proyecto; no todos los modelos fotografiados se ofrecen en ambos cortes.</p>
+            <p>Los cortes regular y slim fit se definen según el modelo y las especificaciones de cada empresa.</p>
           </div>
         </header>
 
@@ -110,10 +110,10 @@ export default function CamisasPage() {
         </section>
 
         <section className={styles.section} aria-labelledby="proyecto">
-          <h2 id="proyecto">Una camisa para cada proyecto</h2>
+          <h2 id="proyecto">Camisas para distintas necesidades</h2>
           <div className={styles.copy}>
-            <p>La elección del cuello y los acabados permite definir una presentación formal o una imagen más casual. Las opciones de cuello neru ofrecen una imagen diferenciada, moderna y sobria para atención al cliente, hotelería, restaurantes y eventos corporativos.</p>
-            <p>Definimos la propuesta de acuerdo con la identidad visual de tu empresa y el uso previsto, sin limitar el desarrollo a los modelos fotografiados.</p>
+            <p>Desde camisas de vestir para entornos ejecutivos hasta opciones casuales y funcionales para actividades de campo, desarrollamos prendas que combinan presentación, comodidad y acabados de confección.</p>
+            <p>Ofrecemos alternativas de cuello, corte, pechera, bolsillos y tejidos, adaptadas a las necesidades de cada empresa y a las condiciones de uso.</p>
           </div>
         </section>
         <section className={styles.cta} aria-labelledby="solicitar-propuesta">
