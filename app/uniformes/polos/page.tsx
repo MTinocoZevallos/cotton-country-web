@@ -1,3 +1,4 @@
+import { contactHref } from "@/lib/contact-context"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -79,7 +80,7 @@ export default function PolosPage() {
           </div>
 
           <a
-            href="mailto:info@cottoncountry.com.pe"
+            href={contactHref({ source_path: "/uniformes/polos" })}
             className="inline-flex items-center justify-center rounded-lg bg-white px-6 py-3 text-sm font-medium text-[#01018B] hover:bg-gray-100 transition"
           >
             Solicitar propuesta

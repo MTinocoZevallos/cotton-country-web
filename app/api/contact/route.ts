@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server"
 import { Resend } from "resend"
+import { contactContextText, sanitizeContactContext } from "@/lib/contact-context"
 
 const blockedEmailDomains = [
   "gmail.com",
@@ -114,6 +115,7 @@ ${ruc}
 
 Mensaje:
 ${message}
+${contactContextText(sanitizeContactContext(body))}
       `,
     })
 

@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next"
 import { posts } from "./blog/posts"
+import { casePath, publishedCases, sectors } from "@/lib/uniforms"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://cottoncountry.com.pe"
@@ -40,5 +41,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   )
 
-  return [...staticPages, ...blogPages]
+  const uniformPaths = ["/uniformes", "/uniformes/camisas", "/uniformes/blusas", "/uniformes/pantalones", "/uniformes/polos", "/uniformes/scrubs", ...sectors.filter(item => item.public).map(item => `/uniformes/${item.id}`), ...publishedCases.map(casePath)]
+  return [...staticPages, ...blogPages, ...uniformPaths.map(path => ({ url: `${baseUrl}${path}`, changeFrequency: "monthly" as const, priority: 0.7 }))]
 }

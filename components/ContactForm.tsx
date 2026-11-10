@@ -1,6 +1,7 @@
 "use client"
 
 import Script from "next/script"
+import { browserContactContext } from "@/lib/contact-context"
 import { useRef, useState } from "react"
 import styles from "./home.module.css"
 
@@ -88,6 +89,7 @@ export default function ContactForm({ home = false }: { home?: boolean }) {
         ruc: formData.get("ruc"),
         message: formData.get("message"),
         turnstileToken,
+        ...browserContactContext(window.location.pathname, new URLSearchParams(window.location.search)),
       }
 
       const response = await fetch("/api/contact", {

@@ -1,93 +1,30 @@
-import Image from "next/image"
+import type { Metadata } from "next"
 import Link from "next/link"
+import { editorialSerif } from "@/components/home-font"
+import Catalog from "@/components/uniforms/Catalog"
+import { sectors } from "@/lib/uniforms"
+import { contactHref } from "@/lib/contact-context"
+import styles from "@/components/uniforms/uniforms.module.css"
 
-const categories = [
-  {
-    title: "Camisas",
-    href: "/uniformes/camisas",
-    image: "/uniformes/camisa-cuello-americano.png",
-    text: "Camisas corporativas diseñadas para oficinas, ventas, operaciones e imagen institucional.",
-  },
-  {
-    title: "Blusas",
-    href: "/uniformes/blusas",
-    image: "/uniformes/blusa-corte-princesa.png",
-    text: "Blusas corporativas con diferentes cortes para atención al cliente, retail y fuerza comercial.",
-  },
-  {
-    title: "Pantalones",
-    href: "/uniformes/pantalones",
-    image: "/uniformes/pantalon-corte-chino-caballero.png",
-    text: "Pantalones corporativos y casuales desarrollados para comodidad, durabilidad y presentación.",
-  },
-  {
-    title: "Polos",
-    href: "/uniformes/polos",
-    image: "/uniformes/polo-box-caballero.png",
-    text: "Polos corporativos ideales para retail, promoción, logística, servicios y operaciones.",
-  },
-  {
-    title: "Scrubs",
-    href: "/uniformes/scrubs",
-    image: "/uniformes/scrub-dentista.png",
-    text: "Prendas para profesionales de salud diseñadas para comodidad, higiene e imagen profesional.",
-  },
-]
-
+export const metadata: Metadata = { title: "Uniformes corporativos para empresas | Cotton Country", description: "Desarrolla tu proyecto de uniformes corporativos: requerimientos, criterios por sector y referencias de camisas, blusas, pantalones y polos.", alternates: { canonical: "/uniformes" } }
+const requirements = ["Tipo de organización y funciones del personal.", "Prendas requeridas y cantidades por modelo.", "Condiciones de uso, retos y objetivos.", "Materiales y características técnicas.", "Tallas, medidas y necesidades de tallaje.", "Bordados, estampados, aplicaciones y acabados.", "Plazos y condiciones de entrega."]
 export default function UniformesPage() {
-  return (
-    <main className="pt-20 bg-white">
-      <section className="max-w-7xl mx-auto px-6 py-20">
-        <div className="max-w-3xl mb-14">
-          <p className="text-sm font-medium text-[#01018B] mb-3">
-            Uniformes Corporativos
-          </p>
-
-          <h1 className="text-4xl md:text-5xl font-semibold text-gray-900">
-            Soluciones textiles para cada necesidad
-          </h1>
-
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-            Desarrollamos uniformes corporativos, institucionales e industriales
-            diseñados para fortalecer la imagen de marca, mejorar la experiencia
-            del colaborador y garantizar una presentación consistente en cada
-            punto de contacto.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {categories.map((item) => (
-            <Link
-              key={item.title}
-              href={item.href}
-              className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition"
-            >
-              <div className="relative h-[360px] w-full">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-
-              <div className="p-6">
-                <h2 className="text-xl font-semibold text-gray-900">
-                  {item.title}
-                </h2>
-
-                <p className="mt-3 text-sm text-gray-600 leading-relaxed">
-                  {item.text}
-                </p>
-
-                <span className="inline-block mt-4 text-[#01018B] font-medium">
-                  Ver colección →
-                </span>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
-    </main>
-  )
+  return <div className={`${styles.page} ${editorialSerif.variable}`}>
+    <div className={styles.container}><section className={styles.intro}>
+      <p className={styles.eyebrow}>Uniformes / Cotton Country</p>
+      <h1>Uniformes corporativos para cada desafío.</h1>
+      <div className={styles.copy}><p>Cada organización tiene necesidades distintas. En Cotton Country desarrollamos proyectos de uniformes corporativos a partir de una comprensión clara de las funciones, objetivos y características de cada empresa.</p><p>Nuestro trabajo comienza con un requerimiento bien definido y continúa con la evaluación de prendas, materiales, especificaciones, acabados y condiciones de producción y entrega.</p></div>
+    </section></div>
+    <section className={`${styles.section} ${styles.ivory}`} aria-labelledby="requirements-title"><div className={`${styles.container} ${styles.split}`}>
+      <div><p className={styles.eyebrow}>El punto de partida</p><h2 id="requirements-title">Un buen uniforme comienza con buena información.</h2><p className={styles.copy}>Definir el contexto y las necesidades del equipo nos permite evaluar las alternativas del proyecto. Estos son los aspectos que conviene preparar antes de conversar.</p></div>
+      <ul className={styles.list}>{requirements.map(item => <li key={item}>{item}</li>)}</ul>
+    </div></section>
+    <section className={styles.section} aria-labelledby="projects-title"><div className={styles.container}>
+      <p className={styles.eyebrow}>Una mirada por sector</p><h2 id="projects-title">Proyectos que hablan por sí mismos.</h2>
+      <p className={styles.copy}>Las funciones del equipo y su entorno de trabajo orientan cada decisión. Explora los criterios de desarrollo por sector.</p>
+      <div className={styles.sectors}>{sectors.filter(item => item.public).map(item => <article className={styles.sector} key={item.id}><h3>{item.name}</h3><p>{item.intro}</p><Link className={styles.link} href={`/uniformes/${item.id}`}>Explorar {item.name.toLowerCase()} →</Link></article>)}</div>
+    </div></section>
+    <Catalog />
+    <div className={styles.ivory}><div className={`${styles.container} ${styles.cta}`}><div><h2>Conversemos sobre tu proyecto.</h2><p>Cuéntanos qué necesita tu organización.</p></div><Link className={styles.button} href={contactHref({ source_path: "/uniformes" })}>Solicitar una propuesta →</Link></div></div>
+  </div>
 }
