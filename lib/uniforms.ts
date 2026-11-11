@@ -2,7 +2,7 @@ export const garmentCategories = [
   { id: "camisas", name: "Camisas", href: "/uniformes/camisas" },
   { id: "blusas", name: "Blusas", href: "/uniformes/blusas" },
   { id: "pantalones-dama", name: "Pantalones de dama", href: "/uniformes/pantalones-dama" },
-  { id: "pantalones-caballero", name: "Pantalones de caballero", href: "/uniformes/pantalones" },
+  { id: "pantalones-caballero", name: "Pantalones de caballero", href: "/uniformes/pantalones-caballero" },
   { id: "polos", name: "Polos", href: "/uniformes/polos" },
   { id: "chalecos", name: "Chalecos", href: "/uniformes?categoria=chalecos#prendas" },
   { id: "casacas", name: "Casacas", href: "/uniformes?categoria=casacas#prendas" },
