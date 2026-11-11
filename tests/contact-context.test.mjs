@@ -38,10 +38,44 @@ function fixture() {
     vm.runInContext(`(function(require,module,exports){${source}\n})`, context, { filename: file })(localRequire, compiledModule, compiledModule.exports)
     return compiledModule.exports
   }
-  return { data: load(path.join(root, 'lib/uniforms.ts')), helpers: load(path.join(root, 'lib/contact-context.ts')), POST: load(path.join(root, 'app/api/contact/route.ts')).POST, sent, verified, failCaptcha: () => { captchaSuccess = false } }
+  return { data: load(path.join(root, 'lib/uniforms.ts')), models: load(path.join(root, 'lib/garment-models.ts')).garmentModels, helpers: load(path.join(root, 'lib/contact-context.ts')), POST: load(path.join(root, 'app/api/contact/route.ts')).POST, sent, verified, failCaptcha: () => { captchaSuccess = false } }
 }
 const valid = { name: 'Prueba', phone: '999999999', email: 'test@example.org', ruc: '20123456789', message: 'Prueba local', turnstileToken: 'local-token' }
 const request = body => new Request('http://localhost/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+
+test('the catalog contains exactly 30 distinct approved models and no legacy or pending-family photographs', () => {
+  const { data, models } = fixture()
+  const counts = { camisas: 5, blusas: 7, 'pantalones-dama': 6, 'pantalones-caballero': 6, casacas: 6 }
+  assert.equal(data.garments.length, 30)
+  assert.equal(new Set(data.garments.map(item => item.id)).size, 30)
+  assert.equal(new Set(data.garments.map(item => item.image)).size, 30)
+  for (const [category, count] of Object.entries(counts)) {
+    const items = data.garments.filter(item => item.category === category)
+    assert.equal(items.length, count)
+    assert.deepEqual(plain(items.map(item => item.number)), Array.from({ length: count }, (_, index) => String(index + 1).padStart(2, '0')))
+    assert.deepEqual(plain(items.map(item => item.name)), plain(models[category].map(item => item.title)))
+  }
+  for (const item of data.garments) {
+    assert(!item.image.includes('/home-2027/'))
+    assert(fs.existsSync(path.join(root, 'public', item.image)))
+    assert(item.description.length > 40)
+    assert.equal(item.caseId, undefined)
+  }
+  for (const category of ['polos', 'chalecos', 'sacos']) assert.equal(data.garments.filter(item => item.category === category).length, 0)
+})
+
+test('jacket copy is generic and each editorial family retains its commercial contact context', () => {
+  const { models, helpers } = fixture()
+  assert.deepEqual(plain(models.casacas.map(item => item.title)), ['Casaca doble desmontable', 'Casaca tipo saco impermeable', 'Casaca impermeable Rija', 'Casaca sport elegante', 'Casaca acolchada', 'Casaca softshell'])
+  for (const { image, ...copy } of models.casacas) {
+    assert(image.startsWith('/prendas/casaca-'))
+    assert(!/zoomlion|\bcip\b|ineco|glencore|electrodunas|minera bateas|colegio de ingenieros/i.test(JSON.stringify(copy)))
+    assert(copy.details.length >= 2)
+  }
+  for (const category of Object.keys(models)) {
+    assert.deepEqual(plain(helpers.sanitizeContactContext({ source_path: `/uniformes/${category}` })), { source_path: `/uniformes/${category}`, interest_type: 'prenda', garment_category: category })
+  }
+})
 
 test('known paths derive context, forged fields and external URLs are discarded', () => {
   const { helpers: h } = fixture()

@@ -10,8 +10,8 @@ const families = [
   { name: "Camisas", href: "/uniformes/camisas", image: "/home-2027/camisas.webp", alt: "Camisa blanca de manga larga en un entorno corporativo", detail: "La presencia está en los detalles." },
   { name: "Blusas", href: "/uniformes/blusas", image: "/home-2027/blusas.webp", alt: "Blusa de manga larga en un entorno profesional", detail: "Una expresión de tu identidad." },
   { name: "Polos", href: "/uniformes/polos", image: "/home-2027/polos.webp", alt: "Polo de cuello y manga corta en un entorno de atención al público", detail: "Tu marca, en movimiento." },
-  { name: "Pantalones", href: "/uniformes/pantalones", image: "/home-2027/pantalon-hombre.webp", alt: "Pantalón azul marino de hombre", detail: "Cada pieza cuenta." },
-  { name: "Pantalones", href: "/uniformes/pantalones", image: "/home-2027/pantalon-mujer.webp", alt: "Pantalón azul marino de mujer", detail: "Cada pieza cuenta." },
+  { name: "Pantalones", href: "/uniformes/pantalones-caballero", image: "/home-2027/pantalon-hombre.webp", alt: "Pantalón azul marino de hombre", detail: "Cada pieza cuenta." },
+  { name: "Pantalones", href: "/uniformes/pantalones-dama", image: "/home-2027/pantalon-mujer.webp", alt: "Pantalón azul marino de mujer", detail: "Cada pieza cuenta." },
 ]
 
 export default function Basics() {

@@ -24,6 +24,8 @@
 .photo { position: relative; aspect-ratio: 3 / 4; border-radius: 24px; overflow: hidden; background: #fff; }
 .photo img { object-fit: contain; }
 .catalog h3 { font-size: 23px; margin-block: 20px 12px; }
+.catalogDescription { font-size: 15px; line-height: 1.8; margin-bottom: 16px; }
+.page .modelLabel { font-family: var(--cc-font-body); font-size: 14px; font-weight: 600; letter-spacing: normal; margin-top: 24px; }
 .catalog article > a + a { display: block; margin-top: 12px; }
 .empty { font-size: 16px; line-height: 1.8; padding-block: 32px; max-width: 650px; }
 .cta { padding-block: 64px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
@@ -68,8 +70,9 @@
 .uniformVariants { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 32px; margin-bottom: 64px; }
 @media(max-width:575px) { .uniformVariants { grid-template-columns: 1fr; gap: 40px; margin-bottom: 40px; } }
 
-.roleRow { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; padding-block: 64px; border-bottom: 1px solid #e2e1dc; }
+.roleRow { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; padding-block: 64px; border-bottom: 1px solid #e2e1dc; scroll-margin-top: 96px; }
 .roleRow .editorialPhoto { width: 100%; max-width: 520px; }
+.roleRow h2 { scroll-margin-top: 96px; }
 .roleRow:nth-child(even) .editorialPhoto { order: 2; justify-self: end; }
 .roleSubtitle { margin-top: 24px; }
 @media(max-width:900px) { .roleRow { gap: 40px; } }

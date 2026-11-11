@@ -1,3 +1,5 @@
+import { garmentModels } from "./garment-models"
+
 export const garmentCategories = [
   { id: "camisas", name: "Camisas", href: "/uniformes/camisas" },
   { id: "blusas", name: "Blusas", href: "/uniformes/blusas" },
@@ -15,15 +17,19 @@ export const sectors: { id: SectorId; name: string; public: boolean; title: stri
   { id: "educacion", name: "Educación", public: true, title: "Una identidad institucional que se viste cada día.", intro: "Los equipos de una institución educativa cumplen funciones distintas: atención, administración, docencia y apoyo. Definir esas actividades permite evaluar prendas apropiadas para cada entorno y una presentación institucional consistente.", criteria: ["Funciones y protocolos de presentación de cada área.", "Tallaje y comodidad para diferentes actividades.", "Identificación institucional, acabados y continuidad entre entregas."] },
   { id: "agroindustria", name: "Agroindustria", public: false, title: "El uniforme parte de las condiciones de trabajo.", intro: "En un proyecto agroindustrial es necesario conocer las funciones, las condiciones del entorno y los protocolos de la organización antes de definir las prendas. La información técnica del requerimiento orienta la evaluación de materiales y confección.", criteria: ["Condiciones de uso y actividades del personal.", "Requisitos técnicos y protocolos definidos por la empresa.", "Tallaje, mantenimiento y planificación de entregas."] },
 ]
-export type Garment = { id: string; category: GarmentCategory; name: string; image: string; alt: string; caseId?: string }
-// Approved garment photographs; project associations require an explicit caseId.
-export const garments: Garment[] = [
-  { id: "camisa-blanca", category: "camisas", name: "Camisa blanca de manga larga", image: "/home-2027/camisas.webp", alt: "Modelo masculino con camisa blanca de manga larga" },
-  { id: "blusa-blanca", category: "blusas", name: "Blusa blanca de manga larga", image: "/home-2027/blusas.webp", alt: "Modelo femenino con blusa blanca de manga larga" },
-  { id: "pantalon-dama", category: "pantalones-dama", name: "Pantalón azul marino de dama", image: "/home-2027/pantalon-mujer.webp", alt: "Pantalón azul marino de dama, vista completa" },
-  { id: "pantalon-caballero", category: "pantalones-caballero", name: "Pantalón azul marino de caballero", image: "/home-2027/pantalon-hombre.webp", alt: "Pantalón azul marino de caballero, vista completa" },
-  { id: "polo-marino", category: "polos", name: "Polo azul marino", image: "/home-2027/polos.webp", alt: "Modelo masculino con polo azul marino de manga corta" },
-]
+export type Garment = { id: string; category: GarmentCategory; number: string; name: string; image: string; alt: string; description: string; caseId?: string }
+// Only approved editorial models enter the catalog. Case associations are separate.
+export const garments: Garment[] = Object.entries(garmentModels).flatMap(([category, models]) =>
+  models.map(model => ({
+    id: `${category}-${model.number}`,
+    category: category as GarmentCategory,
+    number: model.number,
+    name: model.title,
+    image: model.image,
+    alt: model.alt,
+    description: model.description,
+  }))
+)
 export type CasePhoto = { src: string; alt: string; evidence: string; width?: number; height?: number; caption?: string }
 export type CaseSeason = {
   id: string; name: string

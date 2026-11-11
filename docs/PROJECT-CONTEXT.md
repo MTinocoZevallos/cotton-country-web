@@ -2,6 +2,8 @@
 
 Documento de continuidad del rediseño B2B. Fecha de auditoría: **2026-11-11 (America/Lima)**. Base auditada: `redesign-2027-home`, HEAD `f0f25c90a0a318431f880be2aa06ee9b51790d93`. El registro de alcance y Git está en §13.
 
+**Actualización de continuidad:** el hito de §16 parte del estado aprobado `be071dd1a01fcf87f3e061040e820f64512c614d` y sustituye el estado anterior del catálogo y su recorrido. Los informes históricos y el registro de la auditoría original se conservan como tales; no constituyen aprobación visual del nuevo hito.
+
 ## Convención de evidencia
 
 - **VERIFICADO EN CÓDIGO:** inspección de archivos y datos del HEAD indicado; no equivale a funcionamiento remoto, aprobación comercial ni despliegue en producción.
@@ -25,7 +27,7 @@ Documento de continuidad del rediseño B2B. Fecha de auditoría: **2026-11-11 (A
 
 - Next.js **16.1.1**, React y React DOM **19.2.3**; TypeScript `^5`, Tailwind CSS `^4` y `@tailwindcss/postcss` `^4`. Dependencias adicionales declaradas: `lucide-react` `^0.562.0`, `react-icons` `^5.5.0`, `resend` `^6.12.4`. ESLint `^9`, configuración Next **16.1.1**. Los rangos son declaraciones, no versiones exactas de cada dependencia instalada (`package.json`, `package-lock.json`).
 - App Router en `app/`; layout compartido con Header y Footer; componentes de Home en `components/`, componentes editoriales de Uniformes en `components/uniforms/`. No hay migración de arquitectura pendiente autorizada.
-- Datos de sectores, categorías, referencias y casos en `lib/uniforms.ts`; contexto comercial de contacto en `lib/contact-context.ts`; artículos en el arreglo tipado de `app/blog/posts.ts`. No se identificó CMS, ORM o base de datos en este flujo; no atribuirlos al proyecto.
+- Datos de sectores, categorías y casos en `lib/uniforms.ts`; modelos editoriales aprobados en `lib/garment-models.ts`, consumidos por las cinco páginas de familia y proyectados como `garments` para el catálogo filtrable. Contexto comercial de contacto en `lib/contact-context.ts`; artículos en el arreglo tipado de `app/blog/posts.ts`. No se identificó CMS, ORM o base de datos en este flujo; no atribuirlos al proyecto.
 - Estilos: Tailwind en `app/globals.css`, tokens en `app/design-tokens.css`, módulos `components/home.module.css`, `components/chrome.module.css` y `components/uniforms/uniforms.module.css`. Tipado estricto y alias `@/*` en `tsconfig.json`; configuración Next sin opciones activas adicionales en `next.config.ts`.
 - Imágenes y fuentes locales en `public/` y `app/fonts/`; `next/image`, `next/font/local`, `next/link` y `next/script` según cada componente.
 - Scripts disponibles: `npm run dev`, `npm run build`, `npm run start`, `npm run lint`; TypeScript: `npx --no-install tsc --noEmit`. No hay script `test` en el manifiesto, pero sí `tests/contact-context.test.mjs`, ejecutable con `node --test tests/contact-context.test.mjs`; usa transportes simulados para correo/captcha. No confundirlo con pruebas de los servicios reales. No se ejecutó en esta auditoría documental.
@@ -77,7 +79,7 @@ Preservar las decisiones aprobadas de la Home y los textos respaldados de los ca
 - **Navegación:** cabecera fija de 80 px; azul, translúcida en Home; logo a la izquierda, navegación centrada mediante columnas laterales iguales y contacto a la derecha. Uniformes enlaza directamente a `/uniformes`, sin desplegable; Blog a `/blog`, Contacto a `/#contacto`, SizeSet a destino externo y Contáctanos a correo. Menú móvil hasta 900 px, estado expandido, cierre con Escape y devolución del foco; enlace para saltar a `#contenido` (`components/Header.tsx`, `components/chrome.module.css`).
 - **Hero:** título en dos líneas «¿De qué viste / tu marca?», geometría reservada durante tipeado, CTA a `/uniformes`, recurso actual `public/home-2027/hero.webp`. `next/image` con `preload`, sin `unoptimized`; fondo CSS y máscaras complementarias. Escritura por caracteres cada 72 ms; fases a 2150, 2650 y 3350 ms. Desktop: 90svh, mínimo 620 y máximo 820 px; adaptación móvil bajo 767 px. Alternativa sin JavaScript y movimiento reducido (`components/Hero.tsx`, `components/home.module.css`).
 - **Filosofía:** «Cada detalle cuenta.», asesoría, método y cumplimiento; iconos Lucide de 36 px, trazo 1.5. Dos columnas que pasan a una bajo 900 px; revelados con IntersectionObserver y alternativa de movimiento reducido (`components/ThreeReasons.tsx`, `components/HomeExperience.tsx`).
-- **Prendas de Home:** cinco fotografías y cuatro etiquetas de familia, con pantalón masculino y femenino separados visualmente pero ambos enlazados aún a `/uniformes/pantalones`. Carrusel horizontal con scroll-snap: cuatro visibles en escritorio, dos hasta 1023 px y una hasta 575 px. Intervalo de 4000 ms condicionado a visibilidad, pestaña, movimiento, hover, foco, tacto y pausa. Marco 3:4, imagen `contain`, radios 24/20 px y hover moderado. Indicadores y control de pausa visible al recibir foco (`components/Basics.tsx`, `components/home.module.css`).
+- **Prendas de Home:** cinco fotografías y cuatro etiquetas de familia, con pantalón masculino y femenino separados visualmente. En §16 se actualizan exclusivamente sus dos destinos a `/uniformes/pantalones-caballero` y `/uniformes/pantalones-dama`. Carrusel horizontal con scroll-snap: cuatro visibles en escritorio, dos hasta 1023 px y una hasta 575 px. Intervalo de 4000 ms condicionado a visibilidad, pestaña, movimiento, hover, foco, tacto y pausa. Marco 3:4, imagen `contain`, radios 24/20 px y hover moderado. Indicadores y control de pausa visible al recibir foco (`components/Basics.tsx`, `components/home.module.css`).
 - **Testimonios:** tres citas implementadas, atribuidas a Colegio de Ingenieros del Perú, DecorCenter y Zoomlion. Rotación actual de **4000 ms** mediante un timeout; pausa por hover, tacto, pestaña oculta, movimiento reducido o botón explícito. Observación de visibilidad con umbral cero. Indicadores y teclas izquierda/derecha/Home/End; paneles inactivos con `aria-hidden` e `inert`; altura medida con ResizeObserver. Cita actual de 20 px en escritorio y 18 px en móvil; pausa disponible al foco; no hay botones visibles Anterior/Siguiente en el JSX actual (`components/Testimonials.tsx`, `components/home.module.css`). No modificar ni agregar citas sin aprobación.
 - **Catálogos editoriales:** filas alternadas de imagen y texto, dos columnas y una bajo 575 px; separación reducida bajo 900 px. Imagen con ancho fluido y altura automática, sin recorte impuesto por las filas; CTA de píldora lima y enlace de retorno. Camisas añade listas técnicas y cierre editorial (`components/uniforms/uniforms.module.css`, páginas de §7).
 - **Contacto y footer:** contacto de Home en dos columnas, una bajo 900 px; campos legibles, botón lima de píldora. Footer blanco con logo azul, enlaces legales, contacto, redes y mapa dentro de `details` con iframe lazy; cuatro columnas, dos hasta 1100 px y una hasta 767 px (`components/ContactForm.tsx`, `components/Footer.tsx`, módulos CSS).
@@ -97,7 +99,7 @@ Preservar las decisiones aprobadas de la Home y los textos respaldados de los ca
 | Área | VERIFICADO EN CÓDIGO | PENDIENTE DE VALIDACIÓN / alcance |
 | --- | --- | --- |
 | Home `/` | Hero → filosofía → Prendas → testimonios → formulario, dentro de HomeExperience (`app/page.tsx`). | Revisión UX integral del estado actual; no asumir que las pruebas históricas cubren sus cambios posteriores. |
-| Uniformes `/uniformes` | Requerimientos, sectores públicos, enlaces a cuatro casos, filtros por familia y CTA (`app/uniformes/page.tsx`, `components/uniforms/Catalog.tsx`). Cinco referencias generales en `garments`; no son los 24 modelos de los cuatro catálogos. Filtros sincronizados con `?categoria=…#prendas`. | Completar familias y evidencia; categorías sin fotos muestran estado vacío. |
+| Uniformes `/uniformes` | Introducción → catálogo filtrable de 30 modelos → requerimientos → sectores públicos → CTA (`app/uniformes/page.tsx`, `components/uniforms/Catalog.tsx`). Filtros sincronizados con `?categoria=…#prendas`; cada modelo enlaza a su familia y ancla numerada. Los casos se descubren dentro del sector, sin atajos directos a clientes en la página general. | Polos, Chalecos y Sacos pendientes, sin modelos heredados ni fotografías inventadas. Revisión visual final del propietario pendiente. |
 | Catálogos y casos | Rutas y datos de §§7–9; componentes CaseRoles, CaseSeasons y Projects. | Publicado en datos no equivale a estar desplegado o aprobado en producción. |
 | Blog | Listado en `/blog`; artículos en `/blog/[slug]` y alias `app/[slug]/page.tsx`; datos locales, imágenes en `public/blog/`, generación estática, canonical hacia la ruta raíz del artículo y Open Graph por artículo. Renderizado de contenido local con HTML (`dangerouslySetInnerHTML`). | Rediseño editorial pendiente; revisar contenido/HTML, semántica, imágenes y coherencia de alias/canónicas antes de publicar. No hay CMS demostrado. |
 | Contacto | `/contacto` reutiliza ContactForm; contexto sector/caso/prenda derivado de rutas conocidas y saneado antes del correo (`lib/contact-context.ts`). Cinco campos obligatorios; guardas de captcha; API comprueba campos y excluye dominios personales listados (`app/api/contact/route.ts`). | No es validación completa de RUC, teléfono, pertenencia empresarial o entrega de correo. Revisar validación de tipos, tratamiento de errores del proveedor, abuso y mensajes accesibles. |
@@ -117,12 +119,13 @@ Las API implementan Resend y Turnstile; no se hicieron peticiones a esos proveed
 | Camisas | 5 | `app/uniformes/camisas/page.tsx` → `/uniformes/camisas` | `public/uniformes/camisas-2027/` — 5 WebP |
 | Pantalones de dama | 6 | `app/uniformes/pantalones-dama/page.tsx` → `/uniformes/pantalones-dama` | `public/uniformes/pantalones-dama-2027/` — 6 PNG, 1312 × 1199 |
 | Pantalones de caballero | 6 | `app/uniformes/pantalones-caballero/page.tsx` → `/uniformes/pantalones-caballero` | `public/uniformes/pantalones-caballero-2027/` — 6 PNG, 1536 × 1024 |
+| Casacas | 6 | `app/uniformes/casacas/page.tsx` → `/uniformes/casacas` | `public/prendas/casaca-*.webp` — 6 originales, nombres conservados |
 
 Los dos catálogos de pantalones presentan ambas vistas dentro de cada imagen, revisadas visualmente en los hitos de implementación anteriores del chat. Caballero conserva este orden: chino de drill; drill corte jean; vestir de lanilla; cargo de drill; cargo con cintas reflectivas; cargo con refuerzos de rodilla. Esta auditoría vuelve a comprobar el inventario y las dimensiones de los PNG frente a las declaradas; no realiza una nueva inspección visual.
 
-También existen páginas anteriores `/uniformes/pantalones`, `/uniformes/polos` y `/uniformes/scrubs`; no catalogarlas como rediseños editoriales terminados por el solo hecho de existir. La Home aún dirige sus dos fotos de pantalones a la página anterior (`components/Basics.tsx`); el catálogo de Uniformes ya separa dama/caballero (`lib/uniforms.ts`).
+Los **30 modelos** comparten una fuente en `lib/garment-models.ts`. Se conservan textos, orden y recursos de los 24 modelos de las cuatro familias anteriores. Casacas recibe la corrección comercial genérica descrita en §16. También existen páginas anteriores `/uniformes/pantalones`, `/uniformes/polos` y `/uniformes/scrubs`; no se eliminan ni redirigen y sus recursos no se mezclan con el catálogo aprobado. Solo los enlaces obsoletos de pantalones en Home cambian hacia las páginas editoriales vigentes.
 
-**DECISIÓN DEL PROPIETARIO:** Casacas es la próxima familia, pendiente de fotografías definitivas aprobadas. Hoy solo existe su entrada de filtro en `garmentCategories`, sin modelos en `garments`, página específica ni directorio de catálogo 2027. No inventar modelos ni reutilizar fotos de casos como si fueran referencias individuales aprobadas.
+**DECISIÓN DEL PROPIETARIO:** las seis fotografías de Casacas ya fueron proporcionadas y aprobadas. Nombres públicos: Casaca doble desmontable; Casaca tipo saco impermeable; Casaca impermeable Rija; Casaca sport elegante; Casaca acolchada; Casaca softshell. No inventar prestaciones a partir de esos nombres. No crear modelos para familias aún sin recursos ni reutilizar fotos de casos como si fueran referencias individuales aprobadas.
 
 ## 8. Casos corporativos y condiciones de publicación
 
@@ -162,7 +165,7 @@ Evidencia: `lib/uniforms.ts`, `app/uniformes/[sector]/page.tsx`, `app/uniformes/
 
 **DECISIÓN DEL PROPIETARIO:** **caso sectorial** = uniforme completo de un proyecto empresarial, con contexto, solución y evidencia; **catálogo** = modelos individuales por familia. No son intercambiables.
 
-**VERIFICADO EN CÓDIGO:** `projectCases`/CaseRoles/CaseSeasons soportan conjuntos y proyectos; las páginas de familia presentan modelos. `garments` contiene solo referencias generales para explorar categorías. No inferir que una prenda genérica pertenece a un cliente ni transformar testimonios en casos adicionales (`lib/uniforms.ts`, `components/uniforms/`).
+**VERIFICADO EN CÓDIGO:** `projectCases`/CaseRoles/CaseSeasons soportan conjuntos y proyectos; las páginas de familia presentan modelos. `garments` proyecta los 30 modelos aprobados del registro editorial compartido. No se les asignan casos ni clientes por deducción. No transformar testimonios en casos adicionales (`lib/garment-models.ts`, `lib/uniforms.ts`, `components/uniforms/`).
 
 ## 11. Restricciones y gobierno de cambios
 
@@ -179,14 +182,14 @@ Evidencia: `lib/uniforms.ts`, `app/uniformes/[sector]/page.tsx`, `app/uniformes/
 ### Pendientes confirmados por el propietario o los datos
 
 1. **Continuidad documental:** este archivo cubre el hito de documentación; mantenerlo al cerrar hitos relevantes, sin tratar informes anteriores como prueba vigente.
-2. **Casacas:** integrar su catálogo solo cuando lleguen fotografías y especificaciones aprobadas; reutilizar el sistema editorial sin modificar familias cerradas.
+2. **Uniformes y Casacas:** implementación del recorrido y los 30 modelos completada en §16; pendiente aprobación visual final del propietario en Preview.
 3. **Uniformes y casos:** completar el alcance sectorial y el plan de casos con evidencia; resolver fotografías individuales pendientes y borradores agroindustriales. El tercer caso retail no está identificado en los datos.
 4. **Blog:** rediseño editorial, respetando contenido y estrategia de URLs que se validen antes de cambiar rutas.
 5. **Antes de publicar:** revisión integral de UX, SEO, accesibilidad, formularios, analítica y Core Web Vitals; comprobación real de Preview, dispositivos y servicios bajo autorización. No hay medición de CWV de campo acreditada por esta auditoría.
 
 ### Oportunidades detectadas, sin corrección autorizada aquí
 
-- Revisar los enlaces heredados de pantalones en Home y la atribución de contexto del CTA de `/uniformes/pantalones`, que ya no coincide con ninguna categoría en `garmentCategories` (`components/Basics.tsx`, `lib/contact-context.ts`).
+- Los enlaces de pantalones en Home se corrigen en §16. Sigue pendiente revisar la atribución de contexto del CTA de la ruta antigua `/uniformes/pantalones`, que ya no coincide con ninguna categoría en `garmentCategories` (`lib/contact-context.ts`).
 - Validar accesibilidad de controles de pausa ocultos hasta foco, rotación actual de cuatro segundos, anuncios de estados del formulario y estructura de landmarks: `app/layout.tsx` contiene un `main` y varias páginas también devuelven `main`. No se declara incumplimiento medido sin prueba específica.
 - Revisar coherencia entre estilos heredados/globales, fuentes Geist aún referenciadas en `app/globals.css`, tokens y módulos editoriales; no es autorización para uniformar estilos o cambiar Home.
 - Revisar cobertura de sitemap/metadatos, rutas antiguas y tratamiento de contenido HTML del Blog, política de indexación de Preview y casos no públicos.
@@ -212,7 +215,7 @@ Control documental de cierre: comprobar las quince secciones, correspondencia co
 
 ## 14. Próximo trabajo
 
-**DECISIÓN DEL PROPIETARIO:** catálogo de **Casacas**, únicamente después de recibir recursos aprobados. Hasta entonces, no generar imágenes ni inventar modelos, prestaciones o asociaciones con clientes. Cuando lleguen, verificar archivos, nombres y dimensiones, reutilizar estructura editorial, actualizar navegación y SEO necesarios y ejecutar las verificaciones técnicas y responsive del cambio antes del commit/push autorizado.
+**DECISIÓN DEL PROPIETARIO:** revisar visualmente el recorrido reestructurado de Uniformes y el catálogo genérico de Casacas en Preview. Cualquier familia posterior requiere recursos y alcance aprobados; Polos, Chalecos y Sacos permanecen pendientes. No generar imágenes ni inventar modelos, prestaciones o asociaciones con clientes.
 
 ## 15. Protocolo de continuidad
 
@@ -221,3 +224,20 @@ Control documental de cierre: comprobar las quince secciones, correspondencia co
 3. Leer los archivos de la parte afectada; usar informes históricos como contexto y contrastarlos con el código. Mantener separados los cuatro niveles de evidencia definidos arriba.
 4. Confirmar recursos y alcance antes de implementar una familia o caso. No publicar borradores ni atribuir modelos genéricos a clientes.
 5. Actualizar este documento **únicamente al cerrar hitos relevantes**, corrigiendo estados y evidencia sin destruir decisiones válidas. Registrar la nueva base de código, fecha, cambios posteriores y límites de validación; evitar convertir una aprobación previa de un push en autorización permanente para producción.
+
+## 16. Hito — recorrido de Uniformes y 30 modelos compartidos
+
+**DECISIÓN DEL PROPIETARIO:** HOME → UNIFORMES → PRENDAS FILTRABLES → SECTORES → CASOS DE ÉXITO. Prendas es una sección de Uniformes, no un elemento principal ni una página nueva. Base de la intervención: `be071dd1a01fcf87f3e061040e820f64512c614d`, comprobada local y remotamente en `redesign-2027-home`, árbol inicial limpio. Fecha: 2026-11-11 (America/Lima).
+
+**VERIFICADO EN CÓDIGO:**
+
+- Fuente única de 30 modelos en `lib/garment-models.ts`: Camisas 5, Blusas 7, Pantalones de dama 6, Pantalones de caballero 6 y Casacas 6. Las páginas editoriales usan esos mismos datos, sin copias manuales. Se preservan las canónicas y los contenidos aprobados de las primeras cuatro familias.
+- `Catalog.tsx` muestra fotografías definitivas, nombres genéricos, descripción, enlace a la familia/ancla de modelo y consulta contextual. Todas muestra 30; cada categoría filtra su propio conjunto y anuncia su conteo. Polos, Chalecos y Sacos muestran preparación explícita y consulta, sin fotos heredadas.
+- `/uniformes` presenta introducción, catálogo, requerimientos completos, Educación/Retail y contacto final. Se retiran los atajos a clientes y las asociaciones de casos desde tarjetas genéricas. Los cuatro casos y sus datos no cambian; los borradores siguen excluidos por `publishedCases`.
+- Casacas separa nombre genérico, características observables y aplicación comercial. Se eliminan atribuciones de clientes del contenido visible, alt y textos SEO. Los identificadores de los archivos originales y los logotipos dentro de las fotografías se conservan; no equivalen a texto comercial nuevo ni a casos nuevos.
+- Header, Hero, carruseles, eventos de conversión, formularios y API permanecen sin cambios. En Home se corrigen solo los dos destinos heredados de pantalones. Se elimina el `main` anidado de las cinco páginas editoriales afectadas, conservando el contenedor `main` global y la composición visual.
+- Sitemap revisado: las cinco familias y los cuatro casos ya estaban incluidos; solo sectores públicos. No se borran rutas, añaden redirecciones ni cambia la configuración de indexación de Preview.
+
+**VALIDACIÓN LOCAL DEL HITO:** build correcto (136 páginas estáticas), TypeScript y lint sin errores; ocho pruebas con transportes simulados, incluidas las seis anteriores y dos controles de catálogo/copy/contexto. Comparación con la base: los 24 modelos anteriores preservan todos sus datos normalizados y las 30 imágenes coinciden con sus originales versionados. Revisión Chromium a 1440, 768, 390 y 320 px: recorrido, filtros, teclado, tacto, fotografías completas, enlaces de familia, sectores/casos, metadatos, landmarks afectados y guarda del formulario sin envío. Las pruebas de navegación se registran al cerrar el hito; no constituyen pruebas de correo/captcha real ni CWV de campo.
+
+**PENDIENTE DE VALIDACIÓN REMOTA:** estado y contenido del despliegue automático asociado al commit final. Los accesos previos a Vercel devolvieron un bloqueo de proxy 403, que no demuestra fallo del sitio. El informe de entrega identifica el SHA, los checks y los enlaces observados, sin afirmar disponibilidad remota sin comprobarla. No hay despliegue manual, PR, merge a main ni cambios de configuración de Vercel. La aprobación visual final corresponde al propietario.

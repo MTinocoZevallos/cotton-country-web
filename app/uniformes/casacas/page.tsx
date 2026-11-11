@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { garmentModels } from "@/lib/garment-models"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
@@ -8,7 +9,7 @@ import styles from "@/components/uniforms/uniforms.module.css"
 
 export const metadata: Metadata = {
   title: "Casacas corporativas | Cotton Country",
-  description: "Seis modelos de casacas corporativas: doble desmontable, saco impermeable, impermeable Rija, sport elegante, acolchada y softshell.",
+  description: "Seis modelos de casacas corporativas: doble desmontable, tipo saco impermeable, impermeable Rija, sport elegante, acolchada y softshell.",
   alternates: { canonical: "/uniformes/casacas" },
   openGraph: {
     title: "Casacas corporativas | Cotton Country",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
       url: "/prendas/casaca-doble-desmontable-zoomlion.webp",
       width: 1024,
       height: 1536,
-      alt: "Casaca doble desmontable negra con capucha y logotipo Zoomlion",
+      alt: "Casaca doble desmontable negra con capucha y cierre frontal cubierto",
     }],
   },
   twitter: {
@@ -32,72 +33,11 @@ export const metadata: Metadata = {
   },
 }
 
-const models = [
-  {
-    number: "01",
-    title: "Casaca doble desmontable — Zoomlion",
-    image: "casaca-doble-desmontable-zoomlion.webp",
-    width: 1024,
-    height: 1536,
-    alt: "Modelo con casaca negra de capucha, cierre frontal y logotipo Zoomlion",
-    application: "Capucha y cierre frontal",
-    description: "Casaca negra con capucha y cierre frontal cubierto. Los bolsillos laterales y el logotipo Zoomlion en el pecho acompañan una presentación de líneas sobrias.",
-  },
-  {
-    number: "02",
-    title: "Casaca saco impermeable — CIP",
-    image: "casaca-saco-impermeable-cip.webp",
-    width: 1199,
-    height: 1312,
-    alt: "Modelo con casaca larga verde de capucha, dos franjas claras en el torso y emblema del Colegio de Ingenieros del Perú",
-    application: "Largo tipo saco",
-    description: "Diseño verde de largo tipo saco, con capucha, cierre frontal y bolsillos delanteros. Dos franjas claras recorren el torso, mientras el emblema del Colegio de Ingenieros del Perú identifica la prenda en el pecho.",
-  },
-  {
-    number: "03",
-    title: "Casaca impermeable Rija — Ineco",
-    image: "casaca-impermeable-rija-ineco.webp",
-    width: 1199,
-    height: 1312,
-    alt: "Modelo con casaca roja Ineco, cierre frontal cubierto y franjas claras en el torso y las mangas",
-    application: "Franjas en contraste",
-    description: "El rojo y las franjas claras del torso y las mangas definen la presentación de este modelo. El cuello alto, el cierre frontal cubierto y el logotipo Ineco completan sus detalles visibles.",
-  },
-  {
-    number: "04",
-    title: "Casaca sport elegante — Glencore",
-    image: "casaca-sport-elegante-glencore.webp",
-    width: 1536,
-    height: 1024,
-    alt: "Casaca negra Glencore en vistas delantera y posterior, con detalles del cuello y del puño",
-    application: "Vistas y detalles",
-    description: "Casaca negra con cuello alto, cierre frontal y bolsillos con cierre. La fotografía muestra el delantero, la espalda y acercamientos del cuello y del puño, junto al logotipo Glencore en el pecho.",
-  },
-  {
-    number: "05",
-    title: "Casaca acolchada — ElectroDunas",
-    image: "casaca-acolchada-electrodunas.webp",
-    width: 1199,
-    height: 1312,
-    alt: "Modelo con casaca negra de acolchado horizontal, cierre frontal y logotipo ElectroDunas",
-    application: "Acolchado horizontal",
-    description: "El acolchado de líneas horizontales da textura a esta casaca negra. Incorpora cuello alto, cierre frontal y bolsillos laterales, con el logotipo ElectroDunas en el pecho.",
-  },
-  {
-    number: "06",
-    title: "Casaca softshell — Minera Bateas",
-    image: "casaca-softshell-minera-bateas.webp",
-    width: 1199,
-    height: 1312,
-    alt: "Modelo con casaca azul marino, cuello alto, cierre frontal y logotipo Minera Bateas",
-    application: "Líneas sobrias",
-    description: "Modelo azul marino con cuello alto, cierre frontal y bolsillos laterales. La superficie lisa y el logotipo Minera Bateas en el pecho definen una presentación de líneas sencillas.",
-  },
-] as const
+const models = garmentModels["casacas"]
 
 export default function CasacasPage() {
   return (
-    <main className={`${styles.page} ${editorialSerif.variable}`}>
+    <div className={`${styles.page} ${editorialSerif.variable}`}>
       <div className={styles.container}>
         <header className={styles.intro}>
           <div className={styles.back}>
@@ -116,7 +56,7 @@ export default function CasacasPage() {
             <article key={model.number} className={styles.roleRow} aria-labelledby={`modelo-${model.number}`}>
               <figure className={styles.editorialPhoto}>
                 <Image
-                  src={`/prendas/${model.image}`}
+                  src={model.image}
                   alt={model.alt}
                   width={model.width}
                   height={model.height}
@@ -126,6 +66,10 @@ export default function CasacasPage() {
               <div>
                 <p className={styles.eyebrow}>Modelo {model.number} · {model.application}</p>
                 <h2 id={`modelo-${model.number}`}>{model.title}</h2>
+                <h3 className={styles.modelLabel}>Características del modelo</h3>
+                <ul className={styles.list}>
+                  {model.details?.map(detail => <li key={detail}>{detail}</li>)}
+                </ul>
                 <p className={styles.copy}>{model.description}</p>
               </div>
             </article>
@@ -140,6 +84,6 @@ export default function CasacasPage() {
           <a href={contactHref({ source_path: "/uniformes/casacas" })} className={styles.button}>Solicitar propuesta <ArrowUpRight size={16} aria-hidden="true" /></a>
         </section>
       </div>
-    </main>
+    </div>
   )
 }
