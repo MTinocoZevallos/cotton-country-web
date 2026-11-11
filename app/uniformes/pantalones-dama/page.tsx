@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
+import { ArrowUpRight } from "lucide-react"
 import { editorialSerif } from "@/components/home-font"
 import { contactHref } from "@/lib/contact-context"
 import styles from "@/components/uniforms/uniforms.module.css"
@@ -9,6 +10,26 @@ export const metadata: Metadata = {
   title: "Pantalones de dama corporativos | Cotton Country",
   description: "Pantalones de vestir y de drill para uniformes corporativos. Diferentes cortes, pretinas, bolsillos y acabados para cada entorno laboral.",
   alternates: { canonical: "/uniformes/pantalones-dama" },
+  openGraph: {
+    title: "Pantalones de dama corporativos | Cotton Country",
+    description: "Seis modelos de pantalones de vestir y de drill para equipos corporativos, con vistas delantera y posterior y diferentes acabados de confección.",
+    url: "/uniformes/pantalones-dama",
+    siteName: "Cotton Country",
+    locale: "es_PE",
+    type: "website",
+    images: [{
+      url: "/uniformes/pantalones-dama-2027/01_pantalon_vestir_pretina_elasticada.png",
+      width: 1312,
+      height: 1199,
+      alt: "Pantalón de dama con pretina elasticada, vistas delantera y posterior",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pantalones de dama corporativos | Cotton Country",
+    description: "Seis modelos de pantalones de vestir y de drill para uniformes corporativos.",
+    images: ["/uniformes/pantalones-dama-2027/01_pantalon_vestir_pretina_elasticada.png"],
+  },
 }
 
 const models = [
@@ -102,7 +123,7 @@ export default function PantalonesDamaPage() {
             <h2 id="solicitar-propuesta">¿Necesitas pantalones corporativos para tu equipo?</h2>
             <p>Solicita una propuesta según el tipo de prenda, los acabados, las cantidades y el uso requerido.</p>
           </div>
-          <a href={contactHref({ source_path: "/uniformes/pantalones-dama" })} className={styles.button}>Solicitar propuesta <span aria-hidden="true">↗</span></a>
+          <a href={contactHref({ source_path: "/uniformes/pantalones-dama" })} className={styles.button}>Solicitar propuesta <ArrowUpRight size={16} aria-hidden="true" /></a>
         </section>
       </div>
     </main>
