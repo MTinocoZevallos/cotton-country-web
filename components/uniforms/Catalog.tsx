@@ -30,7 +30,9 @@ export default function Catalog() {
         <h2 id="catalog-title">Explora nuestras prendas.</h2>
         <div className={styles.filters} role="group" aria-label="Filtrar prendas">
           <button type="button" aria-pressed={selected === "todas"} onClick={() => select("todas")}>Todas</button>
-          {garmentCategories.map(item => <button key={item.id} type="button" aria-pressed={selected === item.id} onClick={() => select(item.id)}>{item.name}</button>)}
+          {garmentCategories.map(item => item.id === "casacas"
+            ? <Link key={item.id} href={item.href}>{item.name}</Link>
+            : <button key={item.id} type="button" aria-pressed={selected === item.id} onClick={() => select(item.id)}>{item.name}</button>)}
         </div>
         <p role="status" className={styles.eyebrow}>{items.length} referencias disponibles</p>
         <div className={styles.catalog}>

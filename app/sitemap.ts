@@ -41,6 +41,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   )
 
-  const uniformPaths = ["/uniformes", "/uniformes/camisas", "/uniformes/blusas", "/uniformes/pantalones-dama", "/uniformes/pantalones-caballero", "/uniformes/pantalones", "/uniformes/polos", "/uniformes/scrubs", ...sectors.filter(item => item.public).map(item => `/uniformes/${item.id}`), ...publishedCases.map(casePath)]
+  const uniformPaths = ["/uniformes", "/uniformes/camisas", "/uniformes/blusas", "/uniformes/pantalones-dama", "/uniformes/pantalones-caballero", "/uniformes/casacas", "/uniformes/pantalones", "/uniformes/polos", "/uniformes/scrubs", ...sectors.filter(item => item.public).map(item => `/uniformes/${item.id}`), ...publishedCases.map(casePath)]
   return [...staticPages, ...blogPages, ...uniformPaths.map(path => ({ url: `${baseUrl}${path}`, changeFrequency: "monthly" as const, priority: 0.7 }))]
 }

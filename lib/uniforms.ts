@@ -5,7 +5,7 @@ export const garmentCategories = [
   { id: "pantalones-caballero", name: "Pantalones de caballero", href: "/uniformes/pantalones-caballero" },
   { id: "polos", name: "Polos", href: "/uniformes/polos" },
   { id: "chalecos", name: "Chalecos", href: "/uniformes?categoria=chalecos#prendas" },
-  { id: "casacas", name: "Casacas", href: "/uniformes?categoria=casacas#prendas" },
+  { id: "casacas", name: "Casacas", href: "/uniformes/casacas" },
   { id: "sacos", name: "Sacos", href: "/uniformes?categoria=sacos#prendas" },
 ] as const
 export type GarmentCategory = typeof garmentCategories[number]["id"]
@@ -23,12 +23,6 @@ export const garments: Garment[] = [
   { id: "pantalon-dama", category: "pantalones-dama", name: "Pantalón azul marino de dama", image: "/home-2027/pantalon-mujer.webp", alt: "Pantalón azul marino de dama, vista completa" },
   { id: "pantalon-caballero", category: "pantalones-caballero", name: "Pantalón azul marino de caballero", image: "/home-2027/pantalon-hombre.webp", alt: "Pantalón azul marino de caballero, vista completa" },
   { id: "polo-marino", category: "polos", name: "Polo azul marino", image: "/home-2027/polos.webp", alt: "Modelo masculino con polo azul marino de manga corta" },
-  { id: "casaca-doble-desmontable-zoomlion", category: "casacas", name: "Casaca doble desmontable — Zoomlion", image: "/prendas/casaca-doble-desmontable-zoomlion.webp", alt: "Modelo con casaca negra de capucha, cierre frontal y logotipo Zoomlion" },
-  { id: "casaca-saco-impermeable-cip", category: "casacas", name: "Casaca saco impermeable — CIP", image: "/prendas/casaca-saco-impermeable-cip.webp", alt: "Modelo con casaca larga verde de capucha, dos franjas claras en el torso y emblema del Colegio de Ingenieros del Perú" },
-  { id: "casaca-impermeable-rija-ineco", category: "casacas", name: "Casaca impermeable Rija — Ineco", image: "/prendas/casaca-impermeable-rija-ineco.webp", alt: "Modelo con casaca roja Ineco, cierre frontal cubierto y franjas claras en el torso y las mangas" },
-  { id: "casaca-sport-elegante-glencore", category: "casacas", name: "Casaca sport elegante — Glencore", image: "/prendas/casaca-sport-elegante-glencore.webp", alt: "Casaca negra Glencore en vistas delantera y posterior, con detalles del cuello y del puño" },
-  { id: "casaca-acolchada-electrodunas", category: "casacas", name: "Casaca acolchada — ElectroDunas", image: "/prendas/casaca-acolchada-electrodunas.webp", alt: "Modelo con casaca negra de acolchado horizontal, cierre frontal y logotipo ElectroDunas" },
-  { id: "casaca-softshell-minera-bateas", category: "casacas", name: "Casaca softshell — Minera Bateas", image: "/prendas/casaca-softshell-minera-bateas.webp", alt: "Modelo con casaca azul marino, cuello alto, cierre frontal y logotipo Minera Bateas" },
 ]
 export type CasePhoto = { src: string; alt: string; evidence: string; width?: number; height?: number; caption?: string }
 export type CaseSeason = {
