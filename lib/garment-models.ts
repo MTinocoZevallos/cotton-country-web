@@ -290,9 +290,9 @@ export const garmentModels: Record<EditorialCategory, readonly GarmentModel[]> =
     {
       "number": "01",
       "title": "Casaca doble desmontable",
-      "image": "/prendas/casaca-doble-desmontable-zoomlion.webp",
-      "width": 1024,
-      "height": 1536,
+      "image": "/prendas/casaca-doble-desmontable-zoomlion-2027.webp",
+      "width": 1145,
+      "height": 1374,
       "alt": "Casaca negra con capucha, cierre frontal cubierto y bolsillos laterales",
       "application": "Capucha y cierre frontal",
       "description": "Una propuesta de líneas sobrias para equipos que buscan una presentación corporativa uniforme. Este modelo permite tomar como referencia su silueta y acabados al definir las casacas de la organización.",
@@ -332,10 +332,10 @@ export const garmentModels: Record<EditorialCategory, readonly GarmentModel[]> =
     {
       "number": "04",
       "title": "Casaca sport elegante",
-      "image": "/prendas/casaca-sport-elegante-glencore.webp",
-      "width": 1536,
-      "height": 1024,
-      "alt": "Casaca negra de cuello alto y bolsillos con cierre, en vistas delantera y posterior con detalles del cuello y del puño",
+      "image": "/prendas/casaca-sport-elegante-glencore-2027.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Vista delantera de casaca negra de cuello alto, cierre frontal y bolsillos con cierre",
       "application": "Vistas y detalles",
       "description": "Combina una presentación sobria con una silueta de estilo sport para equipos administrativos, comerciales o de atención. Una referencia para integrar una casaca a la imagen cotidiana de la organización.",
       "details": [

@@ -134,8 +134,8 @@ export const projectCases: ProjectCase[] = [
     subtitle: "Un único uniforme adaptable a invierno y verano.",
     seo: { title: "Uniformes para Instituto Columbia | Cotton Country", description: "Conoce cómo Cotton Country convirtió las ideas de diseño del Instituto Columbia en un uniforme institucional versátil para invierno y verano." },
     fullImages: [
-      { src: "/casos/columbia/con-saco.jpg", alt: "Uniforme del Instituto Columbia con saco azul institucional, blusa blanca, pantalón azul y pañuelo azul y amarillo", width: 1536, height: 2752, caption: "Con saco — Invierno", evidence: "Instituto Columbia 2.jfif de Columbia.zip, archivo JPEG original sin recomprimir ni retocar" },
-      { src: "/casos/columbia/sin-saco.jpg", alt: "El mismo uniforme del Instituto Columbia sin saco: blusa blanca de manga corta con detalle de confección, pantalón azul institucional y pañuelo azul y amarillo", width: 1536, height: 2752, caption: "Sin saco — Verano", evidence: "Instituto Columbia.jfif de Columbia.zip, archivo JPEG original sin recomprimir ni retocar" },
+      { src: "/casos/columbia/con-saco.webp", alt: "Uniforme del Instituto Columbia con saco azul institucional, blusa blanca, pantalón azul y pañuelo azul y amarillo", width: 1024, height: 1536, caption: "Con saco — Invierno", evidence: "columbia-1.png de imagenes-cotton-country-2027.zip; WebP de alta calidad sin retoques ni cambio de proporciones" },
+      { src: "/casos/columbia/sin-saco.webp", alt: "El mismo uniforme del Instituto Columbia sin saco: blusa blanca de manga corta con detalle de confección, pantalón azul institucional y pañuelo azul y amarillo", width: 1024, height: 1536, caption: "Sin saco — Verano", evidence: "columbia-2.png de imagenes-cotton-country-2027.zip; WebP de alta calidad sin retoques ni cambio de proporciones" },
     ],
     garmentIds: [], categories: ["sacos", "blusas", "pantalones-dama"],
     features: [

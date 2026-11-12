@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     locale: "es_PE",
     type: "website",
     images: [{
-      url: "/prendas/casaca-doble-desmontable-zoomlion.webp",
-      width: 1024,
-      height: 1536,
+      url: "/prendas/casaca-doble-desmontable-zoomlion-2027.webp",
+      width: 1145,
+      height: 1374,
       alt: "Casaca doble desmontable negra con capucha y cierre frontal cubierto",
     }],
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Casacas corporativas | Cotton Country",
     description: "Seis modelos de casacas con fotografías y detalles de confección visibles en cada prenda.",
-    images: ["/prendas/casaca-doble-desmontable-zoomlion.webp"],
+    images: ["/prendas/casaca-doble-desmontable-zoomlion-2027.webp"],
   },
 }
 

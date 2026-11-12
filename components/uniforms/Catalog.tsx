@@ -40,7 +40,7 @@ export default function Catalog() {
             const modelHref = `${category.href}#modelo-${item.number}`
             return <article key={item.id}>
               <Link href={modelHref} aria-label={`Ver ${item.name.toLowerCase()}`}>
-                <div className={styles.photo}><Image src={item.image} alt={item.alt} fill sizes="(max-width:575px) 100vw, (max-width:900px) 50vw, 33vw" /></div>
+                <div className={styles.photo} data-category={item.category}><Image src={item.image} alt={item.alt} fill sizes="(max-width:575px) 116vw, (max-width:900px) 58vw, 39vw" /></div>
               </Link>
               <h3>{item.name}</h3>
               <p className={styles.catalogDescription}>{item.description}</p>
