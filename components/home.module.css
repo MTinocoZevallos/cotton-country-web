@@ -12,6 +12,9 @@
 .heroBackdrop, .heroShade { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
 .heroBackdrop { top: 80px; background: url("/home-2027/hero.webp") center / cover no-repeat; animation: photoEnter 1.2s ease both; }
 .heroImage { object-fit: contain; object-position: 100% 0%; mask-image: linear-gradient(90deg, transparent 20%, #000 40%); }
+@media (min-width: 768px) and (max-width: 900px) {
+  .heroImage { object-fit: cover; object-position: 50% 50%; }
+}
 .heroShade { background: linear-gradient(90deg, color-mix(in srgb, var(--cc-charcoal) 74%, transparent), color-mix(in srgb, var(--cc-charcoal) 48%, transparent) 40%, color-mix(in srgb, var(--cc-charcoal) 12%, transparent) 62%, transparent 78%); }
 .heroContent { position: relative; width: calc(100% - 112px); max-width: 1600px; margin-inline: auto; padding-block: 132px 48px; height: 100%; display: flex; flex-direction: column; justify-content: center; }
 .home .heroTitle { margin-top: 0; max-width: 850px; position: relative; color: var(--cc-white); font-family: var(--font-editorial-serif), Georgia, serif; font-size: clamp(52px, 5.6vw, 80px); font-weight: 400; letter-spacing: -.025em; line-height: 1.05; }
