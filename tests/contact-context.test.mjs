@@ -66,7 +66,7 @@ test('the catalog contains exactly 30 distinct approved models and no legacy or 
 
 test('jacket copy is generic and each editorial family retains its commercial contact context', () => {
   const { models, helpers } = fixture()
-  assert.deepEqual(plain(models.casacas.map(item => item.title)), ['Casaca doble desmontable', 'Casaca tipo saco impermeable', 'Casaca impermeable Rija', 'Casaca sport elegante', 'Casaca acolchada', 'Casaca softshell'])
+  assert.deepEqual(plain(models.casacas.map(item => item.title)), ['Casaca doble desmontable', 'Casaca tipo saco impermeable', 'Casaca impermeable con cintas reflectivas', 'Casaca sport elegante', 'Casaca acolchada', 'Casaca softshell'])
   for (const { image, ...copy } of models.casacas) {
     assert(image.startsWith('/prendas/casaca-'))
     assert(!/zoomlion|\bcip\b|ineco|glencore|electrodunas|minera bateas|colegio de ingenieros/i.test(JSON.stringify(copy)))

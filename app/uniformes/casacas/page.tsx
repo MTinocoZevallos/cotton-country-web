@@ -9,7 +9,7 @@ import styles from "@/components/uniforms/uniforms.module.css"
 
 export const metadata: Metadata = {
   title: "Casacas corporativas | Cotton Country",
-  description: "Seis modelos de casacas corporativas: doble desmontable, tipo saco impermeable, impermeable Rija, sport elegante, acolchada y softshell.",
+  description: "Seis modelos de casacas corporativas: doble desmontable, tipo saco impermeable, impermeable con cintas reflectivas, sport elegante, acolchada y softshell.",
   alternates: { canonical: "/uniformes/casacas" },
   openGraph: {
     title: "Casacas corporativas | Cotton Country",

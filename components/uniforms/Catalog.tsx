@@ -38,9 +38,18 @@ export default function Catalog() {
           {items.map(item => {
             const category = garmentCategories.find(category => category.id === item.category)!
             const modelHref = `${category.href}#modelo-${item.number}`
+            const paired = item.category === "pantalones-dama" || item.category === "pantalones-caballero"
             return <article key={item.id}>
               <Link href={modelHref} aria-label={`Ver ${item.name.toLowerCase()}`}>
-                <div className={styles.photo} data-category={item.category}><Image src={item.image} alt={item.alt} fill sizes="(max-width:575px) 116vw, (max-width:900px) 58vw, 39vw" /></div>
+                <div className={`${styles.photo} ${styles.catalogPhoto}`} data-category={item.category} data-layout={paired ? "paired" : item.width > item.height ? "landscape" : "portrait"}>
+                  {paired ? <div className={styles.pairedPhoto} role="img" aria-label={item.alt}>
+                    {/* Two windows into the same original preserve both views while
+                        removing background between them, without editing the file. */}
+                    {["front", "back"].map(view => <span className={styles.pairedView} data-view={view} key={view} aria-hidden="true">
+                      <Image src={item.image} alt="" width={item.width} height={item.height} sizes="(max-width:575px) 150vw, (max-width:900px) 75vw, 50vw" />
+                    </span>)}
+                  </div> : <Image src={item.image} alt={item.alt} width={item.width} height={item.height} sizes="(max-width:575px) calc(100vw - 40px), (max-width:900px) 50vw, 33vw" />}
+                </div>
               </Link>
               <h3>{item.name}</h3>
               <p className={styles.catalogDescription}>{item.description}</p>

@@ -17,7 +17,7 @@ export const sectors: { id: SectorId; name: string; public: boolean; title: stri
   { id: "educacion", name: "Educación", public: true, title: "Una identidad institucional que se viste cada día.", intro: "Los equipos de una institución educativa cumplen funciones distintas: atención, administración, docencia y apoyo. Definir esas actividades permite evaluar prendas apropiadas para cada entorno y una presentación institucional consistente.", criteria: ["Funciones y protocolos de presentación de cada área.", "Tallaje y comodidad para diferentes actividades.", "Identificación institucional, acabados y continuidad entre entregas."] },
   { id: "agroindustria", name: "Agroindustria", public: false, title: "El uniforme parte de las condiciones de trabajo.", intro: "En un proyecto agroindustrial es necesario conocer las funciones, las condiciones del entorno y los protocolos de la organización antes de definir las prendas. La información técnica del requerimiento orienta la evaluación de materiales y confección.", criteria: ["Condiciones de uso y actividades del personal.", "Requisitos técnicos y protocolos definidos por la empresa.", "Tallaje, mantenimiento y planificación de entregas."] },
 ]
-export type Garment = { id: string; category: GarmentCategory; number: string; name: string; image: string; alt: string; description: string; caseId?: string }
+export type Garment = { id: string; category: GarmentCategory; number: string; name: string; image: string; width: number; height: number; alt: string; description: string; caseId?: string }
 // Only approved editorial models enter the catalog. Case associations are separate.
 export const garments: Garment[] = Object.entries(garmentModels).flatMap(([category, models]) =>
   models.map(model => ({
@@ -26,6 +26,8 @@ export const garments: Garment[] = Object.entries(garmentModels).flatMap(([categ
     number: model.number,
     name: model.title,
     image: model.image,
+    width: model.width,
+    height: model.height,
     alt: model.alt,
     description: model.description,
   }))

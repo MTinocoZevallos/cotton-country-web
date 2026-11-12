@@ -76,10 +76,10 @@ export const garmentModels: Record<EditorialCategory, readonly GarmentModel[]> =
     {
       "number": "05",
       "title": "Camisa Safari blanca",
-      "image": "/uniformes/camisas-2027/05_camisa_safari_blanca.webp",
-      "width": 1312,
-      "height": 1199,
-      "alt": "Modelo con camisa Safari blanca, bolsillos con pliegues y tapas, canesú ventilado con malla y manga con sistema roll-up",
+      "image": "/uniformes/camisas-2027/05_camisa_safari_blanca-individual.webp",
+      "width": 1024,
+      "height": 1536,
+      "alt": "Modelo con camisa Safari blanca de manga larga y bolsillos delanteros con pliegues y tapas",
       "application": "Confección funcional",
       "description": "Camisa para el trabajo de campo, con canesú ventilado y mangas ajustables mediante sistema roll-up.",
       "details": [
@@ -124,10 +124,10 @@ export const garmentModels: Record<EditorialCategory, readonly GarmentModel[]> =
     {
       "number": "04",
       "title": "Blusa safari",
-      "image": "/uniformes/blusas-2027/04_blusa_safari.png",
-      "width": 1199,
-      "height": 1312,
-      "alt": "Modelo con blusa safari oscura de manga larga, bolsillos de pecho con tapas y detalles de mangas y canesú posterior",
+      "image": "/uniformes/blusas-2027/04_blusa_safari-individual.webp",
+      "width": 1024,
+      "height": 1536,
+      "alt": "Modelo con blusa safari oscura de manga larga y bolsillos de pecho con tapas",
       "application": "Confección funcional",
       "description": "Los bolsillos de pecho con tapas y detalles de cinta acompañan una construcción funcional de manga larga. El canesú ventilado con malla interior aporta ventilación para las actividades de campo."
     },
@@ -317,7 +317,7 @@ export const garmentModels: Record<EditorialCategory, readonly GarmentModel[]> =
     },
     {
       "number": "03",
-      "title": "Casaca impermeable Rija",
+      "title": "Casaca impermeable con cintas reflectivas",
       "image": "/prendas/casaca-impermeable-rija-ineco.webp",
       "width": 1199,
       "height": 1312,
@@ -336,11 +336,11 @@ export const garmentModels: Record<EditorialCategory, readonly GarmentModel[]> =
       "width": 1086,
       "height": 1448,
       "alt": "Vista delantera de casaca negra de cuello alto, cierre frontal y bolsillos con cierre",
-      "application": "Vistas y detalles",
+      "application": "Presentación sport",
       "description": "Combina una presentación sobria con una silueta de estilo sport para equipos administrativos, comerciales o de atención. Una referencia para integrar una casaca a la imagen cotidiana de la organización.",
       "details": [
         "Cuello alto, cierre frontal y bolsillos con cierre.",
-        "Vistas delantera y posterior, con acercamientos del cuello y del puño."
+        "Color negro y vista frontal."
       ]
     },
     {

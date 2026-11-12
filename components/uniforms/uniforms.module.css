@@ -24,12 +24,22 @@
 .photo { position: relative; aspect-ratio: 3 / 4; border-radius: 24px; overflow: hidden; background: #fff; }
 .photo img { object-fit: contain; }
 .catalog article { display: grid; grid-template-rows: subgrid; grid-row: span 5; row-gap: 0; min-width: 0; }
-/* Keep the approved shirt frame. Paired views use only the inspected lateral
-   background margin; cover would crop the garments to fill a portrait frame. */
-.catalog .photo { width: 100%; aspect-ratio: 3 / 4; }
-.catalog .photo img { object-fit: contain; object-position: center; }
-.catalog .photo[data-category="pantalones-dama"] img { transform: scale(1.08); }
-.catalog .photo[data-category="pantalones-caballero"] img { transform: scale(1.16); }
+/* The first three approved shirts are 1199 × 1312. Give every card that
+   frame, and round the actual image box as well as its surrounding frame. */
+.catalogPhoto { width: 100%; aspect-ratio: 1199 / 1312; display: grid; place-items: center; background: #eeecee; isolation: isolate; clip-path: inset(0 round 24px); }
+.catalogPhoto > img { position: absolute; inset: 0; margin: auto; display: block; width: auto; height: auto; max-width: 100%; max-height: 100%; border-radius: inherit; object-fit: contain; }
+/* The single landscape shirt has sufficient lateral background to fill the
+   reference frame without cropping its head, sleeves or hem. */
+.catalogPhoto[data-layout="landscape"] > img { width: 100%; height: 100%; object-fit: cover; }
+/* Reposition the original front/rear views into adjacent windows. The image
+   ratio stays natural; only lateral background is hidden by each window. */
+.pairedPhoto { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); width: 100%; height: 100%; }
+.pairedView { position: relative; overflow: hidden; min-width: 0; }
+.pairedView img { position: absolute; top: 50%; left: 50%; height: 100%; width: auto; max-width: none; transform: translate(-25%,-50%); }
+.pairedView[data-view="back"] img { transform: translate(-75%,-50%); }
+.catalogPhoto[data-category="pantalones-caballero"] .pairedView img { height: 92%; }
+.catalogPhoto[data-category="pantalones-caballero"] [data-view="back"] img { transform: translate(-70%,-50%); }
+@media(max-width:575px) { .catalogPhoto { clip-path: inset(0 round 20px); } }
 .catalog h3 { font-size: 23px; margin-block: 20px 12px; }
 .catalogDescription { font-size: 15px; line-height: 1.8; margin-bottom: 16px; }
 .page .modelLabel { font-family: var(--cc-font-body); font-size: 14px; font-weight: 600; letter-spacing: normal; margin-top: 24px; }
