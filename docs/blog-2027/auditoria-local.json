@@ -1,0 +1,2513 @@
+{
+  "scope": "Built local application; not production, Search Console or an exhaustive WordPress archive",
+  "checked_at_utc": "2026-11-12T23:08:26.047990+00:00",
+  "summary": {
+    "articles": 53,
+    "discoverable_articles": 53,
+    "collections": 11,
+    "redirects": 159,
+    "internal_targets": 75,
+    "fragments": 197,
+    "images": 106,
+    "negative_controls": 8,
+    "failures": 0
+  },
+  "articles": [
+    {
+      "path": "/el-algodon-se-caso-con-el-poliester-en-oxford",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/el-algodon-se-caso-con-el-poliester-en-oxford",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 32
+    },
+    {
+      "path": "/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/5-tipos-de-tejidos-inteligentes",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/5-tipos-de-tejidos-inteligentes",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 33
+    },
+    {
+      "path": "/estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/mascarillas-y-covid-19",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/mascarillas-y-covid-19",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/uniformes-de-chef-que-tela-elegir",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/uniformes-de-chef-que-tela-elegir",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 33
+    },
+    {
+      "path": "/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 33
+    },
+    {
+      "path": "/el-uniforme-de-farmacia",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/el-uniforme-de-farmacia",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 34
+    },
+    {
+      "path": "/por-que-usar-mascarillas-reutilizables-lavables",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/por-que-usar-mascarillas-reutilizables-lavables",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/como-cuidar-tu-mascarilla-de-tela-certificada",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/como-cuidar-tu-mascarilla-de-tela-certificada",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/mascarillas-y-covid-19-segunda-ola",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/mascarillas-y-covid-19-segunda-ola",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/ntp-aplicada-en-mascarillas-reutilizables",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/ntp-aplicada-en-mascarillas-reutilizables",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 28
+    },
+    {
+      "path": "/procesos-de-confeccion-seguros",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/procesos-de-confeccion-seguros",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/delivery-aliado-de-la-industria-textil-confecciones",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/delivery-aliado-de-la-industria-textil-confecciones",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/que-talla-eres-en-peru",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/que-talla-eres-en-peru",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/el-problema-de-las-tallas",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/el-problema-de-las-tallas",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 36
+    },
+    {
+      "path": "/ntp-para-la-designacion-de-tallas",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/ntp-para-la-designacion-de-tallas",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 32
+    },
+    {
+      "path": "/la-talla-peruana",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/la-talla-peruana",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 33
+    },
+    {
+      "path": "/medalla-de-oro-en-uniformes",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/medalla-de-oro-en-uniformes",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/los-uniformes-un-problema-olimpico",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/los-uniformes-un-problema-olimpico",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/disenador-a-sus-disenos",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/disenador-a-sus-disenos",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/3-consejos-para-compradores-de-textiles-b2b",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/3-consejos-para-compradores-de-textiles-b2b",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 28
+    },
+    {
+      "path": "/el-futuro-de-la-industria-textil-y-de-confecciones",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/el-futuro-de-la-industria-textil-y-de-confecciones",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/logistica-y-abastecimiento-textil-2022",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/logistica-y-abastecimiento-textil-2022",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 33
+    },
+    {
+      "path": "/que-significa-tallas-completas-en-ropa",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/que-significa-tallas-completas-en-ropa",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 33
+    },
+    {
+      "path": "/guia-de-tallas-online",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/guia-de-tallas-online",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/una-breve-historia-del-algodon",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/una-breve-historia-del-algodon",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 32
+    },
+    {
+      "path": "/el-ano-del-algodon-2022",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/el-ano-del-algodon-2022",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/tallas-completas-en-peru",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/tallas-completas-en-peru",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/las-tallas-completas-segun-una-ia",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/las-tallas-completas-segun-una-ia",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 33
+    },
+    {
+      "path": "/como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 32
+    },
+    {
+      "path": "/uniformes-de-guerra",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/uniformes-de-guerra",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/un-tejido-llamado-gaza",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/un-tejido-llamado-gaza",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/perumin-2023",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/perumin-2023",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 34
+    },
+    {
+      "path": "/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 32
+    },
+    {
+      "path": "/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 29
+    },
+    {
+      "path": "/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 25
+    },
+    {
+      "path": "/como-definir-un-proyecto-de-uniformes-corporativos",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/como-definir-un-proyecto-de-uniformes-corporativos",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 36
+    },
+    {
+      "path": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/por-que-las-empresas-tienen-problemas-con-las-tallas",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 27
+    },
+    {
+      "path": "/de-que-depende-el-tiempo-de-entrega-de-uniformes",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/de-que-depende-el-tiempo-de-entrega-de-uniformes",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 35
+    },
+    {
+      "path": "/dia-mundial-del-algodon-2026",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/dia-mundial-del-algodon-2026",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 32
+    },
+    {
+      "path": "/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": "2026-11-12",
+      "internal_links": 34
+    },
+    {
+      "path": "/sector-textil-peruano-emergencia-productividad-2026",
+      "status": 200,
+      "canonical": "https://cottoncountry.com.pe/sector-textil-peruano-emergencia-productividad-2026",
+      "h1": 1,
+      "structured_data": true,
+      "updated_at": null,
+      "internal_links": 33
+    }
+  ],
+  "collections": [
+    "/blog",
+    "/blog/categoria/algodon-y-cultura-textil",
+    "/blog/categoria/compras-y-logistica",
+    "/blog/categoria/industria-y-materiales",
+    "/blog/categoria/tallaje-y-dotaciones",
+    "/blog/categoria/uniformes-y-aplicaciones",
+    "/blog/categoria/uniformes-y-aplicaciones?pagina=2",
+    "/blog?pagina=2",
+    "/blog?pagina=3",
+    "/blog?pagina=4",
+    "/blog?pagina=5"
+  ],
+  "redirects": [
+    {
+      "path": "/blog/el-algodon-se-caso-con-el-poliester-en-oxford",
+      "status": 308,
+      "destination": "/el-algodon-se-caso-con-el-poliester-en-oxford",
+      "hops": 1
+    },
+    {
+      "path": "/blog/el-algodon-se-caso-con-el-poliester-en-oxford/",
+      "status": 308,
+      "destination": "/el-algodon-se-caso-con-el-poliester-en-oxford",
+      "hops": 1
+    },
+    {
+      "path": "/el-algodon-se-caso-con-el-poliester-en-oxford/",
+      "status": 308,
+      "destination": "/el-algodon-se-caso-con-el-poliester-en-oxford",
+      "hops": 1
+    },
+    {
+      "path": "/blog/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
+      "status": 308,
+      "destination": "/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
+      "hops": 1
+    },
+    {
+      "path": "/blog/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren/",
+      "status": 308,
+      "destination": "/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
+      "hops": 1
+    },
+    {
+      "path": "/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren/",
+      "status": 308,
+      "destination": "/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
+      "hops": 1
+    },
+    {
+      "path": "/blog/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
+      "status": 308,
+      "destination": "/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
+      "hops": 1
+    },
+    {
+      "path": "/blog/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller/",
+      "status": 308,
+      "destination": "/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
+      "hops": 1
+    },
+    {
+      "path": "/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller/",
+      "status": 308,
+      "destination": "/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
+      "hops": 1
+    },
+    {
+      "path": "/blog/5-tipos-de-tejidos-inteligentes",
+      "status": 308,
+      "destination": "/5-tipos-de-tejidos-inteligentes",
+      "hops": 1
+    },
+    {
+      "path": "/blog/5-tipos-de-tejidos-inteligentes/",
+      "status": 308,
+      "destination": "/5-tipos-de-tejidos-inteligentes",
+      "hops": 1
+    },
+    {
+      "path": "/5-tipos-de-tejidos-inteligentes/",
+      "status": 308,
+      "destination": "/5-tipos-de-tejidos-inteligentes",
+      "hops": 1
+    },
+    {
+      "path": "/blog/estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
+      "status": 308,
+      "destination": "/estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
+      "hops": 1
+    },
+    {
+      "path": "/blog/estafas-textiles-no-seas-victima-de-la-falta-de-informacion/",
+      "status": 308,
+      "destination": "/estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
+      "hops": 1
+    },
+    {
+      "path": "/estafas-textiles-no-seas-victima-de-la-falta-de-informacion/",
+      "status": 308,
+      "destination": "/estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
+      "hops": 1
+    },
+    {
+      "path": "/blog/mascarillas-y-covid-19",
+      "status": 308,
+      "destination": "/mascarillas-y-covid-19",
+      "hops": 1
+    },
+    {
+      "path": "/blog/mascarillas-y-covid-19/",
+      "status": 308,
+      "destination": "/mascarillas-y-covid-19",
+      "hops": 1
+    },
+    {
+      "path": "/mascarillas-y-covid-19/",
+      "status": 308,
+      "destination": "/mascarillas-y-covid-19",
+      "hops": 1
+    },
+    {
+      "path": "/blog/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
+      "status": 308,
+      "destination": "/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
+      "hops": 1
+    },
+    {
+      "path": "/blog/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes/",
+      "status": 308,
+      "destination": "/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
+      "hops": 1
+    },
+    {
+      "path": "/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes/",
+      "status": 308,
+      "destination": "/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
+      "hops": 1
+    },
+    {
+      "path": "/blog/por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
+      "status": 308,
+      "destination": "/por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
+      "hops": 1
+    },
+    {
+      "path": "/blog/por-que-comprar-uniformes-de-trabajo-para-mis-empleados/",
+      "status": 308,
+      "destination": "/por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
+      "hops": 1
+    },
+    {
+      "path": "/por-que-comprar-uniformes-de-trabajo-para-mis-empleados/",
+      "status": 308,
+      "destination": "/por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
+      "hops": 1
+    },
+    {
+      "path": "/blog/uniformes-de-chef-que-tela-elegir",
+      "status": 308,
+      "destination": "/uniformes-de-chef-que-tela-elegir",
+      "hops": 1
+    },
+    {
+      "path": "/blog/uniformes-de-chef-que-tela-elegir/",
+      "status": 308,
+      "destination": "/uniformes-de-chef-que-tela-elegir",
+      "hops": 1
+    },
+    {
+      "path": "/uniformes-de-chef-que-tela-elegir/",
+      "status": 308,
+      "destination": "/uniformes-de-chef-que-tela-elegir",
+      "hops": 1
+    },
+    {
+      "path": "/blog/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
+      "status": 308,
+      "destination": "/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
+      "hops": 1
+    },
+    {
+      "path": "/blog/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial/",
+      "status": 308,
+      "destination": "/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
+      "hops": 1
+    },
+    {
+      "path": "/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial/",
+      "status": 308,
+      "destination": "/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
+      "hops": 1
+    },
+    {
+      "path": "/blog/el-uniforme-de-farmacia",
+      "status": 308,
+      "destination": "/el-uniforme-de-farmacia",
+      "hops": 1
+    },
+    {
+      "path": "/blog/el-uniforme-de-farmacia/",
+      "status": 308,
+      "destination": "/el-uniforme-de-farmacia",
+      "hops": 1
+    },
+    {
+      "path": "/el-uniforme-de-farmacia/",
+      "status": 308,
+      "destination": "/el-uniforme-de-farmacia",
+      "hops": 1
+    },
+    {
+      "path": "/blog/por-que-usar-mascarillas-reutilizables-lavables",
+      "status": 308,
+      "destination": "/por-que-usar-mascarillas-reutilizables-lavables",
+      "hops": 1
+    },
+    {
+      "path": "/blog/por-que-usar-mascarillas-reutilizables-lavables/",
+      "status": 308,
+      "destination": "/por-que-usar-mascarillas-reutilizables-lavables",
+      "hops": 1
+    },
+    {
+      "path": "/por-que-usar-mascarillas-reutilizables-lavables/",
+      "status": 308,
+      "destination": "/por-que-usar-mascarillas-reutilizables-lavables",
+      "hops": 1
+    },
+    {
+      "path": "/blog/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+      "status": 308,
+      "destination": "/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+      "hops": 1
+    },
+    {
+      "path": "/blog/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela/",
+      "status": 308,
+      "destination": "/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+      "hops": 1
+    },
+    {
+      "path": "/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela/",
+      "status": 308,
+      "destination": "/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+      "hops": 1
+    },
+    {
+      "path": "/blog/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+      "status": 308,
+      "destination": "/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+      "hops": 1
+    },
+    {
+      "path": "/blog/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege/",
+      "status": 308,
+      "destination": "/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+      "hops": 1
+    },
+    {
+      "path": "/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege/",
+      "status": 308,
+      "destination": "/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+      "hops": 1
+    },
+    {
+      "path": "/blog/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo",
+      "status": 308,
+      "destination": "/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo",
+      "hops": 1
+    },
+    {
+      "path": "/blog/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo/",
+      "status": 308,
+      "destination": "/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo",
+      "hops": 1
+    },
+    {
+      "path": "/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo/",
+      "status": 308,
+      "destination": "/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo",
+      "hops": 1
+    },
+    {
+      "path": "/blog/como-cuidar-tu-mascarilla-de-tela-certificada",
+      "status": 308,
+      "destination": "/como-cuidar-tu-mascarilla-de-tela-certificada",
+      "hops": 1
+    },
+    {
+      "path": "/blog/como-cuidar-tu-mascarilla-de-tela-certificada/",
+      "status": 308,
+      "destination": "/como-cuidar-tu-mascarilla-de-tela-certificada",
+      "hops": 1
+    },
+    {
+      "path": "/como-cuidar-tu-mascarilla-de-tela-certificada/",
+      "status": 308,
+      "destination": "/como-cuidar-tu-mascarilla-de-tela-certificada",
+      "hops": 1
+    },
+    {
+      "path": "/blog/mascarillas-y-covid-19-segunda-ola",
+      "status": 308,
+      "destination": "/mascarillas-y-covid-19-segunda-ola",
+      "hops": 1
+    },
+    {
+      "path": "/blog/mascarillas-y-covid-19-segunda-ola/",
+      "status": 308,
+      "destination": "/mascarillas-y-covid-19-segunda-ola",
+      "hops": 1
+    },
+    {
+      "path": "/mascarillas-y-covid-19-segunda-ola/",
+      "status": 308,
+      "destination": "/mascarillas-y-covid-19-segunda-ola",
+      "hops": 1
+    },
+    {
+      "path": "/blog/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+      "status": 308,
+      "destination": "/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+      "hops": 1
+    },
+    {
+      "path": "/blog/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas/",
+      "status": 308,
+      "destination": "/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+      "hops": 1
+    },
+    {
+      "path": "/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas/",
+      "status": 308,
+      "destination": "/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+      "hops": 1
+    },
+    {
+      "path": "/blog/ntp-aplicada-en-mascarillas-reutilizables",
+      "status": 308,
+      "destination": "/ntp-aplicada-en-mascarillas-reutilizables",
+      "hops": 1
+    },
+    {
+      "path": "/blog/ntp-aplicada-en-mascarillas-reutilizables/",
+      "status": 308,
+      "destination": "/ntp-aplicada-en-mascarillas-reutilizables",
+      "hops": 1
+    },
+    {
+      "path": "/ntp-aplicada-en-mascarillas-reutilizables/",
+      "status": 308,
+      "destination": "/ntp-aplicada-en-mascarillas-reutilizables",
+      "hops": 1
+    },
+    {
+      "path": "/blog/procesos-de-confeccion-seguros",
+      "status": 308,
+      "destination": "/procesos-de-confeccion-seguros",
+      "hops": 1
+    },
+    {
+      "path": "/blog/procesos-de-confeccion-seguros/",
+      "status": 308,
+      "destination": "/procesos-de-confeccion-seguros",
+      "hops": 1
+    },
+    {
+      "path": "/procesos-de-confeccion-seguros/",
+      "status": 308,
+      "destination": "/procesos-de-confeccion-seguros",
+      "hops": 1
+    },
+    {
+      "path": "/blog/delivery-aliado-de-la-industria-textil-confecciones",
+      "status": 308,
+      "destination": "/delivery-aliado-de-la-industria-textil-confecciones",
+      "hops": 1
+    },
+    {
+      "path": "/blog/delivery-aliado-de-la-industria-textil-confecciones/",
+      "status": 308,
+      "destination": "/delivery-aliado-de-la-industria-textil-confecciones",
+      "hops": 1
+    },
+    {
+      "path": "/delivery-aliado-de-la-industria-textil-confecciones/",
+      "status": 308,
+      "destination": "/delivery-aliado-de-la-industria-textil-confecciones",
+      "hops": 1
+    },
+    {
+      "path": "/blog/que-talla-eres-en-peru",
+      "status": 308,
+      "destination": "/que-talla-eres-en-peru",
+      "hops": 1
+    },
+    {
+      "path": "/blog/que-talla-eres-en-peru/",
+      "status": 308,
+      "destination": "/que-talla-eres-en-peru",
+      "hops": 1
+    },
+    {
+      "path": "/que-talla-eres-en-peru/",
+      "status": 308,
+      "destination": "/que-talla-eres-en-peru",
+      "hops": 1
+    },
+    {
+      "path": "/blog/el-problema-de-las-tallas",
+      "status": 308,
+      "destination": "/el-problema-de-las-tallas",
+      "hops": 1
+    },
+    {
+      "path": "/blog/el-problema-de-las-tallas/",
+      "status": 308,
+      "destination": "/el-problema-de-las-tallas",
+      "hops": 1
+    },
+    {
+      "path": "/el-problema-de-las-tallas/",
+      "status": 308,
+      "destination": "/el-problema-de-las-tallas",
+      "hops": 1
+    },
+    {
+      "path": "/blog/ntp-para-la-designacion-de-tallas",
+      "status": 308,
+      "destination": "/ntp-para-la-designacion-de-tallas",
+      "hops": 1
+    },
+    {
+      "path": "/blog/ntp-para-la-designacion-de-tallas/",
+      "status": 308,
+      "destination": "/ntp-para-la-designacion-de-tallas",
+      "hops": 1
+    },
+    {
+      "path": "/ntp-para-la-designacion-de-tallas/",
+      "status": 308,
+      "destination": "/ntp-para-la-designacion-de-tallas",
+      "hops": 1
+    },
+    {
+      "path": "/blog/la-talla-peruana",
+      "status": 308,
+      "destination": "/la-talla-peruana",
+      "hops": 1
+    },
+    {
+      "path": "/blog/la-talla-peruana/",
+      "status": 308,
+      "destination": "/la-talla-peruana",
+      "hops": 1
+    },
+    {
+      "path": "/la-talla-peruana/",
+      "status": 308,
+      "destination": "/la-talla-peruana",
+      "hops": 1
+    },
+    {
+      "path": "/blog/medalla-de-oro-en-uniformes",
+      "status": 308,
+      "destination": "/medalla-de-oro-en-uniformes",
+      "hops": 1
+    },
+    {
+      "path": "/blog/medalla-de-oro-en-uniformes/",
+      "status": 308,
+      "destination": "/medalla-de-oro-en-uniformes",
+      "hops": 1
+    },
+    {
+      "path": "/medalla-de-oro-en-uniformes/",
+      "status": 308,
+      "destination": "/medalla-de-oro-en-uniformes",
+      "hops": 1
+    },
+    {
+      "path": "/blog/los-uniformes-un-problema-olimpico",
+      "status": 308,
+      "destination": "/los-uniformes-un-problema-olimpico",
+      "hops": 1
+    },
+    {
+      "path": "/blog/los-uniformes-un-problema-olimpico/",
+      "status": 308,
+      "destination": "/los-uniformes-un-problema-olimpico",
+      "hops": 1
+    },
+    {
+      "path": "/los-uniformes-un-problema-olimpico/",
+      "status": 308,
+      "destination": "/los-uniformes-un-problema-olimpico",
+      "hops": 1
+    },
+    {
+      "path": "/blog/disenador-a-sus-disenos",
+      "status": 308,
+      "destination": "/disenador-a-sus-disenos",
+      "hops": 1
+    },
+    {
+      "path": "/blog/disenador-a-sus-disenos/",
+      "status": 308,
+      "destination": "/disenador-a-sus-disenos",
+      "hops": 1
+    },
+    {
+      "path": "/disenador-a-sus-disenos/",
+      "status": 308,
+      "destination": "/disenador-a-sus-disenos",
+      "hops": 1
+    },
+    {
+      "path": "/blog/3-consejos-para-compradores-de-textiles-b2b",
+      "status": 308,
+      "destination": "/3-consejos-para-compradores-de-textiles-b2b",
+      "hops": 1
+    },
+    {
+      "path": "/blog/3-consejos-para-compradores-de-textiles-b2b/",
+      "status": 308,
+      "destination": "/3-consejos-para-compradores-de-textiles-b2b",
+      "hops": 1
+    },
+    {
+      "path": "/3-consejos-para-compradores-de-textiles-b2b/",
+      "status": 308,
+      "destination": "/3-consejos-para-compradores-de-textiles-b2b",
+      "hops": 1
+    },
+    {
+      "path": "/blog/el-futuro-de-la-industria-textil-y-de-confecciones",
+      "status": 308,
+      "destination": "/el-futuro-de-la-industria-textil-y-de-confecciones",
+      "hops": 1
+    },
+    {
+      "path": "/blog/el-futuro-de-la-industria-textil-y-de-confecciones/",
+      "status": 308,
+      "destination": "/el-futuro-de-la-industria-textil-y-de-confecciones",
+      "hops": 1
+    },
+    {
+      "path": "/el-futuro-de-la-industria-textil-y-de-confecciones/",
+      "status": 308,
+      "destination": "/el-futuro-de-la-industria-textil-y-de-confecciones",
+      "hops": 1
+    },
+    {
+      "path": "/blog/logistica-y-abastecimiento-textil-2022",
+      "status": 308,
+      "destination": "/logistica-y-abastecimiento-textil-2022",
+      "hops": 1
+    },
+    {
+      "path": "/blog/logistica-y-abastecimiento-textil-2022/",
+      "status": 308,
+      "destination": "/logistica-y-abastecimiento-textil-2022",
+      "hops": 1
+    },
+    {
+      "path": "/logistica-y-abastecimiento-textil-2022/",
+      "status": 308,
+      "destination": "/logistica-y-abastecimiento-textil-2022",
+      "hops": 1
+    },
+    {
+      "path": "/blog/que-significa-tallas-completas-en-ropa",
+      "status": 308,
+      "destination": "/que-significa-tallas-completas-en-ropa",
+      "hops": 1
+    },
+    {
+      "path": "/blog/que-significa-tallas-completas-en-ropa/",
+      "status": 308,
+      "destination": "/que-significa-tallas-completas-en-ropa",
+      "hops": 1
+    },
+    {
+      "path": "/que-significa-tallas-completas-en-ropa/",
+      "status": 308,
+      "destination": "/que-significa-tallas-completas-en-ropa",
+      "hops": 1
+    },
+    {
+      "path": "/blog/guia-de-tallas-online",
+      "status": 308,
+      "destination": "/guia-de-tallas-online",
+      "hops": 1
+    },
+    {
+      "path": "/blog/guia-de-tallas-online/",
+      "status": 308,
+      "destination": "/guia-de-tallas-online",
+      "hops": 1
+    },
+    {
+      "path": "/guia-de-tallas-online/",
+      "status": 308,
+      "destination": "/guia-de-tallas-online",
+      "hops": 1
+    },
+    {
+      "path": "/blog/una-breve-historia-del-algodon",
+      "status": 308,
+      "destination": "/una-breve-historia-del-algodon",
+      "hops": 1
+    },
+    {
+      "path": "/blog/una-breve-historia-del-algodon/",
+      "status": 308,
+      "destination": "/una-breve-historia-del-algodon",
+      "hops": 1
+    },
+    {
+      "path": "/una-breve-historia-del-algodon/",
+      "status": 308,
+      "destination": "/una-breve-historia-del-algodon",
+      "hops": 1
+    },
+    {
+      "path": "/blog/el-ano-del-algodon-2022",
+      "status": 308,
+      "destination": "/el-ano-del-algodon-2022",
+      "hops": 1
+    },
+    {
+      "path": "/blog/el-ano-del-algodon-2022/",
+      "status": 308,
+      "destination": "/el-ano-del-algodon-2022",
+      "hops": 1
+    },
+    {
+      "path": "/el-ano-del-algodon-2022/",
+      "status": 308,
+      "destination": "/el-ano-del-algodon-2022",
+      "hops": 1
+    },
+    {
+      "path": "/blog/tallas-completas-en-peru",
+      "status": 308,
+      "destination": "/tallas-completas-en-peru",
+      "hops": 1
+    },
+    {
+      "path": "/blog/tallas-completas-en-peru/",
+      "status": 308,
+      "destination": "/tallas-completas-en-peru",
+      "hops": 1
+    },
+    {
+      "path": "/tallas-completas-en-peru/",
+      "status": 308,
+      "destination": "/tallas-completas-en-peru",
+      "hops": 1
+    },
+    {
+      "path": "/blog/las-tallas-completas-segun-una-ia",
+      "status": 308,
+      "destination": "/las-tallas-completas-segun-una-ia",
+      "hops": 1
+    },
+    {
+      "path": "/blog/las-tallas-completas-segun-una-ia/",
+      "status": 308,
+      "destination": "/las-tallas-completas-segun-una-ia",
+      "hops": 1
+    },
+    {
+      "path": "/las-tallas-completas-segun-una-ia/",
+      "status": 308,
+      "destination": "/las-tallas-completas-segun-una-ia",
+      "hops": 1
+    },
+    {
+      "path": "/blog/como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt",
+      "status": 308,
+      "destination": "/como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt",
+      "hops": 1
+    },
+    {
+      "path": "/blog/como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt/",
+      "status": 308,
+      "destination": "/como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt",
+      "hops": 1
+    },
+    {
+      "path": "/como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt/",
+      "status": 308,
+      "destination": "/como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt",
+      "hops": 1
+    },
+    {
+      "path": "/blog/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
+      "status": 308,
+      "destination": "/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
+      "hops": 1
+    },
+    {
+      "path": "/blog/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano/",
+      "status": 308,
+      "destination": "/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
+      "hops": 1
+    },
+    {
+      "path": "/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano/",
+      "status": 308,
+      "destination": "/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
+      "hops": 1
+    },
+    {
+      "path": "/blog/uniformes-de-guerra",
+      "status": 308,
+      "destination": "/uniformes-de-guerra",
+      "hops": 1
+    },
+    {
+      "path": "/blog/uniformes-de-guerra/",
+      "status": 308,
+      "destination": "/uniformes-de-guerra",
+      "hops": 1
+    },
+    {
+      "path": "/uniformes-de-guerra/",
+      "status": 308,
+      "destination": "/uniformes-de-guerra",
+      "hops": 1
+    },
+    {
+      "path": "/blog/un-tejido-llamado-gaza",
+      "status": 308,
+      "destination": "/un-tejido-llamado-gaza",
+      "hops": 1
+    },
+    {
+      "path": "/blog/un-tejido-llamado-gaza/",
+      "status": 308,
+      "destination": "/un-tejido-llamado-gaza",
+      "hops": 1
+    },
+    {
+      "path": "/un-tejido-llamado-gaza/",
+      "status": 308,
+      "destination": "/un-tejido-llamado-gaza",
+      "hops": 1
+    },
+    {
+      "path": "/blog/perumin-2023",
+      "status": 308,
+      "destination": "/perumin-2023",
+      "hops": 1
+    },
+    {
+      "path": "/blog/perumin-2023/",
+      "status": 308,
+      "destination": "/perumin-2023",
+      "hops": 1
+    },
+    {
+      "path": "/perumin-2023/",
+      "status": 308,
+      "destination": "/perumin-2023",
+      "hops": 1
+    },
+    {
+      "path": "/blog/como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial",
+      "status": 308,
+      "destination": "/como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial",
+      "hops": 1
+    },
+    {
+      "path": "/blog/como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial/",
+      "status": 308,
+      "destination": "/como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial",
+      "hops": 1
+    },
+    {
+      "path": "/como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial/",
+      "status": 308,
+      "destination": "/como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial",
+      "hops": 1
+    },
+    {
+      "path": "/blog/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
+      "status": 308,
+      "destination": "/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
+      "hops": 1
+    },
+    {
+      "path": "/blog/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion/",
+      "status": 308,
+      "destination": "/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
+      "hops": 1
+    },
+    {
+      "path": "/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion/",
+      "status": 308,
+      "destination": "/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
+      "hops": 1
+    },
+    {
+      "path": "/blog/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
+      "status": 308,
+      "destination": "/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
+      "hops": 1
+    },
+    {
+      "path": "/blog/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte/",
+      "status": 308,
+      "destination": "/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
+      "hops": 1
+    },
+    {
+      "path": "/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte/",
+      "status": 308,
+      "destination": "/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
+      "hops": 1
+    },
+    {
+      "path": "/blog/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+      "status": 308,
+      "destination": "/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+      "hops": 1
+    },
+    {
+      "path": "/blog/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente/",
+      "status": 308,
+      "destination": "/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+      "hops": 1
+    },
+    {
+      "path": "/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente/",
+      "status": 308,
+      "destination": "/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+      "hops": 1
+    },
+    {
+      "path": "/blog/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion",
+      "status": 308,
+      "destination": "/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion",
+      "hops": 1
+    },
+    {
+      "path": "/blog/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion/",
+      "status": 308,
+      "destination": "/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion",
+      "hops": 1
+    },
+    {
+      "path": "/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion/",
+      "status": 308,
+      "destination": "/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion",
+      "hops": 1
+    },
+    {
+      "path": "/blog/como-definir-un-proyecto-de-uniformes-corporativos",
+      "status": 308,
+      "destination": "/como-definir-un-proyecto-de-uniformes-corporativos",
+      "hops": 1
+    },
+    {
+      "path": "/blog/como-definir-un-proyecto-de-uniformes-corporativos/",
+      "status": 308,
+      "destination": "/como-definir-un-proyecto-de-uniformes-corporativos",
+      "hops": 1
+    },
+    {
+      "path": "/como-definir-un-proyecto-de-uniformes-corporativos/",
+      "status": 308,
+      "destination": "/como-definir-un-proyecto-de-uniformes-corporativos",
+      "hops": 1
+    },
+    {
+      "path": "/blog/por-que-las-empresas-tienen-problemas-con-las-tallas",
+      "status": 308,
+      "destination": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
+      "hops": 1
+    },
+    {
+      "path": "/blog/por-que-las-empresas-tienen-problemas-con-las-tallas/",
+      "status": 308,
+      "destination": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
+      "hops": 1
+    },
+    {
+      "path": "/por-que-las-empresas-tienen-problemas-con-las-tallas/",
+      "status": 308,
+      "destination": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
+      "hops": 1
+    },
+    {
+      "path": "/blog/de-que-depende-el-tiempo-de-entrega-de-uniformes",
+      "status": 308,
+      "destination": "/de-que-depende-el-tiempo-de-entrega-de-uniformes",
+      "hops": 1
+    },
+    {
+      "path": "/blog/de-que-depende-el-tiempo-de-entrega-de-uniformes/",
+      "status": 308,
+      "destination": "/de-que-depende-el-tiempo-de-entrega-de-uniformes",
+      "hops": 1
+    },
+    {
+      "path": "/de-que-depende-el-tiempo-de-entrega-de-uniformes/",
+      "status": 308,
+      "destination": "/de-que-depende-el-tiempo-de-entrega-de-uniformes",
+      "hops": 1
+    },
+    {
+      "path": "/blog/dia-mundial-del-algodon-2026",
+      "status": 308,
+      "destination": "/dia-mundial-del-algodon-2026",
+      "hops": 1
+    },
+    {
+      "path": "/blog/dia-mundial-del-algodon-2026/",
+      "status": 308,
+      "destination": "/dia-mundial-del-algodon-2026",
+      "hops": 1
+    },
+    {
+      "path": "/dia-mundial-del-algodon-2026/",
+      "status": 308,
+      "destination": "/dia-mundial-del-algodon-2026",
+      "hops": 1
+    },
+    {
+      "path": "/blog/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
+      "status": 308,
+      "destination": "/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
+      "hops": 1
+    },
+    {
+      "path": "/blog/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil/",
+      "status": 308,
+      "destination": "/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
+      "hops": 1
+    },
+    {
+      "path": "/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil/",
+      "status": 308,
+      "destination": "/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
+      "hops": 1
+    },
+    {
+      "path": "/blog/sector-textil-peruano-emergencia-productividad-2026",
+      "status": 308,
+      "destination": "/sector-textil-peruano-emergencia-productividad-2026",
+      "hops": 1
+    },
+    {
+      "path": "/blog/sector-textil-peruano-emergencia-productividad-2026/",
+      "status": 308,
+      "destination": "/sector-textil-peruano-emergencia-productividad-2026",
+      "hops": 1
+    },
+    {
+      "path": "/sector-textil-peruano-emergencia-productividad-2026/",
+      "status": 308,
+      "destination": "/sector-textil-peruano-emergencia-productividad-2026",
+      "hops": 1
+    }
+  ],
+  "internal_links": [
+    {
+      "path": "/",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/3-consejos-para-compradores-de-textiles-b2b",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/5-tipos-de-tejidos-inteligentes",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/blog",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/blog/categoria/algodon-y-cultura-textil",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/blog/categoria/compras-y-logistica",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/blog/categoria/industria-y-materiales",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/blog/categoria/tallaje-y-dotaciones",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/blog/categoria/uniformes-y-aplicaciones",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/blog/categoria/uniformes-y-aplicaciones?pagina=2",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/blog?pagina=2",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/blog?pagina=3",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/blog?pagina=4",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/blog?pagina=5",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/como-cuidar-tu-mascarilla-de-tela-certificada",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/como-definir-un-proyecto-de-uniformes-corporativos",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/contacto",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/de-que-depende-el-tiempo-de-entrega-de-uniformes",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/delivery-aliado-de-la-industria-textil-confecciones",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/derechos-arco",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/dia-mundial-del-algodon-2026",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/disenador-a-sus-disenos",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/el-algodon-se-caso-con-el-poliester-en-oxford",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/el-ano-del-algodon-2022",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/el-futuro-de-la-industria-textil-y-de-confecciones",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/el-problema-de-las-tallas",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/el-uniforme-de-farmacia",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/guia-de-tallas-online",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/la-talla-peruana",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/las-tallas-completas-segun-una-ia",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/logistica-y-abastecimiento-textil-2022",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/los-uniformes-un-problema-olimpico",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/mascarillas-y-covid-19",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/mascarillas-y-covid-19-segunda-ola",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/medalla-de-oro-en-uniformes",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/ntp-aplicada-en-mascarillas-reutilizables",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/ntp-para-la-designacion-de-tallas",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/perumin-2023",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/por-que-usar-mascarillas-reutilizables-lavables",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/privacidad",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/procesos-de-confeccion-seguros",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/que-significa-tallas-completas-en-ropa",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/que-talla-eres-en-peru",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/sector-textil-peruano-emergencia-productividad-2026",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/tallas-completas-en-peru",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/terminos",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/un-tejido-llamado-gaza",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/una-breve-historia-del-algodon",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/uniformes",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/uniformes-de-chef-que-tela-elegir",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/uniformes-de-guerra",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/uniformes/blusas",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/uniformes/camisas",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/uniformes/educacion",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/uniformes/pantalones-caballero",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/uniformes/polos",
+      "status": 200,
+      "destination": null
+    },
+    {
+      "path": "/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+      "status": 200,
+      "destination": null
+    }
+  ],
+  "images": [
+    {
+      "path": "/_next/image?url=%2Fblog%2F3-consejos-para-compradores-de-textiles-b2b.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 9297,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2F5-tipos-de-tejidos-inteligentes.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 58159,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fcomo-cuidar-tu-mascarilla-de-tela-certificada.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 47073,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fcomo-definir-un-proyecto-de-uniformes-corporativos.webp&w=3840&q=75",
+      "status": 200,
+      "bytes": 80451,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fcomo-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 35692,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fcomo-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 47857,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fcompras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 56973,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fcuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 44252,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fde-que-depende-el-tiempo-de-entrega-de-uniformes.webp&w=3840&q=75",
+      "status": 200,
+      "bytes": 450117,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fdelivery-aliado-de-la-industria-textil-confecciones.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 36698,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fdia-mundial-del-algodon-2026.webp&w=3840&q=75",
+      "status": 200,
+      "bytes": 107462,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fdime-que-uniforme-usas-y-te-dire-cuanto-te-quieren.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 66744,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fdisenador-a-sus-disenos.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 15717,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fel-algodon-se-caso-con-el-poliester-en-oxford.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 50010,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fel-ano-del-algodon-2022.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 77802,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fel-fenomeno-del-nino-y-su-impacto-en-la-industria-textil.webp&w=3840&q=75",
+      "status": 200,
+      "bytes": 303896,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fel-futuro-de-la-industria-textil-y-de-confecciones.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 5449,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fel-problema-de-las-tallas.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 45031,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fel-uniforme-de-farmacia.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 22880,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fempaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 12267,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fes-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 37756,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fescudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 35378,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Festafas-textiles-no-seas-victima-de-la-falta-de-informacion.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 106971,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fguia-de-tallas-online.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 64248,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fla-talla-peruana.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 46008,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Flas-tallas-completas-segun-una-ia.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 37367,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Flogistica-y-abastecimiento-textil-2022.png&w=3840&q=75",
+      "status": 200,
+      "bytes": 193971,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Flos-uniformes-un-problema-olimpico.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 58137,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fmascarillas-y-covid-19-segunda-ola.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 30379,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fmascarillas-y-covid-19.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 39629,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fmateriales-textiles-inteligentes-segun-el-tipo-de-uniformes.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 24241,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fmedalla-de-oro-en-uniformes.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 51888,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fmujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 82972,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fnovedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 79683,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fntp-aplicada-en-mascarillas-reutilizables.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 31531,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fntp-para-la-designacion-de-tallas.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 43992,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fperumin-2023.webp&w=3840&q=75",
+      "status": 200,
+      "bytes": 66052,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fpor-que-comprar-uniformes-de-trabajo-para-mis-empleados.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 22526,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fpor-que-las-empresas-tienen-problemas-con-las-tallas.webp&w=3840&q=75",
+      "status": 200,
+      "bytes": 50205,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fpor-que-usar-mascarillas-reutilizables-lavables.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 25599,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fprocesos-de-confeccion-seguros.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 62078,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fque-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 45542,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fque-significa-tallas-completas-en-ropa.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 50303,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fque-talla-eres-en-peru.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 25858,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fsector-textil-peruano-emergencia-productividad-2026.webp&w=3840&q=75",
+      "status": 200,
+      "bytes": 73689,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Ftallas-completas-en-peru.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 21232,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fun-tejido-llamado-gaza.webp&w=3840&q=75",
+      "status": 200,
+      "bytes": 36840,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Funa-breve-historia-del-algodon.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 70014,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Funa-ia-nos-da-tablas-de-medida-para-el-mercado-peruano.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 32358,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Funiformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 35890,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Funiformes-de-chef-que-tela-elegir.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 20256,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Funiformes-de-guerra.webp&w=3840&q=75",
+      "status": 200,
+      "bytes": 38235,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/_next/image?url=%2Fblog%2Fventa-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege.jpg&w=3840&q=75",
+      "status": 200,
+      "bytes": 51818,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/3-consejos-para-compradores-de-textiles-b2b.jpg",
+      "status": 200,
+      "bytes": 15673,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/5-tipos-de-tejidos-inteligentes.jpg",
+      "status": 200,
+      "bytes": 87055,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/como-cuidar-tu-mascarilla-de-tela-certificada.jpg",
+      "status": 200,
+      "bytes": 79824,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/como-definir-un-proyecto-de-uniformes-corporativos.webp",
+      "status": 200,
+      "bytes": 69380,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "/blog/como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt.jpg",
+      "status": 200,
+      "bytes": 53128,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial.jpg",
+      "status": 200,
+      "bytes": 70858,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion.jpg",
+      "status": 200,
+      "bytes": 83310,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela.jpg",
+      "status": 200,
+      "bytes": 74543,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/de-que-depende-el-tiempo-de-entrega-de-uniformes.webp",
+      "status": 200,
+      "bytes": 540210,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "/blog/delivery-aliado-de-la-industria-textil-confecciones.jpg",
+      "status": 200,
+      "bytes": 68309,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/dia-mundial-del-algodon-2026.webp",
+      "status": 200,
+      "bytes": 129404,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "/blog/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren.jpg",
+      "status": 200,
+      "bytes": 101326,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/disenador-a-sus-disenos.jpg",
+      "status": 200,
+      "bytes": 23972,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/el-algodon-se-caso-con-el-poliester-en-oxford.jpg",
+      "status": 200,
+      "bytes": 73598,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/el-ano-del-algodon-2022.jpg",
+      "status": 200,
+      "bytes": 118754,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil.webp",
+      "status": 200,
+      "bytes": 380556,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "/blog/el-futuro-de-la-industria-textil-y-de-confecciones.jpg",
+      "status": 200,
+      "bytes": 10296,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/el-problema-de-las-tallas.jpg",
+      "status": 200,
+      "bytes": 81502,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/el-uniforme-de-farmacia.jpg",
+      "status": 200,
+      "bytes": 42885,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas.jpg",
+      "status": 200,
+      "bytes": 26429,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller.jpg",
+      "status": 200,
+      "bytes": 55818,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo.jpg",
+      "status": 200,
+      "bytes": 62617,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/estafas-textiles-no-seas-victima-de-la-falta-de-informacion.jpg",
+      "status": 200,
+      "bytes": 156674,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/guia-de-tallas-online.jpg",
+      "status": 200,
+      "bytes": 104968,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/la-talla-peruana.jpg",
+      "status": 200,
+      "bytes": 77545,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/las-tallas-completas-segun-una-ia.jpg",
+      "status": 200,
+      "bytes": 59667,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/logistica-y-abastecimiento-textil-2022.png",
+      "status": 200,
+      "bytes": 460608,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/blog/los-uniformes-un-problema-olimpico.jpg",
+      "status": 200,
+      "bytes": 94826,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/mascarillas-y-covid-19-segunda-ola.jpg",
+      "status": 200,
+      "bytes": 57916,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/mascarillas-y-covid-19.jpg",
+      "status": 200,
+      "bytes": 64179,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes.jpg",
+      "status": 200,
+      "bytes": 56338,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/medalla-de-oro-en-uniformes.jpg",
+      "status": 200,
+      "bytes": 86006,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion.jpg",
+      "status": 200,
+      "bytes": 127116,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte.jpg",
+      "status": 200,
+      "bytes": 142930,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/ntp-aplicada-en-mascarillas-reutilizables.jpg",
+      "status": 200,
+      "bytes": 60496,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/ntp-para-la-designacion-de-tallas.jpg",
+      "status": 200,
+      "bytes": 79002,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/perumin-2023.webp",
+      "status": 200,
+      "bytes": 76694,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "/blog/por-que-comprar-uniformes-de-trabajo-para-mis-empleados.jpg",
+      "status": 200,
+      "bytes": 34950,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/por-que-las-empresas-tienen-problemas-con-las-tallas.webp",
+      "status": 200,
+      "bytes": 39534,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "/blog/por-que-usar-mascarillas-reutilizables-lavables.jpg",
+      "status": 200,
+      "bytes": 45978,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/procesos-de-confeccion-seguros.jpg",
+      "status": 200,
+      "bytes": 103319,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial.jpg",
+      "status": 200,
+      "bytes": 78523,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/que-significa-tallas-completas-en-ropa.jpg",
+      "status": 200,
+      "bytes": 71879,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/que-talla-eres-en-peru.jpg",
+      "status": 200,
+      "bytes": 49155,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/sector-textil-peruano-emergencia-productividad-2026.webp",
+      "status": 200,
+      "bytes": 57040,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "/blog/tallas-completas-en-peru.jpg",
+      "status": 200,
+      "bytes": 36135,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/un-tejido-llamado-gaza.webp",
+      "status": 200,
+      "bytes": 31158,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "/blog/una-breve-historia-del-algodon.jpg",
+      "status": 200,
+      "bytes": 100832,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano.jpg",
+      "status": 200,
+      "bytes": 47828,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente.jpg",
+      "status": 200,
+      "bytes": 55500,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/uniformes-de-chef-que-tela-elegir.jpg",
+      "status": 200,
+      "bytes": 44502,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "/blog/uniformes-de-guerra.webp",
+      "status": 200,
+      "bytes": 38158,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "/blog/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege.jpg",
+      "status": 200,
+      "bytes": 89667,
+      "content_type": "image/jpeg"
+    }
+  ],
+  "unknown_route_controls": [
+    {
+      "path": "/no-existe-auditoria-blog-2027",
+      "status": 404
+    },
+    {
+      "path": "/blog/no-existe-auditoria-blog-2027",
+      "status": 404
+    },
+    {
+      "path": "/casino-prueba-inexistente",
+      "status": 404
+    },
+    {
+      "path": "/blog/casino-prueba-inexistente",
+      "status": 404
+    },
+    {
+      "path": "/wp-login.php",
+      "status": 404
+    },
+    {
+      "path": "/blog/categoria/no-existe",
+      "status": 404
+    },
+    {
+      "path": "/blog?pagina=999",
+      "status": 404
+    },
+    {
+      "path": "/blog/categoria/algodon-y-cultura-textil?pagina=999",
+      "status": 404
+    }
+  ],
+  "failures": []
+}

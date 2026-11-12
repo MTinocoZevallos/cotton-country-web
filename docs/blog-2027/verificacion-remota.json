@@ -1,0 +1,135 @@
+{
+  "checked_at_utc": "2026-11-12T23:02:46.604025+00:00",
+  "scope": "Representative scheme, hostname, slash and blog-alias variants; official reference discovery. Not a complete WordPress export.",
+  "network_policy": "Restricted environment; these destinations are not on the observed allowlist. HTTP 403 / CONNECT 403 is a proxy block, not proof of failure or compromise at the origin.",
+  "results": [
+    {
+      "url": "http://cottoncountry.com.pe/una-breve-historia-del-algodon",
+      "status_seen": 403,
+      "server": "envoy",
+      "verified_origin_response": false,
+      "note": "Response may be from the environment proxy; not a site diagnosis"
+    },
+    {
+      "url": "http://cottoncountry.com.pe/una-breve-historia-del-algodon/",
+      "status_seen": 403,
+      "server": "envoy",
+      "verified_origin_response": false,
+      "note": "Response may be from the environment proxy; not a site diagnosis"
+    },
+    {
+      "url": "http://cottoncountry.com.pe/blog/una-breve-historia-del-algodon",
+      "status_seen": 403,
+      "server": "envoy",
+      "verified_origin_response": false,
+      "note": "Response may be from the environment proxy; not a site diagnosis"
+    },
+    {
+      "url": "http://cottoncountry.com.pe/blog/una-breve-historia-del-algodon/",
+      "status_seen": 403,
+      "server": "envoy",
+      "verified_origin_response": false,
+      "note": "Response may be from the environment proxy; not a site diagnosis"
+    },
+    {
+      "url": "http://www.cottoncountry.com.pe/una-breve-historia-del-algodon",
+      "status_seen": 403,
+      "server": "envoy",
+      "verified_origin_response": false,
+      "note": "Response may be from the environment proxy; not a site diagnosis"
+    },
+    {
+      "url": "http://www.cottoncountry.com.pe/una-breve-historia-del-algodon/",
+      "status_seen": 403,
+      "server": "envoy",
+      "verified_origin_response": false,
+      "note": "Response may be from the environment proxy; not a site diagnosis"
+    },
+    {
+      "url": "http://www.cottoncountry.com.pe/blog/una-breve-historia-del-algodon",
+      "status_seen": 403,
+      "server": "envoy",
+      "verified_origin_response": false,
+      "note": "Response may be from the environment proxy; not a site diagnosis"
+    },
+    {
+      "url": "http://www.cottoncountry.com.pe/blog/una-breve-historia-del-algodon/",
+      "status_seen": 403,
+      "server": "envoy",
+      "verified_origin_response": false,
+      "note": "Response may be from the environment proxy; not a site diagnosis"
+    },
+    {
+      "url": "https://cottoncountry.com.pe/una-breve-historia-del-algodon",
+      "status_seen": null,
+      "verified_origin_response": false,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://cottoncountry.com.pe/una-breve-historia-del-algodon/",
+      "status_seen": null,
+      "verified_origin_response": false,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://cottoncountry.com.pe/blog/una-breve-historia-del-algodon",
+      "status_seen": null,
+      "verified_origin_response": false,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://cottoncountry.com.pe/blog/una-breve-historia-del-algodon/",
+      "status_seen": null,
+      "verified_origin_response": false,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.cottoncountry.com.pe/una-breve-historia-del-algodon",
+      "status_seen": null,
+      "verified_origin_response": false,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.cottoncountry.com.pe/una-breve-historia-del-algodon/",
+      "status_seen": null,
+      "verified_origin_response": false,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.cottoncountry.com.pe/blog/una-breve-historia-del-algodon",
+      "status_seen": null,
+      "verified_origin_response": false,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.cottoncountry.com.pe/blog/una-breve-historia-del-algodon/",
+      "status_seen": null,
+      "verified_origin_response": false,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.un.org/en/observances/cotton-day",
+      "status_seen": null,
+      "verified_origin_response": false,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.gob.pe/inacal",
+      "status_seen": null,
+      "verified_origin_response": false,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.gob.pe/enfen",
+      "status_seen": null,
+      "verified_origin_response": false,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.senamhi.gob.pe",
+      "status_seen": null,
+      "verified_origin_response": false,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  ]
+}

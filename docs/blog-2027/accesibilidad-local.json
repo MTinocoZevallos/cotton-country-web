@@ -1,0 +1,146 @@
+{
+  "scope": "Chromium + axe-core on main content; automated checks do not replace a complete manual accessibility review",
+  "axeVersion": "4.11.0",
+  "reports": [
+    {
+      "width": 1440,
+      "path": "/blog",
+      "violations": [],
+      "incomplete": [],
+      "passes": 23
+    },
+    {
+      "width": 1440,
+      "path": "/blog/categoria/tallaje-y-dotaciones",
+      "violations": [],
+      "incomplete": [],
+      "passes": 19
+    },
+    {
+      "width": 1440,
+      "path": "/que-significa-tallas-completas-en-ropa",
+      "violations": [],
+      "incomplete": [],
+      "passes": 24
+    },
+    {
+      "width": 1440,
+      "path": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
+      "violations": [],
+      "incomplete": [],
+      "passes": 21
+    },
+    {
+      "width": 1440,
+      "path": "/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
+      "violations": [],
+      "incomplete": [],
+      "passes": 23
+    },
+    {
+      "width": 768,
+      "path": "/blog",
+      "violations": [],
+      "incomplete": [],
+      "passes": 23
+    },
+    {
+      "width": 768,
+      "path": "/blog/categoria/tallaje-y-dotaciones",
+      "violations": [],
+      "incomplete": [],
+      "passes": 19
+    },
+    {
+      "width": 768,
+      "path": "/que-significa-tallas-completas-en-ropa",
+      "violations": [],
+      "incomplete": [],
+      "passes": 24
+    },
+    {
+      "width": 768,
+      "path": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
+      "violations": [],
+      "incomplete": [],
+      "passes": 21
+    },
+    {
+      "width": 768,
+      "path": "/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
+      "violations": [],
+      "incomplete": [],
+      "passes": 23
+    },
+    {
+      "width": 390,
+      "path": "/blog",
+      "violations": [],
+      "incomplete": [],
+      "passes": 23
+    },
+    {
+      "width": 390,
+      "path": "/blog/categoria/tallaje-y-dotaciones",
+      "violations": [],
+      "incomplete": [],
+      "passes": 19
+    },
+    {
+      "width": 390,
+      "path": "/que-significa-tallas-completas-en-ropa",
+      "violations": [],
+      "incomplete": [],
+      "passes": 24
+    },
+    {
+      "width": 390,
+      "path": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
+      "violations": [],
+      "incomplete": [],
+      "passes": 21
+    },
+    {
+      "width": 390,
+      "path": "/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
+      "violations": [],
+      "incomplete": [],
+      "passes": 23
+    },
+    {
+      "width": 320,
+      "path": "/blog",
+      "violations": [],
+      "incomplete": [],
+      "passes": 23
+    },
+    {
+      "width": 320,
+      "path": "/blog/categoria/tallaje-y-dotaciones",
+      "violations": [],
+      "incomplete": [],
+      "passes": 19
+    },
+    {
+      "width": 320,
+      "path": "/que-significa-tallas-completas-en-ropa",
+      "violations": [],
+      "incomplete": [],
+      "passes": 24
+    },
+    {
+      "width": 320,
+      "path": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
+      "violations": [],
+      "incomplete": [],
+      "passes": 21
+    },
+    {
+      "width": 320,
+      "path": "/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
+      "violations": [],
+      "incomplete": [],
+      "passes": 23
+    }
+  ]
+}

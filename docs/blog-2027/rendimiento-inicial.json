@@ -1,0 +1,287 @@
+{
+  "scope": "Two local mobile laboratory samples. This is not field Core Web Vitals or Search Console data. INP is not measured; TBT is a laboratory responsiveness indicator.",
+  "runs": [
+    {
+      "path": "/blog",
+      "tool": "Lighthouse 12.8.2",
+      "mode": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "scores": {
+        "performance": 88,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1075.1991,
+          "unit": "millisecond",
+          "display": "1.1 s"
+        },
+        "largest-contentful-paint": {
+          "value": 3554.798649999999,
+          "unit": "millisecond",
+          "display": "3.6 s"
+        },
+        "speed-index": {
+          "value": 1075.1991,
+          "unit": "millisecond",
+          "display": "1.1 s"
+        },
+        "total-blocking-time": {
+          "value": 189.5,
+          "unit": "millisecond",
+          "display": "190 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "unit": "unitless",
+          "display": "0"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "display": "1.1 s",
+          "score": 0.99
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "display": "3.6 s",
+          "score": 0.62
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "display": "190 ms",
+          "score": 0.91
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "display": "370 ms",
+          "score": 0.22
+        },
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "display": "4.2 s",
+          "score": 0.85
+        },
+        {
+          "id": "largest-contentful-paint-element",
+          "title": "Largest Contentful Paint element",
+          "display": "3,550 ms",
+          "score": 0
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "display": "Est savings of 0 ms",
+          "score": 0.5
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "display": "Est savings of 28 KiB",
+          "score": 0
+        },
+        {
+          "id": "uses-responsive-images",
+          "title": "Properly size images",
+          "display": "Est savings of 22 KiB",
+          "score": 0.5
+        },
+        {
+          "id": "legacy-javascript",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "display": "Est savings of 13 KiB",
+          "score": 0.5
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "display": "2 failure reasons",
+          "score": 0
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "display": "Est savings of 98 KiB",
+          "score": 0
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "display": "Est savings of 14 KiB",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "display": "Est savings of 200 ms",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "path": "/que-significa-tallas-completas-en-ropa",
+      "tool": "Lighthouse 12.8.2",
+      "mode": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "scores": {
+        "performance": 92,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1066.6107,
+          "unit": "millisecond",
+          "display": "1.1 s"
+        },
+        "largest-contentful-paint": {
+          "value": 3196.068725,
+          "unit": "millisecond",
+          "display": "3.2 s"
+        },
+        "speed-index": {
+          "value": 1066.6107,
+          "unit": "millisecond",
+          "display": "1.1 s"
+        },
+        "total-blocking-time": {
+          "value": 142.5,
+          "unit": "millisecond",
+          "display": "140 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "unit": "unitless",
+          "display": "0"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "display": "3.2 s",
+          "score": 0.72
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "display": "140 ms",
+          "score": 0.95
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "display": "290 ms",
+          "score": 0.39
+        },
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "display": "3.6 s",
+          "score": 0.91
+        },
+        {
+          "id": "largest-contentful-paint-element",
+          "title": "Largest Contentful Paint element",
+          "display": "3,200 ms",
+          "score": 0
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "display": "Est savings of 0 ms",
+          "score": 0.5
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "display": "Est savings of 28 KiB",
+          "score": 0
+        },
+        {
+          "id": "legacy-javascript",
+          "title": "Avoid serving legacy JavaScript to modern browsers",
+          "display": "Est savings of 13 KiB",
+          "score": 0.5
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "display": "Est savings of 16 KiB",
+          "score": 0.5
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "display": "Est savings of 14 KiB",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "display": "Est savings of 290 ms",
+          "score": 0
+        }
+      ]
+    }
+  ],
+  "measurement_note": "Initial diagnostic overlapped local HTTP and accessibility audits. Do not interpret its difference from the isolated final run as a controlled performance comparison."
+}
