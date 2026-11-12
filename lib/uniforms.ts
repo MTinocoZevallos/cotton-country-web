@@ -6,7 +6,7 @@ export const garmentCategories = [
   { id: "pantalones-dama", name: "Pantalones de dama", href: "/uniformes/pantalones-dama" },
   { id: "pantalones-caballero", name: "Pantalones de caballero", href: "/uniformes/pantalones-caballero" },
   { id: "polos", name: "Polos", href: "/uniformes/polos" },
-  { id: "chalecos", name: "Chalecos", href: "/uniformes?categoria=chalecos#prendas" },
+  { id: "chalecos", name: "Chalecos", href: "/uniformes/chalecos" },
   { id: "casacas", name: "Casacas", href: "/uniformes/casacas" },
   { id: "sacos", name: "Sacos", href: "/uniformes?categoria=sacos#prendas" },
 ] as const

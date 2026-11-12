@@ -1,5 +1,5 @@
 // Single source for the approved 2027 family pages and the Uniformes catalog.
-export type EditorialCategory = "camisas" | "blusas" | "pantalones-dama" | "pantalones-caballero" | "casacas" | "polos"
+export type EditorialCategory = "camisas" | "blusas" | "pantalones-dama" | "pantalones-caballero" | "casacas" | "polos" | "chalecos"
 export type GarmentModel = {
   number: string
   title: string
@@ -370,6 +370,20 @@ export const garmentModels: Record<EditorialCategory, readonly GarmentModel[]> =
         "Color azul marino, superficie lisa y cuello alto.",
         "Cierre frontal y bolsillos laterales."
       ]
+    },
+    {
+      "number": "07",
+      "title": "Casaca de drill industrial",
+      "image": "/prendas/casaca-drill-industrial-2027.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Modelo con casaca naranja de drill, cuello camisero, cierre frontal y bolsillos delanteros",
+      "application": "Trabajo industrial",
+      "description": "Casaca confeccionada en tejido drill para uniformes de trabajo industrial, orientada a equipos operativos y de mantenimiento.",
+      "details": [
+        "Confeccionada en tejido drill.",
+        "Para equipos operativos y de mantenimiento."
+      ]
     }
   ],
   "polos": [
@@ -431,6 +445,108 @@ export const garmentModels: Record<EditorialCategory, readonly GarmentModel[]> =
         "Tejido jersey 20/1.",
         "Manga larga y cuello redondo.",
         "Fotografía en color blanco."
+      ]
+    }
+  ],
+  "chalecos": [
+    {
+      "number": "01",
+      "title": "Chaleco acolchado caballero",
+      "image": "/uniformes/chalecos-2027/01_chaleco_acolchado_caballero.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Modelo con chaleco acolchado negro para caballero, cuello alto y cierre frontal",
+      "application": "Inspiración sastrera",
+      "description": "Chaleco acolchado de inspiración sastrera para equipos corporativos. Sus bolsillos laterales tienen cierres ocultos que se integran discretamente en la unión de los delanteros con los costados.",
+      "details": [
+        "Inspiración sastrera.",
+        "Bolsillos laterales con cierres ocultos, integrados en la unión de delanteros y costados.",
+        "Pequeños tiradores tipo lágrima."
+      ]
+    },
+    {
+      "number": "02",
+      "title": "Chaleco acolchado dama",
+      "image": "/uniformes/chalecos-2027/02_chaleco_acolchado_dama.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Modelo con chaleco acolchado oscuro de silueta femenina, cuello alto y cierre frontal",
+      "application": "Silueta femenina",
+      "description": "Chaleco acolchado de silueta femenina, con bolsillos laterales integrados y cierres prácticamente imperceptibles. Los pequeños tiradores tipo lágrima acompañan una presentación corporativa discreta.",
+      "details": [
+        "Silueta femenina.",
+        "Bolsillos laterales integrados con cierres prácticamente imperceptibles.",
+        "Pequeños tiradores tipo lágrima."
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Chaleco de paño caballero",
+      "image": "/uniformes/chalecos-2027/03_chaleco_pano_caballero.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Modelo con chaleco oscuro para caballero, cuello alto y cierre frontal",
+      "application": "Presentación institucional",
+      "description": "Alternativa para uniformes corporativos e institucionales, confeccionable en paño 100 % poliéster o mezclas textiles según el requerimiento del proyecto.",
+      "details": [
+        "Confeccionable en paño 100 % poliéster o mezclas textiles.",
+        "Presentación corporativa e institucional."
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Chaleco de paño dama",
+      "image": "/uniformes/chalecos-2027/04_chaleco_pano_dama.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Modelo con chaleco camel de silueta femenina, solapas y bolsillos delanteros con tapa",
+      "application": "Presentación corporativa femenina",
+      "description": "Chaleco de silueta femenina para uniformes corporativos, confeccionable en paño 100 % poliéster o mezclas textiles. Una alternativa para coordinar la presentación del equipo.",
+      "details": [
+        "Confeccionable en paño 100 % poliéster o mezclas textiles.",
+        "Silueta femenina para uniformes corporativos."
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Chaleco reflectivo básico",
+      "image": "/uniformes/chalecos-2027/05_chaleco_reflectivo_basico.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Modelo con chaleco operativo naranja y cintas reflectivas en hombros y cintura",
+      "application": "Vestuario operativo",
+      "description": "Chaleco operativo con cinta reflectiva 3M de 2 pulgadas, para equipos que requieren este detalle en su indumentaria de trabajo.",
+      "details": [
+        "Cinta reflectiva 3M de 2 pulgadas.",
+        "Modelo operativo."
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Chaleco impermeable",
+      "image": "/uniformes/chalecos-2027/06_chaleco_impermeable.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Modelo con chaleco oscuro, cierre frontal y dos franjas reflectivas horizontales",
+      "application": "Alternativa operativa",
+      "description": "Chaleco impermeable con cinta reflectiva 3M Transfer, como alternativa para el vestuario de equipos operativos.",
+      "details": [
+        "Chaleco impermeable.",
+        "Cinta reflectiva 3M Transfer."
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Chaleco multibolsillos",
+      "image": "/uniformes/chalecos-2027/07_chaleco_multibolsillos.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Modelo con chaleco naranja, múltiples bolsillos delanteros y franjas reflectivas",
+      "application": "Equipos técnicos y logísticos",
+      "description": "Chaleco funcional con múltiples bolsillos para implementos de trabajo, orientado a personal técnico, logístico y operativo.",
+      "details": [
+        "Múltiples bolsillos para implementos de trabajo.",
+        "Para personal técnico, logístico y operativo."
       ]
     }
   ]

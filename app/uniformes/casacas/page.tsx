@@ -9,11 +9,11 @@ import styles from "@/components/uniforms/uniforms.module.css"
 
 export const metadata: Metadata = {
   title: "Casacas corporativas | Cotton Country",
-  description: "Seis modelos de casacas corporativas: doble desmontable, tipo saco impermeable, impermeable con cintas reflectivas, sport elegante, acolchada y softshell.",
+  description: "Siete modelos de casacas corporativas: doble desmontable, tipo saco impermeable, impermeable con cintas reflectivas, sport elegante, acolchada, softshell y drill industrial.",
   alternates: { canonical: "/uniformes/casacas" },
   openGraph: {
     title: "Casacas corporativas | Cotton Country",
-    description: "Explora seis modelos de casacas fabricadas por Cotton Country, con fotografías y detalles de cada prenda.",
+    description: "Explora siete modelos de casacas fabricadas por Cotton Country, con fotografías y detalles de cada prenda.",
     url: "/uniformes/casacas",
     siteName: "Cotton Country",
     locale: "es_PE",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Casacas corporativas | Cotton Country",
-    description: "Seis modelos de casacas con fotografías y detalles de confección visibles en cada prenda.",
+    description: "Siete modelos de casacas con fotografías y detalles de confección visibles en cada prenda.",
     images: ["/prendas/casaca-doble-desmontable-zoomlion-2027.webp"],
   },
 }
@@ -46,7 +46,7 @@ export default function CasacasPage() {
           <p className={styles.eyebrow}>Uniformes / Casacas</p>
           <h1>Casacas corporativas</h1>
           <div className={styles.copy}>
-            <p>Seis modelos de casacas fabricadas por Cotton Country, con distintas siluetas, colores y acabados para la presentación de equipos de trabajo.</p>
+            <p>Siete modelos de casacas fabricadas por Cotton Country, con distintas siluetas, colores y acabados para la presentación de equipos de trabajo.</p>
             <p>Explora las fotografías y los detalles de cada prenda como referencia para preparar el requerimiento de tu organización.</p>
           </div>
         </header>
