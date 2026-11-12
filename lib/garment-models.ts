@@ -1,5 +1,5 @@
 // Single source for the approved 2027 family pages and the Uniformes catalog.
-export type EditorialCategory = "camisas" | "blusas" | "pantalones-dama" | "pantalones-caballero" | "casacas" | "polos" | "chalecos"
+export type EditorialCategory = "camisas" | "blusas" | "pantalones-dama" | "pantalones-caballero" | "casacas" | "polos" | "chalecos" | "sacos"
 export type GarmentModel = {
   number: string
   title: string
@@ -547,6 +547,53 @@ export const garmentModels: Record<EditorialCategory, readonly GarmentModel[]> =
       "details": [
         "Múltiples bolsillos para implementos de trabajo.",
         "Para personal técnico, logístico y operativo."
+      ]
+    }
+  ],
+  "sacos": [
+    {
+      "number": "01",
+      "title": "Saco corte princesa azul Columbia",
+      "image": "/uniformes/sacos-2027/01_saco_princesa_azul_columbia.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Modelo con saco femenino azul de corte princesa, solapas y dos botones",
+      "application": "Presentación corporativa femenina",
+      "description": "Saco femenino azul de corte princesa y dos botones. Sus líneas y solapas definen una alternativa para la presentación corporativa de equipos de oficina y atención al cliente.",
+      "details": [
+        "Corte princesa.",
+        "Cierre delantero de dos botones.",
+        "Color azul y solapas visibles en la fotografía."
+      ]
+    },
+    {
+      "number": "02",
+      "title": "Saco corto gris de dama",
+      "image": "/uniformes/sacos-2027/02_saco_corto_gris_dama.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Modelo con saco femenino gris de longitud corta, solapas y un botón",
+      "application": "Silueta de longitud corta",
+      "description": "Saco femenino gris de longitud más corta, con cierre de un botón. Su silueta ofrece una alternativa para la presentación de equipos corporativos y de atención al cliente.",
+      "details": [
+        "Longitud más corta.",
+        "Cierre delantero de un botón.",
+        "Color gris y solapas."
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Saco slim fit de caballero",
+      "image": "/uniformes/sacos-2027/03_saco_slimfit_caballero.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Modelo con saco negro entallado para caballero, solapas y bolsillos delanteros con tapa",
+      "application": "Presentación formal masculina",
+      "description": "Saco masculino de corte entallado, con solapas y bolsillos delanteros con tapa visibles en la fotografía. Una propuesta para equipos que requieren una presentación corporativa formal.",
+      "details": [
+        "Corte entallado slim fit.",
+        "Solapas y cierre delantero con botones.",
+        "Bolsillos delanteros con tapa visibles en la fotografía."
       ]
     }
   ]

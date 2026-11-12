@@ -12,6 +12,9 @@ const families = [
   { name: "Polos", href: "/uniformes/polos", image: "/home-2027/polos.webp", alt: "Polo de cuello y manga corta en un entorno de atención al público", detail: "Tu marca, en movimiento." },
   { name: "Pantalones", href: "/uniformes/pantalones-caballero", image: "/home-2027/pantalon-hombre.webp", alt: "Pantalón azul marino de hombre", detail: "Cada pieza cuenta." },
   { name: "Pantalones", href: "/uniformes/pantalones-dama", image: "/home-2027/pantalon-mujer.webp", alt: "Pantalón azul marino de mujer", detail: "Cada pieza cuenta." },
+  { name: "Casacas", href: "/uniformes/casacas", image: "/home-2027/casaca-softshell-azul.webp", alt: "Casaca softshell azul con cierre frontal en un entorno corporativo", detail: "La presencia está en los detalles." },
+  { name: "Casacas", href: "/uniformes/casacas", image: "/home-2027/casaca-acolchada-azul.webp", alt: "Casaca acolchada azul con líneas horizontales y cierre frontal en un espacio acristalado", detail: "Cada pieza cuenta." },
+  { name: "Sacos", href: "/uniformes/sacos", image: "/home-2027/saco-moderno-dama.webp", alt: "Saco moderno azul de dama, con solapas y un botón, en un entorno profesional", detail: "Una expresión de tu identidad." },
 ]
 
 export default function Basics() {

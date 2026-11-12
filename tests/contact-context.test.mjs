@@ -43,12 +43,12 @@ function fixture() {
 const valid = { name: 'Prueba', phone: '999999999', email: 'test@example.org', ruc: '20123456789', message: 'Prueba local', turnstileToken: 'local-token' }
 const request = body => new Request('http://localhost/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
 
-test('the catalog contains exactly 42 distinct approved models and no legacy or pending-family photographs', () => {
+test('the catalog contains exactly 45 distinct approved models and no legacy photographs', () => {
   const { data, models } = fixture()
-  const counts = { camisas: 5, blusas: 7, 'pantalones-dama': 6, 'pantalones-caballero': 6, casacas: 7, polos: 4, chalecos: 7 }
-  assert.equal(data.garments.length, 42)
-  assert.equal(new Set(data.garments.map(item => item.id)).size, 42)
-  assert.equal(new Set(data.garments.map(item => item.image)).size, 42)
+  const counts = { camisas: 5, blusas: 7, 'pantalones-dama': 6, 'pantalones-caballero': 6, casacas: 7, polos: 4, chalecos: 7, sacos: 3 }
+  assert.equal(data.garments.length, 45)
+  assert.equal(new Set(data.garments.map(item => item.id)).size, 45)
+  assert.equal(new Set(data.garments.map(item => item.image)).size, 45)
   for (const [category, count] of Object.entries(counts)) {
     const items = data.garments.filter(item => item.category === category)
     assert.equal(items.length, count)
@@ -61,7 +61,6 @@ test('the catalog contains exactly 42 distinct approved models and no legacy or 
     assert(item.description.length > 40)
     assert.equal(item.caseId, undefined)
   }
-  for (const category of ['sacos']) assert.equal(data.garments.filter(item => item.category === category).length, 0)
 })
 
 test('jacket copy is generic and each editorial family retains its commercial contact context', () => {

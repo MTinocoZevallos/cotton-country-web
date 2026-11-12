@@ -8,7 +8,7 @@ import styles from "@/components/uniforms/uniforms.module.css"
 
 export const metadata: Metadata = {
   title: "Uniformes corporativos para empresas | Cotton Country",
-  description: "Explora 42 modelos de camisas, blusas, pantalones, casacas, polos y chalecos. Define el requerimiento de tu empresa y conoce nuestros proyectos por sector.",
+  description: "Explora 45 modelos de camisas, blusas, pantalones, casacas, polos, chalecos y sacos. Define el requerimiento de tu empresa y conoce nuestros proyectos por sector.",
   alternates: { canonical: "/uniformes" },
   openGraph: {
     title: "Uniformes corporativos para empresas | Cotton Country",

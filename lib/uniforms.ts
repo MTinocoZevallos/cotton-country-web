@@ -8,7 +8,7 @@ export const garmentCategories = [
   { id: "polos", name: "Polos", href: "/uniformes/polos" },
   { id: "chalecos", name: "Chalecos", href: "/uniformes/chalecos" },
   { id: "casacas", name: "Casacas", href: "/uniformes/casacas" },
-  { id: "sacos", name: "Sacos", href: "/uniformes?categoria=sacos#prendas" },
+  { id: "sacos", name: "Sacos", href: "/uniformes/sacos" },
 ] as const
 export type GarmentCategory = typeof garmentCategories[number]["id"]
 export type SectorId = "retail" | "educacion" | "agroindustria"
