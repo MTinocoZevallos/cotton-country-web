@@ -1,92 +1,91 @@
-import { contactHref } from "@/lib/contact-context"
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
+import { ArrowUpRight } from "lucide-react"
+import { editorialSerif } from "@/components/home-font"
+import { garmentModels } from "@/lib/garment-models"
+import { contactHref } from "@/lib/contact-context"
+import styles from "@/components/uniforms/uniforms.module.css"
 
-const items = [
-  {
-    title: "Polo Box Caballero",
-    image: "/uniformes/polo-box-caballero.png",
-    text: "Uno de los uniformes corporativos más utilizados por empresas de retail, servicios y promoción. Confeccionado en algodón de alta calidad para ofrecer comodidad, frescura y excelente presentación.",
+export const metadata: Metadata = {
+  title: "Polos corporativos de piqué, interlock y jersey | Cotton Country",
+  description: "Cuatro modelos de polos box y T-shirts para dama y caballero. Piqué 30/1, interlock y jersey, con alternativas de acabados y personalización corporativa.",
+  alternates: { canonical: "/uniformes/polos" },
+  openGraph: {
+    title: "Polos corporativos | Cotton Country",
+    description: "Polos box y T-shirts para equipos empresariales, con tejidos y acabados según el modelo y el requerimiento de la organización.",
+    url: "/uniformes/polos",
+    siteName: "Cotton Country",
+    locale: "es_PE",
+    type: "website",
+    images: [{
+      url: "/uniformes/polos-2027/01_polo_box_dama.webp",
+      width: 1086,
+      height: 1448,
+      alt: "Polo box blanco para dama con cuello camisero y detalles oscuros en cuello y puños",
+    }],
   },
-  {
-    title: "Polo Box Dama",
-    image: "/uniformes/polo-box-dama.png",
-    text: "Polo corporativo femenino confeccionado en tejido piqué de alta calidad. Su suavidad, resistencia y comodidad lo convierten en una excelente opción para uniformar equipos comerciales y de atención al cliente.",
-  },
-]
+}
+
+const models = garmentModels.polos
 
 export default function PolosPage() {
   return (
-    <main className="pt-20 bg-white">
-      <section className="max-w-7xl mx-auto px-6 py-20">
-        <div className="mb-10">
-          <Link href="/uniformes" className="text-sm text-[#01018B] hover:underline">
-            ← Volver a uniformes
-          </Link>
-        </div>
+    <div className={`${styles.page} ${editorialSerif.variable}`}>
+      <div className={styles.container}>
+        <header className={styles.intro}>
+          <div className={styles.back}>
+            <Link href="/uniformes" className={styles.link}>← Volver a uniformes</Link>
+          </div>
+          <p className={styles.eyebrow}>Uniformes / Polos</p>
+          <h1>Polos corporativos</h1>
+          <div className={styles.copy}>
+            <p>Polos box y T-shirts para equipos comerciales, retail, servicios y atención al cliente. Cuatro modelos para dama y caballero que permiten coordinar el vestuario con la identidad de cada organización.</p>
+            <p>Explora sus tejidos, cuellos y mangas como punto de partida para definir el diseño, los acabados y la personalización de tu proyecto.</p>
+          </div>
+        </header>
 
-        <div className="max-w-3xl mb-14">
-          <p className="text-sm font-medium text-[#01018B] mb-3">
-            Uniformes / Polos
-          </p>
-
-          <h1 className="text-4xl md:text-5xl font-semibold text-gray-900">
-            Polos corporativos
-          </h1>
-
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-            Polos diseñados para equipos comerciales, retail, activaciones,
-            atención al cliente y operaciones que requieren una prenda cómoda,
-            funcional y alineada a la identidad de la empresa.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {items.map((item) => (
-            <article
-              key={item.title}
-              className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition"
-            >
-              <div className="relative h-[520px] w-full">
+        <section aria-label="Modelos de polos corporativos">
+          {models.map(model => (
+            <article key={model.number} className={styles.roleRow} aria-labelledby={`modelo-${model.number}`}>
+              <figure className={styles.editorialPhoto}>
                 <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover"
+                  src={model.image}
+                  alt={model.alt}
+                  width={model.width}
+                  height={model.height}
+                  sizes="(max-width: 575px) calc(100vw - 40px), (max-width: 900px) calc((100vw - 88px) / 2), 520px"
                 />
-              </div>
-
-              <div className="p-6">
-                <h2 className="text-xl font-semibold text-gray-900">
-                  {item.title}
-                </h2>
-
-                <p className="mt-3 text-sm text-gray-600 leading-relaxed">
-                  {item.text}
-                </p>
+              </figure>
+              <div>
+                <p className={styles.eyebrow}>Modelo {model.number} · {model.application}</p>
+                <h2 id={`modelo-${model.number}`}>{model.title}</h2>
+                <p className={styles.copy}>{model.description}</p>
+                <ul className={styles.list}>
+                  {model.details?.map(detail => <li key={detail}>{detail}</li>)}
+                </ul>
               </div>
             </article>
           ))}
-        </div>
+        </section>
 
-        <div className="mt-16 rounded-2xl bg-[#01018B] px-8 py-10 text-white flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-          <div>
-            <h2 className="text-2xl font-semibold">
-              ¿Necesitas polos corporativos para tu equipo?
-            </h2>
-            <p className="mt-2 text-white/80">
-              Solicita una propuesta según el diseño, tejido, cantidad y uso requerido.
-            </p>
+        <section className={styles.section} aria-labelledby="tejidos-acabados">
+          <h2 id="tejidos-acabados">Tejidos, acabados y personalización</h2>
+          <div className={styles.copy}>
+            <p>Los polos box se presentan en piqué 30/1. El T-shirt de cuello V fotografiado está confeccionado en interlock y también puede desarrollarse en jersey. El modelo de manga larga para caballero utiliza jersey 20/1.</p>
+            <p>En los polos box pueden evaluarse cuellos y puños tejidos, colores sólidos y detalles tipping en cuello o puños, según el diseño. En los T-shirts, la definición del escote, la manga y el color parte de las características de cada modelo.</p>
+            <p>Los bordados corporativos y las aplicaciones mediante DTF se evalúan según el tejido, el modelo y el diseño de la organización. Definimos la ubicación y los acabados al preparar la propuesta comercial.</p>
           </div>
+        </section>
 
-          <a
-            href={contactHref({ source_path: "/uniformes/polos" })}
-            className="inline-flex items-center justify-center rounded-lg bg-white px-6 py-3 text-sm font-medium text-[#01018B] hover:bg-gray-100 transition"
-          >
-            Solicitar propuesta
-          </a>
-        </div>
-      </section>
-    </main>
+        <section className={styles.cta} aria-labelledby="solicitar-propuesta">
+          <div>
+            <h2 id="solicitar-propuesta">¿Necesitas polos corporativos para tu equipo?</h2>
+            <p>Solicita una propuesta según el diseño, tejido, cantidad y uso requerido.</p>
+          </div>
+          <a href={contactHref({ source_path: "/uniformes/polos" })} className={styles.button}>Solicitar propuesta <ArrowUpRight size={16} aria-hidden="true" /></a>
+        </section>
+      </div>
+    </div>
   )
 }

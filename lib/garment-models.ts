@@ -1,5 +1,5 @@
 // Single source for the approved 2027 family pages and the Uniformes catalog.
-export type EditorialCategory = "camisas" | "blusas" | "pantalones-dama" | "pantalones-caballero" | "casacas"
+export type EditorialCategory = "camisas" | "blusas" | "pantalones-dama" | "pantalones-caballero" | "casacas" | "polos"
 export type GarmentModel = {
   number: string
   title: string
@@ -369,6 +369,68 @@ export const garmentModels: Record<EditorialCategory, readonly GarmentModel[]> =
       "details": [
         "Color azul marino, superficie lisa y cuello alto.",
         "Cierre frontal y bolsillos laterales."
+      ]
+    }
+  ],
+  "polos": [
+    {
+      "number": "01",
+      "title": "Polo box para dama",
+      "image": "/uniformes/polos-2027/01_polo_box_dama.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Modelo con polo box blanco para dama, cuello camisero, tapeta y detalles oscuros en cuello y puños",
+      "application": "Presentación corporativa femenina",
+      "description": "Confeccionado en piqué 30/1, con cuello camisero y tapeta. Una propuesta para equipos femeninos de atención al cliente, retail y servicios que buscan una presentación alineada con la identidad de su empresa.",
+      "details": [
+        "Tejido piqué 30/1.",
+        "Cuello camisero y tapeta.",
+        "Fotografía en color blanco, con detalles tipping oscuros en cuello y puños."
+      ]
+    },
+    {
+      "number": "02",
+      "title": "Polo box para caballero",
+      "image": "/uniformes/polos-2027/02_polo_box_caballero.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Modelo con polo box azul marino para caballero, cuello camisero y tapeta roja en contraste",
+      "application": "Presentación corporativa masculina",
+      "description": "Polo de piqué 30/1, con cuello camisero y tapeta, para equipos masculinos comerciales y de servicios. Los colores y detalles del diseño permiten coordinar la prenda con la presentación corporativa de la organización.",
+      "details": [
+        "Tejido piqué 30/1.",
+        "Cuello camisero y tapeta.",
+        "Fotografía en azul marino, con tapeta roja en contraste."
+      ]
+    },
+    {
+      "number": "03",
+      "title": "T-shirt cuello V para dama",
+      "image": "/uniformes/polos-2027/03_tshirt_cuello_v_dama.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Modelo con T-shirt negro de manga corta y escote en V para dama",
+      "application": "Alternativa para equipos de atención",
+      "description": "La prenda fotografiada está confeccionada en interlock y presenta escote en V. Una alternativa para equipos comerciales y de atención al cliente que también puede confeccionarse en jersey, según el requerimiento del proyecto.",
+      "details": [
+        "Fotografía: prenda confeccionada en interlock.",
+        "También puede confeccionarse en jersey.",
+        "Escote en V y manga corta."
+      ]
+    },
+    {
+      "number": "04",
+      "title": "T-shirt manga larga para caballero",
+      "image": "/uniformes/polos-2027/04_tshirt_manga_larga_caballero.webp",
+      "width": 1086,
+      "height": 1448,
+      "alt": "Modelo con T-shirt blanco de manga larga y cuello redondo para caballero",
+      "application": "Presentación casual corporativa",
+      "description": "Confeccionado en jersey 20/1, con manga larga, para una presentación casual corporativa. Su diseño permite definir colores y aplicaciones de identidad según las necesidades del equipo y el uso previsto.",
+      "details": [
+        "Tejido jersey 20/1.",
+        "Manga larga y cuello redondo.",
+        "Fotografía en color blanco."
       ]
     }
   ]
