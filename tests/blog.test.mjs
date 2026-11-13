@@ -31,12 +31,12 @@ const paths=load(path.join(root,'lib/blog/paths.ts'))
 const preserved=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-35.json')))
 const authorized=JSON.parse(fs.readFileSync(path.join(root,'docs/blog-2027/articulos-autorizados.json')))
 
-test('53 historical slugs survive; exactly 18 revisions and all 35 original records remain byte-equivalent as data',()=>{
+test('53 historical slugs survive; only Guardapolvo revised and all 35 untouched records remain byte-equivalent as data',()=>{
   assert.equal(blog.posts.length,53)
   assert.equal(new Set(blog.posts.map(p=>p.slug)).size,53)
   assert.deepEqual(new Set(blog.posts.map(p=>p.slug)),new Set([...preserved.map(p=>p.slug),...authorized]))
   for(const baseline of preserved){const post=blog.posts.find(p=>p.slug===baseline.slug);assert.equal(crypto.createHash('sha256').update(JSON.stringify(post)).digest('hex'),baseline.sha256)}
-  assert.deepEqual(new Set(blog.posts.filter(p=>p.updatedAt).map(p=>p.slug)),new Set(authorized))
+  assert.deepEqual(new Set(blog.posts.filter(p=>p.updatedAt).map(p=>p.slug)),new Set(['el-uniforme-de-farmacia']))
   for(const post of blog.posts){assert.equal(blog.postPath(post),'/'+post.slug);assert.equal(post.publishedAt,undefined);assert(blog.categoryForPost(post));assert(blog.descriptionForPost(post).length>60)}
 })
 test('all images are centralized, local, dimensioned and exist; optimized variants are preferred',async()=>{
@@ -63,4 +63,29 @@ test('only identified aliases normalize; relative paths, queries and fragments r
   assert.equal(paths.normalizeBlogHref('/blog/no-identificado'),'/blog/no-identificado')
   assert.equal(paths.normalizeBlogHref('/uniformes/camisas'),'/uniformes/camisas')
   assert.equal(blog.pageNumber('0')>0,false)
+})
+
+const publication=load(path.join(root,'lib/blog/publication.ts'))
+test('publication ordering uses original dates, keeps date-only days and rejects invalid dates',()=>{
+  const a={...blog.posts[0],publishedAt:'2020-01-02',updatedAt:'2026-11-13'}
+  const b={...blog.posts[1],publishedAt:'2024-10-03',updatedAt:'2024-10-03'}
+  assert.deepEqual(publication.orderPostsByPublication([a,b]).map(p=>p.slug),[b.slug,a.slug])
+  assert.equal(publication.publicationLabel('2024-10-03'),'3 de octubre de 2024')
+  for(const date of ['2024-02-30','2024-10-03T00:00:00','invalid'])assert.equal(publication.originalPublicationTime(date),undefined)
+  assert.equal(publication.orderPostsByPublication(blog.posts)[0].slug,blog.posts.at(-1).slug)
+})
+test('original IA interview retains both measurement tables and all original cell values',()=>{
+  const post=blog.posts.find(p=>p.slug==='una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano')
+  const tables=content.parseContent(post.content).filter(b=>b.type==='table')
+  assert.equal(tables.length,2);assert.deepEqual(tables[0].rows[0],['XS','80-84','60-64','86-90']);assert.deepEqual(tables[1].rows.at(-1),['XXL','108-112','96-100','110-114'])
+  assert(tables.every(t=>t.rows.length===6));assert(post.content.includes('(Cotton Country)'))
+})
+
+test('all 52 articles outside the authorized Guardapolvo update match their original Git versions',()=>{
+  const baselines=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-original-52.json')))
+  assert.equal(baselines.length,52)
+  for(const baseline of baselines){const post=blog.posts.find(p=>p.slug===baseline.slug);assert.equal(crypto.createHash('sha256').update(JSON.stringify(post)).digest('hex'),baseline.sha256,baseline.slug)}
+  assert.equal(blog.getPostImage('el-uniforme-de-farmacia').visible,false)
+  const metadata=blog.postMetadata(blog.posts.find(p=>p.slug==='el-uniforme-de-farmacia'))
+  assert.deepEqual(metadata.openGraph.images,[])
 })

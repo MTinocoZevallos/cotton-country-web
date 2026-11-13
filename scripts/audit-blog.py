@@ -36,9 +36,9 @@ class Page(HTMLParser):
    self._schema=None
 
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--base-url',default='http://127.0.0.1:3118');parser.add_argument('--output',default='docs/blog-2027/auditoria-local.json');args=parser.parse_args()
+ parser=argparse.ArgumentParser();parser.add_argument('--base-url',default='http://127.0.0.1:3118');parser.add_argument('--inventory',default='docs/blog-2027/inventario-53.csv');parser.add_argument('--output',default='docs/blog-2027/auditoria-local.json');args=parser.parse_args()
  base=args.base_url.rstrip('/');base_parts=urllib.parse.urlsplit(base)
- inventory=list(csv.DictReader((ROOT/'docs/blog-2027/inventario-53.csv').open()))
+ inventory=list(csv.DictReader((ROOT/args.inventory).open()))
  failures=[];cache={};article_rows=[];redirect_rows=[];image_rows=[]
  def check(value,message):
   if not value:failures.append(message)
@@ -109,7 +109,7 @@ def main():
   if status==200:check(fragment in Page(body.decode('utf8')).ids,f'Missing fragment {path}#{fragment}')
  def image_check(path):
   status,headers,body=fetch(path);return {'path':path,'status':status,'bytes':len(body),'content_type':header(headers,'content-type')}
- image_paths=sorted({r['image'] for r in inventory}|optimized)
+ image_paths=sorted({r['image'] for r in inventory if r['image']}|optimized)
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
   image_rows=list(pool.map(image_check,image_paths))
  for row in image_rows:check(row['status']==200 and (row['content_type'] or '').startswith('image/'),f'Broken image {row["path"]}: {row["status"]}')

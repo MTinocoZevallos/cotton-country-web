@@ -77,3 +77,11 @@
 .textLink,.cardBottom a,.articleClosing a { display:inline-flex; align-items:center; gap:8px; }
 .recommendations a svg { display:inline-block; vertical-align:middle; }
 .pagination a { display:inline-flex; align-items:center; justify-content:center; gap:8px; }
+
+.recommendationNote { margin-top:18px; font-size:14px; line-height:1.8; max-width:850px; }
+.recommendationNote a { font:inherit; display:inline; color:var(--cc-blue); text-decoration:underline; text-underline-offset:4px; }
+
+.page :global(.blog-measurement-table) { width: 100%; overflow-x: auto; margin-block: 2rem; }
+.page :global(.blog-measurement-table table) { width: 100%; border-collapse: collapse; font-size: .875rem; }
+.page :global(.blog-measurement-table th), .page :global(.blog-measurement-table td) { padding: .75rem .5rem; border-bottom: 1px solid var(--cc-line); text-align: left; white-space: nowrap; }
+.page :global(.blog-measurement-table thead) { color: var(--cc-blue); }

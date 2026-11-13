@@ -20,8 +20,8 @@ export const blogCategories = [
   {
     "id": "tallaje",
     "slug": "tallaje-y-dotaciones",
-    "name": "Tallaje y dotaciones",
-    "description": "Medidas, patrones y pruebas para organizar una dotación que considere a sus usuarios."
+    "name": "Tallaje y uniformes",
+    "description": "Medidas, patrones y pruebas para organizar los uniformes de un equipo."
   },
   {
     "id": "uniformes",

@@ -16,6 +16,7 @@ export default function Content({ blocks }: { blocks: Block[] }) {
       const image=getPostImage(slug)
       return <figure key={index}><Image src={image.src} alt={block.alt} width={image.width} height={image.height} sizes="(max-width:900px) 100vw, 760px"/></figure>
     }
+    if(block.type==="table") return <div key={index} className="blog-measurement-table" role="region" aria-label={`Tabla de medidas: ${block.headers[1]}`} tabIndex={0}><table><thead><tr>{block.headers.map(header=><th scope="col" key={header}>{header}</th>)}</tr></thead><tbody>{block.rows.map((row,i)=><tr key={i}>{row.map((cell,j)=>j===0?<th scope="row" key={j}>{cell}</th>:<td key={j}>{cell}</td>)}</tr>)}</tbody></table></div>
     const items=block.items.map((item,i)=><li key={i}><InlineContent nodes={item}/></li>)
     return block.ordered?<ol key={index}>{items}</ol>:<ul key={index}>{items}</ul>
   })

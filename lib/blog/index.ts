@@ -3,11 +3,13 @@ import { posts, type Post } from "@/app/blog/posts"
 import { blogCategories, postCategoryIds } from "./taxonomy"
 import { contentText, inlineText, parseContent } from "./content"
 import { getPostImage } from "./images"
+import { orderPostsByPublication } from "./publication"
 import { BLOG_ORIGIN, postPath } from "./paths"
 
 export { posts, blogCategories, getPostImage, postPath }
 export const PAGE_SIZE = 12
-export const featuredSlug = "como-definir-un-proyecto-de-uniformes-corporativos"
+export const featuredSlug = orderPostsByPublication(posts)[0].slug
+export { orderPostsByPublication }
 export function categoryForPost(post: Post) {
   const category = blogCategories.find(item => item.id === postCategoryIds[post.slug])
   if (!category) throw new Error(`Missing blog category: ${post.slug}`)
@@ -36,14 +38,14 @@ export function postMetadata(post: Post): Metadata {
   const image = getPostImage(post.slug), path = postPath(post)
   return {
     title:post.title, description:descriptionForPost(post), alternates:{canonical:path},
-    openGraph:{type:"article",title:post.title,description:descriptionForPost(post),url:path,siteName:"Cotton Country",locale:"es_PE",images:[{url:image.src,width:image.width,height:image.height,alt:image.alt}],...(post.publishedAt?{publishedTime:post.publishedAt}:{}),...(post.updatedAt?{modifiedTime:post.updatedAt}:{})},
-    twitter:{card:"summary_large_image",title:post.title,description:descriptionForPost(post),images:[image.src]},
+    openGraph:{type:"article",title:post.title,description:descriptionForPost(post),url:path,siteName:"Cotton Country",locale:"es_PE",images:image.visible === false ? [] : [{url:image.src,width:image.width,height:image.height,alt:image.alt}],...(post.publishedAt?{publishedTime:post.publishedAt}:{}),...(post.updatedAt?{modifiedTime:post.updatedAt}:{})},
+    twitter:{card:image.visible === false ? "summary" : "summary_large_image",title:post.title,description:descriptionForPost(post),images:image.visible === false ? [] : [image.src]},
   }
 }
 export function postStructuredData(post: Post) {
   const category = categoryForPost(post), image = getPostImage(post.slug), url = BLOG_ORIGIN+postPath(post)
   return {"@context":"https://schema.org","@graph":[
-    {"@type":"BlogPosting","@id":url+"#article",url,mainEntityOfPage:{"@type":"WebPage","@id":url},headline:post.title,description:descriptionForPost(post),articleSection:category.name,inLanguage:"es-PE",image:{"@type":"ImageObject",url:BLOG_ORIGIN+image.src,width:image.width,height:image.height},publisher:{"@type":"Organization",name:"Cotton Country",url:BLOG_ORIGIN},...(post.publishedAt?{datePublished:post.publishedAt}:{}),...(post.updatedAt?{dateModified:post.updatedAt}:{})},
+    {"@type":"BlogPosting","@id":url+"#article",url,mainEntityOfPage:{"@type":"WebPage","@id":url},headline:post.title,description:descriptionForPost(post),articleSection:category.name,inLanguage:"es-PE",...(image.visible === false ? {} : {image:{"@type":"ImageObject",url:BLOG_ORIGIN+image.src,width:image.width,height:image.height}}),publisher:{"@type":"Organization","@id":BLOG_ORIGIN+"/#organization",name:"Cotton Country",url:BLOG_ORIGIN},...(post.publishedAt?{datePublished:post.publishedAt}:{}),...(post.updatedAt?{dateModified:post.updatedAt}:{})},
     {"@type":"BreadcrumbList",itemListElement:[{name:"Inicio",item:BLOG_ORIGIN+"/"},{name:"Blog",item:BLOG_ORIGIN+"/blog"},{name:category.name,item:BLOG_ORIGIN+categoryPath(category)},{name:post.title,item:url}].map((item,index)=>({"@type":"ListItem",position:index+1,...item}))},
   ]}
 }

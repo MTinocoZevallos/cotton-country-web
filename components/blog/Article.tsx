@@ -4,6 +4,7 @@ import Link from "next/link"
 import type { Post } from "@/app/blog/posts"
 import { editorialSerif } from "@/components/home-font"
 import { categoryForPost, categoryPath, getPostImage, postStructuredData, readingMinutes, relatedPosts, serializeStructuredData } from "@/lib/blog"
+import { publicationLabel } from "@/lib/blog/publication"
 import { inlineText, parseContent } from "@/lib/blog/content"
 import Content, { InlineContent } from "./Content"
 import BlogCard from "./BlogCard"
@@ -22,10 +23,10 @@ export default function Article({ post }: { post: Post }) {
         <nav className={styles.breadcrumbs} aria-label="Ruta de navegación"><Link prefetch={false} href="/blog">Blog</Link><span aria-hidden="true">/</span><Link prefetch={false} href={categoryPath(category)}>{category.name}</Link></nav>
         <p className={styles.eyebrow}>{category.name}</p>
         <h1>{post.title}</h1>
-        <div className={styles.articleMeta}><span>Cotton Country · {revised?"Edición revisada":"Archivo editorial"}</span><span>Lectura aprox. {readingMinutes(post)} min</span>{post.updatedAt&&<time dateTime={post.updatedAt}>Revisado el {revised}</time>}</div>
+        <div className={styles.articleMeta}><span>Cotton Country · {revised?"Edición revisada":"Archivo editorial"}</span><span>Lectura aprox. {readingMinutes(post)} min</span>{post.publishedAt&&publicationLabel(post.publishedAt)&&<time dateTime={post.publishedAt}>Publicado el {publicationLabel(post.publishedAt)}</time>}{post.updatedAt&&<time dateTime={post.updatedAt}>Revisado el {revised}</time>}</div>
         {first&&<div className={styles.lead}><InlineContent nodes={first.children}/></div>}
       </header>
-      <figure className={styles.cover}><Image src={image.src} alt={image.alt} width={image.width} height={image.height} sizes="(max-width:900px) 100vw, 1100px" loading="lazy"/>{post.slug==="dia-mundial-del-algodon-2026"&&<figcaption>Muestras de algodón en diferentes tonalidades exhibidas en el Museo Amano, Lima. Fotografía: Cotton Country.</figcaption>}</figure>
+      {image.visible !== false && <figure className={styles.cover}><Image src={image.src} alt={image.alt} width={image.width} height={image.height} sizes="(max-width:900px) 100vw, 1100px" loading="lazy"/>{post.slug==="dia-mundial-del-algodon-2026"&&<figcaption>Muestras de algodón en diferentes tonalidades exhibidas en el Museo Amano, Lima. Fotografía: Cotton Country.</figcaption>}</figure>}
       <div className={styles.readingLayout}>
         <aside>{headings.length>=3&&<nav className={styles.toc} aria-label="Índice del artículo"><p>En este artículo</p><ol>{headings.map(h=><li key={h.id} data-level={h.level}><a href={`#${h.id}`}>{inlineText(h.children)}</a></li>)}</ol></nav>}</aside>
         <article className={styles.prose} aria-label="Contenido del artículo"><Content blocks={first?blocks.slice(1):blocks}/></article>

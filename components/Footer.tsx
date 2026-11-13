@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Facebook, Linkedin, Youtube, Phone, Mail } from "lucide-react"
+import ContactLink from "./ContactLink"
 import styles from "./chrome.module.css"
 
 export default function Footer() {
@@ -17,9 +18,9 @@ export default function Footer() {
               className="mb-4"
             />
             <p className="text-sm text-gray-200 leading-relaxed">
-              Diseñamos y confeccionamos uniformes corporativos que equilibran
-              identidad, desempeño y durabilidad. Nuestro método asegura
-              precisión en tallaje, materiales adecuados y entregas puntuales.
+              Fabricamos uniformes corporativos bajo pedido. Definimos materiales,
+              tallaje y acabados según las funciones del equipo y las
+              especificaciones de cada proyecto.
             </p>
           </div>
 
@@ -74,11 +75,11 @@ export default function Footer() {
             <div className="space-y-2 text-sm text-gray-200 mb-4">
               <p className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                01 7397979
+                <ContactLink href="tel:+5117397979">01 7397979</ContactLink>
               </p>
               <p className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                info@cottoncountry.com.pe
+                <ContactLink href="mailto:info@cottoncountry.com.pe">info@cottoncountry.com.pe</ContactLink>
               </p>
             </div>
 

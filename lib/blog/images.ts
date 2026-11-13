@@ -1,5 +1,5 @@
 // Existing approved assets; dimensions read from the original files.
-export type BlogImage = { src: string; width: number; height: number; alt: string }
+export type BlogImage = { src: string; width: number; height: number; alt: string; visible?: false }
 const images: Record<string, BlogImage> = {
   "el-algodon-se-caso-con-el-poliester-en-oxford": {
     "src": "/blog/el-algodon-se-caso-con-el-poliester-en-oxford.jpg",
@@ -62,6 +62,9 @@ const images: Record<string, BlogImage> = {
     "alt": "Persona con casco y chaleco naranja en un entorno industrial"
   },
   "el-uniforme-de-farmacia": {
+    // Do not reuse the historical stock cover for the approved Guardapolvo.
+    // Enable a cover only after the owner's original attachment is available.
+    visible: false,
     "src": "/blog/el-uniforme-de-farmacia.jpg",
     "width": 1024,
     "height": 585,

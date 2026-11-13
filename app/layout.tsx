@@ -43,6 +43,16 @@ export default function RootLayout({
           `}
         </Script>
 
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://cottoncountry.com.pe/#organization",
+          name: "Cotton Country",
+          url: "https://cottoncountry.com.pe",
+          logo: "https://cottoncountry.com.pe/logo-cotton-country.png",
+          email: "info@cottoncountry.com.pe",
+          telephone: "+5117397979",
+        }) }} />
         <Header />
         <main id="contenido" tabIndex={-1} className="flex-1">{children}</main>
         <Footer />

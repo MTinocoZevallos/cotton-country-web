@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { editorialSerif } from "@/components/home-font"
-import { blogCategories, categoryPath, PAGE_SIZE, pageNumber, posts } from "@/lib/blog"
+import { blogCategories, categoryPath, PAGE_SIZE, pageNumber, posts, orderPostsByPublication } from "@/lib/blog"
 import { postCategoryIds } from "@/lib/blog/taxonomy"
 import BlogCard from "@/components/blog/BlogCard"
 import CategoryNav from "@/components/blog/CategoryNav"
@@ -15,7 +15,7 @@ async function state({params,searchParams}:Props){
   const [{category:slug},query]=await Promise.all([params,searchParams])
   const selected=blogCategories.find(item=>item.slug===slug)
   if(!selected)notFound()
-  const items=posts.filter(post=>postCategoryIds[post.slug]===selected.id).sort((a,b)=>a.title.localeCompare(b.title,"es"))
+  const items=orderPostsByPublication(posts.filter(post=>postCategoryIds[post.slug]===selected.id))
   const page=pageNumber(query.pagina),pages=Math.ceil(items.length/PAGE_SIZE)
   if(!Number.isSafeInteger(page)||page<1||page>pages)notFound()
   return {category:selected,items,page,pages,path:categoryPath(selected)+(page>1?`?pagina=${page}`:"")}

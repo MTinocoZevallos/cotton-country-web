@@ -1,7 +1,7 @@
 import { normalizeBlogHref } from "./paths"
 
 export type Inline = { type: "text"; text: string } | { type: "strong" | "em"; children: Inline[] } | { type: "link"; href: string; children: Inline[] }
-export type Block = { type: "paragraph"; children: Inline[] } | { type: "heading"; level: 2 | 3; id: string; children: Inline[] } | { type: "list"; ordered: boolean; items: Inline[][] } | { type: "divider" } | { type: "image"; src: string; alt: string }
+export type Block = { type: "paragraph"; children: Inline[] } | { type: "heading"; level: 2 | 3; id: string; children: Inline[] } | { type: "list"; ordered: boolean; items: Inline[][] } | { type: "table"; headers: string[]; rows: string[][] } | { type: "divider" } | { type: "image"; src: string; alt: string }
 
 function entities(text: string) {
   return text.replace(/&(#x[\da-f]+|#\d+|amp|quot|apos|lt|gt|nbsp);/gi, (match, code: string) => {
@@ -48,7 +48,18 @@ export function inlineText(nodes: Inline[]): string {
 export function parseContent(content: string): Block[] {
   const blocks: Block[] = [], ids = new Map<string, number>()
   const lines = content.replace(/<\/?p\s*>/gi,"\n").replace(/<br\s*\/?>/gi,"\n").split(/\r?\n/).map(s=>s.trim()).filter(Boolean)
-  for (const line of lines) {
+  for (let index = 0; index < lines.length; index++) {
+    const line = lines[index]
+    // Recover the two original measurement tables imported as one cell per line.
+    // Only the complete, identified structure is interpreted; values stay verbatim.
+    if (line === "Talla" && /^(Busto|Pecho) \(cm\)$/.test(lines[index+1] ?? "") && lines[index+2] === "Cintura (cm)" && lines[index+3] === "Cadera (cm)") {
+      const headers = lines.slice(index,index+4), rows: string[][] = []
+      let cursor = index+4
+      while (/^(XS|S|M|L|XL|XXL)$/.test(lines[cursor] ?? "") && lines.slice(cursor+1,cursor+4).length === 3 && lines.slice(cursor+1,cursor+4).every(value => /^\d+-\d+$/.test(value))) {
+        rows.push(lines.slice(cursor,cursor+4)); cursor += 4
+      }
+      if (rows.length) { blocks.push({type:"table",headers,rows}); index=cursor-1; continue }
+    }
     if (line === "---") { blocks.push({type:"divider"}); continue }
     const image = line.match(/^!\[([^\]]*)\]\(([^\s)]+)\)$/)
     if (image) { if (/^\/blog\/[a-z0-9-]+\.(webp|png|jpe?g)$/.test(image[2])) blocks.push({type:"image",src:image[2],alt:entities(image[1])}); continue }
@@ -73,5 +84,5 @@ export function parseContent(content: string): Block[] {
 }
 
 export function contentText(content: string) {
-  return parseContent(content).map(block=>block.type==="paragraph"||block.type==="heading"?inlineText(block.children):block.type==="list"?block.items.map(inlineText).join(" "):"").filter(Boolean).join(" ")
+  return parseContent(content).map(block=>block.type==="paragraph"||block.type==="heading"?inlineText(block.children):block.type==="list"?block.items.map(inlineText).join(" "):block.type==="table"?[...block.headers,...block.rows.flat()].join(" "):"").filter(Boolean).join(" ")
 }
