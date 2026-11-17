@@ -37,7 +37,7 @@ test('53 historical slugs survive; approved revisions remain scoped and all 35 u
   assert.deepEqual(new Set(blog.posts.map(p=>p.slug)),new Set([...preserved.map(p=>p.slug),...authorized]))
   for(const baseline of preserved){const post=blog.posts.find(p=>p.slug===baseline.slug);assert.equal(crypto.createHash('sha256').update(JSON.stringify(post)).digest('hex'),baseline.sha256)}
   assert.deepEqual(new Set(blog.posts.filter(p=>p.updatedAt).map(p=>p.slug)),new Set(['el-uniforme-de-farmacia']))
-  for(const post of blog.posts){assert.equal(blog.postPath(post),'/'+post.slug);assert.equal(post.publishedAt,post.slug==='que-significa-tallas-completas-en-ropa'?'2022-08-18':undefined);assert(blog.categoryForPost(post));assert(blog.descriptionForPost(post).length>60)}
+  for(const post of blog.posts){assert.equal(blog.postPath(post),'/'+post.slug);assert.equal(post.publishedAt,post.slug==='que-significa-tallas-completas-en-ropa'?'2022-08-18':post.slug==='una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano'?'2023-02-28':undefined);assert(blog.categoryForPost(post));assert(blog.descriptionForPost(post).length>60)}
 })
 test('all images are centralized, local, dimensioned and exist; optimized variants are preferred',async()=>{
   const sharp=require('sharp')
@@ -82,9 +82,9 @@ test('original IA interview retains both measurement tables and all original cel
   assert(tables.every(t=>t.rows.length===6));assert(post.content.includes('(Cotton Country)'))
 })
 
-test('the 51 articles outside approved revisions match their original Git versions',()=>{
-  const baselines=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-original-52.json'))).filter(p=>p.slug!=='que-significa-tallas-completas-en-ropa')
-  assert.equal(baselines.length,51)
+test('the 50 articles outside approved revisions match their original Git versions',()=>{
+  const baselines=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-original-52.json'))).filter(p=>!['que-significa-tallas-completas-en-ropa','una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano'].includes(p.slug))
+  assert.equal(baselines.length,50)
   for(const baseline of baselines){const post=blog.posts.find(p=>p.slug===baseline.slug);assert.equal(crypto.createHash('sha256').update(JSON.stringify(post)).digest('hex'),baseline.sha256,baseline.slug)}
   assert.equal(blog.getPostImage('el-uniforme-de-farmacia').visible,false)
   const metadata=blog.postMetadata(blog.posts.find(p=>p.slug==='el-uniforme-de-farmacia'))
@@ -93,9 +93,10 @@ test('the 51 articles outside approved revisions match their original Git versio
 
 const editorialBaseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-other-52.json')))
 const digest=value=>crypto.createHash('sha256').update(typeof value==='string'?value:JSON.stringify(value)).digest('hex')
-test('the other 52 complete records, metadata and structured data remain unchanged',()=>{
-  assert.equal(editorialBaseline.otherPosts.length,52)
-  for(const before of editorialBaseline.otherPosts){
+test('the article 1 baseline remains unchanged outside the newly approved article 2',()=>{
+  const remaining=editorialBaseline.otherPosts.filter(p=>p.slug!=='una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano')
+  assert.equal(remaining.length,51)
+  for(const before of remaining){
     const post=blog.posts.find(post=>post.slug===before.slug)
     assert.equal(digest(post),before.postSHA256,before.slug)
     assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug)
@@ -113,4 +114,26 @@ test('article 1 exactly preserves the approved body, separate SEO title, histori
   assert.equal(content.parseContent(post.content).filter(block=>block.type==='heading'&&block.level===2).length,8)
   const image=blog.getPostImage(post.slug);assert.deepEqual(image,editorialBaseline.image)
   assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'public',image.src))).digest('hex'),editorialBaseline.imageSHA256)
+})
+
+const historical=load(path.join(root,'lib/blog/historical-chat.ts'))
+const chatBaseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-outside-chat.json')))
+test('article 2 preserves all three historical answers, all table cells, approved copy and the confirmed original date',()=>{
+  const post=blog.posts.find(p=>p.slug==='una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano')
+  const original=fs.readFileSync(path.join(root,'tests/fixtures/chatgpt-conversation-original.txt'),'utf8').trim()
+  assert.equal(historical.historicalChatSource(post.content),original)
+  assert.deepEqual(historical.parseHistoricalChat(historical.historicalChatSource(post.content)),historical.parseHistoricalChat(original))
+  const approved=fs.readFileSync(path.join(root,'tests/fixtures/ia-tablas-approved.md'),'utf8').trim()
+  assert.equal(post.title,approved.split('\n')[0].slice(2));assert.equal(post.content.trim(),approved.replace(/^# [^\n]+\n\n/,''))
+  assert.equal(post.publishedAt,'2023-02-28');assert.equal(post.updatedAt,undefined)
+  assert.equal(blog.postMetadata(post).title,'Tablas de medidas para Perú: ¿qué nos respondió una IA?')
+  assert.equal(blog.postMetadata(post).description,'Pedimos a ChatGPT tablas de medidas para mujeres y varones del Perú. Analizamos sus respuestas y qué tan confiables son para confeccionar ropa.')
+  const oldTables=content.parseContent(original).filter(b=>b.type==='table'),newTables=content.parseContent(post.content).filter(b=>b.type==='table')
+  assert.equal(newTables.length,2);assert.deepEqual(newTables,oldTables)
+  assert.deepEqual(blog.getPostImage(post.slug),chatBaseline.image)
+  assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'public',chatBaseline.image.src))).digest('hex'),chatBaseline.imageSHA256)
+})
+test('all other 52 articles including the definitive article 1 retain complete data, metadata and structured data',()=>{
+  assert.equal(chatBaseline.otherPosts.length,52)
+  for(const before of chatBaseline.otherPosts){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(digest(post),before.postSHA256,before.slug);assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug);assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)}
 })

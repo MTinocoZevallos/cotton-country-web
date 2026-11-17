@@ -8,9 +8,12 @@ import { publicationLabel } from "@/lib/blog/publication"
 import { inlineText, parseContent } from "@/lib/blog/content"
 import Content, { InlineContent } from "./Content"
 import BlogCard from "./BlogCard"
+import HistoricalChat from "./HistoricalChat"
+import { historicalChatSource } from "@/lib/blog/historical-chat"
 import styles from "./blog.module.css"
 
 export default function Article({ post }: { post: Post }) {
+  const historicalChat = post.slug === "una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano"
   const approvedInterview = post.slug === "que-significa-tallas-completas-en-ropa"
   // Preserve the approved Markdown in storage and scope its italic styling to this article.
   const articleContent = approvedInterview ? post.content.replaceAll("*fit*", "<em>fit</em>") : post.content
@@ -20,6 +23,8 @@ export default function Article({ post }: { post: Post }) {
   const bodyBlocks=first?blocks.slice(1):blocks
   const interviewStart=bodyBlocks.findIndex(block=>block.type==="heading"&&block.level===2)
   const editorialStart=bodyBlocks.findIndex(block=>block.type==="heading"&&block.id==="son-realmente-una-solucion-las-tallas-completas")
+  const chatStart=bodyBlocks.findIndex(block=>block.type==="heading"&&block.id==="que-le-preguntamos-a-chatgpt")
+  const chatEnd=bodyBlocks.findIndex(block=>block.type==="heading"&&block.id==="de-donde-obtuvo-la-inteligencia-artificial-estas-medidas")
   const revised=post.updatedAt?new Intl.DateTimeFormat("es-PE",{dateStyle:"long",timeZone:"UTC"}).format(new Date(post.updatedAt)):undefined
   return <div className={`${styles.page} ${editorialSerif.variable}`}>
     {/* JSON only, with '<' escaped; article content is rendered as React nodes. */}
@@ -36,7 +41,11 @@ export default function Article({ post }: { post: Post }) {
       <div className={styles.readingLayout}>
         <aside>{headings.length>=3&&<nav className={styles.toc} aria-label="Índice del artículo"><p>En este artículo</p><ol>{headings.map(h=><li key={h.id} data-level={h.level}><a href={`#${h.id}`}>{inlineText(h.children)}</a></li>)}</ol></nav>}</aside>
         <article className={styles.prose} aria-label="Contenido del artículo">
-          {approvedInterview ? <>
+          {historicalChat ? <>
+            <Content blocks={bodyBlocks.slice(0,chatStart+1)}/>
+            <HistoricalChat source={historicalChatSource(post.content)}/>
+            <Content blocks={bodyBlocks.slice(chatEnd)}/>
+          </> : approvedInterview ? <>
             <Content blocks={bodyBlocks.slice(0,interviewStart)}/>
             <div className={styles.attributedSection} role="group" aria-label="Respuestas de Ricardo Gonzalez">
               <p className={styles.attribution}>Respuestas de Ricardo Gonzalez</p>
@@ -50,10 +59,8 @@ export default function Article({ post }: { post: Post }) {
         </article>
       </div>
       <div className={styles.articleClosing}><Link prefetch={false} href="/blog"><ArrowLeft size={16} aria-hidden="true"/> Volver al blog</Link><Link prefetch={false} href={categoryPath(category)}>Más sobre {category.name.toLowerCase()} <ArrowRight size={16} aria-hidden="true"/></Link></div>
-      {!approvedInterview && <>
-      <section className={styles.cta} aria-labelledby="article-contact"><div><p className={styles.eyebrow}>Del conocimiento al proyecto</p><h2 id="article-contact">¿Estás definiendo los uniformes de tu equipo?</h2><p>Reúne las prendas, cantidades y condiciones de uso para conversar sobre tu requerimiento.</p></div><Link prefetch={false} href="/contacto" className={styles.button}>Conversemos <ArrowUpRight size={16} aria-hidden="true"/></Link></section>
-      <section className={styles.section} aria-labelledby="related-title"><div className={styles.sectionHeader}><p className={styles.eyebrow}>Sigue explorando</p><h2 id="related-title">Lecturas relacionadas</h2></div><div className={styles.grid}>{relatedPosts(post).map(item=><BlogCard key={item.slug} post={item}/>)}</div></section>
-      </>}
+      {!approvedInterview && !historicalChat && <section className={styles.cta} aria-labelledby="article-contact"><div><p className={styles.eyebrow}>Del conocimiento al proyecto</p><h2 id="article-contact">¿Estás definiendo los uniformes de tu equipo?</h2><p>Reúne las prendas, cantidades y condiciones de uso para conversar sobre tu requerimiento.</p></div><Link prefetch={false} href="/contacto" className={styles.button}>Conversemos <ArrowUpRight size={16} aria-hidden="true"/></Link></section>}
+      {!approvedInterview && <section className={styles.section} aria-labelledby="related-title"><div className={styles.sectionHeader}><p className={styles.eyebrow}>Sigue explorando</p><h2 id="related-title">Lecturas relacionadas</h2></div><div className={styles.grid}>{relatedPosts(post).map(item=><BlogCard key={item.slug} post={item}/>)}</div></section>}
     </div>
   </div>
 }

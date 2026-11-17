@@ -975,11 +975,18 @@ Elegir el uniforme adecuado para tu negocio no es fácil, pero tomando en cuenta
   {
     slug: "una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
     title: "Una IA nos da tablas de medida para el mercado peruano",
-    excerpt: "La increíble herramienta de OpenAI nos da más respuestas sobre temas complejos en la industria textil, esta vez le pedimos información sobre las medidas co...",
+    excerpt: "Pedimos a ChatGPT tablas de medidas para mujeres y varones del Perú. Analizamos sus respuestas y qué tan confiables son para confeccionar ropa.",
     canonicalPath: "/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
     content: `
-La increíble herramienta de OpenAI nos da más respuestas sobre temas complejos en la industria textil, esta vez le pedimos información sobre las medidas corporales. Esto fue lo que nos respondió:
+La inteligencia artificial está transformando la manera en que buscamos información y resolvemos problemas. Pero ¿qué ocurre cuando le pedimos respuestas sobre un tema tan complejo como las medidas corporales de la población peruana?
 
+En Cotton Country decidimos ponerla a prueba. Le preguntamos a ChatGPT si conocía las tablas de medidas corporales utilizadas en la confección y, posteriormente, si podía proporcionarnos tablas específicas para mujeres y varones del mercado peruano.
+
+Sus respuestas fueron sorprendentes. No solo explicó cómo funcionan estas tablas, sino que también presentó medidas concretas, organizadas por tallas.
+
+Sin embargo, había una pregunta más importante que no habíamos resuelto: **¿de dónde provenían esos datos?**
+
+## ¿Qué le preguntamos a ChatGPT?
 
 (Cotton Country) ¿Tienes información sobre tablas de medidas corporales para ropa?
 (ChatGPT) Sí, las tablas de medidas corporales son una herramienta útil para determinar la talla de ropa adecuada para una persona. Estas tablas suelen proporcionar una serie de medidas corporales, como el busto, la cintura, las caderas, la longitud del torso y la longitud de la pierna, que se utilizan para seleccionar la talla correcta de la prenda.
@@ -1073,10 +1080,44 @@ Al igual que en la tabla de medidas para mujeres, es importante tener en cuenta 
 
 Al utilizar esta tabla de medidas, es recomendable medirse con una cinta métrica flexible y mantener una postura natural y relajada para obtener medidas precisas. Al seleccionar una talla de ropa, es importante tener en cuenta no solo las medidas, sino también el tipo de prenda, la tela y el estilo, ya que estos factores también pueden influir en el ajuste y la comodidad de la prenda.
 
+## ¿De dónde obtuvo la inteligencia artificial estas medidas?
 
+Este es el aspecto más interesante del experimento.
 
-Sin duda nos aterra todo lo que la inteligencia artificial puede hacer hoy lo cual nos lleva a reflexionar sobre nuestros modelos de negocio, nuestros procesos y sobre nuestra propia utilidad y el valor que generamos a los demás.
+ChatGPT proporcionó cifras específicas para el mercado peruano, pero no identificó un estudio antropométrico, una muestra poblacional ni una fuente técnica que respaldara los valores.
+
+No podemos concluir que esas medidas sean incorrectas únicamente porque fueron generadas por una IA. Pero tampoco podemos aceptarlas como un estándar nacional sin conocer su origen.
+
+Una tabla antropométrica representativa requiere datos obtenidos mediante mediciones, una metodología definida y criterios que permitan interpretar sus resultados.
+
+La inteligencia artificial puede ayudarnos a organizar información, comparar referencias y analizar datos. Sin embargo, una respuesta bien redactada no sustituye la evidencia necesaria para validar una tabla de medidas.
+
+## ¿Qué ocurre cuando llevamos estas tablas a la confección de uniformes?
+
+En el mercado de uniformes corporativos, una tabla de medidas no es simplemente una lista de números. Es una herramienta que influye directamente en el patronaje, la producción y el resultado final de las prendas.
+
+Además, debemos distinguir dos conceptos: **las medidas corporales describen dimensiones del cuerpo; las medidas de una prenda incorporan decisiones de diseño, holgura y ajuste**.
+
+Una persona puede tener determinadas medidas de pecho y cintura, pero eso no significa que todas las prendas identificadas con la misma talla le queden igual.
+
+En Cotton Country conocemos este problema por nuestra experiencia en procesos de tallaje de colaboradores. Las diferencias de contextura, las preferencias personales y las características de cada uniforme hacen que una tabla, por sí sola, no garantice un buen ajuste.
+
+Por eso, las tablas utilizadas en producción deben corresponder a los modelos desarrollados y verificarse mediante muestras físicas.
+
+## Entonces, ¿puede la IA ayudarnos a desarrollar tablas de medidas?
+
+Sí, pero debemos distinguir entre generar una propuesta y validar una referencia técnica.
+
+La inteligencia artificial puede servir para explorar alternativas, estructurar información o analizar datos antropométricos disponibles. Lo que no debemos hacer es presentar cifras generadas sin fuentes verificables como si fueran medidas oficiales del mercado peruano.
+
+Nuestro experimento nos dejó una reflexión que sigue siendo relevante: la tecnología puede producir respuestas cada vez más convincentes, pero el verdadero valor profesional está en saber formular preguntas, interpretar resultados y comprobarlos.
+
+**La inteligencia artificial puede proponer una tabla de medidas. Demostrar que esa tabla representa a una población y funciona para una prenda determinada es un trabajo diferente.**
+
+En una industria donde unos pocos centímetros pueden determinar si un uniforme queda bien o mal, esa diferencia importa.
 `,
+    seoTitle: "Tablas de medidas para Perú: ¿qué nos respondió una IA?",
+    publishedAt: "2023-02-28",
   },
   {
     slug: "uniformes-de-guerra",
