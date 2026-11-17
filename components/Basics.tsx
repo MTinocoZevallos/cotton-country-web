@@ -13,9 +13,12 @@ const families = [
   { name: "Pantalones", href: "/uniformes/pantalones-caballero", image: "/home-2027/pantalon-hombre.webp", alt: "Pantalón azul marino de hombre", detail: "Cada pieza cuenta." },
   { name: "Pantalones", href: "/uniformes/pantalones-dama", image: "/home-2027/pantalon-mujer.webp", alt: "Pantalón azul marino de mujer", detail: "Cada pieza cuenta." },
   { name: "Casacas", href: "/uniformes/casacas", image: "/home-2027/casaca-softshell-azul.webp", alt: "Casaca softshell azul con cierre frontal en un entorno corporativo", detail: "La presencia está en los detalles." },
-  { name: "Casacas", href: "/uniformes/casacas", image: "/home-2027/casaca-acolchada-azul.webp", alt: "Casaca acolchada azul con líneas horizontales y cierre frontal en un espacio acristalado", detail: "Cada pieza cuenta." },
+  { name: "Chalecos", href: "/uniformes/chalecos", image: "/prendas/chaleco-azul-cotton-country.webp", alt: "Chaleco azul marino con cierre frontal, bolsillos y bandas claras en el pecho", detail: "Cada pieza cuenta." },
   { name: "Sacos", href: "/uniformes/sacos", image: "/home-2027/saco-moderno-dama.webp", alt: "Saco moderno azul de dama, con solapas y un botón, en un entorno profesional", detail: "Una expresión de tu identidad." },
 ]
+
+const groupSize = 4
+const groupCount = Math.ceil(families.length / groupSize)
 
 export default function Basics() {
   const section = useRef<HTMLElement>(null)
@@ -30,7 +33,7 @@ export default function Basics() {
   const [touching, setTouching] = useState(false)
   const [paused, setPaused] = useState(false)
   const [rotationReset, setRotationReset] = useState(0)
-  const positions = Math.max(1, families.length - perView + 1)
+  const positions = groupCount
 
   useEffect(() => {
     const element = track.current
@@ -38,9 +41,9 @@ export default function Basics() {
     const measure = () => {
       const count = Number(getComputedStyle(element).getPropertyValue("--products-per-view")) || 1
       setPerView(count)
-      const step = (element.firstElementChild as HTMLElement | null)?.offsetWidth ?? 1
+      const step = (element.firstElementChild as HTMLElement | null)?.getBoundingClientRect().width ?? 1
       const gap = parseFloat(getComputedStyle(element).columnGap) || 0
-      setActive(Math.min(families.length - count, Math.round(element.scrollLeft / (step + gap))))
+      setActive(Math.min(groupCount - 1, Math.floor(Math.round(element.scrollLeft / (step + gap)) / groupSize)))
     }
     const motion = window.matchMedia("(prefers-reduced-motion: reduce)")
     const updateMotion = () => setReducedMotion(motion.matches)
@@ -62,7 +65,7 @@ export default function Basics() {
     }
   }, [])
 
-  const select = useCallback((index: number) => {
+  const selectModel = useCallback((index: number) => {
     const element = track.current
     if (!element) return
     const item = element.children[index] as HTMLElement | undefined
@@ -78,10 +81,10 @@ export default function Basics() {
       if (!element) return
       const step = (element.firstElementChild as HTMLElement).getBoundingClientRect().width + (parseFloat(getComputedStyle(element).columnGap) || 0)
       const current = Math.round(element.scrollLeft / step)
-      select((current + 1) % positions)
+      selectModel((current + perView) % families.length)
     }, 4000)
     return () => window.clearInterval(timer)
-  }, [positions, autoRunning, rotationReset, select])
+  }, [perView, autoRunning, rotationReset, selectModel])
 
   return (
     <section ref={section} className={styles.products} aria-labelledby="products-title"
@@ -107,11 +110,11 @@ export default function Basics() {
             onTouchCancel={() => setTouching(false)}
             onScroll={event => {
               const element = event.currentTarget
-              const step = (element.firstElementChild as HTMLElement).offsetWidth + (parseFloat(getComputedStyle(element).columnGap) || 0)
-              setActive(Math.min(positions - 1, Math.round(element.scrollLeft / step)))
+              const step = (element.firstElementChild as HTMLElement).getBoundingClientRect().width + (parseFloat(getComputedStyle(element).columnGap) || 0)
+              setActive(Math.min(groupCount - 1, Math.floor(Math.round(element.scrollLeft / step) / groupSize)))
             }}>
-            {families.map(family => (
-              <Link key={family.image} href={family.href} className={styles.product}>
+            {families.map((family, index) => (
+              <Link key={family.image} href={family.href} className={styles.product} data-product-group={Math.floor(index / groupSize) + 1}>
                 <div className={styles.productVisual}>
                   <Image src={family.image} alt={family.alt} fill sizes="(max-width: 575px) 100vw, (max-width: 1023px) 50vw, 25vw" className={styles.productImage} />
                 </div>
@@ -123,11 +126,11 @@ export default function Basics() {
               </Link>
             ))}
           </div>
-          <div className={styles.productIndicators} role="group" aria-label="Seleccionar posición de prendas">
+          <div className={styles.productIndicators} role="group" aria-label="Seleccionar grupo de prendas">
             {Array.from({ length: positions }, (_, index) => (
-              <button key={index} type="button" aria-label={`Ver prendas desde ${families[index].name}, posición ${index + 1} de ${positions}`}
+              <button key={index} type="button" aria-label={`Ver grupo ${index + 1} de ${positions}: prendas ${index * groupSize + 1} a ${(index + 1) * groupSize}`}
                 aria-controls="product-carousel" aria-current={active === index ? "true" : undefined}
-                onClick={() => select(index)}><span aria-hidden="true" /></button>
+                onClick={() => selectModel(index * groupSize)}><span aria-hidden="true" /></button>
             ))}
           </div>
         </div>

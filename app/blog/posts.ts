@@ -281,7 +281,7 @@ Una mezcla comercial de 65 % poliéster y 35 % algodón es una de las alternativ
 ## Guardapolvos fabricados por Cotton Country
 En Cotton Country fabricamos guardapolvos para empresas de distintos sectores, adaptando sus especificaciones a las necesidades de cada proyecto.
 Podemos desarrollar diferentes modelos, composiciones textiles, gramajes, colores y acabados, según las condiciones de uso y los requerimientos de cada organización.
-Conoce uno de nuestros modelos de guardapolvo, desarrollado como referencia de las prendas que podemos fabricar.
+Conoce [uno de nuestros modelos de guardapolvo](/uniformes?categoria=guardapolvos#guardapolvos-01), desarrollado como referencia de las prendas que podemos fabricar.
 `,
     updatedAt: "2026-11-13",
   },

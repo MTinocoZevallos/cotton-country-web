@@ -43,12 +43,12 @@ function fixture() {
 const valid = { name: 'Prueba', phone: '999999999', email: 'test@example.org', ruc: '20123456789', message: 'Prueba local', turnstileToken: 'local-token' }
 const request = body => new Request('http://localhost/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
 
-test('the catalog contains exactly 45 distinct approved models and no legacy photographs', () => {
+test('the catalog contains exactly 46 distinct approved models and no legacy photographs', () => {
   const { data, models } = fixture()
-  const counts = { camisas: 5, blusas: 7, 'pantalones-dama': 6, 'pantalones-caballero': 6, casacas: 7, polos: 4, chalecos: 7, sacos: 3 }
-  assert.equal(data.garments.length, 45)
-  assert.equal(new Set(data.garments.map(item => item.id)).size, 45)
-  assert.equal(new Set(data.garments.map(item => item.image)).size, 45)
+  const counts = { camisas: 5, blusas: 7, 'pantalones-dama': 6, 'pantalones-caballero': 6, casacas: 7, polos: 4, chalecos: 7, sacos: 3, guardapolvos: 1 }
+  assert.equal(data.garments.length, 46)
+  assert.equal(new Set(data.garments.map(item => item.id)).size, 46)
+  assert.equal(new Set(data.garments.map(item => item.image)).size, 46)
   for (const [category, count] of Object.entries(counts)) {
     const items = data.garments.filter(item => item.category === category)
     assert.equal(items.length, count)
@@ -71,7 +71,8 @@ test('jacket copy is generic and each editorial family retains its commercial co
     assert(!/zoomlion|\bcip\b|ineco|glencore|electrodunas|minera bateas|colegio de ingenieros/i.test(JSON.stringify(copy)))
     assert(copy.details.length >= 2)
   }
-  for (const category of Object.keys(models)) {
+  assert.deepEqual(plain(helpers.sanitizeContactContext({ source_path: "/uniformes", garment_category: "guardapolvos" })), { source_path: "/uniformes", interest_type: "prenda", garment_category: "guardapolvos" })
+  for (const category of Object.keys(models).filter(category => category !== "guardapolvos")) {
     assert.deepEqual(plain(helpers.sanitizeContactContext({ source_path: `/uniformes/${category}` })), { source_path: `/uniformes/${category}`, interest_type: 'prenda', garment_category: category })
   }
 })
@@ -89,7 +90,7 @@ test('known paths derive context, forged fields and external URLs are discarded'
 test('Decor Center publishes four approved outfits; individual photos remain pending', () => {
   const { data } = fixture()
   assert.equal(data.projectCases.length, 6)
-  assert.equal(data.garmentCategories.length, 8)
+  assert.equal(data.garmentCategories.length, 9)
   assert.deepEqual(plain(data.publishedCases.map(item => item.id)), ['decor-center', 'avinka', 'isil', 'columbia'])
   const decor = data.publishedCases[0]
   assert.equal(decor.seasons.flatMap(season => season.outfits).filter(outfit => outfit.status === "published" && outfit.fullImage).length, 4)

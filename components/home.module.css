@@ -57,6 +57,10 @@
 .productGrid { --products-per-view: 4; --product-gap: 32px; display: flex; align-items: stretch; gap: var(--product-gap); overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: none; }
 .productGrid::-webkit-scrollbar { display: none; }
 .productGrid > .product { flex: 0 0 calc((100% - (var(--products-per-view) - 1) * var(--product-gap)) / var(--products-per-view)); scroll-snap-align: start; }
+@media (min-width: 1024px) {
+  .productGrid > .product { scroll-snap-align: none; }
+  .productGrid > .product:nth-child(4n + 1) { scroll-snap-align: start; }
+}
 .product { display: flex; flex-direction: column; min-width: 0; color: var(--cc-charcoal); }
 .productVisual { flex-shrink: 0; position: relative; aspect-ratio: 3 / 4; border-radius: 24px; overflow: hidden; background: var(--cc-white); }
 .productImage { object-fit: contain; object-position: 50% 50%; transform-origin: 50% 0%; transition: scale .5s ease; }

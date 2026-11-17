@@ -32,6 +32,7 @@
 .catalog article { display: grid; grid-template-rows: subgrid; grid-row: span 5; row-gap: 0; min-width: 0; }
 /* The first three approved shirts are 1199 × 1312. Give every card that
    frame, and round the actual image box as well as its surrounding frame. */
+.catalog > article[id] { scroll-margin-top: 100px; }
 .catalogPhoto { width: 100%; aspect-ratio: 1199 / 1312; display: grid; place-items: center; background: #eeecee; isolation: isolate; clip-path: inset(0 round 24px); }
 .catalogPhoto > img { position: absolute; inset: 0; margin: auto; display: block; width: auto; height: auto; max-width: 100%; max-height: 100%; border-radius: inherit; object-fit: contain; }
 /* The single landscape shirt has sufficient lateral background to fill the

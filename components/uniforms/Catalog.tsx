@@ -37,9 +37,9 @@ export default function Catalog() {
         <div className={styles.catalog} id="catalog-results">
           {items.map(item => {
             const category = garmentCategories.find(category => category.id === item.category)!
-            const modelHref = `${category.href}#modelo-${item.number}`
+            const modelHref = item.category === "guardapolvos" ? `${category.href}#${item.id}` : `${category.href}#modelo-${item.number}`
             const paired = item.category === "pantalones-dama" || item.category === "pantalones-caballero"
-            return <article key={item.id}>
+            return <article key={item.id} id={item.category === "guardapolvos" ? item.id : undefined}>
               <Link href={modelHref} aria-label={`Ver ${item.name.toLowerCase()}`}>
                 <div className={`${styles.photo} ${styles.catalogPhoto}`} data-category={item.category} data-layout={paired ? "paired" : item.width > item.height ? "landscape" : "portrait"}>
                   {paired ? <div className={styles.pairedPhoto} role="img" aria-label={item.alt}>

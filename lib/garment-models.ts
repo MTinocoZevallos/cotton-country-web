@@ -1,5 +1,5 @@
 // Single source for the approved 2027 family pages and the Uniformes catalog.
-export type EditorialCategory = "camisas" | "blusas" | "pantalones-dama" | "pantalones-caballero" | "casacas" | "polos" | "chalecos" | "sacos"
+export type EditorialCategory = "camisas" | "blusas" | "pantalones-dama" | "pantalones-caballero" | "casacas" | "polos" | "chalecos" | "sacos" | "guardapolvos"
 export type GarmentModel = {
   number: string
   title: string
@@ -596,5 +596,15 @@ export const garmentModels: Record<EditorialCategory, readonly GarmentModel[]> =
         "Bolsillos delanteros con tapa visibles en la fotografía."
       ]
     }
-  ]
+  ],
+  "guardapolvos": [{
+    number: "01",
+    title: "Guardapolvo",
+    image: "/prendas/guardapolvo-cotton-country.webp",
+    width: 1024,
+    height: 1536,
+    alt: "Guardapolvo blanco de Cotton Country, con solapas, manga larga, botones delanteros y bolsillos, presentado por un modelo en un laboratorio",
+    application: "Fabricación bajo pedido",
+    description: "Guardapolvo de Cotton Country como referencia de las prendas que fabricamos bajo pedido. Podemos desarrollar el modelo con distintas especificaciones, materiales, colores y acabados según los requerimientos de cada proyecto.",
+  }],
 }
