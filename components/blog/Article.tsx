@@ -14,9 +14,10 @@ import styles from "./blog.module.css"
 
 export default function Article({ post }: { post: Post }) {
   const historicalChat = post.slug === "una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano"
+  const approvedNtp = post.slug === "ntp-para-la-designacion-de-tallas"
   const approvedInterview = post.slug === "que-significa-tallas-completas-en-ropa"
   // Preserve the approved Markdown in storage and scope its italic styling to this article.
-  const articleContent = approvedInterview ? post.content.replaceAll("*fit*", "<em>fit</em>") : post.content
+  const articleContent = approvedInterview ? post.content.replaceAll("*fit*", "<em>fit</em>") : approvedNtp ? post.content.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, "<em>$1</em>") : post.content
   const category=categoryForPost(post), image=getPostImage(post.slug), blocks=parseContent(articleContent)
   const first=blocks[0]?.type==="paragraph"?blocks[0]:undefined
   const headings=blocks.filter(block=>block.type==="heading")
@@ -59,7 +60,7 @@ export default function Article({ post }: { post: Post }) {
         </article>
       </div>
       <div className={styles.articleClosing}><Link prefetch={false} href="/blog"><ArrowLeft size={16} aria-hidden="true"/> Volver al blog</Link><Link prefetch={false} href={categoryPath(category)}>Más sobre {category.name.toLowerCase()} <ArrowRight size={16} aria-hidden="true"/></Link></div>
-      {!approvedInterview && !historicalChat && <section className={styles.cta} aria-labelledby="article-contact"><div><p className={styles.eyebrow}>Del conocimiento al proyecto</p><h2 id="article-contact">¿Estás definiendo los uniformes de tu equipo?</h2><p>Reúne las prendas, cantidades y condiciones de uso para conversar sobre tu requerimiento.</p></div><Link prefetch={false} href="/contacto" className={styles.button}>Conversemos <ArrowUpRight size={16} aria-hidden="true"/></Link></section>}
+      {!approvedInterview && !historicalChat && !approvedNtp && <section className={styles.cta} aria-labelledby="article-contact"><div><p className={styles.eyebrow}>Del conocimiento al proyecto</p><h2 id="article-contact">¿Estás definiendo los uniformes de tu equipo?</h2><p>Reúne las prendas, cantidades y condiciones de uso para conversar sobre tu requerimiento.</p></div><Link prefetch={false} href="/contacto" className={styles.button}>Conversemos <ArrowUpRight size={16} aria-hidden="true"/></Link></section>}
       {!approvedInterview && <section className={styles.section} aria-labelledby="related-title"><div className={styles.sectionHeader}><p className={styles.eyebrow}>Sigue explorando</p><h2 id="related-title">Lecturas relacionadas</h2></div><div className={styles.grid}>{relatedPosts(post).map(item=><BlogCard key={item.slug} post={item}/>)}</div></section>}
     </div>
   </div>
