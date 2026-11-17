@@ -110,7 +110,7 @@ test('article 1 exactly preserves the approved body, separate SEO title, histori
   assert.equal(post.publishedAt,'2022-08-18');assert.equal(post.updatedAt,undefined)
   assert.equal(blog.postMetadata(post).title,'Tallas completas en ropa: ¿son realmente la solución?')
   assert.equal(blog.postMetadata(post).description,'¿Qué son las tallas completas y cómo funcionan en los uniformes? Un patronista explica su origen y la importancia de las tablas de medidas.')
-  assert.equal(content.parseContent(post.content).filter(block=>block.type==='heading'&&block.level===2).length,7)
+  assert.equal(content.parseContent(post.content).filter(block=>block.type==='heading'&&block.level===2).length,8)
   const image=blog.getPostImage(post.slug);assert.deepEqual(image,editorialBaseline.image)
   assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'public',image.src))).digest('hex'),editorialBaseline.imageSHA256)
 })

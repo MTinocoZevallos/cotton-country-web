@@ -762,9 +762,9 @@ Esperamos que todo esto te haya servido para que puedas planificar tus adquisici
     content: `
 El término «tallas completas» es conocido sobre todo en el segmento de uniformes, cuando los compradores buscan prendas que no sean demasiado ceñidas o que puedan adaptarse a la mayor cantidad de contexturas físicas de sus colaboradores.
 
-Sin embargo, su significado es poco preciso. Por eso decidimos consultar a un especialista en patronaje, la técnica utilizada para desarrollar los moldes de las prendas a partir de medidas corporales y tablas de medidas.
+Sin embargo, su significado es poco preciso. ¿Qué hace que una talla sea completa? ¿Es realmente una solución para uniformar a personas con características físicas tan diferentes?
 
-Conversamos con **Ricardo Gonzalez, patronista egresado de SENATI, con 14 años de experiencia**, quien respondió algunas preguntas sobre el tema.
+Para comprender mejor este concepto recurrimos a Ricardo Gonzalez, patronista egresado de SENATI, con 14 años de experiencia, quien respondió algunas preguntas sobre el tema.
 
 ## ¿A qué llamamos tallas completas?
 
@@ -806,27 +806,45 @@ Por eso, para algunos fabricantes puede resultar más conveniente continuar elab
 
 ## ¿Son realmente una solución las tallas completas?
 
-Las llamadas «tallas completas» se han convertido en un argumento comercial habitual entre los proveedores de uniformes. Se ofrecen como una solución para vestir a colaboradores de diferentes contexturas físicas, pero ¿realmente lo son?
+Cuando comenzamos a trabajar en Cotton Country, alrededor de 2014, «tallas completas» era una expresión habitual entre los compradores de uniformes. Con los años, y a partir de la información recopilada durante nuestros procesos de tallaje, empezamos a cuestionar lo que realmente significaba.
 
-**No existe una tabla de medidas universal que determine cuánto debe medir una talla S, M, L o XL.** Cada fabricante establece sus propias medidas según el modelo, el tejido y el tipo de ajuste de la prenda.
+La idea que suele transmitir este término es sencilla: que una prenda, por tener medidas más amplias, podrá adaptarse a diferentes personas sin necesidad de probársela.
 
-Por lo tanto, ofrecer «tallas completas» no garantiza que los uniformes se adapten correctamente a quienes van a utilizarlos. Una prenda más holgada no necesariamente queda mejor.
+Pero **las tallas completas son una denominación comercial, no una solución técnica al problema del tallaje**.
 
-El problema es que esta denominación puede generar una falsa sensación de seguridad en el comprador corporativo. Se le hace creer que, por trabajar con tallas completas, el proveedor ha resuelto el problema del tallaje.
+En nuestra experiencia, estas prendas suelen desarrollarse con mayor holgura, priorizando el ancho sobre el largo. El resultado puede ser una silueta más cuadrada que permite vestir de manera aproximada a distintas contexturas, pero no necesariamente ofrece un ajuste adecuado.
 
-**No lo ha resuelto. Simplemente ha utilizado una tabla de medidas que pretende abarcar a más personas.**
+Una prenda puede quedar cómoda de pecho y demasiado larga de mangas. Otra puede resultar correcta de hombros, pero excesivamente holgada en el torso.
 
-## Entonces, ¿cuál es la solución?
+Además, **el ajuste o *fit* tiene un componente subjetivo**: lo que una persona considera cómodo, otra puede sentirlo demasiado flojo o ajustado.
 
-La solución no consiste en ofrecer tallas supuestamente completas, sino en permitir que cada colaborador compruebe qué talla le corresponde utilizando las prendas reales que se van a producir.
+Por eso, ofrecer tallas completas no garantiza que los uniformes queden bien.
 
-Para ello se necesitan tablas de medidas verificadas, muestras físicas representativas de cada talla y un proceso de tallaje organizado.
+## Si no existen tallas universales, ¿qué existen?
 
-Precisamente para gestionar ese proceso existe [SizeSet](https://sizeset.com), una plataforma que permite registrar la elección de cada colaborador a partir de las prendas y tallas disponibles, con trazabilidad de los resultados.
+**Lo que existen son tablas de medidas.**
 
-**Las tallas completas no solucionan el problema del tallaje. El tallaje real, basado en prendas verificadas, sí permite abordarlo.**
+No hay una única tabla universal que determine las dimensiones de todas las prendas identificadas como S, M, L o XL. Las medidas pueden variar entre marcas, proveedores e incluso modelos de una misma colección.
 
-En Cotton Country cuestionamos la promesa de las «tallas completas» porque **vender una talla como solución universal, cuando no existe una referencia universal de medidas, es engañar al comprador**.
+En el Perú contamos con la familia de normas técnicas NTP-ISO 8559, que proporciona referencias para las mediciones corporales y la designación de tallas. Sin embargo, contar con criterios para medir el cuerpo no significa que todas las marcas fabriquen prendas con las mismas dimensiones.
+
+La diferencia es fundamental: una tabla de medidas permite conocer y comparar las dimensiones de una prenda; la expresión «talla completa», por sí sola, no.
+
+En un mercado laboral tan diverso como el peruano, pretender resolver el tallaje de todos los colaboradores mediante prendas simplemente más amplias resulta insuficiente.
+
+## ¿Cómo abordamos el tallaje en Cotton Country?
+
+Cuando una empresa adquiere uniformes, no busca únicamente distribuir prendas entre sus colaboradores. Busca que **les queden bien, resulten cómodas durante la jornada laboral y proyecten una imagen profesional acorde con la identidad de la organización**.
+
+Por eso, en Cotton Country consideramos que el tallaje debe comenzar con prendas correctamente desarrolladas y tablas de medidas verificadas.
+
+A partir de esas referencias, los colaboradores pueden probar las muestras físicas y elegir las tallas que mejor se adapten a sus características y preferencias de ajuste.
+
+Para facilitar la organización y el seguimiento de este proceso contamos con [SizeSet](https://sizeset.com), una plataforma que permite registrar las elecciones de tallaje y dar trazabilidad a los resultados de cada campaña.
+
+La tecnología no reemplaza las prendas ni las tablas de medidas. Permite gestionar mejor un proceso que sigue dependiendo de ellas.
+
+**Las tallas completas pueden parecer una solución sencilla. Pero un uniforme que realmente queda bien requiere algo más que una denominación comercial: requiere medidas verificadas y un proceso de tallaje adecuado.**
 
 ### Lecturas relacionadas
 

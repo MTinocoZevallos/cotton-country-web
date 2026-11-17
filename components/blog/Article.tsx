@@ -13,7 +13,7 @@ import styles from "./blog.module.css"
 export default function Article({ post }: { post: Post }) {
   const approvedInterview = post.slug === "que-significa-tallas-completas-en-ropa"
   // Preserve the approved Markdown in storage and scope its italic styling to this article.
-  const articleContent = approvedInterview ? post.content.replace("*fit*", "<em>fit</em>") : post.content
+  const articleContent = approvedInterview ? post.content.replaceAll("*fit*", "<em>fit</em>") : post.content
   const category=categoryForPost(post), image=getPostImage(post.slug), blocks=parseContent(articleContent)
   const first=blocks[0]?.type==="paragraph"?blocks[0]:undefined
   const headings=blocks.filter(block=>block.type==="heading")
