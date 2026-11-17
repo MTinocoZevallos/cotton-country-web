@@ -1,6 +1,7 @@
 export type Post = {
   slug: string
   title: string
+  seoTitle?: string
   excerpt: string
   content: string
   publishedAt?: string
@@ -756,43 +757,84 @@ Esperamos que todo esto te haya servido para que puedas planificar tus adquisici
   {
     slug: "que-significa-tallas-completas-en-ropa",
     title: "¿Qué significa tallas completas en ropa?",
-    excerpt: "El término es conocido sobre todo en el segmento de uniformes, cuando los compradores buscan uniformes no muy ceñidos o que abarquen la mayor cantidad de b...",
+    excerpt: "¿Qué son las tallas completas y cómo funcionan en los uniformes? Un patronista explica su origen y la importancia de las tablas de medidas.",
     canonicalPath: "/que-significa-tallas-completas-en-ropa",
     content: `
-El término es conocido sobre todo en el segmento de uniformes, cuando los compradores buscan uniformes no muy ceñidos o que abarquen la mayor cantidad de biotipos, lo cual es muy común en los trabajos; sin embargo, las definiciones sobre las tallas completas son variadas y no muy precisas por lo que decidimos consultar a un experto en lo que se llama patronaje (que es la técnica para elaborar los moldes de las prendas en función a medidas corporales o a tablas de medidas).\u0020
-En este caso, recurrimos a Ricardo Gonzalez, patronista egresado de <a href="https://www.senati.edu.pe" target="_blank" rel="noopener noreferrer">SENATI</a> con 14 años de experiencia, quien nos respondió algunas preguntas sobre el tema:
-¿A qué llamamos tallas completas?
-En el mundo de la confección se suele decir que se utilizan 2 tipos de tallaje, las tallas que provienen de las marcas de moda y las tallas completas que son usadas por lo general para uniformes. Y es que los proveedores de uniformes para empresas en la búsqueda de la satisfacción del cliente recurren a tallajes que se amolden a la gran mayoría de biotipos de los colaboradores como alternativa más productiva y rentable para ambas partes.
+El término «tallas completas» es conocido sobre todo en el segmento de uniformes, cuando los compradores buscan prendas que no sean demasiado ceñidas o que puedan adaptarse a la mayor cantidad de contexturas físicas de sus colaboradores.
 
-Así nacieron las tallas completas que no guardan un fit específico en su tabla de medidas de cara a un público objetivo en particular o biotipo que sí es considerado por las marcas de modas que enfocan a públicos más homogéneos lo cual no es particularmente propio de los ambientes laborales donde las tallas son más variadas.
-<p>
-La aplicación de este tipo de tallaje en empresas y organizaciones presenta características particulares que analizamos en nuestro artículo sobre <a href="/tallas-completas-en-peru">tallas completas en Perú</a>.
-</p>
+Sin embargo, su significado es poco preciso. Por eso decidimos consultar a un especialista en patronaje, la técnica utilizada para desarrollar los moldes de las prendas a partir de medidas corporales y tablas de medidas.
 
-¿Por qué es importante las tablas de medidas?
-Las tablas de medidas son importantes para estandarizar el proceso de confección, es parte intangible del proceso de calidad en confecciones, las marcas lo toman muy en serio para guardar cuidado de las tallas escogidas de cara a su público objetivo y de no hacerlo pueden haber complicaciones productivas que signifiquen pérdidas, es bueno llegar a un acuerdo con los clientes en esto para evitar complicaciones.\u0020
-<p>
-Estas diferencias tienen relación con lo que conocemos como la <a href="/la-talla-peruana">talla peruana</a>, un concepto importante para entender cómo se desarrollan las prendas destinadas al mercado local.
-</p>
+Conversamos con **Ricardo Gonzalez, patronista egresado de SENATI, con 14 años de experiencia**, quien respondió algunas preguntas sobre el tema.
 
-En uniformes son pocas las empresas que se exigen contar con esta herramienta sumamente útil para hablar de calidad y cumplimiento, pues el tallaje escogido suele variar en la toma y en la producción en la ausencia de control o simplemente no los tienen.
+## ¿A qué llamamos tallas completas?
 
-¿Cómo se elabora una tabla de medidas?
-Las tablas de medidas se elaboran con información acorde al mercado donde se van a vender las prendas, es por ello que se necesita saber el biotipo de tu público objetivo para elaborar una medida estándar por talla para luego proceder con el escalado de tallas y para eso se necesitan ciertas medidas corporales para usar como referencia y así elaborar los moldes de las prendas a fabricar. Unas de las medidas más comunes tomar en cuenta son por ejemplo: el ancho de espalda, el ancho de pecho, el largo de la manga, la circunferencia del cuello y entre otras si se van a realizar prendas de camisa, camisas o polos y si se desea hacer un pantalón o un short o buzo se necesitaría la medida de la cintura, cadera, largo de tiro delantero y espalda, además del largo de la entrepierna.
-Contar con buenos patrones así como profesionales que brinden soluciones en desarrollo del producto para las muestras pre producción son el punto de partida de un proceso de confección exitoso.
-<p>
-La falta de criterios uniformes para definir tallajes es una de las causas de lo que denominamos <a href="/el-problema-de-las-tallas">el problema de las tallas</a> dentro de los procesos de compra de uniformes.
-</p>
-Esperemos haya sido útil este post el cual lo puedes compartir con amigos o colegas pues la información es clave para tomar buenas decisiones.
-¿Qué hace bueno a un patronista?
-Creo que lo que hace bueno a un patronista es la meticulosidad del trabajo y sobre todo la paciencia, además claro de la experiencia que te da el tiempo.
+En el mundo de la confección se suele decir que se utilizan dos tipos de tallaje: las tallas que provienen de las marcas de moda y las tallas completas, usadas generalmente para uniformes.
 
+Los proveedores de uniformes para empresas, buscando satisfacer a sus clientes, recurren a tallajes que se adapten a la mayor variedad posible de contexturas físicas de los colaboradores, como una alternativa productiva y rentable para ambas partes.
 
-¿Es mejor patrones en cartón o en software?
-Eso va a depender mucho de los ojos como lo veas, ya que ambos tienes sus pro y contra.
-En el mercado existen varios softwares para hacer moldes por computadora, entre los más conocidos son MODARIS-DIAMINO (lectra), OPTITEX, GERBER y AUDACES.  Todos ellos son buenos, y agilizan el trabajo en un 30% a 60% el tiempo de elaborar y modificar un molde, pero tienen un costo alto, es por ello que es un poco difícil conseguir el programa a las empresas pequeñas. Por lo general son las empresas grandes son las que usan dichos softwares.
-Es por eso, que es más conveniente a las empresas chicas elaborar sus moldes de manera manual.
+Así surgieron las llamadas tallas completas, que no responden a un *fit* específico ni a un público objetivo tan definido como ocurre con las marcas de moda. Estas últimas suelen desarrollar sus prendas pensando en consumidores con características más homogéneas, algo que no necesariamente ocurre en los ambientes laborales.
+
+## ¿Por qué son importantes las tablas de medidas?
+
+Las tablas de medidas permiten estandarizar el proceso de confección y constituyen una parte fundamental del control de calidad.
+
+Las marcas las utilizan para mantener la consistencia de las prendas destinadas a su público objetivo. Sin ellas, pueden producirse diferencias entre las muestras aprobadas y los productos confeccionados, generando complicaciones productivas y pérdidas.
+
+En el mercado de uniformes, no todas las empresas exigen contar con esta herramienta. Cuando no existen tablas definidas y controles adecuados, las medidas pueden variar entre la selección de tallas y la producción.
+
+## ¿Cómo se elabora una tabla de medidas?
+
+Las tablas de medidas se desarrollan considerando las características corporales del mercado al que estarán destinadas las prendas.
+
+Para ello se establecen medidas de referencia y se realiza el escalado correspondiente. Según el tipo de prenda, se consideran dimensiones como pecho, espalda, cuello, mangas, cintura, cadera o entrepierna.
+
+Contar con buenos patrones y profesionales que verifiquen las muestras de preproducción es fundamental para conseguir un proceso de confección exitoso.
+
+## ¿Qué hace bueno a un patronista?
+
+Creo que lo que hace bueno a un patronista es la meticulosidad del trabajo y, sobre todo, la paciencia, además de la experiencia que te da el tiempo.
+
+## ¿Es mejor elaborar patrones en cartón o en software?
+
+Eso depende de cómo se vea, ya que ambos métodos tienen ventajas y desventajas.
+
+En el mercado existen programas especializados para elaborar moldes por computadora, entre ellos MODARIS-DIAMINO de Lectra, OPTITEX, GERBER y AUDACES.
+
+Estos programas agilizan la elaboración y modificación de moldes, aunque su costo puede resultar elevado para las empresas pequeñas.
+
+Por eso, para algunos fabricantes puede resultar más conveniente continuar elaborando sus patrones manualmente.
+
+## ¿Son realmente una solución las tallas completas?
+
+Las llamadas «tallas completas» se han convertido en un argumento comercial habitual entre los proveedores de uniformes. Se ofrecen como una solución para vestir a colaboradores de diferentes contexturas físicas, pero ¿realmente lo son?
+
+**No existe una tabla de medidas universal que determine cuánto debe medir una talla S, M, L o XL.** Cada fabricante establece sus propias medidas según el modelo, el tejido y el tipo de ajuste de la prenda.
+
+Por lo tanto, ofrecer «tallas completas» no garantiza que los uniformes se adapten correctamente a quienes van a utilizarlos. Una prenda más holgada no necesariamente queda mejor.
+
+El problema es que esta denominación puede generar una falsa sensación de seguridad en el comprador corporativo. Se le hace creer que, por trabajar con tallas completas, el proveedor ha resuelto el problema del tallaje.
+
+**No lo ha resuelto. Simplemente ha utilizado una tabla de medidas que pretende abarcar a más personas.**
+
+## Entonces, ¿cuál es la solución?
+
+La solución no consiste en ofrecer tallas supuestamente completas, sino en permitir que cada colaborador compruebe qué talla le corresponde utilizando las prendas reales que se van a producir.
+
+Para ello se necesitan tablas de medidas verificadas, muestras físicas representativas de cada talla y un proceso de tallaje organizado.
+
+Precisamente para gestionar ese proceso existe [SizeSet](https://sizeset.com), una plataforma que permite registrar la elección de cada colaborador a partir de las prendas y tallas disponibles, con trazabilidad de los resultados.
+
+**Las tallas completas no solucionan el problema del tallaje. El tallaje real, basado en prendas verificadas, sí permite abordarlo.**
+
+En Cotton Country cuestionamos la promesa de las «tallas completas» porque **vender una talla como solución universal, cuando no existe una referencia universal de medidas, es engañar al comprador**.
+
+### Lecturas relacionadas
+
+- [La talla peruana](https://cottoncountry.com.pe/la-talla-peruana)
+- [El problema de las tallas](https://cottoncountry.com.pe/el-problema-de-las-tallas)
 `,
+    seoTitle: "Tallas completas en ropa: ¿son realmente la solución?",
+    publishedAt: "2022-08-18",
   },
   {
     slug: "guia-de-tallas-online",

@@ -31,13 +31,13 @@ const paths=load(path.join(root,'lib/blog/paths.ts'))
 const preserved=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-35.json')))
 const authorized=JSON.parse(fs.readFileSync(path.join(root,'docs/blog-2027/articulos-autorizados.json')))
 
-test('53 historical slugs survive; only Guardapolvo revised and all 35 untouched records remain byte-equivalent as data',()=>{
+test('53 historical slugs survive; approved revisions remain scoped and all 35 untouched records remain byte-equivalent as data',()=>{
   assert.equal(blog.posts.length,53)
   assert.equal(new Set(blog.posts.map(p=>p.slug)).size,53)
   assert.deepEqual(new Set(blog.posts.map(p=>p.slug)),new Set([...preserved.map(p=>p.slug),...authorized]))
   for(const baseline of preserved){const post=blog.posts.find(p=>p.slug===baseline.slug);assert.equal(crypto.createHash('sha256').update(JSON.stringify(post)).digest('hex'),baseline.sha256)}
   assert.deepEqual(new Set(blog.posts.filter(p=>p.updatedAt).map(p=>p.slug)),new Set(['el-uniforme-de-farmacia']))
-  for(const post of blog.posts){assert.equal(blog.postPath(post),'/'+post.slug);assert.equal(post.publishedAt,undefined);assert(blog.categoryForPost(post));assert(blog.descriptionForPost(post).length>60)}
+  for(const post of blog.posts){assert.equal(blog.postPath(post),'/'+post.slug);assert.equal(post.publishedAt,post.slug==='que-significa-tallas-completas-en-ropa'?'2022-08-18':undefined);assert(blog.categoryForPost(post));assert(blog.descriptionForPost(post).length>60)}
 })
 test('all images are centralized, local, dimensioned and exist; optimized variants are preferred',async()=>{
   const sharp=require('sharp')
@@ -54,7 +54,7 @@ test('unsafe schemes and raw HTML cannot execute while valid emphasis, headings,
   assert.equal(content.parseContent('## Repetido\n## Repetido')[1].id,'repetido-2')
 })
 test('article schema agrees with canonical URLs and never fabricates publication dates or personal authors',()=>{
-  for(const post of blog.posts){const graph=blog.postStructuredData(post)['@graph'];const article=graph.find(x=>x['@type']==='BlogPosting');assert.equal(article.url,'https://cottoncountry.com.pe/'+post.slug);assert.equal(article.mainEntityOfPage['@id'],article.url);assert.equal(article.datePublished,undefined);assert.equal(article.author,undefined);assert.equal(article.dateModified,post.updatedAt);assert.equal(graph[1].itemListElement.at(-1).item,article.url)}
+  for(const post of blog.posts){const graph=blog.postStructuredData(post)['@graph'];const article=graph.find(x=>x['@type']==='BlogPosting');assert.equal(article.url,'https://cottoncountry.com.pe/'+post.slug);assert.equal(article.mainEntityOfPage['@id'],article.url);assert.equal(article.datePublished,post.publishedAt);assert.equal(article.author,undefined);assert.equal(article.dateModified,post.updatedAt);assert.equal(graph[1].itemListElement.at(-1).item,article.url)}
   assert(!blog.serializeStructuredData({text:'</script><script>alert(1)</script>'}).includes('<'))
 })
 test('only identified aliases normalize; relative paths, queries and fragments remain usable',()=>{
@@ -72,7 +72,8 @@ test('publication ordering uses original dates, keeps date-only days and rejects
   assert.deepEqual(publication.orderPostsByPublication([a,b]).map(p=>p.slug),[b.slug,a.slug])
   assert.equal(publication.publicationLabel('2024-10-03'),'3 de octubre de 2024')
   for(const date of ['2024-02-30','2024-10-03T00:00:00','invalid'])assert.equal(publication.originalPublicationTime(date),undefined)
-  assert.equal(publication.orderPostsByPublication(blog.posts)[0].slug,blog.posts.at(-1).slug)
+  const undated=blog.posts.filter(post=>!post.publishedAt)
+  assert.equal(publication.orderPostsByPublication(undated)[0].slug,undated.at(-1).slug)
 })
 test('original IA interview retains both measurement tables and all original cell values',()=>{
   const post=blog.posts.find(p=>p.slug==='una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano')
@@ -81,11 +82,35 @@ test('original IA interview retains both measurement tables and all original cel
   assert(tables.every(t=>t.rows.length===6));assert(post.content.includes('(Cotton Country)'))
 })
 
-test('all 52 articles outside the authorized Guardapolvo update match their original Git versions',()=>{
-  const baselines=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-original-52.json')))
-  assert.equal(baselines.length,52)
+test('the 51 articles outside approved revisions match their original Git versions',()=>{
+  const baselines=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-original-52.json'))).filter(p=>p.slug!=='que-significa-tallas-completas-en-ropa')
+  assert.equal(baselines.length,51)
   for(const baseline of baselines){const post=blog.posts.find(p=>p.slug===baseline.slug);assert.equal(crypto.createHash('sha256').update(JSON.stringify(post)).digest('hex'),baseline.sha256,baseline.slug)}
   assert.equal(blog.getPostImage('el-uniforme-de-farmacia').visible,false)
   const metadata=blog.postMetadata(blog.posts.find(p=>p.slug==='el-uniforme-de-farmacia'))
   assert.deepEqual(metadata.openGraph.images,[])
+})
+
+const editorialBaseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-other-52.json')))
+const digest=value=>crypto.createHash('sha256').update(typeof value==='string'?value:JSON.stringify(value)).digest('hex')
+test('the other 52 complete records, metadata and structured data remain unchanged',()=>{
+  assert.equal(editorialBaseline.otherPosts.length,52)
+  for(const before of editorialBaseline.otherPosts){
+    const post=blog.posts.find(post=>post.slug===before.slug)
+    assert.equal(digest(post),before.postSHA256,before.slug)
+    assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug)
+    assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)
+  }
+})
+test('article 1 exactly preserves the approved body, separate SEO title, historic date and original image',()=>{
+  const post=blog.posts.find(post=>post.slug==='que-significa-tallas-completas-en-ropa')
+  const approved=fs.readFileSync(path.join(root,'tests/fixtures/tallas-completas-approved.md'),'utf8').trim()
+  assert.equal(post.title,approved.split('\n')[0].slice(2))
+  assert.equal(post.content.trim(),approved.replace(/^# [^\n]+\n\n/,''))
+  assert.equal(post.publishedAt,'2022-08-18');assert.equal(post.updatedAt,undefined)
+  assert.equal(blog.postMetadata(post).title,'Tallas completas en ropa: ¿son realmente la solución?')
+  assert.equal(blog.postMetadata(post).description,'¿Qué son las tallas completas y cómo funcionan en los uniformes? Un patronista explica su origen y la importancia de las tablas de medidas.')
+  assert.equal(content.parseContent(post.content).filter(block=>block.type==='heading'&&block.level===2).length,7)
+  const image=blog.getPostImage(post.slug);assert.deepEqual(image,editorialBaseline.image)
+  assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'public',image.src))).digest('hex'),editorialBaseline.imageSHA256)
 })

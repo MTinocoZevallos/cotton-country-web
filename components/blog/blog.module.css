@@ -85,3 +85,7 @@
 .page :global(.blog-measurement-table table) { width: 100%; border-collapse: collapse; font-size: .875rem; }
 .page :global(.blog-measurement-table th), .page :global(.blog-measurement-table td) { padding: .75rem .5rem; border-bottom: 1px solid var(--cc-line); text-align: left; white-space: nowrap; }
 .page :global(.blog-measurement-table thead) { color: var(--cc-blue); }
+
+.attributedSection > * + * { margin-top:24px; }
+.prose .attribution { color:var(--cc-blue); font-size:12px; line-height:1.65; font-weight:600; letter-spacing:.06em; text-transform:uppercase; }
+.prose .attribution + h2 { margin-top:16px; }

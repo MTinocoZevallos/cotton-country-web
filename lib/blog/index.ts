@@ -35,11 +35,11 @@ export function pageNumber(raw: string | string[] | undefined): number {
   return Number(raw)
 }
 export function postMetadata(post: Post): Metadata {
-  const image = getPostImage(post.slug), path = postPath(post)
+  const image = getPostImage(post.slug), path = postPath(post), title = post.seoTitle ?? post.title
   return {
-    title:post.title, description:descriptionForPost(post), alternates:{canonical:path},
-    openGraph:{type:"article",title:post.title,description:descriptionForPost(post),url:path,siteName:"Cotton Country",locale:"es_PE",images:image.visible === false ? [] : [{url:image.src,width:image.width,height:image.height,alt:image.alt}],...(post.publishedAt?{publishedTime:post.publishedAt}:{}),...(post.updatedAt?{modifiedTime:post.updatedAt}:{})},
-    twitter:{card:image.visible === false ? "summary" : "summary_large_image",title:post.title,description:descriptionForPost(post),images:image.visible === false ? [] : [image.src]},
+    title, description:descriptionForPost(post), alternates:{canonical:path},
+    openGraph:{type:"article",title,description:descriptionForPost(post),url:path,siteName:"Cotton Country",locale:"es_PE",images:image.visible === false ? [] : [{url:image.src,width:image.width,height:image.height,alt:image.alt}],...(post.publishedAt?{publishedTime:post.publishedAt}:{}),...(post.updatedAt?{modifiedTime:post.updatedAt}:{})},
+    twitter:{card:image.visible === false ? "summary" : "summary_large_image",title,description:descriptionForPost(post),images:image.visible === false ? [] : [image.src]},
   }
 }
 export function postStructuredData(post: Post) {
