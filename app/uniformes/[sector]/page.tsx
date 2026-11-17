@@ -6,17 +6,17 @@ import { contactHref } from "@/lib/contact-context"
 import { editorialSerif } from "@/components/home-font"
 import Projects from "@/components/uniforms/Projects"
 import styles from "@/components/uniforms/uniforms.module.css"
-export function generateStaticParams() { return sectors.map(item => ({ sector: item.id })) }
+export function generateStaticParams() { return sectors.filter(item => item.public).map(item => ({ sector: item.id })) }
 export async function generateMetadata({ params }: { params: Promise<{ sector: string }> }): Promise<Metadata> {
   const { sector } = await params
   const item = sectors.find(item => item.id === sector)
-  if (!item) return { robots: { index: false, follow: false } }
+  if (!item?.public) return { robots: { index: false, follow: false } }
   return { title: `Uniformes para ${item.name} | Cotton Country`, description: item.intro, alternates: { canonical: `/uniformes/${item.id}` }, ...(!item.public ? { robots: { index: false, follow: false } } : {}) }
 }
 export default async function SectorPage({ params }: { params: Promise<{ sector: string }> }) {
   const { sector } = await params
   const item = sectors.find(item => item.id === sector)
-  if (!item) notFound()
+  if (!item?.public) notFound()
   return <div className={`${styles.page} ${editorialSerif.variable}`}><div className={styles.container}>
     <section className={styles.intro}><div className={styles.back}><Link href="/uniformes" className={styles.link}>← Uniformes</Link></div><p className={styles.eyebrow}>{item.name}</p><h1>{item.title}</h1><p className={styles.copy}>{item.intro}</p></section>
     <section className={`${styles.section} ${styles.split}`}><h2>Criterios para definir el proyecto.</h2><ul className={styles.list}>{item.criteria.map(text => <li key={text}>{text}</li>)}</ul></section>

@@ -90,6 +90,7 @@ test('known paths derive context, forged fields and external URLs are discarded'
 test('Decor Center publishes four approved outfits; individual photos remain pending', () => {
   const { data } = fixture()
   assert.equal(data.projectCases.length, 6)
+  assert.deepEqual(plain(data.sectors.filter(item => item.public).map(item => item.id)), ['educacion', 'retail'])
   assert.equal(data.garmentCategories.length, 9)
   assert.deepEqual(plain(data.publishedCases.map(item => item.id)), ['decor-center', 'avinka', 'isil', 'columbia'])
   const decor = data.publishedCases[0]
