@@ -1,5 +1,12 @@
 export type HistoricalExchange = { question: string; answer: string }
 
+export function parseFullSizeChat(content: string): HistoricalExchange[] {
+  const exchanges = [...content.matchAll(/\*\*Cotton Country: ([^\n]+)\*\*\s+\*\*ChatGPT \(respuesta original de 2023\):\*\*\s*([\s\S]*?)(?=\n\*\*Cotton Country:|\n---|$)/g)]
+    .map(match => ({ question: match[1].trim(), answer: match[2].trim() }))
+  if (exchanges.length !== 2) throw new Error("Expected the two historical full-size exchanges")
+  return exchanges
+}
+
 export function historicalChatSource(content: string): string {
   const start = content.indexOf("(Cotton Country)")
   if (start < 0) throw new Error("Historical conversation is missing")

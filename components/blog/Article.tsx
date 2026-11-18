@@ -9,11 +9,12 @@ import { inlineText, parseContent } from "@/lib/blog/content"
 import Content, { InlineContent } from "./Content"
 import BlogCard from "./BlogCard"
 import HistoricalChat from "./HistoricalChat"
-import { historicalChatSource } from "@/lib/blog/historical-chat"
+import { historicalChatSource, parseFullSizeChat } from "@/lib/blog/historical-chat"
 import styles from "./blog.module.css"
 
 export default function Article({ post }: { post: Post }) {
   const historicalChat = post.slug === "una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano"
+  const fullSizeChat = post.slug === "las-tallas-completas-segun-una-ia"
   const approvedPeruvianSize = post.slug === "la-talla-peruana"
   const approvedNtp = post.slug === "ntp-para-la-designacion-de-tallas"
   const approvedInterview = post.slug === "que-significa-tallas-completas-en-ropa"
@@ -27,6 +28,8 @@ export default function Article({ post }: { post: Post }) {
   const editorialStart=bodyBlocks.findIndex(block=>block.type==="heading"&&block.id==="son-realmente-una-solucion-las-tallas-completas")
   const chatStart=bodyBlocks.findIndex(block=>block.type==="heading"&&block.id==="que-le-preguntamos-a-chatgpt")
   const chatEnd=bodyBlocks.findIndex(block=>block.type==="heading"&&block.id==="de-donde-obtuvo-la-inteligencia-artificial-estas-medidas")
+  const fullSizeStart=bodyBlocks.findIndex(block=>block.type==="heading"&&block.id==="que-respondio-chatgpt")
+  const fullSizeEnd=bodyBlocks.findIndex(block=>block.type==="heading"&&block.id==="donde-se-equivoco-la-ia")
   const revised=post.updatedAt?new Intl.DateTimeFormat("es-PE",{dateStyle:"long",timeZone:"UTC"}).format(new Date(post.updatedAt)):undefined
   return <div className={`${styles.page} ${editorialSerif.variable}`}>
     {/* JSON only, with '<' escaped; article content is rendered as React nodes. */}
@@ -43,7 +46,11 @@ export default function Article({ post }: { post: Post }) {
       <div className={styles.readingLayout}>
         <aside>{headings.length>=3&&<nav className={styles.toc} aria-label="Índice del artículo"><p>En este artículo</p><ol>{headings.map(h=><li key={h.id} data-level={h.level}><a href={`#${h.id}`}>{inlineText(h.children)}</a></li>)}</ol></nav>}</aside>
         <article className={styles.prose} aria-label="Contenido del artículo">
-          {historicalChat ? <>
+          {fullSizeChat ? <>
+            <Content blocks={bodyBlocks.slice(0,fullSizeStart+1)}/>
+            <HistoricalChat exchanges={parseFullSizeChat(post.content)} answerLabel="ChatGPT (respuesta original de 2023)"/>
+            <Content blocks={bodyBlocks.slice(fullSizeEnd-1)}/>
+          </> : historicalChat ? <>
             <Content blocks={bodyBlocks.slice(0,chatStart+1)}/>
             <HistoricalChat source={historicalChatSource(post.content)}/>
             <Content blocks={bodyBlocks.slice(chatEnd)}/>
@@ -61,7 +68,7 @@ export default function Article({ post }: { post: Post }) {
         </article>
       </div>
       <div className={styles.articleClosing}><Link prefetch={false} href="/blog"><ArrowLeft size={16} aria-hidden="true"/> Volver al blog</Link><Link prefetch={false} href={categoryPath(category)}>Más sobre {category.name.toLowerCase()} <ArrowRight size={16} aria-hidden="true"/></Link></div>
-      {!approvedInterview && !historicalChat && !approvedNtp && !approvedPeruvianSize && <section className={styles.cta} aria-labelledby="article-contact"><div><p className={styles.eyebrow}>Del conocimiento al proyecto</p><h2 id="article-contact">¿Estás definiendo los uniformes de tu equipo?</h2><p>Reúne las prendas, cantidades y condiciones de uso para conversar sobre tu requerimiento.</p></div><Link prefetch={false} href="/contacto" className={styles.button}>Conversemos <ArrowUpRight size={16} aria-hidden="true"/></Link></section>}
+      {!approvedInterview && !historicalChat && !approvedNtp && !approvedPeruvianSize && !fullSizeChat && <section className={styles.cta} aria-labelledby="article-contact"><div><p className={styles.eyebrow}>Del conocimiento al proyecto</p><h2 id="article-contact">¿Estás definiendo los uniformes de tu equipo?</h2><p>Reúne las prendas, cantidades y condiciones de uso para conversar sobre tu requerimiento.</p></div><Link prefetch={false} href="/contacto" className={styles.button}>Conversemos <ArrowUpRight size={16} aria-hidden="true"/></Link></section>}
       {!approvedInterview && <section className={styles.section} aria-labelledby="related-title"><div className={styles.sectionHeader}><p className={styles.eyebrow}>Sigue explorando</p><h2 id="related-title">Lecturas relacionadas</h2></div><div className={styles.grid}>{relatedPosts(post).map(item=><BlogCard key={item.slug} post={item}/>)}</div></section>}
     </div>
   </div>

@@ -1,13 +1,13 @@
 import { Fragment } from "react"
 import { parseContent } from "@/lib/blog/content"
-import { parseHistoricalChat } from "@/lib/blog/historical-chat"
+import { parseHistoricalChat, type HistoricalExchange } from "@/lib/blog/historical-chat"
 import Content from "./Content"
 import styles from "./HistoricalChat.module.css"
 
 const tableNotice = "Datos generados por ChatGPT durante el experimento original. No verificados como estándar antropométrico peruano"
 
-export default function HistoricalChat({ source }: { source: string }) {
-  const exchanges = parseHistoricalChat(source)
+export default function HistoricalChat(props: ({ source: string } | { exchanges: HistoricalExchange[] }) & { answerLabel?: string }) {
+  const exchanges = "exchanges" in props ? props.exchanges : parseHistoricalChat(props.source)
   return <div className={styles.conversation} role="group" aria-label="Cotton Country conversa con ChatGPT">
     <header className={styles.header}>
       <p className={styles.title}>Cotton Country conversa con ChatGPT</p>
@@ -20,7 +20,7 @@ export default function HistoricalChat({ source }: { source: string }) {
           <p>{exchange.question}</p>
         </li>
         <li className={styles.answer} data-speaker="chatgpt">
-          <p className={styles.speaker}>ChatGPT</p>
+          <p className={styles.speaker}>{props.answerLabel ?? "ChatGPT"}</p>
           <div className={styles.messageContent}>
             {parseContent(exchange.answer).map((block, blockIndex) => {
               if (block.type !== "table") return <Content key={blockIndex} blocks={[block]}/>
