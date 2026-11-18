@@ -2,7 +2,6 @@ import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import path from 'node:path'
-import crypto from 'node:crypto'
 import { createRequire } from 'node:module'
 import { fileURLToPath } from 'node:url'
 import ts from 'typescript'
@@ -28,17 +27,6 @@ function load(file){
 const blog=load(path.join(root,'lib/blog/index.ts'))
 const content=load(path.join(root,'lib/blog/content.ts'))
 const paths=load(path.join(root,'lib/blog/paths.ts'))
-const preserved=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-35.json')))
-const authorized=JSON.parse(fs.readFileSync(path.join(root,'docs/blog-2027/articulos-autorizados.json')))
-
-test('53 historical slugs survive; approved revisions remain scoped and all 35 untouched records remain byte-equivalent as data',()=>{
-  assert.equal(blog.posts.length,53)
-  assert.equal(new Set(blog.posts.map(p=>p.slug)).size,53)
-  assert.deepEqual(new Set(blog.posts.map(p=>p.slug)),new Set([...preserved.map(p=>p.slug),...authorized]))
-  for(const baseline of preserved){const post=blog.posts.find(p=>p.slug===baseline.slug);assert.equal(crypto.createHash('sha256').update(JSON.stringify(post)).digest('hex'),baseline.sha256)}
-  assert.deepEqual(new Set(blog.posts.filter(p=>p.updatedAt).map(p=>p.slug)),new Set(['el-uniforme-de-farmacia']))
-  for(const post of blog.posts){assert.equal(blog.postPath(post),'/'+post.slug);assert.equal(post.publishedAt,post.slug==='que-significa-tallas-completas-en-ropa'?'2022-08-18':['una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano','las-tallas-completas-segun-una-ia'].includes(post.slug)?'2023-02-28':['ntp-para-la-designacion-de-tallas','la-talla-peruana'].includes(post.slug)?'2021-08-10':undefined);assert(blog.categoryForPost(post));assert(blog.descriptionForPost(post).length>60)}
-})
 test('all images are centralized, local, dimensioned and exist; optimized variants are preferred',async()=>{
   const sharp=require('sharp')
   for(const post of blog.posts){const image=blog.getPostImage(post.slug);assert(fs.existsSync(path.join(root,'public',image.src)));const m=await sharp(path.join(root,'public',image.src)).metadata();assert.equal(image.width,m.width);assert.equal(image.height,m.height);assert(image.alt.length>20)}
@@ -72,7 +60,7 @@ test('publication ordering uses original dates, keeps date-only days and rejects
   assert.deepEqual(publication.orderPostsByPublication([a,b]).map(p=>p.slug),[b.slug,a.slug])
   assert.equal(publication.publicationLabel('2024-10-03'),'3 de octubre de 2024')
   for(const date of ['2024-02-30','2024-10-03T00:00:00','invalid'])assert.equal(publication.originalPublicationTime(date),undefined)
-  const undated=blog.posts.filter(post=>!post.publishedAt)
+  const undated=blog.posts.slice(0,3).map(post=>({...post,publishedAt:undefined}))
   assert.equal(publication.orderPostsByPublication(undated)[0].slug,undated.at(-1).slug)
 })
 test('original IA interview retains both measurement tables and all original cell values',()=>{
@@ -82,140 +70,89 @@ test('original IA interview retains both measurement tables and all original cel
   assert(tables.every(t=>t.rows.length===6));assert(post.content.includes('(Cotton Country)'))
 })
 
-test('the 46 articles outside approved revisions match their original Git versions',()=>{
-  const baselines=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-original-52.json'))).filter(p=>!['que-significa-tallas-completas-en-ropa','una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano','ntp-para-la-designacion-de-tallas','la-talla-peruana','las-tallas-completas-segun-una-ia','el-problema-de-las-tallas'].includes(p.slug))
-  assert.equal(baselines.length,46)
-  for(const baseline of baselines){const post=blog.posts.find(p=>p.slug===baseline.slug);assert.equal(crypto.createHash('sha256').update(JSON.stringify(post)).digest('hex'),baseline.sha256,baseline.slug)}
-  assert.equal(blog.getPostImage('el-uniforme-de-farmacia').visible,false)
-  const metadata=blog.postMetadata(blog.posts.find(p=>p.slug==='el-uniforme-de-farmacia'))
-  assert.deepEqual(metadata.openGraph.images,[])
+const baseline=JSON.parse(fs.readFileSync(path.join(root,'docs/blog-2027/editorial-baseline-d610d0e.json')))
+const dates=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-publication-dates.json'))).dates
+const withoutLinks=text=>text.replace(/\[([^\]\n]+)\]\([^\s)]+\)/g,'$1')
+test('all 53 original slugs and canonical paths survive and receive the exact owner-supplied date',()=>{
+  assert.equal(blog.posts.length,53);assert.equal(new Set(blog.posts.map(p=>p.slug)).size,53)
+  assert.deepEqual(new Set(blog.posts.map(p=>p.slug)),new Set(baseline.posts.map(p=>p.slug)))
+  assert.deepEqual(new Set(Object.keys(dates)),new Set(blog.posts.map(p=>p.slug)))
+  for(const post of blog.posts){assert.equal(post.publishedAt,dates[post.slug]);assert(publication.originalPublicationTime(post.publishedAt));assert.equal(post.canonicalPath,baseline.posts.find(p=>p.slug===post.slug).canonicalPath)}
 })
-
-const editorialBaseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-other-52.json')))
-const digest=value=>crypto.createHash('sha256').update(typeof value==='string'?value:JSON.stringify(value)).digest('hex')
-test('the article 1 baseline remains unchanged outside the approved articles 2 through 6',()=>{
-  const remaining=editorialBaseline.otherPosts.filter(p=>!['una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano','ntp-para-la-designacion-de-tallas','la-talla-peruana','las-tallas-completas-segun-una-ia','el-problema-de-las-tallas'].includes(p.slug))
-  assert.equal(remaining.length,47)
-  for(const before of remaining){
-    const post=blog.posts.find(post=>post.slug===before.slug)
-    assert.equal(digest(post),before.postSHA256,before.slug)
-    assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug)
-    assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)
+test('five approved versions keep their exact wording and SEO titles; only contextual links are added',()=>{
+  for(const slug of baseline.protectedSlugs){const before=baseline.posts.find(p=>p.slug===slug),post=blog.posts.find(p=>p.slug===slug);assert.equal(withoutLinks(post.content),withoutLinks(before.content),slug);assert.equal(post.title,before.title);assert.equal(post.seoTitle,before.seoTitle);assert.equal(post.excerpt,before.excerpt);assert.equal(post.updatedAt,before.updatedAt)}
+})
+test('both historical AI conversations and every original measurement cell stay verbatim',()=>{
+  const historical=load(path.join(root,'lib/blog/historical-chat.ts'))
+  const tableSlug='una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano',fullSlug='las-tallas-completas-segun-una-ia'
+  const original=fs.readFileSync(path.join(root,'tests/fixtures/chatgpt-conversation-original.txt'),'utf8').trim()
+  assert.equal(historical.historicalChatSource(blog.posts.find(p=>p.slug===tableSlug).content),original)
+  const post=blog.posts.find(p=>p.slug===fullSlug),before=baseline.posts.find(p=>p.slug===fullSlug)
+  assert.deepEqual(historical.parseFullSizeChat(post.content),historical.parseFullSizeChat(before.content))
+  assert.deepEqual(content.parseContent(blog.posts.find(p=>p.slug===tableSlug).content).filter(b=>b.type==='table'),content.parseContent(original).filter(b=>b.type==='table'))
+  const interview=blog.posts.find(p=>p.slug==='el-ano-del-algodon-2022')
+  for(const sentence of ['En el año 1922 el hacendado Piurano don Emilio Hilck Seminario','¿Pero sabe usted que este algodón se originó en los EEUU?'])assert(interview.content.includes(sentence))
+})
+test('the 30 percent claim remains a first-party history and is not moved into the commercial comparison',()=>{
+  const post=blog.posts.find(p=>p.slug==='el-problema-de-las-tallas'),guide=blog.posts.find(p=>p.slug==='uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente')
+  assert(post.content.includes('30 %'));assert(post.content.includes('no una estadística nacional'));assert(post.content.includes('arreglos posteriores'))
+  assert(!guide.content.includes('30 %'));assert(!post.content.includes('reciclaje'));assert(!post.content.includes('Zara'))
+  assert(!blog.posts.find(p=>p.slug==='como-definir-un-proyecto-de-uniformes-corporativos').content.includes('Standard Allowed Minutes'))
+  assert(blog.posts.find(p=>p.slug==='de-que-depende-el-tiempo-de-entrega-de-uniformes').content.includes('Standard Allowed Minutes'))
+})
+test('every article has contextual links and unique useful metadata; related articles exist and never link to themselves',()=>{
+  assert.equal(new Set(blog.posts.map(p=>blog.postMetadata(p).title)).size,53)
+  assert.equal(new Set(blog.posts.map(p=>blog.descriptionForPost(p))).size,53)
+  const slugs=new Set(blog.posts.map(p=>'/'+p.slug))
+  function links(nodes){return nodes.flatMap(n=>n.type==='link'?[n.href,...links(n.children)]:'children' in n?links(n.children):[])}
+  for(const post of blog.posts){const meta=blog.postMetadata(post);assert(meta.description.length>=80&&meta.description.length<=175);assert(!meta.description.endsWith('…'));assert(content.parseContent(post.content).some(b=>b.type==='heading'))
+    const found=content.parseContent(post.content).flatMap(b=>'children' in b?links(b.children):b.type==='list'?b.items.flatMap(links):[])
+    assert(found.some(href=>slugs.has(href.split(/[?#]/)[0])),post.slug)
+    for(const href of found.filter(href=>href.startsWith('/'))){const target=href.split(/[?#]/)[0];assert(slugs.has(target)||target.startsWith('/uniformes'),href)}
+    const related=blog.relatedPosts(post);assert.equal(related.length,3);assert.equal(new Set(related.map(p=>p.slug)).size,3);assert(!related.some(p=>p.slug===post.slug))
   }
 })
-test('article 1 exactly preserves the approved body, separate SEO title, historic date and original image',()=>{
-  const post=blog.posts.find(post=>post.slug==='que-significa-tallas-completas-en-ropa')
-  const approved=fs.readFileSync(path.join(root,'tests/fixtures/tallas-completas-approved.md'),'utf8').trim()
-  assert.equal(post.title,approved.split('\n')[0].slice(2))
-  assert.equal(post.content.trim(),approved.replace(/^# [^\n]+\n\n/,''))
-  assert.equal(post.publishedAt,'2022-08-18');assert.equal(post.updatedAt,undefined)
-  assert.equal(blog.postMetadata(post).title,'Tallas completas en ropa: ¿son realmente la solución?')
-  assert.equal(blog.postMetadata(post).description,'¿Qué son las tallas completas y cómo funcionan en los uniformes? Un patronista explica su origen y la importancia de las tablas de medidas.')
-  assert.equal(content.parseContent(post.content).filter(block=>block.type==='heading'&&block.level===2).length,8)
-  const image=blog.getPostImage(post.slug);assert.deepEqual(image,editorialBaseline.image)
-  assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'public',image.src))).digest('hex'),editorialBaseline.imageSHA256)
+test('original dates drive listings, featured and category order; same-date ties remain stable',()=>{
+  const sorted=blog.orderPostsByPublication(blog.posts)
+  for(let i=1;i<sorted.length;i++)assert(sorted[i-1].publishedAt>=sorted[i].publishedAt)
+  assert.equal(blog.featuredSlug,sorted[0].slug)
+  for(const date of new Set(blog.posts.map(p=>p.publishedAt)))assert.deepEqual(sorted.filter(p=>p.publishedAt===date).map(p=>p.slug),blog.posts.filter(p=>p.publishedAt===date).map(p=>p.slug))
+})
+test('sitemap includes all 53 final canonical article URLs once with honest publication/revision dates',()=>{
+  const map=load(path.join(root,'app/sitemap.ts')).default()
+  for(const post of blog.posts){const rows=map.filter(item=>item.url==='https://cottoncountry.com.pe/'+post.slug);assert.equal(rows.length,1);assert.equal(rows[0].lastModified,post.updatedAt??post.publishedAt)}
+})
+test('the approved Guardapolvo photo is visible and the cotton photograph is not duplicated in the body',()=>{
+  const post=blog.posts.find(p=>p.slug==='el-uniforme-de-farmacia'),image=blog.getPostImage(post.slug)
+  assert.equal(image.src,'/prendas/guardapolvo-cotton-country.webp');assert.notEqual(image.visible,false);assert(!/bata/i.test(image.alt));assert(!/stock/i.test(post.content))
+  assert.equal(content.parseContent(blog.posts.find(p=>p.slug==='dia-mundial-del-algodon-2026').content).filter(b=>b.type==='image').length,0)
+  for(const before of baseline.posts.filter(p=>p.slug!=='el-uniforme-de-farmacia'))assert.deepEqual(blog.getPostImage(before.slug),baseline.images[before.slug])
+})
+test('contextual italic and link markup renders as safe semantic HTML',()=>{
+  const {default:Content}=load(path.join(root,'components/blog/Content.tsx'))
+  const html=renderToStaticMarkup(createElement(Content,{blocks:content.parseContent('Una tela *Oxford* y [su composición](/el-algodon-se-caso-con-el-poliester-en-oxford).')}))
+  assert(html.includes('<em>Oxford</em>'));assert(html.includes('href="/el-algodon-se-caso-con-el-poliester-en-oxford"'))
 })
 
-const historical=load(path.join(root,'lib/blog/historical-chat.ts'))
-const chatBaseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-outside-chat.json')))
-test('article 2 preserves all three historical answers, all table cells, approved copy and the confirmed original date',()=>{
+test('blog Preview metadata is noindex without changing production indexability',()=>{
+  const previous=process.env.VERCEL_ENV
+  try{process.env.VERCEL_ENV='preview';assert.deepEqual(blog.blogRobots(),{index:false,follow:false});assert.deepEqual(blog.postMetadata(blog.posts[0]).robots,{index:false,follow:false});process.env.VERCEL_ENV='production';assert.equal(blog.blogRobots(),undefined);assert.equal(blog.postMetadata(blog.posts[0]).robots,undefined)}finally{if(previous===undefined)delete process.env.VERCEL_ENV;else process.env.VERCEL_ENV=previous}
+})
+
+test('the original Word witnesses match both complete measurement tables and the preserved interview quotations',()=>{
+  const witnesses=JSON.parse(fs.readFileSync(path.join(root,'docs/blog-2027/word-witnesses.json')))
   const post=blog.posts.find(p=>p.slug==='una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano')
-  const original=fs.readFileSync(path.join(root,'tests/fixtures/chatgpt-conversation-original.txt'),'utf8').trim()
-  assert.equal(historical.historicalChatSource(post.content),original)
-  assert.deepEqual(historical.parseHistoricalChat(historical.historicalChatSource(post.content)),historical.parseHistoricalChat(original))
-  const approved=fs.readFileSync(path.join(root,'tests/fixtures/ia-tablas-approved.md'),'utf8').trim()
-  assert.equal(post.title,approved.split('\n')[0].slice(2));assert.equal(post.content.trim(),approved.replace(/^# [^\n]+\n\n/,''))
-  assert.equal(post.publishedAt,'2023-02-28');assert.equal(post.updatedAt,undefined)
-  assert.equal(blog.postMetadata(post).title,'Tablas de medidas para Perú: ¿qué nos respondió una IA?')
-  assert.equal(blog.postMetadata(post).description,'Pedimos a ChatGPT tablas de medidas para mujeres y varones del Perú. Analizamos sus respuestas y qué tan confiables son para confeccionar ropa.')
-  const oldTables=content.parseContent(original).filter(b=>b.type==='table'),newTables=content.parseContent(post.content).filter(b=>b.type==='table')
-  assert.equal(newTables.length,2);assert.deepEqual(newTables,oldTables)
-  assert.deepEqual(blog.getPostImage(post.slug),chatBaseline.image)
-  assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'public',chatBaseline.image.src))).digest('hex'),chatBaseline.imageSHA256)
-})
-test('the article 2 baseline remains unchanged outside the approved articles 3 through 6',()=>{
-  assert.equal(chatBaseline.otherPosts.length,52)
-  for(const before of chatBaseline.otherPosts.filter(p=>!['ntp-para-la-designacion-de-tallas','la-talla-peruana','las-tallas-completas-segun-una-ia','el-problema-de-las-tallas'].includes(p.slug))){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(digest(post),before.postSHA256,before.slug);assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug);assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)}
+  assert.equal(witnesses.numberOfSlugEntries,53)
+  assert.deepEqual(content.parseContent(post.content).filter(b=>b.type==='table').map(t=>[t.headers,...t.rows]),witnesses.measurementTables)
+  const interview=withoutLinks(blog.posts.find(p=>p.slug==='el-ano-del-algodon-2022').content)
+  for(const quote of witnesses.vreelandQuotes)assert(interview.includes(quote),quote)
 })
 
-const ntpBaseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-outside-ntp.json')))
-test('article 3 retains the approved NTP body, historical date, canonical and original photograph',()=>{
-  const post=blog.posts.find(p=>p.slug==='ntp-para-la-designacion-de-tallas')
-  const approved=fs.readFileSync(path.join(root,'tests/fixtures/ntp-approved.md'),'utf8').trim()
-  assert.equal(post.title,approved.split('\n')[0].slice(2))
-  assert.equal(post.content.trim(),approved.replace(/^# [^\n]+\n\n/,''))
-  assert.equal(post.publishedAt,'2021-08-10');assert.equal(post.updatedAt,undefined)
-  const metadata=blog.postMetadata(post)
-  assert.equal(metadata.title,'NTP-ISO 8559-2:2020: designación de tallas en Perú')
-  assert.equal(metadata.description,'Conoce qué establece la NTP-ISO 8559-2:2020, cómo se designan las tallas y por qué las medidas corporales no equivalen a las de una prenda.')
-  assert.equal(metadata.alternates.canonical,'/ntp-para-la-designacion-de-tallas')
-  assert.equal(content.parseContent(post.content).filter(b=>b.type==='heading'&&b.level===2).length,5)
-  assert.deepEqual(blog.getPostImage(post.slug),ntpBaseline.image)
-  assert.equal(digest(fs.readFileSync(path.join(root,'public',ntpBaseline.image.src)).toString('base64')),ntpBaseline.imageSHA256)
-})
-test('the article 3 baseline remains unchanged outside approved articles 4 through 6',()=>{
-  assert.equal(ntpBaseline.otherPosts.length,52)
-  for(const before of ntpBaseline.otherPosts.filter(p=>!['la-talla-peruana','las-tallas-completas-segun-una-ia','el-problema-de-las-tallas'].includes(p.slug))){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(digest(post),before.postSHA256,before.slug);assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug);assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)}
-})
-
-const peruvianSizeBaseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-outside-peruvian-size.json')))
-test('article 4 preserves approved body, original date, canonical and image',()=>{
-  const post=blog.posts.find(p=>p.slug==='la-talla-peruana')
-  const approved=fs.readFileSync(path.join(root,'tests/fixtures/peruvian-size-approved.md'),'utf8').trim()
-  assert.equal(post.title,approved.split('\n')[0].slice(2));assert.equal(post.content.trim(),approved.replace(/^# [^\n]+\n\n/,''))
-  assert.equal(post.publishedAt,'2021-08-10');assert.equal(post.updatedAt,undefined)
-  const metadata=blog.postMetadata(post)
-  assert.equal(metadata.title,'La talla peruana: medidas, estatura y tallas de ropa')
-  assert.equal(metadata.description,'¿Existe una talla peruana? Analizamos la estatura promedio, la diversidad corporal y los desafíos para definir tallas de ropa y uniformes en Perú.')
-  assert.equal(metadata.alternates.canonical,'/la-talla-peruana')
-  assert.equal(content.parseContent(post.content).filter(b=>b.type==='heading'&&b.level===2).length,8)
-  assert.deepEqual(blog.getPostImage(post.slug),peruvianSizeBaseline.image)
-  assert.equal(digest(fs.readFileSync(path.join(root,'public',peruvianSizeBaseline.image.src)).toString('base64')),peruvianSizeBaseline.imageSHA256)
-})
-test('the article 4 baseline remains unchanged outside approved articles 5 and 6',()=>{
-  assert.equal(peruvianSizeBaseline.otherPosts.length,52)
-  for(const before of peruvianSizeBaseline.otherPosts.filter(p=>!['las-tallas-completas-segun-una-ia','el-problema-de-las-tallas'].includes(p.slug))){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(digest(post),before.postSHA256,before.slug);assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug);assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)}
-})
-
-const fullSizeBaseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-outside-full-size-chat.json')))
-test('article 5 preserves both original responses word for word, including their errors, and the complete approved body',()=>{
-  const post=blog.posts.find(p=>p.slug==='las-tallas-completas-segun-una-ia')
-  const approved=fs.readFileSync(path.join(root,'tests/fixtures/full-size-chat-approved.md'),'utf8').trim()
-  assert.equal(post.title,approved.split('\n')[0].slice(2));assert.equal(post.content.trim(),approved.replace(/^# [^\n]+\n\n/,''))
-  const exchanges=historical.parseFullSizeChat(post.content)
-  assert.equal(exchanges.length,2)
-  exchanges.forEach((exchange,index)=>{const original=fullSizeBaseline.originalExchanges[index];assert.equal(exchange.question,original.question);assert.deepEqual(exchange.answer.split(/\n+/).map(p=>p.trim()),original.answer.split(/\n+/).map(p=>p.trim()))})
-  assert.equal(post.publishedAt,'2023-02-28');assert.equal(post.updatedAt,undefined)
-  const metadata=blog.postMetadata(post)
-  assert.equal(metadata.title,'Tallas completas: qué respondió ChatGPT en 2023')
-  assert.equal(metadata.description,'Preguntamos a ChatGPT qué son las tallas completas y las tallas estándar. Revisamos sus respuestas originales y los errores de interpretación.')
-  assert.equal(metadata.alternates.canonical,'/las-tallas-completas-segun-una-ia')
-  assert.equal(content.parseContent(post.content).filter(b=>b.type==='heading'&&b.level===2).length,4)
-  assert.deepEqual(blog.getPostImage(post.slug),fullSizeBaseline.image)
-  assert.equal(digest(fs.readFileSync(path.join(root,'public',fullSizeBaseline.image.src)).toString('base64')),fullSizeBaseline.imageSHA256)
-})
-test('the article 5 baseline remains unchanged outside approved article 6',()=>{
-  assert.equal(fullSizeBaseline.otherPosts.length,52)
-  for(const before of fullSizeBaseline.otherPosts.filter(p=>p.slug!=='el-problema-de-las-tallas')){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(digest(post),before.postSHA256,before.slug);assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug);assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)}
-})
-
-const sizingProblemBaseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-outside-sizing-problem.json')))
-test('article 6 preserves approved text, historical first-party claim, existing unknown date and image',()=>{
-  const post=blog.posts.find(p=>p.slug==='el-problema-de-las-tallas')
-  const approved=fs.readFileSync(path.join(root,'tests/fixtures/sizing-problem-approved.md'),'utf8').trim()
-  assert.equal(post.title,approved.split('\n')[0].slice(2));assert.equal(post.content.trim(),approved.replace(/^# [^\n]+\n\n/,''))
-  assert.equal(sizingProblemBaseline.publishedAt,null);assert.equal(post.publishedAt,undefined);assert.equal(post.updatedAt,undefined)
-  assert(sizingProblemBaseline.originalClaim.includes('(30%)'));assert(post.content.includes('En nuestra experiencia inicial, los reclamos por problemas de ajuste llegaron a incrementarse aproximadamente un 30 % con la confección a medida.'))
-  assert(!/recicla|Zara|Forever21|H&M|SizeSet/i.test(post.content))
-  const metadata=blog.postMetadata(post)
-  assert.equal(metadata.title,'El problema de las tallas en los uniformes empresariales')
-  assert.equal(metadata.description,'¿Por qué una misma talla no queda igual en todas las prendas? Conoce nuestra experiencia con uniformes a medida y la importancia de validar el tallaje.')
-  assert.equal(metadata.alternates.canonical,'/el-problema-de-las-tallas')
-  assert.equal(content.parseContent(post.content).filter(b=>b.type==='heading'&&b.level===2).length,3)
-  assert.deepEqual(blog.getPostImage(post.slug),sizingProblemBaseline.image)
-  assert.equal(digest(fs.readFileSync(path.join(root,'public',sizingProblemBaseline.image.src)).toString('base64')),sizingProblemBaseline.imageSHA256)
-})
-test('all other 52 articles including approved articles 1 through 5 match the starting commit',()=>{
-  assert.equal(sizingProblemBaseline.otherPosts.length,52)
-  for(const before of sizingProblemBaseline.otherPosts){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(digest(post),before.postSHA256,before.slug);assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug);assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)}
+test('the single Word alias and all existing blog aliases redirect directly without changing canonical slugs',async()=>{
+  const alias='el-nino-2026-2027-impacto-industria-textil-peru',target='/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil'
+  assert.equal(paths.normalizeBlogHref('/'+alias),target);assert.equal(paths.normalizeBlogHref('/blog/'+alias+'/'),target)
+  const rules=await load(path.join(root,'next.config.ts')).default.redirects()
+  assert.equal(rules.length,111);assert.equal(new Set(rules.map(r=>r.source)).size,111)
+  for(const source of ['/'+alias,'/'+alias+'/','/blog/'+alias,'/blog/'+alias+'/']){const rule=rules.find(r=>r.source===source);assert.equal(rule.destination,target);assert.equal(rule.permanent,true)}
+  for(const rule of rules.filter(r=>!r.source.includes(':path')))assert(blog.posts.some(p=>'/'+p.slug===rule.destination))
 })

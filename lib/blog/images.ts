@@ -62,13 +62,10 @@ const images: Record<string, BlogImage> = {
     "alt": "Persona con casco y chaleco naranja en un entorno industrial"
   },
   "el-uniforme-de-farmacia": {
-    // Do not reuse the historical stock cover for the approved Guardapolvo.
-    // Enable a cover only after the owner's original attachment is available.
-    visible: false,
-    "src": "/blog/el-uniforme-de-farmacia.jpg",
+    "src": "/prendas/guardapolvo-cotton-country.webp",
     "width": 1024,
-    "height": 585,
-    "alt": "Mano con varios envases de medicamentos frente a una bata blanca"
+    "height": 1536,
+    "alt": "Guardapolvo blanco de Cotton Country, modelo de referencia para fabricación bajo pedido"
   },
   "por-que-usar-mascarillas-reutilizables-lavables": {
     "src": "/blog/por-que-usar-mascarillas-reutilizables-lavables.jpg",

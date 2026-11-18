@@ -1,0 +1,56 @@
+{
+  "articles": 53,
+  "canonicalURLs": 53,
+  "aliases": 163,
+  "negativeControls": 8,
+  "localImageURLs": 53,
+  "internalDestinations": 56,
+  "verifiedTOCFragments": 196,
+  "responsive": [
+    {
+      "width": 1440,
+      "articles": 53,
+      "listings": 11,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "articles": 53,
+      "listings": 11,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "articles": 53,
+      "listings": 11,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "articles": 53,
+      "listings": 11,
+      "overflow": false
+    }
+  ],
+  "axeSamples": 40,
+  "errors": [],
+  "limitations": [
+    "External sources and Vercel require separate remote verification; local routes do not establish Google indexing."
+  ],
+  "date": "2026-11-18",
+  "timezone": "America/Lima",
+  "baseSHA": "d610d0e10d8e97d3f22db3170ef519aee2f7d17b",
+  "sourceSHA256": "ec86f056ac6d899a9ce2d80e52262f694d60b0ca4eed194e8225a79e534c9d6d",
+  "unitTests": 26,
+  "build": "passed",
+  "typescript": "passed",
+  "eslint": "passed",
+  "diffCheck": "passed",
+  "protectedApprovedArticles": 5,
+  "contextualInsertions": 104,
+  "datePairsConfirmedAgainstOwnerInstruction": 53,
+  "wordTablesVerifiedCellByCell": 2,
+  "modifiedOriginalImageFiles": 0,
+  "previewEnvironmentMetadata": "noindex,nofollow when VERCEL_ENV=preview; unit-tested, not remotely verified",
+  "allPairScreening": 1378
+}

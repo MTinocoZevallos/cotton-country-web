@@ -16,7 +16,7 @@ function entities(text: string) {
 // Only links and inline emphasis are interpreted; scripts, attributes and styles never execute.
 export function parseInline(text: string): Inline[] {
   const nodes: Inline[] = []
-  const pattern = /<a\b([^>]*)>([\s\S]*?)<\/a\s*>|\[([^\]\n]+)\]\(([^\s)]+)\)|\*\*([^*]+)\*\*|<(strong|b|em|i)\b[^>]*>([\s\S]*?)<\/\6\s*>/gi
+  const pattern = /<a\b([^>]*)>([\s\S]*?)<\/a\s*>|\[([^\]\n]+)\]\(([^\s)]+)\)|\*\*([^*]+)\*\*|<(strong|b|em|i)\b[^>]*>([\s\S]*?)<\/\6\s*>|\*([^*\n]+)\*/gi
   let start = 0
   const addText = (part: string) => {
     // Unsupported markup is preserved as visible text, never inserted as HTML.
@@ -34,6 +34,7 @@ export function parseInline(text: string): Inline[] {
       const children = parseInline(match[3])
       if (href) nodes.push({type:"link",href,children}); else nodes.push(...children)
     } else if (match[5] !== undefined) nodes.push({type:"strong",children:parseInline(match[5])})
+    else if (match[8] !== undefined) nodes.push({type:"em",children:parseInline(match[8])})
     else nodes.push({type:/^(em|i)$/i.test(match[6])?"em":"strong",children:parseInline(match[7])})
     start = match.index! + match[0].length
   }

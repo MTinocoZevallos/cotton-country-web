@@ -1,0 +1,107 @@
+{
+  "wordFile": "BLOG - COTTON COUNTRY.docx",
+  "sha256": "7b39c05f2608e4f7cd9503eaa8dba1c99a465e9cdf430a1b59a55c131de69735",
+  "numberOfSlugEntries": 53,
+  "publicationDatesSource": "Owner closing instruction, not Word",
+  "measurementTables": [
+    [
+      [
+        "Talla",
+        "Busto (cm)",
+        "Cintura (cm)",
+        "Cadera (cm)"
+      ],
+      [
+        "XS",
+        "80-84",
+        "60-64",
+        "86-90"
+      ],
+      [
+        "S",
+        "85-89",
+        "65-69",
+        "91-95"
+      ],
+      [
+        "M",
+        "90-94",
+        "70-74",
+        "96-100"
+      ],
+      [
+        "L",
+        "95-99",
+        "75-79",
+        "101-105"
+      ],
+      [
+        "XL",
+        "100-104",
+        "80-84",
+        "106-110"
+      ],
+      [
+        "XXL",
+        "105-109",
+        "85-89",
+        "111-115"
+      ]
+    ],
+    [
+      [
+        "Talla",
+        "Pecho (cm)",
+        "Cintura (cm)",
+        "Cadera (cm)"
+      ],
+      [
+        "XS",
+        "88-92",
+        "76-80",
+        "90-94"
+      ],
+      [
+        "S",
+        "92-96",
+        "80-84",
+        "94-98"
+      ],
+      [
+        "M",
+        "96-100",
+        "84-88",
+        "98-102"
+      ],
+      [
+        "L",
+        "100-104",
+        "88-92",
+        "102-106"
+      ],
+      [
+        "XL",
+        "104-108",
+        "92-96",
+        "106-110"
+      ],
+      [
+        "XXL",
+        "108-112",
+        "96-100",
+        "110-114"
+      ]
+    ]
+  ],
+  "vreelandQuotes": [
+    "¡Algodón Pima!",
+    "¿Quien no conoce esta lujosa, suave y extra larga fibra preferida en las prendas de las marcas más distinguidas a nivel mundial?",
+    "¿Pero sabe usted que este algodón se originó en los EEUU? Inclusive su nombre viene de una tribu de nativos reducida a un reservorio en el condado de Pima, Arizona.",
+    "En el año 1922 el hacendado Piurano don Emilio Hilck Seminario (nieto de Miguel Grau Seminario) trajo desde Arizona las primeras semillas de algodón Pima americano, y las sembró en su fundo de Catacaos. Es ahí donde comienza una nueva historia del Algodón y de la industria textil peruana!"
+  ],
+  "documentaryAlias": {
+    "word": "el-nino-2026-2027-impacto-industria-textil-peru",
+    "retained": "el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
+    "reason": "The owner definitive 53-row table identifies the retained canonical slug. The Word variant is accepted as an explicit redirect alias without asserting earlier publication, traffic or indexing."
+  }
+}

@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { posts, type Post } from "@/app/blog/posts"
 import { blogCategories, postCategoryIds } from "./taxonomy"
-import { contentText, inlineText, parseContent } from "./content"
+import { contentText, inlineText, parseContent, type Inline } from "./content"
 import { getPostImage } from "./images"
 import { orderPostsByPublication } from "./publication"
 import { BLOG_ORIGIN, postPath } from "./paths"
@@ -24,20 +24,43 @@ export function descriptionForPost(post: Post) {
   return text.slice(0,165).replace(/\s+\S*$/, "").replace(/[.,;:]$/, "") + "…"
 }
 export function readingMinutes(post: Post) { return Math.max(1,Math.ceil(contentText(post.content).split(/\s+/).length/200)) }
+function linkedArticlePaths(post: Post) {
+  const paths = new Set<string>()
+  const visit = (nodes: Inline[]) => {
+    for (const node of nodes) {
+      if (node.type === "link" && node.href.startsWith("/")) paths.add(node.href.split(/[?#]/)[0])
+      if ("children" in node) visit(node.children)
+    }
+  }
+  for (const block of parseContent(post.content)) {
+    if ("children" in block) visit(block.children)
+    if (block.type === "list") block.items.forEach(visit)
+  }
+  return paths
+}
+const contextualArticlePaths = new Map(posts.map(post => [post.slug, linkedArticlePaths(post)]))
+
 export function relatedPosts(post: Post) {
   const others = posts.filter(item=>item.slug!==post.slug)
+  const direct = [...contextualArticlePaths.get(post.slug) ?? []].flatMap(path => others.filter(item => postPath(item) === path))
+  const incoming = others.filter(item => contextualArticlePaths.get(item.slug)?.has(postPath(post)))
   const same = others.filter(item=>postCategoryIds[item.slug]===postCategoryIds[post.slug])
-  return [...same,...others.filter(item=>!same.includes(item))].slice(0,3)
+  return [...new Set([...direct,...incoming,...same,...others])].slice(0,3)
 }
 export function pageNumber(raw: string | string[] | undefined): number {
   if (raw === undefined) return 1
   if (Array.isArray(raw) || !/^[1-9]\d*$/.test(raw)) return NaN
   return Number(raw)
 }
+// Preview URLs must not compete with the final canonical domain.
+// This only affects blog metadata; production keeps its existing policy.
+export function blogRobots(): Metadata["robots"] {
+  return process.env.VERCEL_ENV === "preview" ? { index: false, follow: false } : undefined
+}
 export function postMetadata(post: Post): Metadata {
   const image = getPostImage(post.slug), path = postPath(post), title = post.seoTitle ?? post.title
   return {
-    title, description:descriptionForPost(post), alternates:{canonical:path},
+    title, description:descriptionForPost(post), alternates:{canonical:path}, robots:blogRobots(),
     openGraph:{type:"article",title,description:descriptionForPost(post),url:path,siteName:"Cotton Country",locale:"es_PE",images:image.visible === false ? [] : [{url:image.src,width:image.width,height:image.height,alt:image.alt}],...(post.publishedAt?{publishedTime:post.publishedAt}:{}),...(post.updatedAt?{modifiedTime:post.updatedAt}:{})},
     twitter:{card:image.visible === false ? "summary" : "summary_large_image",title,description:descriptionForPost(post),images:image.visible === false ? [] : [image.src]},
   }

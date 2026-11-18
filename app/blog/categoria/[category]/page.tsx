@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { editorialSerif } from "@/components/home-font"
-import { blogCategories, categoryPath, PAGE_SIZE, pageNumber, posts, orderPostsByPublication } from "@/lib/blog"
+import { blogRobots, blogCategories, categoryPath, PAGE_SIZE, pageNumber, posts, orderPostsByPublication } from "@/lib/blog"
 import { postCategoryIds } from "@/lib/blog/taxonomy"
 import BlogCard from "@/components/blog/BlogCard"
 import CategoryNav from "@/components/blog/CategoryNav"
@@ -20,7 +20,7 @@ async function state({params,searchParams}:Props){
   if(!Number.isSafeInteger(page)||page<1||page>pages)notFound()
   return {category:selected,items,page,pages,path:categoryPath(selected)+(page>1?`?pagina=${page}`:"")}
 }
-export async function generateMetadata(props:Props):Promise<Metadata>{const {category,page,path}=await state(props);return{title:`${category.name}${page>1?` · Página ${page}`:""} | Blog Cotton Country`,description:category.description,alternates:{canonical:path},openGraph:{title:category.name,description:category.description,url:path,type:"website",siteName:"Cotton Country",locale:"es_PE"}}}
+export async function generateMetadata(props:Props):Promise<Metadata>{const {category,page,path}=await state(props);return{title:`${category.name}${page>1?` · Página ${page}`:""} | Blog Cotton Country`,description:category.description,robots:blogRobots(),alternates:{canonical:path},openGraph:{title:category.name,description:category.description,url:path,type:"website",siteName:"Cotton Country",locale:"es_PE"}}}
 export default async function CategoryPage(props:Props){
   const {category,items,page,pages}=await state(props)
   return <div className={`${styles.page} ${editorialSerif.variable}`}><div className={styles.container}>

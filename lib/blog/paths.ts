@@ -1,4 +1,5 @@
 import { postCategoryIds } from "./taxonomy"
+import { documentaryBlogAliases } from "./legacy-aliases"
 
 export const BLOG_ORIGIN = "https://cottoncountry.com.pe"
 const slugs = new Set(Object.keys(postCategoryIds))
@@ -19,6 +20,7 @@ export function normalizeBlogHref(href: string): string | undefined {
   if (!local) return url.href
   const path = url.pathname.replace(/\/+$/, "") || "/"
   const slug = path.startsWith("/blog/") ? path.slice(6) : path.slice(1)
-  const canonical = slugs.has(slug) ? `/${slug}` : path
+  const identifiedSlug = documentaryBlogAliases[slug] ?? slug
+  const canonical = slugs.has(identifiedSlug) ? `/${identifiedSlug}` : path
   return `${canonical}${url.search}${url.hash}`
 }

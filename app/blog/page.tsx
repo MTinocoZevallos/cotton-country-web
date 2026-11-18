@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { editorialSerif } from "@/components/home-font"
-import { categoryForPost, categoryPath, descriptionForPost, featuredSlug, getPostImage, pageNumber, PAGE_SIZE, posts, postPath, orderPostsByPublication } from "@/lib/blog"
+import { blogRobots, categoryForPost, categoryPath, descriptionForPost, featuredSlug, getPostImage, pageNumber, PAGE_SIZE, posts, postPath, orderPostsByPublication } from "@/lib/blog"
 import { searchInterest } from "@/lib/blog/interest"
 import BlogCard from "@/components/blog/BlogCard"
 import CategoryNav from "@/components/blog/CategoryNav"
@@ -22,7 +22,7 @@ export async function generateMetadata({searchParams}:Props):Promise<Metadata> {
   const title=`Blog de cultura textil y uniformes${page>1?` · Página ${page}`:""} | Cotton Country`
   const description="Algodón, industria, materiales, tallaje y compras. Lecturas de Cotton Country para comprender las prendas y definir mejores proyectos de uniformes."
   const image=getPostImage(featuredSlug)
-  return {title,description,alternates:{canonical:path},openGraph:{title,description,url:path,type:"website",siteName:"Cotton Country",locale:"es_PE",images:[{url:image.src,width:image.width,height:image.height,alt:image.alt}]}}
+  return {title,description,robots:blogRobots(),alternates:{canonical:path},openGraph:{title,description,url:path,type:"website",siteName:"Cotton Country",locale:"es_PE",images:[{url:image.src,width:image.width,height:image.height,alt:image.alt}]}}
 }
 export default async function BlogPage({searchParams}:Props) {
   const {page,pages}=await state(searchParams)
