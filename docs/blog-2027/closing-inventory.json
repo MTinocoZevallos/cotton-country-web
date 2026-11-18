@@ -5,111 +5,71 @@
     "slug": "el-algodon-se-caso-con-el-poliester-en-oxford",
     "productionURL": "https://cottoncountry.com.pe/el-algodon-se-caso-con-el-poliester-en-oxford",
     "publishedAt": "2020-08-30",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Construcción Oxford, composición y especificación de la tela",
-    "exclusiveContribution": "Construcción Oxford, composición y especificación de la tela",
-    "seoTitle": "Tela Oxford: algodón, poliéster y uso en uniformes",
-    "metaDescription": "Qué distingue al tejido Oxford de un modelo de camisa, cómo varía su composición y qué revisar en una tela para uniformes.",
-    "canonical": "https://cottoncountry.com.pe/el-algodon-se-caso-con-el-poliester-en-oxford",
-    "headings": [
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "El algodón se casó con el poliéster en Oxford",
+    "metaDescription": "Si alguna vez usó una camisa como uniforme entonces debe haber usado una camisa en tela oxford, con algún bordado en manga corta o manga larga pero conoce la…",
+    "canonical": "/el-algodon-se-caso-con-el-poliester-en-oxford",
+    "headings": [],
+    "links": [
       {
-        "level": 2,
-        "text": "Oxford no es un modelo de cuello"
+        "href": "/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
+        "text": "camisa"
       },
       {
-        "level": 2,
-        "text": "Algodón y poliéster en una misma tela"
-      },
-      {
-        "level": 2,
-        "text": "Qué revisar antes de comprar"
+        "href": "/una-breve-historia-del-algodon",
+        "text": "algodón"
       }
+    ],
+    "related": [
+      "es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
+      "una-breve-historia-del-algodon",
+      "uniformes-de-chef-que-tela-elegir"
     ],
     "image": {
       "src": "/blog/el-algodon-se-caso-con-el-poliester-en-oxford.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Detalle de una tela azul con una aguja de coser"
-    },
-    "internalLinks": [
-      {
-        "href": "/una-breve-historia-del-algodon",
-        "text": "algodón"
-      },
-      {
-        "href": "/estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
-        "text": "ficha técnica"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "una-breve-historia-del-algodon",
-      "estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
-      "es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 2,
-    "title": "Dime qué uniforme usas y te diré cuánto te quieren",
+    "title": "Dime que uniforme usas y te diré cuánto te quieren",
     "slug": "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
     "productionURL": "https://cottoncountry.com.pe/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
     "publishedAt": "2020-11-30",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Testimonio sobre identidad, comunicación y cliente interno",
-    "exclusiveContribution": "Testimonio sobre identidad, comunicación y cliente interno",
-    "seoTitle": "Uniformes e identidad: el valor del cliente interno",
-    "metaDescription": "Una reflexión de Cotton Country sobre diseño, pertenencia y comunicación de marca a través de los uniformes empresariales.",
-    "canonical": "https://cottoncountry.com.pe/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
-    "headings": [
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Dime que uniforme usas y te diré cuánto te quieren",
+    "metaDescription": "Fue en los inicios de esta aventura empresarial que recogimos opiniones sobre los uniformes y conversando con un gerente de una empresa líder en su rubro me dijo…",
+    "canonical": "/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
+    "headings": [],
+    "links": [
       {
-        "level": 2,
-        "text": "Identidad y comunicación"
+        "href": "/por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
+        "text": "uniformes"
       },
       {
-        "level": 2,
-        "text": "El cliente interno"
+        "href": "/disenador-a-sus-disenos",
+        "text": "diseño"
       },
       {
-        "level": 2,
-        "text": "Diseño y valor"
+        "href": "https://sizeset.com/",
+        "text": "sizeset"
       }
+    ],
+    "related": [
+      "por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
+      "disenador-a-sus-disenos",
+      "medalla-de-oro-en-uniformes"
     ],
     "image": {
       "src": "/blog/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Camisas de distintos colores colgadas en perchas de madera"
-    },
-    "internalLinks": [
-      {
-        "href": "/medalla-de-oro-en-uniformes",
-        "text": "equipos olímpicos"
-      },
-      {
-        "href": "/por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
-        "text": "bienestar laboral"
-      },
-      {
-        "href": "/disenador-a-sus-disenos",
-        "text": "diseño"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "medalla-de-oro-en-uniformes",
-      "por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
-      "disenador-a-sus-disenos"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 3,
@@ -117,53 +77,33 @@
     "slug": "es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
     "productionURL": "https://cottoncountry.com.pe/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
     "publishedAt": "2020-12-30",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Control de una cadena productiva con procesos propios y externos",
-    "exclusiveContribution": "Control de una cadena productiva con procesos propios y externos",
-    "seoTitle": "Proveedor de uniformes: ¿con taller o sin taller?",
-    "metaDescription": "La propiedad de un taller no explica todo el control productivo. Revisa los procesos y la coordinación necesarios para fabricar uniformes.",
-    "canonical": "https://cottoncountry.com.pe/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
-    "headings": [
-      {
-        "level": 2,
-        "text": "El recorrido de una camisa"
-      },
-      {
-        "level": 2,
-        "text": "Coordinar procesos propios y externos"
-      },
-      {
-        "level": 2,
-        "text": "Qué significa controlar"
-      }
-    ],
-    "image": {
-      "src": "/blog/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller.jpg",
-      "width": 1024,
-      "height": 585,
-      "alt": "Pie de una máquina de coser trabajando sobre tela azul"
-    },
-    "internalLinks": [
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "¿Es mejor elegir un proveedor de uniformes con taller o sin taller?",
+    "metaDescription": "Hemos escuchado muchas veces por parte de compradores que un proveedor de ropa de trabajo es mejor cuando tiene taller propio ya que esto le da “más” control…",
+    "canonical": "/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
+    "headings": [],
+    "links": [
       {
         "href": "/el-algodon-se-caso-con-el-poliester-en-oxford",
-        "text": "camisa en tela oxford"
+        "text": "tela oxford"
       },
       {
         "href": "/de-que-depende-el-tiempo-de-entrega-de-uniformes",
         "text": "tiempos de costura"
       }
     ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
+    "related": [
       "el-algodon-se-caso-con-el-poliester-en-oxford",
       "de-que-depende-el-tiempo-de-entrega-de-uniformes",
-      "que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial"
+      "disenador-a-sus-disenos"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller.jpg",
+      "width": 1024,
+      "height": 585,
+      "alt": "Pie de una máquina de coser trabajando sobre tela azul"
+    }
   },
   {
     "id": 4,
@@ -171,49 +111,33 @@
     "slug": "5-tipos-de-tejidos-inteligentes",
     "productionURL": "https://cottoncountry.com.pe/5-tipos-de-tejidos-inteligentes",
     "publishedAt": "2020-01-15",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Taxonomía de prestaciones textiles y evidencia de desempeño",
-    "exclusiveContribution": "Taxonomía de prestaciones textiles y evidencia de desempeño",
-    "seoTitle": "Cinco prestaciones textiles: qué significa cada una",
-    "metaDescription": "Antimicrobiano, UV, desgarro, llama y repelencia: distingue las prestaciones textiles y la documentación necesaria para evaluarlas.",
-    "canonical": "https://cottoncountry.com.pe/5-tipos-de-tejidos-inteligentes",
-    "headings": [
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "5 tipos de tejidos inteligentes para uniformes",
+    "metaDescription": "Hablar de tejidos inteligentes es una forma de llamar a los resultados de aplicar I&D en la elaboración de soluciones textiles para diferentes necesidades e…",
+    "canonical": "/5-tipos-de-tejidos-inteligentes",
+    "headings": [],
+    "links": [
       {
-        "level": 2,
-        "text": "Cinco prestaciones que conviene distinguir"
+        "href": "/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
+        "text": "uniformes"
       },
       {
-        "level": 2,
-        "text": "El nombre comercial no sustituye al ensayo"
+        "href": "/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
+        "text": "ropa de protección"
       }
+    ],
+    "related": [
+      "materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
+      "que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
+      "perumin-2023"
     ],
     "image": {
       "src": "/blog/5-tipos-de-tejidos-inteligentes.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Detalle de la textura de un tejido azul"
-    },
-    "internalLinks": [
-      {
-        "href": "/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
-        "text": "identificar el riesgo o la necesidad"
-      },
-      {
-        "href": "/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
-        "text": "cada tipo de uniforme"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
-      "materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
-      "perumin-2023"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 5,
@@ -221,31 +145,13 @@
     "slug": "estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
     "productionURL": "https://cottoncountry.com.pe/estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
     "publishedAt": "2020-11-30",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Asimetría de información y documentos para evaluar propuestas",
-    "exclusiveContribution": "Asimetría de información y documentos para evaluar propuestas",
-    "seoTitle": "Compras textiles: cómo reducir la falta de información",
-    "metaDescription": "Fichas técnicas, ensayos y condiciones de suministro ayudan a evaluar una propuesta textil y reducir la asimetría de información.",
-    "canonical": "https://cottoncountry.com.pe/estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
-    "headings": [
-      {
-        "level": 2,
-        "text": "Información y confianza"
-      },
-      {
-        "level": 2,
-        "text": "Documentos para evaluar"
-      }
-    ],
-    "image": {
-      "src": "/blog/estafas-textiles-no-seas-victima-de-la-falta-de-informacion.jpg",
-      "width": 1024,
-      "height": 585,
-      "alt": "Muestrarios de telas de diferentes colores abiertos sobre una mesa"
-    },
-    "internalLinks": [
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "¿Estafas Textiles? No seas víctima de la falta de información",
+    "metaDescription": "Si eres un comprador de uniformes, material textil publicitario o prendas de bioseguridad estoy seguro que más de una vez has renegado, te has sentido confundido…",
+    "canonical": "/estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
+    "headings": [],
+    "links": [
       {
         "href": "/como-definir-un-proyecto-de-uniformes-corporativos",
         "text": "fichas técnicas"
@@ -255,15 +161,17 @@
         "text": "elección de un proveedor"
       }
     ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
+    "related": [
       "como-definir-un-proyecto-de-uniformes-corporativos",
       "3-consejos-para-compradores-de-textiles-b2b",
-      "el-algodon-se-caso-con-el-poliester-en-oxford"
+      "es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/estafas-textiles-no-seas-victima-de-la-falta-de-informacion.jpg",
+      "width": 1024,
+      "height": 585,
+      "alt": "Muestrarios de telas de diferentes colores abiertos sobre una mesa"
+    }
   },
   {
     "id": 6,
@@ -271,53 +179,33 @@
     "slug": "mascarillas-y-covid-19",
     "productionURL": "https://cottoncountry.com.pe/mascarillas-y-covid-19",
     "publishedAt": "2020-11-30",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Reflexión de compra de mascarillas en 2020; sin equivalencias sanitarias",
-    "exclusiveContribution": "Reflexión de compra de mascarillas en 2020; sin equivalencias sanitarias",
-    "seoTitle": "Mascarillas en 2020: criterios de compra y contexto",
-    "metaDescription": "Archivo de 2020 sobre precio, diseño y sostenibilidad de mascarillas. Distingue el relato histórico de una recomendación sanitaria actual.",
-    "canonical": "https://cottoncountry.com.pe/mascarillas-y-covid-19",
-    "headings": [
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Mascarillas contra el COVID-19: precio, protección y diseño",
+    "metaDescription": "Desde el inicio del estado de emergencia muchas cosas sucedieron en nuestro país y muchas más en la industria textil, el uso de mascarillas se volvió…",
+    "canonical": "/mascarillas-y-covid-19",
+    "headings": [],
+    "links": [
       {
-        "level": 2,
-        "text": "Precio, uso y documentación"
+        "href": "/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+        "text": "nivel de protección"
       },
       {
-        "level": 2,
-        "text": "Diseño y experiencia de uso"
-      },
-      {
-        "level": 2,
-        "text": "La reflexión ambiental de 2020"
+        "href": "/por-que-usar-mascarillas-reutilizables-lavables",
+        "text": "mascarilla de tela"
       }
+    ],
+    "related": [
+      "venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+      "por-que-usar-mascarillas-reutilizables-lavables",
+      "escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo"
     ],
     "image": {
       "src": "/blog/mascarillas-y-covid-19.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Mujer con mascarilla de tela azul"
-    },
-    "internalLinks": [
-      {
-        "href": "/por-que-usar-mascarillas-reutilizables-lavables",
-        "text": "reutilizables"
-      },
-      {
-        "href": "/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
-        "text": "evaluar un producto"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "por-que-usar-mascarillas-reutilizables-lavables",
-      "venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
-      "escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 7,
@@ -325,80 +213,66 @@
     "slug": "materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
     "productionURL": "https://cottoncountry.com.pe/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
     "publishedAt": "2021-01-23",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Selección de prestaciones según las tareas del uniforme",
-    "exclusiveContribution": "Selección de prestaciones según las tareas del uniforme",
-    "seoTitle": "Prestaciones textiles según el trabajo y el uniforme",
-    "metaDescription": "Cómo relacionar las necesidades de salud, cocina, exteriores y atención al público con las especificaciones textiles de un uniforme.",
-    "canonical": "https://cottoncountry.com.pe/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Materiales textiles inteligentes según el tipo de uniformes",
+    "metaDescription": "Confeccionar un uniforme es más que solo diseñar, cortar y coser una prenda que tenga los colores de la empresa. Cada uniforme, dependiendo del sector en el que…",
+    "canonical": "/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
     "headings": [
       {
         "level": 2,
-        "text": "Salud y actividades de laboratorio"
+        "text": "Uniformes para el sector salud"
       },
       {
         "level": 2,
-        "text": "Cocina"
+        "text": "Uniformes para cocina"
       },
       {
         "level": 2,
-        "text": "Trabajo en exteriores"
+        "text": "Uniformes para trabajos en la vía pública"
       },
       {
         "level": 2,
-        "text": "Atención al público"
-      },
-      {
-        "level": 2,
-        "text": "Del puesto de trabajo a la especificación"
+        "text": "Uniformes para atención al público"
       }
+    ],
+    "links": [
+      {
+        "href": "/5-tipos-de-tejidos-inteligentes",
+        "text": "materiales textiles inteligentes"
+      },
+      {
+        "href": "/uniformes-de-chef-que-tela-elegir",
+        "text": "uniformes para chef"
+      },
+      {
+        "href": "/",
+        "text": "Cotton Country"
+      }
+    ],
+    "related": [
+      "5-tipos-de-tejidos-inteligentes",
+      "uniformes-de-chef-que-tela-elegir",
+      "procesos-de-confeccion-seguros"
     ],
     "image": {
       "src": "/blog/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Persona con uniforme sanitario verde y guantes frente a un fondo amarillo"
-    },
-    "internalLinks": [
-      {
-        "href": "/5-tipos-de-tejidos-inteligentes",
-        "text": "prestaciones textiles"
-      },
-      {
-        "href": "/uniformes-de-chef-que-tela-elegir",
-        "text": "En cocina"
-      },
-      {
-        "href": "/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
-        "text": "equipo de protección validado para riesgos específicos"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "5-tipos-de-tejidos-inteligentes",
-      "uniformes-de-chef-que-tela-elegir",
-      "que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 8,
-    "title": "Por qué comprar uniformes de trabajo para mis empleados",
+    "title": "Porque comprar uniformes de trabajo para mis empleados",
     "slug": "por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
     "productionURL": "https://cottoncountry.com.pe/por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
     "publishedAt": "2021-01-23",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Identificación, funciones y pertenencia de los trabajadores",
-    "exclusiveContribution": "Identificación, funciones y pertenencia de los trabajadores",
-    "seoTitle": "Por qué dotar de uniformes al personal de una empresa",
-    "metaDescription": "Identificación, funciones y pertenencia: tres motivos para evaluar los uniformes de trabajo desde la experiencia de sus usuarios.",
-    "canonical": "https://cottoncountry.com.pe/por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Porque comprar uniformes de trabajo para mis empleados",
+    "metaDescription": "Comprar uniformes de trabajo es una inversión que no se debe subestimar. Después de todo, ofrece muchos beneficios a una empresa, por ejemplo, contribuye a crear…",
+    "canonical": "/por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
     "headings": [
       {
         "level": 2,
@@ -413,46 +287,43 @@
         "text": "Contribuye a la fidelización del cliente interno"
       }
     ],
+    "links": [
+      {
+        "href": "/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
+        "text": "imagen de marca"
+      },
+      {
+        "href": "/disenador-a-sus-disenos",
+        "text": "diseño del uniforme"
+      },
+      {
+        "href": "/",
+        "text": "Cotton Country"
+      }
+    ],
+    "related": [
+      "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
+      "disenador-a-sus-disenos",
+      "mascarillas-y-covid-19"
+    ],
     "image": {
       "src": "/blog/por-que-comprar-uniformes-de-trabajo-para-mis-empleados.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Persona con polo verde y gorra sosteniendo un envase de papel"
-    },
-    "internalLinks": [
-      {
-        "href": "/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
-        "text": "construcción de su imagen de marca"
-      },
-      {
-        "href": "/disenador-a-sus-disenos",
-        "text": "diseño del uniforme"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
-      "disenador-a-sus-disenos",
-      "mascarillas-y-covid-19"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 9,
-    "title": "Uniformes de chef: qué tela elegir",
+    "title": "Uniformes de Chef, que tela elegir?",
     "slug": "uniformes-de-chef-que-tela-elegir",
     "productionURL": "https://cottoncountry.com.pe/uniformes-de-chef-que-tela-elegir",
     "publishedAt": "2021-01-23",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Tela, confección y diseño de prendas de cocina",
-    "exclusiveContribution": "Tela, confección y diseño de prendas de cocina",
-    "seoTitle": "Telas para uniformes de chef: qué conviene revisar",
-    "metaDescription": "Materiales, comodidad, diseño y mantenimiento de uniformes de cocina. La composición de una tela debe confirmarse para cada producto.",
-    "canonical": "https://cottoncountry.com.pe/uniformes-de-chef-que-tela-elegir",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Uniformes de Chef, que tela elegir?",
+    "metaDescription": "Los uniformes de chef, o los uniformes de cocina en general, no solo se deben llevar por un fin estético o para representar la imagen de la marca o restaurante,…",
+    "canonical": "/uniformes-de-chef-que-tela-elegir",
     "headings": [
       {
         "level": 2,
@@ -467,13 +338,7 @@
         "text": "Tipos de tela para uniformes de chef"
       }
     ],
-    "image": {
-      "src": "/blog/uniformes-de-chef-que-tela-elegir.jpg",
-      "width": 1024,
-      "height": 585,
-      "alt": "Persona con chaqueta blanca y gorro de cocina"
-    },
-    "internalLinks": [
+    "links": [
       {
         "href": "/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
         "text": "tela para los uniformes de chef"
@@ -483,15 +348,17 @@
         "text": "poliéster y algodón"
       }
     ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
+    "related": [
       "materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
       "el-algodon-se-caso-con-el-poliester-en-oxford",
       "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/uniformes-de-chef-que-tela-elegir.jpg",
+      "width": 1024,
+      "height": 585,
+      "alt": "Persona con chaqueta blanca y gorro de cocina"
+    }
   },
   {
     "id": 10,
@@ -499,165 +366,140 @@
     "slug": "que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
     "productionURL": "https://cottoncountry.com.pe/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
     "publishedAt": "2021-01-23",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Evaluación de riesgos y diferencia entre uniforme y EPP",
-    "exclusiveContribution": "Evaluación de riesgos y diferencia entre uniforme y EPP",
-    "seoTitle": "Uniformes industriales: riesgos, requisitos y evidencias",
-    "metaDescription": "Distingue ropa de trabajo y protección especializada. La selección de un uniforme industrial debe partir de las tareas y sus requisitos.",
-    "canonical": "https://cottoncountry.com.pe/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "¿Qué características deben tener los uniformes de seguridad industrial?",
+    "metaDescription": "Los uniformes de seguridad industrial protegen a este grupo de trabajadores de los riesgos a los que se exponen durante el desempeño de sus funciones. Es por…",
+    "canonical": "/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
     "headings": [
       {
         "level": 2,
-        "text": "Definir el riesgo antes que la tela"
+        "text": "Debe brindar protección al cuerpo del empleado"
       },
       {
         "level": 2,
-        "text": "Visibilidad y condiciones ambientales"
+        "text": "Debe ayudar a la visibilidad del trabajador"
       },
       {
         "level": 2,
-        "text": "Documentación y verificación"
+        "text": "Deben usarse telas inteligentes"
       }
+    ],
+    "links": [
+      {
+        "href": "/perumin-2023",
+        "text": "trabajadores"
+      },
+      {
+        "href": "/5-tipos-de-tejidos-inteligentes",
+        "text": "textiles inteligentes"
+      }
+    ],
+    "related": [
+      "perumin-2023",
+      "5-tipos-de-tejidos-inteligentes",
+      "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren"
     ],
     "image": {
       "src": "/blog/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Persona con casco y chaleco naranja en un entorno industrial"
-    },
-    "internalLinks": [
-      {
-        "href": "/5-tipos-de-tejidos-inteligentes",
-        "text": "prestaciones"
-      },
-      {
-        "href": "/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
-        "text": "proveedor"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "5-tipos-de-tejidos-inteligentes",
-      "es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
-      "materiales-textiles-inteligentes-segun-el-tipo-de-uniformes"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 11,
-    "title": "El guardapolvo: usos, telas y aplicaciones",
+    "title": "El uniforme de farmacia",
     "slug": "el-uniforme-de-farmacia",
     "productionURL": "https://cottoncountry.com.pe/el-uniforme-de-farmacia",
     "publishedAt": "2021-01-23",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Usos y especificaciones del guardapolvo bajo pedido",
-    "exclusiveContribution": "Usos y especificaciones del guardapolvo bajo pedido",
-    "seoTitle": "El guardapolvo: usos, telas y aplicaciones",
-    "metaDescription": "Usos del guardapolvo en empresas, alternativas de telas y especificaciones que Cotton Country puede desarrollar bajo pedido.",
-    "canonical": "https://cottoncountry.com.pe/el-uniforme-de-farmacia",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "El uniforme de farmacia: características y telas",
+    "metaDescription": "Cuando se acude a una farmacia, estamos acostumbrados a que nos reciba un profesional uniformado con su clásica bata blanca. No obstante, ¿es la bata blanca…",
+    "canonical": "/el-uniforme-de-farmacia",
     "headings": [
       {
         "level": 2,
-        "text": "Usos y aplicaciones"
+        "text": "Características del uniforme de farmacia"
       },
       {
         "level": 2,
-        "text": "Telas y composiciones"
-      },
-      {
-        "level": 2,
-        "text": "Guardapolvos fabricados por Cotton Country"
+        "text": "Beneficios de comprar uniformes de farmacia"
       }
+    ],
+    "links": [
+      {
+        "href": "/que-talla-eres-en-peru",
+        "text": "talla de los empleados"
+      }
+    ],
+    "related": [
+      "que-talla-eres-en-peru",
+      "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
+      "mascarillas-y-covid-19"
     ],
     "image": {
       "src": "/prendas/guardapolvo-cotton-country.webp",
       "width": 1024,
       "height": 1536,
       "alt": "Guardapolvo blanco de Cotton Country, modelo de referencia para fabricación bajo pedido"
-    },
-    "internalLinks": [
-      {
-        "href": "/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
-        "text": "protección especializada"
-      },
-      {
-        "href": "/el-algodon-se-caso-con-el-poliester-en-oxford",
-        "text": "poliéster y algodón"
-      },
-      {
-        "href": "/uniformes?categoria=guardapolvos#guardapolvos-01",
-        "text": "uno de nuestros modelos de guardapolvo"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
-      "el-algodon-se-caso-con-el-poliester-en-oxford",
-      "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 12,
-    "title": "Por qué utilizar mascarillas reutilizables lavables",
+    "title": "Porque utilizar mascarillas reutilizables lavables",
     "slug": "por-que-usar-mascarillas-reutilizables-lavables",
     "productionURL": "https://cottoncountry.com.pe/por-que-usar-mascarillas-reutilizables-lavables",
     "publishedAt": "2021-01-23",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Reutilización, costo de uso y residuos en el debate de 2021",
-    "exclusiveContribution": "Reutilización, costo de uso y residuos en el debate de 2021",
-    "seoTitle": "Mascarillas reutilizables: la discusión de 2021",
-    "metaDescription": "Archivo sobre reutilización, residuos y costo de uso de mascarillas. Lavar una prenda no acredita su nivel de protección sanitaria.",
-    "canonical": "https://cottoncountry.com.pe/por-que-usar-mascarillas-reutilizables-lavables",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Por qué usar mascarillas reutilizables lavables",
+    "metaDescription": "A causa de la pandemia ocasionada por el coronavirus, en todo el mundo, ya no podemos salir de casa sin el uso de nuestra mascarilla cubre bocas. Al inicio de la…",
+    "canonical": "/por-que-usar-mascarillas-reutilizables-lavables",
     "headings": [
       {
         "level": 2,
-        "text": "Reutilizar no significa proteger igual"
+        "text": "No escasearán las mascarillas quirúrgicas"
       },
       {
         "level": 2,
-        "text": "Residuos y ciclo de vida"
+        "text": "Usar mascarillas reutilizables lavables ayuda al medioambiente"
       },
       {
         "level": 2,
-        "text": "Evaluar el costo de uso"
+        "text": "Ahorrarás dinero"
       }
+    ],
+    "links": [
+      {
+        "href": "/mascarillas-y-covid-19",
+        "text": "mascarillas reutilizables"
+      },
+      {
+        "href": "/como-cuidar-tu-mascarilla-de-tela-certificada",
+        "text": "lavar"
+      },
+      {
+        "href": "/",
+        "text": "Cotton"
+      },
+      {
+        "href": "/",
+        "text": " Country"
+      }
+    ],
+    "related": [
+      "mascarillas-y-covid-19",
+      "como-cuidar-tu-mascarilla-de-tela-certificada",
+      "mascarillas-y-covid-19-segunda-ola"
     ],
     "image": {
       "src": "/blog/por-que-usar-mascarillas-reutilizables-lavables.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Persona con mascarilla blanca y prenda amarilla frente a un fondo azul"
-    },
-    "internalLinks": [
-      {
-        "href": "/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
-        "text": "resultados de ensayo"
-      },
-      {
-        "href": "/como-cuidar-tu-mascarilla-de-tela-certificada",
-        "text": "instrucciones del fabricante"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
-      "como-cuidar-tu-mascarilla-de-tela-certificada",
-      "mascarillas-y-covid-19"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 13,
@@ -665,53 +507,54 @@
     "slug": "cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
     "productionURL": "https://cottoncountry.com.pe/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
     "publishedAt": "2021-01-23",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Parámetros textiles recogidos en el archivo técnico de 2021",
-    "exclusiveContribution": "Parámetros textiles recogidos en el archivo técnico de 2021",
-    "seoTitle": "Mascarillas de tela: especificaciones históricas de 2021",
-    "metaDescription": "Modelos, pesos, encogimiento y etiquetado recogidos en una publicación de 2021. Su aplicación exige revisar la fuente y su vigencia.",
-    "canonical": "https://cottoncountry.com.pe/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Características de las mascarillas de tela",
+    "metaDescription": "Debido a la escasez de mascarillas quirúrgicas y a la falta de conocimiento, de la población, para la correcta eliminación de este tipo de residuos, el MINSA…",
+    "canonical": "/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
     "headings": [
       {
         "level": 2,
-        "text": "Modelos descritos en la publicación original"
+        "text": "Los modelos aprobados por el MINSA"
+      },
+      {
+        "level": 3,
+        "text": "Mascarilla de dos piezas o barbijo"
+      },
+      {
+        "level": 3,
+        "text": "Mascarilla de tela con pliegues"
       },
       {
         "level": 2,
-        "text": "Las especificaciones textiles históricas"
+        "text": "Materiales con los que deben fabricarse"
       },
       {
         "level": 2,
-        "text": "Etiquetado y entrega"
+        "text": "Etiquetado y embolsado de mascarillas de tela"
       }
+    ],
+    "links": [
+      {
+        "href": "/ntp-aplicada-en-mascarillas-reutilizables",
+        "text": "especificaciones técnicas"
+      },
+      {
+        "href": "/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+        "text": "mascarillas de tela"
+      }
+    ],
+    "related": [
+      "ntp-aplicada-en-mascarillas-reutilizables",
+      "venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+      "mascarillas-y-covid-19-segunda-ola"
     ],
     "image": {
       "src": "/blog/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Mujer con mascarilla de tela en un espacio de trabajo"
-    },
-    "internalLinks": [
-      {
-        "href": "/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
-        "text": "evidencia de desempeño"
-      },
-      {
-        "href": "/ntp-aplicada-en-mascarillas-reutilizables",
-        "text": "evaluación normativa"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
-      "ntp-aplicada-en-mascarillas-reutilizables",
-      "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 14,
@@ -719,53 +562,42 @@
     "slug": "venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
     "productionURL": "https://cottoncountry.com.pe/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
     "publishedAt": "2021-01-23",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Verificación documental en lugar de pruebas caseras",
-    "exclusiveContribution": "Verificación documental en lugar de pruebas caseras",
-    "seoTitle": "Evaluar mascarillas: documentación y límites de los trucos",
-    "metaDescription": "Revisión del artículo de 2021 sobre mascarillas en Lima. Los trucos de vela o spray no sustituyen ensayos ni documentación del producto.",
-    "canonical": "https://cottoncountry.com.pe/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Mascarillas en Lima: cómo evaluar sus características",
+    "metaDescription": "La venta de mascarillas en Lima se han vuelto a disparar debido a la segunda ola de contagios de coronavirus; y ahora no solo podemos encontrar mascarillas KN95…",
+    "canonical": "/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
     "headings": [
       {
         "level": 2,
-        "text": "Documentación antes que trucos caseros"
+        "text": "La mascarilla debe cumplir con las características especificaciones técnicas dadas por el MINSA"
       },
       {
         "level": 2,
-        "text": "Qué información solicitar"
-      },
-      {
-        "level": 2,
-        "text": "Un artículo de su época"
+        "text": "Pruebe estos trucos para saber si la mascarilla le protege"
       }
+    ],
+    "links": [
+      {
+        "href": "/mascarillas-y-covid-19",
+        "text": "mascarillas de tela reutilizables"
+      },
+      {
+        "href": "/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+        "text": "especificaciones técnicas"
+      }
+    ],
+    "related": [
+      "mascarillas-y-covid-19",
+      "cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+      "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren"
     ],
     "image": {
       "src": "/blog/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Mascarillas y materiales de confección junto a una cinta métrica"
-    },
-    "internalLinks": [
-      {
-        "href": "/mascarillas-y-covid-19",
-        "text": "recomendaciones de compra"
-      },
-      {
-        "href": "/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
-        "text": "referencia normativa"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "mascarillas-y-covid-19",
-      "cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
-      "por-que-usar-mascarillas-reutilizables-lavables"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 15,
@@ -773,53 +605,50 @@
     "slug": "escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo",
     "productionURL": "https://cottoncountry.com.pe/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo",
     "publishedAt": "2021-01-23",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Diferencias de función entre pantalla facial y mascarilla",
-    "exclusiveContribution": "Diferencias de función entre pantalla facial y mascarilla",
-    "seoTitle": "Pantallas faciales y mascarillas: contexto de 2021",
-    "metaDescription": "Una revisión histórica de sus diferentes funciones. Las obligaciones y recomendaciones de 2021 no se presentan como indicaciones actuales.",
-    "canonical": "https://cottoncountry.com.pe/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Escudos faciales o mascarillas: diferencias de uso",
+    "metaDescription": "La pandemia ocasionada por el coronavirus nos ha hecho vivir una “nueva normalidad”, una en la que no podemos salir de casa sin llevar puesta nuestra mascarilla…",
+    "canonical": "/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo",
     "headings": [
       {
         "level": 2,
-        "text": "Son elementos diferentes"
+        "text": "Escudos faciales sin mascarillas en entornos de bajo riesgo"
       },
       {
         "level": 2,
-        "text": "Uso y manipulación"
+        "text": "Las mascarillas de tela VS los escudos faciales"
       },
       {
         "level": 2,
-        "text": "Alcance de esta revisión histórica"
+        "text": "Escudos faciales más mascarillas para mejorar la protección"
       }
+    ],
+    "links": [
+      {
+        "href": "/como-cuidar-tu-mascarilla-de-tela-certificada",
+        "text": "procedimiento"
+      },
+      {
+        "href": "https://apps.who.int/iris/bitstream/handle/10665/331810/WHO-2019-nCoV-IPC_PPE_use-2020.3-spa.pdf",
+        "text": "OMS"
+      },
+      {
+        "href": "/mascarillas-y-covid-19",
+        "text": "mascarillas de tela"
+      }
+    ],
+    "related": [
+      "como-cuidar-tu-mascarilla-de-tela-certificada",
+      "mascarillas-y-covid-19",
+      "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren"
     ],
     "image": {
       "src": "/blog/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Personas en una mesa, una de ellas con protector facial"
-    },
-    "internalLinks": [
-      {
-        "href": "/mascarillas-y-covid-19",
-        "text": "comparación general"
-      },
-      {
-        "href": "/como-cuidar-tu-mascarilla-de-tela-certificada",
-        "text": "mantenimiento"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "mascarillas-y-covid-19",
-      "como-cuidar-tu-mascarilla-de-tela-certificada",
-      "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 16,
@@ -827,53 +656,46 @@
     "slug": "como-cuidar-tu-mascarilla-de-tela-certificada",
     "productionURL": "https://cottoncountry.com.pe/como-cuidar-tu-mascarilla-de-tela-certificada",
     "publishedAt": "2021-01-23",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Cuidados específicos del producto; sin receta universal",
-    "exclusiveContribution": "Cuidados específicos del producto; sin receta universal",
-    "seoTitle": "Cuidado de mascarillas textiles: archivo de 2021",
-    "metaDescription": "Por qué la limpieza y conservación de una mascarilla reutilizable deben seguir las instrucciones del producto, sin reglas universales.",
-    "canonical": "https://cottoncountry.com.pe/como-cuidar-tu-mascarilla-de-tela-certificada",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Cómo cuidar las mascarillas de tela certificada",
+    "metaDescription": "Con el tiempo, nos hemos dado cuenta de que para protegernos y no dañar el entorno en el que vivimos, debemos dejar el uso de mascarillas desechables solo a…",
+    "canonical": "/como-cuidar-tu-mascarilla-de-tela-certificada",
     "headings": [
       {
         "level": 2,
-        "text": "Revisar las instrucciones del producto"
+        "text": "Tenga en cuenta el tiempo de vida de su mascarilla"
       },
       {
         "level": 2,
-        "text": "No confundir cuidado con certificación"
+        "text": "Lave su mascarilla de tela certificada tras usarlas"
       },
       {
         "level": 2,
-        "text": "Conservación y reposición"
+        "text": "Guarde su mascarilla en un lugar libre de gérmenes"
       }
+    ],
+    "links": [
+      {
+        "href": "/por-que-usar-mascarillas-reutilizables-lavables",
+        "text": "mascarilla de tela"
+      },
+      {
+        "href": "/ntp-aplicada-en-mascarillas-reutilizables",
+        "text": "requisitos"
+      }
+    ],
+    "related": [
+      "por-que-usar-mascarillas-reutilizables-lavables",
+      "ntp-aplicada-en-mascarillas-reutilizables",
+      "escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo"
     ],
     "image": {
       "src": "/blog/como-cuidar-tu-mascarilla-de-tela-certificada.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Manos sujetando una mascarilla de tela oscura"
-    },
-    "internalLinks": [
-      {
-        "href": "/por-que-usar-mascarillas-reutilizables-lavables",
-        "text": "mascarillas textiles reutilizables"
-      },
-      {
-        "href": "/ntp-aplicada-en-mascarillas-reutilizables",
-        "text": "certificación"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "por-que-usar-mascarillas-reutilizables-lavables",
-      "ntp-aplicada-en-mascarillas-reutilizables",
-      "escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 17,
@@ -881,31 +703,21 @@
     "slug": "mascarillas-y-covid-19-segunda-ola",
     "productionURL": "https://cottoncountry.com.pe/mascarillas-y-covid-19-segunda-ola",
     "publishedAt": "2021-02-06",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Abastecimiento durante la segunda ola de 2021",
-    "exclusiveContribution": "Abastecimiento durante la segunda ola de 2021",
-    "seoTitle": "Segunda ola y mascarillas: abastecimiento en 2021",
-    "metaDescription": "La experiencia de abastecimiento textil durante la segunda ola de 2021, con sus preocupaciones sobre normas, empaques y producción.",
-    "canonical": "https://cottoncountry.com.pe/mascarillas-y-covid-19-segunda-ola",
-    "headings": [
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Mascarillas y COVID-19: la segunda ola",
+    "metaDescription": "La llegada de la segunda ola ha generado problemas en los mercados, el abastecimiento de muchas industrias se ha encarecido y la industria textil-confecciones no…",
+    "canonical": "/mascarillas-y-covid-19-segunda-ola",
+    "headings": [],
+    "links": [
       {
-        "level": 2,
-        "text": "Oferta y normas en la segunda ola"
+        "href": "/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+        "text": "mascarillas"
       },
       {
-        "level": 2,
-        "text": "El abastecimiento de aquella etapa"
-      }
-    ],
-    "image": {
-      "src": "/blog/mascarillas-y-covid-19-segunda-ola.jpg",
-      "width": 1024,
-      "height": 585,
-      "alt": "Persona ajustándose una mascarilla de tela oscura"
-    },
-    "internalLinks": [
+        "href": "/por-que-usar-mascarillas-reutilizables-lavables",
+        "text": "mascarilla reutilizable"
+      },
       {
         "href": "/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
         "text": "empaque"
@@ -915,15 +727,17 @@
         "text": "procesos"
       }
     ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
-      "procesos-de-confeccion-seguros",
-      "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren"
+    "related": [
+      "cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+      "por-que-usar-mascarillas-reutilizables-lavables",
+      "empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/mascarillas-y-covid-19-segunda-ola.jpg",
+      "width": 1024,
+      "height": 585,
+      "alt": "Persona ajustándose una mascarilla de tela oscura"
+    }
   },
   {
     "id": 18,
@@ -931,53 +745,58 @@
     "slug": "empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
     "productionURL": "https://cottoncountry.com.pe/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
     "publishedAt": "2021-02-25",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Manipulación del empaque y distinción de declaraciones ambientales",
-    "exclusiveContribution": "Manipulación del empaque y distinción de declaraciones ambientales",
-    "seoTitle": "Empaque textil: higiene, materiales y fin de vida",
-    "metaDescription": "Revisión histórica de empaques para prendas: distingue manipulación, propiedades anunciadas, reciclabilidad y biodegradación.",
-    "canonical": "https://cottoncountry.com.pe/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Empaques sostenibles y transporte de prendas",
+    "metaDescription": "En medio de la crisis por el coronavirus, el empaquetado de los productos ha cobrado un papel relevante. Después de todo es esencial la asepsia del empaquetado…",
+    "canonical": "/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
     "headings": [
       {
         "level": 2,
-        "text": "Manipulación y entrega"
+        "text": "Empaques antihongos y antibacterial D2P"
       },
       {
         "level": 2,
-        "text": "Lo que anunciaban D2P y d2w"
-      },
-      {
-        "level": 2,
-        "text": "Revisar el fin de vida"
+        "text": "Empaques biodegradables d2w"
       }
+    ],
+    "links": [
+      {
+        "href": "/por-que-usar-mascarillas-reutilizables-lavables",
+        "text": "mascarillas reutilizables"
+      },
+      {
+        "href": "/delivery-aliado-de-la-industria-textil-confecciones",
+        "text": "distribución"
+      },
+      {
+        "href": "https://degradable.com.pe/tecnologias/d2p-anti-hongos-anti-bacterial/",
+        "text": "Perú Res"
+      },
+      {
+        "href": "https://www.pt-mexico.com/noticias/post/la-industria-del-packaging-en-tiempos-de-covid-19",
+        "text": "Plastics Techonology México"
+      },
+      {
+        "href": "https://issuu.com/mexicoindustrynews/docs/suplemento_empaque_y_envasado",
+        "text": "La industria del empaque se reinventa, "
+      },
+      {
+        "href": "https://issuu.com/mexicoindustrynews/docs/suplemento_empaque_y_envasado",
+        "text": "2020"
+      }
+    ],
+    "related": [
+      "por-que-usar-mascarillas-reutilizables-lavables",
+      "delivery-aliado-de-la-industria-textil-confecciones",
+      "mascarillas-y-covid-19-segunda-ola"
     ],
     "image": {
       "src": "/blog/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Bolsa de papel naranja sobre un fondo azul"
-    },
-    "internalLinks": [
-      {
-        "href": "/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
-        "text": "sostenibilidad"
-      },
-      {
-        "href": "/delivery-aliado-de-la-industria-textil-confecciones",
-        "text": "distribución"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
-      "delivery-aliado-de-la-industria-textil-confecciones",
-      "mascarillas-y-covid-19-segunda-ola"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 19,
@@ -985,14 +804,11 @@
     "slug": "ntp-aplicada-en-mascarillas-reutilizables",
     "productionURL": "https://cottoncountry.com.pe/ntp-aplicada-en-mascarillas-reutilizables",
     "publishedAt": "2021-02-25",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Identificar fuente normativa, alcance y evidencia de cumplimiento",
-    "exclusiveContribution": "Identificar fuente normativa, alcance y evidencia de cumplimiento",
-    "seoTitle": "Normas para mascarillas comunitarias: archivo de 2021",
-    "metaDescription": "Referencias técnicas históricas de diseño, tejido y etiquetado. Distingue una norma citada de una certificación o una obligación vigente.",
-    "canonical": "https://cottoncountry.com.pe/ntp-aplicada-en-mascarillas-reutilizables",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "NTP aplicada en mascarillas reutilizables",
+    "metaDescription": "En medio de la pandemia ocasionada por el coronavirus, en Perú, el INACAL, entidad que promueve y desarrolla la calidad en las industrias productivas en general,…",
+    "canonical": "/ntp-aplicada-en-mascarillas-reutilizables",
     "headings": [
       {
         "level": 2,
@@ -1019,31 +835,27 @@
         "text": "Revisa las siguientes características para confirmar que tienes una mascarilla según las normas técnicas"
       }
     ],
+    "links": [
+      {
+        "href": "/procesos-de-confeccion-seguros",
+        "text": "fabricación"
+      },
+      {
+        "href": "/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+        "text": "especificaciones técnicas"
+      }
+    ],
+    "related": [
+      "procesos-de-confeccion-seguros",
+      "cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+      "como-cuidar-tu-mascarilla-de-tela-certificada"
+    ],
     "image": {
       "src": "/blog/ntp-aplicada-en-mascarillas-reutilizables.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Persona con mascarilla amarilla"
-    },
-    "internalLinks": [
-      {
-        "href": "/procesos-de-confeccion-seguros",
-        "text": "fabricación de mascarillas"
-      },
-      {
-        "href": "/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
-        "text": "características de las mascarillas de tela"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "procesos-de-confeccion-seguros",
-      "cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
-      "como-cuidar-tu-mascarilla-de-tela-certificada"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 20,
@@ -1051,14 +863,11 @@
     "slug": "procesos-de-confeccion-seguros",
     "productionURL": "https://cottoncountry.com.pe/procesos-de-confeccion-seguros",
     "publishedAt": "2021-02-25",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Protocolos textiles en su contexto histórico de 2021",
-    "exclusiveContribution": "Protocolos textiles en su contexto histórico de 2021",
-    "seoTitle": "Protocolos de confección: el contexto sanitario de 2021",
-    "metaDescription": "Archivo de los protocolos textiles durante la pandemia. Las distancias y plazos citados corresponden a las disposiciones de aquella etapa.",
-    "canonical": "https://cottoncountry.com.pe/procesos-de-confeccion-seguros",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Procesos de confección seguros",
+    "metaDescription": "La segunda ola ha llegado y ahora, más que nunca, no debemos bajar la guardia, sino seguir manteniendo los protocolos de bioseguridad para prevenir más…",
+    "canonical": "/procesos-de-confeccion-seguros",
     "headings": [
       {
         "level": 2,
@@ -1077,13 +886,11 @@
         "text": "Medidas en caso de presentarse un caso de persona con COVID-19"
       }
     ],
-    "image": {
-      "src": "/blog/procesos-de-confeccion-seguros.jpg",
-      "width": 1024,
-      "height": 585,
-      "alt": "Persona con mascarilla y guantes junto a una máquina de coser"
-    },
-    "internalLinks": [
+    "links": [
+      {
+        "href": "https://cdn.www.gob.pe/uploads/document/file/687501/Produce_-_Protocolo_Textil.pdf",
+        "text": "siguiente enlace"
+      },
       {
         "href": "/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
         "text": "productos embalados"
@@ -1093,20 +900,17 @@
         "text": "distribución de las prendas"
       }
     ],
-    "externalLinks": [
-      {
-        "href": "https://cdn.www.gob.pe/uploads/document/file/687501/Produce_-_Protocolo_Textil.pdf",
-        "text": "documento publicado por PRODUCE"
-      }
-    ],
-    "relatedArticleSlugs": [
+    "related": [
       "empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
       "delivery-aliado-de-la-industria-textil-confecciones",
       "mascarillas-y-covid-19-segunda-ola"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/procesos-de-confeccion-seguros.jpg",
+      "width": 1024,
+      "height": 585,
+      "alt": "Persona con mascarilla y guantes junto a una máquina de coser"
+    }
   },
   {
     "id": 21,
@@ -1114,14 +918,11 @@
     "slug": "delivery-aliado-de-la-industria-textil-confecciones",
     "productionURL": "https://cottoncountry.com.pe/delivery-aliado-de-la-industria-textil-confecciones",
     "publishedAt": "2021-02-25",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Última milla y distribución durante las restricciones sanitarias",
-    "exclusiveContribution": "Última milla y distribución durante las restricciones sanitarias",
-    "seoTitle": "Delivery textil: distribución durante la pandemia",
-    "metaDescription": "Cómo el delivery apoyó a la industria textil en 2021 y qué desafíos planteó para cobertura, coordinación y entrega de productos.",
-    "canonical": "https://cottoncountry.com.pe/delivery-aliado-de-la-industria-textil-confecciones",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Delivery, aliado de la industria textil confecciones",
+    "metaDescription": "La pandemia del covid-19 ha hecho que muchos sectores tengan que reinventarse total o parcialmente. Por ejemplo, en la industria textil confecciones muchos…",
+    "canonical": "/delivery-aliado-de-la-industria-textil-confecciones",
     "headings": [
       {
         "level": 2,
@@ -1132,31 +933,27 @@
         "text": "Los desafíos del delivery para el sector textil"
       }
     ],
+    "links": [
+      {
+        "href": "/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+        "text": "productos"
+      },
+      {
+        "href": "/logistica-y-abastecimiento-textil-2022",
+        "text": "costos de envío"
+      }
+    ],
+    "related": [
+      "empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+      "logistica-y-abastecimiento-textil-2022",
+      "procesos-de-confeccion-seguros"
+    ],
     "image": {
       "src": "/blog/delivery-aliado-de-la-industria-textil-confecciones.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Persona con mascarilla y guantes sosteniendo una caja de cartón"
-    },
-    "internalLinks": [
-      {
-        "href": "/logistica-y-abastecimiento-textil-2022",
-        "text": "costos de envío"
-      },
-      {
-        "href": "/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
-        "text": "recepción"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "logistica-y-abastecimiento-textil-2022",
-      "empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
-      "procesos-de-confeccion-seguros"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 22,
@@ -1164,54 +961,50 @@
     "slug": "que-talla-eres-en-peru",
     "productionURL": "https://cottoncountry.com.pe/que-talla-eres-en-peru",
     "publishedAt": "2021-02-25",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: La elección del uniforme desde la perspectiva del usuario",
-    "exclusiveContribution": "La elección del uniforme desde la perspectiva del usuario",
-    "seoTitle": "¿Qué talla eres? Cómo elegir tu uniforme",
-    "metaDescription": "La talla de una marca no define la de otra. Revisa modelo, tabla de medidas y muestra para elegir y registrar la prenda que necesitas.",
-    "canonical": "https://cottoncountry.com.pe/que-talla-eres-en-peru",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "¿Qué talla eres? Medidas y tallas para uniformes",
+    "metaDescription": "Hasta hace algunos años, cuando se mandaba hacer uniformes de colegio se quería vestir a todo el personal de una empresa, la costurera o el sastre venían a las…",
+    "canonical": "/que-talla-eres-en-peru",
     "headings": [
       {
         "level": 2,
-        "text": "Antes de elegir una talla"
+        "text": "Entonces, ¿a qué se debe todo lo anterior?"
       },
       {
         "level": 2,
-        "text": "Durante la prueba"
-      },
-      {
-        "level": 2,
-        "text": "Al registrar la elección"
+        "text": "¿Cómo saber qué talla soy para comprarme el uniforme ideal?"
       }
+    ],
+    "links": [
+      {
+        "href": "/uniformes",
+        "text": "uniformes"
+      },
+      {
+        "href": "https://sizeset.com/",
+        "text": "SizeSet"
+      },
+      {
+        "href": "/guia-de-tallas-online",
+        "text": "tallar de manera remota"
+      },
+      {
+        "href": "/la-talla-peruana",
+        "text": "medidas peruanas"
+      }
+    ],
+    "related": [
+      "guia-de-tallas-online",
+      "la-talla-peruana",
+      "el-uniforme-de-farmacia"
     ],
     "image": {
       "src": "/blog/que-talla-eres-en-peru.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Cinta métrica blanca dispuesta en curvas"
-    },
-    "internalLinks": [
-      {
-        "href": "/la-talla-peruana",
-        "text": "dimensiones"
-      },
-      {
-        "href": "/guia-de-tallas-online",
-        "text": "tallaje remoto"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "la-talla-peruana",
-      "guia-de-tallas-online",
-      "las-tallas-completas-segun-una-ia"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente",
-    "editorialVoiceCorrection": "Narración pública revisada contra el Word, sin comentarios del proceso de edición."
+    }
   },
   {
     "id": 23,
@@ -1219,54 +1012,50 @@
     "slug": "el-problema-de-las-tallas",
     "productionURL": "https://cottoncountry.com.pe/el-problema-de-las-tallas",
     "publishedAt": "2021-08-10",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Testimonio empresarial: productividad, 30 % de reclamos y arreglos",
-    "exclusiveContribution": "Testimonio empresarial: productividad, 30 % de reclamos y arreglos",
-    "seoTitle": "El problema de las tallas: nuestra experiencia empresarial",
-    "metaDescription": "El aprendizaje de Cotton Country con la confección a medida: productividad, aumento histórico del 30 % en reclamos y costo de los arreglos.",
-    "canonical": "https://cottoncountry.com.pe/el-problema-de-las-tallas",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "El problema de las tallas en los uniformes empresariales",
+    "metaDescription": "Si algunas vez, al ir a comprar ropa te preguntaron ¿qué talla eres?, seguramente tu respuesta fue: “Soy talla S, M, etc.”, pero ¿esta es realmente tu talla? Lo…",
+    "canonical": "/el-problema-de-las-tallas",
     "headings": [
       {
         "level": 2,
-        "text": "Productividad: organizar una producción empresarial"
+        "text": "Nuestra experiencia"
       },
       {
         "level": 2,
-        "text": "Calidad: el costo de los arreglos"
+        "text": "Productividad"
       },
       {
         "level": 2,
-        "text": "Tendencias y tecnología en 2021"
+        "text": "Calidad"
+      },
+      {
+        "level": 2,
+        "text": "Tendencias"
       }
+    ],
+    "links": [
+      {
+        "href": "/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+        "text": "uniformes por talla"
+      },
+      {
+        "href": "/el-futuro-de-la-industria-textil-y-de-confecciones",
+        "text": "transformación digital"
+      }
+    ],
+    "related": [
+      "uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+      "el-futuro-de-la-industria-textil-y-de-confecciones",
+      "que-talla-eres-en-peru"
     ],
     "image": {
       "src": "/blog/el-problema-de-las-tallas.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Toma de una medida sobre una prenda azul con cinta métrica"
-    },
-    "internalLinks": [
-      {
-        "href": "/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
-        "text": "confección a medida"
-      },
-      {
-        "href": "/el-futuro-de-la-industria-textil-y-de-confecciones",
-        "text": "evolución tecnológica"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
-      "el-futuro-de-la-industria-textil-y-de-confecciones",
-      "que-significa-tallas-completas-en-ropa"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente",
-    "editorialVoiceCorrection": "Narración pública revisada contra el Word, sin comentarios del proceso de edición."
+    }
   },
   {
     "id": 24,
@@ -1274,66 +1063,34 @@
     "slug": "ntp-para-la-designacion-de-tallas",
     "productionURL": "https://cottoncountry.com.pe/ntp-para-la-designacion-de-tallas",
     "publishedAt": "2021-08-10",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": null,
-    "state": "Versión aprobada preservada; enlaces contextuales",
-    "searchIntent": "Informativa: NTP-ISO 8559-2:2020 y designación de tallas",
-    "exclusiveContribution": "NTP-ISO 8559-2:2020 y designación de tallas",
-    "seoTitle": "NTP-ISO 8559-2:2020: designación de tallas en Perú",
-    "metaDescription": "Conoce qué establece la NTP-ISO 8559-2:2020, cómo se designan las tallas y por qué las medidas corporales no equivalen a las de una prenda.",
-    "canonical": "https://cottoncountry.com.pe/ntp-para-la-designacion-de-tallas",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "NTP para la designación de tallas",
+    "metaDescription": "En noviembre pasado el Instituto Nacional de la Calidad (INACAL) publicó otra norma técnica la NTP-ISO 8559-2 2020 la cual busca normalizar la adecuada…",
+    "canonical": "/ntp-para-la-designacion-de-tallas",
     "headings": [
       {
         "level": 2,
-        "text": "¿Qué establece la NTP-ISO 8559-2:2020?"
-      },
-      {
-        "level": 2,
-        "text": "La diferencia entre medidas corporales y medidas de una prenda"
-      },
-      {
-        "level": 2,
-        "text": "¿Cómo se expresan las tallas según la norma?"
-      },
-      {
-        "level": 2,
-        "text": "¿Qué significa esta norma para la industria de uniformes?"
-      },
-      {
-        "level": 2,
-        "text": "El efecto de la norma en el mercado peruano"
+        "text": "El efecto de la norma"
       }
+    ],
+    "links": [
+      {
+        "href": "/la-talla-peruana",
+        "text": "medidas corporales"
+      }
+    ],
+    "related": [
+      "la-talla-peruana",
+      "que-significa-tallas-completas-en-ropa",
+      "que-talla-eres-en-peru"
     ],
     "image": {
       "src": "/blog/ntp-para-la-designacion-de-tallas.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Persona con gafas y cinta métrica al cuello frente a prendas colgadas"
-    },
-    "internalLinks": [
-      {
-        "href": "/la-talla-peruana",
-        "text": "dimensiones corporales"
-      },
-      {
-        "href": "/que-significa-tallas-completas-en-ropa",
-        "text": "patronaje"
-      }
-    ],
-    "externalLinks": [
-      {
-        "href": "https://www.gob.pe/institucion/inacal/noticias/503898-inacal-aprueba-norma-tecnica-para-estandarizar-la-designacion-de-tallas-de-prendas-de-vestir",
-        "text": "Inacal aprueba norma técnica para estandarizar la designación de tallas de prendas de vestir"
-      }
-    ],
-    "relatedArticleSlugs": [
-      "la-talla-peruana",
-      "que-significa-tallas-completas-en-ropa",
-      "que-talla-eres-en-peru"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 25,
@@ -1341,86 +1098,33 @@
     "slug": "la-talla-peruana",
     "productionURL": "https://cottoncountry.com.pe/la-talla-peruana",
     "publishedAt": "2021-08-10",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": null,
-    "state": "Versión aprobada preservada; enlaces contextuales",
-    "searchIntent": "Informativa: Antropometría y diversidad corporal peruana",
-    "exclusiveContribution": "Antropometría y diversidad corporal peruana",
-    "seoTitle": "La talla peruana: medidas, estatura y tallas de ropa",
-    "metaDescription": "¿Existe una talla peruana? Analizamos la estatura promedio, la diversidad corporal y los desafíos para definir tallas de ropa y uniformes en Perú.",
-    "canonical": "https://cottoncountry.com.pe/la-talla-peruana",
-    "headings": [
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "La talla peruana: estatura y medidas para la confección",
+    "metaDescription": "¿Los peruanos somos altos o somos bajos? Pues eso depende de contra quién nos comparamos, pero como compararnos con otros no es lo ideal, entonces es preciso…",
+    "canonical": "/la-talla-peruana",
+    "headings": [],
+    "links": [
       {
-        "level": 2,
-        "text": "¿Cuánto miden los peruanos?"
+        "href": "/que-talla-eres-en-peru",
+        "text": "tallas"
       },
       {
-        "level": 2,
-        "text": "El problema no es solamente la estatura"
-      },
-      {
-        "level": 2,
-        "text": "La diversidad corporal del Perú y el desafío de las marcas"
-      },
-      {
-        "level": 2,
-        "text": "¿Qué ocurre con las personas que están fuera del promedio?"
-      },
-      {
-        "level": 2,
-        "text": "¿Cómo están abordando otros países el problema de las tallas?"
-      },
-      {
-        "level": 2,
-        "text": "¿Existe una norma para las tallas en el Perú?"
-      },
-      {
-        "level": 2,
-        "text": "El reto de la talla peruana en los uniformes empresariales"
-      },
-      {
-        "level": 2,
-        "text": "Entonces, ¿cuál es la talla peruana?"
-      },
-      {
-        "level": 3,
-        "text": "Referencias"
+        "href": "/ntp-para-la-designacion-de-tallas",
+        "text": "NTP-ISO 8559-2 2020"
       }
+    ],
+    "related": [
+      "que-talla-eres-en-peru",
+      "ntp-para-la-designacion-de-tallas",
+      "que-significa-tallas-completas-en-ropa"
     ],
     "image": {
       "src": "/blog/la-talla-peruana.jpg",
       "width": 1024,
       "height": 585,
       "alt": "Manos registrando medidas junto a una prenda verde"
-    },
-    "internalLinks": [
-      {
-        "href": "/que-talla-eres-en-peru",
-        "text": "talla M de una marca"
-      },
-      {
-        "href": "/ntp-para-la-designacion-de-tallas",
-        "text": "NTP-ISO 8559-2:2020"
-      }
-    ],
-    "externalLinks": [
-      {
-        "href": "https://www.argentina.gob.ar/normativa/nacional/ley-27521-333533/texto",
-        "text": "Ley 27.521"
-      },
-      {
-        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11397726/",
-        "text": "Estudio sobre indicadores antropométricos de adultos peruanos de 18 a 59 años"
-      }
-    ],
-    "relatedArticleSlugs": [
-      "que-talla-eres-en-peru",
-      "ntp-para-la-designacion-de-tallas",
-      "que-significa-tallas-completas-en-ropa"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 26,
@@ -1428,14 +1132,11 @@
     "slug": "medalla-de-oro-en-uniformes",
     "productionURL": "https://cottoncountry.com.pe/medalla-de-oro-en-uniformes",
     "publishedAt": "2021-08-10",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Identidad y tecnología en la crónica deportiva de 2021",
-    "exclusiveContribution": "Identidad y tecnología en la crónica deportiva de 2021",
-    "seoTitle": "Uniformes deportivos: identidad y diseño en 2021",
-    "metaDescription": "Crónica de 2021 sobre uniformes, identidad y tecnología en el deporte. Una mirada a la relación entre diseño y funcionalidad.",
-    "canonical": "https://cottoncountry.com.pe/medalla-de-oro-en-uniformes",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Medalla de oro en uniformes",
+    "metaDescription": "Hace algunos años pudimos apreciar en las olimpiadas de Río una tendencia a transmitir identidad; así como a potenciar la imagen de los deportistas a través de…",
+    "canonical": "/medalla-de-oro-en-uniformes",
     "headings": [
       {
         "level": 2,
@@ -1446,13 +1147,7 @@
         "text": "No todos ganan siempre"
       }
     ],
-    "image": {
-      "src": "/blog/medalla-de-oro-en-uniformes.jpg",
-      "width": 1024,
-      "height": 585,
-      "alt": "Medalla deportiva sostenida sobre un uniforme rojo"
-    },
-    "internalLinks": [
+    "links": [
       {
         "href": "/los-uniformes-un-problema-olimpico",
         "text": "uniformes del equipo de softball de México"
@@ -1462,15 +1157,17 @@
         "text": "identidad muy bien definida"
       }
     ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
+    "related": [
       "los-uniformes-un-problema-olimpico",
       "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
       "mascarillas-y-covid-19"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/medalla-de-oro-en-uniformes.jpg",
+      "width": 1024,
+      "height": 585,
+      "alt": "Medalla deportiva sostenida sobre un uniforme rojo"
+    }
   },
   {
     "id": 27,
@@ -1478,14 +1175,11 @@
     "slug": "los-uniformes-un-problema-olimpico",
     "productionURL": "https://cottoncountry.com.pe/los-uniformes-un-problema-olimpico",
     "publishedAt": "2021-08-10",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Funcionalidad y comodidad; reflexión deportiva histórica",
-    "exclusiveContribution": "Funcionalidad y comodidad; reflexión deportiva histórica",
-    "seoTitle": "Uniformes y comodidad: una reflexión deportiva de 2021",
-    "metaDescription": "Una reflexión histórica sobre funcionalidad, compras y decisiones deportivas, y lo que enseñan a quienes diseñan uniformes.",
-    "canonical": "https://cottoncountry.com.pe/los-uniformes-un-problema-olimpico",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Los uniformes: un problema olímpico",
+    "metaDescription": "Los uniformes cumplen una función, por ello deben ser funcionales en su diseño para que la estética no sea privilegiada sobre la comodidad, lo cual influye…",
+    "canonical": "/los-uniformes-un-problema-olimpico",
     "headings": [
       {
         "level": 2,
@@ -1500,31 +1194,27 @@
         "text": "Ganar ganar"
       }
     ],
-    "image": {
-      "src": "/blog/los-uniformes-un-problema-olimpico.jpg",
-      "width": 1024,
-      "height": 585,
-      "alt": "Dos personas con ropa deportiva roja y blanca en un recinto deportivo"
-    },
-    "internalLinks": [
+    "links": [
       {
         "href": "/medalla-de-oro-en-uniformes",
         "text": "nuestro post anterior"
       },
       {
         "href": "/de-que-depende-el-tiempo-de-entrega-de-uniformes",
-        "text": "procesos textiles y de confecciones"
+        "text": "tiempos"
       }
     ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
+    "related": [
       "medalla-de-oro-en-uniformes",
       "de-que-depende-el-tiempo-de-entrega-de-uniformes",
       "mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/los-uniformes-un-problema-olimpico.jpg",
+      "width": 1024,
+      "height": 585,
+      "alt": "Dos personas con ropa deportiva roja y blanca en un recinto deportivo"
+    }
   },
   {
     "id": 28,
@@ -1532,35 +1222,13 @@
     "slug": "disenador-a-sus-disenos",
     "productionURL": "https://cottoncountry.com.pe/disenador-a-sus-disenos",
     "publishedAt": "2022-02-20",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Diseño profesional y factibilidad de una ficha técnica",
-    "exclusiveContribution": "Diseño profesional y factibilidad de una ficha técnica",
-    "seoTitle": "Diseño de uniformes: de la idea a la ficha técnica",
-    "metaDescription": "La experiencia de Cotton Country con el diseño de uniformes y la importancia del conocimiento textil para materializar una propuesta.",
-    "canonical": "https://cottoncountry.com.pe/disenador-a-sus-disenos",
-    "headings": [
-      {
-        "level": 2,
-        "text": "La definición técnica"
-      },
-      {
-        "level": 2,
-        "text": "Diseño y especialización"
-      },
-      {
-        "level": 2,
-        "text": "El diseño como proceso"
-      }
-    ],
-    "image": {
-      "src": "/blog/disenador-a-sus-disenos.jpg",
-      "width": 400,
-      "height": 274,
-      "alt": "Persona dibujando un diseño de moda en una mesa de trabajo"
-    },
-    "internalLinks": [
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Diseñador a sus diseños",
+    "metaDescription": "Allá por el 2014, cuando iniciamos este proyecto, pudimos observar una tendencia entre las empresas; la cual consistía en salir de lo cotidiano al momento de…",
+    "canonical": "/disenador-a-sus-disenos",
+    "headings": [],
+    "links": [
       {
         "href": "/como-definir-un-proyecto-de-uniformes-corporativos",
         "text": "fichas técnicas"
@@ -1570,15 +1238,17 @@
         "text": "procesos textiles"
       }
     ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
+    "related": [
       "como-definir-un-proyecto-de-uniformes-corporativos",
       "es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
       "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/disenador-a-sus-disenos.jpg",
+      "width": 400,
+      "height": 274,
+      "alt": "Persona dibujando un diseño de moda en una mesa de trabajo"
+    }
   },
   {
     "id": 29,
@@ -1586,14 +1256,11 @@
     "slug": "3-consejos-para-compradores-de-textiles-b2b",
     "productionURL": "https://cottoncountry.com.pe/3-consejos-para-compradores-de-textiles-b2b",
     "publishedAt": "2022-02-23",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Gobernanza de compra: responsables, criterios y relación con proveedores",
-    "exclusiveContribution": "Gobernanza de compra: responsables, criterios y relación con proveedores",
-    "seoTitle": "Tres prácticas para compradores textiles B2B",
-    "metaDescription": "Define responsabilidades, criterios de evaluación y acuerdos con tu proveedor para organizar una compra textil empresarial.",
-    "canonical": "https://cottoncountry.com.pe/3-consejos-para-compradores-de-textiles-b2b",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "3 consejos para compradores textiles B2B",
+    "metaDescription": "El área de compras y el procurement son claves en toda empresa, puesto que gestionan el presupuesto de las adquisiciones y, los uniformes son, en muchos casos…",
+    "canonical": "/3-consejos-para-compradores-de-textiles-b2b",
     "headings": [
       {
         "level": 2,
@@ -1608,31 +1275,27 @@
         "text": "3. Integra a tu proveedor"
       }
     ],
+    "links": [
+      {
+        "href": "/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
+        "text": "proveedor"
+      },
+      {
+        "href": "/como-definir-un-proyecto-de-uniformes-corporativos",
+        "text": "requerimientos"
+      }
+    ],
+    "related": [
+      "es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
+      "como-definir-un-proyecto-de-uniformes-corporativos",
+      "estafas-textiles-no-seas-victima-de-la-falta-de-informacion"
+    ],
     "image": {
       "src": "/blog/3-consejos-para-compradores-de-textiles-b2b.jpg",
       "width": 400,
       "height": 267,
       "alt": "Manos midiendo tela sobre una mesa de corte"
-    },
-    "internalLinks": [
-      {
-        "href": "/como-definir-un-proyecto-de-uniformes-corporativos",
-        "text": "ficha de requerimientos"
-      },
-      {
-        "href": "/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
-        "text": "propiedad de un taller"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "como-definir-un-proyecto-de-uniformes-corporativos",
-      "es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
-      "estafas-textiles-no-seas-victima-de-la-falta-de-informacion"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 30,
@@ -1640,14 +1303,11 @@
     "slug": "el-futuro-de-la-industria-textil-y-de-confecciones",
     "productionURL": "https://cottoncountry.com.pe/el-futuro-de-la-industria-textil-y-de-confecciones",
     "publishedAt": "2022-02-23",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Perspectiva tecnológica e industrial publicada en 2022",
-    "exclusiveContribution": "Perspectiva tecnológica e industrial publicada en 2022",
-    "seoTitle": "El futuro textil visto desde 2022",
-    "metaDescription": "Una perspectiva histórica de Cotton Country sobre datos, tecnología, clima, transporte y trabajo en la industria textil y de confecciones.",
-    "canonical": "https://cottoncountry.com.pe/el-futuro-de-la-industria-textil-y-de-confecciones",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "El futuro de la industria textil y de confecciones",
+    "metaDescription": "A diferencia de lo que muchos creen, el futuro sí es previsible, y hoy en día lo es aún más, ya que todo, o mejor dicho casi todo dato, es registrado y…",
+    "canonical": "/el-futuro-de-la-industria-textil-y-de-confecciones",
     "headings": [
       {
         "level": 2,
@@ -1670,13 +1330,7 @@
         "text": "El trabajo"
       }
     ],
-    "image": {
-      "src": "/blog/el-futuro-de-la-industria-textil-y-de-confecciones.jpg",
-      "width": 400,
-      "height": 267,
-      "alt": "Una mano robótica frente a una mano humana"
-    },
-    "internalLinks": [
+    "links": [
       {
         "href": "/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
         "text": "innovación"
@@ -1686,15 +1340,17 @@
         "text": "cambio climático"
       }
     ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
+    "related": [
       "novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
       "el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
       "el-problema-de-las-tallas"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/el-futuro-de-la-industria-textil-y-de-confecciones.jpg",
+      "width": 400,
+      "height": 267,
+      "alt": "Una mano robótica frente a una mano humana"
+    }
   },
   {
     "id": 31,
@@ -1702,14 +1358,11 @@
     "slug": "logistica-y-abastecimiento-textil-2022",
     "productionURL": "https://cottoncountry.com.pe/logistica-y-abastecimiento-textil-2022",
     "publishedAt": "2022-02-23",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Escenario de insumos, importaciones y fletes de 2022",
-    "exclusiveContribution": "Escenario de insumos, importaciones y fletes de 2022",
-    "seoTitle": "Abastecimiento textil en 2022: el escenario de entonces",
-    "metaDescription": "Análisis histórico de insumos, fletes y disponibilidad en 2022. Las cifras y expectativas citadas no son cotizaciones actuales.",
-    "canonical": "https://cottoncountry.com.pe/logistica-y-abastecimiento-textil-2022",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Logística y Abastecimiento Textil 2022",
+    "metaDescription": "Si eres un comprador de uniformes, material textil publicitario o ropa de trabajo tienes que leer esto de cara a las dificultades en tus compras textiles en el…",
+    "canonical": "/logistica-y-abastecimiento-textil-2022",
     "headings": [
       {
         "level": 2,
@@ -1732,13 +1385,7 @@
         "text": "Innovación"
       }
     ],
-    "image": {
-      "src": "/blog/logistica-y-abastecimiento-textil-2022.png",
-      "width": 1024,
-      "height": 683,
-      "alt": "Contenedores de transporte apilados bajo el cielo azul"
-    },
-    "internalLinks": [
+    "links": [
       {
         "href": "/dia-mundial-del-algodon-2026",
         "text": "algodón"
@@ -1748,15 +1395,17 @@
         "text": "plazos de entrega"
       }
     ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
+    "related": [
       "dia-mundial-del-algodon-2026",
       "de-que-depende-el-tiempo-de-entrega-de-uniformes",
       "delivery-aliado-de-la-industria-textil-confecciones"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/logistica-y-abastecimiento-textil-2022.png",
+      "width": 1024,
+      "height": 683,
+      "alt": "Contenedores de transporte apilados bajo el cielo azul"
+    }
   },
   {
     "id": 32,
@@ -1764,14 +1413,11 @@
     "slug": "que-significa-tallas-completas-en-ropa",
     "productionURL": "https://cottoncountry.com.pe/que-significa-tallas-completas-en-ropa",
     "publishedAt": "2022-08-18",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": null,
-    "state": "Versión aprobada preservada; enlaces contextuales",
-    "searchIntent": "Informativa: Entrevista a Ricardo Gonzalez y fundamentos del patronaje",
-    "exclusiveContribution": "Entrevista a Ricardo Gonzalez y fundamentos del patronaje",
-    "seoTitle": "Tallas completas en ropa: ¿son realmente la solución?",
-    "metaDescription": "¿Qué son las tallas completas y cómo funcionan en los uniformes? Un patronista explica su origen y la importancia de las tablas de medidas.",
-    "canonical": "https://cottoncountry.com.pe/que-significa-tallas-completas-en-ropa",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Qué significa tallas completas en ropa",
+    "metaDescription": "El término es conocido sobre todo en el segmento de uniformes, cuando los compradores buscan uniformes no muy ceñidos o que abarquen la mayor cantidad de…",
+    "canonical": "/que-significa-tallas-completas-en-ropa",
     "headings": [
       {
         "level": 2,
@@ -1779,7 +1425,7 @@
       },
       {
         "level": 2,
-        "text": "¿Por qué son importantes las tablas de medidas?"
+        "text": "¿Por qué es importante las tablas de medidas?"
       },
       {
         "level": 2,
@@ -1791,59 +1437,30 @@
       },
       {
         "level": 2,
-        "text": "¿Es mejor elaborar patrones en cartón o en software?"
-      },
-      {
-        "level": 2,
-        "text": "¿Son realmente una solución las tallas completas?"
-      },
-      {
-        "level": 2,
-        "text": "Si no existen tallas universales, ¿qué existen?"
-      },
-      {
-        "level": 2,
-        "text": "¿Cómo abordamos el tallaje en Cotton Country?"
-      },
-      {
-        "level": 3,
-        "text": "Lecturas relacionadas"
+        "text": "¿Es mejor patrones en cartón o en software?"
       }
+    ],
+    "links": [
+      {
+        "href": "/la-talla-peruana",
+        "text": "biotipo"
+      },
+      {
+        "href": "/ntp-para-la-designacion-de-tallas",
+        "text": "tablas de medidas"
+      }
+    ],
+    "related": [
+      "la-talla-peruana",
+      "ntp-para-la-designacion-de-tallas",
+      "tallas-completas-en-peru"
     ],
     "image": {
       "src": "/blog/que-significa-tallas-completas-en-ropa.jpg",
       "width": 1024,
       "height": 569,
       "alt": "Perchas de madera con etiquetas de tallas de XXS a XXL"
-    },
-    "internalLinks": [
-      {
-        "href": "/ntp-para-la-designacion-de-tallas",
-        "text": "normas técnicas NTP-ISO 8559"
-      },
-      {
-        "href": "/la-talla-peruana",
-        "text": "La talla peruana"
-      },
-      {
-        "href": "/el-problema-de-las-tallas",
-        "text": "El problema de las tallas"
-      }
-    ],
-    "externalLinks": [
-      {
-        "href": "https://sizeset.com/",
-        "text": "SizeSet"
-      }
-    ],
-    "relatedArticleSlugs": [
-      "ntp-para-la-designacion-de-tallas",
-      "la-talla-peruana",
-      "el-problema-de-las-tallas"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 33,
@@ -1851,54 +1468,37 @@
     "slug": "guia-de-tallas-online",
     "productionURL": "https://cottoncountry.com.pe/guia-de-tallas-online",
     "publishedAt": "2022-08-18",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Experiencia de digitalización del tallaje remoto en 2022",
-    "exclusiveContribution": "Experiencia de digitalización del tallaje remoto en 2022",
-    "seoTitle": "Guía de tallas online: una experiencia de 2022",
-    "metaDescription": "Cómo Cotton Country trabajó el registro de tallaje a distancia durante la pandemia, con referencias de producto y apoyo digital.",
-    "canonical": "https://cottoncountry.com.pe/guia-de-tallas-online",
-    "headings": [
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Guía de tallas online y SizeSet",
+    "metaDescription": "Este año se muestra retador y eso nos motiva, pues hay mucho qué hacer en la industria textil-confecciones. Dentro de los muchos proyectos e ideas innovadoras…",
+    "canonical": "/guia-de-tallas-online",
+    "headings": [],
+    "links": [
       {
-        "level": 2,
-        "text": "El reto que queríamos resolver"
+        "href": "/tallas-completas-en-peru",
+        "text": "uniformar a las empresas"
       },
       {
-        "level": 2,
-        "text": "Una tabla corresponde a un modelo"
+        "href": "/que-talla-eres-en-peru",
+        "text": "tallas de los colaboradores"
       },
       {
-        "level": 2,
-        "text": "Digitalizar el proceso"
+        "href": "https://sizeset.com/",
+        "text": "Size Set"
       }
+    ],
+    "related": [
+      "tallas-completas-en-peru",
+      "que-talla-eres-en-peru",
+      "el-problema-de-las-tallas"
     ],
     "image": {
       "src": "/blog/guia-de-tallas-online.jpg",
       "width": 1024,
       "height": 576,
       "alt": "Gráfico de medidas y tallas sobre un fondo rojo"
-    },
-    "internalLinks": [
-      {
-        "href": "/tallas-completas-en-peru",
-        "text": "procesos de uniformes"
-      },
-      {
-        "href": "/que-talla-eres-en-peru",
-        "text": "elección de tallas"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "tallas-completas-en-peru",
-      "que-talla-eres-en-peru",
-      "el-problema-de-las-tallas"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente",
-    "editorialVoiceCorrection": "Narración pública revisada contra el Word, sin comentarios del proceso de edición."
+    }
   },
   {
     "id": 34,
@@ -1906,103 +1506,72 @@
     "slug": "una-breve-historia-del-algodon",
     "productionURL": "https://cottoncountry.com.pe/una-breve-historia-del-algodon",
     "publishedAt": "2022-08-18",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Historia de la fibra frente a historia comercial del Pima",
-    "exclusiveContribution": "Historia de la fibra frente a historia comercial del Pima",
-    "seoTitle": "Historia del algodón y tradición textil peruana",
-    "metaDescription": "Algodón, Pima e industria peruana: distingue la historia de una fibra, el testimonio de su desarrollo comercial y su situación actual.",
-    "canonical": "https://cottoncountry.com.pe/una-breve-historia-del-algodon",
-    "headings": [
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Una breve historia del algodón",
+    "metaDescription": "La fibra milenaria ha estado más que presente no solo en el mundo de la confección, sino en el de la Historia Universal. Y es que, diferentes vestigios…",
+    "canonical": "/una-breve-historia-del-algodon",
+    "headings": [],
+    "links": [
       {
-        "level": 2,
-        "text": "Una fibra y muchos usos"
+        "href": "/el-ano-del-algodon-2022",
+        "text": "algodón pima"
       },
       {
-        "level": 2,
-        "text": "Pima: distinguir nombres e historias"
-      },
-      {
-        "level": 2,
-        "text": "La experiencia industrial peruana"
-      },
-      {
-        "level": 2,
-        "text": "Historia y presente"
+        "href": "/dia-mundial-del-algodon-2026",
+        "text": "industria textil nacional"
       }
+    ],
+    "related": [
+      "el-ano-del-algodon-2022",
+      "dia-mundial-del-algodon-2026",
+      "el-algodon-se-caso-con-el-poliester-en-oxford"
     ],
     "image": {
       "src": "/blog/una-breve-historia-del-algodon.jpg",
       "width": 1024,
       "height": 569,
       "alt": "Cápsulas de algodón abiertas en un campo"
-    },
-    "internalLinks": [
-      {
-        "href": "/el-ano-del-algodon-2022",
-        "text": "testimonio de James M. Vreeland Jr."
-      },
-      {
-        "href": "/dia-mundial-del-algodon-2026",
-        "text": "campaña agrícola"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "el-ano-del-algodon-2022",
-      "dia-mundial-del-algodon-2026",
-      "el-algodon-se-caso-con-el-poliester-en-oxford"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 35,
-    "title": "Día Mundial del Algodón 2022",
+    "title": "Dia Mundial del Algodón 2022",
     "slug": "el-ano-del-algodon-2022",
     "productionURL": "https://cottoncountry.com.pe/el-ano-del-algodon-2022",
     "publishedAt": "2022-08-18",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Entrevista a James M. Vreeland Jr. y testimonio de Catacaos",
-    "exclusiveContribution": "Entrevista a James M. Vreeland Jr. y testimonio de Catacaos",
-    "seoTitle": "Algodón Pima: conversación con James M. Vreeland Jr.",
-    "metaDescription": "El testimonio recogido en 2022 sobre las semillas de Pima americano llegadas a Catacaos y la experiencia de Naturtex en la industria peruana.",
-    "canonical": "https://cottoncountry.com.pe/el-ano-del-algodon-2022",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Día Mundial del Algodón 2022 y el Pima en Perú",
+    "metaDescription": "Como les contamos en nuestro anterior post este próximo 7 de octubre se celebrará el día mundial del algodón según la Naciones Unidas y aquí en Perú lo esperamos…",
+    "canonical": "/el-ano-del-algodon-2022",
     "headings": [
       {
         "level": 2,
-        "text": "Conversación con James M. Vreeland Jr."
+        "text": "Estimado Dr. Cuéntenos por favor sobre el algodón Pima."
       },
       {
         "level": 2,
-        "text": "¿Cómo y cuándo llegó al Perú?"
+        "text": "Entonces, ¿Cómo y cuándo llego al Peru?"
       }
+    ],
+    "links": [
+      {
+        "href": "/una-breve-historia-del-algodon",
+        "text": "fibra más antigua"
+      }
+    ],
+    "related": [
+      "una-breve-historia-del-algodon",
+      "el-algodon-se-caso-con-el-poliester-en-oxford",
+      "un-tejido-llamado-gaza"
     ],
     "image": {
       "src": "/blog/el-ano-del-algodon-2022.jpg",
       "width": 1024,
       "height": 576,
       "alt": "Algodón exhibido en recipientes de una balanza"
-    },
-    "internalLinks": [
-      {
-        "href": "/una-breve-historia-del-algodon",
-        "text": "origen botánico"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "una-breve-historia-del-algodon",
-      "el-algodon-se-caso-con-el-poliester-en-oxford",
-      "un-tejido-llamado-gaza"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 36,
@@ -2010,112 +1579,72 @@
     "slug": "tallas-completas-en-peru",
     "productionURL": "https://cottoncountry.com.pe/tallas-completas-en-peru",
     "publishedAt": "2022-08-18",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Observaciones de campañas B2B y uso responsable de datos de SizeSet",
-    "exclusiveContribution": "Observaciones de campañas B2B y uso responsable de datos de SizeSet",
-    "seoTitle": "Tallas completas en Perú: aprendizaje de campañas B2B",
-    "metaDescription": "Observaciones de Cotton Country con SizeSet en 2022: información de campañas empresariales, límites de los datos y mejora del tallaje.",
-    "canonical": "https://cottoncountry.com.pe/tallas-completas-en-peru",
-    "headings": [
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Tallas completas en Perú y tallaje empresarial",
+    "metaDescription": "Las tallas en el Perú son un reto verdadero el cual las empresas peruanas y confeccionistas ya sea de uniformes así como de marcas, retailers y demás se…",
+    "canonical": "/tallas-completas-en-peru",
+    "headings": [],
+    "links": [
       {
-        "level": 2,
-        "text": "Lo que observábamos en las campañas"
+        "href": "/que-significa-tallas-completas-en-ropa",
+        "text": "tallas completas"
       },
       {
-        "level": 2,
-        "text": "Del registro a la mejora del proceso"
+        "href": "https://sizeset.com/",
+        "text": "sizeset"
       },
       {
-        "level": 2,
-        "text": "Comunicación técnica en las compras B2B"
+        "href": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
+        "text": "procesos de tallaje"
       }
+    ],
+    "related": [
+      "que-significa-tallas-completas-en-ropa",
+      "por-que-las-empresas-tienen-problemas-con-las-tallas",
+      "guia-de-tallas-online"
     ],
     "image": {
       "src": "/blog/tallas-completas-en-peru.jpg",
       "width": 1024,
       "height": 632,
       "alt": "Cinta métrica sobre un fondo amarillo"
-    },
-    "internalLinks": [
-      {
-        "href": "/que-significa-tallas-completas-en-ropa",
-        "text": "tallas completas"
-      },
-      {
-        "href": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
-        "text": "analizar nuestros procesos"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "que-significa-tallas-completas-en-ropa",
-      "por-que-las-empresas-tienen-problemas-con-las-tallas",
-      "guia-de-tallas-online"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente",
-    "editorialVoiceCorrection": "Narración pública revisada contra el Word, sin comentarios del proceso de edición."
+    }
   },
   {
     "id": 37,
-    "title": "Las tallas completas según una IA",
+    "title": "Las tallas completas según una IA.",
     "slug": "las-tallas-completas-segun-una-ia",
     "productionURL": "https://cottoncountry.com.pe/las-tallas-completas-segun-una-ia",
     "publishedAt": "2023-02-28",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": null,
-    "state": "Versión aprobada preservada; enlaces contextuales",
-    "searchIntent": "Informativa: Crítica de dos respuestas históricas de ChatGPT, con sus errores",
-    "exclusiveContribution": "Crítica de dos respuestas históricas de ChatGPT, con sus errores",
-    "seoTitle": "Tallas completas: qué respondió ChatGPT en 2023",
-    "metaDescription": "Preguntamos a ChatGPT qué son las tallas completas y las tallas estándar. Revisamos sus respuestas originales y los errores de interpretación.",
-    "canonical": "https://cottoncountry.com.pe/las-tallas-completas-segun-una-ia",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Las tallas completas según una IA",
+    "metaDescription": "No hace mucho se lanzó la plataforma de OpenAI llamada ChatGPT y no pudimos resistir el preguntarle sobre las tallas completas, esto fue lo que nos respondió:…",
+    "canonical": "/las-tallas-completas-segun-una-ia",
     "headings": [
       {
         "level": 2,
-        "text": "¿Qué respondió ChatGPT?"
-      },
-      {
-        "level": 2,
-        "text": "¿Dónde se equivocó la IA?"
-      },
-      {
-        "level": 2,
-        "text": "Tallas completas no significa ajuste perfecto"
-      },
-      {
-        "level": 2,
-        "text": "Nuestra conclusión"
+        "text": "Cotton Country conversa con ChatGPT"
       }
+    ],
+    "links": [
+      {
+        "href": "/que-significa-tallas-completas-en-ropa",
+        "text": "tallas completas"
+      }
+    ],
+    "related": [
+      "que-significa-tallas-completas-en-ropa",
+      "que-talla-eres-en-peru",
+      "el-problema-de-las-tallas"
     ],
     "image": {
       "src": "/blog/las-tallas-completas-segun-una-ia.jpg",
       "width": 1024,
       "height": 684,
       "alt": "Brazo robótico frente a dos personas con una tableta"
-    },
-    "internalLinks": [
-      {
-        "href": "/que-significa-tallas-completas-en-ropa",
-        "text": "tallas completas"
-      },
-      {
-        "href": "/que-talla-eres-en-peru",
-        "text": "muestras físicas"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "que-significa-tallas-completas-en-ropa",
-      "que-talla-eres-en-peru",
-      "una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 38,
@@ -2123,14 +1652,11 @@
     "slug": "como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt",
     "productionURL": "https://cottoncountry.com.pe/como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt",
     "publishedAt": "2023-02-28",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Recomendaciones históricas de ChatGPT sobre elección de uniformes",
-    "exclusiveContribution": "Recomendaciones históricas de ChatGPT sobre elección de uniformes",
-    "seoTitle": "Elegir uniformes: una respuesta histórica de ChatGPT",
-    "metaDescription": "La conversación de febrero de 2023 en la que pedimos a ChatGPT recomendaciones para elegir uniformes. Se conserva como experimento histórico.",
-    "canonical": "https://cottoncountry.com.pe/como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Cómo elegir uniformes para tu negocio según ChatGPT",
+    "metaDescription": "Nos adentramos cada vez más a la 4ta revolución industrial y esta vez le pedimos a ChatGPT que nos de algunas recomendaciones para elegir el uniforme adecuado…",
+    "canonical": "/como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt",
     "headings": [
       {
         "level": 2,
@@ -2161,27 +1687,18 @@
         "text": "Conclusión:"
       }
     ],
+    "links": [],
+    "related": [
+      "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
+      "mascarillas-y-covid-19",
+      "por-que-comprar-uniformes-de-trabajo-para-mis-empleados"
+    ],
     "image": {
       "src": "/blog/como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt.jpg",
       "width": 1024,
       "height": 683,
       "alt": "Pantalla con una conversación de ChatGPT"
-    },
-    "internalLinks": [
-      {
-        "href": "/3-consejos-para-compradores-de-textiles-b2b",
-        "text": "evaluación técnica de productos o proveedores"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "3-consejos-para-compradores-de-textiles-b2b",
-      "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
-      "mascarillas-y-covid-19"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 39,
@@ -2189,57 +1706,34 @@
     "slug": "una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
     "productionURL": "https://cottoncountry.com.pe/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
     "publishedAt": "2023-02-28",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": null,
-    "state": "Versión aprobada preservada; enlaces contextuales",
-    "searchIntent": "Informativa: Experimento histórico sobre tablas corporales de Perú; dos tablas íntegras",
-    "exclusiveContribution": "Experimento histórico sobre tablas corporales de Perú; dos tablas íntegras",
-    "seoTitle": "Tablas de medidas para Perú: ¿qué nos respondió una IA?",
-    "metaDescription": "Pedimos a ChatGPT tablas de medidas para mujeres y varones del Perú. Analizamos sus respuestas y qué tan confiables son para confeccionar ropa.",
-    "canonical": "https://cottoncountry.com.pe/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Tablas de medida para Perú: respuestas de ChatGPT",
+    "metaDescription": "La increíble herramienta de OpenAI nos da más respuestas sobre temas complejos en la industria textil, esta vez le pedimos información sobre las medidas…",
+    "canonical": "/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
     "headings": [
       {
         "level": 2,
-        "text": "¿Qué le preguntamos a ChatGPT?"
-      },
-      {
-        "level": 2,
-        "text": "¿De dónde obtuvo la inteligencia artificial estas medidas?"
-      },
-      {
-        "level": 2,
-        "text": "¿Qué ocurre cuando llevamos estas tablas a la confección de uniformes?"
-      },
-      {
-        "level": 2,
-        "text": "Entonces, ¿puede la IA ayudarnos a desarrollar tablas de medidas?"
+        "text": "Cotton Country conversa con ChatGPT"
       }
+    ],
+    "links": [
+      {
+        "href": "/la-talla-peruana",
+        "text": "medidas corporales"
+      }
+    ],
+    "related": [
+      "la-talla-peruana",
+      "que-talla-eres-en-peru",
+      "el-problema-de-las-tallas"
     ],
     "image": {
       "src": "/blog/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano.jpg",
       "width": 1024,
       "height": 575,
       "alt": "Persona sosteniendo una nota verde con las letras A.I."
-    },
-    "internalLinks": [
-      {
-        "href": "/la-talla-peruana",
-        "text": "medidas corporales de la población peruana"
-      },
-      {
-        "href": "/las-tallas-completas-segun-una-ia",
-        "text": "generadas por una IA"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "la-talla-peruana",
-      "las-tallas-completas-segun-una-ia",
-      "que-talla-eres-en-peru"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 40,
@@ -2247,31 +1741,13 @@
     "slug": "uniformes-de-guerra",
     "productionURL": "https://cottoncountry.com.pe/uniformes-de-guerra",
     "publishedAt": "2023-11-30",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Historia funcional del uniforme militar; diseño frente a fabricación",
-    "exclusiveContribution": "Historia funcional del uniforme militar; diseño frente a fabricación",
-    "seoTitle": "Uniformes de guerra: función e historia textil",
-    "metaDescription": "Una reflexión sobre identificación, materiales y cambios industriales en los uniformes militares, distinguiendo diseño y fabricación.",
-    "canonical": "https://cottoncountry.com.pe/uniformes-de-guerra",
-    "headings": [
-      {
-        "level": 2,
-        "text": "Identificación y función"
-      },
-      {
-        "level": 2,
-        "text": "Materiales y cambios industriales"
-      }
-    ],
-    "image": {
-      "src": "/blog/uniformes-de-guerra.webp",
-      "width": 1024,
-      "height": 574,
-      "alt": "Prendas de uniforme con distintivos colgadas en una percha"
-    },
-    "internalLinks": [
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Uniformes de guerra: historia y materiales",
+    "metaDescription": "No es el primero ni será el último de los conflictos pero La Guerra siempre ha estado presente y los uniformes con ella. En realidad el uniforme tiene su origen…",
+    "canonical": "/uniformes-de-guerra",
+    "headings": [],
+    "links": [
       {
         "href": "/una-breve-historia-del-algodon",
         "text": "algodón"
@@ -2281,65 +1757,47 @@
         "text": "lo simbólico"
       }
     ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
+    "related": [
       "una-breve-historia-del-algodon",
       "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
       "mascarillas-y-covid-19"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/uniformes-de-guerra.webp",
+      "width": 1024,
+      "height": 574,
+      "alt": "Prendas de uniforme con distintivos colgadas en una percha"
+    }
   },
   {
     "id": 41,
-    "title": "Un tejido llamado gasa",
+    "title": "Una tejido llamada Gaza",
     "slug": "un-tejido-llamado-gaza",
     "productionURL": "https://cottoncountry.com.pe/un-tejido-llamado-gaza",
     "publishedAt": "2023-11-30",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Composición, corte, costura y cuidado de la gasa",
-    "exclusiveContribution": "Composición, corte, costura y cuidado de la gasa",
-    "seoTitle": "Gasa: composición, confección y uso en uniformes",
-    "metaDescription": "La apariencia de una gasa no define su composición. Qué observar en una muestra y cómo evaluar su confección y mantenimiento.",
-    "canonical": "https://cottoncountry.com.pe/un-tejido-llamado-gaza",
-    "headings": [
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Un tejido llamado gasa: usos y confección",
+    "metaDescription": "Este tejido lleva el nombre de la tierra donde fue creado y es que en los albores del siglo XIII en Palestina se fabricaba mucho este tejido cuyas cualidades son…",
+    "canonical": "/un-tejido-llamado-gaza",
+    "headings": [],
+    "links": [
       {
-        "level": 2,
-        "text": "El nombre no define la composición"
-      },
-      {
-        "level": 2,
-        "text": "Qué observar al confeccionar"
-      },
-      {
-        "level": 2,
-        "text": "Aplicación en uniformes"
+        "href": "/disenador-a-sus-disenos",
+        "text": "confeccionarlo"
       }
+    ],
+    "related": [
+      "disenador-a-sus-disenos",
+      "el-algodon-se-caso-con-el-poliester-en-oxford",
+      "una-breve-historia-del-algodon"
     ],
     "image": {
       "src": "/blog/un-tejido-llamado-gaza.webp",
       "width": 1024,
       "height": 574,
       "alt": "Persona con un pañuelo claro en la cabeza frente a un fondo desenfocado"
-    },
-    "internalLinks": [
-      {
-        "href": "/disenador-a-sus-disenos",
-        "text": "costura"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "disenador-a-sus-disenos",
-      "el-algodon-se-caso-con-el-poliester-en-oxford",
-      "una-breve-historia-del-algodon"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 42,
@@ -2347,31 +1805,13 @@
     "slug": "perumin-2023",
     "productionURL": "https://cottoncountry.com.pe/perumin-2023",
     "publishedAt": "2023-11-30",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Crónica empresarial de Cotton Country en Perumin 2023",
-    "exclusiveContribution": "Crónica empresarial de Cotton Country en Perumin 2023",
-    "seoTitle": "Cotton Country en Perumin 2023",
-    "metaDescription": "La crónica de Cotton Country sobre su participación en Perumin 2023, las necesidades del sector y las prendas presentadas en esa experiencia.",
-    "canonical": "https://cottoncountry.com.pe/perumin-2023",
-    "headings": [
-      {
-        "level": 2,
-        "text": "Las exigencias de la actividad"
-      },
-      {
-        "level": 2,
-        "text": "Nuestra experiencia en Perumin"
-      }
-    ],
-    "image": {
-      "src": "/blog/perumin-2023.webp",
-      "width": 1024,
-      "height": 574,
-      "alt": "Persona con casco observando una operación minera"
-    },
-    "internalLinks": [
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Perumin 2023",
+    "metaDescription": "Este año se realizó en Arequipa la edición número 36 de Perumin, la feria más importante del país por la relevancia económica de esta industria en la economía…",
+    "canonical": "/perumin-2023",
+    "headings": [],
+    "links": [
       {
         "href": "/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
         "text": "uniformes para minería"
@@ -2381,15 +1821,17 @@
         "text": "tecnologías"
       }
     ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
+    "related": [
       "que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
       "5-tipos-de-tejidos-inteligentes",
       "materiales-textiles-inteligentes-segun-el-tipo-de-uniformes"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/perumin-2023.webp",
+      "width": 1024,
+      "height": 574,
+      "alt": "Persona con casco observando una operación minera"
+    }
   },
   {
     "id": 43,
@@ -2397,57 +1839,50 @@
     "slug": "como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial",
     "productionURL": "https://cottoncountry.com.pe/como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial",
     "publishedAt": "2024-06-25",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Abrigo y movilidad según condiciones reales de trabajo",
-    "exclusiveContribution": "Abrigo y movilidad según condiciones reales de trabajo",
-    "seoTitle": "Prendas de invierno para empresas: elegir según el uso",
-    "metaDescription": "Oficina, taller, exteriores y retail requieren decisiones distintas de abrigo, movilidad y mantenimiento. Qué revisar antes de elegir.",
-    "canonical": "https://cottoncountry.com.pe/como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Cómo elegir prendas de invierno según el rubro empresarial",
+    "metaDescription": "El invierno trae consigo la necesidad de ajustar nuestro vestuario para mantenernos cálidos y cómodos. Sin embargo, la elección de la prenda adecuada no solo…",
+    "canonical": "/como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial",
     "headings": [
       {
         "level": 2,
-        "text": "Oficinas y sector bancario"
+        "text": "Prendas de Invierno para el Sector Bancario"
       },
       {
         "level": 2,
-        "text": "Taller y operaciones"
+        "text": "Prendas de Invierno para el Sector Automotriz"
       },
       {
         "level": 2,
-        "text": "Traslados y exteriores"
+        "text": "Prendas de Invierno para el Sector Tecnológico - Logístico"
       },
       {
         "level": 2,
-        "text": "Retail y atención al público"
+        "text": "Prendas de Invierno para el Sector Retail"
+      },
+      {
+        "level": 2,
+        "text": "Conclusión"
       }
+    ],
+    "links": [
+      {
+        "href": "/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
+        "text": "clima"
+      }
+    ],
+    "related": [
+      "el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
+      "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
+      "mascarillas-y-covid-19"
     ],
     "image": {
       "src": "/blog/como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial.jpg",
       "width": 1024,
       "height": 509,
       "alt": "Tres personas con diferentes prendas de trabajo y abrigo"
-    },
-    "internalLinks": [
-      {
-        "href": "/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
-        "text": "condiciones reales de uso"
-      },
-      {
-        "href": "/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
-        "text": "protección especializada"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
-      "que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
-      "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 44,
@@ -2455,54 +1890,70 @@
     "slug": "compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
     "productionURL": "https://cottoncountry.com.pe/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
     "publishedAt": "2024-10-25",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Abastecimiento: disponibilidad frente a fabricación a pedido",
-    "exclusiveContribution": "Abastecimiento: disponibilidad frente a fabricación a pedido",
-    "seoTitle": "Uniformes disponibles o a pedido: cómo comparar la compra",
-    "metaDescription": "Distingue el modelo de abastecimiento del sistema de tallas. Disponibilidad, desarrollo y reposición son decisiones diferentes.",
-    "canonical": "https://cottoncountry.com.pe/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Compras comerciales e industriales de uniformes",
+    "metaDescription": "Cuando gestionas las compras para una empresa, te enfrentas a una variedad de decisiones importantes. Uno de los dilemas más comunes es elegir entre la compra de…",
+    "canonical": "/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
     "headings": [
       {
         "level": 2,
-        "text": "Comprar prendas disponibles"
+        "text": "1. Compras Comerciales: Rapidez, pero con Limitaciones"
+      },
+      {
+        "level": 3,
+        "text": "Ventajas:"
+      },
+      {
+        "level": 3,
+        "text": "Limitaciones:"
       },
       {
         "level": 2,
-        "text": "Fabricar a pedido"
+        "text": "2. Compras Industriales: Personalización y Calidad a Largo Plazo"
+      },
+      {
+        "level": 3,
+        "text": "Ventajas:"
+      },
+      {
+        "level": 3,
+        "text": "Limitaciones:"
       },
       {
         "level": 2,
-        "text": "Comparar el abastecimiento"
+        "text": "3. ¿Cuál es la Mejor Opción para Tu Empresa?"
+      },
+      {
+        "level": 2,
+        "text": "4. Conclusión: Invertir en la Imagen de tu Empresa"
       }
+    ],
+    "links": [
+      {
+        "href": "/como-definir-un-proyecto-de-uniformes-corporativos",
+        "text": "diseño"
+      },
+      {
+        "href": "/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+        "text": "tallas completas"
+      },
+      {
+        "href": "https://sizeset.com/",
+        "text": "sizeset"
+      }
+    ],
+    "related": [
+      "como-definir-un-proyecto-de-uniformes-corporativos",
+      "uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+      "es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller"
     ],
     "image": {
       "src": "/blog/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion.jpg",
       "width": 1024,
       "height": 681,
       "alt": "Persona frente a un muestrario de hilos y materiales"
-    },
-    "internalLinks": [
-      {
-        "href": "/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
-        "text": "producción por tallas"
-      },
-      {
-        "href": "/como-definir-un-proyecto-de-uniformes-corporativos",
-        "text": "especificaciones"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
-      "como-definir-un-proyecto-de-uniformes-corporativos",
-      "es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente",
-    "editorialVoiceCorrection": "Narración pública revisada contra el Word, sin comentarios del proceso de edición."
+    }
   },
   {
     "id": 45,
@@ -2510,61 +1961,62 @@
     "slug": "novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
     "productionURL": "https://cottoncountry.com.pe/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
     "publishedAt": "2024-10-25",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Expectativas para 2025 vistas desde octubre de 2024",
-    "exclusiveContribution": "Expectativas para 2025 vistas desde octubre de 2024",
-    "seoTitle": "Uniformes para 2025: las tendencias vistas en 2024",
-    "metaDescription": "Una revisión histórica de las expectativas para 2025 sobre materiales, tecnología, personalización y diversidad, sin promesas de adopción general.",
-    "canonical": "https://cottoncountry.com.pe/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Tendencias del mercado de uniformes para 2025",
+    "metaDescription": "El 2025 trae consigo una serie de innovaciones y tendencias en el mercado de los uniformes empresariales. A medida que las empresas buscan proyectar una imagen…",
+    "canonical": "/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
     "headings": [
       {
         "level": 2,
-        "text": "Sostenibilidad y circularidad"
+        "text": "1. Sostenibilidad: Materiales Ecológicos y Éticos"
       },
       {
         "level": 2,
-        "text": "Funciones textiles y tecnología"
+        "text": "2. Tecnología Textil: Uniformes Funcionales e Inteligentes"
       },
       {
         "level": 2,
-        "text": "Personalización e identidad"
+        "text": "3. Personalización a Gran Escala: Uniformes que Reflejan la Marca"
       },
       {
         "level": 2,
-        "text": "Comodidad y diversidad"
+        "text": "4. Moda y Comodidad: La Fusión Perfecta"
       },
       {
         "level": 2,
-        "text": "Qué aporta este archivo"
+        "text": "5. Economía Circular: Uniformes con Ciclo de Vida Prolongado"
+      },
+      {
+        "level": 2,
+        "text": "6. Diversidad de Género y Cuerpo: Uniformes Inclusivos"
+      },
+      {
+        "level": 2,
+        "text": "Conclusión: Un Futuro de Innovación y Sostenibilidad"
       }
+    ],
+    "links": [
+      {
+        "href": "/5-tipos-de-tejidos-inteligentes",
+        "text": "Telas inteligentes"
+      },
+      {
+        "href": "/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+        "text": "economía circular"
+      }
+    ],
+    "related": [
+      "5-tipos-de-tejidos-inteligentes",
+      "empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+      "el-futuro-de-la-industria-textil-y-de-confecciones"
     ],
     "image": {
       "src": "/blog/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte.jpg",
       "width": 1024,
       "height": 619,
       "alt": "Personal con casco y ropa de trabajo en una nave industrial"
-    },
-    "internalLinks": [
-      {
-        "href": "/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
-        "text": "Biodegradable y reciclable"
-      },
-      {
-        "href": "/5-tipos-de-tejidos-inteligentes",
-        "text": "prestaciones antimicrobianas"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
-      "5-tipos-de-tejidos-inteligentes",
-      "el-futuro-de-la-industria-textil-y-de-confecciones"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 46,
@@ -2572,58 +2024,58 @@
     "slug": "uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
     "productionURL": "https://cottoncountry.com.pe/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
     "publishedAt": "2024-10-25",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Decisión de compra: individualización, tallas y atención de excepciones",
-    "exclusiveContribution": "Decisión de compra: individualización, tallas y atención de excepciones",
-    "seoTitle": "Uniformes a medida o por tallas: criterios de compra",
-    "metaDescription": "Qué acordar sobre validación, ajustes, reposiciones y plazos al comparar confección individual y producción por tallas para una empresa.",
-    "canonical": "https://cottoncountry.com.pe/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Uniformes a medida o por tallas: ventajas y diferencias",
+    "metaDescription": "Cuando se trata de uniformar a tu equipo, una de las decisiones más importantes es elegir entre uniformes por tallas o uniformes a medida. Aunque ambos enfoques…",
+    "canonical": "/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
     "headings": [
       {
         "level": 2,
-        "text": "Qué necesita la empresa"
+        "text": "1. Uniformes a Medida: Exclusividad, pero con Desventajas"
+      },
+      {
+        "level": 3,
+        "text": "Ventajas:"
+      },
+      {
+        "level": 3,
+        "text": "Desventajas:"
       },
       {
         "level": 2,
-        "text": "Qué implica confeccionar a medida"
+        "text": "2. Uniformes por Tallas: Eficiencia y Comodidad para Todos"
+      },
+      {
+        "level": 3,
+        "text": "Ventajas:"
       },
       {
         "level": 2,
-        "text": "Qué implica producir por tallas"
+        "text": "3. ¿Por Qué Elegir Uniformes por Tallas?"
       },
       {
         "level": 2,
-        "text": "Qué dejar acordado antes de comprar"
+        "text": "4. Conclusión: Uniformes por Tallas, la Solución Inteligente"
       }
+    ],
+    "links": [
+      {
+        "href": "/el-problema-de-las-tallas",
+        "text": "uniformes a medida"
+      }
+    ],
+    "related": [
+      "el-problema-de-las-tallas",
+      "compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
+      "que-talla-eres-en-peru"
     ],
     "image": {
       "src": "/blog/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente.jpg",
       "width": 1024,
       "height": 576,
       "alt": "Toma de una medida en la cintura de una prenda verde"
-    },
-    "internalLinks": [
-      {
-        "href": "/de-que-depende-el-tiempo-de-entrega-de-uniformes",
-        "text": "Desde qué aprobaciones se cuenta el plazo"
-      },
-      {
-        "href": "/el-problema-de-las-tallas",
-        "text": "experiencia de Cotton Country con la confección a medida"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "de-que-depende-el-tiempo-de-entrega-de-uniformes",
-      "el-problema-de-las-tallas",
-      "compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente",
-    "editorialVoiceCorrection": "Narración pública revisada contra el Word, sin comentarios del proceso de edición."
+    }
   },
   {
     "id": 47,
@@ -2631,14 +2083,11 @@
     "slug": "mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion",
     "productionURL": "https://cottoncountry.com.pe/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion",
     "publishedAt": "2025-03-11",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Participación de mujeres en la cultura textil y diseño funcional",
-    "exclusiveContribution": "Participación de mujeres en la cultura textil y diseño funcional",
-    "seoTitle": "Mujeres y cultura textil: trabajo, diseño y reconocimiento",
-    "metaDescription": "Una reflexión sobre la participación de las mujeres en la confección y la necesidad de diseñar prendas que respondan a sus tareas.",
-    "canonical": "https://cottoncountry.com.pe/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Mujeres que Tejen el Mundo con su Fuerza y Pasión",
+    "metaDescription": "El 8 de marzo celebramos el Día Internacional de la Mujer, una fecha clave para honrar el esfuerzo, la resiliencia y la inmensa contribución de las mujeres en…",
+    "canonical": "/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion",
     "headings": [
       {
         "level": 2,
@@ -2657,13 +2106,7 @@
         "text": "Más que una fecha, un compromiso permanente"
       }
     ],
-    "image": {
-      "src": "/blog/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion.jpg",
-      "width": 1024,
-      "height": 576,
-      "alt": "Fotografía en blanco y negro de una persona trabajando en una máquina de coser"
-    },
-    "internalLinks": [
+    "links": [
       {
         "href": "/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
         "text": "símbolo de identidad"
@@ -2673,15 +2116,17 @@
         "text": "necesidades específicas"
       }
     ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
+    "related": [
       "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
       "los-uniformes-un-problema-olimpico",
       "el-algodon-se-caso-con-el-poliester-en-oxford"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion.jpg",
+      "width": 1024,
+      "height": 576,
+      "alt": "Fotografía en blanco y negro de una persona trabajando en una máquina de coser"
+    }
   },
   {
     "id": 48,
@@ -2689,57 +2134,46 @@
     "slug": "como-definir-un-proyecto-de-uniformes-corporativos",
     "productionURL": "https://cottoncountry.com.pe/como-definir-un-proyecto-de-uniformes-corporativos",
     "publishedAt": "2026-07-28",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Definición del proyecto, requerimiento común y aprobaciones",
-    "exclusiveContribution": "Definición del proyecto, requerimiento común y aprobaciones",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
     "seoTitle": "Cómo definir un proyecto de uniformes corporativos",
-    "metaDescription": "Responsables, prendas, cantidades, muestras y aprobaciones: organiza un requerimiento común antes de comparar cotizaciones de uniformes.",
-    "canonical": "https://cottoncountry.com.pe/como-definir-un-proyecto-de-uniformes-corporativos",
+    "metaDescription": "Cuando una empresa decide renovar los uniformes de su personal, lo más habitual es solicitar cotizaciones a varios proveedores y compararlas por precio, plazo de…",
+    "canonical": "/como-definir-un-proyecto-de-uniformes-corporativos",
     "headings": [
       {
         "level": 2,
-        "text": "Reunir a las áreas responsables"
+        "text": "El primer error: creer que todos los plazos de entrega son iguales"
       },
       {
         "level": 2,
-        "text": "Preparar un requerimiento común"
+        "text": "Definir antes de cotizar"
       },
       {
         "level": 2,
-        "text": "Aprobar antes de comprometer la producción"
+        "text": "La experiencia de Cotton Country"
       },
       {
         "level": 2,
-        "text": "Cerrar la definición del proyecto"
+        "text": "Una buena compra empieza antes de la primera cotización"
       }
+    ],
+    "links": [
+      {
+        "href": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
+        "text": "proceso de tallaje"
+      }
+    ],
+    "related": [
+      "por-que-las-empresas-tienen-problemas-con-las-tallas",
+      "estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
+      "disenador-a-sus-disenos"
     ],
     "image": {
       "src": "/blog/como-definir-un-proyecto-de-uniformes-corporativos.webp",
       "width": 1200,
       "height": 801,
       "alt": "Persona tomando notas en una carpeta de apoyo"
-    },
-    "internalLinks": [
-      {
-        "href": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
-        "text": "Proceso de tallaje"
-      },
-      {
-        "href": "/de-que-depende-el-tiempo-de-entrega-de-uniformes",
-        "text": "cronograma"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "por-que-las-empresas-tienen-problemas-con-las-tallas",
-      "de-que-depende-el-tiempo-de-entrega-de-uniformes",
-      "estafas-textiles-no-seas-victima-de-la-falta-de-informacion"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    }
   },
   {
     "id": 49,
@@ -2747,62 +2181,62 @@
     "slug": "por-que-las-empresas-tienen-problemas-con-las-tallas",
     "productionURL": "https://cottoncountry.com.pe/por-que-las-empresas-tienen-problemas-con-las-tallas",
     "publishedAt": "2026-07-28",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Asistencia, registro, incidencias y cambios de una campaña de tallaje",
-    "exclusiveContribution": "Asistencia, registro, incidencias y cambios de una campaña de tallaje",
-    "seoTitle": "Tallaje empresarial: incidencias y coordinación de campañas",
-    "metaDescription": "Asistencia, registro, cambios de personal y comunicación: la experiencia de Cotton Country con las incidencias de una campaña de tallaje.",
-    "canonical": "https://cottoncountry.com.pe/por-que-las-empresas-tienen-problemas-con-las-tallas",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Por qué las empresas tienen problemas con las tallas",
+    "metaDescription": "Cuando una empresa inicia un proyecto de uniformes, uno de los mayores temores es que, al momento de la entrega, aparezcan cambios de talla, reposiciones o…",
+    "canonical": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
     "headings": [
       {
         "level": 2,
-        "text": "No pedir solamente una letra"
+        "text": "El primer mito: las tallas existen"
       },
       {
         "level": 2,
-        "text": "Las incidencias que encontramos"
+        "text": "El caso peruano hace el reto aún mayor"
       },
       {
         "level": 2,
-        "text": "Responsabilidades y control de cambios"
+        "text": "¿Las tallas completas solucionan el problema?"
       },
       {
         "level": 2,
-        "text": "Tecnología y validación"
+        "text": "¿Cada colaborador conoce realmente su talla?"
       },
       {
         "level": 2,
-        "text": "El aprendizaje de Cotton Country"
+        "text": "La experiencia de Cotton Country"
+      },
+      {
+        "level": 2,
+        "text": "La tecnología ayuda, pero no reemplaza el proceso"
+      },
+      {
+        "level": 2,
+        "text": "La conclusión"
       }
+    ],
+    "links": [
+      {
+        "href": "/tallas-completas-en-peru",
+        "text": "procesos de tallaje"
+      },
+      {
+        "href": "/que-significa-tallas-completas-en-ropa",
+        "text": "tallas completas"
+      }
+    ],
+    "related": [
+      "tallas-completas-en-peru",
+      "que-significa-tallas-completas-en-ropa",
+      "como-definir-un-proyecto-de-uniformes-corporativos"
     ],
     "image": {
       "src": "/blog/por-que-las-empresas-tienen-problemas-con-las-tallas.webp",
       "width": 1200,
       "height": 800,
       "alt": "Cinta métrica sobre una mesa de trabajo"
-    },
-    "internalLinks": [
-      {
-        "href": "/tallas-completas-en-peru",
-        "text": "campañas de tallaje de Cotton Country"
-      },
-      {
-        "href": "/que-significa-tallas-completas-en-ropa",
-        "text": "tablas de medidas"
-      }
-    ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
-      "tallas-completas-en-peru",
-      "que-significa-tallas-completas-en-ropa",
-      "como-definir-un-proyecto-de-uniformes-corporativos"
-    ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente",
-    "editorialVoiceCorrection": "Narración pública revisada contra el Word, sin comentarios del proceso de edición."
+    }
   },
   {
     "id": 50,
@@ -2810,14 +2244,11 @@
     "slug": "de-que-depende-el-tiempo-de-entrega-de-uniformes",
     "productionURL": "https://cottoncountry.com.pe/de-que-depende-el-tiempo-de-entrega-de-uniformes",
     "publishedAt": "2026-07-28",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: SAM, capacidad, servicios externos y cronograma técnicamente viable",
-    "exclusiveContribution": "SAM, capacidad, servicios externos y cronograma técnicamente viable",
-    "seoTitle": "Tiempo de entrega de uniformes: SAM, capacidad y aprobaciones",
-    "metaDescription": "El plazo de un proyecto depende del SAM, la capacidad disponible, materiales, muestras, tallaje y servicios externos. Cómo evaluar su sustento.",
-    "canonical": "https://cottoncountry.com.pe/de-que-depende-el-tiempo-de-entrega-de-uniformes",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "De qué depende el tiempo de entrega de uniformes",
+    "metaDescription": "Cuando una empresa solicita una cotización de uniformes, una de las primeras preguntas suele ser: ¿En cuánto tiempo pueden entregarlos?",
+    "canonical": "/de-que-depende-el-tiempo-de-entrega-de-uniformes",
     "headings": [
       {
         "level": 2,
@@ -2858,15 +2289,13 @@
       {
         "level": 2,
         "text": "Conclusión"
+      },
+      {
+        "level": 2,
+        "text": "Continúa leyendo"
       }
     ],
-    "image": {
-      "src": "/blog/de-que-depende-el-tiempo-de-entrega-de-uniformes.webp",
-      "width": 6240,
-      "height": 4160,
-      "alt": "Cintas métricas de varios colores enrolladas"
-    },
-    "internalLinks": [
+    "links": [
       {
         "href": "/como-definir-un-proyecto-de-uniformes-corporativos",
         "text": "Definición técnica del producto"
@@ -2880,15 +2309,17 @@
         "text": "servicios externos"
       }
     ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
+    "related": [
       "como-definir-un-proyecto-de-uniformes-corporativos",
       "por-que-las-empresas-tienen-problemas-con-las-tallas",
       "es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/de-que-depende-el-tiempo-de-entrega-de-uniformes.webp",
+      "width": 6240,
+      "height": 4160,
+      "alt": "Cintas métricas de varios colores enrolladas"
+    }
   },
   {
     "id": 51,
@@ -2896,14 +2327,11 @@
     "slug": "dia-mundial-del-algodon-2026",
     "productionURL": "https://cottoncountry.com.pe/dia-mundial-del-algodon-2026",
     "publishedAt": "2026-10-07",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Algodón en 2026 y su cadena de valor; referencias documentales",
-    "exclusiveContribution": "Algodón en 2026 y su cadena de valor; referencias documentales",
-    "seoTitle": "Algodón en 2026: mercado, Perú y cadena textil",
-    "metaDescription": "Una mirada al algodón en 2026, su producción, competencia con otras fibras y papel en los uniformes, con referencias documentales.",
-    "canonical": "https://cottoncountry.com.pe/dia-mundial-del-algodon-2026",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Día Mundial del Algodón 2026: Perú y mercado textil",
+    "metaDescription": "Cada 7 de octubre se celebra el Día Mundial del Algodón, una fecha que busca reconocer la importancia económica y social de una fibra que ha acompañado a la…",
+    "canonical": "/dia-mundial-del-algodon-2026",
     "headings": [
       {
         "level": 2,
@@ -2934,44 +2362,71 @@
         "text": "Una fibra histórica que también mira hacia el futuro"
       }
     ],
-    "image": {
-      "src": "/blog/dia-mundial-del-algodon-2026.webp",
-      "width": 1080,
-      "height": 1080,
-      "alt": "Muestras de algodón de distintos colores exhibidas en un museo"
-    },
-    "internalLinks": [
+    "links": [
+      {
+        "href": "https://www.fao.org/markets-and-trade/commodities-overview/fibres/en?utm_source=chatgpt.com",
+        "text": "FAOHome"
+      },
+      {
+        "href": "https://www.fao.org/world-cotton-day/world-cotton-day-7-october/2/en?utm_source=chatgpt.com",
+        "text": "FAOHome"
+      },
+      {
+        "href": "https://www.fao.org/world-cotton-day/world-cotton-day-7-october/2/en?utm_source=chatgpt.com",
+        "text": "FAOHome"
+      },
+      {
+        "href": "https://www.fao.org/world-cotton-day/world-cotton-day-7-october/2/en?utm_source=chatgpt.com",
+        "text": "FAOHome"
+      },
+      {
+        "href": "https://icac.org/7974-2?utm_source=chatgpt.com",
+        "text": "ICAC"
+      },
+      {
+        "href": "https://icac.org/7974-2?utm_source=chatgpt.com",
+        "text": "ICAC"
+      },
       {
         "href": "/una-breve-historia-del-algodon",
         "text": "tradición algodonera"
       },
       {
+        "href": "https://estadisticas.bcrp.gob.pe/estadisticas/series/anuales/resultados/PM05083AA/html?utm_source=chatgpt.com",
+        "text": "Banco Central de Reserva del Perú"
+      },
+      {
+        "href": "https://www.bcrp.gob.pe/docs/Publicaciones/Memoria/2025/memoria-bcrp-2025.pdf?utm_source=chatgpt.com",
+        "text": "BCRP"
+      },
+      {
+        "href": "https://www.fao.org/markets-and-trade/commodities-overview/fibres/en?utm_source=chatgpt.com",
+        "text": "FAOHome"
+      },
+      {
         "href": "/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
         "text": "cómo El Niño puede afectar a la industria textil y a sus cadenas de suministro"
-      }
-    ],
-    "externalLinks": [
-      {
-        "href": "https://www.fao.org/markets-and-trade/commodities-overview/fibres/en",
-        "text": "24 millones de agricultores"
       },
       {
-        "href": "https://icac.org/7974-2",
-        "text": "campaña 2026/27"
+        "href": "https://icac.org/7974-2?utm_source=chatgpt.com",
+        "text": "ICAC"
       },
       {
-        "href": "https://estadisticas.bcrp.gob.pe/estadisticas/series/anuales/resultados/PM05083AA/html",
-        "text": "estadísticas oficiales"
+        "href": "https://estadisticas.bcrp.gob.pe/estadisticas/series/anuales/resultados/PM05083AA/html?utm_source=chatgpt.com",
+        "text": "Banco Central de Reserva del Perú"
       }
     ],
-    "relatedArticleSlugs": [
+    "related": [
       "una-breve-historia-del-algodon",
       "el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
       "logistica-y-abastecimiento-textil-2022"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/dia-mundial-del-algodon-2026.webp",
+      "width": 1080,
+      "height": 1080,
+      "alt": "Muestras de algodón de distintos colores exhibidas en un museo"
+    }
   },
   {
     "id": 52,
@@ -2979,14 +2434,11 @@
     "slug": "el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
     "productionURL": "https://cottoncountry.com.pe/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
     "publishedAt": "2026-10-07",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Escenarios de riesgo climático, demanda, energía y logística",
-    "exclusiveContribution": "Escenarios de riesgo climático, demanda, energía y logística",
-    "seoTitle": "El Niño y la industria textil: demanda y riesgos operativos",
-    "metaDescription": "Cómo el clima puede afectar prendas, algodón, energía y distribución. Un análisis de riesgos que no sustituye los pronósticos oficiales.",
-    "canonical": "https://cottoncountry.com.pe/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "El Niño 2026-2027 y la industria textil peruana",
+    "metaDescription": "El Fenómeno de El Niño suele asociarse inmediatamente con lluvias, inundaciones y huaicos. Para la industria textil, sin embargo, sus efectos pueden ser mucho…",
+    "canonical": "/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
     "headings": [
       {
         "level": 2,
@@ -3033,35 +2485,31 @@
         "text": "Continúa leyendo"
       }
     ],
-    "image": {
-      "src": "/blog/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil.webp",
-      "width": 1600,
-      "height": 1200,
-      "alt": "Señal de tránsito parcialmente rodeada por agua"
-    },
-    "internalLinks": [
+    "links": [
       {
         "href": "/dia-mundial-del-algodon-2026",
         "text": "Día Mundial del Algodón 2026"
       },
       {
-        "href": "/de-que-depende-el-tiempo-de-entrega-de-uniformes",
-        "text": "cronogramas"
-      },
-      {
         "href": "/dia-mundial-del-algodon-2026",
         "text": "Día Mundial del Algodón 2026: una fibra que sigue siendo estratégica para la industria textil"
+      },
+      {
+        "href": "/de-que-depende-el-tiempo-de-entrega-de-uniformes",
+        "text": "¿De qué depende el tiempo de entrega de un proyecto de uniformes?"
       }
     ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
+    "related": [
       "dia-mundial-del-algodon-2026",
       "de-que-depende-el-tiempo-de-entrega-de-uniformes",
       "el-futuro-de-la-industria-textil-y-de-confecciones"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil.webp",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Señal de tránsito parcialmente rodeada por agua"
+    }
   },
   {
     "id": 53,
@@ -3069,14 +2517,11 @@
     "slug": "sector-textil-peruano-emergencia-productividad-2026",
     "productionURL": "https://cottoncountry.com.pe/sector-textil-peruano-emergencia-productividad-2026",
     "publishedAt": "2026-10-07",
-    "publicationDateEvidence": "Fecha definitiva proporcionada por el propietario en la instrucción de cierre integral",
-    "updatedAt": "2026-11-18",
-    "state": "Revisión técnica/editorial para revisión del propietario",
-    "searchIntent": "Informativa: Productividad y costo total en compras B2B; sin certificar una norma legal",
-    "exclusiveContribution": "Productividad y costo total en compras B2B; sin certificar una norma legal",
-    "seoTitle": "Industria textil peruana: producir y comprar mejor",
-    "metaDescription": "Productividad y compras B2B: por qué precio unitario, calidad, servicio y costo total deben evaluarse juntos en la industria textil peruana.",
-    "canonical": "https://cottoncountry.com.pe/sector-textil-peruano-emergencia-productividad-2026",
+    "publicationDateEvidence": "Tabla definitiva del propietario, tests/fixtures/blog-publication-dates.json",
+    "state": "Texto original del Word restaurado y comprobado íntegramente",
+    "seoTitle": "Sector textil peruano: emergencia y productividad en 2026",
+    "metaDescription": "El sector textil y confecciones peruano atraviesa nuevamente un momento complejo. En octubre de 2026, el Gobierno declaró en emergencia al sector por 120 días…",
+    "canonical": "/sector-textil-peruano-emergencia-productividad-2026",
     "headings": [
       {
         "level": 2,
@@ -3103,13 +2548,7 @@
         "text": "Continúa leyendo"
       }
     ],
-    "image": {
-      "src": "/blog/sector-textil-peruano-emergencia-productividad-2026.webp",
-      "width": 1000,
-      "height": 667,
-      "alt": "Detalle de las piezas de una máquina textil industrial"
-    },
-    "internalLinks": [
+    "links": [
       {
         "href": "/como-definir-un-proyecto-de-uniformes-corporativos",
         "text": "Definir correctamente una necesidad"
@@ -3127,14 +2566,16 @@
         "text": "Día Mundial del Algodón 2026: una fibra que sigue siendo estratégica para la industria textil"
       }
     ],
-    "externalLinks": [],
-    "relatedArticleSlugs": [
+    "related": [
       "como-definir-un-proyecto-de-uniformes-corporativos",
       "3-consejos-para-compradores-de-textiles-b2b",
       "el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil"
     ],
-    "inSitemap": true,
-    "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "image": {
+      "src": "/blog/sector-textil-peruano-emergencia-productividad-2026.webp",
+      "width": 1000,
+      "height": 667,
+      "alt": "Detalle de las piezas de una máquina textil industrial"
+    }
   }
 ]

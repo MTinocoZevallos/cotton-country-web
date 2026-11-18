@@ -5,94 +5,62 @@
   "negativeControls": 8,
   "localImageURLs": 53,
   "internalDestinations": 56,
-  "verifiedTOCFragments": 196,
+  "verifiedTOCFragments": 163,
   "responsive": [
     {
       "width": 1440,
       "articles": 53,
       "listings": 11,
+      "DOMIntegrity": 53,
       "overflow": false
     },
     {
       "width": 768,
       "articles": 53,
       "listings": 11,
+      "DOMIntegrity": 53,
       "overflow": false
     },
     {
       "width": 390,
       "articles": 53,
       "listings": 11,
+      "DOMIntegrity": 53,
       "overflow": false
     },
     {
       "width": 320,
       "articles": 53,
       "listings": 11,
+      "DOMIntegrity": 53,
       "overflow": false
     }
   ],
   "axeSamples": 40,
   "errors": [],
   "limitations": [
-    "External sources and Vercel require separate remote verification; local routes do not establish Google indexing."
+    "This checks a local production build; external sites, Vercel availability and Google indexing are separate."
   ],
-  "date": "2026-11-18",
-  "timezone": "America/Lima",
-  "baseSHA": "d610d0e10d8e97d3f22db3170ef519aee2f7d17b",
-  "sourceSHA256": "ec86f056ac6d899a9ce2d80e52262f694d60b0ca4eed194e8225a79e534c9d6d",
-  "unitTests": 26,
-  "build": "passed",
+  "task": "Restauración íntegra del Word; sustituye resultados editoriales anteriores",
+  "baseCommit": "1949debe825765557892c90eb79bedfa4c54d60a",
+  "sourceSHA256": "7b39c05f2608e4f7cd9503eaa8dba1c99a465e9cdf430a1b59a55c131de69735",
+  "unitTests": {
+    "passed": 27,
+    "failed": 0
+  },
+  "build": "passed; 142 generated pages",
   "typescript": "passed",
   "eslint": "passed",
-  "diffCheck": "passed",
-  "protectedApprovedArticles": 5,
-  "contextualInsertions": 104,
-  "datePairsConfirmedAgainstOwnerInstruction": 53,
-  "wordTablesVerifiedCellByCell": 2,
-  "modifiedOriginalImageFiles": 0,
-  "previewEnvironmentMetadata": "noindex,nofollow when VERCEL_ENV=preview; unit-tested, not remotely verified",
-  "allPairScreening": 1378,
-  "sizingVoiceCorrection": {
-    "reviewedArticles": 14,
-    "modifiedArticles": 7,
-    "untouchedApprovedArticles": 5,
-    "responsive": [
-      {
-        "width": 1440,
-        "articles": 14,
-        "overflow": false
-      },
-      {
-        "width": 768,
-        "articles": 14,
-        "overflow": false
-      },
-      {
-        "width": 390,
-        "articles": 14,
-        "overflow": false
-      },
-      {
-        "width": 320,
-        "articles": 14,
-        "overflow": false
-      }
-    ],
-    "axeSamples": 14,
-    "internalDestinations": 14,
-    "errors": [],
-    "publicationDatesAndMetadata": "unchanged",
-    "prohibitedEditorialCommentary": "absent from all 14 reviewed bodies",
-    "baseSHA": "2db93c2b13f583066a4f04ea5237465e1bbde676",
-    "sourceSHA256": "653d1c096fb95bbea15beda527be269940e57d8167496fe7317563cd6a717607",
-    "build": "passed",
-    "typescript": "passed",
-    "eslint": "passed",
-    "unitTests": 29,
-    "unchangedFullArticleRecords": 46,
-    "unchangedMetadataAndImages": 53,
-    "wordDocumentRead": true,
-    "reviewedPairCount": 91
+  "sourceIntegrity": 53,
+  "datesAndSlugs": 53,
+  "headings": {
+    "h2": 151,
+    "h3": 12,
+    "addedH2": 2
+  },
+  "remotePreview": {
+    "url": "https://cotton-country-git-redesign-2027-home-manuels-projects-8b611ec0.vercel.app/blog",
+    "verified": false,
+    "reason": "HTTP 403 CONNECT del proxy de salida (envoy); no es una respuesta de la aplicación Vercel"
   }
 }

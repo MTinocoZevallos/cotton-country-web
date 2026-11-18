@@ -28,11 +28,11 @@ export function parseInline(text: string): Inline[] {
       const raw = match[1].match(/(?:^|\s)href\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s]+))/i)
       const href = raw ? normalizeBlogHref(entities(raw[1] ?? raw[2] ?? raw[3])) : undefined
       const children = parseInline(match[2])
-      if (href) nodes.push({ type:"link",href,children }); else nodes.push(...children)
+      if (href && inlineText(children).trim()) nodes.push({ type:"link",href,children }); else nodes.push(...children)
     } else if (match[3] !== undefined) {
       const href = normalizeBlogHref(entities(match[4]))
       const children = parseInline(match[3])
-      if (href) nodes.push({type:"link",href,children}); else nodes.push(...children)
+      if (href && inlineText(children).trim()) nodes.push({type:"link",href,children}); else nodes.push(...children)
     } else if (match[5] !== undefined) nodes.push({type:"strong",children:parseInline(match[5])})
     else if (match[8] !== undefined) nodes.push({type:"em",children:parseInline(match[8])})
     else nodes.push({type:/^(em|i)$/i.test(match[6])?"em":"strong",children:parseInline(match[7])})

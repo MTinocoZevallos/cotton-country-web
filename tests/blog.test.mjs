@@ -1,6 +1,5 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import crypto from 'node:crypto'
 import fs from 'node:fs'
 import path from 'node:path'
 import { createRequire } from 'node:module'
@@ -80,36 +79,17 @@ test('all 53 original slugs and canonical paths survive and receive the exact ow
   assert.deepEqual(new Set(Object.keys(dates)),new Set(blog.posts.map(p=>p.slug)))
   for(const post of blog.posts){assert.equal(post.publishedAt,dates[post.slug]);assert(publication.originalPublicationTime(post.publishedAt));assert.equal(post.canonicalPath,baseline.posts.find(p=>p.slug===post.slug).canonicalPath)}
 })
-test('five approved versions keep their exact wording and SEO titles; only contextual links are added',()=>{
-  for(const slug of baseline.protectedSlugs){const before=baseline.posts.find(p=>p.slug===slug),post=blog.posts.find(p=>p.slug===slug);assert.equal(withoutLinks(post.content),withoutLinks(before.content),slug);assert.equal(post.title,before.title);assert.equal(post.seoTitle,before.seoTitle);assert.equal(post.excerpt,before.excerpt);assert.equal(post.updatedAt,before.updatedAt)}
-})
-test('both historical AI conversations and every original measurement cell stay verbatim',()=>{
-  const historical=load(path.join(root,'lib/blog/historical-chat.ts'))
-  const tableSlug='una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano',fullSlug='las-tallas-completas-segun-una-ia'
-  const original=fs.readFileSync(path.join(root,'tests/fixtures/chatgpt-conversation-original.txt'),'utf8').trim()
-  assert.equal(historical.historicalChatSource(blog.posts.find(p=>p.slug===tableSlug).content),original)
-  const post=blog.posts.find(p=>p.slug===fullSlug),before=baseline.posts.find(p=>p.slug===fullSlug)
-  assert.deepEqual(historical.parseFullSizeChat(post.content),historical.parseFullSizeChat(before.content))
-  assert.deepEqual(content.parseContent(blog.posts.find(p=>p.slug===tableSlug).content).filter(b=>b.type==='table'),content.parseContent(original).filter(b=>b.type==='table'))
-  const interview=blog.posts.find(p=>p.slug==='el-ano-del-algodon-2022')
-  for(const sentence of ['En el año 1922 el hacendado Piurano don Emilio Hilck Seminario','¿Pero sabe usted que este algodón se originó en los EEUU?'])assert(interview.content.includes(sentence))
-})
-test('the 30 percent claim remains a first-party history and is not moved into the commercial comparison',()=>{
-  const post=blog.posts.find(p=>p.slug==='el-problema-de-las-tallas'),guide=blog.posts.find(p=>p.slug==='uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente')
-  assert(post.content.includes('30 %'));assert(post.content.includes('En nuestra experiencia inicial, los reclamos'));assert(post.content.includes('arreglos posteriores'))
-  assert(!guide.content.includes('30 %'));assert(!post.content.includes('reciclaje'));assert(!post.content.includes('Zara'))
-  assert(!blog.posts.find(p=>p.slug==='como-definir-un-proyecto-de-uniformes-corporativos').content.includes('Standard Allowed Minutes'))
-  assert(blog.posts.find(p=>p.slug==='de-que-depende-el-tiempo-de-entrega-de-uniformes').content.includes('Standard Allowed Minutes'))
-})
-test('every article has contextual links and unique useful metadata; related articles exist and never link to themselves',()=>{
+
+
+
+test('metadata is unique and faithful to source excerpts; contextual and related article targets exist',()=>{
   assert.equal(new Set(blog.posts.map(p=>blog.postMetadata(p).title)).size,53)
   assert.equal(new Set(blog.posts.map(p=>blog.descriptionForPost(p))).size,53)
   const slugs=new Set(blog.posts.map(p=>'/'+p.slug))
   function links(nodes){return nodes.flatMap(n=>n.type==='link'?[n.href,...links(n.children)]:'children' in n?links(n.children):[])}
-  for(const post of blog.posts){const meta=blog.postMetadata(post);assert(meta.description.length>=80&&meta.description.length<=175);assert(!meta.description.endsWith('…'));assert(content.parseContent(post.content).some(b=>b.type==='heading'))
+  for(const post of blog.posts){const meta=blog.postMetadata(post);assert(meta.description.length>0&&meta.description.length<=175)
     const found=content.parseContent(post.content).flatMap(b=>'children' in b?links(b.children):b.type==='list'?b.items.flatMap(links):[])
-    assert(found.some(href=>slugs.has(href.split(/[?#]/)[0])),post.slug)
-    for(const href of found.filter(href=>href.startsWith('/'))){const target=href.split(/[?#]/)[0];assert(slugs.has(target)||target.startsWith('/uniformes'),href)}
+    for(const href of found.filter(href=>href.startsWith('/'))){const target=href.split(/[?#]/)[0];assert(slugs.has(target)||target==='/'||target.startsWith('/uniformes'),href)}
     const related=blog.relatedPosts(post);assert.equal(related.length,3);assert.equal(new Set(related.map(p=>p.slug)).size,3);assert(!related.some(p=>p.slug===post.slug))
   }
 })
@@ -158,23 +138,35 @@ test('the single Word alias and all existing blog aliases redirect directly with
   for(const rule of rules.filter(r=>!r.source.includes(':path')))assert(blog.posts.some(p=>'/'+p.slug===rule.destination))
 })
 
-const sizingReview=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/sizing-editorial-review.json')))
-const reviewDigest=value=>crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex')
-test('all reviewed sizing articles read as publications without internal revision commentary',()=>{
-  const banned=/el (?:relato|texto|artículo) original|el artículo anterior decía|la versión histórica no documentaba|no se publicó el tamaño de muestra|no publicaba su definición|no corresponde convertir|según la auditoría|este artículo (?:se concentra|documenta)|esta publicación se concentra|el aporte (?:histórico|específico)|sin añadir porcentajes de acierto|no fueron publicados|no fueron documentados/i
-  assert.equal(sizingReview.reviewedSlugs.length,14)
-  for(const slug of sizingReview.reviewedSlugs){const post=blog.posts.find(p=>p.slug===slug);assert(!banned.test(post.content),slug)}
+
+
+
+import { sourceFromWord, verifyAll, verifyPost, publishedText } from '../scripts/blog_integrity.mjs'
+const originalWord=sourceFromWord()
+test('all 53 full texts, titles, original dates and slugs reproduce the actual versioned Word source',()=>{
+  const result=verifyAll();assert.equal(result.restored,53);assert.equal(result.datesAndSlugs,53)
+  assert(blog.posts.every(p=>p.updatedAt===undefined))
 })
-test('this sizing correction changes only seven bodies and preserves all 53 SEO records and images',()=>{
-  assert.equal(sizingReview.modifiedSlugs.length,7);assert.equal(sizingReview.posts.length,53)
-  for(const before of sizingReview.posts){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(reviewDigest(Object.fromEntries(Object.entries(post).filter(([k])=>k!=='content'))),before.nonContentSHA256,post.slug);assert.equal(reviewDigest(blog.postMetadata(post)),before.metadataSHA256,post.slug);assert.deepEqual(blog.getPostImage(post.slug),before.image)
-    if(!sizingReview.modifiedSlugs.includes(post.slug))assert.equal(reviewDigest(post),before.recordSHA256,post.slug)
+test('integrity rejects a deleted paragraph, an added sentence, substituted words and changed table figures',()=>{
+  const source=originalWord.articles[0],post=blog.posts.find(p=>p.slug===source.slug)
+  const cases=[post.content+'\nUna frase añadida.',post.content.replace('algodón','nylon'),post.content.split('\n\n').slice(1).join('\n\n')]
+  for(const altered of cases)assert.throws(()=>verifyPost({...post,content:altered},source))
+  const tableSource=originalWord.articles[38],tablePost=blog.posts.find(p=>p.slug===tableSource.slug)
+  assert.throws(()=>verifyPost({...tablePost,content:tablePost.content.replace('80-84','81-84')},tableSource))
+})
+test('both original chats render without extra commentary, warnings or table captions and retain their closing text',()=>{
+  const historical=load(path.join(root,'lib/blog/historical-chat.ts'))
+  for(const [id,count] of [[37,2],[39,3]]){
+    const original=originalWord.articles[id-1],post=blog.posts.find(p=>p.slug===original.slug)
+    const source=historical.historicalChatSource(post.content),exchanges=historical.parseHistoricalChat(source,count)
+    assert.equal(exchanges.length,count);assert.equal(publishedText(post,original),original.normalizedText)
+    assert(!source.includes('Sin duda nos aterra'))
   }
+  const view=fs.readFileSync(path.join(root,'components/blog/HistoricalChat.tsx'),'utf8')
+  assert(!view.includes('tableNotice'));assert(!view.includes('<caption>'));assert(!view.includes('Reproducción de la conversación original'))
 })
-test('recovered sizing testimony stays first-party and historical, without invented platform metrics',()=>{
-  const peruvian=blog.posts.find(p=>p.slug==='tallas-completas-en-peru'),online=blog.posts.find(p=>p.slug==='guia-de-tallas-online'),company=blog.posts.find(p=>p.slug==='el-problema-de-las-tallas'),campaign=blog.posts.find(p=>p.slug==='por-que-las-empresas-tienen-problemas-con-las-tallas')
-  assert(peruvian.content.includes('2022'));assert(peruvian.content.includes('Durante nuestras sesiones de SizeSet observábamos hasta cuatro grupos'));assert(!/\d+\s*%/.test(peruvian.content));assert(!/SaaS|muestra poblacional|clasificación nacional/i.test(peruvian.content))
-  for(const text of ['supervisión presencial','camisa de cuello americano','oficinas, locales o plantas'])assert(online.content.includes(text))
-  for(const text of ['30 %','ciclo del efectivo','2014','2021','smartphone','arreglos posteriores'])assert(company.content.includes(text))
-  assert(campaign.content.includes('cientos de procesos de tallaje'));assert(campaign.content.includes('Personas que envían a un compañero en su lugar'))
+
+test('whitespace-only Word hyperlinks preserve spacing without creating unnamed focus targets',()=>{
+  const nodes=content.parseInline('<a href="https://www.fao.org/"> </a><a href="https://www.fao.org/">FAOHome</a>')
+  assert.equal(nodes.filter(n=>n.type==='link').length,1);assert.equal(content.inlineText(nodes),' FAOHome')
 })

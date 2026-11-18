@@ -1,0 +1,433 @@
+{
+  "source": "docs/blog-2027/source/BLOG - COTTON COUNTRY.docx",
+  "sourceSHA256": "7b39c05f2608e4f7cd9503eaa8dba1c99a465e9cdf430a1b59a55c131de69735",
+  "restored": 53,
+  "datesAndSlugs": 53,
+  "comparison": "NFC and whitespace only; inline presentation and exactly declared added headings excluded",
+  "articles": [
+    {
+      "id": 1,
+      "slug": "el-algodon-se-caso-con-el-poliester-en-oxford",
+      "publishedAt": "2020-08-30",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "531d3b8e9980776eb4ff9d961a253c15d169496fe4bee0d821a3fe3372ce53f8"
+    },
+    {
+      "id": 2,
+      "slug": "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
+      "publishedAt": "2020-11-30",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "21a500e935f6b2eccca30de244027db7d488924553ccf6f1d6a1db47584713da"
+    },
+    {
+      "id": 3,
+      "slug": "es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
+      "publishedAt": "2020-12-30",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "a3019bb017ffb9b24021c88941215fe3dd64cd9a647b87ebd6d6278f1ba1c6bc"
+    },
+    {
+      "id": 4,
+      "slug": "5-tipos-de-tejidos-inteligentes",
+      "publishedAt": "2020-01-15",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "36d45b810dbf204c64bb214b85e236b437d6ba320ebe51294a30372529dddd3f"
+    },
+    {
+      "id": 5,
+      "slug": "estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
+      "publishedAt": "2020-11-30",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "87505fa3cb59b9cba10b61ec6d4b6589fb8ee51777f9a62e964cfd8985cef35b"
+    },
+    {
+      "id": 6,
+      "slug": "mascarillas-y-covid-19",
+      "publishedAt": "2020-11-30",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "d951d3e562cc1881eba00938011ffbce707431ba8670e901978d0236c0d8e6d8"
+    },
+    {
+      "id": 7,
+      "slug": "materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
+      "publishedAt": "2021-01-23",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "827213ff4a28f9f85cf62a97ebc0a3ac2c7b5a44497a25a79ea1bdd68ae1c25e"
+    },
+    {
+      "id": 8,
+      "slug": "por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
+      "publishedAt": "2021-01-23",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "6d33d751b95e57df7a23e0d75f01f1803ea2b198cf9fcddf7895fe5f9da42315"
+    },
+    {
+      "id": 9,
+      "slug": "uniformes-de-chef-que-tela-elegir",
+      "publishedAt": "2021-01-23",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "8ed793cfe71ba6fe533d30cf5dbcd1a46d46264850b20cf0a1194a9b3d8ba9e7"
+    },
+    {
+      "id": 10,
+      "slug": "que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
+      "publishedAt": "2021-01-23",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "255da3787b9448357f12643fecfb0cef2da8e7259f722ee08fc5d6a6f70cba5a"
+    },
+    {
+      "id": 11,
+      "slug": "el-uniforme-de-farmacia",
+      "publishedAt": "2021-01-23",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "3ab8e50b82c2043e9efbf1bb92c67613a67575f1259271fdf6d825d695b167a2"
+    },
+    {
+      "id": 12,
+      "slug": "por-que-usar-mascarillas-reutilizables-lavables",
+      "publishedAt": "2021-01-23",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "7bb23261b1229a777c500c8f0551533bba2eff744e0c542d0e434cea142af60f"
+    },
+    {
+      "id": 13,
+      "slug": "cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+      "publishedAt": "2021-01-23",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "85366c3eaa2df9bd5535276d394ca309782100d27755d00a87828634c19b125b"
+    },
+    {
+      "id": 14,
+      "slug": "venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+      "publishedAt": "2021-01-23",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "a4ecbe6610ddff688b00313e7de24b665ad809fdda5bdbc309363b0aa7a435f8"
+    },
+    {
+      "id": 15,
+      "slug": "escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo",
+      "publishedAt": "2021-01-23",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "477755c935a16568680be6a8b98634fc20bf31e09bbc9f7f6d0922c7d59abdc8"
+    },
+    {
+      "id": 16,
+      "slug": "como-cuidar-tu-mascarilla-de-tela-certificada",
+      "publishedAt": "2021-01-23",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "e51dfc4cd7385132859acdf9374ff3a38a36277011edc9d8f9fa7f2ccc9ac904"
+    },
+    {
+      "id": 17,
+      "slug": "mascarillas-y-covid-19-segunda-ola",
+      "publishedAt": "2021-02-06",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "e15da7070bc68ec9c6ec6a8199751657dc3fa4ee7b69def758d2418921529fdb"
+    },
+    {
+      "id": 18,
+      "slug": "empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+      "publishedAt": "2021-02-25",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "9971cd929fd0ea4ee78df1ed1d4209dbf5cd1f9740a7a772e5b307141ea578ab"
+    },
+    {
+      "id": 19,
+      "slug": "ntp-aplicada-en-mascarillas-reutilizables",
+      "publishedAt": "2021-02-25",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "b6e5fe6e8f27d88cfce442c04a44361de928456259b5651984b67864eef3f486"
+    },
+    {
+      "id": 20,
+      "slug": "procesos-de-confeccion-seguros",
+      "publishedAt": "2021-02-25",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "1cd91a1521acf0e245eb2df67742b7225d80a0a58d9ad28a5e9e1bfbdb9136bc"
+    },
+    {
+      "id": 21,
+      "slug": "delivery-aliado-de-la-industria-textil-confecciones",
+      "publishedAt": "2021-02-25",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "2c688494cd33d5f01e724490b792b181a76b4d5d8ec5b00e6c8319172e6e9b7c"
+    },
+    {
+      "id": 22,
+      "slug": "que-talla-eres-en-peru",
+      "publishedAt": "2021-02-25",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "68aa11f821bcfe686d8f5e34ed187e04c4eddb6f0e0f600db15530f0d0fe44c9"
+    },
+    {
+      "id": 23,
+      "slug": "el-problema-de-las-tallas",
+      "publishedAt": "2021-08-10",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "a5cabfc7031c043004aab5bd2b21a303a14604c0fcd254bc376b7dbb82026256"
+    },
+    {
+      "id": 24,
+      "slug": "ntp-para-la-designacion-de-tallas",
+      "publishedAt": "2021-08-10",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "b49bd2538bdcfff7df3be4f06fa60835c680bd40046eaf18a31f60e70ef625d1"
+    },
+    {
+      "id": 25,
+      "slug": "la-talla-peruana",
+      "publishedAt": "2021-08-10",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "11b937e8599f5a8634f9aee0041c4cdd23568f4c63a2dac466d5229d35edfa97"
+    },
+    {
+      "id": 26,
+      "slug": "medalla-de-oro-en-uniformes",
+      "publishedAt": "2021-08-10",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "bb5423389c1b436808478f667594d51e4c45341ae78b47d3f9ae987b15ea0df7"
+    },
+    {
+      "id": 27,
+      "slug": "los-uniformes-un-problema-olimpico",
+      "publishedAt": "2021-08-10",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "2a0c78b5333219f4ab4d87bc697a51b4e07c077f54a94a2befad6b84edee6728"
+    },
+    {
+      "id": 28,
+      "slug": "disenador-a-sus-disenos",
+      "publishedAt": "2022-02-20",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "875d91bb8258553acc72da127ceaf44f12e55e72c1371677f50b4409ce1f18bf"
+    },
+    {
+      "id": 29,
+      "slug": "3-consejos-para-compradores-de-textiles-b2b",
+      "publishedAt": "2022-02-23",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "047ced98447c387276fbfe99e09581a82b5df006404c3de1d73fc9e1f69466b7"
+    },
+    {
+      "id": 30,
+      "slug": "el-futuro-de-la-industria-textil-y-de-confecciones",
+      "publishedAt": "2022-02-23",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "54564afa521a82fd1edc0e1191051c2cee2cfb9b947bb7bb75f8941309c3182e"
+    },
+    {
+      "id": 31,
+      "slug": "logistica-y-abastecimiento-textil-2022",
+      "publishedAt": "2022-02-23",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "89912037e7088e77ed6c42d08d3b8d9e5ff2d195e4254f1ee4a9f13e86aa67f9"
+    },
+    {
+      "id": 32,
+      "slug": "que-significa-tallas-completas-en-ropa",
+      "publishedAt": "2022-08-18",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "c6f456b1372482eace7a6ba85e45763228cf94bcf70ccb52cc6921d2efbeb215"
+    },
+    {
+      "id": 33,
+      "slug": "guia-de-tallas-online",
+      "publishedAt": "2022-08-18",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "34997fe52089a3a7008bf67b548baf2b4543020fcd51f2bb5d223d6fd86acaf3"
+    },
+    {
+      "id": 34,
+      "slug": "una-breve-historia-del-algodon",
+      "publishedAt": "2022-08-18",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "bb2dfd5ea12c832a493301ea3202d9772b3fdc5dee0d6cc28a83d16ccf36344d"
+    },
+    {
+      "id": 35,
+      "slug": "el-ano-del-algodon-2022",
+      "publishedAt": "2022-08-18",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "94b142ff8a35c5d95a9c79a4033e5f4931a3fea14c6d8ce40c7a2b95709740e8"
+    },
+    {
+      "id": 36,
+      "slug": "tallas-completas-en-peru",
+      "publishedAt": "2022-08-18",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "7793bfecacff482019615ee98cde212c6c2d40eb678f5a71c3a58fdc27594579"
+    },
+    {
+      "id": 37,
+      "slug": "las-tallas-completas-segun-una-ia",
+      "publishedAt": "2023-02-28",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "bc76a954d686c609a52ca42a84bf5368a22e767b986295ffabc87ac3e7a62406"
+    },
+    {
+      "id": 38,
+      "slug": "como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt",
+      "publishedAt": "2023-02-28",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "c79243eacb88ec472ea8366f9c676f645ddfcf431f15f296bb0e9ed7c82c16f9"
+    },
+    {
+      "id": 39,
+      "slug": "una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
+      "publishedAt": "2023-02-28",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "121366e48f02705c3e0b95e76a9365810164ea68325a118ac3b7f9b9533c1e37"
+    },
+    {
+      "id": 40,
+      "slug": "uniformes-de-guerra",
+      "publishedAt": "2023-11-30",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "ae8842579c0401b684777dedbfadbbcd39de896df6da509441c685d99b9ed63b"
+    },
+    {
+      "id": 41,
+      "slug": "un-tejido-llamado-gaza",
+      "publishedAt": "2023-11-30",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "1d15e8c10c0c9934bcbb7915abca1bf822fb52af3c09df821099d5d47a68e639"
+    },
+    {
+      "id": 42,
+      "slug": "perumin-2023",
+      "publishedAt": "2023-11-30",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "5411c2d88cf8d1944e2c8fb9276e938c2f7c2d179397b88875a7b6c990e1e865"
+    },
+    {
+      "id": 43,
+      "slug": "como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial",
+      "publishedAt": "2024-06-25",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "4e5cca6f5c93af105187c4b524ed73eba5792c88242590632ab9172984c508f9"
+    },
+    {
+      "id": 44,
+      "slug": "compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
+      "publishedAt": "2024-10-25",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "33bd45182125513a29cdbfeb39e0c5fbbc69b9bc2ceb0dc13a77bfdebd4f61fa"
+    },
+    {
+      "id": 45,
+      "slug": "novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
+      "publishedAt": "2024-10-25",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "b883f7e5daf514c0c6a88f1f2d9610a4ee86adf5d5ab5df4b70e76f4862ceb03"
+    },
+    {
+      "id": 46,
+      "slug": "uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+      "publishedAt": "2024-10-25",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "1c13257b9153482ef8b99f0b624194651668865dd488e9509912a9c06bedc7cd"
+    },
+    {
+      "id": 47,
+      "slug": "mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion",
+      "publishedAt": "2025-03-11",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "bdeae7e2712ea3d5a08d6a221cd6145662f65f76d07af4aad4791c2cc7f1b145"
+    },
+    {
+      "id": 48,
+      "slug": "como-definir-un-proyecto-de-uniformes-corporativos",
+      "publishedAt": "2026-07-28",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "bb175a317746190aac08378636eed0e27bb17ed5b8744e29be566010cf8e0597"
+    },
+    {
+      "id": 49,
+      "slug": "por-que-las-empresas-tienen-problemas-con-las-tallas",
+      "publishedAt": "2026-07-28",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "6bcb3dbd1f41e77fe11afb0d78a4d6e7e06a04b8e07eeed711a47deb5afed920"
+    },
+    {
+      "id": 50,
+      "slug": "de-que-depende-el-tiempo-de-entrega-de-uniformes",
+      "publishedAt": "2026-07-28",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "45f03a0d57280507beec80c4e7f6504d330aaf9b69903032e02f3dd027b123e1"
+    },
+    {
+      "id": 51,
+      "slug": "dia-mundial-del-algodon-2026",
+      "publishedAt": "2026-10-07",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "3eb0cf5e6350ec3573d5a87483c245309bf7204edd2fbeaab4bd33a7a9053ce4"
+    },
+    {
+      "id": 52,
+      "slug": "el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
+      "publishedAt": "2026-10-07",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "734231029f62540d1010859fba8a35ebb09a1634db5db5e12888c2620b60ef0b"
+    },
+    {
+      "id": 53,
+      "slug": "sector-textil-peruano-emergencia-productividad-2026",
+      "publishedAt": "2026-10-07",
+      "originalTitle": true,
+      "integrity": true,
+      "normalizedTextSHA256": "82948e366d02310f184df937f5ce5e9fd696cdf51339e4969c6b23feb2836894"
+    }
+  ]
+}
