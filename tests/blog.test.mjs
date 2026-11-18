@@ -129,13 +129,36 @@ test('the original Word witnesses match both complete measurement tables and the
   for(const quote of witnesses.vreelandQuotes)assert(interview.includes(quote),quote)
 })
 
+const approvedMigrationRedirects=[
+  ['/confeccion-de-uniformes','/uniformes',308],
+  ['/nosotros','/',302],
+  ['/sizeset','https://sizeset.com/',308],
+  ['/politica-de-privacidad','/privacidad',308],
+  ['/terminos-y-condiciones','/terminos',308],
+]
+const approvedMigrationSources=new Set(approvedMigrationRedirects.flatMap(([source])=>[source,source+'/']))
 test('the single Word alias and all existing blog aliases redirect directly without changing canonical slugs',async()=>{
   const alias='el-nino-2026-2027-impacto-industria-textil-peru',target='/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil'
   assert.equal(paths.normalizeBlogHref('/'+alias),target);assert.equal(paths.normalizeBlogHref('/blog/'+alias+'/'),target)
   const rules=await load(path.join(root,'next.config.ts')).default.redirects()
-  assert.equal(rules.length,111);assert.equal(new Set(rules.map(r=>r.source)).size,111)
+  assert.equal(rules.length,121);assert.equal(new Set(rules.map(r=>r.source)).size,121)
+  const historicalRules=rules.filter(r=>!approvedMigrationSources.has(r.source))
+  assert.equal(historicalRules.length,111)
   for(const source of ['/'+alias,'/'+alias+'/','/blog/'+alias,'/blog/'+alias+'/']){const rule=rules.find(r=>r.source===source);assert.equal(rule.destination,target);assert.equal(rule.permanent,true)}
-  for(const rule of rules.filter(r=>!r.source.includes(':path')))assert(blog.posts.some(p=>'/'+p.slug===rule.destination))
+  for(const rule of historicalRules.filter(r=>!r.source.includes(':path')))assert(blog.posts.some(p=>'/'+p.slug===rule.destination))
+})
+
+test('only the five approved migration routes redirect in both slash forms with the exact approved HTTP codes',async()=>{
+  const rules=await load(path.join(root,'next.config.ts')).default.redirects()
+  for(const [source,destination,statusCode] of approvedMigrationRedirects){
+    for(const variant of [source,source+'/']){
+      const index=rules.findIndex(r=>r.source===variant)
+      assert(index>=0&&index<10,variant+' must precede general normalization')
+      assert.deepEqual(rules[index],{source:variant,destination,statusCode})
+      assert(!approvedMigrationSources.has(destination),'No chains between new redirects')
+    }
+  }
+  assert(!rules.some(r=>/^\/desarrollo-de-producto\/?$/.test(r.source)))
 })
 
 
