@@ -12,11 +12,11 @@ const root = path.resolve(__dirname, '..')
 const plain = value => JSON.parse(JSON.stringify(value))
 
 // Execute the real TS modules with isolated transport doubles; never send email or CAPTCHA requests.
-function fixture() {
-  const sent = [], verified = [], cache = new Map()
+function fixture({ resendError = null, resendException = null } = {}) {
+  const sent = [], verified = [], logged = [], cache = new Map()
   let captchaSuccess = true
   const context = vm.createContext({
-    console, Request, Response, URLSearchParams,
+    console: { ...console, error: (...args) => logged.push(args) }, Request, Response, URLSearchParams,
     process: { env: { RESEND_API_KEY: 're_local_test', TURNSTILE_SECRET_KEY: 'local_test' } },
     fetch: async (url, options) => {
       assert.equal(url, 'https://challenges.cloudflare.com/turnstile/v0/siteverify')
@@ -30,7 +30,11 @@ function fixture() {
     cache.set(file, compiledModule)
     const source = ts.transpileModule(fs.readFileSync(file, 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText
     const localRequire = name => {
-      if (name === 'resend') return { Resend: class { emails = { send: async payload => { sent.push(payload); return { data: { id: 'test' }, error: null } } } } }
+      if (name === 'resend') return { Resend: class { emails = { send: async payload => {
+        sent.push(payload)
+        if (resendException) throw resendException
+        return resendError ? { data: null, error: resendError } : { data: { id: 'test' }, error: null }
+      } } } }
       if (name.startsWith('@/')) return load(path.join(root, name.slice(2) + '.ts'))
       if (name.startsWith('.')) return load(path.resolve(path.dirname(file), name + '.ts'))
       return nativeRequire(name)
@@ -38,7 +42,7 @@ function fixture() {
     vm.runInContext(`(function(require,module,exports){${source}\n})`, context, { filename: file })(localRequire, compiledModule, compiledModule.exports)
     return compiledModule.exports
   }
-  return { data: load(path.join(root, 'lib/uniforms.ts')), models: load(path.join(root, 'lib/garment-models.ts')).garmentModels, helpers: load(path.join(root, 'lib/contact-context.ts')), POST: load(path.join(root, 'app/api/contact/route.ts')).POST, sent, verified, failCaptcha: () => { captchaSuccess = false } }
+  return { data: load(path.join(root, 'lib/uniforms.ts')), models: load(path.join(root, 'lib/garment-models.ts')).garmentModels, helpers: load(path.join(root, 'lib/contact-context.ts')), POST: load(path.join(root, 'app/api/contact/route.ts')).POST, sent, verified, logged, failCaptcha: () => { captchaSuccess = false } }
 }
 const valid = { name: 'Prueba', phone: '999999999', email: 'test@example.org', ruc: '20123456789', message: 'Prueba local', turnstileToken: 'local-token' }
 const request = body => new Request('http://localhost/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
@@ -156,4 +160,129 @@ test('required fields, corporate email, and Turnstile checks still prevent sendi
     const f = fixture(); assert.equal((await f.POST(request(bad))).status, 400); assert.equal(f.sent.length, 0); assert.equal(f.verified.length, 0)
   }
   const f = fixture(); f.failCaptcha(); assert.equal((await f.POST(request(valid))).status, 400); assert.equal(f.sent.length, 0); assert.equal(f.verified.length, 1)
+})
+
+test('contact API confirms success only after the simulated provider accepts the email', async () => {
+  const f = fixture()
+  const response = await f.POST(request(valid))
+  assert.equal(response.status, 200)
+  assert.deepEqual(await response.json(), { success: true, message: 'Solicitud enviada correctamente.' })
+  assert.equal(f.sent.length, 1)
+  assert.equal(f.sent[0].from, 'Cotton Country <web@cottoncountry.com.pe>')
+  assert.deepEqual(plain(f.sent[0].to), ['info@cottoncountry.com.pe'])
+  assert.equal(f.sent[0].replyTo, valid.email)
+})
+
+test('a resolved Resend error returns HTTP 500 without success or provider details', async () => {
+  const f = fixture({ resendError: { name: 'validation_error', message: 'Private provider detail' } })
+  const response = await f.POST(request(valid))
+  assert.equal(response.status, 500)
+  assert.deepEqual(await response.json(), { error: 'No se pudo enviar la solicitud. Inténtalo nuevamente.' })
+  assert.equal(f.sent.length, 1)
+  assert.equal(f.verified.length, 1)
+})
+
+test('a thrown Resend exception returns HTTP 500 without confirming success', async () => {
+  const failure = new Error('Simulated provider exception')
+  const f = fixture({ resendException: failure })
+  const response = await f.POST(request(valid))
+  assert.equal(response.status, 500)
+  assert.deepEqual(await response.json(), { error: 'No se pudo enviar la solicitud. Inténtalo nuevamente.' })
+  assert.equal(f.sent.length, 1)
+  assert.equal(f.logged.length, 1)
+  assert.equal(f.logged[0][0], failure)
+})
+
+// Run the real component's submit handler and rerender its message using isolated
+// hook/DOM doubles. Neither the provider, CAPTCHA nor analytics can access a network.
+function formFixture(api, respond) {
+  const state = ['local-token', false, '', false], resets = { form: 0, captcha: 0 }, requests = []
+  let stateIndex = 0, refIndex = 0
+  const refs = [
+    { current: { reset: () => { resets.form++ } } },
+    { current: {} },
+    { current: 'local-widget' },
+  ]
+  const window = { location: { pathname: '/contacto', search: '?source_path=/uniformes/camisas' }, dataLayer: [], turnstile: { reset: () => { resets.captcha++ } } }
+  const context = vm.createContext({
+    window, URLSearchParams, process: { env: {} },
+    FormData: class { get(name) { return valid[name] } },
+    fetch: async (url, options) => {
+      assert.equal(url, '/api/contact')
+      assert.equal(options.method, 'POST')
+      requests.push(JSON.parse(options.body))
+      return respond ? respond() : api.POST(request(requests.at(-1)))
+    },
+  })
+  const jsx = (type, props) => ({ type, props })
+  const localRequire = name => {
+    if (name === 'react') return {
+      useRef: () => refs[refIndex++],
+      useState: () => {
+        const index = stateIndex++
+        return [state[index], value => { state[index] = value }]
+      },
+    }
+    if (name === 'react/jsx-runtime') return { jsx, jsxs: jsx, Fragment: 'fragment' }
+    if (name === 'next/script') return { default: 'script' }
+    if (name === '@/lib/contact-context') return api.helpers
+    if (name.endsWith('.css')) return { default: {} }
+    throw new Error('Unexpected component dependency: ' + name)
+  }
+  const mod = { exports: {} }, file = path.join(root, 'components/ContactForm.tsx')
+  const source = ts.transpileModule(fs.readFileSync(file, 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022, jsx: ts.JsxEmit.ReactJSX } }).outputText
+  vm.runInContext(`(function(require,module,exports){${source}\n})`, context, { filename: file })(localRequire, mod, mod.exports)
+  const render = () => { stateIndex = 0; refIndex = 0; return mod.exports.default({}) }
+  const nodes = tree => !tree || typeof tree !== 'object' ? [] : Array.isArray(tree) ? tree.flatMap(nodes) : [tree, ...nodes(tree.props?.children)]
+  return {
+    state, resets, requests, window,
+    submit: () => nodes(render()).find(node => node.type === 'form').props.onSubmit({ preventDefault() {}, currentTarget: {} }),
+    message: () => nodes(render()).find(node => node.type === 'p' && node.props.children === state[2]),
+  }
+}
+
+test('frontend shows success and records exactly one local conversion after API confirmation', async () => {
+  const f = fixture(), form = formFixture(f)
+  await form.submit()
+  assert.equal(form.state[1], false)
+  assert.equal(form.state[3], true)
+  assert.equal(form.message().props.className, 'text-sm text-green-700')
+  assert.equal(form.message().props.children, 'Solicitud enviada correctamente. Te contactaremos pronto.')
+  assert.deepEqual(form.resets, { form: 1, captcha: 1 })
+  assert.deepEqual(plain(form.window.dataLayer), [{ event: 'formulario_enviado', form_name: 'contacto_cotton_country' }])
+  assert.equal(form.requests[0].source_path, '/uniformes/camisas')
+  assert(f.sent[0].text.includes('garment_category: camisas'))
+})
+
+test('frontend preserves entered fields and records no conversion for Resend errors or exceptions', async () => {
+  for (const options of [{ resendError: { message: 'Simulated failure' } }, { resendException: new Error('Simulated exception') }]) {
+    const form = formFixture(fixture(options))
+    await form.submit()
+    assert.equal(form.state[1], false)
+    assert.equal(form.state[3], false)
+    assert.equal(form.message().props.className, 'text-sm text-red-700')
+    assert.equal(form.message().props.children, 'No se pudo enviar la solicitud. Inténtalo nuevamente.')
+    assert.deepEqual(form.resets, { form: 0, captcha: 0 })
+    assert.equal(form.window.dataLayer.length, 0)
+  }
+})
+
+test('frontend requires explicit API success and never converts malformed responses or network failures', async () => {
+  for (const respond of [
+    () => Response.json({}),
+    () => Response.json({ success: false }),
+    () => Response.json({ success: 'true' }),
+    () => new Response('Invalid JSON', { status: 200 }),
+    () => Response.json({ success: true }, { status: 500 }),
+    () => { throw new Error('Simulated connection failure') },
+  ]) {
+    const f = fixture(), form = formFixture(f, respond)
+    await form.submit()
+    assert.equal(form.state[1], false)
+    assert.equal(form.state[3], false)
+    assert.equal(form.message().props.className, 'text-sm text-red-700')
+    assert.deepEqual(form.resets, { form: 0, captcha: 0 })
+    assert.equal(form.window.dataLayer.length, 0)
+    assert.equal(f.sent.length, 0)
+  }
 })

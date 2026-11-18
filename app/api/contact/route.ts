@@ -93,7 +93,7 @@ export async function POST(request: Request) {
       )
     }
 
-    await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: "Cotton Country <web@cottoncountry.com.pe>",
       to: ["info@cottoncountry.com.pe"],
       replyTo: email,
@@ -118,6 +118,13 @@ ${message}
 ${contactContextText(sanitizeContactContext(body))}
       `,
     })
+
+    if (error) {
+      return NextResponse.json(
+        { error: "No se pudo enviar la solicitud. Inténtalo nuevamente." },
+        { status: 500 }
+      )
+    }
 
     return NextResponse.json({
       success: true,

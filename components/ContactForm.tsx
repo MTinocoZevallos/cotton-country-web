@@ -100,7 +100,7 @@ export default function ContactForm({ home = false }: { home?: boolean }) {
         body: JSON.stringify(payload),
       })
 
-      let data: { error?: string; message?: string } = {}
+      let data: { success?: boolean; error?: string; message?: string } = {}
 
       try {
         data = await response.json()
@@ -108,7 +108,7 @@ export default function ContactForm({ home = false }: { home?: boolean }) {
         data = {}
       }
 
-      if (!response.ok) {
+      if (!response.ok || data.success !== true) {
         setIsSuccess(false)
         setFormMessage(data.error ?? "No se pudo enviar la solicitud.")
         return
