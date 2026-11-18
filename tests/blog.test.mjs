@@ -1,5 +1,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
+import crypto from 'node:crypto'
 import fs from 'node:fs'
 import path from 'node:path'
 import { createRequire } from 'node:module'
@@ -95,7 +96,7 @@ test('both historical AI conversations and every original measurement cell stay 
 })
 test('the 30 percent claim remains a first-party history and is not moved into the commercial comparison',()=>{
   const post=blog.posts.find(p=>p.slug==='el-problema-de-las-tallas'),guide=blog.posts.find(p=>p.slug==='uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente')
-  assert(post.content.includes('30 %'));assert(post.content.includes('no una estadística nacional'));assert(post.content.includes('arreglos posteriores'))
+  assert(post.content.includes('30 %'));assert(post.content.includes('En nuestra experiencia inicial, los reclamos'));assert(post.content.includes('arreglos posteriores'))
   assert(!guide.content.includes('30 %'));assert(!post.content.includes('reciclaje'));assert(!post.content.includes('Zara'))
   assert(!blog.posts.find(p=>p.slug==='como-definir-un-proyecto-de-uniformes-corporativos').content.includes('Standard Allowed Minutes'))
   assert(blog.posts.find(p=>p.slug==='de-que-depende-el-tiempo-de-entrega-de-uniformes').content.includes('Standard Allowed Minutes'))
@@ -155,4 +156,25 @@ test('the single Word alias and all existing blog aliases redirect directly with
   assert.equal(rules.length,111);assert.equal(new Set(rules.map(r=>r.source)).size,111)
   for(const source of ['/'+alias,'/'+alias+'/','/blog/'+alias,'/blog/'+alias+'/']){const rule=rules.find(r=>r.source===source);assert.equal(rule.destination,target);assert.equal(rule.permanent,true)}
   for(const rule of rules.filter(r=>!r.source.includes(':path')))assert(blog.posts.some(p=>'/'+p.slug===rule.destination))
+})
+
+const sizingReview=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/sizing-editorial-review.json')))
+const reviewDigest=value=>crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex')
+test('all reviewed sizing articles read as publications without internal revision commentary',()=>{
+  const banned=/el (?:relato|texto|artículo) original|el artículo anterior decía|la versión histórica no documentaba|no se publicó el tamaño de muestra|no publicaba su definición|no corresponde convertir|según la auditoría|este artículo (?:se concentra|documenta)|esta publicación se concentra|el aporte (?:histórico|específico)|sin añadir porcentajes de acierto|no fueron publicados|no fueron documentados/i
+  assert.equal(sizingReview.reviewedSlugs.length,14)
+  for(const slug of sizingReview.reviewedSlugs){const post=blog.posts.find(p=>p.slug===slug);assert(!banned.test(post.content),slug)}
+})
+test('this sizing correction changes only seven bodies and preserves all 53 SEO records and images',()=>{
+  assert.equal(sizingReview.modifiedSlugs.length,7);assert.equal(sizingReview.posts.length,53)
+  for(const before of sizingReview.posts){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(reviewDigest(Object.fromEntries(Object.entries(post).filter(([k])=>k!=='content'))),before.nonContentSHA256,post.slug);assert.equal(reviewDigest(blog.postMetadata(post)),before.metadataSHA256,post.slug);assert.deepEqual(blog.getPostImage(post.slug),before.image)
+    if(!sizingReview.modifiedSlugs.includes(post.slug))assert.equal(reviewDigest(post),before.recordSHA256,post.slug)
+  }
+})
+test('recovered sizing testimony stays first-party and historical, without invented platform metrics',()=>{
+  const peruvian=blog.posts.find(p=>p.slug==='tallas-completas-en-peru'),online=blog.posts.find(p=>p.slug==='guia-de-tallas-online'),company=blog.posts.find(p=>p.slug==='el-problema-de-las-tallas'),campaign=blog.posts.find(p=>p.slug==='por-que-las-empresas-tienen-problemas-con-las-tallas')
+  assert(peruvian.content.includes('2022'));assert(peruvian.content.includes('Durante nuestras sesiones de SizeSet observábamos hasta cuatro grupos'));assert(!/\d+\s*%/.test(peruvian.content));assert(!/SaaS|muestra poblacional|clasificación nacional/i.test(peruvian.content))
+  for(const text of ['supervisión presencial','camisa de cuello americano','oficinas, locales o plantas'])assert(online.content.includes(text))
+  for(const text of ['30 %','ciclo del efectivo','2014','2021','smartphone','arreglos posteriores'])assert(company.content.includes(text))
+  assert(campaign.content.includes('cientos de procesos de tallaje'));assert(campaign.content.includes('Personas que envían a un compañero en su lugar'))
 })

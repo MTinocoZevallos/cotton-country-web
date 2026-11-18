@@ -2,6 +2,8 @@
 
 Fecha: **18/11/2026, America/Lima**. Rama: `redesign-2027-home`. Base comprobada: `d610d0e10d8e97d3f22db3170ef519aee2f7d17b`.
 
+**Actualización editorial posterior:** la sección 11 documenta la corrección de voz narrativa solicitada por el propietario después del cierre `2db93c2`. Sustituye la valoración de los siete textos señalados, sin modificar los resultados históricos de las verificaciones anteriores.
+
 ## 1. Resultado y límites de la evidencia
 
 Se han conservado 53 publicaciones y sus 53 rutas canónicas. Las 53 fechas proceden exclusivamente de la tabla definitiva del propietario, no de Git ni del Word. Se diferenciaron los enfoques que se superponían, se implementaron enlaces contextuales y se corrigieron metadatos, formato y presentación. No hay fusiones ni eliminaciones de publicaciones.
@@ -146,7 +148,7 @@ No se cambió `app/robots.ts`, el layout general, la configuración de dominios 
 
 ## 6. Enlaces internos implementados
 
-La tabla indica la inserción concreta, no una recomendación pendiente. Los números corresponden al inventario; cada destino es una URL raíz existente. El inventario JSON incluye también los enlaces preexistentes, las fuentes externas y los relacionados finales.
+La tabla registra las inserciones del cierre `2db93c2`, no recomendaciones pendientes. La sección 11 documenta la corrección posterior de voz; las anclas actuales constan en el inventario JSON. Los números corresponden al inventario; cada destino es una URL raíz existente. El inventario JSON incluye también los enlaces preexistentes, las fuentes externas y los relacionados finales.
 
 | Origen | Destino | Texto de enlace | Párrafo o contexto de inserción |
 |---|---|---|---|
@@ -326,3 +328,65 @@ tests/fixtures/blog-publication-dates.json
 ## 10. Publicación definitiva
 
 El commit de cierre se envía únicamente a `redesign-2027-home` y se entrega el enlace de Preview para revisión. La operación posterior requiere autorización del propietario para integrar la rama en `main` y comprobar en Vercel qué deployment se asocia realmente a producción. Este informe no autoriza ni ejecuta esa operación.
+
+## 11. Corrección editorial de la voz narrativa en tallaje
+
+Base: `2db93c2b13f583066a4f04ea5237465e1bbde676`. Se volvió a leer el Word original y el texto completo vigente de las 14 publicaciones siguientes. Se examinó también el resto del blog para distinguir menciones aisladas de desarrollos significativos de tallaje. No se amplió la corrección a otros temas.
+
+Se habían introducido comentarios internos como «El relato original mencionaba...», explicaciones sobre datos no publicados y cierres que describían qué debía desarrollar cada publicación. Esas observaciones no correspondían a un artículo para lectores. Se retiraron de los siete cuerpos afectados y se conservan únicamente en esta documentación.
+
+| # | Artículo revisado | Resultado y enfoque preservado |
+|---|---|---|
+| 22 | [¿Qué talla eres?](https://cottoncountry.com.pe/que-talla-eres-en-peru) | Corregido: perspectiva del usuario; elección y registro a distancia sin comentar el proceso editorial. |
+| 23 | [El problema de las tallas](https://cottoncountry.com.pe/el-problema-de-las-tallas) | Corregido: relato empresarial propio; productividad, ciclo del efectivo, defectos, 30 % en reclamos, arreglos, prendas formales y tecnología en su contexto de 2021. |
+| 24 | [NTP para la designación de tallas](https://cottoncountry.com.pe/ntp-para-la-designacion-de-tallas) | Íntegro: norma técnica y designación de tallas. No se sustituyó por el texto antiguo. |
+| 25 | [La talla peruana](https://cottoncountry.com.pe/la-talla-peruana) | Íntegro: antropometría y diversidad corporal peruana. |
+| 32 | [¿Qué significa tallas completas en ropa?](https://cottoncountry.com.pe/que-significa-tallas-completas-en-ropa) | Íntegro: entrevista a Ricardo Gonzalez, patronaje y posición de Cotton Country. |
+| 33 | [Guía de tallas Online](https://cottoncountry.com.pe/guia-de-tallas-online) | Corregido: desarrollo digital del Size Set en 2022 y utilización en oficinas, locales o plantas; sin inventar tablas ni porcentajes de acierto. |
+| 36 | [Tallas completas en Perú](https://cottoncountry.com.pe/tallas-completas-en-peru) | Corregido: observaciones de nuestras sesiones de SizeSet en 2022, hasta cuatro grupos de tallas y uso de la información para mejorar procesos. |
+| 37 | [Las tallas completas según una IA](https://cottoncountry.com.pe/las-tallas-completas-segun-una-ia) | Íntegro: dos respuestas históricas de ChatGPT y su crítica editorial, incluidos sus errores. |
+| 39 | [Una IA nos da tablas de medida para el mercado peruano](https://cottoncountry.com.pe/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano) | Íntegro: experimento de IA con tres intercambios y las dos tablas completas. |
+| 44 | [Compras Comerciales vs. Compras Industriales: ¿Por qué Fabricar Uniformes a Pedido es la Mejor Opción?](https://cottoncountry.com.pe/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion) | Corregido: cierre dirigido al comprador; abastecimiento separado de individualización por tallas. |
+| 46 | [Uniformes a Medida o por Tallas: Descubre la Opción más Práctica y Conveniente](https://cottoncountry.com.pe/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente) | Corregido: comparación comercial y enlace natural a la experiencia empresarial, sin asignar públicamente argumentos a otros artículos. |
+| 48 | [¿Cómo definir correctamente un proyecto de uniformes corporativos?](https://cottoncountry.com.pe/como-definir-un-proyecto-de-uniformes-corporativos) | Sin cambios: definición del proyecto, requerimientos y aprobaciones. |
+| 49 | [¿Por qué las empresas siguen teniendo problemas con las tallas?](https://cottoncountry.com.pe/por-que-las-empresas-tienen-problemas-con-las-tallas) | Corregido: incidencias relatadas por Cotton Country, participación en cientos de procesos, asistencia, registro, validación y coordinación. |
+| 50 | [¿De qué depende el tiempo de entrega de un proyecto de uniformes?](https://cottoncountry.com.pe/de-que-depende-el-tiempo-de-entrega-de-uniformes) | Sin cambios: SAM, capacidad y cálculo del plazo; tallaje como etapa del cronograma. |
+
+### Contraste histórico y contenido recuperado
+
+- **Tallas completas en Perú:** el Word dice «a través de los datos recolectados en nuestras sesiones de sizeset podemos observar hasta 4 grupos claros de tallas». La publicación vuelve a expresarlo como observación de Cotton Country en pasado, dentro de 2022. No se añadieron tamaños de muestra, nombres de grupos, porcentajes ni una clasificación nacional. Tampoco se presentan como resultados actuales verificados de una plataforma SaaS.
+- **Guía online:** se recuperó la secuencia del Word: el Size Set ya se utilizaba, se buscó facilitar su uso sin supervisión presencial, se trabajó su lado digital, se utilizaron tablas de nuestras prendas y se extendió su uso a oficinas, locales o plantas. No se inventó la tabla que no figura en el documento ni se añadió una tasa de acierto.
+- **El problema de las tallas:** se conservaron el 30 % y los arreglos y se recuperaron la relación con el ciclo del efectivo, los defectos de fabricación, las prendas formales del sector público y las limitaciones de tiempo, distancia y costo descritas en el Word. No se trasladó ese testimonio a la comparación comercial.
+- **Incidencias de campañas:** el Word menciona «cientos de procesos de tallaje» y enumera ausencia de usuarios, suplentes, incumplimiento de recomendaciones, cambios de personal e información desactualizada. Se recuperó esa narración sin convertirla en una estadística de la plataforma.
+
+### Verificación editorial y de alcance
+
+Se leyeron nuevamente los siete cuerpos corregidos como publicaciones para lectores externos. Los 14 artículos se compararon entre sí —91 pares— atendiendo al propósito editorial, no solo a palabras compartidas. Se mantuvieron usuario, testimonio empresarial, digitalización, observaciones B2B, comparación comercial, planificación y plazos como perspectivas diferenciadas. La entrevista, la norma, la antropometría y los dos experimentos de IA aprobados permanecen íntegros.
+
+Los 46 registros no afectados se comparan completos con la base `2db93c2`, incluidos los cinco aprobados. Los 53 registros conservan sus campos fuera del cuerpo, metadatos e imágenes. No se modificaron fechas originales, slugs, canonicals, títulos SEO, redirecciones, componentes, CSS o fotografías.
+
+Las 14 URL internas de destino de los artículos revisados responden correctamente en local. Se preservaron los destinos existentes; algunas anclas se redactaron de forma más natural. El inventario JSON refleja sus anclas actuales.
+
+### Pruebas de esta corrección
+
+- Build, TypeScript, ESLint y `git diff --check`: satisfactorios.
+- Suite: **29 pruebas correctas**, incluidas las tres nuevas guardas de voz narrativa, alcance y testimonio histórico.
+- Chromium: **14 publicaciones a 1440, 768, 390 y 320 px**, 56 muestras sin desbordamientos ni errores de JavaScript.
+- **14 muestras axe** sin infracciones detectadas en el contenido principal.
+- SEO, fecha visible, JSON-LD, imágenes, índice de lectura y 14 destinos internos comprobados.
+- El estado de Vercel se consulta al cerrar; un `403 CONNECT` no se presenta como verificación visual remota.
+
+La evidencia de esta intervención está en `sizingVoiceCorrection`, dentro de `closing-validation.json`. Los datos anteriores de ese archivo pertenecen al cierre precedente y se conservan como tales.
+
+### Archivos de esta corrección
+
+```text
+app/blog/posts.ts
+tests/blog.test.mjs
+tests/fixtures/sizing-editorial-review.json
+docs/BLOG-2027-AUDIT.md
+docs/blog-2027/closing-inventory.json
+docs/blog-2027/closing-validation.json
+```
+
+Se trabaja exclusivamente en `redesign-2027-home`, sin merge ni publicación en producción.

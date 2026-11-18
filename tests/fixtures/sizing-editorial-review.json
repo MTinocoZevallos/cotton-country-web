@@ -1,0 +1,666 @@
+{
+  "baseSHA": "2db93c2b13f583066a4f04ea5237465e1bbde676",
+  "reviewedSlugs": [
+    "que-talla-eres-en-peru",
+    "el-problema-de-las-tallas",
+    "ntp-para-la-designacion-de-tallas",
+    "la-talla-peruana",
+    "que-significa-tallas-completas-en-ropa",
+    "guia-de-tallas-online",
+    "tallas-completas-en-peru",
+    "las-tallas-completas-segun-una-ia",
+    "una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
+    "compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
+    "uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+    "como-definir-un-proyecto-de-uniformes-corporativos",
+    "por-que-las-empresas-tienen-problemas-con-las-tallas",
+    "de-que-depende-el-tiempo-de-entrega-de-uniformes"
+  ],
+  "modifiedSlugs": [
+    "que-talla-eres-en-peru",
+    "el-problema-de-las-tallas",
+    "guia-de-tallas-online",
+    "tallas-completas-en-peru",
+    "compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
+    "uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+    "por-que-las-empresas-tienen-problemas-con-las-tallas"
+  ],
+  "posts": [
+    {
+      "slug": "el-algodon-se-caso-con-el-poliester-en-oxford",
+      "recordSHA256": "957bb351c43416cd1d1171360f6d82af6bd7d5c673001c8e00ecdf0a9a99d69c",
+      "nonContentSHA256": "6c2b3d8526360a5939f8f47a8aaf21338bb3f413876bbfcf4e5db6c082d6abac",
+      "metadataSHA256": "945ad82804718ce5984cba2d539921976d95aa1079b0ee50a700d1561ebcaefb",
+      "image": {
+        "src": "/blog/el-algodon-se-caso-con-el-poliester-en-oxford.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Detalle de una tela azul con una aguja de coser"
+      }
+    },
+    {
+      "slug": "dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren",
+      "recordSHA256": "375bc361bd1acf2d30e037d684a1b74152ab2adcf5053a8c1ae5721d1651aa23",
+      "nonContentSHA256": "94f374eec4873d72d803741f2991380a17b61b6eaa4c678ff5f9cfc26b16d24c",
+      "metadataSHA256": "1e3b025f52b3f3ec0fdaf95fc44fbba6d16b8e7da1815627adf0b3ccc6e4ad4c",
+      "image": {
+        "src": "/blog/dime-que-uniforme-usas-y-te-dire-cuanto-te-quieren.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Camisas de distintos colores colgadas en perchas de madera"
+      }
+    },
+    {
+      "slug": "es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller",
+      "recordSHA256": "da5e93a793aee7328a55cf207b358a176c81483a0b019542465234707684fa1b",
+      "nonContentSHA256": "46884cc393f0e2c8c3ce03bafd94223f740df599e309e7bee6f5bd4389cedba8",
+      "metadataSHA256": "059d371a1558192b6fc4d74962d9eb599e7d374ce0f2b6e209f3f8b7c96c19dc",
+      "image": {
+        "src": "/blog/es-mejor-elegir-a-un-proveedor-de-uniformes-con-taller-o-sin-taller.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Pie de una máquina de coser trabajando sobre tela azul"
+      }
+    },
+    {
+      "slug": "5-tipos-de-tejidos-inteligentes",
+      "recordSHA256": "84a51461d5de6664aa0fd2ffe61d604e3e355d30e3bd129625e2e11a43172fd9",
+      "nonContentSHA256": "58273a987d21dd9c2f6350625f3f30359edbb5a952d20a4fcd8c1c73a7a85ca5",
+      "metadataSHA256": "64ed8dbd057c66cfd747e34fd806a3f5d59bb53075bf6676fa6f0bc15a36e025",
+      "image": {
+        "src": "/blog/5-tipos-de-tejidos-inteligentes.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Detalle de la textura de un tejido azul"
+      }
+    },
+    {
+      "slug": "estafas-textiles-no-seas-victima-de-la-falta-de-informacion",
+      "recordSHA256": "1e52f3ffe09bd56d376434ed4656cfc8ab0c35f59939d2cd43f53b5fab93d01b",
+      "nonContentSHA256": "05ac0ad29b627ecd7fc2f4275cfdd2a96a73f567fbc29222e3eda3c37978eaa0",
+      "metadataSHA256": "d316c2cd1e7dccdee643cef89f30f09091174d519d4c0a09b4b64feebe09b032",
+      "image": {
+        "src": "/blog/estafas-textiles-no-seas-victima-de-la-falta-de-informacion.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Muestrarios de telas de diferentes colores abiertos sobre una mesa"
+      }
+    },
+    {
+      "slug": "mascarillas-y-covid-19",
+      "recordSHA256": "96c70b88655301b183477a697f337d55fd264109a298cf99d115ccb17ea41c25",
+      "nonContentSHA256": "bebf66e57c7406f4becd09bb03bbad115fee9069db4a99ffe3022450222b7708",
+      "metadataSHA256": "406de71b452590e7acc2069938d90dfb45619914d5a1cd4dbbc4c412b7a51fa3",
+      "image": {
+        "src": "/blog/mascarillas-y-covid-19.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Mujer con mascarilla de tela azul"
+      }
+    },
+    {
+      "slug": "materiales-textiles-inteligentes-segun-el-tipo-de-uniformes",
+      "recordSHA256": "ff4595c3874a18a20af994a1be6408fedfa8d2bb8f1c2cefe05e53fecadb18c9",
+      "nonContentSHA256": "93fba9fd8edb1bdaf20f93c5c6d831c869b472367933724d8b7150713fe13a72",
+      "metadataSHA256": "9aab05b052809f3ab6fd0d6f80891f8f820945aa36cccd97fe6fef286196edc8",
+      "image": {
+        "src": "/blog/materiales-textiles-inteligentes-segun-el-tipo-de-uniformes.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Persona con uniforme sanitario verde y guantes frente a un fondo amarillo"
+      }
+    },
+    {
+      "slug": "por-que-comprar-uniformes-de-trabajo-para-mis-empleados",
+      "recordSHA256": "3201f82137b12325ef48123ebcac4aeac2a4bdbfadd5ae57ec189db6fe855228",
+      "nonContentSHA256": "120316a53c1b6d5b6c9aa205778bc4cde3fe822dd7f85821f0dcae2eeab86469",
+      "metadataSHA256": "0053fdd2de8e3e4714266faa7f07a4a782308045cccae22c0e59ba2238827ea9",
+      "image": {
+        "src": "/blog/por-que-comprar-uniformes-de-trabajo-para-mis-empleados.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Persona con polo verde y gorra sosteniendo un envase de papel"
+      }
+    },
+    {
+      "slug": "uniformes-de-chef-que-tela-elegir",
+      "recordSHA256": "15e91ae695fd67810e8340f63bc5819ec07a0d2505196232d88acae3a3051bc2",
+      "nonContentSHA256": "94de2c908f41eef1ec63c6293eb79ed2f4c3ed9ce476390b29773b380638ca55",
+      "metadataSHA256": "3e9f92e5c14170fa08b5d5233542f24f92766d4980a6b263fc222b2a2c255f0c",
+      "image": {
+        "src": "/blog/uniformes-de-chef-que-tela-elegir.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Persona con chaqueta blanca y gorro de cocina"
+      }
+    },
+    {
+      "slug": "que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial",
+      "recordSHA256": "d55bc1d4f651ee99c424595d2b55353509fb28474bfe90d9a4538109cb2621a6",
+      "nonContentSHA256": "54047319bfb81b955476158df9986d9210e5e6143683fb7b414e46e864f38511",
+      "metadataSHA256": "c467e7592620d4c1ce3de0344253fa5241bb35f47632614265d5daf15e48877e",
+      "image": {
+        "src": "/blog/que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Persona con casco y chaleco naranja en un entorno industrial"
+      }
+    },
+    {
+      "slug": "el-uniforme-de-farmacia",
+      "recordSHA256": "31bccbe8413ce2450c5e18547d426d3976648651dfd3ec68e25aaa5b80c28b58",
+      "nonContentSHA256": "a059fd80842559d90728a2786183ee1acb9d946ab0e31d0c748a5929eb35d5fe",
+      "metadataSHA256": "b062545f1433251424cc26cc7f2a3cb878c4074a12ac584e493274f64a17fdb2",
+      "image": {
+        "src": "/prendas/guardapolvo-cotton-country.webp",
+        "width": 1024,
+        "height": 1536,
+        "alt": "Guardapolvo blanco de Cotton Country, modelo de referencia para fabricación bajo pedido"
+      }
+    },
+    {
+      "slug": "por-que-usar-mascarillas-reutilizables-lavables",
+      "recordSHA256": "54f261b54f502e8cb32adeccee4adc1182348a69c195299e846ec954e895064c",
+      "nonContentSHA256": "e7928ec6f8f4c4a8885d83a294797a09a4a657c265fa85c2a846a8bfb6234047",
+      "metadataSHA256": "e22a1a7d83f154ef88c76274b56e8cf442b607e35530403e2b7e132b4d1ad5f7",
+      "image": {
+        "src": "/blog/por-que-usar-mascarillas-reutilizables-lavables.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Persona con mascarilla blanca y prenda amarilla frente a un fondo azul"
+      }
+    },
+    {
+      "slug": "cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela",
+      "recordSHA256": "85e85739634db83658b8fcc77b26f7bcc54e27bdfd391ebaee2f53eca08b1e9e",
+      "nonContentSHA256": "afda5bab6093199da286520e70e40cc08695e0065458f4ea05bc36d953dca01c",
+      "metadataSHA256": "d4c957459b4cd24cd97eb1876f90e49eb99ab3f6c85bc04d902023408d7a79df",
+      "image": {
+        "src": "/blog/cuales-son-las-caracteristicas-que-deben-tener-las-mascarillas-de-tela.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Mujer con mascarilla de tela en un espacio de trabajo"
+      }
+    },
+    {
+      "slug": "venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege",
+      "recordSHA256": "28f854aec5f0fe9fffd66549d72ba74e6ac8871dc1d9d32dbd6c0285ec9c066e",
+      "nonContentSHA256": "929913098d96fe734c04a703091d37fc4c37af27964bf38b9f5af94d5f146f8e",
+      "metadataSHA256": "a5f182adfcdcd0c9c82d795f9d5e94d194902de8f3e34ebb1a91501a989a8d71",
+      "image": {
+        "src": "/blog/venta-de-mascarillas-en-lima-como-saber-que-mi-mascarilla-me-protege.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Mascarillas y materiales de confección junto a una cinta métrica"
+      }
+    },
+    {
+      "slug": "escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo",
+      "recordSHA256": "12029ddcf48e479672cf439a61eaa93e31d8867d2e88a121795fd76aa2ed4446",
+      "nonContentSHA256": "5580bdd9b57d5a50fb6ca30a92c3bca264e7f1be4761b7ec1d7e49476622b7f7",
+      "metadataSHA256": "317035c3492237d6687009b33bb21bd6dfc6c7b7ac2a9d8c9c10caeb6bd46f51",
+      "image": {
+        "src": "/blog/escudos-faciales-o-mascarillas-de-tela-cual-es-mas-efectivo.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Personas en una mesa, una de ellas con protector facial"
+      }
+    },
+    {
+      "slug": "como-cuidar-tu-mascarilla-de-tela-certificada",
+      "recordSHA256": "3210a3bb00d0b449ee3718b92e3aa4fa43cdb770e4ef80ece12efb0e9ed76ca1",
+      "nonContentSHA256": "6d52f50bb1d51eca8121d135bd30d898203306ecd9b163a866a5ffbc840ad2d2",
+      "metadataSHA256": "f5499cf3de704accd1e1f6a2fba0650df91a71022b57f8cdf2dd4f0b2fb74a2f",
+      "image": {
+        "src": "/blog/como-cuidar-tu-mascarilla-de-tela-certificada.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Manos sujetando una mascarilla de tela oscura"
+      }
+    },
+    {
+      "slug": "mascarillas-y-covid-19-segunda-ola",
+      "recordSHA256": "fecb738957e4d4a0fd5ed4d6d051eb43b003378fe1f3aae440c3f59114658e22",
+      "nonContentSHA256": "d1882b28d8e04cdee8eee74e9379ac79054b432fe8856f0ab3d7f46468c4b9e7",
+      "metadataSHA256": "a0a68b692cc802b12b7891096ac0c0d0e060b71e9ccb3b1014c4773856c18f4e",
+      "image": {
+        "src": "/blog/mascarillas-y-covid-19-segunda-ola.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Persona ajustándose una mascarilla de tela oscura"
+      }
+    },
+    {
+      "slug": "empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas",
+      "recordSHA256": "8d7ef9482e86c106a87c44b73e0f1370684b85f4690988c7a0d8195457a58c9e",
+      "nonContentSHA256": "28e9436b04873e9215f6c8efa5346afba1093355aefd370a7a3e8aea4137220d",
+      "metadataSHA256": "0a03aa4614ef76d8be7cea5c7772243a91421b9ec068484a875483d0bd830ab7",
+      "image": {
+        "src": "/blog/empaques-sostenibles-y-bioseguridad-en-el-transporte-de-prendas.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Bolsa de papel naranja sobre un fondo azul"
+      }
+    },
+    {
+      "slug": "ntp-aplicada-en-mascarillas-reutilizables",
+      "recordSHA256": "2ce6d1268dd8abfb3d224198d4e737947db7ec8d301dcdac755f1095bf07f45a",
+      "nonContentSHA256": "c30836b38e0f1729fb235706e0e33d32c8256082de48faab40872beb6ec670a4",
+      "metadataSHA256": "6c4d7851ac4804533866dd0c642e7dbc35d44de55bbbc03e08a9d1e3bb5b88e6",
+      "image": {
+        "src": "/blog/ntp-aplicada-en-mascarillas-reutilizables.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Persona con mascarilla amarilla"
+      }
+    },
+    {
+      "slug": "procesos-de-confeccion-seguros",
+      "recordSHA256": "b57da4429db78cb08daefe7dfd3f090b3e471d4aa1c38ad7c9563bdf7ceb0600",
+      "nonContentSHA256": "4a99205520b892d1677c78a3c285a157580764a26acfa1e6aef070a8137a3873",
+      "metadataSHA256": "e537e3103d864df763ba4c472cf3feaa2499215e62a5cbb97a9aa9b830eb0e86",
+      "image": {
+        "src": "/blog/procesos-de-confeccion-seguros.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Persona con mascarilla y guantes junto a una máquina de coser"
+      }
+    },
+    {
+      "slug": "delivery-aliado-de-la-industria-textil-confecciones",
+      "recordSHA256": "8c456af3bfc0b669e05a5e2f3386bcc92a9c66d409b3d90d900f2a41a10be4b1",
+      "nonContentSHA256": "ad9f2b7a50eb40f9941f921e18c3c44add8a91e9a37746b1aaf14a087d36b730",
+      "metadataSHA256": "53866eafb48a056b9f5ddc6de89009ed176fa8ad5ce68c4d2a77d8d7f5f3a52c",
+      "image": {
+        "src": "/blog/delivery-aliado-de-la-industria-textil-confecciones.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Persona con mascarilla y guantes sosteniendo una caja de cartón"
+      }
+    },
+    {
+      "slug": "que-talla-eres-en-peru",
+      "recordSHA256": "82546235c395c0d1ea7c8409d41f83eb272fdf97c21df0a5c6512ce84e5d8f2b",
+      "nonContentSHA256": "4fe91f13796d2e000632d0ade0be124be49ed103df8855abbd96b5642c8effcf",
+      "metadataSHA256": "67e2fc1fd23c3c98498a62373a4f710c1af394184eac3627e95881cd0f55d0e1",
+      "image": {
+        "src": "/blog/que-talla-eres-en-peru.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Cinta métrica blanca dispuesta en curvas"
+      }
+    },
+    {
+      "slug": "el-problema-de-las-tallas",
+      "recordSHA256": "c9cf4cffe1fcb9031227560656c6e03dac6bdb0e871d776e68f21cdab5ed4ff5",
+      "nonContentSHA256": "ec5a13de3336e41c8753228c9e811411636b2bdcd66915b03fdd25ec1dd66776",
+      "metadataSHA256": "5ef275706ce63a401a06528691a28ec7078f66f75639333e171b8d24cba83ee5",
+      "image": {
+        "src": "/blog/el-problema-de-las-tallas.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Toma de una medida sobre una prenda azul con cinta métrica"
+      }
+    },
+    {
+      "slug": "ntp-para-la-designacion-de-tallas",
+      "recordSHA256": "7bf140f3ec07ac22a4d2f4c709837574fb13ed849bf0912d7633db985bd0de31",
+      "nonContentSHA256": "72b4f31711574f25867bc9e177e951c3624649cd0ce51c90bae9c698880e0de5",
+      "metadataSHA256": "104658505346171269f6528cbd0a09a71c9d30dc7a01d3bbf7821a91b9389203",
+      "image": {
+        "src": "/blog/ntp-para-la-designacion-de-tallas.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Persona con gafas y cinta métrica al cuello frente a prendas colgadas"
+      }
+    },
+    {
+      "slug": "la-talla-peruana",
+      "recordSHA256": "c94091cfd25073aed86b64754b50126d9e5d66a52b535caaa295a938d09d7104",
+      "nonContentSHA256": "ec0a2f61bd999edb63e4e1fc167da1c048294e0208916b2134824b22417c34c8",
+      "metadataSHA256": "bd4e3e0285b995f7ee22c880dca85429028c812581d7fb950b3b2038739f82bb",
+      "image": {
+        "src": "/blog/la-talla-peruana.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Manos registrando medidas junto a una prenda verde"
+      }
+    },
+    {
+      "slug": "medalla-de-oro-en-uniformes",
+      "recordSHA256": "f5a11598cf81ed63da191dcaeb43f7734d8b3208f77866d68d19619a5b43ee51",
+      "nonContentSHA256": "796c992642f8da7174170f133d57cc1c4aa9cd4caba6a81ca5ed02d054c4764b",
+      "metadataSHA256": "0927a374523ccb635e7a641b64efee69bbdb957208d17ef5713aca3dfead5aa7",
+      "image": {
+        "src": "/blog/medalla-de-oro-en-uniformes.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Medalla deportiva sostenida sobre un uniforme rojo"
+      }
+    },
+    {
+      "slug": "los-uniformes-un-problema-olimpico",
+      "recordSHA256": "9c3fbd90ca71f5ae38e3ba966aecea7e966aa89a085047d86343df4d6683e04a",
+      "nonContentSHA256": "14c3ca71beb79a4eda48c3a2326cef006722a75d595133a09381f7c0a1937107",
+      "metadataSHA256": "b1342929b790b66df726f21ea7b11e1dde3780078e473eeb34a7f6546b0000ea",
+      "image": {
+        "src": "/blog/los-uniformes-un-problema-olimpico.jpg",
+        "width": 1024,
+        "height": 585,
+        "alt": "Dos personas con ropa deportiva roja y blanca en un recinto deportivo"
+      }
+    },
+    {
+      "slug": "disenador-a-sus-disenos",
+      "recordSHA256": "373f0a2c65d70eefd161731023c74ad3a3d12c2f4fc4932125952419f075a4ad",
+      "nonContentSHA256": "a0d583a7f13953b974aee93bf6d75a0210904635bfd0c69da3125698d0d00d15",
+      "metadataSHA256": "4dfab274ffeda6173bc424adcc4012852641dcf9f66ddcb8f97165c472797f4e",
+      "image": {
+        "src": "/blog/disenador-a-sus-disenos.jpg",
+        "width": 400,
+        "height": 274,
+        "alt": "Persona dibujando un diseño de moda en una mesa de trabajo"
+      }
+    },
+    {
+      "slug": "3-consejos-para-compradores-de-textiles-b2b",
+      "recordSHA256": "c34a6782284015f690204f43eb9826e7c5c0508e74ff40a97bd27a657dd36882",
+      "nonContentSHA256": "82be2c7910121c6144e9bfe925070bf45dbdb2f28adb308fa93edb3e154647d5",
+      "metadataSHA256": "68b27172526605f48fd5e8640341a3aa876dcbaacc25f7f9cb7cbfe8215c0857",
+      "image": {
+        "src": "/blog/3-consejos-para-compradores-de-textiles-b2b.jpg",
+        "width": 400,
+        "height": 267,
+        "alt": "Manos midiendo tela sobre una mesa de corte"
+      }
+    },
+    {
+      "slug": "el-futuro-de-la-industria-textil-y-de-confecciones",
+      "recordSHA256": "32f4414c5c2cf62e2ea7f477211d4c9eb704c31510b8de90f54a0a3ad61aaf85",
+      "nonContentSHA256": "5e462e05573d4866241f6a5f5aa8034ed6bab2f9036d5f9bcf60d599df5608fb",
+      "metadataSHA256": "e84ab7135876c4141a415a4476e04d18cc3ae5269953ea59d97061d2b15cf2a4",
+      "image": {
+        "src": "/blog/el-futuro-de-la-industria-textil-y-de-confecciones.jpg",
+        "width": 400,
+        "height": 267,
+        "alt": "Una mano robótica frente a una mano humana"
+      }
+    },
+    {
+      "slug": "logistica-y-abastecimiento-textil-2022",
+      "recordSHA256": "549067846ae3b420716456f11f28d975bbcd5a9fe0a64d8e1fbbdf23fec0dd7c",
+      "nonContentSHA256": "295f677fee174bcd00a947e81f77c8bf51bfac96fc64f501d87a64bc4519e6df",
+      "metadataSHA256": "ebb8edee293a20ee5476b8b4e69bf7b370a5e1b0f912a0012b979e5e8b87af6a",
+      "image": {
+        "src": "/blog/logistica-y-abastecimiento-textil-2022.png",
+        "width": 1024,
+        "height": 683,
+        "alt": "Contenedores de transporte apilados bajo el cielo azul"
+      }
+    },
+    {
+      "slug": "que-significa-tallas-completas-en-ropa",
+      "recordSHA256": "ad12c5f5a006126bcce5905986fb31890c952065f8d5bdfd9b7e53f3f65aa5a7",
+      "nonContentSHA256": "07baa7e39a12fc68ae45675862d7396fafcf93b88639edc27fa631afd27ec720",
+      "metadataSHA256": "c215419fdb71811483fe6aae8c358249c35df112b521f45c0157ee2b55a7f207",
+      "image": {
+        "src": "/blog/que-significa-tallas-completas-en-ropa.jpg",
+        "width": 1024,
+        "height": 569,
+        "alt": "Perchas de madera con etiquetas de tallas de XXS a XXL"
+      }
+    },
+    {
+      "slug": "guia-de-tallas-online",
+      "recordSHA256": "27fd60f33f9ea283cfa5e90798be653a71c2bec7534c9c6f63bbc60d311ad316",
+      "nonContentSHA256": "76fa999f26becd6d6b98d2be6d22bdf4b17688ce130b9af588248e6d4bfe05c8",
+      "metadataSHA256": "287c0a3393f55a5c97c73016483d6c28aa7b1233c166ac91a6693449507a93e7",
+      "image": {
+        "src": "/blog/guia-de-tallas-online.jpg",
+        "width": 1024,
+        "height": 576,
+        "alt": "Gráfico de medidas y tallas sobre un fondo rojo"
+      }
+    },
+    {
+      "slug": "una-breve-historia-del-algodon",
+      "recordSHA256": "ac36042fb743d26bb29bcd18f33d9eb08bf0c9fe8aeeda3072dac0ac181f8326",
+      "nonContentSHA256": "d888ed5cf1cc1c3d2ef979b35d09c5fdde019e2b8a073e52ba204b7e3abd92c0",
+      "metadataSHA256": "67aa624900fc0cbe6a17bda23626b8ad1968dd787abac4eb876d0e650823d879",
+      "image": {
+        "src": "/blog/una-breve-historia-del-algodon.jpg",
+        "width": 1024,
+        "height": 569,
+        "alt": "Cápsulas de algodón abiertas en un campo"
+      }
+    },
+    {
+      "slug": "el-ano-del-algodon-2022",
+      "recordSHA256": "7cb5c39d7fef57bc4c47848122407f855044c137362c8de16432da925ca3b407",
+      "nonContentSHA256": "12656e4b56c1003fb06497ce6d08beb6c1468a690bb2ce4420611d1d57866b2b",
+      "metadataSHA256": "d417c7805239e5a180362cf50dcea2596b40d3a7e66931cec3d8b7827d54c0c5",
+      "image": {
+        "src": "/blog/el-ano-del-algodon-2022.jpg",
+        "width": 1024,
+        "height": 576,
+        "alt": "Algodón exhibido en recipientes de una balanza"
+      }
+    },
+    {
+      "slug": "tallas-completas-en-peru",
+      "recordSHA256": "247806912c73e0bcd39125636d079b452c361e7f42f1450f00f28c313da6be45",
+      "nonContentSHA256": "d5a2f904e76bc827f39d2d1fba1c8b95a726238c3d5e3d54e46f5586f1e19ac3",
+      "metadataSHA256": "c94f8fe208f310c09659460abd4c417000b0c553f8df15d3b62cadb944aed8a8",
+      "image": {
+        "src": "/blog/tallas-completas-en-peru.jpg",
+        "width": 1024,
+        "height": 632,
+        "alt": "Cinta métrica sobre un fondo amarillo"
+      }
+    },
+    {
+      "slug": "las-tallas-completas-segun-una-ia",
+      "recordSHA256": "d6fef2534d0d6798b942daab5f791e7036391f3e79b790b0293eff8d4dc3a48e",
+      "nonContentSHA256": "16f0519219563eb7690518b26fad91b844d1aa045302699a0686e3a18d99c9d1",
+      "metadataSHA256": "2b5bcce0b9b934c0d27ae90871e3fa9ba0294e81c7dbf11ffd608fb530c5aa3d",
+      "image": {
+        "src": "/blog/las-tallas-completas-segun-una-ia.jpg",
+        "width": 1024,
+        "height": 684,
+        "alt": "Brazo robótico frente a dos personas con una tableta"
+      }
+    },
+    {
+      "slug": "como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt",
+      "recordSHA256": "f0f67c176198a5ae5a13226615c535bac37e9d373163300f4c5f76200aa44ed7",
+      "nonContentSHA256": "042dc25e44c0282c61cd24fbf57d1968a2d2743fbf422bad3b88a4649ab99431",
+      "metadataSHA256": "d44f9c802cd4712625ff7b4246391743f0a4c7b4db0150fbeac58439ee822e31",
+      "image": {
+        "src": "/blog/como-elegir-el-uniforme-perfecto-para-tu-negocio-segun-chatgpt.jpg",
+        "width": 1024,
+        "height": 683,
+        "alt": "Pantalla con una conversación de ChatGPT"
+      }
+    },
+    {
+      "slug": "una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano",
+      "recordSHA256": "10555373a5afdb247f3caaba99d3639ee2a8bc3f3c49a0ea1c76e00cc7df0279",
+      "nonContentSHA256": "6e69b047963f2a586c4aa139ddcf1b68111727120a5058c42cd3f451b1fbb2d7",
+      "metadataSHA256": "78e85bad48dd20ef8ccaed91c05978a08c3b16093d19b8bf71249248bebd423a",
+      "image": {
+        "src": "/blog/una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano.jpg",
+        "width": 1024,
+        "height": 575,
+        "alt": "Persona sosteniendo una nota verde con las letras A.I."
+      }
+    },
+    {
+      "slug": "uniformes-de-guerra",
+      "recordSHA256": "a000c77fe8e0e9a413feeab686cc86951a3a254cadfaa5b5e57f6e7c302df14e",
+      "nonContentSHA256": "6c9970891f9d260554c81d1b89279b336aa821ec0fb5f4610750a8bcd589ee03",
+      "metadataSHA256": "1ab03e7ccbab1c09dc3fc84e86ea448acdaac74364acdada161c4ef8f7cc595f",
+      "image": {
+        "src": "/blog/uniformes-de-guerra.webp",
+        "width": 1024,
+        "height": 574,
+        "alt": "Prendas de uniforme con distintivos colgadas en una percha"
+      }
+    },
+    {
+      "slug": "un-tejido-llamado-gaza",
+      "recordSHA256": "e31ee8bb6ab99d93323303c0fe0a6840e505a5b217a109aad1e93c8bbee9c27e",
+      "nonContentSHA256": "0c3a6483834a3978bcc65ba39e22cfcb2f866033fc8b0299c13d0fc276d753eb",
+      "metadataSHA256": "6607012930406153a3f8c223e9e99db8378fedc1c2bd976b772dce991ee67fc7",
+      "image": {
+        "src": "/blog/un-tejido-llamado-gaza.webp",
+        "width": 1024,
+        "height": 574,
+        "alt": "Persona con un pañuelo claro en la cabeza frente a un fondo desenfocado"
+      }
+    },
+    {
+      "slug": "perumin-2023",
+      "recordSHA256": "5d2f912cb2f0489326666ae9eb42503e65a98976a268f780ce7f401db5708a9c",
+      "nonContentSHA256": "3813581a096342638f08626476b9c2e02a353337e331f222621665e770688834",
+      "metadataSHA256": "ddc7115d9fd8bed3fc470968d2bec6bcee08316524c3f514e353fbfdf7fe873a",
+      "image": {
+        "src": "/blog/perumin-2023.webp",
+        "width": 1024,
+        "height": 574,
+        "alt": "Persona con casco observando una operación minera"
+      }
+    },
+    {
+      "slug": "como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial",
+      "recordSHA256": "4ea0c6bd43c144755aeefe5195f9af0df3b18a2c09da3941bf03cadf073be4f1",
+      "nonContentSHA256": "596553dad4963461c6cb6f50b6a9631bfa0eef4bfdf6359b953ac3f9d7c43481",
+      "metadataSHA256": "d81836b897d21cbd20d69d226853282ca2f7611a6a40711a0bf7831af2012f0c",
+      "image": {
+        "src": "/blog/como-elegir-la-prenda-de-invierno-ideal-segun-tu-rubro-empresarial.jpg",
+        "width": 1024,
+        "height": 509,
+        "alt": "Tres personas con diferentes prendas de trabajo y abrigo"
+      }
+    },
+    {
+      "slug": "compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion",
+      "recordSHA256": "bed32fd3e31957093ebef80183970d5b91c0a7573ee5bebbdd4aa5833f121edd",
+      "nonContentSHA256": "92b53a8d1bdd2275d4267c4617a253c74cb03f2641bed8b9f820fafe0ad26876",
+      "metadataSHA256": "f93aaf93fdb4826dae7d17aaf31543c2fc60c78bf0e017b2e136b353e11b870c",
+      "image": {
+        "src": "/blog/compras-comerciales-vs-compras-industriales-por-que-fabricar-uniformes-a-pedido-es-la-mejor-opcion.jpg",
+        "width": 1024,
+        "height": 681,
+        "alt": "Persona frente a un muestrario de hilos y materiales"
+      }
+    },
+    {
+      "slug": "novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte",
+      "recordSHA256": "8eb1cc1716a1b05bc68fee38a86b2e455e3de22752873afa24327d0c7d239843",
+      "nonContentSHA256": "6c55fd651e32613dc75f6cc005017dd243a9bb42c686493fbe4e56a3fb51f3b5",
+      "metadataSHA256": "52adce4bae4c0a834122bde170472ada00ba762a7c50ad4193222ac8b275857f",
+      "image": {
+        "src": "/blog/novedades-en-el-mercado-de-uniformes-para-el-2025-tendencias-que-no-puedes-perderte.jpg",
+        "width": 1024,
+        "height": 619,
+        "alt": "Personal con casco y ropa de trabajo en una nave industrial"
+      }
+    },
+    {
+      "slug": "uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente",
+      "recordSHA256": "22f252581f54fd9f7a9a6f41d56f1f10be58d57491b59ec53dee0afc96d9e3d9",
+      "nonContentSHA256": "5dc3df061cda11ade4fc06e6db9857f6a4d2111827a17498a1a433a27a1f42af",
+      "metadataSHA256": "07f7ff71d1a4f7aa9c4f9283c2af376ac8e45ff1f5e8fe3bdad326f02f9b6a25",
+      "image": {
+        "src": "/blog/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente.jpg",
+        "width": 1024,
+        "height": 576,
+        "alt": "Toma de una medida en la cintura de una prenda verde"
+      }
+    },
+    {
+      "slug": "mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion",
+      "recordSHA256": "f3b126df6011d66d175cb6bdc24c8e715017243252ad36645b1b08450a1d20b3",
+      "nonContentSHA256": "79632dd3e4e478ddec8c553dde9ba4ae784d37a02c2ba685e36feb23b4022eb8",
+      "metadataSHA256": "2e11c9b19755008a9cbbfe4fb9589650cbc69fc9c04da8d009516652e61fc7c0",
+      "image": {
+        "src": "/blog/mujeres-que-tejen-el-mundo-con-su-fuerza-y-pasion.jpg",
+        "width": 1024,
+        "height": 576,
+        "alt": "Fotografía en blanco y negro de una persona trabajando en una máquina de coser"
+      }
+    },
+    {
+      "slug": "como-definir-un-proyecto-de-uniformes-corporativos",
+      "recordSHA256": "de31a6f54299a3c02111d44b5d29bf0a2e72098135a7cd1d5a8c71628715054d",
+      "nonContentSHA256": "94b7f989463a9901e786e4ac8950a7bd3bd335286490e5a0a9f1c8946bbf68ca",
+      "metadataSHA256": "bf10d71df58dad161a7ae27794615abb7404d1fb70034da6b0ed87efb81970b2",
+      "image": {
+        "src": "/blog/como-definir-un-proyecto-de-uniformes-corporativos.webp",
+        "width": 1200,
+        "height": 801,
+        "alt": "Persona tomando notas en una carpeta de apoyo"
+      }
+    },
+    {
+      "slug": "por-que-las-empresas-tienen-problemas-con-las-tallas",
+      "recordSHA256": "17aa403b78b4052f2ceb992aa4625fef27aa27085b083ff06a3075d9af4ecf32",
+      "nonContentSHA256": "17ad92aeec6f12f0096209a32112c7d16061bc34e881782c199bcb65d65a2617",
+      "metadataSHA256": "214d88136a6f536b9ab864a08397371fecaf26cbb47ebe515d350abc209cd7c5",
+      "image": {
+        "src": "/blog/por-que-las-empresas-tienen-problemas-con-las-tallas.webp",
+        "width": 1200,
+        "height": 800,
+        "alt": "Cinta métrica sobre una mesa de trabajo"
+      }
+    },
+    {
+      "slug": "de-que-depende-el-tiempo-de-entrega-de-uniformes",
+      "recordSHA256": "1b7eabf464107d02d8abfa1977cdaf06c4a0e3b230953249ff766f121e0490b2",
+      "nonContentSHA256": "4330a0ca4c42e2fba3105e855955ec68b254bc80f555f48b23623055c3c93b4a",
+      "metadataSHA256": "25b151951d7de73eb761cb029f9b9397ca2811270771ebe1a77dc06d0e9341c6",
+      "image": {
+        "src": "/blog/de-que-depende-el-tiempo-de-entrega-de-uniformes.webp",
+        "width": 6240,
+        "height": 4160,
+        "alt": "Cintas métricas de varios colores enrolladas"
+      }
+    },
+    {
+      "slug": "dia-mundial-del-algodon-2026",
+      "recordSHA256": "7c068bd147ac1148b57667134d12be4b5936c3d991bee409dd9b9c88cc4b572e",
+      "nonContentSHA256": "8862f6e0c3d76cfe7667e5374f11d9f210bd77aa58cecbd5a24db35aa097c665",
+      "metadataSHA256": "fcaa886373c5233afab332d4b9464877ebc9f1574d7a1ecc72612e7f6ba84438",
+      "image": {
+        "src": "/blog/dia-mundial-del-algodon-2026.webp",
+        "width": 1080,
+        "height": 1080,
+        "alt": "Muestras de algodón de distintos colores exhibidas en un museo"
+      }
+    },
+    {
+      "slug": "el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil",
+      "recordSHA256": "b324c8c67752a87929120b909fb36a097df9aad0d1dbdddbbdc141589cd954b8",
+      "nonContentSHA256": "58e2c19e2444b6210b52f5f8ae16d372720a0bb220952a5555ac6a85ef35be8f",
+      "metadataSHA256": "67ed3b98461ad3760488b197ef048310659b8745af4945adfa5bfb1fa2976e85",
+      "image": {
+        "src": "/blog/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil.webp",
+        "width": 1600,
+        "height": 1200,
+        "alt": "Señal de tránsito parcialmente rodeada por agua"
+      }
+    },
+    {
+      "slug": "sector-textil-peruano-emergencia-productividad-2026",
+      "recordSHA256": "d74ddfed96fce1bd39486ceece5bf24488ee8ca1ba3a423b8c1c7a70c229605a",
+      "nonContentSHA256": "06cf22a674cb16d3d7ad37cf57041e77929135aaddfadafecf2419127894227d",
+      "metadataSHA256": "e47256a77f502d231b6fd480ced3035f181edec3031697d3632e75131ec5c3df",
+      "image": {
+        "src": "/blog/sector-textil-peruano-emergencia-productividad-2026.webp",
+        "width": 1000,
+        "height": 667,
+        "alt": "Detalle de las piezas de una máquina textil industrial"
+      }
+    }
+  ]
+}

@@ -621,9 +621,9 @@ No hay motivo para interpretar una letra como una valoración personal del cuerp
 
 El usuario debe confirmar qué prenda probó y comunicar cualquier necesidad de ajuste por los canales del proyecto. Enviar la talla de memoria o pedir a otra persona que pruebe en su lugar puede perder esa referencia.
 
-El artículo original mencionaba el [tallaje remoto](/guia-de-tallas-online) y SizeSet durante la pandemia. La herramienta de registro ayuda a organizar la información, pero la elección sigue teniendo que corresponder a un modelo y una tabla concretos.
+Para elegir a distancia, el [tallaje remoto](/guia-de-tallas-online) permite consultar referencias y registrar la elección. Herramientas como SizeSet ayudan a organizar esa información, que debe corresponder al modelo y a la tabla de medidas de la prenda que utilizarás.
 
-Este artículo se concentra en la perspectiva de quien elige su uniforme; la organización de una campaña empresarial requiere un procedimiento adicional.
+Si tu empresa organiza una campaña de tallaje, sigue sus indicaciones para confirmar y comunicar tu elección.
 `,
     publishedAt: "2021-02-25",
     seoTitle: "¿Qué talla eres? Cómo elegir tu uniforme",
@@ -640,21 +640,25 @@ Este artículo se concentra en la perspectiva de quien elige su uniforme; la org
 
 En una confección industrial, las operaciones y los tiempos de trabajo influyen en la productividad, la rentabilidad y el cumplimiento de los plazos. Organizar la producción por tallas nos permitió abordar esas variables de otra manera.
 
+Los tiempos de entrega también incidían en el ciclo del efectivo. Producir más unidades en un tiempo definido influía en la eficiencia y la rentabilidad del negocio.
+
 No era solamente una cuestión de ofrecer más medidas. La personalización individual añadía tareas de toma de medidas, coordinación y seguimiento que debíamos considerar dentro del pedido.
 
 ## Calidad: el costo de los arreglos
 
-En nuestra experiencia inicial, los reclamos por problemas de ajuste llegaron a incrementarse aproximadamente un **30 %** con la [confección a medida](/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente). Es un dato de nuestro relato empresarial, no una estadística nacional ni un resultado aplicable a todos los proveedores.
+En nuestra experiencia inicial, los reclamos por problemas de ajuste llegaron a incrementarse aproximadamente un **30 %** con la [confección a medida](/uniformes-a-medida-o-por-tallas-descubre-la-opcion-mas-practica-y-conveniente).
 
 Los arreglos posteriores a la entrega también aumentaban los costos y exigían nuevas coordinaciones. Aprendimos que tomar medidas individuales no garantizaba, por sí solo, un resultado satisfactorio.
 
-Este aprendizaje forma parte de la historia de Cotton Country. No pretende afirmar que la confección a medida sea inadecuada para cualquier uso.
+Además del ajuste, revisábamos los defectos de fabricación. Así entendimos que la calidad debía evaluarse desde la confección hasta el uso de la prenda.
 
-## Tendencias que observamos después
+## Tendencias y tecnología en 2021
 
 Desde aproximadamente 2014 observamos propuestas de camisas y ropa a medida para consumidores finales. Sus diseños y detalles podían resultar atractivos, pero la toma de medidas seguía condicionada por tiempos y distancias.
 
-En el mercado empresarial, las condiciones cambiaron nuevamente durante la pandemia y el trabajo remoto, especialmente en las prendas formales. El texto original también recogía el interés por aplicaciones capaces de registrar medidas y apoyar la elección de tallas.
+En 2021 observábamos que la confección a medida conservaba presencia en uniformes formales, especialmente en el sector público y en instituciones que requerían sacos, ternos o sastres de dama. El distanciamiento social y el trabajo remoto redujeron el uso de esas prendas en aquella etapa.
+
+También comenzaban a aparecer aplicaciones capaces de tomar medidas y recomendar tallas desde la cámara de un smartphone. Su costo todavía dificultaba la implementación masiva en un mercado de confecciones atomizado.
 
 La [evolución tecnológica](/el-futuro-de-la-industria-textil-y-de-confecciones) no elimina lo que aprendimos con los arreglos: el resultado depende de referencias de producto claras y de un proceso que pueda verificarse. Nuestra experiencia explica por qué comenzamos a prestar tanta atención al tallaje antes de fabricar.
 `,
@@ -1166,23 +1170,25 @@ La tecnología no reemplaza las prendas ni las tablas de medidas. Permite gestio
     title: "Guía de tallas Online",
     excerpt: "Cómo Cotton Country trabajó el registro de tallaje a distancia durante la pandemia, con referencias de producto y apoyo digital.",
     canonicalPath: "/guia-de-tallas-online",
-    content: `En agosto de 2022 compartimos una experiencia de Cotton Country: adaptar el tallaje para que pudiera organizarse sin la supervisión presencial habitual durante la pandemia.
+    content: `En 2022, uno de nuestros retos al uniformar empresas era acertar en las tallas de los colaboradores sin enviar personal a supervisar el proceso. Las restricciones de la pandemia nos habían llevado a desarrollar nuevas formas de trabajar a distancia.
 
 ## El reto que queríamos resolver
 
-Nuestro Size Set ya se utilizaba en [procesos de uniformes](/tallas-completas-en-peru). La necesidad de reducir el contacto nos llevó a trabajar en su parte digital y en la forma de relacionar las elecciones de los usuarios con las medidas de nuestras prendas.
+Nuestro Size Set ya se utilizaba en [procesos de uniformes](/tallas-completas-en-peru). El siguiente paso era que los colaboradores pudieran usarlo sin la supervisión presencial con la que habitualmente acompañábamos el tallaje.
+
+Para lograrlo, trabajamos en el lado digital de nuestro sistema y en la forma de consultar y registrar la información de las prendas.
 
 ## Una tabla corresponde a un modelo
 
-El sistema partía de tablas de medidas de producto. Para utilizarlas es necesario identificar el modelo, la colección y qué dimensiones se están comparando. No son una tabla corporal universal para cualquier uniforme.
+El sistema se apoyaba en las tablas de medidas de nuestras prendas. Al compararlas con las referencias de quienes iban a utilizarlas, buscábamos facilitar la elección sin tomar las medidas presencialmente.
 
-La camisa de cuello americano aparecía como ejemplo en el relato original. Sus medidas deben consultarse en la documentación del modelo que realmente se vaya a confeccionar; no corresponde trasladar cifras de otro producto.
+La camisa de cuello americano era una de las prendas con las que trabajábamos. Para elegirla, necesitábamos relacionar al usuario con las medidas de ese modelo concreto. Una tabla de otra prenda no ofrecía la misma referencia.
 
-## Qué conserva esta experiencia
+## Digitalizar el proceso
 
-El aporte histórico es el desarrollo de una forma de registrar y consultar referencias a distancia. No demuestra que toda [elección](/que-talla-eres-en-peru) remota sustituya una prueba de ajuste ni permite garantizar el resultado para cualquier persona.
+Nuestros clientes utilizaban el SizeSet en sus oficinas, locales o plantas. La consulta y el registro a distancia nos permitían acompañar la [elección de tallas](/que-talla-eres-en-peru) de otra manera.
 
-La guía digital y las muestras son herramientas que deben integrarse según las condiciones de cada campaña. Este artículo documenta aquella transición, sin añadir porcentajes de acierto que no fueron publicados.
+Esa experiencia nos impulsó a seguir desarrollando herramientas para organizar el tallaje. El punto de partida continuaba siendo el mismo: conocer las prendas, sus tablas de medidas y las necesidades de las personas que las utilizarían.
 `,
     publishedAt: "2022-08-18",
     seoTitle: "Guía de tallas online: una experiencia de 2022",
@@ -1253,23 +1259,25 @@ El testimonio anterior se refiere a la introducción del Pima americano descrita
     title: "Tallas completas en Perú",
     excerpt: "Observaciones de Cotton Country con SizeSet en 2022: información de campañas empresariales, límites de los datos y mejora del tallaje.",
     canonicalPath: "/tallas-completas-en-peru",
-    content: `En agosto de 2022 compartimos observaciones recogidas durante procesos de tallaje de Cotton Country. Las empresas reunían colaboradores con necesidades diferentes y la expresión «tallas completas» no explicaba por sí sola cómo elegir para cada uno.
+    content: `En nuestros procesos de tallaje de 2022, uniformar a una empresa significaba atender a colaboradores con características corporales muy diferentes. La expresión [tallas completas](/que-significa-tallas-completas-en-ropa), habitual en el mercado de uniformes, no bastaba para resolver esa diversidad.
 
-## Observaciones de campañas empresariales
+## Lo que observábamos en las campañas
 
-El relato original mencionaba hasta cuatro grupos observados en sesiones de SizeSet. No publicaba su definición, tamaño de muestra ni distribución. Por ello no corresponde convertir esa observación en una clasificación nacional ni inventar porcentajes.
+Durante nuestras sesiones de SizeSet observábamos hasta cuatro grupos de tallas cuyas características y medidas necesitábamos considerar para acertar en el tallaje de una empresa.
 
-Su valor era mostrar que una campaña genera información útil sobre los modelos y las tallas que necesita una organización concreta.
+La experiencia nos llevaba a prestar atención a las diferencias entre los colaboradores y a las medidas de las prendas con las que trabajábamos. Ofrecer una escala de tallas era solo una parte del proceso.
 
 ## Del registro a la mejora del proceso
 
-SizeSet permitía a Cotton Country recopilar información de sus campañas y analizarla para desarrollar productos y revisar procedimientos. Ese uso debe entenderse dentro de cada proyecto, sin atribuir a la plataforma resultados que no fueron documentados.
+Con SizeSet recopilábamos datos de nuestros clientes y los utilizábamos para [analizar nuestros procesos](/por-que-las-empresas-tienen-problemas-con-las-tallas) y explorar mejoras en productos y servicios. Esa información formaba parte de nuestra política de mejoramiento continuo.
 
-Las [incidencias](/por-que-las-empresas-tienen-problemas-con-las-tallas), las necesidades de ajuste y las elecciones de modelos pueden ayudar a preparar campañas posteriores cuando se registran y revisan de forma ordenada.
+Nos interesaba llevar lo que aprendíamos en las campañas a nuevos escenarios de trabajo, adaptando nuestros servicios a las necesidades de las empresas.
 
-## Un enfoque B2B
+## Comunicación técnica en las compras B2B
 
-Esta publicación se concentra en aprender de los procesos de una empresa, no en definir el [significado general de tallas completas](/que-significa-tallas-completas-en-ropa) ni en ofrecer una tabla corporal para el Perú. La mejora necesita referencias verificadas y comunicación entre quienes compran, organizan el tallaje y confeccionan.
+La digitalización del tallaje también nos mostraba la importancia de mejorar la comunicación entre compradores y confeccionistas. Hablar de características y medidas concretas facilitaba entender lo que una empresa necesitaba.
+
+Para nosotros, recopilar información tenía sentido cuando nos ayudaba a revisar cómo trabajábamos y a preparar mejor los siguientes proyectos de uniformes.
 `,
     publishedAt: "2022-08-18",
     seoTitle: "Tallas completas en Perú: aprendizaje de campañas B2B",
@@ -1645,11 +1653,11 @@ También puede organizarse por tallas industriales. Fabricar a pedido no equival
 
 ## Comparar el abastecimiento
 
-Las propuestas deben evaluarse por su adecuación a las tareas, [especificaciones](/como-definir-un-proyecto-de-uniformes-corporativos), plazo sustentado, mantenimiento y condiciones de reposición. No corresponde prometer ajuste perfecto o calidad garantizada únicamente por el modelo de compra.
+Las propuestas deben evaluarse por su adecuación a las tareas, [especificaciones](/como-definir-un-proyecto-de-uniformes-corporativos), plazo sustentado, mantenimiento y condiciones de reposición. El modelo de compra, por sí solo, no garantiza el ajuste ni la calidad de las prendas.
 
 El precio inicial es una parte de la decisión; cambios de producto, falta de continuidad y costos de operación pueden modificar el resultado.
 
-Esta publicación se concentra en cómo abastecer un proyecto. La elección entre tallas e individualización requiere analizar por separado el proceso de tallaje.
+Al definir el abastecimiento, conviene resolver también cómo se validará la elección de tallas de los colaboradores.
 `,
     publishedAt: "2024-10-25",
     seoTitle: "Uniformes disponibles o a pedido: cómo comparar la compra",
@@ -1716,7 +1724,7 @@ Producir por tallas no significa disponer de stock inmediato ni fabricar siempre
 - Cómo se atenderán incorporaciones y reposiciones.
 - [Desde qué aprobaciones se cuenta el plazo](/de-que-depende-el-tiempo-de-entrega-de-uniformes).
 
-El resultado puede combinar una producción por tallas con la atención de excepciones. Esta comparación orienta una decisión de compra; la [experiencia histórica de Cotton Country](/el-problema-de-las-tallas) con los arreglos corresponde a otro artículo.
+La elección puede combinar una producción por tallas con la atención de casos individuales. La [experiencia de Cotton Country con la confección a medida](/el-problema-de-las-tallas) permite conocer las incidencias y coordinaciones que conviene contemplar antes de encargar el pedido.
 `,
     publishedAt: "2024-10-25",
     seoTitle: "Uniformes a medida o por tallas: criterios de compra",
@@ -1797,17 +1805,15 @@ Una buena compra comienza antes de elegir un proveedor: comienza con una necesid
     title: "¿Por qué las empresas siguen teniendo problemas con las tallas?",
     excerpt: "Asistencia, registro, cambios de personal y comunicación: la experiencia de Cotton Country con las incidencias de una campaña de tallaje.",
     canonicalPath: "/por-que-las-empresas-tienen-problemas-con-las-tallas",
-    content: `En las campañas de uniformes de Cotton Country hemos observado que una prenda bien desarrollada todavía puede llegar a la persona equivocada si falla la organización del tallaje. Este artículo se concentra en esas [incidencias del proceso](/tallas-completas-en-peru).
+    content: `En las [campañas de tallaje de Cotton Country](/tallas-completas-en-peru) hemos observado que una prenda bien desarrollada todavía puede llegar a la persona equivocada si falla la organización del proceso.
 
 ## No pedir solamente una letra
 
-Una talla informada de memoria puede corresponder a otra marca, colección o momento. La campaña debe identificar qué modelos se están probando y qué referencia se registra para cada colaborador.
-
-La explicación técnica de las [tablas y de las llamadas tallas completas](/que-significa-tallas-completas-en-ropa) es distinta de la tarea administrativa de asignar correctamente el uniforme.
+Una talla informada de memoria puede corresponder a otra marca, colección o momento. En cada campaña necesitamos identificar los modelos, sus [tablas de medidas](/que-significa-tallas-completas-en-ropa) y qué elección se registra para cada colaborador.
 
 ## Las incidencias que encontramos
 
-El relato original recogía situaciones como:
+En nuestros procesos de tallaje hemos encontrado situaciones como:
 
 - Colaboradores que no asisten al tallaje.
 - Personas que envían a un compañero en su lugar.
@@ -1815,7 +1821,7 @@ El relato original recogía situaciones como:
 - Cambios de personal después de concluido el proceso.
 - Información desactualizada entre Recursos Humanos, Compras y el proveedor.
 
-Son incidencias observadas en nuestra experiencia, no estadísticas generales de todas las empresas.
+Atender estas situaciones exige coordinación entre Recursos Humanos, Compras, los colaboradores y el proveedor.
 
 ## Responsabilidades y control de cambios
 
@@ -1825,11 +1831,11 @@ La organización debe confirmar participantes, registrar modelos y elecciones, a
 
 Una herramienta digital puede facilitar el registro y la trazabilidad. Eso no demuestra por sí solo que el modelo esté bien desarrollado o que el usuario haya realizado la validación prevista.
 
-En nuestros procesos, las muestras físicas son una referencia importante para evaluar el ajuste. No corresponde convertir esa experiencia en una afirmación universal sobre lo que ninguna tecnología puede hacer.
+En Cotton Country utilizamos muestras físicas para que cada colaborador pueda evaluar el ajuste sobre los modelos de su campaña. El registro digital y la coordinación entre áreas acompañan esa elección.
 
 ## El aprendizaje de Cotton Country
 
-Después de participar en numerosos procesos de tallaje, aprendimos a revisar no solo la talla elegida, sino cómo se obtuvo, quién la confirmó y qué ocurrió después. El aporte específico de esta publicación es esa coordinación de la campaña, no repetir la historia de nuestros primeros uniformes a medida.
+Después de participar en cientos de procesos de tallaje, hemos aprendido que registrar una talla no basta: necesitamos una referencia clara de qué prenda probó el colaborador y cómo se confirmó su elección.
 `,
     publishedAt: "2026-07-28",
     seoTitle: "Tallaje empresarial: incidencias y coordinación de campañas",

@@ -1210,7 +1210,8 @@
     ],
     "inSitemap": true,
     "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente",
+    "editorialVoiceCorrection": "Narración pública revisada contra el Word, sin comentarios del proceso de edición."
   },
   {
     "id": 23,
@@ -1237,7 +1238,7 @@
       },
       {
         "level": 2,
-        "text": "Tendencias que observamos después"
+        "text": "Tendencias y tecnología en 2021"
       }
     ],
     "image": {
@@ -1264,7 +1265,8 @@
     ],
     "inSitemap": true,
     "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente",
+    "editorialVoiceCorrection": "Narración pública revisada contra el Word, sin comentarios del proceso de edición."
   },
   {
     "id": 24,
@@ -1868,7 +1870,7 @@
       },
       {
         "level": 2,
-        "text": "Qué conserva esta experiencia"
+        "text": "Digitalizar el proceso"
       }
     ],
     "image": {
@@ -1884,7 +1886,7 @@
       },
       {
         "href": "/que-talla-eres-en-peru",
-        "text": "elección"
+        "text": "elección de tallas"
       }
     ],
     "externalLinks": [],
@@ -1895,7 +1897,8 @@
     ],
     "inSitemap": true,
     "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente",
+    "editorialVoiceCorrection": "Narración pública revisada contra el Word, sin comentarios del proceso de edición."
   },
   {
     "id": 34,
@@ -2018,7 +2021,7 @@
     "headings": [
       {
         "level": 2,
-        "text": "Observaciones de campañas empresariales"
+        "text": "Lo que observábamos en las campañas"
       },
       {
         "level": 2,
@@ -2026,7 +2029,7 @@
       },
       {
         "level": 2,
-        "text": "Un enfoque B2B"
+        "text": "Comunicación técnica en las compras B2B"
       }
     ],
     "image": {
@@ -2037,23 +2040,24 @@
     },
     "internalLinks": [
       {
-        "href": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
-        "text": "incidencias"
+        "href": "/que-significa-tallas-completas-en-ropa",
+        "text": "tallas completas"
       },
       {
-        "href": "/que-significa-tallas-completas-en-ropa",
-        "text": "significado general de tallas completas"
+        "href": "/por-que-las-empresas-tienen-problemas-con-las-tallas",
+        "text": "analizar nuestros procesos"
       }
     ],
     "externalLinks": [],
     "relatedArticleSlugs": [
-      "por-que-las-empresas-tienen-problemas-con-las-tallas",
       "que-significa-tallas-completas-en-ropa",
+      "por-que-las-empresas-tienen-problemas-con-las-tallas",
       "guia-de-tallas-online"
     ],
     "inSitemap": true,
     "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente",
+    "editorialVoiceCorrection": "Narración pública revisada contra el Word, sin comentarios del proceso de edición."
   },
   {
     "id": 37,
@@ -2497,7 +2501,8 @@
     ],
     "inSitemap": true,
     "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente",
+    "editorialVoiceCorrection": "Narración pública revisada contra el Word, sin comentarios del proceso de edición."
   },
   {
     "id": 45,
@@ -2606,7 +2611,7 @@
       },
       {
         "href": "/el-problema-de-las-tallas",
-        "text": "experiencia histórica de Cotton Country"
+        "text": "experiencia de Cotton Country con la confección a medida"
       }
     ],
     "externalLinks": [],
@@ -2617,7 +2622,8 @@
     ],
     "inSitemap": true,
     "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente",
+    "editorialVoiceCorrection": "Narración pública revisada contra el Word, sin comentarios del proceso de edición."
   },
   {
     "id": 47,
@@ -2780,11 +2786,11 @@
     "internalLinks": [
       {
         "href": "/tallas-completas-en-peru",
-        "text": "incidencias del proceso"
+        "text": "campañas de tallaje de Cotton Country"
       },
       {
         "href": "/que-significa-tallas-completas-en-ropa",
-        "text": "tablas y de las llamadas tallas completas"
+        "text": "tablas de medidas"
       }
     ],
     "externalLinks": [],
@@ -2795,7 +2801,8 @@
     ],
     "inSitemap": true,
     "productionTechnicalIndexability": "Sin noindex en la compilación local de producción; indexación en Google no comprobada",
-    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente"
+    "previewPolicy": "noindex,nofollow cuando VERCEL_ENV=preview; comprobación remota pendiente",
+    "editorialVoiceCorrection": "Narración pública revisada contra el Word, sin comentarios del proceso de edición."
   },
   {
     "id": 50,

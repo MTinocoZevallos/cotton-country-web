@@ -52,5 +52,47 @@
   "wordTablesVerifiedCellByCell": 2,
   "modifiedOriginalImageFiles": 0,
   "previewEnvironmentMetadata": "noindex,nofollow when VERCEL_ENV=preview; unit-tested, not remotely verified",
-  "allPairScreening": 1378
+  "allPairScreening": 1378,
+  "sizingVoiceCorrection": {
+    "reviewedArticles": 14,
+    "modifiedArticles": 7,
+    "untouchedApprovedArticles": 5,
+    "responsive": [
+      {
+        "width": 1440,
+        "articles": 14,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "articles": 14,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "articles": 14,
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "articles": 14,
+        "overflow": false
+      }
+    ],
+    "axeSamples": 14,
+    "internalDestinations": 14,
+    "errors": [],
+    "publicationDatesAndMetadata": "unchanged",
+    "prohibitedEditorialCommentary": "absent from all 14 reviewed bodies",
+    "baseSHA": "2db93c2b13f583066a4f04ea5237465e1bbde676",
+    "sourceSHA256": "653d1c096fb95bbea15beda527be269940e57d8167496fe7317563cd6a717607",
+    "build": "passed",
+    "typescript": "passed",
+    "eslint": "passed",
+    "unitTests": 29,
+    "unchangedFullArticleRecords": 46,
+    "unchangedMetadataAndImages": 53,
+    "wordDocumentRead": true,
+    "reviewedPairCount": 91
+  }
 }
