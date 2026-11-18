@@ -7,7 +7,7 @@
 .navigation { display: flex; align-items: center; gap: 24px; margin-left: 0; justify-self: center; }
 .navLink { font-size: 16px; font-weight: 500; padding-block: 12px; }
 .navLink:hover { text-decoration: underline; text-underline-offset: 6px; }
-.emailLink { justify-self: end; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; min-height: 44px; padding: 10px 20px; border: 1px solid var(--cc-white); border-radius: 999px; background: transparent; color: var(--cc-white); font-size: 15px; line-height: 1.4; font-weight: 500; white-space: nowrap; transition: background .25s; }
+.emailLink { justify-self: end; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; min-height: 44px; padding: 10px 16px; border: 1px solid var(--cc-white); border-radius: 999px; background: transparent; color: var(--cc-white); font-size: 14px; line-height: 1.4; font-weight: 500; white-space: nowrap; transition: background .25s; }
 .emailLink:hover { background: color-mix(in srgb, var(--cc-white) 12%, transparent); }
 .header :is(a, button):focus-visible, .footer :is(a, summary):focus-visible { outline: 2px solid var(--cc-lime); outline-offset: 5px; }
 .skipLink { position: absolute; left: 20px; top: -100px; background: var(--cc-white); color: var(--cc-blue); padding: 12px 20px; z-index: 1; }
@@ -39,7 +39,7 @@
   .headerInner { gap: 12px; }
   .navigation { gap: 16px; }
   .navLink { font-size: 14px; }
-  .emailLink { padding-inline: 12px; font-size: 13px; }
+  .emailLink { padding-inline: 10px; font-size: 13px; }
   .footerBody { padding-block: 48px 40px; }
   .footerGrid { grid-template-columns: 1fr; gap: 36px; }
   .footerGrid > div:first-child { max-width: 460px; }

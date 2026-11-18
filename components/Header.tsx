@@ -51,7 +51,6 @@ export default function Header() {
           <Link href="/uniformes" className={styles.navLink}>Uniformes</Link>
           <a href="https://sizeset.com" className={styles.navLink} target="_blank" rel="noopener noreferrer">SizeSet</a>
           <Link href="/blog" className={styles.navLink}>Blog</Link>
-          <Link href="/#contacto" className={styles.navLink}>Contacto</Link>
         </nav>
         <a href="mailto:info@cottoncountry.com.pe" onClick={() => { close(); handleEmailClick() }} className={styles.emailLink}>Contáctanos</a>
       </div>
