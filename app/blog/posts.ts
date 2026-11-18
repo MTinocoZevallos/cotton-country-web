@@ -547,32 +547,56 @@ Lo ideal es que nos sintamos cómodos con la prenda, e incluso de preferencia qu
   {
     slug: "el-problema-de-las-tallas",
     title: "El problema de las tallas",
-    excerpt: "Si algunas vez, al ir a comprar ropa te preguntaron ¿qué talla eres?, seguramente tu respuesta fue: “Soy talla S, M, etc.”, pero ¿esta es realmente tu tall...",
+    excerpt: "¿Por qué una misma talla no queda igual en todas las prendas? Conoce nuestra experiencia con uniformes a medida y la importancia de validar el tallaje.",
     canonicalPath: "/el-problema-de-las-tallas",
     content: `
-Si algunas vez, al ir a comprar ropa te preguntaron ¿qué talla eres?, seguramente tu respuesta fue: “Soy talla S, M, etc.”, pero ¿esta es realmente tu talla? Lo cierto es que esta, como tantas otras verdades, es una verdad relativa y aquí te contamos por qué.\u0020
-Cuando uno asume una talla como propia en realidad asume la talla de la marca de su preferencia (y que nos queda bien), pero las tallas en sí están determinadas por las tablas de medida que cada marca escoge de acuerdo a su público objetivo.
-Esta realidad se hizo evidente con la llegada de las fast fashion (H&M, Forever21, Zara). Y es que, por ejemplo, cuando una persona quería comprar una talla M en Zara (la talla que siempre había comprado en otra marca), simplemente no le quedaba. Pero ¿a qué se debía esto? A que los biotipos varían de acuerdo a las nacionalidades. Entonces, como los productos de estas tiendas no concordaban con las medidas peruanas, lanzaron una estrategia a través de la cual las personas llevaban prendas usadas a sus tiendas para canjearlas por vales de consumo ¿Sabes para qué fue? Para comprender el biotipo peruano y ofrecerle tallas que se adecuaran más a sus medidas.
-En el caso de los uniformes para empresas este proceso de tallaje (ó también llamado en otros países fitting) es un proceso clave pues impacta en el nivel de satisfacción de los usuarios y en la calificación del área de compras sobre su gestión del gasto.
+Cuando compramos ropa y nos preguntan qué talla somos, solemos responder S, M, L o XL. Pero ¿esa es realmente nuestra talla?
 
+**En realidad, somos la talla que nos queda bien de una determinada marca.** Y eso no significa que nos quede igual en todas las demás.
 
-Nuestra experiencia\u0020
-Cuando iniciamos el negocio, la poca experiencia de entonces nos hizo aprender con la práctica la importancia de ofrecer uniformes por talla y no a la medida, como lo hicimos entonces. Pero ¿por qué fue un error ofrecer prendas a medida? Porque descubrimos que existen indicadores que para nosotros son relevantes y  que lamentablemente, por ahora, son contrarios a lo que se entiende en el enfoque comercial de “a la medida” para uniformes. Los indicadores siguientes:
+Cada fabricante desarrolla sus propias tablas de medidas según el diseño de sus prendas y el público al que se dirige. Por eso, una talla M puede ser muy diferente entre dos marcas.
 
-Productividad
-Los procesos de confección industriales y los procesos industriales en sí están regidos por el tiempo; es decir, cuanto más prendas se puedan producir en un un tiempo determinado dará como resultado que tu negocio sea más productivo. Lo anterior tiene relación directa con la rentabilidad y la eficiencia, pues si produces más ganas más, ya que tus tiempos de entrega son más cortos y esto influye también sobre el ciclo del efectivo.
-Calidad\u0020
-Este indicador en sí es medido por la cantidad de reclamos por usuarios a quienes no les quedó la prenda. También por el hallazgo de defectos de fabricación. En el caso de la ropa a la medida los reclamos no solo se elevaron en número (30%) sino en costo debido a los arreglos post entrega y es que el proceso es complejo en algunas empresas debido también a la cultura.\u0020
-Tendencias
-Desde el año 2014, aproximadamente, hemos visto marcas y empresas ofreciendo camisas y ropa a medida para el mercado B2C. Éstas han tenido buena acogida por el diseño y detalle en las costuras, pero a su vez limitadas en tiempo y distancia para la toma de medidas de sus clientes.\u0020
-En el mercado de uniformes B2B el uso de uniformes a la medida es más común en el sector público o instituciones que requieren de uniformes más formales como sacos, ternos, sastres de dama, etc. Sin embargo, los ya conocidos efectos de COVID-19 (como el distanciamiento social y home office) han reducido considerablemente su uso, perjudicando a los proveedores, así como a los productores de estos tejidos para vestimentas de trabajo formales.
+En los uniformes empresariales, esta diferencia puede convertirse en un verdadero problema.
 
+## Nuestra experiencia: el error de confeccionar a medida
 
+Cuando iniciamos Cotton Country, ofrecíamos uniformes confeccionados a medida. Parecía la mejor solución: tomar las medidas de cada colaborador y producir una prenda especialmente para él.
 
-Hoy en día existen aplicativos capaces de tomar medidas y recomendar tallas con tan solo un clic de la cámara de un smartphone, pero su costo aún es elevado para ser implementado de forma  masiva en un mercado atomizado como lo es el de las confecciones.
+Sin embargo, la experiencia nos demostró que este sistema no siempre era el más eficiente para atender pedidos empresariales.
 
-No dudamos en que esta tendencia se consolidará más pronto de lo que pensamos pues la transformación digital está cada vez más presente en muchas industrias y la industria textil confecciones no será la excepción. Frente a todo lo dicho, queda abierta una pregunta ¿estás preparado para el gran cambio?
+Identificamos tres factores fundamentales:
+
+**Productividad.** La confección industrial permite organizar la producción por tallas, optimizar tiempos y cumplir plazos de entrega. La personalización individual introduce mayor complejidad.
+
+**Calidad.** En nuestra experiencia inicial, los reclamos por problemas de ajuste llegaron a incrementarse aproximadamente un 30 % con la confección a medida. Los arreglos posteriores también elevaron los costos.
+
+**Escalabilidad.** Tomar medidas individuales, coordinar pruebas y realizar ajustes puede resultar especialmente complejo cuando una empresa necesita uniformar a cientos de colaboradores en distintas sedes.
+
+Aprendimos que **confeccionar a medida no garantiza, por sí solo, que una prenda quede mejor**.
+
+## El tallaje es más importante de lo que parece
+
+Trabajar con tallas industriales tampoco significa que el problema esté resuelto.
+
+Dos colaboradores pueden elegir una misma talla y necesitar ajustes diferentes. Por eso, no basta con preguntar qué talla utiliza habitualmente cada persona.
+
+Es necesario contar con tablas de medidas verificadas, muestras físicas y un procedimiento que permita identificar las necesidades de cada usuario antes de producir.
+
+Un error de tallaje puede generar cambios, arreglos, retrasos y reclamos. También afecta la percepción de calidad del uniforme y la evaluación que hace el área de compras sobre su proveedor.
+
+## La tecnología está cambiando el proceso
+
+La transformación digital ofrece nuevas posibilidades para organizar y registrar el tallaje de los colaboradores.
+
+Pero la tecnología no reemplaza las medidas correctas ni la validación de las prendas. Su verdadero valor aparece cuando permite relacionar la elección de cada usuario con modelos y tablas de medidas previamente verificados.
+
+En Cotton Country hemos aprendido que el desafío no consiste simplemente en producir más tallas o tomar más medidas, sino en **reducir la incertidumbre antes de iniciar la confección**.
+
+Porque el problema de las tallas no comienza cuando una prenda no le queda al colaborador. Comienza mucho antes, cuando no existe un proceso confiable para elegirla.
+
+---
 `,
+    seoTitle: "El problema de las tallas en los uniformes empresariales",
   },
   {
     slug: "ntp-para-la-designacion-de-tallas",

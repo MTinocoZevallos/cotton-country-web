@@ -82,9 +82,9 @@ test('original IA interview retains both measurement tables and all original cel
   assert(tables.every(t=>t.rows.length===6));assert(post.content.includes('(Cotton Country)'))
 })
 
-test('the 47 articles outside approved revisions match their original Git versions',()=>{
-  const baselines=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-original-52.json'))).filter(p=>!['que-significa-tallas-completas-en-ropa','una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano','ntp-para-la-designacion-de-tallas','la-talla-peruana','las-tallas-completas-segun-una-ia'].includes(p.slug))
-  assert.equal(baselines.length,47)
+test('the 46 articles outside approved revisions match their original Git versions',()=>{
+  const baselines=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-original-52.json'))).filter(p=>!['que-significa-tallas-completas-en-ropa','una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano','ntp-para-la-designacion-de-tallas','la-talla-peruana','las-tallas-completas-segun-una-ia','el-problema-de-las-tallas'].includes(p.slug))
+  assert.equal(baselines.length,46)
   for(const baseline of baselines){const post=blog.posts.find(p=>p.slug===baseline.slug);assert.equal(crypto.createHash('sha256').update(JSON.stringify(post)).digest('hex'),baseline.sha256,baseline.slug)}
   assert.equal(blog.getPostImage('el-uniforme-de-farmacia').visible,false)
   const metadata=blog.postMetadata(blog.posts.find(p=>p.slug==='el-uniforme-de-farmacia'))
@@ -93,9 +93,9 @@ test('the 47 articles outside approved revisions match their original Git versio
 
 const editorialBaseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-other-52.json')))
 const digest=value=>crypto.createHash('sha256').update(typeof value==='string'?value:JSON.stringify(value)).digest('hex')
-test('the article 1 baseline remains unchanged outside the approved articles 2 through 5',()=>{
-  const remaining=editorialBaseline.otherPosts.filter(p=>!['una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano','ntp-para-la-designacion-de-tallas','la-talla-peruana','las-tallas-completas-segun-una-ia'].includes(p.slug))
-  assert.equal(remaining.length,48)
+test('the article 1 baseline remains unchanged outside the approved articles 2 through 6',()=>{
+  const remaining=editorialBaseline.otherPosts.filter(p=>!['una-ia-nos-da-tablas-de-medida-para-el-mercado-peruano','ntp-para-la-designacion-de-tallas','la-talla-peruana','las-tallas-completas-segun-una-ia','el-problema-de-las-tallas'].includes(p.slug))
+  assert.equal(remaining.length,47)
   for(const before of remaining){
     const post=blog.posts.find(post=>post.slug===before.slug)
     assert.equal(digest(post),before.postSHA256,before.slug)
@@ -133,9 +133,9 @@ test('article 2 preserves all three historical answers, all table cells, approve
   assert.deepEqual(blog.getPostImage(post.slug),chatBaseline.image)
   assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'public',chatBaseline.image.src))).digest('hex'),chatBaseline.imageSHA256)
 })
-test('the article 2 baseline remains unchanged outside the approved articles 3 through 5',()=>{
+test('the article 2 baseline remains unchanged outside the approved articles 3 through 6',()=>{
   assert.equal(chatBaseline.otherPosts.length,52)
-  for(const before of chatBaseline.otherPosts.filter(p=>!['ntp-para-la-designacion-de-tallas','la-talla-peruana','las-tallas-completas-segun-una-ia'].includes(p.slug))){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(digest(post),before.postSHA256,before.slug);assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug);assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)}
+  for(const before of chatBaseline.otherPosts.filter(p=>!['ntp-para-la-designacion-de-tallas','la-talla-peruana','las-tallas-completas-segun-una-ia','el-problema-de-las-tallas'].includes(p.slug))){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(digest(post),before.postSHA256,before.slug);assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug);assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)}
 })
 
 const ntpBaseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-outside-ntp.json')))
@@ -153,9 +153,9 @@ test('article 3 retains the approved NTP body, historical date, canonical and or
   assert.deepEqual(blog.getPostImage(post.slug),ntpBaseline.image)
   assert.equal(digest(fs.readFileSync(path.join(root,'public',ntpBaseline.image.src)).toString('base64')),ntpBaseline.imageSHA256)
 })
-test('the article 3 baseline remains unchanged outside approved articles 4 and 5',()=>{
+test('the article 3 baseline remains unchanged outside approved articles 4 through 6',()=>{
   assert.equal(ntpBaseline.otherPosts.length,52)
-  for(const before of ntpBaseline.otherPosts.filter(p=>!['la-talla-peruana','las-tallas-completas-segun-una-ia'].includes(p.slug))){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(digest(post),before.postSHA256,before.slug);assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug);assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)}
+  for(const before of ntpBaseline.otherPosts.filter(p=>!['la-talla-peruana','las-tallas-completas-segun-una-ia','el-problema-de-las-tallas'].includes(p.slug))){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(digest(post),before.postSHA256,before.slug);assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug);assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)}
 })
 
 const peruvianSizeBaseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-outside-peruvian-size.json')))
@@ -172,9 +172,9 @@ test('article 4 preserves approved body, original date, canonical and image',()=
   assert.deepEqual(blog.getPostImage(post.slug),peruvianSizeBaseline.image)
   assert.equal(digest(fs.readFileSync(path.join(root,'public',peruvianSizeBaseline.image.src)).toString('base64')),peruvianSizeBaseline.imageSHA256)
 })
-test('the article 4 baseline remains unchanged outside approved article 5',()=>{
+test('the article 4 baseline remains unchanged outside approved articles 5 and 6',()=>{
   assert.equal(peruvianSizeBaseline.otherPosts.length,52)
-  for(const before of peruvianSizeBaseline.otherPosts.filter(p=>p.slug!=='las-tallas-completas-segun-una-ia')){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(digest(post),before.postSHA256,before.slug);assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug);assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)}
+  for(const before of peruvianSizeBaseline.otherPosts.filter(p=>!['las-tallas-completas-segun-una-ia','el-problema-de-las-tallas'].includes(p.slug))){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(digest(post),before.postSHA256,before.slug);assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug);assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)}
 })
 
 const fullSizeBaseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-outside-full-size-chat.json')))
@@ -194,7 +194,28 @@ test('article 5 preserves both original responses word for word, including their
   assert.deepEqual(blog.getPostImage(post.slug),fullSizeBaseline.image)
   assert.equal(digest(fs.readFileSync(path.join(root,'public',fullSizeBaseline.image.src)).toString('base64')),fullSizeBaseline.imageSHA256)
 })
-test('all other 52 articles including approved articles 1 through 4 retain complete data, metadata and schema',()=>{
+test('the article 5 baseline remains unchanged outside approved article 6',()=>{
   assert.equal(fullSizeBaseline.otherPosts.length,52)
-  for(const before of fullSizeBaseline.otherPosts){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(digest(post),before.postSHA256,before.slug);assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug);assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)}
+  for(const before of fullSizeBaseline.otherPosts.filter(p=>p.slug!=='el-problema-de-las-tallas')){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(digest(post),before.postSHA256,before.slug);assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug);assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)}
+})
+
+const sizingProblemBaseline=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-preserved-outside-sizing-problem.json')))
+test('article 6 preserves approved text, historical first-party claim, existing unknown date and image',()=>{
+  const post=blog.posts.find(p=>p.slug==='el-problema-de-las-tallas')
+  const approved=fs.readFileSync(path.join(root,'tests/fixtures/sizing-problem-approved.md'),'utf8').trim()
+  assert.equal(post.title,approved.split('\n')[0].slice(2));assert.equal(post.content.trim(),approved.replace(/^# [^\n]+\n\n/,''))
+  assert.equal(sizingProblemBaseline.publishedAt,null);assert.equal(post.publishedAt,undefined);assert.equal(post.updatedAt,undefined)
+  assert(sizingProblemBaseline.originalClaim.includes('(30%)'));assert(post.content.includes('En nuestra experiencia inicial, los reclamos por problemas de ajuste llegaron a incrementarse aproximadamente un 30 % con la confección a medida.'))
+  assert(!/recicla|Zara|Forever21|H&M|SizeSet/i.test(post.content))
+  const metadata=blog.postMetadata(post)
+  assert.equal(metadata.title,'El problema de las tallas en los uniformes empresariales')
+  assert.equal(metadata.description,'¿Por qué una misma talla no queda igual en todas las prendas? Conoce nuestra experiencia con uniformes a medida y la importancia de validar el tallaje.')
+  assert.equal(metadata.alternates.canonical,'/el-problema-de-las-tallas')
+  assert.equal(content.parseContent(post.content).filter(b=>b.type==='heading'&&b.level===2).length,3)
+  assert.deepEqual(blog.getPostImage(post.slug),sizingProblemBaseline.image)
+  assert.equal(digest(fs.readFileSync(path.join(root,'public',sizingProblemBaseline.image.src)).toString('base64')),sizingProblemBaseline.imageSHA256)
+})
+test('all other 52 articles including approved articles 1 through 5 match the starting commit',()=>{
+  assert.equal(sizingProblemBaseline.otherPosts.length,52)
+  for(const before of sizingProblemBaseline.otherPosts){const post=blog.posts.find(p=>p.slug===before.slug);assert.equal(digest(post),before.postSHA256,before.slug);assert.equal(digest(blog.postMetadata(post)),before.metadataSHA256,before.slug);assert.equal(digest(blog.postStructuredData(post)),before.structuredDataSHA256,before.slug)}
 })
