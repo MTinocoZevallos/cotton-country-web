@@ -6,6 +6,12 @@
 .page .body { min-width: 0; margin-top: 0; }
 .body strong { font-weight: 600; }
 .body p:has(> strong:only-child) { border-left: 2px solid var(--cc-blue); padding-left: 24px; color: var(--cc-blue); font-size: clamp(19px, 1.6vw, 23px); line-height: 1.65; }
+.closing { color: var(--cc-blue); padding-block: clamp(64px, 8vw, 120px); }
+.signature { font-size: 13px; letter-spacing: .15em; line-height: 1.5; margin-bottom: 32px; }
+.signature strong { font-weight: 600; }
+.closingStatement { max-width: 1150px; font-family: var(--font-editorial-serif), Georgia, serif; font-size: clamp(34px, 4.4vw, 64px); line-height: 1.12; letter-spacing: -.025em; text-wrap: balance; }
+.closingStatement strong { font-weight: 400; }
+.closingStatement p + p { margin-top: 16px; }
 @media (max-width: 900px) {
   .sectionLayout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
   .sectionTitle { position: static; max-width: 680px; }

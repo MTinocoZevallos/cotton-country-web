@@ -25,74 +25,60 @@ export default function NosotrosPage() {
         <h1>No empezamos fabricando uniformes. Empezamos cuestionando cómo se hacían.</h1>
       </header>
     </div>
-    <section className={`${editorial.section} ${styles.section}`} aria-labelledby="nuestra-historia">
+    <section className={`${editorial.section} ${styles.section}`} aria-labelledby="origen-cotton-country">
       <div className={`${editorial.container} ${styles.sectionLayout}`}>
-        <h2 id="nuestra-historia" className={styles.sectionTitle}>Nuestra historia</h2>
+        <h2 id="origen-cotton-country" className={styles.sectionTitle}>Una pregunta que dio origen a Cotton Country</h2>
         <div className={`${editorial.copy} ${styles.body}`}>
-          <p>Cotton Country nació en 2014, a partir de una experiencia que nos llevó a mirar de otra manera el mercado de los uniformes corporativos.</p>
-          <p>Todo comenzó cuando uno de nuestros fundadores, encargado de una tienda de una importante empresa de retail, experimentó de primera mano las dificultades que podía ocasionar una mala gestión de uniformes.</p>
-          <p>Aquella experiencia despertó una pregunta que terminaría dando origen a nuestra empresa:</p>
-          <p><strong>¿Cómo era posible que, en una industria tan importante, no existiera una marca de uniformes claramente reconocida y posicionada en el mercado?</strong></p>
-          <p>La inquietud iba más allá de encontrar un proveedor eficiente. Se trataba de comprender por qué un producto tan presente en la vida de las organizaciones no había desarrollado una propuesta de marca y una experiencia comercial a la altura de su importancia.</p>
-          <p>La idea encontró raíces en experiencias familiares vinculadas a la confección. Nuestra madre, profesora de profesión, confeccionaba su propia ropa. Un pequeño taller de servicios textiles que había tenido nuestra familia nos permitió conocer desde dentro las dificultades del sector: informalidad, alta rotación de trabajadores, competencia intensa y una industria fragmentada.</p>
-          <p>A ello se sumaron dos especialidades complementarias: una trayectoria profesional en el retail y el sector financiero, con experiencia en bancos y algunos de los principales grupos económicos del país, formación en administración, marketing y ventas; y conocimientos de ingeniería industrial especializada en confecciones.</p>
-          <p>Así nació Cotton Country: de combinar una mirada empresarial y comercial con el conocimiento técnico de la industria textil.</p>
+          <p>Cotton Country nació en 2014, después de una experiencia con uniformes corporativos en una importante empresa de retail.</p>
+          <p>Lo que parecía un problema cotidiano despertó una pregunta más profunda: <strong>¿cómo era posible que una industria tan importante no contara con una marca de uniformes claramente reconocida y posicionada en el mercado?</strong></p>
+          <p>La respuesta fue emprender.</p>
+          <p>Combinamos experiencia en administración, retail financiero, marketing y ventas con ingeniería industrial especializada en confecciones. Desde el principio tuvimos una convicción: el mercado necesitaba algo más que otro fabricante de uniformes.</p>
+          <p>Necesitaba una forma diferente de entender el negocio.</p>
         </div>
       </div>
     </section>
-    <section className={`${editorial.section} ${styles.section} ${editorial.ivory}`} aria-labelledby="industria-textil">
+    <section className={`${editorial.section} ${styles.section} ${editorial.ivory}`} aria-labelledby="valor-del-uniforme">
       <div className={`${editorial.container} ${styles.sectionLayout}`}>
-        <h2 id="industria-textil" className={styles.sectionTitle}>Una industria con mucho potencial y desafíos pendientes</h2>
+        <h2 id="valor-del-uniforme" className={styles.sectionTitle}>El uniforme no es simplemente una prenda</h2>
         <div className={`${editorial.copy} ${styles.body}`}>
-          <p>El Perú cuenta con una importante tradición textil, materias primas reconocidas internacionalmente y conocimientos productivos desarrollados durante generaciones.</p>
-          <p>Sin embargo, ese potencial convive con desafíos estructurales: informalidad, fragmentación empresarial, dificultades para incorporar tecnología, limitada estandarización de procesos y una competencia que con frecuencia se concentra exclusivamente en el precio.</p>
-          <p>En el mercado de uniformes, estos problemas se manifiestan de maneras muy concretas.</p>
-          <p>La incertidumbre sobre las tallas, la información insuficiente acerca de los materiales, las diferencias entre especificaciones técnicas y productos terminados, los tiempos de entrega y la coordinación de procesos productivos pueden convertir una compra aparentemente sencilla en una operación compleja.</p>
-          <p>Son dificultades que afectan tanto a las empresas compradoras como a quienes participan en la cadena de confección.</p>
-          <p><strong>Entendimos que existía una oportunidad para crear valor precisamente donde la industria todavía tenía problemas por resolver.</strong></p>
+          <p>Muchas empresas siguen comprando uniformes bajo una lógica centrada casi exclusivamente en el precio.</p>
+          <p>Nosotros los entendemos de otra manera.</p>
+          <p><strong>Un uniforme es una herramienta de marketing, identidad y comunicación.</strong> Representa a la organización, proyecta su imagen y acompaña diariamente a las personas que hacen posible su negocio.</p>
+          <p>Pero también debe funcionar: tener tallas adecuadas, materiales apropiados, comodidad, durabilidad y responder a las exigencias de cada actividad.</p>
+          <p>Por eso creemos que el verdadero valor de un uniforme no está únicamente en cuánto cuesta, sino en lo que aporta a la empresa y a quienes lo utilizan.</p>
         </div>
       </div>
     </section>
-    <section className={`${editorial.section} ${styles.section}`} aria-labelledby="valor-del-uniforme">
+    <section className={`${editorial.section} ${styles.section}`} aria-labelledby="resolver-problemas">
       <div className={`${editorial.container} ${styles.sectionLayout}`}>
-        <h2 id="valor-del-uniforme" className={styles.sectionTitle}>El uniforme vale más que su precio</h2>
+        <h2 id="resolver-problemas" className={styles.sectionTitle}>Resolver problemas, no solamente fabricar prendas</h2>
         <div className={`${editorial.copy} ${styles.body}`}>
-          <p>Durante mucho tiempo, los uniformes han sido tratados como una compra operativa: definir una prenda, solicitar cotizaciones y elegir al proveedor que ofrece el menor precio.</p>
-          <p>Pero un uniforme representa mucho más que una partida del presupuesto.</p>
-          <p>Es una de las expresiones más visibles y cotidianas de la identidad de una organización. Acompaña a sus colaboradores, proyecta su imagen frente a los clientes y contribuye a construir una experiencia de marca coherente.</p>
-          <p>También debe responder a necesidades prácticas: comodidad, funcionalidad, durabilidad, tallas adecuadas y materiales apropiados para cada actividad.</p>
-          <p><strong>Un uniforme económico no necesariamente representa una buena compra. Su verdadero valor está en lo que aporta a la empresa y a las personas que lo utilizan.</strong></p>
-          <p>Por eso, en Cotton Country entendemos el uniforme como una herramienta de comunicación, identidad y gestión empresarial.</p>
-          <p>Nuestro trabajo comienza por comprender qué necesita realmente cada organización, no simplemente por reproducir una prenda a partir de una cotización.</p>
+          <p>El sector de uniformes enfrenta dificultades que conocemos bien: problemas de tallaje, información insuficiente sobre materiales, especificaciones poco claras, incertidumbre en los tiempos de entrega y procesos productivos fragmentados.</p>
+          <p>A ello se suman desafíos de la industria textil peruana, como la informalidad, la limitada digitalización y una competencia frecuentemente basada en precios.</p>
+          <p>En Cotton Country desarrollamos un modelo especializado, ágil y apoyado en una red de producción tercerizada. Integramos conocimiento textil, ingeniería, marketing y tecnología para abordar los problemas de cada proyecto.</p>
+          <p>Hemos explorado soluciones en diseño, desarrollo de fichas técnicas, posicionamiento digital y metodologías de tallaje.</p>
+          <p><strong>Nuestra innovación no consiste en hacer las cosas diferentes por llamar la atención, sino en encontrar mejores respuestas a problemas reales.</strong></p>
         </div>
       </div>
     </section>
-    <section className={`${editorial.section} ${styles.section} ${editorial.ivory}`} aria-labelledby="forma-de-hacer-empresa">
+    <section className={`${editorial.section} ${styles.section} ${editorial.ivory}`} aria-labelledby="otra-manera">
       <div className={`${editorial.container} ${styles.sectionLayout}`}>
-        <h2 id="forma-de-hacer-empresa" className={styles.sectionTitle}>Una forma diferente de hacer empresa</h2>
+        <h2 id="otra-manera" className={styles.sectionTitle}>Una manera diferente de hacer las cosas</h2>
         <div className={`${editorial.copy} ${styles.body}`}>
-          <p>Cotton Country es una empresa especializada que combina administración, marketing, ingeniería industrial y conocimiento textil.</p>
-          <p>Trabajamos con una estructura ágil y un modelo de producción tercerizada que nos permite integrar capacidades de distintos especialistas y talleres, según las características de cada proyecto.</p>
-          <p>Creemos que el valor de una empresa no debe medirse únicamente por el tamaño de sus instalaciones, sino también por su capacidad para comprender problemas, desarrollar soluciones y gestionar adecuadamente los recursos disponibles.</p>
-          <p>Esta filosofía nos ha llevado a explorar caminos poco habituales en el sector: comercializar servicios de diseño y fichas técnicas, desarrollar presencia digital mediante posicionamiento orgánico en buscadores e implementar metodologías orientadas a mejorar los procesos de tallaje.</p>
-          <p>La tecnología, la información y el conocimiento forman parte de nuestra manera de trabajar.</p>
-          <p>No innovamos por seguir una tendencia. <strong>Buscamos soluciones a problemas reales que las empresas enfrentan al gestionar sus uniformes.</strong></p>
+          <p>El mercado está cambiando y las empresas necesitan proveedores capaces de ofrecer algo más que productos y cotizaciones.</p>
+          <p>Creemos en una industria textil peruana que compita por conocimiento, especialización, eficiencia e innovación, aprovechando su tradición y sus ventajas productivas.</p>
+          <p>Sabemos que los desafíos del sector siguen presentes. No pretendemos haberlos resuelto todos, pero sí contribuir a mejorar la manera en que se desarrollan y gestionan los proyectos de uniformes.</p>
+          <p><strong>Cada empresa que elige Cotton Country también apuesta por esa transformación.</strong> Por procesos mejor pensados, decisiones más informadas y una cadena textil que puede generar mayor valor para todos.</p>
+          <p>Creemos que una buena compra no se define únicamente por el precio. Se reconoce en los compromisos cumplidos, en la calidad de los acabados, en una prenda que calza bien y en colaboradores que se sienten cómodos y orgullosos de vestirla. Esos detalles hacen la diferencia entre simplemente entregar uniformes y aportar valor a una organización.</p>
         </div>
       </div>
     </section>
-    <section className={`${editorial.section} ${styles.section}`} aria-labelledby="hacer-las-cosas-mejor">
-      <div className={`${editorial.container} ${styles.sectionLayout}`}>
-        <h2 id="hacer-las-cosas-mejor" className={styles.sectionTitle}>Creemos en una industria que puede hacer las cosas mejor</h2>
-        <div className={`${editorial.copy} ${styles.body}`}>
-          <p>El mercado está cambiando. Las empresas demandan mayor información, transparencia, rapidez, especialización y soluciones adaptadas a sus operaciones.</p>
-          <p>Al mismo tiempo, la industria textil peruana continúa enfrentando desafíos que ninguna empresa puede resolver por sí sola.</p>
-          <p>En Cotton Country creemos que mejorar el sector requiere cambiar también la forma en que se relacionan quienes compran, desarrollan y producen.</p>
-          <p>Cada proyecto es una oportunidad para promover especificaciones más claras, decisiones mejor informadas, procesos más ordenados y una mayor valoración del conocimiento técnico.</p>
-          <p>No pretendemos afirmar que hemos resuelto todos los problemas de la industria. Muchos siguen presentes y también forman parte de nuestros desafíos cotidianos.</p>
-          <p>Pero estamos convencidos de que las mejoras comienzan cuando dejamos de aceptar que las cosas tienen que hacerse siempre de la misma manera.</p>
-          <p><strong>Cuando una empresa elige Cotton Country, no solo está eligiendo uniformes. Está respaldando una manera diferente de entender el negocio: una que valora el conocimiento, la innovación y el trabajo especializado, y que busca contribuir al desarrollo de toda la cadena textil.</strong></p>
-          <p>Porque transformar una industria no depende únicamente de grandes inversiones o nuevas tecnologías.</p>
-          <p><strong>También comienza con algo más sencillo: hacer mejores preguntas, tomar mejores decisiones y demostrar, proyecto a proyecto, que existe otra manera de hacer las cosas.</strong></p>
+    <section className={`${editorial.section} ${styles.closing}`} aria-label="Cotton Country">
+      <div className={editorial.container}>
+        <p className={styles.signature}><strong>COTTON COUNTRY</strong></p>
+        <div className={styles.closingStatement}>
+          <p><strong>Hay uniformes que son un costo.</strong></p>
+          <p><strong>Y uniformes que son parte del éxito.</strong></p>
         </div>
       </div>
     </section>
