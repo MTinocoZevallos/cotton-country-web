@@ -53,11 +53,14 @@ export default function NosotrosPage() {
       <div className={`${editorial.container} ${styles.sectionLayout}`}>
         <h2 id="resolver-problemas" className={styles.sectionTitle}>Resolver problemas, no solamente fabricar prendas</h2>
         <div className={`${editorial.copy} ${styles.body}`}>
-          <p>El sector de uniformes enfrenta dificultades que conocemos bien: problemas de tallaje, información insuficiente sobre materiales, especificaciones poco claras, incertidumbre en los tiempos de entrega y procesos productivos fragmentados.</p>
-          <p>A ello se suman desafíos de la industria textil peruana, como la informalidad, la limitada digitalización y una competencia frecuentemente basada en precios.</p>
-          <p>En Cotton Country desarrollamos un modelo especializado, ágil y apoyado en una red de producción tercerizada. Integramos conocimiento textil, ingeniería, marketing y tecnología para abordar los problemas de cada proyecto.</p>
-          <p>Hemos explorado soluciones en diseño, desarrollo de fichas técnicas, posicionamiento digital y metodologías de tallaje.</p>
-          <p><strong>Nuestra innovación no consiste en hacer las cosas diferentes por llamar la atención, sino en encontrar mejores respuestas a problemas reales.</strong></p>
+          <p>El negocio de los uniformes corporativos es mucho más complejo de lo que parece.</p>
+          <p>Cada industria, cada empresa y cada área de una organización entiende el uniforme de manera diferente. Para algunas es una herramienta de identidad y marketing; para otras, una necesidad operativa, una exigencia de seguridad o simplemente un gasto que debe controlarse.</p>
+          <p>Esta diversidad plantea un desafío: <strong>no basta con saber confeccionar una prenda. Hay que comprender cómo funciona cada negocio, sus procesos de compra, sus exigencias técnicas y las expectativas de quienes utilizarán los uniformes.</strong></p>
+          <p>A ello se suman problemas recurrentes: tallas que no corresponden, información insuficiente sobre materiales, especificaciones poco claras, dificultades para garantizar acabados consistentes y compromisos de entrega cada vez más exigentes.</p>
+          <p>Todo esto ocurre dentro de una industria textil peruana que enfrenta desafíos estructurales: baja productividad, informalidad, brechas tecnológicas, limitada inversión en investigación y desarrollo, asimetrías de información y una intensa competencia en mercados fragmentados, donde el precio suele imponerse sobre la diferenciación.</p>
+          <p><strong>El verdadero desafío no es solamente producir uniformes, sino gestionar todas estas variables para obtener un resultado satisfactorio.</strong></p>
+          <p>En Cotton Country desarrollamos un modelo especializado y ágil, apoyado en una red de producción tercerizada. Integramos conocimiento textil, ingeniería, marketing y tecnología para comprender las necesidades de cada cliente y desarrollar soluciones a problemas reales.</p>
+          <p>Porque detrás de un buen uniforme hay mucho más que tela y confección: hay conocimiento, decisiones técnicas, coordinación y una comprensión profunda del negocio al que debe servir.</p>
         </div>
       </div>
     </section>
