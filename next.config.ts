@@ -10,10 +10,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // Match both spellings before general slash normalization: one hop only.
-      // Nosotros is intentionally provisional (302, not Next's temporary 307).
       ...[
         { source: "/confeccion-de-uniformes", destination: "/uniformes", statusCode: 308 },
-        { source: "/nosotros", destination: "/", statusCode: 302 },
         { source: "/sizeset", destination: "https://sizeset.com/", statusCode: 308 },
         { source: "/politica-de-privacidad", destination: "/privacidad", statusCode: 308 },
         { source: "/terminos-y-condiciones", destination: "/terminos", statusCode: 308 },

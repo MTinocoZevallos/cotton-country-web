@@ -22,6 +22,9 @@ export default function Footer() {
               tallaje y acabados según las funciones del equipo y las
               especificaciones de cada proyecto.
             </p>
+            <Link href="/nosotros" className="mt-4 inline-flex min-h-11 items-center text-sm underline underline-offset-4">
+              Nosotros
+            </Link>
           </div>
 
           <div>

@@ -1,0 +1,16 @@
+.page { overflow-wrap: break-word; }
+.intro { max-width: 1100px; padding-bottom: 72px; }
+.page .intro h1 { max-width: 1060px; text-wrap: balance; }
+.sectionLayout { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.4fr); align-items: start; gap: clamp(40px, 6vw, 96px); }
+.sectionTitle { position: sticky; top: 120px; text-wrap: balance; }
+.page .body { min-width: 0; margin-top: 0; }
+.body strong { font-weight: 600; }
+.body p:has(> strong:only-child) { border-left: 2px solid var(--cc-blue); padding-left: 24px; color: var(--cc-blue); font-size: clamp(19px, 1.6vw, 23px); line-height: 1.65; }
+@media (max-width: 900px) {
+  .sectionLayout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .sectionTitle { position: static; max-width: 680px; }
+  .intro { padding-bottom: 56px; }
+}
+@media (max-width: 575px) {
+  .body p:has(> strong:only-child) { padding-left: 18px; }
+}

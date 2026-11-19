@@ -131,7 +131,6 @@ test('the original Word witnesses match both complete measurement tables and the
 
 const approvedMigrationRedirects=[
   ['/confeccion-de-uniformes','/uniformes',308],
-  ['/nosotros','/',302],
   ['/sizeset','https://sizeset.com/',308],
   ['/politica-de-privacidad','/privacidad',308],
   ['/terminos-y-condiciones','/terminos',308],
@@ -141,24 +140,26 @@ test('the single Word alias and all existing blog aliases redirect directly with
   const alias='el-nino-2026-2027-impacto-industria-textil-peru',target='/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil'
   assert.equal(paths.normalizeBlogHref('/'+alias),target);assert.equal(paths.normalizeBlogHref('/blog/'+alias+'/'),target)
   const rules=await load(path.join(root,'next.config.ts')).default.redirects()
-  assert.equal(rules.length,121);assert.equal(new Set(rules.map(r=>r.source)).size,121)
+  assert.equal(rules.length,119);assert.equal(new Set(rules.map(r=>r.source)).size,119)
   const historicalRules=rules.filter(r=>!approvedMigrationSources.has(r.source))
   assert.equal(historicalRules.length,111)
   for(const source of ['/'+alias,'/'+alias+'/','/blog/'+alias,'/blog/'+alias+'/']){const rule=rules.find(r=>r.source===source);assert.equal(rule.destination,target);assert.equal(rule.permanent,true)}
   for(const rule of historicalRules.filter(r=>!r.source.includes(':path')))assert(blog.posts.some(p=>'/'+p.slug===rule.destination))
 })
 
-test('only the five approved migration routes redirect in both slash forms with the exact approved HTTP codes',async()=>{
+test('the four remaining migration routes retain their exact redirects and Nosotros is no longer redirected',async()=>{
   const rules=await load(path.join(root,'next.config.ts')).default.redirects()
   for(const [source,destination,statusCode] of approvedMigrationRedirects){
     for(const variant of [source,source+'/']){
       const index=rules.findIndex(r=>r.source===variant)
-      assert(index>=0&&index<10,variant+' must precede general normalization')
+      assert(index>=0&&index<8,variant+' must precede general normalization')
       assert.deepEqual(rules[index],{source:variant,destination,statusCode})
       assert(!approvedMigrationSources.has(destination),'No chains between new redirects')
     }
   }
   assert(!rules.some(r=>/^\/desarrollo-de-producto\/?$/.test(r.source)))
+  assert(!rules.some(r=>/^\/nosotros\/?$/.test(r.source)))
+  assert.equal(load(path.join(root,'app/sitemap.ts')).default().filter(item=>item.url==='https://cottoncountry.com.pe/nosotros').length,1)
 })
 
 
