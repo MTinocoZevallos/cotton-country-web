@@ -1,0 +1,49 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "oneHeroRequest": true,
+      "ctaBelowPhoto": "desktop preserved",
+      "heroBytes": 93560,
+      "carousel": 8
+    },
+    {
+      "width": 1280,
+      "oneHeroRequest": true,
+      "ctaBelowPhoto": "desktop preserved",
+      "heroBytes": 93560,
+      "carousel": 8
+    },
+    {
+      "width": 1024,
+      "oneHeroRequest": true,
+      "ctaBelowPhoto": "desktop preserved",
+      "heroBytes": 54770,
+      "carousel": 8
+    },
+    {
+      "width": 768,
+      "oneHeroRequest": true,
+      "ctaBelowPhoto": "desktop preserved",
+      "heroBytes": 40444,
+      "carousel": 8
+    },
+    {
+      "width": 390,
+      "oneHeroRequest": true,
+      "ctaBelowPhoto": "passed",
+      "heroBytes": 54770,
+      "carousel": 8
+    },
+    {
+      "width": 320,
+      "oneHeroRequest": true,
+      "ctaBelowPhoto": "passed",
+      "heroBytes": 54770,
+      "carousel": 8
+    }
+  ],
+  "articleCards": 53,
+  "aliases": 163,
+  "errors": []
+}

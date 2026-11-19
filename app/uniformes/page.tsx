@@ -5,6 +5,7 @@ import Catalog from "@/components/uniforms/Catalog"
 import { sectors } from "@/lib/uniforms"
 import { contactHref } from "@/lib/contact-context"
 import styles from "@/components/uniforms/uniforms.module.css"
+import { brandSocialImage } from "@/lib/social"
 
 export const metadata: Metadata = {
   title: "Uniformes corporativos para empresas | Cotton Country",
@@ -17,6 +18,13 @@ export const metadata: Metadata = {
     siteName: "Cotton Country",
     locale: "es_PE",
     type: "website",
+    images: [brandSocialImage()],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Uniformes corporativos para empresas | Cotton Country",
+    description: "Modelos de prendas, criterios para preparar tu requerimiento y proyectos de uniformes por sector empresarial.",
+    images: [brandSocialImage()],
   },
 }
 const requirements = ["Tipo de organización y funciones del personal.", "Prendas requeridas y cantidades por modelo.", "Condiciones de uso, retos y objetivos.", "Materiales y características técnicas.", "Tallas, medidas y necesidades de tallaje.", "Bordados, estampados, aplicaciones y acabados.", "Plazos y condiciones de entrega."]

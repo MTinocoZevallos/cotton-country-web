@@ -1,0 +1,1066 @@
+{
+  "date": "2026-11-19",
+  "base": "9645d6b4bd5be18fb66641a2c6544b415bd3626b",
+  "branch": "improve-mobile-performance-social",
+  "scope": "Local mobile Lighthouse laboratory measurements, three fresh Chrome profiles per version, default simulated mobile throttling, optimized image server cache warmed. GTM and Turnstile were blocked identically; no real mail or conversions. Not public PageSpeed Insights or field Core Web Vitals. INP not measured. Lighthouse simulations and host load introduce variation.",
+  "ownerReportedPageSpeed": {
+    "date": "2026-11-19",
+    "performance": 57,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "FCPms": 1900,
+    "LCPms": 9100,
+    "TBTms": 610,
+    "CLS": 0,
+    "speedIndexMs": 3700
+  },
+  "before": {
+    "runs": [
+      {
+        "run": 1,
+        "lighthouseVersion": "12.8.2",
+        "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "config": {
+          "formFactor": "mobile",
+          "throttlingMethod": "simulate",
+          "throttling": {
+            "rttMs": 150,
+            "throughputKbps": 1638.4,
+            "requestLatencyMs": 562.5,
+            "downloadThroughputKbps": 1474.5600000000002,
+            "uploadThroughputKbps": 675,
+            "cpuSlowdownMultiplier": 4
+          },
+          "blockedUrlPatterns": [
+            "*googletagmanager.com/*",
+            "*challenges.cloudflare.com/*"
+          ]
+        },
+        "scores": {
+          "performance": 90,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 1388.5126,
+          "largest-contentful-paint": 3528.0504,
+          "speed-index": 1615.973402000096,
+          "total-blocking-time": 109.5,
+          "cumulative-layout-shift": 0
+        },
+        "hero": {
+          "url": "http://127.0.0.1:3160/home-2027/hero.webp",
+          "resourceBytes": 187794,
+          "transferBytes": 188078,
+          "priority": "Low",
+          "preload": true
+        },
+        "scriptTransferBytes": 177950,
+        "totalTransferBytes": 567802,
+        "mainThread": [
+          {
+            "group": "other",
+            "groupLabel": "Other",
+            "duration": 713.3119999999988
+          },
+          {
+            "group": "scriptEvaluation",
+            "groupLabel": "Script Evaluation",
+            "duration": 684.8279999999983
+          },
+          {
+            "group": "styleLayout",
+            "groupLabel": "Style & Layout",
+            "duration": 238.14000000000013
+          },
+          {
+            "group": "scriptParseCompile",
+            "groupLabel": "Script Parsing & Compilation",
+            "duration": 163.06
+          },
+          {
+            "group": "paintCompositeRender",
+            "groupLabel": "Rendering",
+            "duration": 117.31600000000009
+          },
+          {
+            "group": "parseHTML",
+            "groupLabel": "Parse HTML & CSS",
+            "duration": 75.69599999999997
+          }
+        ],
+        "lcp": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "label": "Element"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "page-0-DIV",
+                    "path": "2,HTML,1,BODY,4,MAIN,0,DIV,0,SECTION,0,DIV",
+                    "selector": "main#contenido > div.home-module__KbeAFa__home > section.home-module__KbeAFa__hero > div.home-module__KbeAFa__heroBackdrop",
+                    "boundingRect": {
+                      "top": 80,
+                      "bottom": 860,
+                      "left": 0,
+                      "right": 412,
+                      "width": 412,
+                      "height": 780
+                    },
+                    "snippet": "<div class=\"home-module__KbeAFa__heroBackdrop\">",
+                    "nodeLabel": "Profesional con blusa blanca y pañuelo azul y amarillo en un espacio acristalado"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "phase",
+                  "valueType": "text",
+                  "label": "Phase"
+                },
+                {
+                  "key": "percent",
+                  "valueType": "text",
+                  "label": "% of LCP"
+                },
+                {
+                  "key": "timing",
+                  "valueType": "ms",
+                  "label": "Timing"
+                }
+              ],
+              "items": [
+                {
+                  "phase": "TTFB",
+                  "timing": 458.5126,
+                  "percent": "13%"
+                },
+                {
+                  "phase": "Load Delay",
+                  "timing": 87.60838784822022,
+                  "percent": "2%"
+                },
+                {
+                  "phase": "Load Time",
+                  "timing": 380.13380608395914,
+                  "percent": "11%"
+                },
+                {
+                  "phase": "Render Delay",
+                  "timing": 2601.7956060678207,
+                  "percent": "74%"
+                }
+              ]
+            }
+          ]
+        },
+        "fontResources": [
+          {
+            "url": "http://127.0.0.1:3160/_next/static/media/dm_serif_display_regular-s.p.b2c508a5.ttf",
+            "bytes": 42721
+          },
+          {
+            "url": "http://127.0.0.1:3160/_next/static/media/inter_latin_wght_normal-s.p.c757f81b.woff2",
+            "bytes": 48556
+          },
+          {
+            "url": "http://127.0.0.1:3160/_next/static/media/manrope_latin_wght_normal-s.p.df202f3d.woff2",
+            "bytes": 25136
+          }
+        ]
+      },
+      {
+        "run": 2,
+        "lighthouseVersion": "12.8.2",
+        "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "config": {
+          "formFactor": "mobile",
+          "throttlingMethod": "simulate",
+          "throttling": {
+            "rttMs": 150,
+            "throughputKbps": 1638.4,
+            "requestLatencyMs": 562.5,
+            "downloadThroughputKbps": 1474.5600000000002,
+            "uploadThroughputKbps": 675,
+            "cpuSlowdownMultiplier": 4
+          },
+          "blockedUrlPatterns": [
+            "*googletagmanager.com/*",
+            "*challenges.cloudflare.com/*"
+          ]
+        },
+        "scores": {
+          "performance": 92,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 1386.5067,
+          "largest-contentful-paint": 3311.2734499999997,
+          "speed-index": 1508.2151020006581,
+          "total-blocking-time": 70.5,
+          "cumulative-layout-shift": 0
+        },
+        "hero": {
+          "url": "http://127.0.0.1:3160/home-2027/hero.webp",
+          "resourceBytes": 187794,
+          "transferBytes": 188078,
+          "priority": "Low",
+          "preload": true
+        },
+        "scriptTransferBytes": 177950,
+        "totalTransferBytes": 567781,
+        "mainThread": [
+          {
+            "group": "scriptEvaluation",
+            "groupLabel": "Script Evaluation",
+            "duration": 535.0080000000031
+          },
+          {
+            "group": "other",
+            "groupLabel": "Other",
+            "duration": 458.8560000000008
+          },
+          {
+            "group": "styleLayout",
+            "groupLabel": "Style & Layout",
+            "duration": 225.664
+          },
+          {
+            "group": "scriptParseCompile",
+            "groupLabel": "Script Parsing & Compilation",
+            "duration": 120.77600000000001
+          },
+          {
+            "group": "paintCompositeRender",
+            "groupLabel": "Rendering",
+            "duration": 87.82000000000005
+          },
+          {
+            "group": "parseHTML",
+            "groupLabel": "Parse HTML & CSS",
+            "duration": 48.732000000000006
+          }
+        ],
+        "lcp": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "label": "Element"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "page-0-DIV",
+                    "path": "2,HTML,1,BODY,4,MAIN,0,DIV,0,SECTION,0,DIV",
+                    "selector": "main#contenido > div.home-module__KbeAFa__home > section.home-module__KbeAFa__hero > div.home-module__KbeAFa__heroBackdrop",
+                    "boundingRect": {
+                      "top": 80,
+                      "bottom": 860,
+                      "left": 0,
+                      "right": 412,
+                      "width": 412,
+                      "height": 780
+                    },
+                    "snippet": "<div class=\"home-module__KbeAFa__heroBackdrop\">",
+                    "nodeLabel": "Profesional con blusa blanca y pañuelo azul y amarillo en un espacio acristalado"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "phase",
+                  "valueType": "text",
+                  "label": "Phase"
+                },
+                {
+                  "key": "percent",
+                  "valueType": "text",
+                  "label": "% of LCP"
+                },
+                {
+                  "key": "timing",
+                  "valueType": "ms",
+                  "label": "Timing"
+                }
+              ],
+              "items": [
+                {
+                  "phase": "TTFB",
+                  "timing": 456.5067,
+                  "percent": "14%"
+                },
+                {
+                  "phase": "Load Delay",
+                  "timing": 202.71622463580263,
+                  "percent": "6%"
+                },
+                {
+                  "phase": "Load Time",
+                  "timing": 272.79417283335135,
+                  "percent": "8%"
+                },
+                {
+                  "phase": "Render Delay",
+                  "timing": 2379.2563525308456,
+                  "percent": "72%"
+                }
+              ]
+            }
+          ]
+        },
+        "fontResources": [
+          {
+            "url": "http://127.0.0.1:3160/_next/static/media/dm_serif_display_regular-s.p.b2c508a5.ttf",
+            "bytes": 42721
+          },
+          {
+            "url": "http://127.0.0.1:3160/_next/static/media/inter_latin_wght_normal-s.p.c757f81b.woff2",
+            "bytes": 48556
+          },
+          {
+            "url": "http://127.0.0.1:3160/_next/static/media/manrope_latin_wght_normal-s.p.df202f3d.woff2",
+            "bytes": 25136
+          }
+        ]
+      },
+      {
+        "run": 3,
+        "lighthouseVersion": "12.8.2",
+        "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "config": {
+          "formFactor": "mobile",
+          "throttlingMethod": "simulate",
+          "throttling": {
+            "rttMs": 150,
+            "throughputKbps": 1638.4,
+            "requestLatencyMs": 562.5,
+            "downloadThroughputKbps": 1474.5600000000002,
+            "uploadThroughputKbps": 675,
+            "cpuSlowdownMultiplier": 4
+          },
+          "blockedUrlPatterns": [
+            "*googletagmanager.com/*",
+            "*challenges.cloudflare.com/*"
+          ]
+        },
+        "scores": {
+          "performance": 92,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 1386.6601500000002,
+          "largest-contentful-paint": 3263.810525000001,
+          "speed-index": 1464.4431120011523,
+          "total-blocking-time": 45,
+          "cumulative-layout-shift": 0
+        },
+        "hero": {
+          "url": "http://127.0.0.1:3160/home-2027/hero.webp",
+          "resourceBytes": 187794,
+          "transferBytes": 188078,
+          "priority": "Low",
+          "preload": true
+        },
+        "scriptTransferBytes": 177950,
+        "totalTransferBytes": 567796,
+        "mainThread": [
+          {
+            "group": "other",
+            "groupLabel": "Other",
+            "duration": 503.30799999999994
+          },
+          {
+            "group": "scriptEvaluation",
+            "groupLabel": "Script Evaluation",
+            "duration": 472.40400000000164
+          },
+          {
+            "group": "styleLayout",
+            "groupLabel": "Style & Layout",
+            "duration": 210.83999999999995
+          },
+          {
+            "group": "paintCompositeRender",
+            "groupLabel": "Rendering",
+            "duration": 88.2120000000001
+          },
+          {
+            "group": "scriptParseCompile",
+            "groupLabel": "Script Parsing & Compilation",
+            "duration": 82.38799999999999
+          },
+          {
+            "group": "parseHTML",
+            "groupLabel": "Parse HTML & CSS",
+            "duration": 38.004000000000005
+          },
+          {
+            "group": "garbageCollection",
+            "groupLabel": "Garbage Collection",
+            "duration": 2.4760000000000004
+          }
+        ],
+        "lcp": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "label": "Element"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "page-0-DIV",
+                    "path": "2,HTML,1,BODY,4,MAIN,0,DIV,0,SECTION,0,DIV",
+                    "selector": "main#contenido > div.home-module__KbeAFa__home > section.home-module__KbeAFa__hero > div.home-module__KbeAFa__heroBackdrop",
+                    "boundingRect": {
+                      "top": 80,
+                      "bottom": 860,
+                      "left": 0,
+                      "right": 412,
+                      "width": 412,
+                      "height": 780
+                    },
+                    "snippet": "<div class=\"home-module__KbeAFa__heroBackdrop\">",
+                    "nodeLabel": "Profesional con blusa blanca y pañuelo azul y amarillo en un espacio acristalado"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "phase",
+                  "valueType": "text",
+                  "label": "Phase"
+                },
+                {
+                  "key": "percent",
+                  "valueType": "text",
+                  "label": "% of LCP"
+                },
+                {
+                  "key": "timing",
+                  "valueType": "ms",
+                  "label": "Timing"
+                }
+              ],
+              "items": [
+                {
+                  "phase": "TTFB",
+                  "timing": 456.66015,
+                  "percent": "14%"
+                },
+                {
+                  "phase": "Load Delay",
+                  "timing": 648.336750641022,
+                  "percent": "20%"
+                },
+                {
+                  "phase": "Load Time",
+                  "timing": 287.6103420319587,
+                  "percent": "9%"
+                },
+                {
+                  "phase": "Render Delay",
+                  "timing": 1871.2032823270201,
+                  "percent": "57%"
+                }
+              ]
+            }
+          ]
+        },
+        "fontResources": [
+          {
+            "url": "http://127.0.0.1:3160/_next/static/media/dm_serif_display_regular-s.p.b2c508a5.ttf",
+            "bytes": 42721
+          },
+          {
+            "url": "http://127.0.0.1:3160/_next/static/media/inter_latin_wght_normal-s.p.c757f81b.woff2",
+            "bytes": 48556
+          },
+          {
+            "url": "http://127.0.0.1:3160/_next/static/media/manrope_latin_wght_normal-s.p.df202f3d.woff2",
+            "bytes": 25136
+          }
+        ]
+      }
+    ],
+    "median": {
+      "scores": {
+        "performance": 92,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1386.6601500000002,
+        "largest-contentful-paint": 3311.2734499999997,
+        "speed-index": 1508.2151020006581,
+        "total-blocking-time": 70.5,
+        "cumulative-layout-shift": 0
+      },
+      "heroResourceBytes": 187794,
+      "scriptTransferBytes": 177950
+    }
+  },
+  "after": {
+    "runs": [
+      {
+        "run": 1,
+        "lighthouseVersion": "12.8.2",
+        "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "config": {
+          "formFactor": "mobile",
+          "throttlingMethod": "simulate",
+          "throttling": {
+            "rttMs": 150,
+            "throughputKbps": 1638.4,
+            "requestLatencyMs": 562.5,
+            "downloadThroughputKbps": 1474.5600000000002,
+            "uploadThroughputKbps": 675,
+            "cpuSlowdownMultiplier": 4
+          },
+          "blockedUrlPatterns": [
+            "*googletagmanager.com/*",
+            "*challenges.cloudflare.com/*"
+          ]
+        },
+        "scores": {
+          "performance": 91,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 1393.1029999999998,
+          "largest-contentful-paint": 3431.4120000000003,
+          "speed-index": 1393.1029999999998,
+          "total-blocking-time": 53.5,
+          "cumulative-layout-shift": 0
+        },
+        "hero": {
+          "url": "http://127.0.0.1:3165/_next/image?url=%2Fhome-2027%2Fhero.webp&w=1920&q=85",
+          "resourceBytes": 93260,
+          "transferBytes": 93680,
+          "priority": "High",
+          "preload": true
+        },
+        "scriptTransferBytes": 151074,
+        "totalTransferBytes": 431117,
+        "mainThread": [
+          {
+            "group": "scriptEvaluation",
+            "groupLabel": "Script Evaluation",
+            "duration": 464.7000000000006
+          },
+          {
+            "group": "other",
+            "groupLabel": "Other",
+            "duration": 446.3120000000003
+          },
+          {
+            "group": "styleLayout",
+            "groupLabel": "Style & Layout",
+            "duration": 173.71199999999993
+          },
+          {
+            "group": "paintCompositeRender",
+            "groupLabel": "Rendering",
+            "duration": 85.54000000000003
+          },
+          {
+            "group": "scriptParseCompile",
+            "groupLabel": "Script Parsing & Compilation",
+            "duration": 64.968
+          },
+          {
+            "group": "parseHTML",
+            "groupLabel": "Parse HTML & CSS",
+            "duration": 43.608
+          },
+          {
+            "group": "garbageCollection",
+            "groupLabel": "Garbage Collection",
+            "duration": 8.839999999999995
+          }
+        ],
+        "lcp": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "label": "Element"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "page-0-IMG",
+                    "path": "2,HTML,1,BODY,4,MAIN,0,DIV,0,SECTION,0,DIV,1,IMG",
+                    "selector": "div.home-module__KbeAFa__home > section.home-module__KbeAFa__hero > div.home-module__KbeAFa__heroBackdrop > img.home-module__KbeAFa__heroImage",
+                    "boundingRect": {
+                      "top": 80,
+                      "bottom": 560,
+                      "left": 0,
+                      "right": 412,
+                      "width": 412,
+                      "height": 480
+                    },
+                    "snippet": "<img alt=\"Profesional con blusa blanca y pañuelo azul y amarillo en un espacio acris…\" fetchpriority=\"high\" decoding=\"async\" data-nimg=\"fill\" class=\"home-module__KbeAFa__heroImage\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"(max-width: 767px) 851px, 100vw\" srcset=\"/_next/image?url=%2Fhome-2027%2Fhero.webp&amp;w=640&amp;q=85 640w, /_next/image?ur…\" src=\"http://127.0.0.1:3165/_next/image?url=%2Fhome-2027%2Fhero.webp&amp;w=1920&amp;q=85\">",
+                    "nodeLabel": "Profesional con blusa blanca y pañuelo azul y amarillo en un espacio acristalado"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "phase",
+                  "valueType": "text",
+                  "label": "Phase"
+                },
+                {
+                  "key": "percent",
+                  "valueType": "text",
+                  "label": "% of LCP"
+                },
+                {
+                  "key": "timing",
+                  "valueType": "ms",
+                  "label": "Timing"
+                }
+              ],
+              "items": [
+                {
+                  "phase": "TTFB",
+                  "timing": 463.103,
+                  "percent": "13%"
+                },
+                {
+                  "phase": "Load Delay",
+                  "timing": 767.1418784466157,
+                  "percent": "22%"
+                },
+                {
+                  "phase": "Load Time",
+                  "timing": 803.4805106436052,
+                  "percent": "23%"
+                },
+                {
+                  "phase": "Render Delay",
+                  "timing": 1397.6866109097793,
+                  "percent": "41%"
+                }
+              ]
+            }
+          ]
+        },
+        "fontResources": [
+          {
+            "url": "http://127.0.0.1:3165/_next/static/media/dm_serif_display_regular-s.p.7353ae7a.woff2",
+            "bytes": 32056
+          },
+          {
+            "url": "http://127.0.0.1:3165/_next/static/media/inter_latin_wght_normal-s.p.c757f81b.woff2",
+            "bytes": 48556
+          },
+          {
+            "url": "http://127.0.0.1:3165/_next/static/media/manrope_latin_wght_normal-s.p.df202f3d.woff2",
+            "bytes": 25136
+          }
+        ]
+      },
+      {
+        "run": 2,
+        "lighthouseVersion": "12.8.2",
+        "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "config": {
+          "formFactor": "mobile",
+          "throttlingMethod": "simulate",
+          "throttling": {
+            "rttMs": 150,
+            "throughputKbps": 1638.4,
+            "requestLatencyMs": 562.5,
+            "downloadThroughputKbps": 1474.5600000000002,
+            "uploadThroughputKbps": 675,
+            "cpuSlowdownMultiplier": 4
+          },
+          "blockedUrlPatterns": [
+            "*googletagmanager.com/*",
+            "*challenges.cloudflare.com/*"
+          ]
+        },
+        "scores": {
+          "performance": 94,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 1385.0464,
+          "largest-contentful-paint": 3010.0927999999994,
+          "speed-index": 1388.6664255070393,
+          "total-blocking-time": 44,
+          "cumulative-layout-shift": 0
+        },
+        "hero": {
+          "url": "http://127.0.0.1:3165/_next/image?url=%2Fhome-2027%2Fhero.webp&w=1920&q=85",
+          "resourceBytes": 93260,
+          "transferBytes": 93680,
+          "priority": "High",
+          "preload": true
+        },
+        "scriptTransferBytes": 151074,
+        "totalTransferBytes": 431117,
+        "mainThread": [
+          {
+            "group": "scriptEvaluation",
+            "groupLabel": "Script Evaluation",
+            "duration": 432.22400000000175
+          },
+          {
+            "group": "other",
+            "groupLabel": "Other",
+            "duration": 388.8800000000002
+          },
+          {
+            "group": "styleLayout",
+            "groupLabel": "Style & Layout",
+            "duration": 193.33600000000004
+          },
+          {
+            "group": "paintCompositeRender",
+            "groupLabel": "Rendering",
+            "duration": 78.75200000000008
+          },
+          {
+            "group": "scriptParseCompile",
+            "groupLabel": "Script Parsing & Compilation",
+            "duration": 65.968
+          },
+          {
+            "group": "parseHTML",
+            "groupLabel": "Parse HTML & CSS",
+            "duration": 38.81600000000001
+          }
+        ],
+        "lcp": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "label": "Element"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "page-0-IMG",
+                    "path": "2,HTML,1,BODY,4,MAIN,0,DIV,0,SECTION,0,DIV,1,IMG",
+                    "selector": "div.home-module__KbeAFa__home > section.home-module__KbeAFa__hero > div.home-module__KbeAFa__heroBackdrop > img.home-module__KbeAFa__heroImage",
+                    "boundingRect": {
+                      "top": 80,
+                      "bottom": 560,
+                      "left": 0,
+                      "right": 412,
+                      "width": 412,
+                      "height": 480
+                    },
+                    "snippet": "<img alt=\"Profesional con blusa blanca y pañuelo azul y amarillo en un espacio acris…\" fetchpriority=\"high\" decoding=\"async\" data-nimg=\"fill\" class=\"home-module__KbeAFa__heroImage\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"(max-width: 767px) 851px, 100vw\" srcset=\"/_next/image?url=%2Fhome-2027%2Fhero.webp&amp;w=640&amp;q=85 640w, /_next/image?ur…\" src=\"http://127.0.0.1:3165/_next/image?url=%2Fhome-2027%2Fhero.webp&amp;w=1920&amp;q=85\">",
+                    "nodeLabel": "Profesional con blusa blanca y pañuelo azul y amarillo en un espacio acristalado"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "phase",
+                  "valueType": "text",
+                  "label": "Phase"
+                },
+                {
+                  "key": "percent",
+                  "valueType": "text",
+                  "label": "% of LCP"
+                },
+                {
+                  "key": "timing",
+                  "valueType": "ms",
+                  "label": "Timing"
+                }
+              ],
+              "items": [
+                {
+                  "phase": "TTFB",
+                  "timing": 455.0464,
+                  "percent": "15%"
+                },
+                {
+                  "phase": "Load Delay",
+                  "timing": 292.9181991773867,
+                  "percent": "10%"
+                },
+                {
+                  "phase": "Load Time",
+                  "timing": 596.4833269113768,
+                  "percent": "20%"
+                },
+                {
+                  "phase": "Render Delay",
+                  "timing": 1665.644873911236,
+                  "percent": "55%"
+                }
+              ]
+            }
+          ]
+        },
+        "fontResources": [
+          {
+            "url": "http://127.0.0.1:3165/_next/static/media/dm_serif_display_regular-s.p.7353ae7a.woff2",
+            "bytes": 32056
+          },
+          {
+            "url": "http://127.0.0.1:3165/_next/static/media/inter_latin_wght_normal-s.p.c757f81b.woff2",
+            "bytes": 48556
+          },
+          {
+            "url": "http://127.0.0.1:3165/_next/static/media/manrope_latin_wght_normal-s.p.df202f3d.woff2",
+            "bytes": 25136
+          }
+        ]
+      },
+      {
+        "run": 3,
+        "lighthouseVersion": "12.8.2",
+        "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "config": {
+          "formFactor": "mobile",
+          "throttlingMethod": "simulate",
+          "throttling": {
+            "rttMs": 150,
+            "throughputKbps": 1638.4,
+            "requestLatencyMs": 562.5,
+            "downloadThroughputKbps": 1474.5600000000002,
+            "uploadThroughputKbps": 675,
+            "cpuSlowdownMultiplier": 4
+          },
+          "blockedUrlPatterns": [
+            "*googletagmanager.com/*",
+            "*challenges.cloudflare.com/*"
+          ]
+        },
+        "scores": {
+          "performance": 92,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 1385.9976000000001,
+          "largest-contentful-paint": 3316.9903999999997,
+          "speed-index": 1385.9976000000001,
+          "total-blocking-time": 46.5,
+          "cumulative-layout-shift": 0
+        },
+        "hero": {
+          "url": "http://127.0.0.1:3165/_next/image?url=%2Fhome-2027%2Fhero.webp&w=1920&q=85",
+          "resourceBytes": 93260,
+          "transferBytes": 93680,
+          "priority": "High",
+          "preload": true
+        },
+        "scriptTransferBytes": 151074,
+        "totalTransferBytes": 431117,
+        "mainThread": [
+          {
+            "group": "other",
+            "groupLabel": "Other",
+            "duration": 521.5439999999996
+          },
+          {
+            "group": "scriptEvaluation",
+            "groupLabel": "Script Evaluation",
+            "duration": 428.14400000000137
+          },
+          {
+            "group": "styleLayout",
+            "groupLabel": "Style & Layout",
+            "duration": 289.18800000000005
+          },
+          {
+            "group": "paintCompositeRender",
+            "groupLabel": "Rendering",
+            "duration": 95.65600000000006
+          },
+          {
+            "group": "scriptParseCompile",
+            "groupLabel": "Script Parsing & Compilation",
+            "duration": 82.67999999999999
+          },
+          {
+            "group": "parseHTML",
+            "groupLabel": "Parse HTML & CSS",
+            "duration": 45.276
+          }
+        ],
+        "lcp": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "label": "Element"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "page-0-IMG",
+                    "path": "2,HTML,1,BODY,4,MAIN,0,DIV,0,SECTION,0,DIV,1,IMG",
+                    "selector": "div.home-module__KbeAFa__home > section.home-module__KbeAFa__hero > div.home-module__KbeAFa__heroBackdrop > img.home-module__KbeAFa__heroImage",
+                    "boundingRect": {
+                      "top": 80,
+                      "bottom": 560,
+                      "left": 0,
+                      "right": 412,
+                      "width": 412,
+                      "height": 480
+                    },
+                    "snippet": "<img alt=\"Profesional con blusa blanca y pañuelo azul y amarillo en un espacio acris…\" fetchpriority=\"high\" decoding=\"async\" data-nimg=\"fill\" class=\"home-module__KbeAFa__heroImage\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"(max-width: 767px) 851px, 100vw\" srcset=\"/_next/image?url=%2Fhome-2027%2Fhero.webp&amp;w=640&amp;q=85 640w, /_next/image?ur…\" src=\"http://127.0.0.1:3165/_next/image?url=%2Fhome-2027%2Fhero.webp&amp;w=1920&amp;q=85\">",
+                    "nodeLabel": "Profesional con blusa blanca y pañuelo azul y amarillo en un espacio acristalado"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "phase",
+                  "valueType": "text",
+                  "label": "Phase"
+                },
+                {
+                  "key": "percent",
+                  "valueType": "text",
+                  "label": "% of LCP"
+                },
+                {
+                  "key": "timing",
+                  "valueType": "ms",
+                  "label": "Timing"
+                }
+              ],
+              "items": [
+                {
+                  "phase": "TTFB",
+                  "timing": 455.9976,
+                  "percent": "14%"
+                },
+                {
+                  "phase": "Load Delay",
+                  "timing": 530.299351823053,
+                  "percent": "16%"
+                },
+                {
+                  "phase": "Load Time",
+                  "timing": 430.62700273364953,
+                  "percent": "13%"
+                },
+                {
+                  "phase": "Render Delay",
+                  "timing": 1900.0664454432972,
+                  "percent": "57%"
+                }
+              ]
+            }
+          ]
+        },
+        "fontResources": [
+          {
+            "url": "http://127.0.0.1:3165/_next/static/media/dm_serif_display_regular-s.p.7353ae7a.woff2",
+            "bytes": 32056
+          },
+          {
+            "url": "http://127.0.0.1:3165/_next/static/media/inter_latin_wght_normal-s.p.c757f81b.woff2",
+            "bytes": 48556
+          },
+          {
+            "url": "http://127.0.0.1:3165/_next/static/media/manrope_latin_wght_normal-s.p.df202f3d.woff2",
+            "bytes": 25136
+          }
+        ]
+      }
+    ],
+    "median": {
+      "scores": {
+        "performance": 92,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1385.9976000000001,
+        "largest-contentful-paint": 3316.9903999999997,
+        "speed-index": 1388.6664255070393,
+        "total-blocking-time": 46.5,
+        "cumulative-layout-shift": 0
+      },
+      "heroResourceBytes": 93260,
+      "scriptTransferBytes": 151074
+    }
+  }
+}

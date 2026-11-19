@@ -5,6 +5,7 @@ import { contentText, inlineText, parseContent, type Inline } from "./content"
 import { getPostImage } from "./images"
 import { orderPostsByPublication } from "./publication"
 import { BLOG_ORIGIN, postPath } from "./paths"
+import { brandSocialImage, socialImageUrl } from "@/lib/social"
 
 export { posts, blogCategories, getPostImage, postPath }
 export const PAGE_SIZE = 12
@@ -59,10 +60,13 @@ export function blogRobots(): Metadata["robots"] {
 }
 export function postMetadata(post: Post): Metadata {
   const image = getPostImage(post.slug), path = postPath(post), title = post.seoTitle ?? post.title
+  const socialImage = image.visible === false
+    ? brandSocialImage()
+    : { url: socialImageUrl(image.src), width: image.width, height: image.height, alt: image.alt }
   return {
     title, description:descriptionForPost(post), alternates:{canonical:path}, robots:blogRobots(),
-    openGraph:{type:"article",title,description:descriptionForPost(post),url:path,siteName:"Cotton Country",locale:"es_PE",images:image.visible === false ? [] : [{url:image.src,width:image.width,height:image.height,alt:image.alt}],...(post.publishedAt?{publishedTime:post.publishedAt}:{}),...(post.updatedAt?{modifiedTime:post.updatedAt}:{})},
-    twitter:{card:image.visible === false ? "summary" : "summary_large_image",title,description:descriptionForPost(post),images:image.visible === false ? [] : [image.src]},
+    openGraph:{type:"article",title,description:descriptionForPost(post),url:BLOG_ORIGIN+path,siteName:"Cotton Country",locale:"es_PE",images:[socialImage],...(post.publishedAt?{publishedTime:post.publishedAt}:{}),...(post.updatedAt?{modifiedTime:post.updatedAt}:{})},
+    twitter:{card:"summary_large_image",title,description:descriptionForPost(post),images:[{url:socialImage.url,alt:socialImage.alt}]},
   }
 }
 export function postStructuredData(post: Post) {

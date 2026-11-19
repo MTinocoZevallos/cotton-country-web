@@ -4,6 +4,7 @@ import Basics from '@/components/Basics'
 import Testimonials from '@/components/Testimonials'
 import ContactForm from '@/components/ContactForm'
 import HomeExperience from '@/components/HomeExperience'
+import { brandSocialImage } from '@/lib/social'
 
 export const metadata = {
   title: "Cotton Country | Uniformes Corporativos",
@@ -20,21 +21,14 @@ export const metadata = {
     siteName: "Cotton Country",
     locale: "es_PE",
     type: "website",
-    images: [
-      {
-        url: "/og-home.webp",
-        width: 1200,
-        height: 630,
-        alt: "Cotton Country - Uniformes corporativos",
-      },
-    ],
+    images: [brandSocialImage()],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cotton Country | Uniformes Corporativos",
     description:
       "Uniformes corporativos, institucionales e industriales diseñados y producidos en Perú.",
-    images: ["/og-home.webp"],
+    images: [brandSocialImage()],
   },
 }
 

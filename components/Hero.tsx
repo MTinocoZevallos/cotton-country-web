@@ -46,7 +46,8 @@ export default function Hero() {
   return (
     <section ref={hero} className={`${styles.hero} ${editorialSerif.variable}`} aria-labelledby="hero-title" data-hero-phase="typing">
       <div className={styles.heroBackdrop}>
-        <Image src="/home-2027/hero.webp" alt="Profesional con blusa blanca y pañuelo azul y amarillo en un espacio acristalado" fill sizes="(max-width: 767px) 925px, 100vw" preload unoptimized className={styles.heroImage} />
+        <Image src="/home-2027/hero.webp" alt="" aria-hidden="true" fill sizes="(max-width: 767px) 851px, 100vw" quality={85} className={styles.heroBackgroundImage} />
+        <Image src="/home-2027/hero.webp" alt="Profesional con blusa blanca y pañuelo azul y amarillo en un espacio acristalado" fill sizes="(max-width: 767px) 851px, 100vw" quality={85} preload fetchPriority="high" className={styles.heroImage} />
       </div>
       <div className={styles.heroShade} />
       <div className={styles.heroContent}>
@@ -59,14 +60,14 @@ export default function Hero() {
             </span>
           ))}
         </h1>
-        <noscript><style>{`[data-reserved-text]{visibility:visible!important}[data-hero-subtitle],[data-hero-cta]{opacity:1!important;transform:none!important}`}</style></noscript>
+        <noscript><style>{`[data-reserved-text]{visibility:visible!important}[data-hero-subtitle],[data-hero-cta]{visibility:visible!important;opacity:1!important;transform:none!important}`}</style></noscript>
         <div className={styles.heroBottom}>
           <div className={styles.heroCopy}>
             <div className={styles.heroSubtitle} data-hero-subtitle>
               <p>Al igual que las personas, las marcas también visten para expresar quiénes son, lo que representan y los valores que las distinguen.</p>
               <p>Te invitamos a descubrir el poder del uniforme.</p>
             </div>
-            <Link href="/uniformes" className={styles.primaryLink} data-hero-cta>
+            <Link href="/uniformes" prefetch={false} className={styles.primaryLink} data-hero-cta>
               Descubre nuestros uniformes <ArrowRight aria-hidden="true" size={20} />
             </Link>
           </div>

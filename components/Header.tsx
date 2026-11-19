@@ -48,10 +48,10 @@ export default function Header() {
         }} onBlur={event => {
           if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget) && !toggle.current?.contains(event.relatedTarget)) close()
         }}>
-          <Link href="/uniformes" className={styles.navLink}>Uniformes</Link>
-          <Link href="/nosotros" className={styles.navLink}>Nosotros</Link>
+          <Link href="/uniformes" prefetch={isHome ? false : null} className={styles.navLink}>Uniformes</Link>
+          <Link href="/nosotros" prefetch={isHome ? false : null} className={styles.navLink}>Nosotros</Link>
           <a href="https://sizeset.com" className={styles.navLink} target="_blank" rel="noopener noreferrer">SizeSet</a>
-          <Link href="/blog" className={styles.navLink}>Blog</Link>
+          <Link href="/blog" prefetch={isHome ? false : null} className={styles.navLink}>Blog</Link>
         </nav>
         <a href="mailto:info@cottoncountry.com.pe" onClick={() => { close(); handleEmailClick() }} className={styles.emailLink}>Contáctanos</a>
       </div>

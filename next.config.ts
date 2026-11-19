@@ -4,6 +4,7 @@ import { postPath } from "./lib/blog/paths"
 import { documentaryBlogAliases } from "./lib/blog/legacy-aliases"
 
 const nextConfig: NextConfig = {
+  images: { qualities: [75, 85] },
   // Put known blog aliases before trailing-slash normalization, avoiding two hops.
   // The final rule preserves Next's previous no-trailing-slash behavior elsewhere.
   skipTrailingSlashRedirect: true,

@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { editorialSerif } from "@/components/home-font"
 import editorial from "@/components/uniforms/uniforms.module.css"
 import styles from "./nosotros.module.css"
+import { brandSocialImage } from "@/lib/social"
 
 const title = "Nosotros | Cotton Country"
 const description = "Conoce la historia de Cotton Country: una mirada empresarial y técnica a los uniformes corporativos y a los desafíos de la industria textil peruana."
@@ -15,7 +16,9 @@ export const metadata: Metadata = {
     title, description,
     url: "https://cottoncountry.com.pe/nosotros",
     siteName: "Cotton Country", locale: "es_PE", type: "website",
+    images: [brandSocialImage()],
   },
+  twitter: { card: "summary_large_image", title, description, images: [brandSocialImage()] },
 }
 
 export default function NosotrosPage() {

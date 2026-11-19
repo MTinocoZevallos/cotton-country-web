@@ -27,6 +27,39 @@ function load(file){
 const blog=load(path.join(root,'lib/blog/index.ts'))
 const content=load(path.join(root,'lib/blog/content.ts'))
 const paths=load(path.join(root,'lib/blog/paths.ts'))
+test('social cards use one public absolute image with honest dimensions and retain article-specific metadata',async()=>{
+  const sharp=require('sharp')
+  for(const post of blog.posts){
+    const meta=blog.postMetadata(post),image=meta.openGraph.images[0]
+    assert.equal(meta.openGraph.images.length,1)
+    assert.equal(meta.twitter.images.length,1)
+    const url=new URL(image.url)
+    assert.equal(url.origin,'https://cottoncountry.com.pe')
+    const actual=await sharp(path.join(root,'public',decodeURIComponent(url.pathname))).metadata()
+    assert.equal(image.width,actual.width);assert.equal(image.height,actual.height)
+    assert(image.alt.length>0)
+    assert.equal(meta.twitter.images[0].url,image.url)
+    assert.equal(meta.twitter.card,'summary_large_image')
+    assert.equal(meta.openGraph.type,'article')
+    assert.equal(meta.openGraph.url,'https://cottoncountry.com.pe/'+post.slug)
+    assert.equal(meta.openGraph.title,post.seoTitle??post.title)
+    if(blog.getPostImage(post.slug).visible===false)assert.equal(url.pathname,'/social/cotton-country.png')
+  }
+  const brand=await sharp(path.join(root,'public/social/cotton-country.png')).metadata()
+  assert.equal(brand.width,1200);assert.equal(brand.height,630)
+})
+test('Preview social assets use the deployment host while canonical and production URLs stay unchanged',()=>{
+  const saved={VERCEL_ENV:process.env.VERCEL_ENV,VERCEL_URL:process.env.VERCEL_URL}
+  try{
+    process.env.VERCEL_ENV='preview';process.env.VERCEL_URL='cotton-review.example.vercel.app'
+    const meta=blog.postMetadata(blog.posts[0])
+    assert.equal(new URL(meta.openGraph.images[0].url).hostname,'cotton-review.example.vercel.app')
+    assert.equal(meta.openGraph.url,'https://cottoncountry.com.pe/'+blog.posts[0].slug)
+    assert.equal(meta.alternates.canonical,'/'+blog.posts[0].slug)
+    process.env.VERCEL_ENV='production'
+    assert.equal(new URL(blog.postMetadata(blog.posts[0]).openGraph.images[0].url).hostname,'cottoncountry.com.pe')
+  }finally{for(const [key,value]of Object.entries(saved)){if(value===undefined)delete process.env[key];else process.env[key]=value}}
+})
 test('all images are centralized, local, dimensioned and exist; optimized variants are preferred',async()=>{
   const sharp=require('sharp')
   for(const post of blog.posts){const image=blog.getPostImage(post.slug);assert(fs.existsSync(path.join(root,'public',image.src)));const m=await sharp(path.join(root,'public',image.src)).metadata();assert.equal(image.width,m.width);assert.equal(image.height,m.height);assert(image.alt.length>20)}

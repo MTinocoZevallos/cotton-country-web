@@ -1,7 +1,6 @@
 "use client"
 
 import Script from "next/script"
-import { browserContactContext } from "@/lib/contact-context"
 import { useRef, useState } from "react"
 import styles from "./home.module.css"
 
@@ -81,6 +80,8 @@ export default function ContactForm({ home = false }: { home?: boolean }) {
 
     try {
       const formData = new FormData(event.currentTarget)
+      // Catalog and case data are needed only when preparing a submission.
+      const { browserContactContext } = await import("@/lib/contact-context")
 
       const payload = {
         name: formData.get("name"),

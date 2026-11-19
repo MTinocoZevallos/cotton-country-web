@@ -10,7 +10,8 @@
 .eyebrow { font-family: var(--cc-font-body); font-size: var(--cc-label); font-weight: 600; line-height: 1.6; letter-spacing: .08em; text-transform: uppercase; color: var(--cc-blue); }
 .hero { position: relative; isolation: isolate; color: var(--cc-white); background: var(--cc-deep-blue); min-height: 620px; height: 90svh; max-height: 820px; }
 .heroBackdrop, .heroShade { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
-.heroBackdrop { top: 80px; background: url("/home-2027/hero.webp") center / cover no-repeat; animation: photoEnter 1.2s ease both; }
+.heroBackdrop { top: 80px; animation: photoEnter 1.2s ease both; }
+.heroBackgroundImage { object-fit: cover; object-position: center; }
 .heroImage { object-fit: contain; object-position: 100% 0%; mask-image: linear-gradient(90deg, transparent 20%, #000 40%); }
 @media (min-width: 768px) and (max-width: 900px) {
   .heroImage { object-fit: cover; object-position: 50% 50%; }
@@ -142,12 +143,18 @@
 }
 @media (max-width: 767px) {
   .heroContent, .approach, .productsInner, .contactGrid { width: calc(100% - 40px); }
-  .hero { min-height: 860px; height: auto; max-height: none; }
+  .hero { min-height: 860px; height: auto; max-height: none; background: linear-gradient(var(--cc-deep-blue) 0 80px, var(--cc-white) 80px) var(--cc-white); color: var(--cc-charcoal); }
   .heroContent { padding-block: 420px 72px; min-height: inherit; height: auto; justify-content: flex-start; }
-  .home .heroTitle { font-size: clamp(36px, 10.8vw, 54px); }
-  .heroBackdrop { height: auto; bottom: 0; background: url('/home-2027/hero.webp') no-repeat 78% bottom / auto 1100px; }
-  .heroImage { height: 480px !important; object-fit: cover; object-position: 80% 0%; mask-image: linear-gradient(180deg, #000 72%, transparent); }
-  .heroShade { background: linear-gradient(180deg, transparent 27%, color-mix(in srgb, var(--cc-charcoal) 22%, transparent) 40%, color-mix(in srgb, var(--cc-charcoal) 70%, transparent) 65%, color-mix(in srgb, var(--cc-deep-blue) 68%, transparent)); }
+  .home .heroTitle { font-size: clamp(36px, 10.8vw, 54px); color: var(--cc-blue); }
+  .heroBackdrop { height: 480px; bottom: auto; animation: none; }
+  .heroBackgroundImage { display: none; }
+  .heroImage { object-fit: cover; object-position: 80% 0%; mask-image: linear-gradient(180deg, #000 48%, rgb(0 0 0 / .85) 60%, rgb(0 0 0 / .4) 76%, transparent 100%); }
+  .heroShade { display: none; }
+  .heroSubtitle { color: var(--cc-charcoal); }
+  .hero [data-hero-subtitle], .hero [data-hero-cta] { opacity: 1; transition: transform .65s ease; }
+  .hero[data-hero-phase="typing"] [data-hero-subtitle], .hero[data-hero-phase="typing"] [data-hero-cta], .hero[data-hero-phase="subtitle"] [data-hero-cta] { visibility: hidden; opacity: 1; }
+  .hero [data-hero-cta]:focus-visible { visibility: visible; }
+  .hero :is(a, button):focus-visible { outline-color: var(--cc-blue); }
   .heroBottom { display: block; }
   .heroCopy { max-width: 480px; }
   .primaryLink { max-width: 100%; padding-inline: 22px; gap: 16px; }
@@ -183,5 +190,5 @@
   .home [data-reveal] { opacity: 1 !important; transform: none !important; }
   .reservedLine { visibility: visible; }
   .typedValue { visibility: hidden; }
-  .hero [data-hero-subtitle], .hero [data-hero-cta] { opacity: 1 !important; transform: none !important; }
+  .hero [data-hero-subtitle], .hero [data-hero-cta] { visibility: visible !important; opacity: 1 !important; transform: none !important; }
 }
