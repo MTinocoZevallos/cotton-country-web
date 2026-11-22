@@ -28,11 +28,11 @@ test('four new articles retain every approved word, title and slug and have no i
     assert(blog.categoryForPost(post));assert(blog.postMetadata(post).description.length>0)
   }
 })
-test('articles 54–56 use their exact approved PNG originals in covers and social metadata',()=>{
+test('articles 54–56 use their approved lossless WebP images in covers and social metadata',()=>{
   const files=[
-    ['blog-54-algodon-24-1-30-1.png','29d9d5ede6424dbf46123341a422e8b4bff73eda5cc9a8da36b7e6e5692a0868'],
-    ['blog-55-encogimiento-telas.png','5b65dae3649c2dfda62ad5b5e2d2e9521f872bab477fd97b001a4aeed12cdb83'],
-    ['blog-56-solidez-color.png','b7c56b9b1b9c2718a3546a449a34b99cea028dd4b8d15672db6f2c63e1c1f0c2'],
+    ['que-significa-algodon-24-1-30-1.webp','ebc50b48fa07f2a30f6ce906d1ae722b15af025904ff5135e9933a94ec2f3d0c'],
+    ['por-que-encogen-las-telas.webp','e3099335679432ad3eedc7075a7547a44eacdbd453807d10b5dca9bffc189c19'],
+    ['por-que-destinen-los-uniformes.webp','38da80254056886895d763e01a97ce1cb87eba048bd361ff7198b950414e9d41'],
   ]
   for(const [index,source]of approved.slice(0,3).entries()){
     const image=blog.getPostImage(source.slug),[file,hash]=files[index]
