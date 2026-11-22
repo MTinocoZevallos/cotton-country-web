@@ -86,5 +86,9 @@ export const postCategoryIds: Record<string, BlogCategoryId> = {
   "de-que-depende-el-tiempo-de-entrega-de-uniformes": "compras",
   "dia-mundial-del-algodon-2026": "algodon",
   "el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil": "industria",
-  "sector-textil-peruano-emergencia-productividad-2026": "industria"
+  "sector-textil-peruano-emergencia-productividad-2026": "industria",
+  "que-significa-algodon-24-1-30-1": "algodon",
+  "por-que-encogen-las-telas": "industria",
+  "por-que-destinen-los-uniformes": "industria",
+  "ubicacion-cintas-reflectivas-uniformes": "uniformes"
 }

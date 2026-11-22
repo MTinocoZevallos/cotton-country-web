@@ -1,6 +1,7 @@
 export type Post = {
   slug: string
   title: string
+  editorialNumber?: number
   seoTitle?: string
   excerpt: string
   content: string
@@ -2704,5 +2705,416 @@ Necesita **producir mejor y comprar mejor**.
 `,
     seoTitle: "Sector textil peruano: emergencia y productividad en 2026",
     publishedAt: "2026-10-07",
+  },
+  {
+    slug: "que-significa-algodon-24-1-30-1",
+    title: "¿Qué significa algodón 24/1 o 30/1? Por qué el número mayor indica un hilo más fino",
+    excerpt: "Qué significan los títulos 24/1 y 30/1 del algodón, cómo se relacionan con la finura del hilo y por qué no deben confundirse con el gramaje de la tela.",
+    canonicalPath: "/que-significa-algodon-24-1-30-1",
+    editorialNumber: 54,
+    content: `
+Cuando una empresa solicita polos corporativos, es frecuente encontrar especificaciones como algodón 20/1, 24/1 o 30/1. Son números habituales en las cotizaciones textiles, pero no siempre se interpretan correctamente.
+
+Una confusión frecuente consiste en pensar que el algodón 30/1 es más grueso que el 24/1 porque su número es mayor. En realidad, sucede lo contrario.
+## ¿Por qué los hilos se llaman 24/1 o 30/1?
+Estos números corresponden al título del hilo, una forma de medir su finura.
+
+En el sistema inglés de numeración del algodón, conocido como Ne, se toma como referencia una libra de hilo y se calcula cuántas madejas de 840 yardas pueden obtenerse con ese peso.
+
+Así, un hilo 24/1 permite obtener 24 madejas de esa longitud, mientras que uno 30/1 permite obtener 30.
+
+Por eso, cuanto mayor es el número, más fino es el hilo.
+
+El número después de la barra indica que se trata de un hilo sencillo, formado por una sola hebra hilada. No representa la cantidad de vueltas o torsiones que recibe el algodón durante su fabricación.
+
+Por ejemplo, entre los títulos más conocidos encontramos:
+- 20/1: hilo relativamente grueso.
+- 24/1: hilo más fino que el 20/1.
+- 30/1: hilo más fino que el 24/1.
+- 40/1: hilo todavía más fino.
+## Del hilo a la tela: jersey, piqué, franela y otros tejidos
+Una vez fabricado, el hilo puede utilizarse para producir diferentes estructuras textiles.
+
+Entre las más conocidas encontramos el jersey, utilizado habitualmente en polos de cuello redondo; el piqué, característico de muchos polos tipo box; el interlock, apreciado por su superficie uniforme; y la franela de punto, empleada frecuentemente en prendas de abrigo.
+
+Esto significa que un hilo 24/1 o 30/1 no corresponde necesariamente a un único tipo de tela. Su resultado depende de cómo se teja y de los acabados posteriores.
+## ¿Qué tiene de especial el algodón Pima peruano?
+El algodón Pima es reconocido internacionalmente por sus fibras extralargas, que permiten producir hilos finos, uniformes y resistentes.
+
+Mientras que en muchos polos comerciales encontramos títulos como 20/1, 24/1 o 30/1, con fibras de algodón de alta calidad también pueden elaborarse títulos más finos, como 50/1, 60/1 o 70/1, e incluso superiores cuando la materia prima y el proceso de hilatura lo permiten.
+
+No obstante, un título más alto no convierte automáticamente una tela en algodón Pima. La calidad y procedencia de la fibra son tan importantes como la finura del hilo.
+## ¿Los hilos gruesos son mejores para invierno y los finos para verano?
+Como orientación general, los hilos más gruesos suelen utilizarse para construir telas con mayor cuerpo, apropiadas para determinadas prendas de invierno.
+
+Los hilos más finos, en cambio, facilitan la fabricación de tejidos ligeros y suaves, especialmente valorados en prendas de verano.
+
+Pero esta relación no es absoluta. Una tela de hilo fino puede ser relativamente pesada y una de hilo grueso puede resultar ligera, dependiendo de su construcción.
+
+Por eso, al elegir uniformes para una estación determinada, debemos evaluar la tela terminada y no solamente el título del hilo.
+## El título del hilo no es lo mismo que el gramaje
+Esta es una de las distinciones más importantes al comparar telas.
+
+El título indica qué tan fino es el hilo. El gramaje, expresado habitualmente en gramos por metro cuadrado (g/m²), indica cuánto pesa una superficie determinada de tela.
+
+Por ejemplo, dos telas fabricadas con hilo 30/1 pueden tener gramajes diferentes si cambian la longitud de puntada, la densidad o la estructura del tejido.
+
+En consecuencia, el gramaje depende de la construcción de la tela y de la cantidad de material que contiene por superficie, no exclusivamente del título utilizado.
+## ¿Qué debería solicitar una empresa al comprar polos corporativos?
+En lugar de preguntar únicamente si un polo es 24/1 o 30/1, conviene solicitar una especificación más completa:
+- Composición de la tela.
+- Título del hilo.
+- Tipo de tejido: jersey, piqué, interlock u otro.
+- Gramaje en g/m².
+- Comportamiento frente al lavado y encogimiento.
+- Muestra física de la tela o prenda terminada.
+Esta información permite comparar propuestas con mayor precisión y evita que una decisión de compra se base solamente en un número.
+## Conclusión
+En el sistema inglés de numeración del algodón, un hilo 30/1 es más fino que uno 24/1. Sin embargo, eso no significa necesariamente que produzca una tela más ligera, fresca o de mejor calidad.
+
+La fibra, el título, la estructura del tejido, el gramaje y los acabados trabajan en conjunto para determinar las características finales de una prenda.
+
+Comprender estas diferencias ayuda a las empresas a elegir uniformes con mayor criterio y a comparar adecuadamente las propuestas de sus proveedores.
+`,
+  },
+  {
+    slug: "por-que-encogen-las-telas",
+    title: "¿Por qué encogen las telas? Del corte al primer lavado",
+    excerpt: "El encogimiento puede comenzar antes del corte. Conoce la relajación de las telas, la estabilidad dimensional y las pruebas de lavado para uniformes.",
+    canonicalPath: "/por-que-encogen-las-telas",
+    editorialNumber: 55,
+    content: `
+Una de las situaciones más incómodas al comprar uniformes es descubrir que una prenda, después de lavarse, ya no conserva sus medidas originales. Un polo que quedó perfecto durante la prueba puede terminar más corto, más ajustado o incluso deformado.
+
+Solemos atribuir este problema al lavado. Sin embargo, el encogimiento puede comenzar mucho antes, durante la fabricación, el almacenamiento o el corte de la tela.
+
+Comprender este proceso permite entender por qué dos prendas aparentemente iguales pueden comportarse de manera diferente.
+## ¿Por qué encogen las telas?
+Durante su fabricación, las telas atraviesan procesos de tejido, teñido, secado y acabado. En varias de estas etapas son sometidas a tensiones que pueden estirarlas o modificar temporalmente sus dimensiones.
+
+Cuando esas tensiones desaparecen, la tela tiende a recuperar una configuración más estable. Este fenómeno se conoce como encogimiento por relajación.
+
+Es especialmente importante en las telas de punto, como jersey, piqué, interlock o franela de punto, porque su estructura de pequeñas lazadas permite mayor movimiento que muchos tejidos planos.
+
+Pero el encogimiento no es exclusivo del algodón ni de las telas de punto. También puede presentarse en tejidos planos y mezclas de fibras, aunque sus causas y magnitudes varían.
+## El encogimiento puede comenzar antes del corte
+Imaginemos un rollo de tela recién recibido en un taller de confecciones.
+
+Para facilitar su transporte y almacenamiento, la tela permanece enrollada y puede conservar tensiones acumuladas durante su fabricación.
+
+Si se desenrolla, se estira sobre una mesa y se corta inmediatamente, existe el riesgo de que las piezas cambien de tamaño cuando el material termine de relajarse.
+
+Esto significa que una pieza cortada con las medidas correctas podría reducirse posteriormente, incluso antes de convertirse en una prenda terminada.
+
+El problema no necesariamente está en el patrón o en la habilidad del operario. Puede encontrarse en el comportamiento dimensional de la tela.
+## ¿Por qué es importante dejar reposar la tela antes de cortarla?
+El reposo permite que el material libere parte de las tensiones acumuladas y se estabilice antes de realizar el corte.
+
+En las telas de punto, especialmente aquellas con elasticidad, esta práctica resulta fundamental para obtener piezas de dimensiones consistentes.
+
+El procedimiento consiste en extender o disponer la tela sin tensiones excesivas, respetando las condiciones apropiadas para su estructura y composición.
+
+El tiempo necesario no es universal: depende del tipo de tela, su presentación, el proceso de fabricación y las indicaciones técnicas del proveedor.
+
+Lo importante es no cortar una tela que todavía se encuentra artificialmente estirada.
+
+También debe evitarse tensionarla nuevamente durante el tendido, porque hacerlo puede anular parte del beneficio del reposo.
+
+Conviene recordar que este procedimiento ayuda a controlar los cambios dimensionales durante la confección, pero no reemplaza las pruebas de encogimiento al lavado.
+## ¿Qué ocurre durante el primer lavado?
+El agua, la temperatura, la agitación y el secado pueden provocar nuevos cambios dimensionales.
+
+En determinadas telas de algodón, el lavado facilita que las fibras y los hilos se reorganicen y que la estructura del tejido se relaje.
+
+Por eso, una prenda puede reducir su largo, su ancho o ambas dimensiones.
+
+El comportamiento tampoco tiene que ser igual en todas las direcciones. Un polo puede perder más centímetros de largo que de ancho, alterando su proporción original.
+
+En algunos casos, además del encogimiento, aparecen deformaciones como costuras laterales torcidas o diferencias entre las medidas de distintas partes de la prenda.
+## ¿Cuánto puede encoger una tela?
+No existe un porcentaje válido para todas las telas.
+
+El encogimiento depende de la composición, la construcción del tejido, los acabados y las condiciones de lavado.
+
+Por ejemplo, si un polo mide 70 centímetros de largo y después del lavado mide 68,6 centímetros, ha perdido 1,4 centímetros, equivalentes al 2 % de su longitud original.
+
+Esta diferencia puede parecer pequeña, pero resulta importante cuando una empresa entrega cientos de uniformes confeccionados según una tabla de medidas.
+
+Por ello, los porcentajes de encogimiento deben evaluarse por separado en largo y ancho y bajo condiciones de ensayo definidas.
+## ¿Se puede evitar completamente el encogimiento?
+Los fabricantes pueden reducirlo mediante procesos de estabilización y acabados específicos.
+
+En las telas de punto de algodón, uno de los procedimientos utilizados es la compactación, que busca disminuir parte del encogimiento residual antes de que la tela llegue a confección.
+
+Sin embargo, ningún proceso debería considerarse una garantía universal de encogimiento cero.
+
+La estabilidad dimensional debe comprobarse mediante pruebas apropiadas para el material y el uso previsto.
+## El cuidado de la prenda también importa
+Incluso una tela correctamente estabilizada puede sufrir cambios dimensionales cuando se lava en condiciones inadecuadas.
+
+El uso de agua demasiado caliente, temperaturas elevadas de secado o productos químicos agresivos puede afectar tanto a polos de punto como a camisas de tejido plano, por ejemplo, las confeccionadas en Oxford.
+
+En determinadas lavanderías industriales se utilizan productos alcalinos, incluida la soda cáustica, para procesos específicos de limpieza. Su concentración, temperatura y tiempo de exposición deben ser compatibles con el material. No puede atribuirse un encogimiento a un producto concreto sin conocer las condiciones del proceso.
+
+Por eso, la etiqueta de lavado no es un simple accesorio: comunica las condiciones de cuidado recomendadas para conservar las características de la prenda.
+
+Del mismo modo, el confeccionista debe contar con la ficha técnica del fabricante de la tela, donde se indiquen su composición, estabilidad dimensional, acabados y recomendaciones de procesamiento y cuidado. Esta información permite tomar decisiones adecuadas antes del corte y durante la confección.
+## ¿Cómo se comprueba el encogimiento de una tela?
+Una forma de evaluarlo consiste en medir una muestra antes del lavado, someterla a condiciones controladas de lavado y secado, y volver a medirla.
+
+La diferencia permite calcular el porcentaje de cambio dimensional.
+
+Existen métodos normalizados, como AATCC TM135 y los procedimientos relacionados con ISO 6330 e ISO 5077, que permiten realizar evaluaciones comparables.
+
+En proyectos de uniformes, estas pruebas ayudan a establecer tolerancias y comprobar si la tela cumple con las condiciones acordadas antes de iniciar la producción.
+## ¿Qué debería exigir una empresa a su proveedor de uniformes?
+Además de evaluar la apariencia y comodidad de las prendas, conviene considerar tres aspectos:
+- Estabilidad antes del corte: verificar que la tela haya sido preparada y relajada adecuadamente.
+- Control del encogimiento: conocer el comportamiento dimensional del material después del lavado.
+- Consistencia de medidas: comprobar que las prendas terminadas respeten las tolerancias acordadas.
+También es importante comunicar las condiciones habituales de lavado de los uniformes, especialmente cuando estarán sometidos a procesos frecuentes o industriales.
+## Conclusión: el encogimiento se controla desde la tela, no solamente desde el lavado
+El encogimiento es un comportamiento físico que puede manifestarse durante distintas etapas de fabricación y uso.
+
+Una tela mal estabilizada, cortada bajo tensión o sin una evaluación adecuada puede comprometer las medidas de una prenda incluso cuando su confección sea correcta.
+
+Por eso, dejar reposar la tela antes del corte, controlar su estabilidad dimensional y respetar las instrucciones de lavado son prácticas importantes para fabricar y conservar uniformes consistentes.
+
+En Cotton Country consideramos que la calidad de un uniforme no se demuestra únicamente cuando se entrega, sino también cuando conserva sus características durante el uso cotidiano.
+`,
+  },
+  {
+    slug: "por-que-destinen-los-uniformes",
+    title: "¿Por qué los uniformes pierden su color? El problema de las telas que destiñen",
+    excerpt: "Conoce las diferencias entre teñidos reactivos, directos y dispersos, y qué solicitar para evaluar la solidez del color de los uniformes.",
+    canonicalPath: "/por-que-destinen-los-uniformes",
+    editorialNumber: 56,
+    content: `
+Las empresas invierten tiempo y recursos en definir sus colores corporativos. Cuando necesitan uniformes, buscan telas que se aproximen a esos tonos o incluso encargan tejidos teñidos especialmente para reproducir el color de su marca.
+
+Pero ¿qué ocurre cuando, después de unos cuantos lavados, los polos comienzan a perder intensidad, las camisas se decoloran o los pantalones destiñen sobre otras prendas?
+
+El problema va más allá de la apariencia. Los uniformes dejan de representar fielmente la identidad visual de la empresa, aparecen diferencias entre colaboradores y, en algunos casos, es necesario reemplazar prendas mucho antes de lo previsto.
+
+Una tela puede tener exactamente el color solicitado al momento de la entrega y, aun así, no conservarlo durante el uso.
+
+Esto sucede porque conseguir un color determinado y garantizar su permanencia son dos desafíos diferentes.
+
+La respuesta está, en buena medida, en los procesos de teñido y en una característica que pocas veces aparece en las solicitudes de cotización: la solidez del color.
+## ¿Por qué no todas las telas conservan el color de la misma manera?
+El teñido consiste en incorporar color a las fibras textiles mediante procesos que utilizan colorantes y productos auxiliares.
+
+Sin embargo, no todos los colorantes se comportan igual ni son apropiados para las mismas fibras.
+
+El algodón, el poliéster y sus mezclas requieren tratamientos diferentes. Además, la forma en que el colorante se fija a la fibra influye en su resistencia al lavado, al frote, a la luz y a otras condiciones de uso.
+
+Por eso, dos telas que inicialmente presentan el mismo tono pueden tener comportamientos muy distintos después de varios meses de utilización.
+## Teñido reactivo: una opción frecuente para el algodón
+Los colorantes reactivos son ampliamente utilizados en telas de algodón, especialmente cuando se buscan colores definidos y buena resistencia al lavado.
+
+Su principal característica es que forman una unión química con la celulosa del algodón, favoreciendo la permanencia del color.
+
+Esto los convierte en una alternativa apropiada para polos, camisas y otras prendas que deben lavarse con frecuencia.
+
+Sin embargo, un teñido reactivo tampoco garantiza que una prenda nunca pierda color. El resultado depende de la selección del colorante, su correcta fijación, los lavados posteriores al teñido y las condiciones de cuidado.
+
+## Teñido directo: un proceso sencillo, pero con diferencias importantes
+
+Los colorantes directos también se utilizan para teñir algodón.
+
+Su aplicación suele ser relativamente sencilla y económica. A diferencia de los reactivos, se adhieren a las fibras principalmente mediante fuerzas físicas, sin formar el mismo tipo de enlace químico.
+
+Por ello, muchos teñidos directos presentan menor resistencia al lavado, especialmente en determinados colores intensos.
+
+Existen tratamientos que mejoran su comportamiento, pero es importante conocer las características del producto terminado.
+
+Esto no significa que todo teñido directo sea defectuoso. Significa que su elección debe responder al uso previsto de la tela.
+
+## ¿Y cómo se tiñe el poliéster?
+
+El poliéster requiere otro tipo de colorantes, conocidos como dispersos.
+
+Estos se aplican mediante procesos que permiten introducir el colorante en la fibra sintética, frecuentemente utilizando temperaturas elevadas y equipos especializados.
+
+En las telas que mezclan algodón y poliéster pueden ser necesarios sistemas de teñido diferentes para cada componente.
+
+Por ejemplo, una mezcla puede combinar colorantes reactivos para el algodón y dispersos para el poliéster.
+
+Esta es una de las razones por las que dos telas aparentemente similares pueden presentar diferencias de tonalidad o comportamiento.
+
+## Otros tipos de teñido
+
+La industria textil también utiliza otras familias de colorantes.
+
+Los colorantes a la tina, por ejemplo, pueden ofrecer una elevada resistencia al lavado en determinadas aplicaciones sobre algodón.
+
+Los colorantes sulfurosos se emplean en ciertos tonos oscuros, especialmente negros, aunque su comportamiento frente al frote y otros agentes depende de la formulación y el proceso.
+
+Cada sistema tiene ventajas, limitaciones y aplicaciones específicas. No existe un único tipo de teñido ideal para todas las fibras y prendas.
+
+## ¿Qué significa que una tela tenga buena solidez del color?
+
+En la industria textil se utiliza el término solidez del color para describir qué tan bien conserva una tela su tonalidad frente a diferentes condiciones.
+
+Las más relevantes para los uniformes son:
+
+- Solidez al lavado: resistencia del color frente a los procesos de lavado.
+
+- Solidez al frote: posibilidad de que el color se transfiera a otra superficie por contacto, en seco o en húmedo.
+
+- Solidez a la luz: resistencia a la pérdida de intensidad por exposición luminosa.
+
+- Solidez al sudor: comportamiento del color frente a la transpiración.
+
+Una tela puede obtener buenos resultados en una de estas pruebas y resultados diferentes en otra.
+
+Por ejemplo, un pantalón oscuro podría conservar su color después del lavado, pero transferir parte del tinte al rozar una superficie clara.
+
+## ¿Por qué algunos uniformes destiñen?
+
+La pérdida de color puede relacionarse con una fijación insuficiente, colorante residual que no fue retirado adecuadamente, condiciones de lavado inadecuadas o una combinación de estos factores.
+
+El uso de blanqueadores, productos químicos incompatibles, temperaturas excesivas y exposición prolongada a la luz también puede afectar determinadas tonalidades.
+
+Por eso, no siempre es correcto atribuir el desteñido exclusivamente a un «mal tinte».
+
+Es necesario conocer tanto el proceso de fabricación como las condiciones de uso y mantenimiento.
+
+## ¿Qué debería solicitar una empresa al comprar uniformes?
+
+Cuando el color institucional es importante, conviene solicitar al proveedor información sobre la composición de la tela y su comportamiento frente al lavado, el frote y la luz.
+
+También resulta recomendable aprobar una muestra física del color y establecer tolerancias para las diferencias entre lotes de producción.
+
+En proyectos de uniformes de gran volumen, estas precauciones ayudan a evitar que prendas entregadas en diferentes momentos presenten variaciones visibles.
+
+La etiqueta de cuidado también cumple una función importante: informa las condiciones de lavado y mantenimiento que deben respetarse para conservar la prenda.
+
+## Conclusión: el color también es una característica de calidad
+
+Un uniforme no debería evaluarse únicamente por la intensidad de su color cuando es nuevo.
+
+La verdadera diferencia aparece cuando ese color debe resistir el uso cotidiano, los lavados y las condiciones de trabajo.
+
+Comprender las diferencias entre teñidos reactivos, directos, dispersos y otros sistemas permite tomar mejores decisiones, pero lo más importante es comprobar el comportamiento de la tela terminada.
+
+En Cotton Country consideramos que la calidad del color debe formar parte de las especificaciones de compra, especialmente cuando los uniformes representan la identidad visual de una empresa.
+`,
+  },
+  {
+    slug: "ubicacion-cintas-reflectivas-uniformes",
+    title: "¿Dónde colocar las cintas reflectivas según el trabajo? Guía para compradores de uniformes industriales",
+    excerpt: "Criterios para comprar uniformes de alta visibilidad: ISO 20471, tipos ANSI/ISEA 107, superficies mínimas y distribución de cintas retrorreflectivas.",
+    canonicalPath: "/ubicacion-cintas-reflectivas-uniformes",
+    editorialNumber: 57,
+    content: `
+En un almacén, un trabajador puede preparar pedidos lejos de los montacargas, mientras otro dirige maniobras de camiones. Ambos pertenecen a la misma empresa, pero su exposición al riesgo es diferente.
+
+Lo mismo ocurre en minería, construcción, agroindustria y servicios de seguridad.
+
+Sin embargo, todavía encontramos uniformes con cintas reflectivas colocadas parcialmente, como si una banda en el pecho o en la espalda fuera suficiente para garantizar la visibilidad.
+
+La elección correcta no comienza por el tipo de prenda ni por el sector de la empresa. Comienza por el riesgo de la operación.
+
+Para especificar un uniforme de alta visibilidad, el comprador necesita resolver tres preguntas: ¿qué norma corresponde?, ¿qué clase requiere el trabajador? y ¿cómo deben distribuirse los materiales visibles?
+## ISO 20471 y ANSI/ISEA 107: ¿cuál es la diferencia?
+Ambas normas establecen requisitos para ropa de alta visibilidad, pero utilizan sistemas de clasificación diferentes.
+
+ISO 20471 es una norma internacional que establece tres clases de prendas, considerando superficies mínimas de material fluorescente y retrorreflectivo, características de los materiales y requisitos de diseño.
+
+ANSI/ISEA 107 es una norma estadounidense que distingue primero el entorno de utilización mediante tipos y después establece clases de desempeño.
+
+En ANSI/ISEA 107-2020, las designaciones principales son:
+- Tipo O: determinadas operaciones fuera de vías públicas, donde existe riesgo asociado a vehículos o equipos móviles.
+- Tipo R: trabajos con exposición al tránsito vial y a vehículos o equipos móviles.
+- Tipo P: determinadas funciones de seguridad pública y respuesta a emergencias.
+Las dos normas pueden utilizarse como referencias técnicas en una compra empresarial. La elección dependerá de las exigencias aplicables a la operación y de la especificación de seguridad adoptada.
+
+Una clase ISO 20471 no debe considerarse automáticamente equivalente a una clase ANSI/ISEA 107.
+
+## ¿Qué significan las clases 1, 2 y 3?
+En ISO 20471, las clases establecen requisitos progresivos de superficie visible y diseño.
+
+Clase 1: exige las menores superficies mínimas de material fluorescente y retrorreflectivo.
+
+Clase 2: requiere mayores superficies visibles que la clase 1.
+
+Clase 3: establece las mayores superficies mínimas y requisitos adicionales de configuración para favorecer el reconocimiento de la persona.
+
+
+Pero hay una precisión importante: la clase no se determina únicamente contando cintas.
+
+También deben verificarse las superficies de material fluorescente, la ubicación de las bandas, su continuidad conforme al diseño requerido y las prestaciones de los materiales.
+
+La clase 3, por ejemplo, requiere cubrir el torso y disponer de mangas con bandas retrorreflectivas o pantalones largos con bandas, según la configuración admitida por la norma.
+## ¿Cómo elegir la clase según el trabajo?
+La actividad del colaborador debe analizarse independientemente del rubro de la empresa.
+### Trabajo sin exposición significativa a vehículos
+En zonas interiores con circulación peatonal segregada, la evaluación de riesgos puede determinar que no se necesita ropa de alta visibilidad.
+
+No debe asignarse una clase automáticamente por trabajar en una planta o almacén.
+### Operación cerca de montacargas y equipos móviles
+En recepción de mercadería, carga, descarga y circulación compartida con maquinaria, debe evaluarse la visibilidad del trabajador desde diferentes direcciones.
+
+La clasificación dependerá de la proximidad de los equipos, su velocidad, la frecuencia del tránsito y los controles existentes.
+### Dirección de maniobras y control vehicular
+Los señalizadores y trabajadores que orientan camiones necesitan ser reconocidos mientras se desplazan y realizan señales manuales.
+
+Aquí adquieren importancia tanto la visibilidad del torso como la de los movimientos de los brazos.
+### Trabajo con maquinaria pesada
+En operaciones con excavadoras, volquetes y otros equipos móviles, la exposición puede justificar niveles superiores de protección.
+
+La clase debe definirse considerando las condiciones reales de trabajo, no simplemente porque la actividad pertenezca a minería o construcción.
+### Trabajo nocturno y mantenimiento vial
+La proximidad a vehículos, la velocidad del tránsito y las condiciones de iluminación son factores decisivos.
+
+La selección debe prestar especial atención a la retrorreflectividad, la distribución del material y las exigencias de la norma aplicable.
+
+Estos ejemplos orientan la evaluación, pero no asignan automáticamente una clase a cada oficio.
+## ¿Dónde deben colocarse las cintas reflectivas?
+Una vez definida la norma y la clasificación, corresponde verificar la distribución sobre la prenda.
+
+Torso: las bandas envolventes ayudan a mantener la visibilidad desde diferentes direcciones. Su posición y separación deben cumplir el diseño exigido.
+
+Hombros: determinadas configuraciones incorporan bandas verticales que complementan las del torso.
+
+Mangas: las bandas alrededor de los brazos pueden favorecer el reconocimiento de los movimientos del trabajador.
+
+Piernas: las bandas alrededor de las extremidades inferiores pueden contribuir a reconocer la silueta y el desplazamiento.
+
+La ubicación no es libre: debe respetar las configuraciones y superficies requeridas por la norma correspondiente.
+## ¿Pueden utilizarse polos, chalecos y casacas?
+Sí. La ropa de alta visibilidad puede adoptar diferentes formas: chalecos, casacas, polos T-shirt de manga corta o larga, pantalones y conjuntos.
+
+Lo importante es verificar qué clasificación puede alcanzar cada diseño.
+
+Un polo de manga larga permite incorporar bandas alrededor de los brazos. Un polo de manga corta tiene otras limitaciones de configuración.
+
+De igual manera, un chaleco puede ser apropiado para determinadas clases, pero no debe presentarse automáticamente como clase 3 de ISO 20471.
+
+En algunos casos, la clasificación requerida puede alcanzarse mediante un conjunto de prendas, siempre que cumpla las condiciones previstas por la norma y esté documentado como tal.
+## ¿Qué ocurre cuando se colocan cintas parciales?
+Reducir la longitud de las bandas o interrumpirlas para ahorrar material puede afectar las superficies y la distribución necesarias para cumplir una clasificación.
+
+Por eso, especificar «cinta reflectiva de dos pulgadas» no garantiza una prenda de alta visibilidad.
+
+Una cinta de calidad certificada no convierte automáticamente en certificada a la prenda que la incorpora.
+
+El comprador debe verificar el diseño completo y la documentación de conformidad correspondiente.
+## Cinco verificaciones antes de comprar
+1) Identificar el riesgo: vehículos, maquinaria, velocidad, iluminación y movimientos.
+2) Definir la norma: ISO 20471, ANSI/ISEA 107 u otra exigencia aplicable.
+3) Determinar la clasificación: según la evaluación de riesgos y los requisitos de la operación.
+4) Revisar los flats técnicos: vistas frontal, posterior y lateral; distribución y superficies visibles.
+5) Exigir sustento: documentación de conformidad, materiales, etiquetado e instrucciones de mantenimiento.
+## Conclusión: no se compra una cantidad de cinta, se especifica una protección
+Dos trabajadores de empresas distintas pueden necesitar la misma clasificación si enfrentan riesgos semejantes. Y dos colaboradores de una misma empresa pueden requerir soluciones diferentes.
+
+La secuencia correcta es:
+
+Operación → riesgo → norma → clase → diseño de la prenda.
+
+La ubicación de las cintas reflectivas no debería decidirse por economía de materiales ni por apariencia, sino por los requisitos de visibilidad que necesita cada trabajador.
+`,
   },
 ]

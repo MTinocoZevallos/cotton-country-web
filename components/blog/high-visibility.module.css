@@ -1,0 +1,15 @@
+.tableBlock { margin-block: 32px; background: #fff; }
+.tableScroll { max-width: 100%; overflow-x: auto; }
+.tableScroll:focus-visible { outline: 2px solid var(--cc-blue); outline-offset: 4px; }
+.tableScroll table { width: 100%; min-width: 530px; border-collapse: collapse; font-size: 15px; line-height: 1.65; }
+.tableScroll caption { text-align: left; color: var(--cc-blue); font-weight: 600; padding-block: 0 16px; font-size: 18px; }
+.tableScroll :is(th,td) { text-align: left; vertical-align: top; padding: 14px 12px; border-bottom: 1px solid var(--cc-line); }
+.tableScroll thead { color: var(--cc-blue); }
+.tableScroll tbody th { font-weight: 600; }
+.note, .figure figcaption { font-size: 14px; line-height: 1.75; margin-top: 14px; }
+.figure { margin-block: 32px; }
+.figure img { display: block; width: 100%; height: auto; border: 1px solid var(--cc-line); }
+.figure figcaption a { display: inline-block; min-height: 44px; padding-top: 10px; }
+.sources { margin-top: 48px; }
+.sources ul { margin-top: 24px; }
+@media(max-width:575px) { .tableScroll table { font-size: 14px; } .tableScroll :is(th,td) { padding: 12px 10px; } }

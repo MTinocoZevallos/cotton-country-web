@@ -12,6 +12,6 @@ export default function BlogCard({ post }: { post: Post }) {
     <Link prefetch={false} href={categoryPath(category)} className={styles.category}>{category.name}</Link>
     <h3><Link prefetch={false} href={postPath(post)}>{post.title}</Link></h3>
     <p>{descriptionForPost(post)}</p>
-    <div className={styles.cardBottom}><span>{post.publishedAt&&publicationLabel(post.publishedAt)?<time dateTime={post.publishedAt}>{publicationLabel(post.publishedAt)}</time>:"Archivo editorial"} · Lectura aprox. {readingMinutes(post)} min</span><Link prefetch={false} href={postPath(post)} aria-label={`Leer: ${post.title}`}>Leer artículo <ArrowUpRight size={16} aria-hidden="true"/></Link></div>
+    <div className={styles.cardBottom}><span>{post.publishedAt&&publicationLabel(post.publishedAt)?<time dateTime={post.publishedAt}>{publicationLabel(post.publishedAt)}</time>:post.editorialNumber?"Cotton Country":"Archivo editorial"} · Lectura aprox. {readingMinutes(post)} min</span><Link prefetch={false} href={postPath(post)} aria-label={`Leer: ${post.title}`}>Leer artículo <ArrowUpRight size={16} aria-hidden="true"/></Link></div>
   </article>
 }
