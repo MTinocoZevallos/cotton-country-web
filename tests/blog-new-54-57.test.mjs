@@ -28,13 +28,21 @@ test('four new articles retain every approved word, title and slug and have no i
     assert(blog.categoryForPost(post));assert(blog.postMetadata(post).description.length>0)
   }
 })
-test('missing approved images have explicit pending records and never yield broken or substitute images',()=>{
-  for(const source of approved.slice(0,3)){
-    const image=blog.getPostImage(source.slug);assert.equal(image.pendingApproval,true);assert.equal(image.visible,false);assert.equal(image.src,'')
+test('articles 54–56 use their exact approved PNG originals in covers and social metadata',()=>{
+  const files=[
+    ['blog-54-algodon-24-1-30-1.png','29d9d5ede6424dbf46123341a422e8b4bff73eda5cc9a8da36b7e6e5692a0868'],
+    ['blog-55-encogimiento-telas.png','5b65dae3649c2dfda62ad5b5e2d2e9521f872bab477fd97b001a4aeed12cdb83'],
+    ['blog-56-solidez-color.png','b7c56b9b1b9c2718a3546a449a34b99cea028dd4b8d15672db6f2c63e1c1f0c2'],
+  ]
+  for(const [index,source]of approved.slice(0,3).entries()){
+    const image=blog.getPostImage(source.slug),[file,hash]=files[index]
+    assert.equal(image.pendingApproval,undefined);assert.notEqual(image.visible,false)
+    assert.equal(image.src,'/blog/'+file);assert(image.alt.length>20)
+    assert.equal(crypto.createHash('sha256').update(fs.readFileSync(new URL('../public/blog/'+file,import.meta.url))).digest('hex'),hash)
     const meta=blog.postMetadata(blog.posts.find(p=>p.slug===source.slug))
-    assert.equal(new URL(meta.openGraph.images[0].url).pathname,'/social/cotton-country.png')
+    assert.equal(new URL(meta.openGraph.images[0].url).pathname,image.src)
     assert.equal(meta.twitter.images[0].url,meta.openGraph.images[0].url)
-    assert.equal(blog.postStructuredData(blog.posts.find(p=>p.slug===source.slug))['@graph'][0].image,undefined)
+    assert.equal(blog.postStructuredData(blog.posts.find(p=>p.slug===source.slug))['@graph'][0].image.url,'https://cottoncountry.com.pe'+image.src)
   }
 })
 test('article 57 inserts exactly three accessible technical tables at the approved boundaries',()=>{

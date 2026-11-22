@@ -320,28 +320,22 @@ const images: Record<string, BlogImage> = {
     "alt": "Detalle de las piezas de una máquina textil industrial"
   },
   "que-significa-algodon-24-1-30-1": {
-    "src": "",
-    "width": 0,
-    "height": 0,
-    "alt": "",
-    "visible": false,
-    "pendingApproval": true
+    "src": "/blog/blog-54-algodon-24-1-30-1.png",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Dos hilos claros de distinto grosor sobre una superficie gris"
   },
   "por-que-encogen-las-telas": {
-    "src": "",
-    "width": 0,
-    "height": 0,
-    "alt": "",
-    "visible": false,
-    "pendingApproval": true
+    "src": "/blog/blog-55-encogimiento-telas.png",
+    "width": 1672,
+    "height": 941,
+    "alt": "Rollo de tela azul extendido sobre una mesa junto a una regla y patrones de confección"
   },
   "por-que-destinen-los-uniformes": {
-    "src": "",
-    "width": 0,
-    "height": 0,
-    "alt": "",
-    "visible": false,
-    "pendingApproval": true
+    "src": "/blog/blog-56-solidez-color.png",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Telas azules y granates junto a recipientes con líquidos de color en un laboratorio textil"
   },
   "ubicacion-cintas-reflectivas-uniformes": {
     "src": "/blog/alta-visibilidad/prendas-vistas.svg",
