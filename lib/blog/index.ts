@@ -42,6 +42,13 @@ function linkedArticlePaths(post: Post) {
 const contextualArticlePaths = new Map(posts.map(post => [post.slug, linkedArticlePaths(post)]))
 
 export function relatedPosts(post: Post) {
+  const newArticleLinks: Record<string, string[]> = {
+    "que-significa-algodon-24-1-30-1": ["por-que-encogen-las-telas", "por-que-destinen-los-uniformes", "una-breve-historia-del-algodon"],
+    "por-que-encogen-las-telas": ["que-significa-algodon-24-1-30-1", "por-que-destinen-los-uniformes", "como-definir-un-proyecto-de-uniformes-corporativos"],
+    "por-que-destinen-los-uniformes": ["por-que-encogen-las-telas", "que-significa-algodon-24-1-30-1", "el-algodon-se-caso-con-el-poliester-en-oxford"],
+    "ubicacion-cintas-reflectivas-uniformes": ["que-caracteristicas-deben-tener-los-uniformes-de-seguridad-industrial", "materiales-textiles-inteligentes-segun-el-tipo-de-uniformes", "como-definir-un-proyecto-de-uniformes-corporativos"],
+  }
+  if (newArticleLinks[post.slug]) return newArticleLinks[post.slug].map(slug => posts.find(item => item.slug === slug)!)
   const others = posts.filter(item=>item.slug!==post.slug)
   const direct = [...contextualArticlePaths.get(post.slug) ?? []].flatMap(path => others.filter(item => postPath(item) === path))
   const incoming = others.filter(item => contextualArticlePaths.get(item.slug)?.has(postPath(post)))
@@ -62,7 +69,7 @@ export function postMetadata(post: Post): Metadata {
   const image = getPostImage(post.slug), path = postPath(post), title = post.seoTitle ?? post.title
   const socialImage = image.visible === false
     ? brandSocialImage()
-    : { url: socialImageUrl(image.src), width: image.width, height: image.height, alt: image.alt }
+    : { url: socialImageUrl(image.socialSrc ?? image.src), width: image.width, height: image.height, alt: image.alt }
   return {
     title, description:descriptionForPost(post), alternates:{canonical:path}, robots:blogRobots(),
     openGraph:{type:"article",title,description:descriptionForPost(post),url:BLOG_ORIGIN+path,siteName:"Cotton Country",locale:"es_PE",images:[socialImage],...(post.publishedAt?{publishedTime:post.publishedAt}:{}),...(post.updatedAt?{modifiedTime:post.updatedAt}:{})},
@@ -72,7 +79,7 @@ export function postMetadata(post: Post): Metadata {
 export function postStructuredData(post: Post) {
   const category = categoryForPost(post), image = getPostImage(post.slug), url = BLOG_ORIGIN+postPath(post)
   return {"@context":"https://schema.org","@graph":[
-    {"@type":"BlogPosting","@id":url+"#article",url,mainEntityOfPage:{"@type":"WebPage","@id":url},headline:post.title,description:descriptionForPost(post),articleSection:category.name,inLanguage:"es-PE",...(image.visible === false ? {} : {image:{"@type":"ImageObject",url:BLOG_ORIGIN+image.src,width:image.width,height:image.height}}),publisher:{"@type":"Organization","@id":BLOG_ORIGIN+"/#organization",name:"Cotton Country",url:BLOG_ORIGIN},...(post.publishedAt?{datePublished:post.publishedAt}:{}),...(post.updatedAt?{dateModified:post.updatedAt}:{})},
+    {"@type":"BlogPosting","@id":url+"#article",url,mainEntityOfPage:{"@type":"WebPage","@id":url},headline:post.title,description:descriptionForPost(post),articleSection:category.name,inLanguage:"es-PE",...(image.visible === false ? {} : {image:{"@type":"ImageObject",url:BLOG_ORIGIN+(image.socialSrc ?? image.src),width:image.width,height:image.height}}),publisher:{"@type":"Organization","@id":BLOG_ORIGIN+"/#organization",name:"Cotton Country",url:BLOG_ORIGIN},...(post.publishedAt?{datePublished:post.publishedAt}:{}),...(post.updatedAt?{dateModified:post.updatedAt}:{})},
     {"@type":"BreadcrumbList",itemListElement:[{name:"Inicio",item:BLOG_ORIGIN+"/"},{name:"Blog",item:BLOG_ORIGIN+"/blog"},{name:category.name,item:BLOG_ORIGIN+categoryPath(category)},{name:post.title,item:url}].map((item,index)=>({"@type":"ListItem",position:index+1,...item}))},
   ]}
 }

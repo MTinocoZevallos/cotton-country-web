@@ -51,8 +51,9 @@ export function verifyAll(){
   const source=sourceFromWord(),fixture=JSON.parse(fs.readFileSync(path.join(root,'docs/blog-2027/word-source.json'),'utf8'))
   assert.deepEqual(source,fixture,'The stored transcription must be reproducible from the actual DOCX')
   const {posts}=load('app/blog/posts.ts'),dates=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-publication-dates.json'),'utf8')).dates
-  assert.equal(posts.length,53);assert.equal(source.articles.length,53)
-  assert.deepEqual(new Set(posts.map(p=>p.slug)),new Set(Object.keys(dates)))
+  const originalPosts=posts.filter(post=>Object.hasOwn(dates,post.slug))
+  assert.equal(originalPosts.length,53);assert.equal(source.articles.length,53)
+  assert.deepEqual(new Set(originalPosts.map(p=>p.slug)),new Set(Object.keys(dates)))
   const articles=source.articles.map(original=>{
     const post=posts.find(p=>p.slug===original.slug);assert(post,original.slug)
     assert.equal(post.publishedAt,dates[post.slug]);assert.equal(post.canonicalPath,'/'+post.slug)

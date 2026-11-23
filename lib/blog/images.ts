@@ -1,5 +1,5 @@
 // Existing approved assets; dimensions read from the original files.
-export type BlogImage = { src: string; width: number; height: number; alt: string; visible?: false }
+export type BlogImage = { src: string; width: number; height: number; alt: string; visible?: false; pendingApproval?: true; socialSrc?: string }
 const images: Record<string, BlogImage> = {
   "el-algodon-se-caso-con-el-poliester-en-oxford": {
     "src": "/blog/el-algodon-se-caso-con-el-poliester-en-oxford.jpg",
@@ -318,6 +318,31 @@ const images: Record<string, BlogImage> = {
     "width": 1000,
     "height": 667,
     "alt": "Detalle de las piezas de una máquina textil industrial"
+  },
+  "que-significa-algodon-24-1-30-1": {
+    "src": "/blog/que-significa-algodon-24-1-30-1.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Dos hilos claros de distinto grosor sobre una superficie gris"
+  },
+  "por-que-encogen-las-telas": {
+    "src": "/blog/por-que-encogen-las-telas.webp",
+    "width": 1672,
+    "height": 941,
+    "alt": "Rollo de tela azul extendido sobre una mesa junto a una regla y patrones de confección"
+  },
+  "por-que-destinen-los-uniformes": {
+    "src": "/blog/por-que-destinen-los-uniformes.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Telas azules y granates junto a recipientes con líquidos de color en un laboratorio textil"
+  },
+  "ubicacion-cintas-reflectivas-uniformes": {
+    "src": "/blog/alta-visibilidad/prendas-vistas.svg",
+    "socialSrc": "/blog/alta-visibilidad/prendas-vistas.png",
+    "width": 1000,
+    "height": 1560,
+    "alt": "Vistas delantera y posterior de chaleco, casaca, polos de manga corta y larga, pantalón y conjunto; esquemas sin escala ni clase atribuida"
   }
 }
 
