@@ -18,12 +18,12 @@ test('the original 53 complete records, approved images and related recommendati
     assert.deepEqual(blog.relatedPosts(post).map(p=>p.slug),old.related)
   }
 })
-test('four new articles retain every approved word, title and slug and have no invented publication dates',()=>{
+test('four new articles retain every approved word, title and slug and use the authorized common publication date',()=>{
   assert.equal(blog.posts.length,57);assert.equal(new Set(blog.posts.map(p=>p.slug)).size,57)
   for(const source of approved){const post=blog.posts.find(p=>p.slug===source.slug);assert(post)
     assert.equal(post.title,source.title);assert.equal(post.editorialNumber,source.number)
     assert.equal(prose(post.content),prose(source.approvedText),source.slug)
-    assert.equal(post.canonicalPath,'/'+source.slug);assert.equal(post.publishedAt,undefined);assert.equal(post.updatedAt,undefined)
+    assert.equal(post.canonicalPath,'/'+source.slug);assert.equal(post.publishedAt,"2026-11-23");assert.equal(post.updatedAt,undefined)
     assert(!post.content.includes('INSERTAR AQUÍ'));assert(!post.content.includes('Ver especificaciones'))
     assert(blog.categoryForPost(post));assert(blog.postMetadata(post).description.length>0)
   }
@@ -104,5 +104,18 @@ test('three editable original SVG sheets have correct dimensions and do not cert
     assert.equal(actual.width,width);assert.equal(actual.height,height);assert(svg.includes('<title'));assert(svg.includes('<desc'))
     assert(!svg.includes('3M'));assert(!svg.includes('<image'));assert(!svg.includes('<script'))
     if(name==='prendas-vistas'){assert.equal((svg.match(/>Anterior</g)||[]).length,6);assert.equal((svg.match(/>Posterior</g)||[]).length,6);assert(!/Clase [123]/.test(svg));assert(svg.includes('sin escala'))}
+  }
+})
+
+
+test('publication date places the four new articles first in editorial order without reordering the historical archive',()=>{
+  const sorted=blog.orderPostsByPublication(blog.posts)
+  assert.deepEqual(sorted.slice(0,4).map(p=>p.editorialNumber),[54,55,56,57])
+  const historical=blog.posts.filter(p=>!p.editorialNumber)
+  assert.deepEqual(sorted.slice(4).map(p=>p.slug),blog.orderPostsByPublication(historical).map(p=>p.slug))
+  for(const post of sorted.slice(0,4)){
+    const meta=blog.postMetadata(post),schema=blog.postStructuredData(post)['@graph'].find(x=>x['@type']==='BlogPosting')
+    assert.equal(meta.openGraph.publishedTime,'2026-11-23')
+    assert.equal(schema.datePublished,'2026-11-23')
   }
 })

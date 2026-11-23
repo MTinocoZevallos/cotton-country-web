@@ -2712,6 +2712,7 @@ Necesita **producir mejor y comprar mejor**.
     excerpt: "Qué significan los títulos 20/1, 24/1 y 30/1 del algodón y cómo comparar telas de una misma construcción para elegir polos corporativos.",
     canonicalPath: "/que-significa-algodon-24-1-30-1",
     editorialNumber: 54,
+    publishedAt: "2026-11-23",
     content: `
 Cuando una empresa solicita polos corporativos, es habitual encontrar especificaciones como algodón 20/1, 24/1 o 30/1. Estos números identifican el título del hilo utilizado para fabricar la tela.
 
@@ -2786,6 +2787,7 @@ Entenderla permite interpretar mejor las especificaciones textiles y tomar decis
     excerpt: "Por qué encogen las telas, cómo evaluar tolerancias y por qué importan el reposo antes del corte y las instrucciones de cuidado de los uniformes.",
     canonicalPath: "/por-que-encogen-las-telas",
     editorialNumber: 55,
+    publishedAt: "2026-11-23",
     content: `
 ¿Alguna vez compraste un polo que te quedaba perfecto y después de lavarlo terminó más corto o ajustado? Lo mismo puede ocurrir con los uniformes de una empresa.
 
@@ -2920,6 +2922,7 @@ Para una empresa, esto puede significar polos que quedan cortos, camisas demasia
     excerpt: "¿Por qué un uniforme pierde su color después del lavado? Conoce la solidez del color, las diferencias entre lotes de tela y cómo evitar problemas en futuras reposiciones.",
     canonicalPath: "/por-que-destinen-los-uniformes",
     editorialNumber: 56,
+    publishedAt: "2026-11-23",
     content: `
 Imagina que una empresa entrega pantalones grises a todos sus vendedores. El lunes siguiente, después del primer lavado, varios trabajadores llegan con los pantalones de color rosado.
 
@@ -3038,6 +3041,7 @@ La resistencia del color y las diferencias de tonalidad entre lotes son aspectos
     excerpt: "Criterios para comprar uniformes de alta visibilidad: ISO 20471, tipos ANSI/ISEA 107, superficies mínimas y distribución de cintas retrorreflectivas.",
     canonicalPath: "/ubicacion-cintas-reflectivas-uniformes",
     editorialNumber: 57,
+    publishedAt: "2026-11-23",
     content: `
 En un almacén, un trabajador puede preparar pedidos lejos de los montacargas, mientras otro dirige maniobras de camiones. Ambos pertenecen a la misma empresa, pero su exposición al riesgo es diferente.
 
