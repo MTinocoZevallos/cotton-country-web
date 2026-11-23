@@ -1,0 +1,12 @@
+.table { width: 100%; max-width: 100%; margin-block: 28px; }
+.table:focus-visible { outline: 2px solid var(--cc-blue); outline-offset: 3px; }
+.table table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 15px; line-height: 1.65; }
+.table :is(th, td) { padding: 12px 10px; border-bottom: 1px solid var(--cc-line); text-align: left; vertical-align: top; white-space: normal; overflow-wrap: anywhere; }
+.table th { font-weight: 600; }
+@media (max-width: 575px) {
+  .table table { font-size: 14px; }
+  .table :is(th, td) { padding: 10px 6px; }
+  .table table:has(thead th:nth-child(3)) thead th:nth-child(1) { width: 40%; }
+  .table table:has(thead th:nth-child(3)) thead th:nth-child(2) { width: 35%; }
+  .table table:has(thead th:nth-child(3)) thead th:nth-child(3) { width: 25%; }
+}

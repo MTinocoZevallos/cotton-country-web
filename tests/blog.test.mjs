@@ -15,6 +15,7 @@ function load(file){
   const compiledModule={exports:{}};cache.set(file,compiledModule)
   const source=ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX}}).outputText
   const localRequire=name=>{
+    if(name.endsWith('.css'))return {default:{table:'shrinkage-table'}}
     if(!name.startsWith('.')&&!name.startsWith('@/'))return require(name)
     const base=name.startsWith('@/')?path.join(root,name.slice(2)):path.resolve(path.dirname(file),name)
     const target=[base+'.ts',base+'.tsx',path.join(base,'index.ts')].find(fs.existsSync)

@@ -28,6 +28,26 @@ test('four new articles retain every approved word, title and slug and have no i
     assert(blog.categoryForPost(post));assert(blog.postMetadata(post).description.length>0)
   }
 })
+test('article 55 renders both approved tables with their exact values and reference caveat',()=>{
+  const post=blog.posts.find(p=>p.editorialNumber===55)
+  const blocks=content.parseContent(post.content,{markdownTables:true}),tables=blocks.filter(b=>b.type==='table')
+  assert.deepEqual(tables,[
+    {type:'table',headers:['Encogimiento','Centímetros que pierde','Largo final'],rows:[['1 %','0,7 cm','69,3 cm'],['2 %','1,4 cm','68,6 cm'],['3 %','2,1 cm','67,9 cm'],['5 %','3,5 cm','66,5 cm']]},
+    {type:'table',headers:['Tipo de tejido','Cambio dimensional de referencia'],rows:[['Tejidos planos de algodón y determinadas mezclas','±3 %'],['Tejidos de punto','±4 %'],['Algunas construcciones de interlock','±5 %']]},
+  ])
+  assert(blocks.some(b=>b.type==='paragraph'&&content.inlineText(b.children).includes('no límites legales universales ni tolerancias obligatorias')))
+  const {default:Content}=load('components/blog/Content.tsx')
+  const html=renderToStaticMarkup(createElement(Content,{blocks,editorialTables:true}))
+  assert.equal((html.match(/<table>/g)||[]).length,2)
+  assert.equal((html.match(/scope="col"/g)||[]).length,5)
+  assert.equal((html.match(/scope="row"/g)||[]).length,7)
+  for(const href of ['/como-definir-un-proyecto-de-uniformes-corporativos','/por-que-destinen-los-uniformes'])assert(html.includes('href="'+href+'"'))
+})
+test('Markdown table support is opt-in and does not reinterpret existing articles',()=>{
+  const markdown='| A | B |\n|---|---|\n| Uno | Dos |'
+  assert.equal(content.parseContent(markdown).filter(b=>b.type==='table').length,0)
+  assert.equal(content.parseContent(markdown,{markdownTables:true}).filter(b=>b.type==='table').length,1)
+})
 test('articles 54–56 use their approved lossless WebP images in covers and social metadata',()=>{
   const files=[
     ['que-significa-algodon-24-1-30-1.webp','ebc50b48fa07f2a30f6ce906d1ae722b15af025904ff5135e9933a94ec2f3d0c'],

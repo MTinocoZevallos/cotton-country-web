@@ -2783,107 +2783,135 @@ Entenderla permite interpretar mejor las especificaciones textiles y tomar decis
   {
     slug: "por-que-encogen-las-telas",
     title: "¿Por qué encogen las telas? Del corte al primer lavado",
-    excerpt: "El encogimiento puede comenzar antes del corte. Conoce la relajación de las telas, la estabilidad dimensional y las pruebas de lavado para uniformes.",
+    excerpt: "Por qué encogen las telas, cómo evaluar tolerancias y por qué importan el reposo antes del corte y las instrucciones de cuidado de los uniformes.",
     canonicalPath: "/por-que-encogen-las-telas",
     editorialNumber: 55,
     content: `
-Una de las situaciones más incómodas al comprar uniformes es descubrir que una prenda, después de lavarse, ya no conserva sus medidas originales. Un polo que quedó perfecto durante la prueba puede terminar más corto, más ajustado o incluso deformado.
+¿Alguna vez compraste un polo que te quedaba perfecto y después de lavarlo terminó más corto o ajustado? Lo mismo puede ocurrir con los uniformes de una empresa.
 
-Solemos atribuir este problema al lavado. Sin embargo, el encogimiento puede comenzar mucho antes, durante la fabricación, el almacenamiento o el corte de la tela.
+El encogimiento es un comportamiento normal de muchas telas, especialmente las de algodón. Sin embargo, **existen procedimientos para controlarlo y evitar que las prendas cambien demasiado de tamaño**.
 
-Comprender este proceso permite entender por qué dos prendas aparentemente iguales pueden comportarse de manera diferente.
 ## ¿Por qué encogen las telas?
-Durante su fabricación, las telas atraviesan procesos de tejido, teñido, secado y acabado. En varias de estas etapas son sometidas a tensiones que pueden estirarlas o modificar temporalmente sus dimensiones.
 
-Cuando esas tensiones desaparecen, la tela tiende a recuperar una configuración más estable. Este fenómeno se conoce como encogimiento por relajación.
+Durante su fabricación, las telas pueden estirarse y acumular tensiones. Cuando estas desaparecen, los hilos se acomodan y la tela puede reducir sus dimensiones.
 
-Es especialmente importante en las telas de punto, como jersey, piqué, interlock o franela de punto, porque su estructura de pequeñas lazadas permite mayor movimiento que muchos tejidos planos.
+Esto ocurre especialmente en los **tejidos de punto**, utilizados en polos, poleras, hoodies y buzos. También puede suceder en los **tejidos planos**, como los empleados en camisas y pantalones.
 
-Pero el encogimiento no es exclusivo del algodón ni de las telas de punto. También puede presentarse en tejidos planos y mezclas de fibras, aunque sus causas y magnitudes varían.
-## El encogimiento puede comenzar antes del corte
-Imaginemos un rollo de tela recién recibido en un taller de confecciones.
+Existen diferentes causas de encogimiento:
 
-Para facilitar su transporte y almacenamiento, la tela permanece enrollada y puede conservar tensiones acumuladas durante su fabricación.
+- **Por relajación:** la tela libera tensiones acumuladas durante su fabricación y cambia de dimensiones.
+- **Por lavado:** el agua y el movimiento permiten que los hilos y las fibras se reacomoden.
+- **Por temperatura:** el calor excesivo durante el lavado o secado puede provocar cambios adicionales en determinados materiales.
 
-Si se desenrolla, se estira sobre una mesa y se corta inmediatamente, existe el riesgo de que las piezas cambien de tamaño cuando el material termine de relajarse.
+Estos efectos pueden presentarse simultáneamente.
 
-Esto significa que una pieza cortada con las medidas correctas podría reducirse posteriormente, incluso antes de convertirse en una prenda terminada.
+## ¿Cuánto puede encoger una prenda?
 
-El problema no necesariamente está en el patrón o en la habilidad del operario. Puede encontrarse en el comportamiento dimensional de la tela.
-## ¿Por qué es importante dejar reposar la tela antes de cortarla?
-El reposo permite que el material libere parte de las tensiones acumuladas y se estabilice antes de realizar el corte.
+No todas las telas encogen igual. Por ejemplo, un polo de 70 centímetros de largo puede experimentar los siguientes cambios:
 
-En las telas de punto, especialmente aquellas con elasticidad, esta práctica resulta fundamental para obtener piezas de dimensiones consistentes.
+| Encogimiento | Centímetros que pierde | Largo final |
+|---|---|---|
+| 1 % | 0,7 cm | 69,3 cm |
+| 2 % | 1,4 cm | 68,6 cm |
+| 3 % | 2,1 cm | 67,9 cm |
+| 5 % | 3,5 cm | 66,5 cm |
 
-El procedimiento consiste en extender o disponer la tela sin tensiones excesivas, respetando las condiciones apropiadas para su estructura y composición.
+Una reducción de dos o tres centímetros puede afectar considerablemente la comodidad y presentación de un uniforme.
 
-El tiempo necesario no es universal: depende del tipo de tela, su presentación, el proceso de fabricación y las indicaciones técnicas del proveedor.
+### ¿Cuánto encogimiento permiten las normas?
 
-Lo importante es no cortar una tela que todavía se encuentra artificialmente estirada.
+Existen normas internacionales, como ISO 5077 y AATCC TM135, que permiten medir cuánto cambia una tela después del lavado.
 
-También debe evitarse tensionarla nuevamente durante el tendido, porque hacerlo puede anular parte del beneficio del reposo.
+Sin embargo, estas normas de ensayo no establecen un porcentaje máximo universal para todas las prendas.
 
-Conviene recordar que este procedimiento ayuda a controlar los cambios dimensionales durante la confección, pero no reemplaza las pruebas de encogimiento al lavado.
-## ¿Qué ocurre durante el primer lavado?
-El agua, la temperatura, la agitación y el secado pueden provocar nuevos cambios dimensionales.
+En determinadas especificaciones textiles se utilizan los siguientes valores de referencia:
 
-En determinadas telas de algodón, el lavado facilita que las fibras y los hilos se reorganicen y que la estructura del tejido se relaje.
+| Tipo de tejido | Cambio dimensional de referencia |
+|---|---|
+| Tejidos planos de algodón y determinadas mezclas | ±3 % |
+| Tejidos de punto | ±4 % |
+| Algunas construcciones de interlock | ±5 % |
 
-Por eso, una prenda puede reducir su largo, su ancho o ambas dimensiones.
+*Estos valores son referencias de determinadas especificaciones técnicas, no límites legales universales ni tolerancias obligatorias para todos los uniformes en el Perú.*
 
-El comportamiento tampoco tiene que ser igual en todas las direcciones. Un polo puede perder más centímetros de largo que de ancho, alterando su proporción original.
+Las tolerancias aplicables deben definirse según el material, las condiciones de lavado y las especificaciones de compra.
 
-En algunos casos, además del encogimiento, aparecen deformaciones como costuras laterales torcidas o diferencias entre las medidas de distintas partes de la prenda.
-## ¿Cuánto puede encoger una tela?
-No existe un porcentaje válido para todas las telas.
+Por eso, **un comprador debería conocer qué porcentaje de encogimiento admite su proveedor y cómo lo comprueba**.
 
-El encogimiento depende de la composición, la construcción del tejido, los acabados y las condiciones de lavado.
+## El problema puede comenzar antes del corte
 
-Por ejemplo, si un polo mide 70 centímetros de largo y después del lavado mide 68,6 centímetros, ha perdido 1,4 centímetros, equivalentes al 2 % de su longitud original.
+Muchas personas creen que las prendas solo encogen cuando se lavan. Sin embargo, algunos problemas relacionados con sus medidas pueden originarse durante la confección.
 
-Esta diferencia puede parecer pequeña, pero resulta importante cuando una empresa entrega cientos de uniformes confeccionados según una tabla de medidas.
+Las telas llegan a los talleres generalmente enrolladas y pueden conservar tensiones de su fabricación.
 
-Por ello, los porcentajes de encogimiento deben evaluarse por separado en largo y ancho y bajo condiciones de ensayo definidas.
-## ¿Se puede evitar completamente el encogimiento?
-Los fabricantes pueden reducirlo mediante procesos de estabilización y acabados específicos.
+Si una tela se extiende demasiado estirada y se corta inmediatamente, las piezas pueden cambiar de tamaño cuando el material se relaje.
 
-En las telas de punto de algodón, uno de los procedimientos utilizados es la compactación, que busca disminuir parte del encogimiento residual antes de que la tela llegue a confección.
+Por eso, especialmente en los tejidos de punto, se acostumbra dejar reposar la tela antes del corte.
 
-Sin embargo, ningún proceso debería considerarse una garantía universal de encogimiento cero.
+Este procedimiento ayuda a mantener las medidas previstas, aunque no sustituye las pruebas de encogimiento después del lavado.
 
-La estabilidad dimensional debe comprobarse mediante pruebas apropiadas para el material y el uso previsto.
-## El cuidado de la prenda también importa
-Incluso una tela correctamente estabilizada puede sufrir cambios dimensionales cuando se lava en condiciones inadecuadas.
+## ¿Cómo sabe un confeccionista qué tratamiento necesita cada tela?
 
-El uso de agua demasiado caliente, temperaturas elevadas de secado o productos químicos agresivos puede afectar tanto a polos de punto como a camisas de tejido plano, por ejemplo, las confeccionadas en Oxford.
+Aquí interviene un documento fundamental: **la ficha técnica del fabricante textil**.
 
-En determinadas lavanderías industriales se utilizan productos alcalinos, incluida la soda cáustica, para procesos específicos de limpieza. Su concentración, temperatura y tiempo de exposición deben ser compatibles con el material. No puede atribuirse un encogimiento a un producto concreto sin conocer las condiciones del proceso.
+Los confeccionistas y proveedores de uniformes deben contar con la información técnica de las telas que utilizan.
 
-Por eso, la etiqueta de lavado no es un simple accesorio: comunica las condiciones de cuidado recomendadas para conservar las características de la prenda.
+Esta documentación puede indicar:
 
-Del mismo modo, el confeccionista debe contar con la ficha técnica del fabricante de la tela, donde se indiquen su composición, estabilidad dimensional, acabados y recomendaciones de procesamiento y cuidado. Esta información permite tomar decisiones adecuadas antes del corte y durante la confección.
-## ¿Cómo se comprueba el encogimiento de una tela?
-Una forma de evaluarlo consiste en medir una muestra antes del lavado, someterla a condiciones controladas de lavado y secado, y volver a medirla.
+- La composición de la tela: algodón, poliéster o mezclas.
+- Su comportamiento frente al encogimiento.
+- Las recomendaciones de preparación y tratamiento durante la confección.
+- Las condiciones apropiadas de lavado, secado y planchado.
 
-La diferencia permite calcular el porcentaje de cambio dimensional.
+No todas las telas se comportan igual. Algunas requieren cuidados especiales antes del corte, mientras que otras pueden ser sensibles a determinadas temperaturas.
 
-Existen métodos normalizados, como AATCC TM135 y los procedimientos relacionados con ISO 6330 e ISO 5077, que permiten realizar evaluaciones comparables.
+**Si un confeccionista desconoce las características de la tela, ¿cómo puede saber qué tratamiento darle o qué instrucciones de lavado colocar en la prenda?**
 
-En proyectos de uniformes, estas pruebas ayudan a establecer tolerancias y comprobar si la tela cumple con las condiciones acordadas antes de iniciar la producción.
-## ¿Qué debería exigir una empresa a su proveedor de uniformes?
-Además de evaluar la apariencia y comodidad de las prendas, conviene considerar tres aspectos:
-- Estabilidad antes del corte: verificar que la tela haya sido preparada y relajada adecuadamente.
-- Control del encogimiento: conocer el comportamiento dimensional del material después del lavado.
-- Consistencia de medidas: comprobar que las prendas terminadas respeten las tolerancias acordadas.
-También es importante comunicar las condiciones habituales de lavado de los uniformes, especialmente cuando estarán sometidos a procesos frecuentes o industriales.
-## Conclusión: el encogimiento se controla desde la tela, no solamente desde el lavado
-El encogimiento es un comportamiento físico que puede manifestarse durante distintas etapas de fabricación y uso.
+La experiencia en confección es importante, pero no reemplaza la información técnica del material.
 
-Una tela mal estabilizada, cortada bajo tensión o sin una evaluación adecuada puede comprometer las medidas de una prenda incluso cuando su confección sea correcta.
+## Las etiquetas de lavado también son importantes
 
-Por eso, dejar reposar la tela antes del corte, controlar su estabilidad dimensional y respetar las instrucciones de lavado son prácticas importantes para fabricar y conservar uniformes consistentes.
+Una prenda correctamente confeccionada puede sufrir cambios de tamaño si se lava o seca de manera inadecuada.
 
-En Cotton Country consideramos que la calidad de un uniforme no se demuestra únicamente cuando se entrega, sino también cuando conserva sus características durante el uso cotidiano.
+La temperatura del agua, los detergentes, el secado y los tratamientos de lavandería industrial pueden influir en su comportamiento.
+
+Aunque las etiquetas de cuidado no siempre están presentes en los uniformes confeccionados por encargo, son importantes para conservar las características de las prendas.
+
+Estas etiquetas deben elaborarse a partir de la información técnica de las telas utilizadas e indicar las condiciones apropiadas de lavado, secado y planchado.
+
+No se trata simplemente de colocar una etiqueta, sino de proporcionar información útil para prolongar la vida de los uniformes y evitar problemas que podrían prevenirse con un cuidado adecuado.
+
+También es importante que las empresas informen a sus proveedores cuando sus uniformes estarán sometidos a lavados frecuentes o industriales.
+
+## ¿Cómo se comprueba el encogimiento?
+
+El procedimiento es sencillo de comprender: se mide una muestra de tela, se lava y seca bajo condiciones definidas y después se vuelve a medir.
+
+La diferencia permite calcular cuánto cambió de tamaño.
+
+Estas pruebas ayudan a verificar si la tela cumple con las tolerancias previstas antes de fabricar una cantidad importante de uniformes.
+
+Para el comprador, lo relevante no es conocer todos los detalles del ensayo, sino saber que **el encogimiento puede medirse y evaluarse antes de recibir las prendas**.
+
+## ¿Qué debería considerar una empresa al elegir su proveedor?
+
+Al comparar propuestas de uniformes, el precio y la apariencia no deberían ser los únicos criterios.
+
+También conviene conocer el comportamiento de las telas después del lavado, las tolerancias ofrecidas y las recomendaciones de cuidado.
+
+Estos aspectos forman parte de una compra bien planificada, como explicamos en nuestro artículo sobre [cómo definir correctamente un proyecto de uniformes corporativos](/como-definir-un-proyecto-de-uniformes-corporativos).
+
+Además del encogimiento, existen otros problemas que pueden aparecer durante el uso, como la pérdida de color. Puedes conocer sus causas en [¿Por qué los uniformes pierden su color?](/por-que-destinen-los-uniformes).
+
+## Conclusión: el encogimiento se conoce y se puede controlar
+
+El encogimiento es un comportamiento conocido en la industria textil. Los proveedores de uniformes y confeccionistas deben comprender las características de las telas que utilizan y contar con la información necesaria para tratarlas correctamente.
+
+El reposo antes del corte, las pruebas de lavado y las instrucciones de cuidado son prácticas conocidas. Sin embargo, los problemas de encogimiento siguen apareciendo en prendas que llegan al consumidor.
+
+Para una empresa, esto puede significar polos que quedan cortos, camisas demasiado ajustadas o uniformes que dejan de tener las medidas esperadas después de pocos lavados.
+
+**Conocer estos aspectos permite a los responsables de compras evaluar mejor a sus proveedores y elegir uniformes que conserven sus características durante el uso, más allá del precio o la apariencia inicial.**
 `,
   },
   {
