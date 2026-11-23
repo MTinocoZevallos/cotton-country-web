@@ -2709,72 +2709,75 @@ Necesita **producir mejor y comprar mejor**.
   {
     slug: "que-significa-algodon-24-1-30-1",
     title: "¿Qué significa algodón 24/1 o 30/1? Por qué el número mayor indica un hilo más fino",
-    excerpt: "Qué significan los títulos 24/1 y 30/1 del algodón, cómo se relacionan con la finura del hilo y por qué no deben confundirse con el gramaje de la tela.",
+    excerpt: "Qué significan los títulos 20/1, 24/1 y 30/1 del algodón y cómo comparar telas de una misma construcción para elegir polos corporativos.",
     canonicalPath: "/que-significa-algodon-24-1-30-1",
     editorialNumber: 54,
     content: `
-Cuando una empresa solicita polos corporativos, es frecuente encontrar especificaciones como algodón 20/1, 24/1 o 30/1. Son números habituales en las cotizaciones textiles, pero no siempre se interpretan correctamente.
+Cuando una empresa solicita polos corporativos, es habitual encontrar especificaciones como algodón 20/1, 24/1 o 30/1. Estos números identifican el título del hilo utilizado para fabricar la tela.
 
-Una confusión frecuente consiste en pensar que el algodón 30/1 es más grueso que el 24/1 porque su número es mayor. En realidad, sucede lo contrario.
-## ¿Por qué los hilos se llaman 24/1 o 30/1?
-Estos números corresponden al título del hilo, una forma de medir su finura.
+Aunque pueda parecer contradictorio, **un hilo de algodón 30/1 es más fino que uno 24/1**. Comprender esta diferencia ayuda a interpretar las cotizaciones y elegir adecuadamente las telas para uniformes.
 
-En el sistema inglés de numeración del algodón, conocido como Ne, se toma como referencia una libra de hilo y se calcula cuántas madejas de 840 yardas pueden obtenerse con ese peso.
+## ¿Qué significan los números 20/1, 24/1 y 30/1?
 
-Así, un hilo 24/1 permite obtener 24 madejas de esa longitud, mientras que uno 30/1 permite obtener 30.
+Estos números corresponden al título del hilo, una medida de su finura.
 
-Por eso, cuanto mayor es el número, más fino es el hilo.
+En el sistema inglés de numeración del algodón, conocido como Ne, cuanto mayor es el número, más fino es el hilo.
 
-El número después de la barra indica que se trata de un hilo sencillo, formado por una sola hebra hilada. No representa la cantidad de vueltas o torsiones que recibe el algodón durante su fabricación.
+Por ejemplo:
 
-Por ejemplo, entre los títulos más conocidos encontramos:
-- 20/1: hilo relativamente grueso.
-- 24/1: hilo más fino que el 20/1.
-- 30/1: hilo más fino que el 24/1.
-- 40/1: hilo todavía más fino.
-## Del hilo a la tela: jersey, piqué, franela y otros tejidos
-Una vez fabricado, el hilo puede utilizarse para producir diferentes estructuras textiles.
+- **20/1:** hilo más grueso.
+- **24/1:** hilo más fino que el 20/1.
+- **30/1:** hilo más fino que el 24/1.
+- **40/1:** hilo todavía más fino.
 
-Entre las más conocidas encontramos el jersey, utilizado habitualmente en polos de cuello redondo; el piqué, característico de muchos polos tipo box; el interlock, apreciado por su superficie uniforme; y la franela de punto, empleada frecuentemente en prendas de abrigo.
+Esta relación permite entender por qué dos polos aparentemente similares pueden confeccionarse con hilos de diferentes características.
 
-Esto significa que un hilo 24/1 o 30/1 no corresponde necesariamente a un único tipo de tela. Su resultado depende de cómo se teja y de los acabados posteriores.
+## ¿Qué diferencia existe entre un piqué 24/1 y un piqué 30/1?
+
+Imaginemos que una empresa está evaluando dos alternativas de piqué de algodón para confeccionar polos corporativos tipo box.
+
+Una utiliza hilo 24/1 y la otra, hilo 30/1.
+
+**El hilo 30/1 es más fino que el 24/1.** Cuando se comparan telas de la misma construcción y características equivalentes, esta diferencia puede influir en el tacto, la apariencia y el cuerpo de la tela.
+
+Por eso es importante comparar materiales equivalentes: piqué con piqué, jersey con jersey, y no telas de construcciones distintas como si fueran el mismo producto.
+
+## Del hilo a la prenda: jersey, piqué, interlock y franela
+
+El algodón puede utilizarse para fabricar diferentes tipos de tejidos, cada uno con aplicaciones particulares en la confección.
+
+Entre los más conocidos encontramos:
+
+- **Jersey:** utilizado habitualmente en polos de cuello redondo, camisetas y prendas casuales.
+- **Piqué:** característico de los polos tipo box, muy utilizados como uniformes corporativos.
+- **Interlock:** empleado en polos, camisetas y otras prendas de punto que requieren una superficie uniforme.
+- **Franela de punto:** utilizada frecuentemente en poleras, hoodies, buzos y otras prendas de abrigo.
+
+Cada construcción tiene características propias. Por eso, conocer el título del hilo es útil, pero también es importante identificar el tipo de tela que se está comprando.
+
 ## ¿Qué tiene de especial el algodón Pima peruano?
-El algodón Pima es reconocido internacionalmente por sus fibras extralargas, que permiten producir hilos finos, uniformes y resistentes.
 
-Mientras que en muchos polos comerciales encontramos títulos como 20/1, 24/1 o 30/1, con fibras de algodón de alta calidad también pueden elaborarse títulos más finos, como 50/1, 60/1 o 70/1, e incluso superiores cuando la materia prima y el proceso de hilatura lo permiten.
+El algodón Pima peruano es apreciado por la longitud y calidad de sus fibras, que permiten producir hilos finos, uniformes y resistentes.
 
-No obstante, un título más alto no convierte automáticamente una tela en algodón Pima. La calidad y procedencia de la fibra son tan importantes como la finura del hilo.
-## ¿Los hilos gruesos son mejores para invierno y los finos para verano?
-Como orientación general, los hilos más gruesos suelen utilizarse para construir telas con mayor cuerpo, apropiadas para determinadas prendas de invierno.
+Con fibras apropiadas y procesos de hilatura adecuados pueden obtenerse títulos como 50/1, 60/1 o 70/1, utilizados en determinados textiles de mayor finura.
 
-Los hilos más finos, en cambio, facilitan la fabricación de tejidos ligeros y suaves, especialmente valorados en prendas de verano.
+Sin embargo, **un título elevado no significa automáticamente que el algodón sea Pima**. La variedad y calidad de la fibra deben identificarse por separado.
 
-Pero esta relación no es absoluta. Una tela de hilo fino puede ser relativamente pesada y una de hilo grueso puede resultar ligera, dependiendo de su construcción.
+## ¿Qué debe considerar una empresa al comprar polos corporativos?
 
-Por eso, al elegir uniformes para una estación determinada, debemos evaluar la tela terminada y no solamente el título del hilo.
-## El título del hilo no es lo mismo que el gramaje
-Esta es una de las distinciones más importantes al comparar telas.
+Si una empresa recibe cotizaciones de polos en algodón 24/1 y 30/1, ya puede interpretar una diferencia fundamental: el segundo utiliza un hilo más fino.
 
-El título indica qué tan fino es el hilo. El gramaje, expresado habitualmente en gramos por metro cuadrado (g/m²), indica cuánto pesa una superficie determinada de tela.
+Para realizar una comparación adecuada, también debe verificar que las propuestas correspondan al mismo tipo de tejido, conocer la composición de la tela y, de ser posible, evaluar una muestra física.
 
-Por ejemplo, dos telas fabricadas con hilo 30/1 pueden tener gramajes diferentes si cambian la longitud de puntada, la densidad o la estructura del tejido.
+El tacto, la apariencia, la estabilidad después del lavado y la calidad de confección también son importantes para elegir un uniforme que responda al uso previsto.
 
-En consecuencia, el gramaje depende de la construcción de la tela y de la cantidad de material que contiene por superficie, no exclusivamente del título utilizado.
-## ¿Qué debería solicitar una empresa al comprar polos corporativos?
-En lugar de preguntar únicamente si un polo es 24/1 o 30/1, conviene solicitar una especificación más completa:
-- Composición de la tela.
-- Título del hilo.
-- Tipo de tejido: jersey, piqué, interlock u otro.
-- Gramaje en g/m².
-- Comportamiento frente al lavado y encogimiento.
-- Muestra física de la tela o prenda terminada.
-Esta información permite comparar propuestas con mayor precisión y evita que una decisión de compra se base solamente en un número.
 ## Conclusión
-En el sistema inglés de numeración del algodón, un hilo 30/1 es más fino que uno 24/1. Sin embargo, eso no significa necesariamente que produzca una tela más ligera, fresca o de mejor calidad.
 
-La fibra, el título, la estructura del tejido, el gramaje y los acabados trabajan en conjunto para determinar las características finales de una prenda.
+Los títulos 20/1, 24/1, 30/1 y 40/1 permiten identificar la finura del hilo de algodón. **Cuanto mayor es el número, más fino es el hilo.**
 
-Comprender estas diferencias ayuda a las empresas a elegir uniformes con mayor criterio y a comparar adecuadamente las propuestas de sus proveedores.
+Esta regla es especialmente útil al comparar telas de una misma construcción, como dos alternativas de piqué para polos corporativos.
+
+Entenderla permite interpretar mejor las especificaciones textiles y tomar decisiones de compra con mayor conocimiento.
 `,
   },
   {
