@@ -2917,119 +2917,119 @@ Para una empresa, esto puede significar polos que quedan cortos, camisas demasia
   {
     slug: "por-que-destinen-los-uniformes",
     title: "¿Por qué los uniformes pierden su color? El problema de las telas que destiñen",
-    excerpt: "Conoce las diferencias entre teñidos reactivos, directos y dispersos, y qué solicitar para evaluar la solidez del color de los uniformes.",
+    excerpt: "¿Por qué un uniforme pierde su color después del lavado? Conoce la solidez del color, las diferencias entre lotes de tela y cómo evitar problemas en futuras reposiciones.",
     canonicalPath: "/por-que-destinen-los-uniformes",
     editorialNumber: 56,
     content: `
-Las empresas invierten tiempo y recursos en definir sus colores corporativos. Cuando necesitan uniformes, buscan telas que se aproximen a esos tonos o incluso encargan tejidos teñidos especialmente para reproducir el color de su marca.
+Imagina que una empresa entrega pantalones grises a todos sus vendedores. El lunes siguiente, después del primer lavado, varios trabajadores llegan con los pantalones de color rosado.
 
-Pero ¿qué ocurre cuando, después de unos cuantos lavados, los polos comienzan a perder intensidad, las camisas se decoloran o los pantalones destiñen sobre otras prendas?
+Aunque parezca increíble, es una situación real que ocurrió hace algunos años en una empresa del sector retail.
 
-El problema va más allá de la apariencia. Los uniformes dejan de representar fielmente la identidad visual de la empresa, aparecen diferencias entre colaboradores y, en algunos casos, es necesario reemplazar prendas mucho antes de lo previsto.
+El problema no era solamente estético. Los uniformes habían perdido su apariencia original prácticamente desde el primer uso, generando incomodidad entre los trabajadores y un problema para la empresa.
 
-Una tela puede tener exactamente el color solicitado al momento de la entrega y, aun así, no conservarlo durante el uso.
+**¿Cómo puede una tela cambiar tanto de color después de un solo lavado?**
 
-Esto sucede porque conseguir un color determinado y garantizar su permanencia son dos desafíos diferentes.
+## ¿Por qué algunas telas pierden su color?
 
-La respuesta está, en buena medida, en los procesos de teñido y en una característica que pocas veces aparece en las solicitudes de cotización: la solidez del color.
-## ¿Por qué no todas las telas conservan el color de la misma manera?
-El teñido consiste en incorporar color a las fibras textiles mediante procesos que utilizan colorantes y productos auxiliares.
+Durante la fabricación, las telas pasan por procesos de teñido para obtener los colores deseados.
 
-Sin embargo, no todos los colorantes se comportan igual ni son apropiados para las mismas fibras.
+Sin embargo, conseguir un tono determinado no significa necesariamente que ese color vaya a mantenerse después de los lavados.
 
-El algodón, el poliéster y sus mezclas requieren tratamientos diferentes. Además, la forma en que el colorante se fija a la fibra influye en su resistencia al lavado, al frote, a la luz y a otras condiciones de uso.
+La permanencia del color depende de varios factores: la fibra utilizada, los colorantes, el proceso de teñido y las condiciones de uso.
 
-Por eso, dos telas que inicialmente presentan el mismo tono pueden tener comportamientos muy distintos después de varios meses de utilización.
-## Teñido reactivo: una opción frecuente para el algodón
-Los colorantes reactivos son ampliamente utilizados en telas de algodón, especialmente cuando se buscan colores definidos y buena resistencia al lavado.
+Por eso, dos prendas que inicialmente tienen el mismo color pueden comportarse de manera muy diferente.
 
-Su principal característica es que forman una unión química con la celulosa del algodón, favoreciendo la permanencia del color.
+## ¿Qué significa que una tela destiña?
 
-Esto los convierte en una alternativa apropiada para polos, camisas y otras prendas que deben lavarse con frecuencia.
+Aunque solemos utilizar la palabra *desteñir* para cualquier problema de color, pueden ocurrir situaciones distintas:
 
-Sin embargo, un teñido reactivo tampoco garantiza que una prenda nunca pierda color. El resultado depende de la selección del colorante, su correcta fijación, los lavados posteriores al teñido y las condiciones de cuidado.
+- **Pérdida de color:** una prenda pierde intensidad y comienza a verse descolorida.
+- **Transferencia de color:** el tinte pasa de una prenda a otra durante el lavado o por el roce.
+- **Cambio de tonalidad:** el color original se altera y puede adquirir una apariencia diferente.
 
-## Teñido directo: un proceso sencillo, pero con diferencias importantes
+Esto último ayuda a comprender el caso de los pantalones grises que terminaron rosados. Sin analizar aquella tela no es posible determinar la causa exacta, pero un cambio tan marcado puede estar relacionado con la diferente resistencia de los componentes del color frente al lavado.
 
-Los colorantes directos también se utilizan para teñir algodón.
+## ¿Qué es la solidez del color?
 
-Su aplicación suele ser relativamente sencilla y económica. A diferencia de los reactivos, se adhieren a las fibras principalmente mediante fuerzas físicas, sin formar el mismo tipo de enlace químico.
+En la industria textil se llama **solidez del color** a la capacidad de una tela para conservar su tonalidad frente al lavado, la luz, el roce y otras condiciones de uso.
 
-Por ello, muchos teñidos directos presentan menor resistencia al lavado, especialmente en determinados colores intensos.
+No es necesario conocer todos los procesos químicos del teñido para entender su importancia.
 
-Existen tratamientos que mejoran su comportamiento, pero es importante conocer las características del producto terminado.
+| Tipo de solidez | ¿Qué permite evaluar? |
+|---|---|
+| Al lavado | Si la tela pierde color o transfiere tinte al lavarse |
+| Al frote | Si el color se transfiere al rozar otra superficie |
+| A la luz | Si la exposición luminosa altera el color |
+| Al sudor | Cómo se comporta el color frente a la transpiración |
 
-Esto no significa que todo teñido directo sea defectuoso. Significa que su elección debe responder al uso previsto de la tela.
+Estas características pueden evaluarse mediante pruebas textiles.
 
-## ¿Y cómo se tiñe el poliéster?
+Una tela puede tener buena resistencia al lavado, pero comportarse de manera diferente frente al sol o al roce.
 
-El poliéster requiere otro tipo de colorantes, conocidos como dispersos.
+Por eso, **el color de una muestra nueva no es suficiente para conocer cómo se comportará un uniforme durante su uso**.
 
-Estos se aplican mediante procesos que permiten introducir el colorante en la fibra sintética, frecuentemente utilizando temperaturas elevadas y equipos especializados.
+## ¿El lavado también puede afectar el color?
 
-En las telas que mezclan algodón y poliéster pueden ser necesarios sistemas de teñido diferentes para cada componente.
+Sí. Las temperaturas elevadas, los blanqueadores, ciertos detergentes y los tratamientos inadecuados pueden alterar la tonalidad de una prenda.
 
-Por ejemplo, una mezcla puede combinar colorantes reactivos para el algodón y dispersos para el poliéster.
+Esto resulta especialmente importante cuando los uniformes se lavan con mucha frecuencia o se envían a lavanderías industriales.
 
-Esta es una de las razones por las que dos telas aparentemente similares pueden presentar diferencias de tonalidad o comportamiento.
+Las instrucciones de cuidado deben corresponder a las características reales de la tela. Por eso, la ficha técnica del fabricante textil es importante para determinar cómo debe tratarse y qué información incluir en la etiqueta de lavado.
 
-## Otros tipos de teñido
+Pero no todos los problemas pueden atribuirse al usuario. Una tela con una solidez insuficiente puede presentar cambios de color incluso cuando se respetan las condiciones de lavado recomendadas.
 
-La industria textil también utiliza otras familias de colorantes.
+## Otro problema: cuando los uniformes nuevos no tienen el mismo tono
 
-Los colorantes a la tina, por ejemplo, pueden ofrecer una elevada resistencia al lavado en determinadas aplicaciones sobre algodón.
+La pérdida de color no es el único inconveniente que puede enfrentar una empresa.
 
-Los colorantes sulfurosos se emplean en ciertos tonos oscuros, especialmente negros, aunque su comportamiento frente al frote y otros agentes depende de la formulación y el proceso.
+Imaginemos que una cadena de tiendas compra polos azules para sus trabajadores. Seis meses después necesita uniformes adicionales para nuevos colaboradores.
 
-Cada sistema tiene ventajas, limitaciones y aplicaciones específicas. No existe un único tipo de teñido ideal para todas las fibras y prendas.
+El proveedor entrega prendas del mismo modelo y color, pero **el azul de los nuevos polos es ligeramente diferente al de los anteriores**.
 
-## ¿Qué significa que una tela tenga buena solidez del color?
+Esto puede ocurrir incluso cuando las prendas antiguas no han perdido su color.
 
-En la industria textil se utiliza el término solidez del color para describir qué tan bien conserva una tela su tonalidad frente a diferentes condiciones.
+### ¿Por qué sucede?
 
-Las más relevantes para los uniformes son:
+Las telas se fabrican y tiñen en lotes de producción. Cuando se fabrica un nuevo lote, pueden aparecer pequeñas diferencias de tonalidad respecto del anterior.
 
-- Solidez al lavado: resistencia del color frente a los procesos de lavado.
+Estas variaciones pueden ser especialmente perceptibles en determinados tejidos de punto, como el jersey y el piqué utilizados en polos corporativos.
 
-- Solidez al frote: posibilidad de que el color se transfiera a otra superficie por contacto, en seco o en húmedo.
+El problema se vuelve más evidente cuando una empresa realiza reposiciones periódicas y necesita que sus trabajadores mantengan una apariencia uniforme.
 
-- Solidez a la luz: resistencia a la pérdida de intensidad por exposición luminosa.
+También es importante distinguir entre una diferencia de fabricación y el desgaste natural: un polo utilizado y lavado durante meses puede no tener exactamente el mismo aspecto que uno recién confeccionado.
 
-- Solidez al sudor: comportamiento del color frente a la transpiración.
+## ¿Cómo evitar diferencias de color en las reposiciones?
 
-Una tela puede obtener buenos resultados en una de estas pruebas y resultados diferentes en otra.
+Cuando una empresa utiliza uniformes de un color específico, conviene considerar las futuras reposiciones desde la compra inicial.
 
-Por ejemplo, un pantalón oscuro podría conservar su color después del lavado, pero transferir parte del tinte al rozar una superficie clara.
+Algunos aspectos importantes son:
 
-## ¿Por qué algunos uniformes destiñen?
+- **Muestra de color aprobada:** conservar una referencia física del tono original.
+- **Identificación del lote:** conocer de qué partida de tela provienen los uniformes.
+- **Control de tonalidad:** comprobar las diferencias entre la tela aprobada y las nuevas partidas.
+- **Planificación de reposiciones:** anticipar las necesidades de uniformes para reducir diferencias entre entregas.
 
-La pérdida de color puede relacionarse con una fijación insuficiente, colorante residual que no fue retirado adecuadamente, condiciones de lavado inadecuadas o una combinación de estos factores.
+No siempre es posible garantizar una coincidencia absoluta entre lotes fabricados en momentos distintos, pero sí es posible establecer tolerancias y controlar las variaciones.
 
-El uso de blanqueadores, productos químicos incompatibles, temperaturas excesivas y exposición prolongada a la luz también puede afectar determinadas tonalidades.
+## ¿Qué debería considerar una empresa al elegir uniformes?
 
-Por eso, no siempre es correcto atribuir el desteñido exclusivamente a un «mal tinte».
+Además del precio, la composición y el diseño, conviene preguntar cómo se comporta el color frente al lavado y qué medidas se toman para mantener la tonalidad en futuras entregas.
 
-Es necesario conocer tanto el proceso de fabricación como las condiciones de uso y mantenimiento.
+Estas consideraciones forman parte de una buena planificación, como explicamos en [cómo definir correctamente un proyecto de uniformes corporativos](/como-definir-un-proyecto-de-uniformes-corporativos).
 
-## ¿Qué debería solicitar una empresa al comprar uniformes?
+Y así como el color puede cambiar después del lavado, las prendas también pueden perder sus medidas. Puedes conocer las causas en [¿Por qué encogen las telas?](/por-que-encogen-las-telas).
 
-Cuando el color institucional es importante, conviene solicitar al proveedor información sobre la composición de la tela y su comportamiento frente al lavado, el frote y la luz.
+## Conclusión: el color debe durar, no solamente verse bien al principio
 
-También resulta recomendable aprobar una muestra física del color y establecer tolerancias para las diferencias entre lotes de producción.
+Un uniforme puede tener el color perfecto cuando se entrega y perderlo después de pocos lavados. También puede conservarlo correctamente, pero presentar diferencias de tonalidad cuando la empresa necesita nuevas prendas.
 
-En proyectos de uniformes de gran volumen, estas precauciones ayudan a evitar que prendas entregadas en diferentes momentos presenten variaciones visibles.
+Son problemas distintos, aunque ambos afectan la imagen de una organización y pueden generar gastos inesperados.
 
-La etiqueta de cuidado también cumple una función importante: informa las condiciones de lavado y mantenimiento que deben respetarse para conservar la prenda.
+Por eso, **los confeccionistas y proveedores de uniformes deben contar con las fichas técnicas de las telas que utilizan**. Esta información es fundamental para conocer sus características, determinar los tratamientos adecuados durante la confección y establecer las recomendaciones de lavado y cuidado de las prendas.
 
-## Conclusión: el color también es una característica de calidad
+La resistencia del color y las diferencias de tonalidad entre lotes son aspectos conocidos en la industria textil, pero no siempre reciben la atención necesaria durante una compra.
 
-Un uniforme no debería evaluarse únicamente por la intensidad de su color cuando es nuevo.
-
-La verdadera diferencia aparece cuando ese color debe resistir el uso cotidiano, los lavados y las condiciones de trabajo.
-
-Comprender las diferencias entre teñidos reactivos, directos, dispersos y otros sistemas permite tomar mejores decisiones, pero lo más importante es comprobar el comportamiento de la tela terminada.
-
-En Cotton Country consideramos que la calidad del color debe formar parte de las especificaciones de compra, especialmente cuando los uniformes representan la identidad visual de una empresa.
+**Elegir un proveedor de uniformes también significa confiar en que conoce los materiales con los que trabaja y dispone de la información necesaria para que las prendas conserven sus características durante el uso y las futuras reposiciones.**
 `,
   },
   {

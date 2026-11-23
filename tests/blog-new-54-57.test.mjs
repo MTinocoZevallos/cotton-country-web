@@ -48,6 +48,23 @@ test('Markdown table support is opt-in and does not reinterpret existing article
   assert.equal(content.parseContent(markdown).filter(b=>b.type==='table').length,0)
   assert.equal(content.parseContent(markdown,{markdownTables:true}).filter(b=>b.type==='table').length,1)
 })
+test('article 56 retains the opening anecdote, four-row colorfastness table and both approved links',()=>{
+  const post=blog.posts.find(p=>p.editorialNumber===56)
+  assert(post.content.trim().startsWith('Imagina que una empresa entrega pantalones grises a todos sus vendedores.'))
+  const blocks=content.parseContent(post.content,{markdownTables:true}),tables=blocks.filter(b=>b.type==='table')
+  assert.deepEqual(tables,[{type:'table',headers:['Tipo de solidez','¿Qué permite evaluar?'],rows:[
+    ['Al lavado','Si la tela pierde color o transfiere tinte al lavarse'],
+    ['Al frote','Si el color se transfiere al rozar otra superficie'],
+    ['A la luz','Si la exposición luminosa altera el color'],
+    ['Al sudor','Cómo se comporta el color frente a la transpiración'],
+  ]}])
+  const {default:Content}=load('components/blog/Content.tsx')
+  const html=renderToStaticMarkup(createElement(Content,{blocks,editorialTables:true}))
+  assert.equal((html.match(/<table>/g)||[]).length,1)
+  assert.equal((html.match(/scope="col"/g)||[]).length,2)
+  assert.equal((html.match(/scope="row"/g)||[]).length,4)
+  for(const href of ['/como-definir-un-proyecto-de-uniformes-corporativos','/por-que-encogen-las-telas'])assert(html.includes('href="'+href+'"'))
+})
 test('articles 54–56 use their approved lossless WebP images in covers and social metadata',()=>{
   const files=[
     ['que-significa-algodon-24-1-30-1.webp','ebc50b48fa07f2a30f6ce906d1ae722b15af025904ff5135e9933a94ec2f3d0c'],

@@ -21,7 +21,8 @@ export default function Article({ post }: { post: Post }) {
   const approvedPeruvianSize = post.slug === "la-talla-peruana"
   const highVisibility = post.slug === "ubicacion-cintas-reflectivas-uniformes"
   const shrinkage = post.slug === "por-que-encogen-las-telas"
-  const category=categoryForPost(post), image=getPostImage(post.slug), blocks=parseContent(post.content, { markdownTables: shrinkage })
+  const colorFastness = post.slug === "por-que-destinen-los-uniformes"
+  const category=categoryForPost(post), image=getPostImage(post.slug), blocks=parseContent(post.content, { markdownTables: shrinkage || colorFastness })
   const first=blocks[0]?.type==="paragraph"?blocks[0]:undefined
   const headings=blocks.filter(block=>block.type==="heading")
   const bodyBlocks=first?blocks.slice(1):blocks
@@ -48,7 +49,7 @@ export default function Article({ post }: { post: Post }) {
             <Content blocks={bodyBlocks.slice(0,chatStart)}/>
             {fullSizeChat ? <HistoricalChat exchanges={parseFullSizeChat(post.content)}/> : <HistoricalChat source={chatSource}/>}
             <Content blocks={parseContent(chatTail)}/>
-          </> : highVisibility ? <HighVisibilityContent blocks={bodyBlocks}/> : <Content blocks={bodyBlocks} editorialTables={shrinkage}/>}
+          </> : highVisibility ? <HighVisibilityContent blocks={bodyBlocks}/> : <Content blocks={bodyBlocks} editorialTables={shrinkage || colorFastness}/>}
         </article>
       </div>
       <div className={styles.articleClosing}><Link prefetch={false} href="/blog"><ArrowLeft size={16} aria-hidden="true"/> Volver al blog</Link><Link prefetch={false} href={categoryPath(category)}>Más sobre {category.name.toLowerCase()} <ArrowRight size={16} aria-hidden="true"/></Link></div>
