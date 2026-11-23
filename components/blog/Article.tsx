@@ -5,10 +5,13 @@ import type { Post } from "@/app/blog/posts"
 import { editorialSerif } from "@/components/home-font"
 import { categoryForPost, categoryPath, getPostImage, postStructuredData, readingMinutes, relatedPosts, serializeStructuredData } from "@/lib/blog"
 import { publicationLabel } from "@/lib/blog/publication"
+import { supplementaryReading } from "@/lib/blog/reading-links"
+import { posts } from "@/app/blog/posts"
 import { inlineText, parseContent } from "@/lib/blog/content"
 import Content, { InlineContent } from "./Content"
 import BlogCard from "./BlogCard"
 import HistoricalChat from "./HistoricalChat"
+import HighVisibilityContent from "./HighVisibilityContent"
 import { historicalChatSource, parseFullSizeChat } from "@/lib/blog/historical-chat"
 import styles from "./blog.module.css"
 
@@ -18,7 +21,10 @@ export default function Article({ post }: { post: Post }) {
   const approvedInterview = post.slug === "que-significa-tallas-completas-en-ropa"
   const approvedNtp = post.slug === "ntp-para-la-designacion-de-tallas"
   const approvedPeruvianSize = post.slug === "la-talla-peruana"
-  const category=categoryForPost(post), image=getPostImage(post.slug), blocks=parseContent(post.content)
+  const highVisibility = post.slug === "ubicacion-cintas-reflectivas-uniformes"
+  const shrinkage = post.slug === "por-que-encogen-las-telas"
+  const colorFastness = post.slug === "por-que-destinen-los-uniformes"
+  const category=categoryForPost(post), image=getPostImage(post.slug), blocks=parseContent(post.content, { markdownTables: shrinkage || colorFastness })
   const first=blocks[0]?.type==="paragraph"?blocks[0]:undefined
   const headings=blocks.filter(block=>block.type==="heading")
   const bodyBlocks=first?blocks.slice(1):blocks
@@ -34,10 +40,10 @@ export default function Article({ post }: { post: Post }) {
         <nav className={styles.breadcrumbs} aria-label="Ruta de navegación"><Link prefetch={false} href="/blog">Blog</Link><span aria-hidden="true">/</span><Link prefetch={false} href={categoryPath(category)}>{category.name}</Link></nav>
         <p className={styles.eyebrow}>{category.name}</p>
         <h1>{post.title}</h1>
-        <div className={styles.articleMeta}><span>Cotton Country · {revised?"Edición revisada":"Archivo editorial"}</span><span>Lectura aprox. {readingMinutes(post)} min</span>{post.publishedAt&&publicationLabel(post.publishedAt)&&<time dateTime={post.publishedAt}>Publicado el {publicationLabel(post.publishedAt)}</time>}{post.updatedAt&&<time dateTime={post.updatedAt}>Revisado el {revised}</time>}</div>
+        <div className={styles.articleMeta}><span>Cotton Country · {post.editorialNumber?"Artículo":revised?"Edición revisada":"Archivo editorial"}</span><span>Lectura aprox. {readingMinutes(post)} min</span>{post.publishedAt&&publicationLabel(post.publishedAt)&&<time dateTime={post.publishedAt}>Publicado el {publicationLabel(post.publishedAt)}</time>}{post.updatedAt&&<time dateTime={post.updatedAt}>Revisado el {revised}</time>}</div>
         {first&&<div className={styles.lead} data-article-lead><InlineContent nodes={first.children}/></div>}
       </header>
-      {image.visible !== false && <figure className={styles.cover}><Image src={image.src} alt={image.alt} width={image.width} height={image.height} sizes="(max-width:900px) 100vw, 1100px" loading="lazy" style={image.width<760?{maxWidth:image.width,marginInline:"auto"}:undefined}/></figure>}
+      {image.visible !== false && <figure className={styles.cover}><Image src={image.src} alt={image.alt} width={image.width} height={image.height} sizes="(max-width:900px) 100vw, 1100px" loading="lazy" style={image.width<760?{maxWidth:image.width,marginInline:"auto"}:undefined}/>{highVisibility && <figcaption>Esquemas ilustrativos, sin escala ni clase atribuida. Material fluorescente amarillo o naranja y material retrorreflectivo gris. <a href={image.src} target="_blank" rel="noopener noreferrer">Ampliar vistas anterior y posterior</a></figcaption>}</figure>}
       <div className={styles.readingLayout}>
         <aside>{headings.length>0&&<nav className={styles.toc} aria-label="Índice del artículo"><p>En este artículo</p><ol>{headings.map(h=><li key={h.id} data-level={h.level}><a href={`#${h.id}`}>{inlineText(h.children)}</a></li>)}</ol></nav>}</aside>
         <article className={styles.prose} aria-label="Contenido del artículo" data-article-body>
@@ -45,10 +51,14 @@ export default function Article({ post }: { post: Post }) {
             <Content blocks={bodyBlocks.slice(0,chatStart)}/>
             {fullSizeChat ? <HistoricalChat exchanges={parseFullSizeChat(post.content)}/> : <HistoricalChat source={chatSource}/>}
             <Content blocks={parseContent(chatTail)}/>
-          </> : <Content blocks={bodyBlocks}/>}
+          </> : highVisibility ? <HighVisibilityContent blocks={bodyBlocks}/> : <Content blocks={bodyBlocks} editorialTables={shrinkage || colorFastness}/>}
         </article>
       </div>
       <div className={styles.articleClosing}><Link prefetch={false} href="/blog"><ArrowLeft size={16} aria-hidden="true"/> Volver al blog</Link><Link prefetch={false} href={categoryPath(category)}>Más sobre {category.name.toLowerCase()} <ArrowRight size={16} aria-hidden="true"/></Link></div>
+      {supplementaryReading(post.slug).length > 0 && <nav className={styles.articleClosing} aria-label="Lecturas complementarias">{supplementaryReading(post.slug).map(slug => {
+        const destination = posts.find(item => item.slug === slug)!
+        return <Link prefetch={false} key={slug} href={`/${slug}`}>{destination.title} <ArrowRight size={16} aria-hidden="true"/></Link>
+      })}</nav>}
       {!approvedInterview && !historicalChat && !approvedNtp && !approvedPeruvianSize && !fullSizeChat && post.slug!=="el-problema-de-las-tallas" && <section className={styles.cta} aria-labelledby="article-contact"><div><p className={styles.eyebrow}>Del conocimiento al proyecto</p><h2 id="article-contact">¿Estás definiendo los uniformes de tu equipo?</h2><p>Reúne las prendas, cantidades y condiciones de uso para conversar sobre tu requerimiento.</p></div><Link prefetch={false} href="/contacto" className={styles.button}>Conversemos <ArrowUpRight size={16} aria-hidden="true"/></Link></section>}
       {!approvedInterview && <section className={styles.section} aria-labelledby="related-title"><div className={styles.sectionHeader}><p className={styles.eyebrow}>Sigue explorando</p><h2 id="related-title">Lecturas relacionadas</h2></div><div className={styles.grid}>{relatedPosts(post).map(item=><BlogCard key={item.slug} post={item}/>)}</div></section>}
     </div>

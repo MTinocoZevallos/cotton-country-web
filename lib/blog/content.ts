@@ -46,11 +46,26 @@ export function inlineText(nodes: Inline[]): string {
   return nodes.map(node => node.type === "text" ? node.text : inlineText(node.children)).join("")
 }
 
-export function parseContent(content: string): Block[] {
+export function parseContent(content: string, { markdownTables = false }: { markdownTables?: boolean } = {}): Block[] {
   const blocks: Block[] = [], ids = new Map<string, number>()
   const lines = content.replace(/<\/?p\s*>/gi,"\n").replace(/<br\s*\/?>/gi,"\n").split(/\r?\n/).map(s=>s.trim()).filter(Boolean)
   for (let index = 0; index < lines.length; index++) {
     const line = lines[index]
+    // Opt in only where an approved article contains Markdown tables.
+    if (markdownTables && line.startsWith("|") && lines[index+1]?.startsWith("|")) {
+      const cells = (row: string) => row.replace(/^\|/, "").replace(/\|$/, "").split("|").map(cell => cell.trim())
+      const headers = cells(line), separator = cells(lines[index+1])
+      if (headers.length > 1 && separator.length === headers.length && separator.every(cell => /^:?-{3,}:?$/.test(cell))) {
+        const rows: string[][] = []
+        let cursor = index + 2
+        while (lines[cursor]?.startsWith("|")) {
+          const row = cells(lines[cursor])
+          if (row.length !== headers.length) break
+          rows.push(row); cursor++
+        }
+        if (rows.length) { blocks.push({ type: "table", headers, rows }); index = cursor-1; continue }
+      }
+    }
     // Recover the two original measurement tables imported as one cell per line.
     // Only the complete, identified structure is interpreted; values stay verbatim.
     if (line === "Talla" && /^(Busto|Pecho) \(cm\)$/.test(lines[index+1] ?? "") && lines[index+2] === "Cintura (cm)" && lines[index+3] === "Cadera (cm)") {

@@ -15,6 +15,7 @@ function load(file){
   const compiledModule={exports:{}};cache.set(file,compiledModule)
   const source=ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,jsx:ts.JsxEmit.ReactJSX}}).outputText
   const localRequire=name=>{
+    if(name.endsWith('.css'))return {default:{table:'shrinkage-table'}}
     if(!name.startsWith('.')&&!name.startsWith('@/'))return require(name)
     const base=name.startsWith('@/')?path.join(root,name.slice(2)):path.resolve(path.dirname(file),name)
     const target=[base+'.ts',base+'.tsx',path.join(base,'index.ts')].find(fs.existsSync)
@@ -105,19 +106,20 @@ test('original IA interview retains both measurement tables and all original cel
 
 const baseline=JSON.parse(fs.readFileSync(path.join(root,'docs/blog-2027/editorial-baseline-d610d0e.json')))
 const dates=JSON.parse(fs.readFileSync(path.join(root,'tests/fixtures/blog-publication-dates.json'))).dates
+const originalPosts=blog.posts.filter(post=>Object.hasOwn(dates,post.slug))
 const withoutLinks=text=>text.replace(/\[([^\]\n]+)\]\([^\s)]+\)/g,'$1')
 test('all 53 original slugs and canonical paths survive and receive the exact owner-supplied date',()=>{
-  assert.equal(blog.posts.length,53);assert.equal(new Set(blog.posts.map(p=>p.slug)).size,53)
-  assert.deepEqual(new Set(blog.posts.map(p=>p.slug)),new Set(baseline.posts.map(p=>p.slug)))
-  assert.deepEqual(new Set(Object.keys(dates)),new Set(blog.posts.map(p=>p.slug)))
-  for(const post of blog.posts){assert.equal(post.publishedAt,dates[post.slug]);assert(publication.originalPublicationTime(post.publishedAt));assert.equal(post.canonicalPath,baseline.posts.find(p=>p.slug===post.slug).canonicalPath)}
+  assert.equal(originalPosts.length,53);assert.equal(new Set(originalPosts.map(p=>p.slug)).size,53)
+  assert.deepEqual(new Set(originalPosts.map(p=>p.slug)),new Set(baseline.posts.map(p=>p.slug)))
+  assert.deepEqual(new Set(Object.keys(dates)),new Set(originalPosts.map(p=>p.slug)))
+  for(const post of originalPosts){assert.equal(post.publishedAt,dates[post.slug]);assert(publication.originalPublicationTime(post.publishedAt));assert.equal(post.canonicalPath,baseline.posts.find(p=>p.slug===post.slug).canonicalPath)}
 })
 
 
 
 test('metadata is unique and faithful to source excerpts; contextual and related article targets exist',()=>{
-  assert.equal(new Set(blog.posts.map(p=>blog.postMetadata(p).title)).size,53)
-  assert.equal(new Set(blog.posts.map(p=>blog.descriptionForPost(p))).size,53)
+  assert.equal(new Set(blog.posts.map(p=>blog.postMetadata(p).title)).size,blog.posts.length)
+  assert.equal(new Set(blog.posts.map(p=>blog.descriptionForPost(p))).size,blog.posts.length)
   const slugs=new Set(blog.posts.map(p=>'/'+p.slug))
   function links(nodes){return nodes.flatMap(n=>n.type==='link'?[n.href,...links(n.children)]:'children' in n?links(n.children):[])}
   for(const post of blog.posts){const meta=blog.postMetadata(post);assert(meta.description.length>0&&meta.description.length<=175)
@@ -128,11 +130,12 @@ test('metadata is unique and faithful to source excerpts; contextual and related
 })
 test('original dates drive listings, featured and category order; same-date ties remain stable',()=>{
   const sorted=blog.orderPostsByPublication(blog.posts)
-  for(let i=1;i<sorted.length;i++)assert(sorted[i-1].publishedAt>=sorted[i].publishedAt)
+  const dated=sorted.filter(post=>post.publishedAt)
+  for(let i=1;i<dated.length;i++)assert(dated[i-1].publishedAt>=dated[i].publishedAt)
   assert.equal(blog.featuredSlug,sorted[0].slug)
-  for(const date of new Set(blog.posts.map(p=>p.publishedAt)))assert.deepEqual(sorted.filter(p=>p.publishedAt===date).map(p=>p.slug),blog.posts.filter(p=>p.publishedAt===date).map(p=>p.slug))
+  for(const date of new Set(originalPosts.map(p=>p.publishedAt)))assert.deepEqual(sorted.filter(p=>p.publishedAt===date).map(p=>p.slug),blog.posts.filter(p=>p.publishedAt===date).map(p=>p.slug))
 })
-test('sitemap includes all 53 final canonical article URLs once with honest publication/revision dates',()=>{
+test('sitemap includes all final canonical article URLs once with honest publication/revision dates',()=>{
   const map=load(path.join(root,'app/sitemap.ts')).default()
   for(const post of blog.posts){const rows=map.filter(item=>item.url==='https://cottoncountry.com.pe/'+post.slug);assert.equal(rows.length,1);assert.equal(rows[0].lastModified,post.updatedAt??post.publishedAt)}
 })
@@ -173,8 +176,9 @@ test('the single Word alias and all existing blog aliases redirect directly with
   const alias='el-nino-2026-2027-impacto-industria-textil-peru',target='/el-fenomeno-del-nino-y-su-impacto-en-la-industria-textil'
   assert.equal(paths.normalizeBlogHref('/'+alias),target);assert.equal(paths.normalizeBlogHref('/blog/'+alias+'/'),target)
   const rules=await load(path.join(root,'next.config.ts')).default.redirects()
-  assert.equal(rules.length,119);assert.equal(new Set(rules.map(r=>r.source)).size,119)
-  const historicalRules=rules.filter(r=>!approvedMigrationSources.has(r.source))
+  assert.equal(rules.length,119+(blog.posts.length-originalPosts.length)*2);assert.equal(new Set(rules.map(r=>r.source)).size,119+(blog.posts.length-originalPosts.length)*2)
+  const newAliases=new Set(blog.posts.filter(post=>!Object.hasOwn(dates,post.slug)).flatMap(post=>['/blog/'+post.slug,'/blog/'+post.slug+'/']))
+  const historicalRules=rules.filter(r=>!approvedMigrationSources.has(r.source)&&!newAliases.has(r.source))
   assert.equal(historicalRules.length,111)
   for(const source of ['/'+alias,'/'+alias+'/','/blog/'+alias,'/blog/'+alias+'/']){const rule=rules.find(r=>r.source===source);assert.equal(rule.destination,target);assert.equal(rule.permanent,true)}
   for(const rule of historicalRules.filter(r=>!r.source.includes(':path')))assert(blog.posts.some(p=>'/'+p.slug===rule.destination))
